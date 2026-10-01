@@ -1,0 +1,91 @@
+{
+    "schemaVersion": 1,
+    "processorVersion": "opening-lab-import/1",
+    "packId": "lichess-broadcast-2020-04-2020-04-snap-import-v1",
+    "source": {
+        "id": "lichess-broadcast-2020-04",
+        "kind": "BROADCAST_GAMES",
+        "title": "Lichess official broadcasts, April 2020",
+        "url": "https://database.lichess.org/#broadcasts",
+        "revision": "2020-04-snapshot",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseEvidenceUrl": "https://database.lichess.org/#broadcasts",
+        "attribution": "Lichess and the original broadcast contributors; individual broadcast/game URLs retained in each record",
+        "rightsReviewedOn": "2026-10-01",
+        "redistributionApproved": true,
+        "modifications": "Canonical SAN/UCI and metadata normalization. Derived scores omit comments, clocks, evaluations, NAGs and alternate annotations; original raw export retained. Derived game data remains CC BY-SA 4.0.",
+        "coverage": "Small archived month for pipeline validation, not a selected GM roster, famous-games shelf or exhaustive career archive; all records attempted, incomplete/invalid records reported.",
+        "files": [
+            {
+                "name": "broadcast.pgn.zst",
+                "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-04.pgn.zst",
+                "format": "PGN_ZSTD"
+            }
+        ]
+    },
+    "retrievedAt": "2026-10-01T11:08:19.985Z",
+    "inputs": [
+        {
+            "path": "lichess-broadcast-2020-04/broadcast.pgn.zst",
+            "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-04.pgn.zst",
+            "bytes": 49180,
+            "sha256": "8c39dfedff509c36a37a017d2be5dd066b1e1dbb9e62a6bf63b16c018d496725",
+            "decodedPath": "lichess-broadcast-2020-04/broadcast.pgn",
+            "decodedBytes": 305742,
+            "decodedSha256": "3970ec54cbe85b6b373dc226ab586160760e33901632e862f9339eac087a2859"
+        }
+    ],
+    "coverage": {
+        "inputRecords": 79,
+        "acceptedRecords": 79,
+        "duplicates": 0,
+        "quarantined": 0,
+        "families": 0,
+        "distinctNames": 0,
+        "distinctPositions": 6843,
+        "transposedPositions": 0,
+        "minPlies": 31,
+        "maxPlies": 205,
+        "gamePlies": 7606,
+        "gamesMatchedToTaxonomy": 79,
+        "unresolvedPlayers": 15
+    },
+    "files": [
+        {
+            "name": "openings.jsonl",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "name": "games.jsonl",
+            "bytes": 361061,
+            "sha256": "f342e709a0f871f04d4a73a309b785874bbb1de118645a98888652a74232fa64"
+        },
+        {
+            "name": "issues.jsonl",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "name": "ATTRIBUTION.txt",
+            "bytes": 642,
+            "sha256": "0f014a36c4b29c3afd4b5244261396a411b4dd572d44bcf46e897139cbe05d1b"
+        }
+    ],
+    "limitations": [
+        "Small archived month for pipeline validation, not a selected GM roster, famous-games shelf or exhaustive career archive; all records attempted, incomplete/invalid records reported.",
+        "Names and legally replayed scores are not reviewed teaching, engine analysis or winning promises.",
+        "Source metadata is reported, not independently verified. Unresolved names remain source-scoped; no guessed GM aliases.",
+        "Raw annotations/evaluations are retained in source files only, not surfaced as move authority.",
+        "A recorded result and legal complete score do not prove the source did not omit earlier/later moves.",
+        "Data-only pack: the consumer must supply atomic installation, durable storage and reviewed teaching."
+    ],
+    "snapshotLockSha256": "e1bcf364bda283f0140c58fe1f24b8bd4732e94ba8fa57ec978ef4d74994fd5e",
+    "dependencies": [
+        {
+            "packId": "lichess-openings-c67912be581f-import-v1",
+            "manifestSha256": "40d2ab2920dafa5c60ce163695c8e0e3fa31cf1cf922a285461aeafcb1f55dc3"
+        }
+    ]
+}

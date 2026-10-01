@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose a scoped improvement to the repertoire teacher
+body:
+  - type: markdown
+    attributes:
+      value: "Check .relay/tasks.md and docs/LEARNING_DESIGN.md first. Full repertoires, engine explanations and GM-game coaching are already planned."
+  - type: textarea
+    id: need
+    attributes:
+      label: Learning problem
+      description: What are you trying to learn, and what is missing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior and acceptance example
+    validations:
+      required: true

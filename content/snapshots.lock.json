@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "configSha256": "0354c9d4447bf948a38a7fb5a0bb4f2be536f9ae774c7372a507fdd704520bac",
+  "retrievedAt": "2026-10-01T11:08:19.985Z",
+  "files": [
+    {
+      "path": "lichess-openings/a.tsv",
+      "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/a.tsv",
+      "bytes": 66338,
+      "sha256": "41722fa3d44f294357326fe2ca1b956d9e56490b30efcfa68db61114c9df7e10"
+    },
+    {
+      "path": "lichess-openings/b.tsv",
+      "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/b.tsv",
+      "bytes": 77372,
+      "sha256": "310f0997d5a26ac6c9abfabac028e47e78f24356a6ba322cfffbf8f5a3f88d25"
+    },
+    {
+      "path": "lichess-openings/c.tsv",
+      "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/c.tsv",
+      "bytes": 132306,
+      "sha256": "b2e64f32e42e6418b327d03a55af65f3a18e762f7cbc0efffc7e9d1ed3aa7343"
+    },
+    {
+      "path": "lichess-openings/d.tsv",
+      "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/d.tsv",
+      "bytes": 69199,
+      "sha256": "58cad40b886bd499717eabcce281d4bfcf00eeadbdc00552f42042cf4aac50d2"
+    },
+    {
+      "path": "lichess-openings/e.tsv",
+      "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/e.tsv",
+      "bytes": 43453,
+      "sha256": "2787c571c16758343352be5a3e1272cb79af9ad32f20884ea6af982026efbe13"
+    },
+    {
+      "path": "lichess-openings/COPYING.txt",
+      "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/COPYING.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "lichess-broadcast-2020-04/broadcast.pgn.zst",
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-04.pgn.zst",
+      "bytes": 49180,
+      "sha256": "8c39dfedff509c36a37a017d2be5dd066b1e1dbb9e62a6bf63b16c018d496725",
+      "decodedPath": "lichess-broadcast-2020-04/broadcast.pgn",
+      "decodedBytes": 305742,
+      "decodedSha256": "3970ec54cbe85b6b373dc226ab586160760e33901632e862f9339eac087a2859"
+    }
+  ]
+}

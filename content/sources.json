@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "lichess-openings",
+      "kind": "OPENING_TAXONOMY",
+      "title": "Lichess chess opening names",
+      "url": "https://github.com/lichess-org/chess-openings",
+      "revision": "c67912be581f0793dbaa776be5ccf111e01f88d9",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "licenseEvidenceUrl": "https://github.com/lichess-org/chess-openings/blob/c67912be581f0793dbaa776be5ccf111e01f88d9/README.md#copyright",
+      "attribution": "Lichess chess-openings contributors",
+      "rightsReviewedOn": "2026-10-01",
+      "redistributionApproved": true,
+      "modifications": "Legal replay, canonical SAN/UCI, normalized position index; names retained. Not instructional annotations.",
+      "coverage": "Complete a.tsv through e.tsv at the pinned revision; opening taxonomy only, not complete theory or teaching.",
+      "files": [
+        { "name": "a.tsv", "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/a.tsv", "format": "OPENINGS_TSV" },
+        { "name": "b.tsv", "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/b.tsv", "format": "OPENINGS_TSV" },
+        { "name": "c.tsv", "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/c.tsv", "format": "OPENINGS_TSV" },
+        { "name": "d.tsv", "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/d.tsv", "format": "OPENINGS_TSV" },
+        { "name": "e.tsv", "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/e.tsv", "format": "OPENINGS_TSV" },
+        { "name": "COPYING.txt", "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/COPYING.txt", "format": "LICENSE" }
+      ]
+    },
+    {
+      "id": "lichess-broadcast-2020-04",
+      "kind": "BROADCAST_GAMES",
+      "title": "Lichess official broadcasts, April 2020",
+      "url": "https://database.lichess.org/#broadcasts",
+      "revision": "2020-04-snapshot",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenseEvidenceUrl": "https://database.lichess.org/#broadcasts",
+      "attribution": "Lichess and the original broadcast contributors; individual broadcast/game URLs retained in each record",
+      "rightsReviewedOn": "2026-10-01",
+      "redistributionApproved": true,
+      "modifications": "Canonical SAN/UCI and metadata normalization. Derived scores omit comments, clocks, evaluations, NAGs and alternate annotations; original raw export retained. Derived game data remains CC BY-SA 4.0.",
+      "coverage": "Small archived month for pipeline validation, not a selected GM roster, famous-games shelf or exhaustive career archive; all records attempted, incomplete/invalid records reported.",
+      "files": [
+        { "name": "broadcast.pgn.zst", "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-04.pgn.zst", "format": "PGN_ZSTD" }
+      ]
+    }
+  ]
+}

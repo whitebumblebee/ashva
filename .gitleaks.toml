@@ -1,0 +1,27 @@
+title = "Ashva source-tree secret scan"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Generated outputs, dependency caches and Git internals only; source/data/history remain scanned"
+paths = [
+  '''(^|/)\.git/''',
+  '''(^|/)\.gradle/''',
+  '''(^|/)\.kotlin/''',
+  '''(^|/)\.idea/''',
+  '''(^|/)build/''',
+  '''(^|/)node_modules/''',
+  '''(^|/)audit-reports/''',
+  '''(^|/)\.public-audit/''',
+]
+
+[[rules]]
+id = "generic-api-key"
+[[rules.allowlists]]
+description = "Only the normalized FEN piece-placement field in the immutable reviewed taxonomy; not a credential"
+condition = "AND"
+paths = ['''(^|/)content/packs/lichess-openings-c67912be581f-import-v1/openings\.jsonl$''']
+regexTarget = "match"
+# Gitleaks chunks can begin one character into the field name.
+regexes = ['''p?ositionKey"\s*:\s*"[prnbqkPRNBQK1-8]+(/[prnbqkPRNBQK1-8]+){7}(\s|$)''']

@@ -1,0 +1,8 @@
+Lichess chess opening names
+Lichess chess-openings contributors
+Source: https://github.com/lichess-org/chess-openings
+Revision: c67912be581f0793dbaa776be5ccf111e01f88d9
+License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+Evidence: https://github.com/lichess-org/chess-openings/blob/c67912be581f0793dbaa776be5ccf111e01f88d9/README.md#copyright
+Changes: Legal replay, canonical SAN/UCI, normalized position index; names retained. Not instructional annotations.
+Raw sources retained under content/raw/lichess-openings/. No endorsement implied.

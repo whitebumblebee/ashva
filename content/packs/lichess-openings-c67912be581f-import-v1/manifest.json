@@ -1,0 +1,156 @@
+{
+    "schemaVersion": 1,
+    "processorVersion": "opening-lab-import/1",
+    "packId": "lichess-openings-c67912be581f-import-v1",
+    "source": {
+        "id": "lichess-openings",
+        "kind": "OPENING_TAXONOMY",
+        "title": "Lichess chess opening names",
+        "url": "https://github.com/lichess-org/chess-openings",
+        "revision": "c67912be581f0793dbaa776be5ccf111e01f88d9",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "licenseEvidenceUrl": "https://github.com/lichess-org/chess-openings/blob/c67912be581f0793dbaa776be5ccf111e01f88d9/README.md#copyright",
+        "attribution": "Lichess chess-openings contributors",
+        "rightsReviewedOn": "2026-10-01",
+        "redistributionApproved": true,
+        "modifications": "Legal replay, canonical SAN/UCI, normalized position index; names retained. Not instructional annotations.",
+        "coverage": "Complete a.tsv through e.tsv at the pinned revision; opening taxonomy only, not complete theory or teaching.",
+        "files": [
+            {
+                "name": "a.tsv",
+                "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/a.tsv",
+                "format": "OPENINGS_TSV"
+            },
+            {
+                "name": "b.tsv",
+                "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/b.tsv",
+                "format": "OPENINGS_TSV"
+            },
+            {
+                "name": "c.tsv",
+                "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/c.tsv",
+                "format": "OPENINGS_TSV"
+            },
+            {
+                "name": "d.tsv",
+                "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/d.tsv",
+                "format": "OPENINGS_TSV"
+            },
+            {
+                "name": "e.tsv",
+                "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/e.tsv",
+                "format": "OPENINGS_TSV"
+            },
+            {
+                "name": "COPYING.txt",
+                "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/COPYING.txt",
+                "format": "LICENSE"
+            }
+        ]
+    },
+    "retrievedAt": "2026-10-01T11:08:19.985Z",
+    "inputs": [
+        {
+            "path": "lichess-openings/a.tsv",
+            "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/a.tsv",
+            "bytes": 66338,
+            "sha256": "41722fa3d44f294357326fe2ca1b956d9e56490b30efcfa68db61114c9df7e10",
+            "decodedPath": null,
+            "decodedBytes": null,
+            "decodedSha256": null
+        },
+        {
+            "path": "lichess-openings/b.tsv",
+            "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/b.tsv",
+            "bytes": 77372,
+            "sha256": "310f0997d5a26ac6c9abfabac028e47e78f24356a6ba322cfffbf8f5a3f88d25",
+            "decodedPath": null,
+            "decodedBytes": null,
+            "decodedSha256": null
+        },
+        {
+            "path": "lichess-openings/c.tsv",
+            "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/c.tsv",
+            "bytes": 132306,
+            "sha256": "b2e64f32e42e6418b327d03a55af65f3a18e762f7cbc0efffc7e9d1ed3aa7343",
+            "decodedPath": null,
+            "decodedBytes": null,
+            "decodedSha256": null
+        },
+        {
+            "path": "lichess-openings/d.tsv",
+            "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/d.tsv",
+            "bytes": 69199,
+            "sha256": "58cad40b886bd499717eabcce281d4bfcf00eeadbdc00552f42042cf4aac50d2",
+            "decodedPath": null,
+            "decodedBytes": null,
+            "decodedSha256": null
+        },
+        {
+            "path": "lichess-openings/e.tsv",
+            "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/e.tsv",
+            "bytes": 43453,
+            "sha256": "2787c571c16758343352be5a3e1272cb79af9ad32f20884ea6af982026efbe13",
+            "decodedPath": null,
+            "decodedBytes": null,
+            "decodedSha256": null
+        },
+        {
+            "path": "lichess-openings/COPYING.txt",
+            "url": "https://raw.githubusercontent.com/lichess-org/chess-openings/c67912be581f0793dbaa776be5ccf111e01f88d9/COPYING.txt",
+            "bytes": 7048,
+            "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+            "decodedPath": null,
+            "decodedBytes": null,
+            "decodedSha256": null
+        }
+    ],
+    "coverage": {
+        "inputRecords": 3815,
+        "acceptedRecords": 3815,
+        "duplicates": 0,
+        "quarantined": 0,
+        "families": 149,
+        "distinctNames": 3174,
+        "distinctPositions": 3815,
+        "transposedPositions": 0,
+        "minPlies": 1,
+        "maxPlies": 36,
+        "gamePlies": 0,
+        "gamesMatchedToTaxonomy": 0,
+        "unresolvedPlayers": 0
+    },
+    "files": [
+        {
+            "name": "openings.jsonl",
+            "bytes": 2461902,
+            "sha256": "0ac8db5bc81dd7c53322fc82f2a774f439229e2128f3c95f05d341a9a37a50f4"
+        },
+        {
+            "name": "games.jsonl",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "name": "issues.jsonl",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "name": "ATTRIBUTION.txt",
+            "bytes": 559,
+            "sha256": "3748062b26e59846862fc690a6f5094437feb6e00506ace44c3f3053290481ad"
+        }
+    ],
+    "limitations": [
+        "Complete a.tsv through e.tsv at the pinned revision; opening taxonomy only, not complete theory or teaching.",
+        "Names and legally replayed scores are not reviewed teaching, engine analysis or winning promises.",
+        "Source metadata is reported, not independently verified. Unresolved names remain source-scoped; no guessed GM aliases.",
+        "Raw annotations/evaluations are retained in source files only, not surfaced as move authority.",
+        "A recorded result and legal complete score do not prove the source did not omit earlier/later moves.",
+        "Data-only pack: the consumer must supply atomic installation, durable storage and reviewed teaching."
+    ],
+    "snapshotLockSha256": "e1bcf364bda283f0140c58fe1f24b8bd4732e94ba8fa57ec978ef4d74994fd5e",
+    "dependencies": []
+}

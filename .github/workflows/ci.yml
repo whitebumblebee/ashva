@@ -1,0 +1,94 @@
+name: Alpha checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: alpha-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android-and-content:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6.4.0
+        with:
+          cache-provider: basic
+          cache-read-only: ${{ github.event_name == 'pull_request' }}
+          validate-wrappers: true
+          build-scan-publish: false
+          dependency-graph: disabled
+      - name: Secret scan (directory only, redacted)
+        run: node scripts/run-secret-scan.mjs
+      - name: Public files, downloader and scanner regression tests
+        run: node --test scripts/*.test.mjs
+      - name: Public surface and Relay checks
+        run: |
+          node scripts/public-audit.mjs
+          node .agents/skills/relay/bin/relay.mjs doctor --strict
+      - name: Install pinned Android platform and build tools
+        run: sdkmanager 'platforms;android-37' 'build-tools;37.0.0'
+      - name: Domain, importer, data integrity, app and lint
+        run: >-
+          ./gradlew --no-daemon --max-workers=2
+          :shared:jvmTest :shared:testAndroidHostTest :contentTools:test
+          :contentTools:run --args=verify
+          :androidApp:assembleDebug :androidApp:assembleRelease :androidApp:lintDebug
+      - name: Enable KVM on the disposable hosted runner
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Compose tests on an isolated emulator
+        uses: ReactiveCircus/android-emulator-runner@a421e43855164a8197daf9d8d40fe71c6996bb0d # v2.38.0
+        with:
+          api-level: 33
+          target: google_apis
+          arch: x86_64
+          avd-name: Ashva_CI
+          emulator-port: 5554
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          script: ANDROID_SERIAL=emulator-5554 ./gradlew --no-daemon --max-workers=2 :androidApp:connectedDebugAndroidTest
+
+  shared-ios-compile:
+    runs-on: macos-15
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@3f5f9adaf7d9fecd50b5935e54106014257a94e6 # v6.4.0
+        with:
+          cache-provider: basic
+          cache-read-only: ${{ github.event_name == 'pull_request' }}
+          validate-wrappers: true
+          build-scan-publish: false
+          dependency-graph: disabled
+      - name: Android target configuration prerequisites for this KMP build
+        run: sdkmanager 'platforms;android-37' 'build-tools;37.0.0'
+      - name: Compile shared code (not an iOS app or runtime test)
+        run: >-
+          ./gradlew --no-daemon --max-workers=2
+          :shared:compileKotlinIosSimulatorArm64 :shared:compileKotlinIosArm64

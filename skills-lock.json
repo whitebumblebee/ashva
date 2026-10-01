@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "relay": {
+      "source": "whitebumblebee/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/relay/SKILL.md",
+      "computedHash": "6ffa4c0a07d93b3ff6af1d4005c0584e4253cd8dbb566beb4e04f7a56305c655"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "claimTtlHours": 1,
+  "unloggedCommitsWarn": 5,
+  "gates": [
+    "./gradlew :shared:testAndroidHostTest :androidApp:assembleDebug :androidApp:lintDebug",
+    "ANDROID_SERIAL=<isolated-test-serial> ./gradlew :androidApp:connectedDebugAndroidTest",
+    "./gradlew :shared:jvmTest :contentTools:test",
+    "node --test scripts/*.test.mjs",
+    "node scripts/public-audit.mjs",
+    "node scripts/run-secret-scan.mjs",
+    "./gradlew :contentTools:run --args=verify",
+    "node .agents/skills/relay/bin/relay.mjs doctor --strict"
+  ],
+  "trackerAliases": [
+    "todo.md",
+    "TODO.md",
+    "build_plan.md",
+    "plan_high.md",
+    "project-handoff.md",
+    "DEV_READY.md"
+  ]
+}
