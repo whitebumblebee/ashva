@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "dependencies": [
+    { "packId": "lichess-openings-c67912be581f-import-v1", "manifestSha256": "40d2ab2920dafa5c60ce163695c8e0e3fa31cf1cf922a285461aeafcb1f55dc3" }
+  ],
+  "acquisitionSha256": {
+    "lichess-broadcast-2020-01/broadcast.pgn.zst": "9461382d6933dedfbe7bb3de2ac139066d8d8657f2070cb11d59c7686f00f47e"
+  },
+  "sources": [
+    {
+      "id": "lichess-broadcast-2020-01",
+      "kind": "BROADCAST_GAMES",
+      "title": "Lichess official broadcasts, January 2020",
+      "url": "https://database.lichess.org/#broadcasts",
+      "revision": "2020-01-snapshot",
+      "license": "CC-BY-SA-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenseEvidenceUrl": "https://database.lichess.org/#broadcasts",
+      "attribution": "Lichess and the original broadcast contributors; individual broadcast/game URLs retained in each record",
+      "rightsReviewedOn": "2026-10-02",
+      "redistributionApproved": true,
+      "modifications": "Canonical SAN/UCI and metadata normalization. Derived scores omit comments, clocks, evaluations, NAGs and alternate annotations; original raw export retained. Derived game data remains CC BY-SA 4.0.",
+      "coverage": "Entire bounded January 2020 official broadcast export, not a representative master population, selected GM roster or complete career archive. Every input record receives an accepted, duplicate or quarantine disposition. Acquisition checksum checked against the provider's broadcast sha256sums.txt on 2026-10-02.",
+      "files": [
+        { "name": "broadcast.pgn.zst", "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-01.pgn.zst", "format": "PGN_ZSTD" }
+      ]
+    }
+  ]
+}

@@ -37,6 +37,7 @@ class GuidedLessonTest {
 
     private fun open(side: PieceColor = PieceColor.WHITE) {
         rule.onNodeWithText("Explore").performClick()
+        rule.onNodeWithText("Starter").performClick()
         rule.onNodeWithText("Ruy López").performScrollTo().performClick()
         rule.onNodeWithText(if (side == PieceColor.WHITE) "Play White" else "Play Black").performScrollTo().performClick()
         rule.onNodeWithTag("study-mode").assertIsDisplayed()
@@ -221,9 +222,9 @@ class GuidedLessonTest {
             }
         }
         assertEquals(16, trainer.ply)
-        assertEquals(1, trainer.assistedMoves)
+        assertEquals(8, trainer.assistedMoves)
         assertTrue(trainer.hasStudied)
-        rule.onNodeWithText("0 retries · 1 assisted move").performScrollTo().assertIsDisplayed()
+        rule.onNodeWithText("0 retries · 8 assisted moves").performScrollTo().assertIsDisplayed()
         rule.onNodeWithText("You studied this line first. Completion is not a mastery score.").performScrollTo().assertIsDisplayed()
     }
 

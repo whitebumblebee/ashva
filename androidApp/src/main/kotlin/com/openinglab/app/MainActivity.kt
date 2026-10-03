@@ -9,6 +9,7 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.openinglab.app.content.BundledContent
+import com.openinglab.app.analysis.AndroidStockfish
 import com.openinglab.app.ui.AppViewModel
 import com.openinglab.app.ui.OpeningLabApp
 import com.openinglab.app.ui.theme.OpeningLabTheme
@@ -19,7 +20,10 @@ class MainActivity : ComponentActivity() {
             initializer {
                 AppViewModel(createSavedStateHandle(),
                     learningStore = (application as OpeningLabApplication).learningStore,
-                    packReader = { BundledContent.read(application.assets, it) })
+                    analysisEngine = AndroidStockfish.engine(application),
+                    packReader = { BundledContent.read(application.assets, it) },
+                    autoInstallBundledOpenings = true,
+                    presentationCache = (application as OpeningLabApplication).openingPresentationCache)
             }
         }
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -63,16 +63,27 @@ fun HomeScreen(
     onExploreAll: () -> Unit,
     onContinue: () -> Unit,
     onOfflineLibrary: () -> Unit,
+    onRepertoires: () -> Unit,
     resume: TrainerUiState?,
     persistenceStatus: String,
     modifier: Modifier = Modifier,
+    catalogLoading: Boolean = false,
+    catalogError: String? = null,
+    onGames: () -> Unit = {},
+    gameResume: com.openinglab.app.ui.GameStudyUiState? = null,
+    recall: com.openinglab.app.ui.RecallUiState = com.openinglab.app.ui.RecallUiState(), onReview: () -> Unit = {},
 ) {
-    val ruy = openings.first { it.id == "ruy-lopez" }
+    val ruy = openings.firstOrNull { it.name.replace('ó', 'o') == "Ruy Lopez" } ?: openings.first()
+    val ordered = openings.sortedBy { opening ->
+        listOf("Ruy Lopez", "London System", "Sicilian Defense", "French Defense", "Caro-Kann Defense", "Italian Game", "Queen's Gambit Declined").indexOf(opening.name.replace('ó', 'o')).let { if (it < 0) 100 else it }
+    }
     LazyColumn(
-        modifier = modifier,
+        modifier = modifier.testTag("home-list"),
         contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 20.dp, vertical = 22.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp),
     ) {
+        item { TextButton(onRepertoires, modifier = Modifier.testTag("my-repertoires")) { Text("My repertoires →", color = Leaf) } }
+        item { TextButton(onGames, modifier = Modifier.testTag("gm-game-library")) { Text("Players & GM games →", color = Leaf) } }
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 OpeningLabMark(Modifier.weight(1f))
@@ -85,7 +96,7 @@ fun HomeScreen(
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Icon(Icons.Rounded.Bolt, null, tint = Gold, modifier = Modifier.size(17.dp))
-                    Text("DEMO", color = Gold, style = MaterialTheme.typography.labelLarge)
+                    Text("LEARN", color = Gold, style = MaterialTheme.typography.labelLarge)
                 }
                 Spacer(Modifier.width(10.dp))
                 Box(Modifier.size(36.dp).clip(CircleShape).background(Leaf), contentAlignment = Alignment.Center) {
@@ -101,7 +112,8 @@ fun HomeScreen(
                 Text("Build positions\nyou can trust.", color = Cream, style = MaterialTheme.typography.displayMedium)
                 Spacer(Modifier.height(12.dp))
                 Text(
-                    "Study opening ideas and practice short starter lines. Full repertoires and GM-game coaching are still in development.",
+                    if (openings.any { it.teaching != null }) "${openings.size} opening families. Study both sides, understand the moves and explore named variations." else
+                        "Preparing opening courses. Starter lessons remain available while the local catalog loads.",
                     color = MutedCream,
                     style = MaterialTheme.typography.bodyLarge,
                 )
@@ -109,23 +121,31 @@ fun HomeScreen(
         }
 
         item {
-            ContinueCard(resume?.opening ?: ruy, resume, onContinue)
+            if (catalogLoading) Text("Preparing the offline opening courses…", color = Leaf, modifier = Modifier.testTag("home-catalog-loading"))
+            catalogError?.let { Text(it, color = Gold, modifier = Modifier.testTag("home-catalog-error")) }
+            if (gameResume == null) ContinueCard(resume?.opening ?: ruy, resume, onContinue)
+            else Column {
+                Text("Continue original game", color = Leaf)
+                Text("${gameResume.score.white.name} – ${gameResume.score.black.name}", color = Cream)
+                Text("${gameResume.replay.playerSide.name} POV · ${gameResume.replay.ply}/${gameResume.replay.moves.size} half-moves · exact retained score", color = MutedCream)
+                TextButton(onContinue, modifier = Modifier.testTag("continue-lesson")) { Text("Continue game") }
+            }
             Text(persistenceStatus, color = MutedCream, style = MaterialTheme.typography.bodySmall,
                 modifier = Modifier.padding(top = 8.dp).testTag("persistence-status"))
             TextButton(onClick = onOfflineLibrary, modifier = Modifier.testTag("offline-library")) { Text("Offline library & sources", color = Leaf) }
         }
 
         item {
-            Text("Alpha preview · repertoire percentages and review statistics are examples, not your measured progress.",
+            Text("Local recall uses your chosen route, family or named-set revision. Completing a line once is not long-term mastery.",
                 color = MutedCream, style = MaterialTheme.typography.bodySmall)
             Spacer(Modifier.height(10.dp))
-            DailyDrillCard(onClick = onContinue)
+            DailyDrillCard(onClick = onReview, recall = recall)
         }
 
         item { SectionHeader("Your repertoire", "Explore all", onExploreAll) }
 
-        items(openings.take(4), key = { it.id }) { opening ->
-            OpeningCard(opening = opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth())
+        items(ordered, key = { it.id }) { opening ->
+            OpeningCard(opening = opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth().testTag("opening-${opening.id}"))
         }
 
         item {
@@ -153,7 +173,7 @@ private fun ContinueCard(opening: Opening, resume: TrainerUiState?, onClick: () 
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Rounded.Schedule, null, tint = Ink.copy(alpha = .64f), modifier = Modifier.size(16.dp))
                     Spacer(Modifier.width(6.dp))
-                    Text(if (resume == null) "Authored starter lesson" else
+                    Text(if (resume == null) if (opening.teaching != null) "Opening course · both colors" else "Authored starter lesson" else
                         "${resume.playerSide.name.lowercase()} · ${resume.mode.name.lowercase()} · Move ${resume.ply}/${resume.replay.moves.size}",
                         color = Ink.copy(alpha = .74f), style = MaterialTheme.typography.bodySmall)
                 }
@@ -166,7 +186,7 @@ private fun ContinueCard(opening: Opening, resume: TrainerUiState?, onClick: () 
 }
 
 @Composable
-private fun DailyDrillCard(onClick: () -> Unit) {
+private fun DailyDrillCard(onClick: () -> Unit, recall: com.openinglab.app.ui.RecallUiState) {
     Surface(
         modifier = Modifier.fillMaxWidth(),
         color = DeepMoss,
@@ -180,10 +200,10 @@ private fun DailyDrillCard(onClick: () -> Unit) {
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Eyebrow("Daily recall", color = Gold)
-                Text("5 positions are due", color = Cream, style = MaterialTheme.typography.titleMedium)
-                Text("Keep the 7-day streak alive", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                Text(if (recall.loading) "Loading your schedules…" else if (recall.scopes.isEmpty()) "Choose a line to practice" else "${recall.scopes.size} chosen review scopes", color = Cream, style = MaterialTheme.typography.titleMedium)
+                Text("Select a scope to see real due decisions", color = MutedCream, style = MaterialTheme.typography.bodySmall)
             }
-            PrimaryAction("Review", onClick, modifier = Modifier.width(102.dp), icon = null, color = Gold)
+            PrimaryAction("Open review", onClick, modifier = Modifier.width(102.dp).testTag("home-open-review"), icon = null, color = Gold)
         }
     }
 }

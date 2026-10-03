@@ -33,6 +33,10 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
@@ -42,6 +46,7 @@ import androidx.lifecycle.compose.LifecycleEventEffect
 import com.openinglab.app.ui.FeedbackKind
 import com.openinglab.app.ui.LessonMode
 import com.openinglab.app.ui.TrainerUiState
+import com.openinglab.app.ui.EngineAnalysisUiState
 import com.openinglab.app.ui.components.ChessBoard
 import com.openinglab.app.ui.theme.Cream
 import com.openinglab.app.ui.theme.DeepMoss
@@ -75,12 +80,25 @@ fun TrainerScreen(
     onCancelPromotion: () -> Unit,
     onPause: () -> Unit,
     onResume: () -> Unit,
+    onBuildRepertoire: () -> Unit,
     modifier: Modifier = Modifier,
+    analysis: EngineAnalysisUiState = EngineAnalysisUiState.Idle,
+    onAnalyze: () -> Unit = {},
+    onStopAnalysis: () -> Unit = {},
+    onExploreAnalysis: (Int) -> Unit = {},
+    onJumpAnalysis: (Int) -> Unit = {},
+    onReturnAnalysis: () -> Unit = {},
+    onSetPrevious: () -> Unit = {}, onSetNext: () -> Unit = {},
+    preparing: Boolean = false, loadError: String? = null,
+    recallError: String? = null, onNextReview: () -> Unit = {}, recallRetryAvailable: Boolean = false, onRetryRecall: () -> Unit = {},
 ) {
     LifecycleEventEffect(Lifecycle.Event.ON_STOP, onEvent = onPause)
     LifecycleEventEffect(Lifecycle.Event.ON_START, onEvent = onResume)
     DisposableEffect(Unit) { onDispose(onPause) }
     val study = state.mode == LessonMode.STUDY
+    val source = state.opening.provenance
+    val teaching = state.opening.teaching
+    var visibleBranches by rememberSaveable(state.replay.pathId, state.ply) { mutableIntStateOf(12) }
     Column(modifier.testTag("lesson-scroll").verticalScroll(rememberScrollState()).padding(bottom = 32.dp)) {
         Row(Modifier.fillMaxWidth().padding(end = 12.dp), verticalAlignment = Alignment.CenterVertically) {
             IconButton(onBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back", tint = Cream) }
@@ -89,29 +107,54 @@ fun TrainerScreen(
                 Text(state.replay.path.name, color = MutedCream, style = MaterialTheme.typography.bodySmall,
                     modifier = Modifier.testTag("active-variation"))
             }
-            TextButton(onFlip, Modifier.testTag("flip-side")) {
+            TextButton(onFlip, Modifier.testTag("flip-side"), enabled = state.repertoirePolicy == null && state.reviewTargetId == null) {
                 Text(state.playerSide.name.lowercase().replaceFirstChar { it.uppercase() } + " ⇄", color = Leaf)
             }
         }
         LinearProgressIndicator(progress = { state.progress }, modifier = Modifier.fillMaxWidth().height(3.dp), color = Leaf, trackColor = Divider)
         Column(Modifier.padding(horizontal = 16.dp)) {
+            if (preparing) Text("Preparing the next repertoire route…", color = MutedCream, modifier = Modifier.testTag("set-route-loading"))
+            loadError?.let { Text(it, color = Gold, modifier = Modifier.testTag("set-route-error")) }
+            recallError?.let { Text(it, color = Gold, modifier = Modifier.testTag("trainer-recall-error")) }
+            if (recallRetryAvailable) LessonButton("Retry pending saves", "trainer-retry-recall", onRetryRecall)
+            if (state.reviewTargetId != null) {
+                Text("ONE-POSITION RECALL · exact chosen scope", color = Gold, modifier = Modifier.testTag("review-card-context"))
+                Text("Study or analyze if needed; exposed help is assistance. Return to openings to explore other branches.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                LessonButton("Next due position", "next-review-card", onNextReview, enabled = !preparing && state.reviewAnswered && state.reviewSaved)
+            }
+            state.repertoireSetSession?.let { session ->
+                Text("${session.plan.set.name} · ${session.plan.set.side.name} · route ${session.index + 1}/${session.plan.items.size}",
+                    color = Gold, modifier = Modifier.padding(top = 12.dp).testTag("set-practice-position"))
+                Text("Pinned set revision ${session.plan.set.revision}. Route navigation is not recall mastery; practice each included opponent reply. Original family routes remain separate.", color = MutedCream,
+                    style = MaterialTheme.typography.bodySmall)
+                Row {
+                    TextButton(onSetPrevious, enabled = !preparing && session.index > 0, modifier = Modifier.testTag("set-previous")) { Text("Previous route") }
+                    TextButton(onSetNext, enabled = !preparing && session.index < session.plan.items.lastIndex, modifier = Modifier.testTag("set-next")) { Text("Next route") }
+                }
+            }
+            TextButton(onBuildRepertoire, modifier = Modifier.testTag("build-repertoire")) { Text("Build / edit my repertoire", color = Leaf) }
+            state.repertoirePolicy?.let {
+                Text("MY REPERTOIRE · ${it.side.name} · revision ${it.revision} · only included source routes. Edit choices to cover other replies; use the explorer for the full snapshot.", color = Gold,
+                    style = MaterialTheme.typography.bodySmall, modifier = Modifier.testTag("policy-practice-scope"))
+            }
             Row(Modifier.fillMaxWidth().padding(top = 10.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 LessonButton(if (study) "Studying" else "Full idea", "study-mode", onStudy, Modifier.weight(1f), selected = study)
                 LessonButton(if (study) "Practice from start" else "Practicing", "practice-mode", onPractice,
                     Modifier.weight(1f), selected = !study)
             }
-            Text("AUTHORED SEED · ${state.replay.moves.size} half-moves · not a full repertoire", color = MutedCream,
-                style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(vertical = 10.dp).testTag("seed-coverage"))
+            Text("${if (teaching != null) if (state.variation.authoredContinuation) "AUTHORED STUDY CONTINUATION" else "NAMED SOURCE ROUTE · ASHVA GUIDE" else if (source == null) "AUTHORED SEED" else "SOURCED · ${source.license}"} · ${state.replay.moves.size} half-moves · finite course coverage", color = MutedCream,
+                style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(vertical = 10.dp).testTag(if (source == null) "seed-coverage" else "source-coverage"))
             Text(if (study) "Study · ${state.ply}/${state.replay.moves.size} · ${state.position.sideToMove.name.lowercase()} to move"
                 else if (state.isOpponentThinking) "Playing the lesson reply…" else "Practice · ${state.playerSide.name.lowercase()} POV",
                 color = Cream, style = MaterialTheme.typography.labelLarge, modifier = Modifier.padding(bottom = 8.dp).testTag("lesson-position"))
             ChessBoard(position = state.position, perspective = state.playerSide, selectedSquare = state.selectedSquare,
                 legalTargets = state.legalTargets, hintSquares = state.hintSquares, onSquareTap = onSquareTap,
-                inputEnabled = !study && !state.isOpponentThinking && !state.isComplete)
+                inputEnabled = !preparing && !study && !state.isOpponentThinking && !state.isComplete)
             Spacer(Modifier.height(8.dp))
             if (study) {
                 ReplayControls(state, onJump, onPlayPause, onSpeed)
                 MoveIdea(state)
+                PositionTeachingPanel(state.position, state.playerSide)
             } else {
                 TeachingCard {
                     Text(state.feedback, color = if (state.feedbackKind == FeedbackKind.ERROR) Gold else Leaf,
@@ -130,11 +173,14 @@ fun TrainerScreen(
                     Text("Playback is paused here. The board stays unchanged until you choose.", color = MutedCream,
                         style = MaterialTheme.typography.bodySmall)
                     LessonButton("Stay on ${state.replay.path.name}", "stay-line", onStay)
-                    state.branchOffers.forEach { branch ->
+                    if (state.branchOffers.size > 12) Text("Showing ${minOf(visibleBranches, state.branchOffers.size)} of ${state.branchOffers.size} continuations",
+                        color = MutedCream, modifier = Modifier.testTag("branch-count"))
+                    state.branchOffers.take(visibleBranches).forEach { branch ->
                         Text("${branch.name} · ${branch.nextMove.san}", color = Cream, style = MaterialTheme.typography.titleSmall)
                         Text(branch.description, color = MutedCream, style = MaterialTheme.typography.bodySmall)
                         LessonButton("${if (study) "Explore" else "Switch to"} ${branch.name}", "branch-${branch.pathId}", { onSwitch(branch) })
                     }
+                    if (visibleBranches < state.branchOffers.size) LessonButton("Show more continuations", "more-branches", { visibleBranches += 12 })
                 }
             }
             if (state.replay.canReturn) {
@@ -150,7 +196,8 @@ fun TrainerScreen(
                     Text("Opponent's plan", color = Gold, style = MaterialTheme.typography.labelLarge)
                     Text(if (state.playerSide == PieceColor.WHITE) state.replay.path.blackIdea else state.replay.path.whiteIdea,
                         color = MutedCream, style = MaterialTheme.typography.bodySmall)
-                    Text("Authored introductory plans, not engine analysis or a promise of a win.", color = MutedCream,
+                    Text(if (teaching != null) "Ashva-authored guidance plus rules-derived board observations. Plans are conditional, not engine evaluations or verified historical intention. Named source routes end at their recorded endpoint; authored continuations are separate." else if (source == null) "Authored introductory plans, not engine analysis or a promise of a win." else
+                        "Source move sequence only. Reviewed strategic plans are unavailable; optional offline analysis below is separate from the source lesson.", color = MutedCream,
                         style = MaterialTheme.typography.labelSmall)
                 }
             }
@@ -169,10 +216,10 @@ fun TrainerScreen(
             }
             if (!study && state.isComplete) {
                 TeachingCard {
-                    Text("Practice complete", color = Leaf, style = MaterialTheme.typography.titleMedium)
+                    Text(if (state.reviewTargetId != null) "Review answer complete" else "Practice complete", color = Leaf, style = MaterialTheme.typography.titleMedium)
                     Text("${state.mistakes} retries · ${state.assistedMoves} assisted ${if (state.assistedMoves == 1) "move" else "moves"}", color = Cream)
                     Text(if (state.hasStudied) "You studied this line first. Completion is not a mastery score."
-                        else "Practice covers this seed line only; no repertoire mastery is recorded.", color = MutedCream,
+                        else "Recorded answers contribute to chosen-scope recall. Completing a line once is not long-term mastery.", color = MutedCream,
                         style = MaterialTheme.typography.bodySmall)
                 }
             }
@@ -180,6 +227,7 @@ fun TrainerScreen(
                 LessonButton("Hint", "show-hint", onHint, Modifier.weight(1f), enabled = !state.isComplete && !state.isOpponentThinking)
                 LessonButton("Restart practice", "restart-practice", onRestart, Modifier.weight(1f))
             }
+            EngineAnalysisPanel(analysis, state.playerSide, onAnalyze, onStopAnalysis, onExploreAnalysis, onJumpAnalysis, onReturnAnalysis)
         }
     }
     if (state.pendingPromotion != null) AlertDialog(onDismissRequest = onCancelPromotion,

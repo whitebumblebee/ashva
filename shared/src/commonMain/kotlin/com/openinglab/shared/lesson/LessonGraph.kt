@@ -10,7 +10,7 @@ import com.openinglab.shared.model.ChessMove
 import com.openinglab.shared.model.Opening
 import com.openinglab.shared.model.PieceColor
 
-enum class LessonPathKind { AUTHORED, ORIGINAL_GAME, ANNOTATED_VARIATION, ANALYZED_VARIATION }
+enum class LessonPathKind { AUTHORED, SOURCED_OPENING, ORIGINAL_GAME, ANNOTATED_VARIATION, ANALYZED_VARIATION }
 
 /** Teaching belongs to a path, not to a transposed board node. */
 data class LessonAnnotation(
@@ -50,6 +50,13 @@ class LessonGraph private constructor(
 ) {
     fun start(side: PieceColor, pathId: String = originalPathId): LessonReplay = LessonReplay.start(this, side, pathId)
 
+    /** Preserve original route IDs/moves while constraining practice to a learner's chosen scope. */
+    fun restrictToPaths(pathIds: Set<String>, id: String): LessonGraph {
+        require(pathIds.isNotEmpty() && pathIds.all { it in paths })
+        return build(id, title, initialPosition, paths.values.filter { it.id in pathIds },
+            originalPathId.takeIf { it in pathIds } ?: paths.keys.first { it in pathIds })
+    }
+
     companion object {
         const val MAX_PATH_PLIES = 4096
         const val MAX_TOTAL_PLIES = 50_000
@@ -66,7 +73,9 @@ class LessonGraph private constructor(
                     positions += before.apply(move)
                     LessonMove(move, san, LessonAnnotation(step.title, step.explanation, step.principle))
                 }
-                LessonPath(variation.id, variation.name, LessonPathKind.AUTHORED, variation.description, moves, positions.toList(),
+                LessonPath(variation.id, variation.name,
+                    if (opening.provenance == null || variation.authoredContinuation) LessonPathKind.AUTHORED else LessonPathKind.SOURCED_OPENING,
+                    variation.description, moves, positions.toList(),
                     whiteIdea = variation.whiteIdea, blackIdea = variation.blackIdea)
             }
             return build(opening.id, opening.name, initial, paths, opening.mainLine.id)

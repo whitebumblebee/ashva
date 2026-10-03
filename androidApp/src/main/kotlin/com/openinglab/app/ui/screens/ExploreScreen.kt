@@ -28,10 +28,12 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.openinglab.app.ui.components.Eyebrow
 import com.openinglab.app.ui.components.OpeningCard
@@ -54,9 +56,13 @@ fun ExploreScreen(
     onOpeningClick: (String) -> Unit,
     onIdentify: () -> Unit,
     modifier: Modifier = Modifier,
+    sourcedOpenings: List<Opening> = emptyList(),
+    catalogLoading: Boolean = false,
+    catalogError: String? = null,
+    onOfflineLibrary: () -> Unit = {},
 ) {
     LazyColumn(
-        modifier = modifier,
+        modifier = modifier.testTag("opening-list"),
         contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 20.dp, vertical = 22.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
@@ -69,7 +75,7 @@ fun ExploreScreen(
             OutlinedTextField(
                 value = query,
                 onValueChange = onQueryChange,
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth().testTag("opening-search"),
                 placeholder = { Text("Search names, ECO codes, or ideas", color = MutedCream) },
                 leadingIcon = { Icon(Icons.Rounded.Search, null, tint = MutedCream) },
                 singleLine = true,
@@ -87,8 +93,22 @@ fun ExploreScreen(
         }
         item { IdentifyBanner(onIdentify) }
         item {
+            Column(Modifier.fillMaxWidth().background(DeepMoss, RoundedCornerShape(18.dp)).padding(16.dp)) {
+                Text(when {
+                    catalogLoading -> "Loading installed opening catalog…"
+                    catalogError != null -> catalogError
+                    sourcedOpenings.isEmpty() -> "More openings available offline"
+                    else -> "${sourcedOpenings.size} source families · ${sourcedOpenings.sumOf { it.variations.size }} routes"
+                }, color = Cream, style = MaterialTheme.typography.titleSmall, modifier = Modifier.testTag("source-catalog-status"))
+                Text(if (selectedDifficulty == "Sourced") "Raw name-derived taxonomy. Choose All for Ashva-guided courses; raw source routes remain unchanged." else
+                    "Opening courses add Ashva plans and board-derived explanations. Named source routes and authored study continuations are labeled separately; coverage is finite.",
+                    color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                TextButton(onOfflineLibrary) { Text("Offline library & sources", color = Leaf) }
+            }
+        }
+        item {
             LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                items(listOf("All", "Foundation", "Intermediate", "Advanced")) { filter ->
+                items(listOf("All", "Sourced", "Starter", "Foundation", "Intermediate", "Advanced")) { filter ->
                     val selected = filter == selectedDifficulty
                     Box(
                         Modifier
@@ -105,11 +125,11 @@ fun ExploreScreen(
         item {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.Bottom) {
                 Text("All openings", color = Cream, style = MaterialTheme.typography.headlineMedium, modifier = Modifier.weight(1f))
-                Text("${openings.size} systems", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                Text("${openings.size} entries", color = MutedCream, style = MaterialTheme.typography.bodySmall)
             }
         }
         items(openings, key = { it.id }) { opening ->
-            OpeningCard(opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth(), compact = true)
+            OpeningCard(opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth().testTag("opening-${opening.id}"), compact = true)
         }
         if (openings.isEmpty()) {
             item {
@@ -136,7 +156,7 @@ private fun IdentifyBanner(onClick: () -> Unit) {
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Text("Don't know the name?", color = Ink, style = MaterialTheme.typography.titleMedium)
-                Text("Enter moves or import PGN/FEN. Match positions against the offline seed book.", color = Ink.copy(alpha = .7f), style = MaterialTheme.typography.bodySmall)
+                Text("Enter moves or import PGN/FEN. Match positions against available offline catalogs.", color = Ink.copy(alpha = .7f), style = MaterialTheme.typography.bodySmall)
             }
             Icon(Icons.Rounded.Add, null, tint = Ink)
         }

@@ -152,20 +152,18 @@ fun OpeningCard(
                 }
                 Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = MutedCream, modifier = Modifier.size(18.dp))
             }
+            opening.provenance?.let { source ->
+                val course = opening.teaching
+                Text(if (course != null) "${course.sourceRoutes} named routes + ${course.authoredRoutes} study lines · ${course.minPlies}–${course.maxPlies} half-moves" else
+                    "${opening.variations.size} source routes · ${source.minPlies}–${source.maxPlies} half-moves · ${source.license}",
+                    color = MutedCream, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(top = 8.dp))
+            }
             if (!compact) {
                 Spacer(Modifier.height(18.dp))
                 Text(opening.identity, color = MutedCream, style = MaterialTheme.typography.bodySmall)
                 Spacer(Modifier.height(12.dp))
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    LinearProgressIndicator(
-                        progress = { opening.progress / 100f },
-                        modifier = Modifier.weight(1f).height(5.dp).clip(CircleShape),
-                        color = accent,
-                        trackColor = Moss,
-                    )
-                    Spacer(Modifier.width(10.dp))
-                    Text("DEMO ${opening.progress}%", color = accent, style = MaterialTheme.typography.labelMedium)
-                }
+                if (opening.teaching != null) Text("White & Black · study, practice and branch replay", color = accent, style = MaterialTheme.typography.labelMedium)
+                else Text("Finite routes · choose a scope in Review for actual recall progress", color = accent, style = MaterialTheme.typography.labelMedium)
             }
         }
     }

@@ -8,6 +8,7 @@ description = "Generated outputs, dependency caches and Git internals only; sour
 paths = [
   '''(^|/)\.git/''',
   '''(^|/)\.gradle/''',
+  '''(^|/)\.engine-cache/''',
   '''(^|/)\.kotlin/''',
   '''(^|/)\.idea/''',
   '''(^|/)build/''',

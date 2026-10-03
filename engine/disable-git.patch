@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright 2026 Shishir Jha. Build-only modification to Stockfish's GPL Makefile.
+# No Git commands may run against the owner's surrounding Ashva repository.
+--- src/Makefile
++++ src/Makefile
+@@ -915,3 +915,3 @@
+-GIT_SHA              := $(shell git rev-parse HEAD 2>/dev/null | cut -c 1-8 || true)
+-GIT_DATE             := $(shell git show -s --date=format:%Y%m%d --format=%cd HEAD 2>/dev/null || true)
+-GIT_DIFFINDEX        := $(shell git update-index --refresh >/dev/null 2>&1; git -c core.filemode=false -c core.autocrlf=false  diff-index --quiet HEAD -- 2>/dev/null; [ $$? -eq 1 ] && echo 1 || true)
++GIT_SHA              :=
++GIT_DATE             :=
++GIT_DIFFINDEX        :=

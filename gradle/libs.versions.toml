@@ -9,10 +9,13 @@ navigation3 = "1.1.7"
 kotlinxSerialization = "1.11.0"
 testRunner = "1.7.0"
 testJunit = "1.3.0"
+testOrchestrator = "1.6.1"
 room = "2.8.5"
 sqlite = "2.7.1"
 ksp = "2.3.12"
 coroutines = "1.11.0"
+ktor = "3.6.0"
+postgresJdbc = "42.7.13"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -36,11 +39,19 @@ androidx-compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4
 androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 androidx-test-runner = { module = "androidx.test:runner", version.ref = "testRunner" }
 androidx-test-junit = { module = "androidx.test.ext:junit", version.ref = "testJunit" }
+androidx-test-orchestrator = { module = "androidx.test:orchestrator", version.ref = "testOrchestrator" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-server-cio = { module = "io.ktor:ktor-server-cio-jvm", version.ref = "ktor" }
+ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation-jvm", version.ref = "ktor" }
+ktor-server-status-pages = { module = "io.ktor:ktor-server-status-pages-jvm", version.ref = "ktor" }
+ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json-jvm", version.ref = "ktor" }
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host-jvm", version.ref = "ktor" }
+postgres-jdbc = { module = "org.postgresql:postgresql", version.ref = "postgresJdbc" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

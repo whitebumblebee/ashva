@@ -1,0 +1,91 @@
+{
+    "schemaVersion": 1,
+    "processorVersion": "opening-lab-import/1",
+    "packId": "lichess-broadcast-2020-01-2020-01-snap-import-v1",
+    "source": {
+        "id": "lichess-broadcast-2020-01",
+        "kind": "BROADCAST_GAMES",
+        "title": "Lichess official broadcasts, January 2020",
+        "url": "https://database.lichess.org/#broadcasts",
+        "revision": "2020-01-snapshot",
+        "license": "CC-BY-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "licenseEvidenceUrl": "https://database.lichess.org/#broadcasts",
+        "attribution": "Lichess and the original broadcast contributors; individual broadcast/game URLs retained in each record",
+        "rightsReviewedOn": "2026-10-02",
+        "redistributionApproved": true,
+        "modifications": "Canonical SAN/UCI and metadata normalization. Derived scores omit comments, clocks, evaluations, NAGs and alternate annotations; original raw export retained. Derived game data remains CC BY-SA 4.0.",
+        "coverage": "Entire bounded January 2020 official broadcast export, not a representative master population, selected GM roster or complete career archive. Every input record receives an accepted, duplicate or quarantine disposition. Acquisition checksum checked against the provider's broadcast sha256sums.txt on 2026-10-02.",
+        "files": [
+            {
+                "name": "broadcast.pgn.zst",
+                "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-01.pgn.zst",
+                "format": "PGN_ZSTD"
+            }
+        ]
+    },
+    "retrievedAt": "2026-10-02T14:26:55.272Z",
+    "inputs": [
+        {
+            "path": "lichess-broadcast-2020-01/broadcast.pgn.zst",
+            "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-01.pgn.zst",
+            "bytes": 628586,
+            "sha256": "9461382d6933dedfbe7bb3de2ac139066d8d8657f2070cb11d59c7686f00f47e",
+            "decodedPath": "lichess-broadcast-2020-01/broadcast.pgn",
+            "decodedBytes": 4147031,
+            "decodedSha256": "73d7e5907477d4bbacc8a088101d2f2e35f1c3e019cfc291b71cb4b1df6c7f08"
+        }
+    ],
+    "coverage": {
+        "inputRecords": 952,
+        "acceptedRecords": 857,
+        "duplicates": 0,
+        "quarantined": 95,
+        "families": 0,
+        "distinctNames": 0,
+        "distinctPositions": 66046,
+        "transposedPositions": 0,
+        "minPlies": 1,
+        "maxPlies": 253,
+        "gamePlies": 75073,
+        "gamesMatchedToTaxonomy": 857,
+        "unresolvedPlayers": 328
+    },
+    "files": [
+        {
+            "name": "openings.jsonl",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "name": "games.jsonl",
+            "bytes": 3838438,
+            "sha256": "7c49bd88f5363cac15a99072803f95e1aeb5d48e04ab5058b6723cd90637b680"
+        },
+        {
+            "name": "issues.jsonl",
+            "bytes": 29487,
+            "sha256": "b3da9b41b41e624c6bfb966ad1f6d64835e20c71cdb08dfaeda5b42f0598be9d"
+        },
+        {
+            "name": "ATTRIBUTION.txt",
+            "bytes": 644,
+            "sha256": "206fd8b356dbf02e8daa2ad939aae75fa5bbe0bcfbee8f1df8353b002a17c6ab"
+        }
+    ],
+    "limitations": [
+        "Entire bounded January 2020 official broadcast export, not a representative master population, selected GM roster or complete career archive. Every input record receives an accepted, duplicate or quarantine disposition. Acquisition checksum checked against the provider's broadcast sha256sums.txt on 2026-10-02.",
+        "Names and legally replayed scores are not reviewed teaching, engine analysis or winning promises.",
+        "Source metadata is reported, not independently verified. Unresolved names remain source-scoped; no guessed GM aliases.",
+        "Raw annotations/evaluations are retained in source files only, not surfaced as move authority.",
+        "A recorded result and legal complete score do not prove the source did not omit earlier/later moves.",
+        "Data-only pack: the consumer must supply atomic installation, durable storage and reviewed teaching."
+    ],
+    "snapshotLockSha256": "a6785d104d9c737c61dd67d280e532c906ef564b0bff9ac2136a1345f9dfb66f",
+    "dependencies": [
+        {
+            "packId": "lichess-openings-c67912be581f-import-v1",
+            "manifestSha256": "40d2ab2920dafa5c60ce163695c8e0e3fa31cf1cf922a285461aeafcb1f55dc3"
+        }
+    ]
+}

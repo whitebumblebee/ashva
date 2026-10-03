@@ -1,0 +1,8 @@
+Lichess official broadcasts, January 2020
+Lichess and the original broadcast contributors; individual broadcast/game URLs retained in each record
+Source: https://database.lichess.org/#broadcasts
+Revision: 2020-01-snapshot
+License: CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+Evidence: https://database.lichess.org/#broadcasts
+Changes: Canonical SAN/UCI and metadata normalization. Derived scores omit comments, clocks, evaluations, NAGs and alternate annotations; original raw export retained. Derived game data remains CC BY-SA 4.0.
+Raw sources retained under content/raw/lichess-broadcast-2020-01/. No endorsement implied.

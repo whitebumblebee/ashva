@@ -8,6 +8,6 @@ import kotlinx.coroutines.Dispatchers
 fun createAndroidLearningDatabase(context: Context, databaseName: String = "opening-lab.db"): LearningDatabase = Room.databaseBuilder<LearningDatabase>(
     context.applicationContext, context.getDatabasePath(databaseName).absolutePath)
     .setDriver(BundledSQLiteDriver()).setQueryCoroutineContext(Dispatchers.IO)
-    .addMigrations(LearningDatabase.MIGRATION_1_2).build()
+    .addMigrations(LearningDatabase.MIGRATION_1_2, LearningDatabase.MIGRATION_2_3, LearningDatabase.MIGRATION_3_4, LearningDatabase.MIGRATION_4_5, LearningDatabase.MIGRATION_5_6).build()
 
 fun createAndroidLearningStore(context: Context): LearningStore = RoomLearningStore(createAndroidLearningDatabase(context))

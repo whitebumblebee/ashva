@@ -26,6 +26,36 @@ data class AttemptEntity(@PrimaryKey val id: String, val lessonId: String, val p
 data class RepertoireEntity(@PrimaryKey val lessonId: String, val payload: String)
 @Entity(tableName = "annotations", primaryKeys = ["packId", "annotationId"])
 data class AnnotationEntity(val packId: String, val annotationId: String, val recordId: String, val status: String, val sourceId: String, val payload: String)
+@Entity(tableName = "repertoire_policy_versions", primaryKeys = ["id", "revision"], indices = [Index("lessonId")])
+data class RepertoirePolicyEntity(val id: String, val revision: Int, val lessonId: String, val payload: String, val updatedAt: Long)
+@Entity(tableName = "active_repertoire_policies")
+data class ActiveRepertoirePolicyEntity(@PrimaryKey val id: String, val revision: Int)
+@Entity(tableName = "repertoire_set_versions", primaryKeys = ["id", "revision"])
+data class RepertoireSetEntity(val id: String, val revision: Int, val payload: String, val updatedAt: Long)
+@Entity(tableName = "active_repertoire_sets")
+data class ActiveRepertoireSetEntity(@PrimaryKey val id: String, val revision: Int)
+
+@Entity(tableName = "followed_players")
+data class FollowedPlayerEntity(@PrimaryKey val id: String, val payload: String)
+@Entity(tableName = "private_games")
+data class PrivateGameEntity(@PrimaryKey val id: String, val payload: String, val importedAt: Long)
+
+@Entity(tableName = "recall_cards", indices = [Index("dueAt")])
+data class RecallCardEntity(@PrimaryKey val id: String, val target: String, val state: String,
+    val dueAt: Long, val lastAt: Long?, val spacedSuccesses: Int)
+@Entity(tableName = "recall_scopes")
+data class RecallScopeEntity(@PrimaryKey val id: String, val payload: String)
+@Entity(tableName = "active_recall_scopes")
+data class ActiveRecallScopeEntity(@PrimaryKey val groupId: String, val scopeId: String)
+@Entity(tableName = "recall_scope_cards", primaryKeys = ["scopeId", "cardId"], indices = [Index("cardId")])
+data class RecallScopeCardEntity(val scopeId: String, val cardId: String, val context: String)
+@Entity(tableName = "recall_events", indices = [Index("cardId")])
+data class RecallEventEntity(@PrimaryKey val id: String, val cardId: String, val grade: String, val recordedAt: Long, val payload: String)
+@Entity(tableName = "study_views")
+data class StudyViewEntity(@PrimaryKey val id: String, val scopeId: String, val recordedAt: Long)
+data class RecallSummaryRow(val payload: String, val total: Int, val introduced: Int, val established: Int, val due: Int, val nextDueAt: Long?)
+data class RecallCardRow(val target: String, val state: String, val context: String)
+data class TotalsRow(val attempts: Int, val unaided: Int, val assisted: Int, val notRecalled: Int, val legacyUngraded: Int, val studyViews: Int)
 
 data class AvailabilityRow(val sourceId: String, val requestedPackId: String, val state: String, val error: String?, val activePackId: String?)
 
@@ -51,16 +81,66 @@ interface LearningDao {
     @Query("SELECT payload FROM repertoires ORDER BY lessonId") suspend fun repertoires(): List<String>
     @Query("SELECT r.payload FROM content_records r JOIN active_packs a ON r.packId = a.packId WHERE r.kind = 'GAME' AND r.recordId = :id LIMIT 1")
     suspend fun game(id: String): String?
+    @Query("SELECT payload FROM content_records WHERE kind = 'GAME' AND packId = :packId AND recordId = :id")
+    suspend fun gameInPack(packId: String, id: String): String?
+    @Query("SELECT payload FROM followed_players ORDER BY id") fun followedPlayers(): Flow<List<String>>
+    @Upsert suspend fun follow(value: FollowedPlayerEntity)
+    @Query("DELETE FROM followed_players WHERE id = :id") suspend fun unfollow(id: String)
+    @Query("SELECT payload FROM private_games ORDER BY importedAt DESC, id") fun privateGames(): Flow<List<String>>
+    @Query("SELECT payload FROM private_games WHERE id = :id") suspend fun privateGame(id: String): String?
+    @Query("SELECT COUNT(*) FROM private_games") suspend fun privateGameCount(): Int
+    @Query("SELECT COALESCE(SUM(LENGTH(CAST(payload AS BLOB))), 0) FROM private_games") suspend fun privateGameBytes(): Long
+    @Insert suspend fun privateGame(value: PrivateGameEntity)
     @Query("SELECT * FROM bookmarks ORDER BY updatedAt DESC, lessonId LIMIT 1") suspend fun latestBookmark(): BookmarkEntity?
     @Upsert suspend fun bookmark(value: BookmarkEntity)
     @Insert suspend fun attempt(value: AttemptEntity)
     @Query("SELECT payload FROM attempts WHERE lessonId = :lessonId ORDER BY recordedAt, id") suspend fun attempts(lessonId: String): List<String>
     @Upsert suspend fun repertoire(value: RepertoireEntity)
+    @Query("SELECT p.* FROM repertoire_policy_versions p JOIN active_repertoire_policies a ON p.id = a.id AND p.revision = a.revision ORDER BY p.updatedAt DESC, p.id")
+    fun repertoirePolicies(): Flow<List<RepertoirePolicyEntity>>
+    @Query("SELECT p.* FROM repertoire_policy_versions p JOIN active_repertoire_policies a ON p.id = a.id AND p.revision = a.revision WHERE p.id = :id")
+    suspend fun currentPolicy(id: String): RepertoirePolicyEntity?
+    @Query("SELECT * FROM repertoire_policy_versions WHERE id = :id AND revision = :revision")
+    suspend fun policyVersion(id: String, revision: Int): RepertoirePolicyEntity?
+    @Insert suspend fun policy(value: RepertoirePolicyEntity)
+    @Upsert suspend fun activatePolicy(value: ActiveRepertoirePolicyEntity)
+    @Query("SELECT s.* FROM repertoire_set_versions s JOIN active_repertoire_sets a ON s.id = a.id AND s.revision = a.revision ORDER BY s.updatedAt DESC, s.id")
+    fun repertoireSets(): Flow<List<RepertoireSetEntity>>
+    @Query("SELECT s.* FROM repertoire_set_versions s JOIN active_repertoire_sets a ON s.id = a.id AND s.revision = a.revision WHERE s.id = :id")
+    suspend fun currentSet(id: String): RepertoireSetEntity?
+    @Query("SELECT * FROM repertoire_set_versions WHERE id = :id AND revision = :revision")
+    suspend fun setVersion(id: String, revision: Int): RepertoireSetEntity?
+    @Insert suspend fun repertoireSet(value: RepertoireSetEntity)
+    @Upsert suspend fun activateSet(value: ActiveRepertoireSetEntity)
+    @Query("SELECT s.payload, COUNT(c.id) AS total, COALESCE(SUM(c.lastAt IS NOT NULL),0) AS introduced, COALESCE(SUM(c.spacedSuccesses >= 3 AND c.dueAt > :at),0) AS established, COALESCE(SUM(c.dueAt <= :at),0) AS due, MIN(CASE WHEN c.dueAt > :at THEN c.dueAt END) AS nextDueAt FROM recall_scopes s JOIN active_recall_scopes a ON a.scopeId = s.id JOIN recall_scope_cards m ON m.scopeId = s.id JOIN recall_cards c ON c.id = m.cardId GROUP BY s.id ORDER BY s.id")
+    fun recallScopes(at: Long): Flow<List<RecallSummaryRow>>
+    @Query("SELECT (SELECT COUNT(*) FROM attempts) AS attempts, (SELECT COUNT(*) FROM recall_events WHERE grade = 'UNAIDED') AS unaided, (SELECT COUNT(*) FROM recall_events WHERE grade = 'ASSISTED') AS assisted, (SELECT COUNT(*) FROM recall_events WHERE grade = 'NOT_RECALLED') AS notRecalled, (SELECT COUNT(*) FROM attempts a WHERE NOT EXISTS (SELECT 1 FROM recall_events e WHERE e.id = a.id)) AS legacyUngraded, (SELECT COUNT(*) FROM study_views) AS studyViews")
+    fun learningTotals(): Flow<TotalsRow>
+    @Query("SELECT c.target, c.state, m.context FROM recall_cards c JOIN recall_scope_cards m ON m.cardId = c.id WHERE m.scopeId = :scopeId AND c.dueAt <= :at ORDER BY c.dueAt, c.id LIMIT :limit")
+    suspend fun recallCards(scopeId: String, at: Long, limit: Int): List<RecallCardRow>
+    @Query("SELECT c.target, c.state, m.context FROM recall_cards c JOIN recall_scope_cards m ON m.cardId = c.id WHERE m.scopeId = :scopeId AND c.id = :cardId")
+    suspend fun scopedRecallCard(scopeId: String, cardId: String): RecallCardRow?
+    @Query("SELECT * FROM recall_cards WHERE id = :id") suspend fun recallCard(id: String): RecallCardEntity?
+    @Query("SELECT * FROM recall_events WHERE id = :id") suspend fun recallEvent(id: String): RecallEventEntity?
+    @Query("SELECT * FROM recall_scopes WHERE id = :id") suspend fun recallScope(id: String): RecallScopeEntity?
+    @Query("SELECT * FROM recall_scope_cards WHERE scopeId = :scopeId AND cardId = :cardId") suspend fun recallMembership(scopeId: String, cardId: String): RecallScopeCardEntity?
+    @Query("SELECT COUNT(*) FROM recall_cards") suspend fun recallCardCount(): Int
+    @Query("SELECT COUNT(*) FROM recall_scopes") suspend fun recallScopeCount(): Int
+    @Query("SELECT * FROM study_views WHERE id = :id") suspend fun studyView(id: String): StudyViewEntity?
+    @Insert suspend fun recallScope(value: RecallScopeEntity)
+    @Insert suspend fun recallMemberships(values: List<RecallScopeCardEntity>)
+    @Upsert suspend fun recallCard(value: RecallCardEntity)
+    @Upsert suspend fun activateRecallScope(value: ActiveRecallScopeEntity)
+    @Insert suspend fun recallEvent(value: RecallEventEntity)
+    @Insert suspend fun studyView(value: StudyViewEntity)
 }
 
 @Database(entities = [PackEntity::class, ActivePackEntity::class, InstallJobEntity::class,
     ContentRecordEntity::class, PositionEntity::class, BookmarkEntity::class, AttemptEntity::class,
-    RepertoireEntity::class, AnnotationEntity::class], version = 2, exportSchema = true)
+    RepertoireEntity::class, AnnotationEntity::class, RepertoirePolicyEntity::class,
+    ActiveRepertoirePolicyEntity::class, RepertoireSetEntity::class, ActiveRepertoireSetEntity::class,
+    FollowedPlayerEntity::class, PrivateGameEntity::class, RecallCardEntity::class, RecallScopeEntity::class,
+    ActiveRecallScopeEntity::class, RecallScopeCardEntity::class, RecallEventEntity::class, StudyViewEntity::class], version = 6, exportSchema = true)
 @ConstructedBy(LearningDatabaseConstructor::class)
 abstract class LearningDatabase : RoomDatabase() {
     abstract fun learningDao(): LearningDao
@@ -69,6 +149,38 @@ abstract class LearningDatabase : RoomDatabase() {
         val MIGRATION_1_2 = object : Migration(1, 2) {
             override fun migrate(connection: SQLiteConnection) {
                 connection.execSQL("ALTER TABLE packs ADD COLUMN notices TEXT NOT NULL DEFAULT ''")
+            }
+        }
+        val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(connection: SQLiteConnection) {
+                connection.execSQL("CREATE TABLE IF NOT EXISTS repertoire_policy_versions (id TEXT NOT NULL, revision INTEGER NOT NULL, lessonId TEXT NOT NULL, payload TEXT NOT NULL, updatedAt INTEGER NOT NULL, PRIMARY KEY(id, revision))")
+                connection.execSQL("CREATE INDEX IF NOT EXISTS index_repertoire_policy_versions_lessonId ON repertoire_policy_versions (lessonId)")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS active_repertoire_policies (id TEXT NOT NULL, revision INTEGER NOT NULL, PRIMARY KEY(id))")
+            }
+        }
+        val MIGRATION_3_4 = object : Migration(3, 4) {
+            override fun migrate(connection: SQLiteConnection) {
+                connection.execSQL("CREATE TABLE IF NOT EXISTS repertoire_set_versions (id TEXT NOT NULL, revision INTEGER NOT NULL, payload TEXT NOT NULL, updatedAt INTEGER NOT NULL, PRIMARY KEY(id, revision))")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS active_repertoire_sets (id TEXT NOT NULL, revision INTEGER NOT NULL, PRIMARY KEY(id))")
+            }
+        }
+        val MIGRATION_4_5 = object : Migration(4, 5) {
+            override fun migrate(connection: SQLiteConnection) {
+                connection.execSQL("CREATE TABLE IF NOT EXISTS followed_players (id TEXT NOT NULL, payload TEXT NOT NULL, PRIMARY KEY(id))")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS private_games (id TEXT NOT NULL, payload TEXT NOT NULL, importedAt INTEGER NOT NULL, PRIMARY KEY(id))")
+            }
+        }
+        val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(connection: SQLiteConnection) {
+                connection.execSQL("CREATE TABLE IF NOT EXISTS recall_cards (id TEXT NOT NULL, target TEXT NOT NULL, state TEXT NOT NULL, dueAt INTEGER NOT NULL, lastAt INTEGER, spacedSuccesses INTEGER NOT NULL, PRIMARY KEY(id))")
+                connection.execSQL("CREATE INDEX IF NOT EXISTS index_recall_cards_dueAt ON recall_cards (dueAt)")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS recall_scopes (id TEXT NOT NULL, payload TEXT NOT NULL, PRIMARY KEY(id))")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS active_recall_scopes (groupId TEXT NOT NULL, scopeId TEXT NOT NULL, PRIMARY KEY(groupId))")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS recall_scope_cards (scopeId TEXT NOT NULL, cardId TEXT NOT NULL, context TEXT NOT NULL, PRIMARY KEY(scopeId, cardId))")
+                connection.execSQL("CREATE INDEX IF NOT EXISTS index_recall_scope_cards_cardId ON recall_scope_cards (cardId)")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS recall_events (id TEXT NOT NULL, cardId TEXT NOT NULL, grade TEXT NOT NULL, recordedAt INTEGER NOT NULL, payload TEXT NOT NULL, PRIMARY KEY(id))")
+                connection.execSQL("CREATE INDEX IF NOT EXISTS index_recall_events_cardId ON recall_events (cardId)")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS study_views (id TEXT NOT NULL, scopeId TEXT NOT NULL, recordedAt INTEGER NOT NULL, PRIMARY KEY(id))")
             }
         }
     }

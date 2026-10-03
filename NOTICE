@@ -8,6 +8,10 @@ under the Apache License, Version 2.0. See LICENSE for the full terms.
 Separately licensed material retains its own terms and attribution:
 - Lichess opening taxonomy, including raw exports and derived packs: CC0-1.0.
 - Lichess broadcast exports and derived game data: CC-BY-SA-4.0.
+- Separate Stockfish 19 executables, source and NNUE: GPL-3.0-or-later,
+  copyright the Stockfish developers; standard UCI, not linked Ashva code.
+- The build-only Stockfish Makefile patch retains GPL-3.0-or-later terms;
+  static libc++ retains its upstream LLVM exception/licenses/notices.
 - Vendored Relay skill and CLI: MIT, with its own copyright/license notice.
 - Third-party dependencies and the Gradle wrapper: their upstream licenses
   and notices, not relicensed by Ashva.

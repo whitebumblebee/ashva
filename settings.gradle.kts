@@ -18,3 +18,4 @@ rootProject.name = "Ashva"
 include(":androidApp")
 include(":shared")
 include(":contentTools")
+include(":contentService")

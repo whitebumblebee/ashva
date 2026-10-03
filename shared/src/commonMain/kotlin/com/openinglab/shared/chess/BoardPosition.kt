@@ -49,6 +49,9 @@ data class BoardPosition(
         return applyUnchecked(move, recordHistory = true)
     }
 
+    /** Not a public move API: notation calls this only after membership in THIS board's legal list. */
+    internal fun advanceKnownLegal(move: ChessMove): BoardPosition = applyUnchecked(move, recordHistory = true)
+
     fun isInCheck(color: PieceColor = sideToMove): Boolean {
         val king = pieces.entries.singleOrNull { it.value == Piece(color, PieceType.KING) }?.key
             ?: return true
@@ -57,17 +60,24 @@ data class BoardPosition(
 
     /** Attacks, unlike legal moves, include pinned pieces and pawn diagonals on empty squares. */
     fun isSquareAttacked(target: String, by: PieceColor): Boolean = pieces.any { (from, piece) ->
-        if (piece.color != by) false else {
-            val df = file(target) - file(from)
-            val dr = rank(target) - rank(from)
-            when (piece.type) {
-                PieceType.PAWN -> abs(df) == 1 && dr == if (by == PieceColor.WHITE) 1 else -1
-                PieceType.KNIGHT -> abs(df) * abs(dr) == 2
-                PieceType.KING -> maxOf(abs(df), abs(dr)) == 1
-                PieceType.BISHOP -> abs(df) == abs(dr) && df != 0 && clearRay(from, target)
-                PieceType.ROOK -> ((df == 0) xor (dr == 0)) && clearRay(from, target)
-                PieceType.QUEEN -> ((abs(df) == abs(dr) && df != 0) || ((df == 0) xor (dr == 0))) && clearRay(from, target)
-            }
+        piece.color == by && attacksSquare(from, piece, target)
+    }
+
+    /** Geometric attackers include pinned pieces, exactly like isSquareAttacked; not legal captures. */
+    fun attackersOf(target: String, by: PieceColor): List<String> = pieces.entries
+        .filter { (from, piece) -> piece.color == by && attacksSquare(from, piece, target) }
+        .map { it.key }.sorted()
+
+    private fun attacksSquare(from: String, piece: Piece, target: String): Boolean {
+        val df = file(target) - file(from)
+        val dr = rank(target) - rank(from)
+        return when (piece.type) {
+            PieceType.PAWN -> abs(df) == 1 && dr == if (piece.color == PieceColor.WHITE) 1 else -1
+            PieceType.KNIGHT -> abs(df) * abs(dr) == 2
+            PieceType.KING -> maxOf(abs(df), abs(dr)) == 1
+            PieceType.BISHOP -> abs(df) == abs(dr) && df != 0 && clearRay(from, target)
+            PieceType.ROOK -> ((df == 0) xor (dr == 0)) && clearRay(from, target)
+            PieceType.QUEEN -> ((abs(df) == abs(dr) && df != 0) || ((df == 0) xor (dr == 0))) && clearRay(from, target)
         }
     }
 
@@ -98,7 +108,13 @@ data class BoardPosition(
     fun toFen(): String = "${placement()} ${turn()} ${rights()} ${enPassantTarget ?: "-"} $halfmoveClock $fullmoveNumber"
 
     private fun legalEnPassant(): String? = enPassantTarget?.takeIf { target ->
-        legalMoves().any { it.to == target && pieceAt(it.from)?.type == PieceType.PAWN && it.from[0] != target[0] }
+        val sourceRank = rank(target) - if (sideToMove == PieceColor.WHITE) 1 else -1
+        // Only the two adjacent pawns can capture here; still use the full king-safety check.
+        listOf(-1, 1).any { delta ->
+            square(file(target) + delta, sourceRank)?.let { from ->
+                pieceAt(from) == Piece(sideToMove, PieceType.PAWN) && isLegal(ChessMove(from, target))
+            } == true
+        }
     }
 
     private fun applyUnchecked(move: ChessMove, recordHistory: Boolean): BoardPosition {

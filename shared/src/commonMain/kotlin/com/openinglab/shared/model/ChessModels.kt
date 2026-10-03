@@ -59,6 +59,16 @@ data class Variation(
     val identifiesOpening: Boolean = true,
     val whiteIdea: String = "",
     val blackIdea: String = "",
+    val authoredContinuation: Boolean = false,
+)
+
+data class TeachingCoverage(
+    val version: String,
+    val sourceRoutes: Int,
+    val authoredRoutes: Int,
+    val familySpecificGuide: Boolean,
+    val minPlies: Int,
+    val maxPlies: Int,
 )
 
 data class HistoricalGame(
@@ -74,6 +84,11 @@ enum class OpeningSide { WHITE, BLACK, BOTH }
 
 enum class Difficulty { FOUNDATION, INTERMEDIATE, ADVANCED }
 
+data class OpeningProvenance(
+    val packId: String, val revision: String, val title: String, val url: String,
+    val license: String, val attribution: String, val minPlies: Int, val maxPlies: Int,
+)
+
 data class Opening(
     val id: String,
     val name: String,
@@ -87,8 +102,10 @@ data class Opening(
     val progress: Int,
     val keyIdeas: List<String>,
     val variations: List<Variation>,
-    val historicalGame: HistoricalGame,
+    val historicalGame: HistoricalGame? = null,
     val recognitionPly: Int = 2,
+    val provenance: OpeningProvenance? = null,
+    val teaching: TeachingCoverage? = null,
 ) {
     val mainLine: Variation get() = variations.first()
     val lessonCount: Int get() = variations.sumOf { it.steps.size / 2 }

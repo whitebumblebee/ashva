@@ -14,10 +14,13 @@ android {
         applicationId = "com.openinglab.app"
         minSdk = 26
         targetSdk = 37
-        versionCode = 4
-        versionName = "0.3.1"
+        versionCode = 16
+        versionName = "0.15.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // Process isolation prevents one long test JVM retaining every synthetic course/engine.
+        // Do not clear package data: cold-restoration tests explicitly own their UUID databases.
+        testInstrumentationRunnerArguments["clearPackageData"] = "false"
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -25,6 +28,7 @@ android {
         compose = true
         buildConfig = true
     }
+    testOptions { execution = "ANDROIDX_TEST_ORCHESTRATOR" }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -33,8 +37,20 @@ android {
 
     packaging {
         resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        jniLibs.useLegacyPackaging = true // OS extracts the separate executable into its read-only native directory.
+        jniLibs.keepDebugSymbols += "**/libstockfish.so" // Never rewrite the checksummed engine bytes.
+    }
+    sourceSets.getByName("main") {
+        jniLibs.directories.add(rootProject.file(".engine-cache/prepared/jniLibs").path)
+        assets.directories.add(rootProject.file(".engine-cache/prepared/assets").path)
     }
 }
+
+val verifyPreparedEngine = tasks.register<Exec>("verifyPreparedEngine") {
+    workingDir(rootProject.projectDir)
+    commandLine("node", "scripts/prepare-stockfish.mjs", "--verify")
+}
+tasks.named("preBuild") { dependsOn(verifyPreparedEngine) }
 
 // Only reviewed immutable packs, not raw archives or every future content directory.
 abstract class ReviewedContentAssets : Sync() {
@@ -44,6 +60,7 @@ val packagedContent = tasks.register<ReviewedContentAssets>("packageReviewedCont
     from(rootProject.layout.projectDirectory.dir("content/packs")) {
         include("lichess-openings-c67912be581f-import-v1/**")
         include("lichess-broadcast-2020-04-2020-04-snap-import-v1/**")
+        include("lichess-broadcast-2020-01-2020-01-snap-import-v1/**")
     }
     outputDirectory.set(layout.buildDirectory.dir("generated/reviewedAssets"))
     into(outputDirectory.dir("content"))
@@ -62,6 +79,7 @@ dependencies {
     implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.kotlinx.serialization.core)
+    implementation(libs.kotlinx.serialization.json)
 
     val composeBom = platform(libs.androidx.compose.bom)
     implementation(composeBom)
@@ -78,5 +96,7 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.test.junit)
+    androidTestUtil(libs.androidx.test.orchestrator)
     androidTestImplementation(libs.androidx.room.runtime)
+    androidTestImplementation(libs.kotlinx.serialization.json)
 }

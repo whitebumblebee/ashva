@@ -9,6 +9,8 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
+import androidx.compose.ui.test.performScrollToNode
+import androidx.compose.ui.test.performScrollToKey
 import androidx.lifecycle.ViewModelProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -27,14 +29,14 @@ class PublicAlphaTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
 
-    @Test fun brandingAndSampleStatisticsAreExplicit() {
+    @Test fun brandingAndRealStatisticsAreExplicit() {
         rule.onNodeWithText("ASHVA · ALPHA").assertIsDisplayed()
         rule.onNodeWithText("Profile").performClick()
-        rule.onNodeWithText("Demo profile · not a signed-in account", ignoreCase = true).assertIsDisplayed()
-        rule.onNodeWithText("Learner").assertIsDisplayed()
-        rule.onNodeWithText("Sample statistics and goals below are design previews, not your rating, recall or study history.").assertIsDisplayed()
+        rule.onNodeWithText("Local learner · no signed-in account", ignoreCase = true).assertIsDisplayed()
+        rule.onNodeWithText("Your learning history").assertIsDisplayed()
+        rule.onNodeWithText("Real stored events, not a sample rating, estimated recall percentage or invented streak.").assertIsDisplayed()
         rule.onNodeWithText("Review").performClick()
-        rule.onNodeWithText("Review preview · sample data", ignoreCase = true).assertIsDisplayed()
+        rule.onNodeWithText("Your local recall", ignoreCase = true).assertIsDisplayed()
     }
 
     @Test fun labelAndBackupPolicyMatchThePublicPrivacyNotice() {
@@ -42,6 +44,7 @@ class PublicAlphaTest {
         assertEquals("Ashva", context.applicationInfo.loadLabel(context.packageManager).toString())
         assertFalse(context.applicationInfo.flags and ApplicationInfo.FLAG_ALLOW_BACKUP != 0)
         rule.onNodeWithText("Profile").performClick()
+        rule.onNodeWithTag("learner-profile-screen").performScrollToKey("app-version")
         rule.onNodeWithText("Ashva ${BuildConfig.VERSION_NAME} · Android alpha").performScrollTo().assertIsDisplayed()
     }
 
@@ -49,8 +52,13 @@ class PublicAlphaTest {
         rule.runOnIdle { vm.selectTab(MainTab.LEARN) }
         shot("home")
         rule.onNodeWithText("Explore").performClick()
-        rule.onNodeWithText("Ruy López").performScrollTo().performClick()
+        rule.waitUntil(120_000) { vm.uiState.value.teachingOpenings.isNotEmpty() }
+        rule.runOnIdle { vm.updateSearch("Ruy"); vm.selectDifficulty("All") }
+        rule.waitForIdle()
+        rule.onNodeWithTag("opening-list").performScrollToNode(androidx.compose.ui.test.hasTestTag("opening-${vm.primaryOpeningId("ruy-lopez")}"))
+        rule.onNodeWithTag("opening-${vm.primaryOpeningId("ruy-lopez")}").performScrollTo().performClick()
         rule.onNodeWithText("Play White").performScrollTo().performClick()
+        rule.waitUntil(60_000) { vm.uiState.value.trainer != null && !vm.uiState.value.lessonLoading }
         rule.onNodeWithTag("study-mode").performClick()
         rule.runOnIdle { vm.jumpTrainer(5) }
         assertEquals(5, vm.uiState.value.trainer?.ply)

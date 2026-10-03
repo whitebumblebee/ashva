@@ -3,33 +3,47 @@ package com.openinglab.shared.chess
 import com.openinglab.shared.model.ChessMove
 import com.openinglab.shared.model.PieceType
 
-fun BoardPosition.san(move: ChessMove): String {
+data class SanTransition(val move: ChessMove, val san: String, val position: BoardPosition)
+
+/** One checked legal transition supplies notation AND the resulting history-aware position. */
+fun BoardPosition.sanAndPlay(move: ChessMove): SanTransition {
     val legal = legalMoves()
     require(move in legal) { "Cannot annotate illegal move ${move.uci}" }
-    return formatSan(move, legal)
+    return annotateLegal(move, legal)
 }
 
+fun BoardPosition.san(move: ChessMove): String = sanAndPlay(move).san
+
 /** Import tolerates zero-style castling and annotation glyphs, but not ambiguous/illegal moves. */
-fun BoardPosition.parseSan(text: String): ChessMove {
+fun BoardPosition.parseSan(text: String): ChessMove = parseSanAndPlay(text).move
+
+fun BoardPosition.parseSanAndPlay(text: String): SanTransition {
     val token = text.trim().replace('0', 'O').replace(Regex("[!?]+$"), "")
     val base = token.trimEnd('+', '#')
     val legal = legalMoves()
+    val target = Regex("[a-h][1-8]").findAll(base).lastOrNull()?.value
     val candidates = legal.filter { move ->
-        // Destination filtering avoids evaluating every unrelated candidate's resulting position.
-        val target = Regex("[a-h][1-8]").findAll(base).lastOrNull()?.value
-        (base.startsWith("O-O") || target == move.to) && formatSan(move, legal).trimEnd('+', '#') == base
+        // Match canonical base notation without replaying every unrelated candidate.
+        (base.startsWith("O-O") || target == move.to) && formatSanBase(move, legal) == base
     }
     require(candidates.size == 1) { "Illegal or ambiguous SAN '$text' in ${toFen()}" }
-    val move = candidates.single()
-    if (token.endsWith('#')) require(formatSan(move, legal).endsWith('#')) { "Incorrect mate suffix: $text" }
-    if (token.endsWith('+')) require(apply(move).isInCheck()) { "Incorrect check suffix: $text" }
-    return move
+    val transition = annotateLegal(candidates.single(), legal)
+    if (token.endsWith('#')) require(transition.san.endsWith('#')) { "Incorrect mate suffix: $text" }
+    if (token.endsWith('+')) require(transition.position.isInCheck()) { "Incorrect check suffix: $text" }
+    return transition
 }
 
-private fun BoardPosition.formatSan(move: ChessMove, legal: List<ChessMove>): String {
+private fun BoardPosition.annotateLegal(move: ChessMove, legal: List<ChessMove>): SanTransition {
+    // Both callers constructed `legal` from this exact immutable position and checked membership.
+    val next = advanceKnownLegal(move)
+    val suffix = if (!next.isInCheck()) "" else if (next.legalMoves().isEmpty()) "#" else "+"
+    return SanTransition(move, formatSanBase(move, legal) + suffix, next)
+}
+
+private fun BoardPosition.formatSanBase(move: ChessMove, legal: List<ChessMove>): String {
     val piece = pieces.getValue(move.from)
     val capture = pieces[move.to] != null || (piece.type == PieceType.PAWN && move.from[0] != move.to[0])
-    val base = if (piece.type == PieceType.KING && kotlin.math.abs(move.from[0] - move.to[0]) == 2) {
+    return if (piece.type == PieceType.KING && kotlin.math.abs(move.from[0] - move.to[0]) == 2) {
         if (move.to[0] == 'g') "O-O" else "O-O-O"
     } else buildString {
         if (piece.type != PieceType.PAWN) {
@@ -45,6 +59,4 @@ private fun BoardPosition.formatSan(move: ChessMove, legal: List<ChessMove>): St
         append(move.to)
         move.promotion?.let { append('='); append(piece.copy(type = it).fenChar().uppercaseChar()) }
     }
-    val next = apply(move)
-    return base + if (!next.isInCheck()) "" else if (next.legalMoves().isEmpty()) "#" else "+"
 }

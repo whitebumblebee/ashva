@@ -61,7 +61,7 @@ class OfflineLearningTest {
         }
         rule.waitUntil(10_000) { first.uiState.value.persistenceStatus == "Saved for offline resume" }
         val before = requireNotNull(first.uiState.value.trainer)
-        rule.runOnIdle { firstOwner.clear() }
+        clearTestViewModels(firstOwner) { rule.runOnIdle(it) }
         db.close()
         val reopened = createAndroidLearningDatabase(context, name)
         try {
@@ -81,7 +81,7 @@ class OfflineLearningTest {
             assertEquals("ruy-main", restored.uiState.value.trainer?.replay?.pathId)
             assertEquals("BLACK", runBlocking { RoomLearningStore(reopened).repertoires().single().side })
         } finally {
-            rule.runOnIdle { secondOwner.clear() }
+            clearTestViewModels(secondOwner) { rule.runOnIdle(it) }
             reopened.close()
             context.deleteDatabase(name) // unique test-only file, never the application learning DB
         }

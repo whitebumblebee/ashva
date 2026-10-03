@@ -14,7 +14,11 @@ import kotlinx.serialization.Serializable
     val attribution: String, val rightsReviewedOn: String, val redistributionApproved: Boolean,
     val modifications: String, val coverage: String, val files: List<SourceFile>,
 )
-@Serializable data class SourceConfiguration(val schemaVersion: Int, val sources: List<ContentSource>)
+@Serializable data class SourceConfiguration(
+    val schemaVersion: Int, val sources: List<ContentSource>,
+    val dependencies: List<PackDependency> = emptyList(),
+    val acquisitionSha256: Map<String, String> = emptyMap(),
+)
 @Serializable data class SnapshotFile(
     val path: String, val url: String, val bytes: Long, val sha256: String,
     val decodedPath: String? = null, val decodedBytes: Long? = null, val decodedSha256: String? = null,

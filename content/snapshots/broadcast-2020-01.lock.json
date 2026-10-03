@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "configSha256": "4d4422b1c8891d87cfa80b5971f667057a90f038819f5c4193d1fa2defe9e30d",
+  "retrievedAt": "2026-10-02T14:26:55.272Z",
+  "files": [
+    {
+      "path": "lichess-broadcast-2020-01/broadcast.pgn.zst",
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2020-01.pgn.zst",
+      "bytes": 628586,
+      "sha256": "9461382d6933dedfbe7bb3de2ac139066d8d8657f2070cb11d59c7686f00f47e",
+      "decodedPath": "lichess-broadcast-2020-01/broadcast.pgn",
+      "decodedBytes": 4147031,
+      "decodedSha256": "73d7e5907477d4bbacc8a088101d2f2e35f1c3e019cfc291b71cb4b1df6c7f08"
+    }
+  ]
+}

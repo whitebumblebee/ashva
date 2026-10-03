@@ -1,9 +1,28 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { boundedDownload, retryDelay, sha256, validateConfiguration } from './fetch-content.mjs';
+import { boundedDownload, retryDelay, sha256, snapshotArguments, validateConfiguration } from './fetch-content.mjs';
 import { readFile } from 'node:fs/promises';
 
 const url = 'https://database.lichess.org/broadcast/test.pgn.zst';
+test('additional snapshots cannot alter default paths or escape their namespace', () => {
+  assert.deepEqual(snapshotArguments([]), { record: false, snapshot: undefined,
+    configuration: 'content/sources.json', lock: 'content/snapshots.lock.json' });
+  assert.equal(snapshotArguments(['--snapshot=broadcast-2020-01', '--record-lock']).lock, 'content/snapshots/broadcast-2020-01.lock.json');
+  for (const args of [['--snapshot=../escape'], ['--snapshot='], ['--snapshot=/tmp'], ['--record-lock','--record-lock'],
+      ['--snapshot=a','--snapshot=b'], ['--unknown']]) assert.throws(() => snapshotArguments(args));
+});
+test('dependency and acquisition pins are bounded, unique and refer to configured inputs', async () => {
+  const config = JSON.parse(await readFile(new URL('../content/sources.json', import.meta.url), 'utf8'));
+  const dependency = { packId: 'taxonomy-v1', manifestSha256: 'a'.repeat(64) };
+  const acquisitionSha256 = { 'lichess-openings/a.tsv': 'b'.repeat(64) };
+  assert.doesNotThrow(() => validateConfiguration({ ...config, dependencies: [dependency], acquisitionSha256 }));
+  for (const change of [{ dependencies: [dependency,dependency] }, { dependencies: [{ ...dependency, packId: '../escape' }] },
+      { dependencies: [{ ...dependency, manifestSha256: 'bad' }] }, { acquisitionSha256: { 'unknown/file': 'a'.repeat(64) } },
+      { acquisitionSha256: { 'lichess-openings/a.tsv': 'bad' } }, { acquisitionSha256: [] }])
+    assert.throws(() => validateConfiguration({ ...config, ...change }));
+  const extra = JSON.parse(await readFile(new URL('../content/snapshots/broadcast-2020-01.sources.json', import.meta.url), 'utf8'));
+  assert.doesNotThrow(() => validateConfiguration(extra));
+});
 test('checked-in source configuration is explicitly cleared before acquisition', async () => {
   const config = JSON.parse(await readFile(new URL('../content/sources.json', import.meta.url), 'utf8'));
   assert.doesNotThrow(() => validateConfiguration(config));

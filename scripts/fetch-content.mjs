@@ -9,10 +9,30 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const MAX_DOWNLOAD = 2 * 1024 * 1024;
 const MAX_PGN = 8 * 1024 * 1024;
 export const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
+export function snapshotArguments(args) {
+  if (args.some(arg => arg !== '--record-lock' && !arg.startsWith('--snapshot=')) ||
+      args.filter(arg => arg === '--record-lock').length > 1 || args.filter(arg => arg.startsWith('--snapshot=')).length > 1)
+    throw new Error('Use [--snapshot=<reviewed-name>] [--record-lock]; unknown or duplicate arguments rejected');
+  const snapshot = args.find(arg => arg.startsWith('--snapshot='))?.slice('--snapshot='.length);
+  if (snapshot !== undefined && !/^[a-z0-9][a-z0-9-]{0,63}$/.test(snapshot)) throw new Error('Unsafe snapshot name');
+  return { record: args.includes('--record-lock'), snapshot,
+    configuration: snapshot ? `content/snapshots/${snapshot}.sources.json` : 'content/sources.json',
+    lock: snapshot ? `content/snapshots/${snapshot}.lock.json` : 'content/snapshots.lock.json' };
+}
 export function validateConfiguration(config) {
   if (config.schemaVersion !== 1 || !Array.isArray(config.sources) || !config.sources.length ||
       new Set(config.sources.map(source => source.id)).size !== config.sources.length)
     throw new Error('Invalid source configuration schema or IDs');
+  const dependencies = config.dependencies ?? [];
+  if (!Array.isArray(dependencies) || dependencies.length > 32 ||
+      new Set(dependencies.map(item => item.packId)).size !== dependencies.length ||
+      dependencies.some(item => !/^[a-z0-9-]{1,200}$/.test(item.packId ?? '') || !/^[a-f0-9]{64}$/.test(item.manifestSha256 ?? '')))
+    throw new Error('Invalid immutable taxonomy dependencies');
+  const checksums = config.acquisitionSha256 ?? {};
+  const inputs = new Set(config.sources.flatMap(source => (source.files ?? []).map(file => `${source.id}/${file.name}`)));
+  if (!checksums || Array.isArray(checksums) || typeof checksums !== 'object' ||
+      Object.entries(checksums).some(([path, hash]) => !inputs.has(path) || !/^[a-f0-9]{64}$/.test(hash)))
+    throw new Error('Acquisition checksums must reference exact configured files');
   for (const source of config.sources) {
     const license = { OPENING_TAXONOMY: 'CC0-1.0', BROADCAST_GAMES: 'CC-BY-SA-4.0' }[source.kind];
     if (!license || source.license !== license || source.redistributionApproved !== true ||
@@ -76,10 +96,11 @@ async function atomicNewOrSame(path, bytes) {
 }
 
 async function main() {
-  const record = process.argv.includes('--record-lock');
-  const config = JSON.parse(await readFile(join(root, 'content/sources.json'), 'utf8'));
+  const { record, snapshot, configuration, lock: lockName } = snapshotArguments(process.argv.slice(2));
+  const configurationPath = join(root, configuration);
+  const config = JSON.parse(await readFile(configurationPath, 'utf8'));
   validateConfiguration(config);
-  const lockPath = join(root, 'content/snapshots.lock.json');
+  const lockPath = join(root, lockName);
   let lock;
   try { lock = JSON.parse(await readFile(lockPath, 'utf8')); }
   catch (error) { if (error.code !== 'ENOENT') throw error; }
@@ -93,7 +114,7 @@ async function main() {
     const cooldown = JSON.parse(await readFile(cooldownPath, 'utf8'));
     if (Date.now() < cooldown.until) throw new Error(`Provider cooldown active until ${new Date(cooldown.until).toISOString()}`);
   } catch (error) { if (error.code !== 'ENOENT') throw error; }
-  const result = { schemaVersion: 1, configSha256: sha256(await readFile(join(root, 'content/sources.json'))),
+  const result = { schemaVersion: 1, configSha256: sha256(await readFile(configurationPath)),
     retrievedAt: lock?.retrievedAt ?? new Date().toISOString(), files: [] };
   if (lock && lock.configSha256 !== result.configSha256) throw new Error('Source configuration changed; create a separately reviewed snapshot');
   for (const source of config.sources) for (const file of source.files) {
@@ -119,6 +140,8 @@ async function main() {
       }
     }
     const hash = sha256(bytes);
+    if (config.acquisitionSha256?.[relative] && config.acquisitionSha256[relative] !== hash)
+      throw new Error(`Provider checksum mismatch: ${relative}`);
     if (expected && (expected.sha256 !== hash || expected.bytes !== bytes.length)) throw new Error(`SHA-256/size mismatch: ${relative}`);
     await atomicNewOrSame(path, bytes);
     const item = { path: relative, url: file.url, bytes: bytes.length, sha256: hash };
@@ -135,7 +158,7 @@ async function main() {
     console.log(`Verified ${relative}: ${bytes.length} bytes`);
   }
   if (!lock) await atomicNewOrSame(lockPath, Buffer.from(JSON.stringify(result, null, 2) + '\n'));
-  console.log('Pinned source snapshot ready. Run ./gradlew :contentTools:run --args="import"');
+  console.log(`Pinned source snapshot ready. Run ./gradlew :contentTools:run --args="import${snapshot ? ` ${snapshot}` : ''}"`);
 }
 
 if (import.meta.url === pathToFileURL(resolve(process.argv[1] ?? '')).href)

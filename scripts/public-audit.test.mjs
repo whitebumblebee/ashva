@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { ignoreRules, isIgnored, privacyFindings } from './public-audit.mjs';
+import path from 'node:path';
+import { ignoreRules, isIgnored, privacyFindings, localLinkPublicationRule } from './public-audit.mjs';
 
 test('ignore rules cover generated outputs, nested databases and negation without hiding content', () => {
   const rules = ignoreRules('.kotlin/\n**/build/\n*.db\n.env.*\n!.env.example\n');
@@ -15,6 +16,15 @@ test('root anchors and literal dots are respected', () => {
   assert.equal(isIgnored('nested/local.properties', rules), true);
   assert.equal(isIgnored('localXproperties', rules), false);
   assert.equal(isIgnored('nested/release.jks', rules), true);
+});
+test('engine build caches are excluded without hiding authored engine contracts and notices', async () => {
+  const rules = ignoreRules(await readFile(new URL('../.gitignore', import.meta.url), 'utf8'));
+  assert.equal(isIgnored('.engine-cache/ndk/source.h', rules), true);
+  for (const file of ['engine/stockfish.lock.json', 'engine/disable-git.patch',
+    'scripts/prepare-stockfish.mjs', 'docs/ENGINE_ANALYSIS.md']) assert.equal(isIgnored(file, rules), false);
+  const scanner = await readFile(new URL('../.gitleaks.toml', import.meta.url), 'utf8');
+  assert.ok(scanner.includes(String.raw`(^|/)\.engine-cache/`));
+  assert.equal(scanner.includes(String.raw`(^|/)engine/`), false);
 });
 test('unsupported ignore syntax fails closed', () => {
   assert.throws(() => ignoreRules('[ab].txt'), /Unsupported/);
@@ -32,6 +42,17 @@ test('private paths and credential-bearing URLs are reported without returning v
 });
 test('portable placeholders, public source URLs and chess positions are safe', () => {
   assert.deepEqual(privacyFindings('$ANDROID_HOME/platform-tools/adb\n<project-root>/androidApp\nhttps://database.lichess.org/#broadcasts\nrnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -'), []);
+});
+
+test('local links cannot silently target ignored installs, Git internals or outside files', () => {
+  const root = path.resolve('fixture-project');
+  const rules = ignoreRules('.agents/skills/relay/\n.env.*\n!.env.example\n');
+  assert.equal(localLinkPublicationRule(root, 'LICENSES/README.md', '../.agents/skills/relay/LICENSE', rules), 'local-document-link-not-publishable');
+  assert.equal(localLinkPublicationRule(root, 'README.md', '.git/config', rules), 'local-document-link-not-publishable');
+  assert.equal(localLinkPublicationRule(root, 'README.md', '../outside.md', rules), 'local-document-link-outside-project');
+  assert.equal(localLinkPublicationRule(root, 'README.md', '%zz', rules), 'invalid-local-document-link');
+  assert.equal(localLinkPublicationRule(root, 'LICENSES/README.md', 'Relay-MIT.txt', rules), null);
+  assert.equal(localLinkPublicationRule(root, 'README.md', '.env.example', rules), null);
 });
 
 test('Ashva declares Apache-2.0 with unchanged terms and separate upstream license scopes', async () => {

@@ -122,7 +122,7 @@ fun IdentifierScreen(
                     if (match != null) {
                         MatchCard(match, state) { onOpenMatch(match.id) }
                     } else {
-                        WaitingCard(state)
+                        WaitingCard(state, onOpenMatch)
                     }
                 }
                 Spacer(Modifier.height(22.dp))
@@ -204,11 +204,11 @@ private fun MoveHistory(state: IdentifierUiState) {
 }
 
 @Composable
-private fun WaitingCard(state: IdentifierUiState) {
+private fun WaitingCard(state: IdentifierUiState, onOpenMatch: (String) -> Unit) {
     Column(
         Modifier.fillMaxWidth().background(DeepMoss, RoundedCornerShape(22.dp)).border(1.dp, Divider, RoundedCornerShape(22.dp)).padding(19.dp)
     ) {
-        Eyebrow(if (state.match.kind == OpeningMatchKind.EMPTY) "Ready" else "Offline seed catalog", color = Leaf)
+        Eyebrow(if (state.match.kind == OpeningMatchKind.EMPTY) "Ready" else "Available offline catalogs", color = Leaf)
         Spacer(Modifier.height(5.dp))
         Text(
             when (state.match.kind) {
@@ -224,10 +224,13 @@ private fun WaitingCard(state: IdentifierUiState) {
         Spacer(Modifier.height(4.dp))
         Text(
             if (state.match.kind == OpeningMatchKind.AMBIGUOUS) state.match.candidates.joinToString { it.name }
-                else "Position-based matching handles transpositions. Coverage is still seven seed openings, not a complete book.",
+                else "Position-based matching handles transpositions. Installed taxonomy names cover their recorded endpoint positions, not every intermediate or possible continuation.",
             color = MutedCream,
             style = MaterialTheme.typography.bodySmall,
         )
+        state.match.candidates.forEach { candidate ->
+            TextButton({ onOpenMatch(candidate.id) }) { Text("Explore ${candidate.name}", color = Leaf) }
+        }
     }
 }
 
@@ -246,7 +249,7 @@ private fun MatchCard(opening: Opening, state: IdentifierUiState, onOpen: () -> 
         Text(opening.name, color = Ink, style = MaterialTheme.typography.headlineLarge)
         Text(state.match.variationName ?: opening.family, color = Ink.copy(alpha = .65f), style = MaterialTheme.typography.titleMedium)
         if (state.match.kind == OpeningMatchKind.OUT_OF_BOOK) {
-            Text("Recognized at half-move ${state.match.matchedPly ?: 0}; the current continuation is outside this seed book.", color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodySmall)
+            Text("Recognized at half-move ${state.match.matchedPly ?: 0}; the current continuation is not a named position in the available catalog.", color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodySmall)
         }
         if (state.match.variationNames.size > 1) {
             Text("Possible labels: ${state.match.variationNames.joinToString()}", color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodySmall)
@@ -254,7 +257,7 @@ private fun MatchCard(opening: Opening, state: IdentifierUiState, onOpen: () -> 
         Spacer(Modifier.height(8.dp))
         Text(opening.description, color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodyMedium)
         Spacer(Modifier.height(16.dp))
-        PrimaryAction("Learn this repertoire", onOpen, modifier = Modifier.fillMaxWidth(), icon = Icons.AutoMirrored.Rounded.ArrowForward, color = Ink)
+        PrimaryAction(if (opening.provenance == null) "Learn this repertoire" else "Explore source routes", onOpen, modifier = Modifier.fillMaxWidth(), icon = Icons.AutoMirrored.Rounded.ArrowForward, color = Ink)
     }
 }
 

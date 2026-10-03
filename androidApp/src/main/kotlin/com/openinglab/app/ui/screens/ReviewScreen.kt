@@ -1,103 +1,66 @@
+// SPDX-License-Identifier: Apache-2.0
 package com.openinglab.app.ui.screens
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Check
-import androidx.compose.material.icons.rounded.LocalFireDepartment
-import androidx.compose.material.icons.rounded.Psychology
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
+import com.openinglab.app.ui.RecallUiState
 import com.openinglab.app.ui.components.Eyebrow
-import com.openinglab.app.ui.components.PrimaryAction
-import com.openinglab.app.ui.theme.Cream
-import com.openinglab.app.ui.theme.DeepMoss
-import com.openinglab.app.ui.theme.Divider
-import com.openinglab.app.ui.theme.Gold
-import com.openinglab.app.ui.theme.Ink
-import com.openinglab.app.ui.theme.Leaf
-import com.openinglab.app.ui.theme.Moss
-import com.openinglab.app.ui.theme.MutedCream
+import com.openinglab.app.ui.theme.*
+import java.time.Instant
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
 
 @Composable
-fun ReviewScreen(onStartReview: () -> Unit, modifier: Modifier = Modifier) {
-    LazyColumn(
-        modifier = modifier,
-        contentPadding = androidx.compose.foundation.layout.PaddingValues(20.dp),
-        verticalArrangement = Arrangement.spacedBy(18.dp),
-    ) {
+fun ReviewScreen(state: RecallUiState, onStartReview: (String) -> Unit, modifier: Modifier = Modifier, onRetryRecall: () -> Unit = {}) {
+    var selectedId by rememberSaveable { mutableStateOf<String?>(null) }
+    val selected = state.scopes.firstOrNull { it.scope.id == selectedId } ?: state.scopes.firstOrNull()
+    LazyColumn(modifier.testTag("recall-review-screen"), contentPadding = PaddingValues(20.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         item {
-            Eyebrow("Review preview · sample data")
-            Spacer(Modifier.height(6.dp))
-            Text("Make every move\nstick.", color = Cream, style = MaterialTheme.typography.displayMedium)
-            Spacer(Modifier.height(10.dp))
-            Text("The scheduler is not implemented yet. Counts, dates and recall below are examples. Begin review opens a starter practice lesson, not a personalized queue.", color = MutedCream, style = MaterialTheme.typography.bodyLarge)
+            Eyebrow("Your local recall")
+            Text("Make your moves stick.", color = Cream, style = MaterialTheme.typography.displayMedium)
+            Text("Practice a line or a saved repertoire to add its learner decisions. Review asks one exact-history position at a time. Studying is separate from demonstrating recall.", color = MutedCream)
         }
-        item {
-            Surface(color = Leaf, shape = RoundedCornerShape(26.dp), modifier = Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(22.dp)) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Box(Modifier.size(52.dp).background(Ink.copy(alpha = .12f), RoundedCornerShape(16.dp)), contentAlignment = Alignment.Center) {
-                            Icon(Icons.Rounded.Psychology, null, tint = Ink)
-                        }
-                        Column(Modifier.padding(start = 14.dp).weight(1f)) {
-                            Text("Today's review", color = Ink, style = MaterialTheme.typography.headlineMedium)
-                            Text("5 positions · about 4 minutes", color = Ink.copy(alpha = .65f), style = MaterialTheme.typography.bodyMedium)
-                        }
+        if (state.loading) item { CircularProgressIndicator(Modifier.testTag("recall-loading")) }
+        state.error?.let { error -> item { Text(error, color = Gold, modifier = Modifier.testTag("recall-error")) } }
+        if (state.retryableWrites > 0) item { Button(onRetryRecall, enabled = state.pendingWrites == 0,
+            modifier = Modifier.testTag("retry-recall-saves")) { Text("Retry pending saves (${state.retryableWrites})") } }
+        if (!state.loading && state.scopes.isEmpty()) item {
+            Text("No chosen review scope yet. Open an opening, choose White or Black, and practice; or practice your saved repertoire. Old attempts are retained as ungraded history.", color = Cream, modifier = Modifier.testTag("recall-empty"))
+        }
+        selected?.let { summary -> item {
+            Surface(color = DeepMoss, shape = MaterialTheme.shapes.large, modifier = Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Text(summary.scope.title, color = Leaf, style = MaterialTheme.typography.titleMedium, modifier = Modifier.testTag("recall-selected-scope"))
+                    Text("${summary.due} due or new · ${summary.total} chosen decisions", color = Cream, modifier = Modifier.testTag("recall-due-count"))
+                    Text("${summary.introduced}/${summary.total} attempted · ${summary.established}/${summary.total} established", color = Cream, modifier = Modifier.testTag("recall-progress"))
+                    Text("Established means three due, unaided answers with separated intervals, and not currently overdue. It is not a chess rating, win probability or full-theory mastery. Shared exact prefixes count once within a course; transposed histories stay distinct.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                    summary.nextDueAt?.let {
+                        Text("Next scheduled: ${DateTimeFormatter.ofPattern("d MMM, HH:mm").format(Instant.ofEpochMilli(it).atZone(ZoneId.systemDefault()))}", color = MutedCream, modifier = Modifier.testTag("recall-next-date"))
                     }
-                    Spacer(Modifier.height(22.dp))
-                    PrimaryAction("Begin review", onStartReview, modifier = Modifier.fillMaxWidth(), color = Ink)
+                    Button({ onStartReview(summary.scope.id) }, enabled = summary.due > 0 && !state.loading, modifier = Modifier.testTag("begin-recall-review")) {
+                        Text(if (summary.due > 0) "Review due positions" else "Nothing due in this scope")
+                    }
+                }
+            }
+        } }
+        item { Text("Chosen scopes · exact retained revisions", color = Cream, style = MaterialTheme.typography.titleMedium) }
+        items(state.scopes, key = { it.scope.id }) { summary ->
+            OutlinedButton({ selectedId = summary.scope.id }, modifier = Modifier.fillMaxWidth().testTag("recall-scope-${summary.scope.id}")) {
+                Column(Modifier.fillMaxWidth()) {
+                    Text(summary.scope.title, color = Cream)
+                    Text("${summary.due} due/new · ${summary.established}/${summary.total} established", color = MutedCream, style = MaterialTheme.typography.bodySmall)
                 }
             }
         }
         item {
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                ReviewStat("7", "day streak", Gold, Icons.Rounded.LocalFireDepartment, Modifier.weight(1f))
-                ReviewStat("82%", "recall rate", Leaf, Icons.Rounded.Check, Modifier.weight(1f))
-            }
-        }
-        item {
-            Text("Coming up", color = Cream, style = MaterialTheme.typography.headlineMedium)
-            Spacer(Modifier.height(12.dp))
-            listOf("Ruy López · Morphy Defence" to "Today", "Queen's Gambit · QGD" to "Tomorrow", "London · early ...c5" to "In 3 days").forEach { (name, time) ->
-                Row(Modifier.fillMaxWidth().border(1.dp, Divider, RoundedCornerShape(16.dp)).padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Box(Modifier.size(9.dp).background(if (time == "Today") Gold else Leaf, CircleShape))
-                    Text(name, color = Cream, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(horizontal = 12.dp).weight(1f))
-                    Text(time, color = MutedCream, style = MaterialTheme.typography.bodySmall)
-                }
-                Spacer(Modifier.height(9.dp))
-            }
-        }
-    }
-}
-
-@Composable
-private fun ReviewStat(value: String, label: String, color: Color, icon: androidx.compose.ui.graphics.vector.ImageVector, modifier: Modifier) {
-    Surface(modifier, color = DeepMoss, shape = RoundedCornerShape(20.dp), border = androidx.compose.foundation.BorderStroke(1.dp, Divider)) {
-        Column(Modifier.padding(17.dp)) {
-            Icon(icon, null, tint = color, modifier = Modifier.size(20.dp))
-            Spacer(Modifier.height(12.dp))
-            Text(value, color = Cream, style = MaterialTheme.typography.headlineMedium)
-            Text(label, color = MutedCream, style = MaterialTheme.typography.bodySmall)
+            Text("Hints, automatic hints, successful exposed engine analysis and Study exposure within ten minutes count as assistance. Assisted answers and unsuccessful recall retry after ten minutes; early drills cannot extend intervals. No notifications or network uploads.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
         }
     }
 }

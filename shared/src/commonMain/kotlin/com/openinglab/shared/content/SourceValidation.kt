@@ -31,6 +31,9 @@ object SourceValidation {
             val expected = if (final.sideToMove == com.openinglab.shared.model.PieceColor.WHITE) "0-1" else "1-0"
             require(game.result == expected) { "Recorded result conflicts with checkmate" }
         }
+        // Canonical mobile payloads are already unannotated. Keep their immutable checked replay.
+        if (game.line.leadingComments.isEmpty() && game.trailingComments.isEmpty() &&
+            game.line.plies.all { it.comments.isEmpty() && it.nags.isEmpty() && it.variations.isEmpty() }) return game
         // Do not treat source evals/NAGs, clock comments or hypothetical lines as reviewed teaching.
         val unannotated = PgnLine(game.line.plies.map { it.copy(comments = emptyList(), nags = emptyList(), variations = emptyList()) }, result = game.result)
         return game.copy(line = unannotated, trailingComments = emptyList())

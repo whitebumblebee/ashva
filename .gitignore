@@ -40,6 +40,8 @@ GoogleService-Info.plist
 *.aab
 audit-reports/
 .public-audit/
+# Verified upstream engine downloads/generated binaries are reproducible, not repository source.
+.engine-cache/
 # Relay skill install and harness stubs. Project memory in .relay/ stays tracked.
 .agents/skills/relay/
 .claude/skills/relay/

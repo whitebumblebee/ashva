@@ -31,6 +31,15 @@ export function isIgnored(file, rules) {
   return ignored;
 }
 
+export function localLinkPublicationRule(root, document, target, rules) {
+  let relative;
+  try { relative = path.relative(root, path.resolve(root, path.dirname(document), decodeURIComponent(target))).split(path.sep).join('/'); }
+  catch { return 'invalid-local-document-link'; }
+  if (relative === '..' || relative.startsWith('../') || path.isAbsolute(relative)) return 'local-document-link-outside-project';
+  if (relative === '.git' || relative.startsWith('.git/') || isIgnored(relative, rules)) return 'local-document-link-not-publishable';
+  return null;
+}
+
 export function privacyFindings(text) {
   const tests = [
     ['personal-home-path', /\/(?:Users|home)\/[A-Za-z0-9_.-]+\//],
@@ -49,7 +58,7 @@ export function privacyFindings(text) {
 const mandatory = ['README.md', 'LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md',
   'docs/PRIVACY.md', 'docs/PUBLIC_READINESS.md', '.github/workflows/ci.yml', '.gitleaks.toml'];
 const wrapperSha = '497c8c2a7e5031f6aa847f88104aa80a93532ec32ee17bdb8d1d2f67a194a9c7';
-const textExtensions = new Set(['.kt', '.kts', '.md', '.mjs', '.json', '.jsonl', '.toml', '.xml', '.properties', '.txt', '.tsv', '.pgn', '.yml', '.yaml', '.mdc', '.svg', '.bat']);
+const textExtensions = new Set(['.kt', '.kts', '.md', '.mjs', '.json', '.jsonl', '.toml', '.xml', '.properties', '.txt', '.tsv', '.pgn', '.yml', '.yaml', '.mdc', '.svg', '.bat', '.patch']);
 
 export async function audit(root) {
   const rules = ignoreRules(await readFile(path.join(root, '.gitignore'), 'utf8'));
@@ -72,6 +81,8 @@ export async function audit(root) {
           for (const match of text.matchAll(/\]\(([^\s)#]+)(?:#[^)]*)?\)/g)) {
             const target = match[1];
             if (/^[a-z]+:|^\/|^</i.test(target)) continue;
+            const publicationRule = localLinkPublicationRule(root, file, target, rules);
+            if (publicationRule) { findings.push({ file, rule: publicationRule }); continue; }
             try { await lstat(path.resolve(path.dirname(absolute), decodeURIComponent(target))); }
             catch { findings.push({ file, rule: 'broken-local-document-link' }); }
           }

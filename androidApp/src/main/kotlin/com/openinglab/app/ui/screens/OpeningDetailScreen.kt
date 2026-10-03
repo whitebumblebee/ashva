@@ -29,12 +29,19 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.openinglab.app.ui.components.ChessBoard
 import com.openinglab.app.ui.components.DifficultyPill
@@ -60,10 +67,18 @@ fun OpeningDetailScreen(
     onBack: () -> Unit,
     onStart: (PieceColor, String?) -> Unit,
     modifier: Modifier = Modifier,
+    onExploreSources: (() -> Unit)? = null,
 ) {
     val accent = Color(opening.accentHex)
+    val source = opening.provenance
+    val teaching = opening.teaching
+    var routeQuery by rememberSaveable(opening.id) { mutableStateOf("") }
+    var routeSide by rememberSaveable(opening.id) { mutableStateOf(if (opening.side == OpeningSide.BLACK) "BLACK" else "WHITE") }
+    val routes = remember(opening.id, routeQuery) { opening.variations.filter {
+        routeQuery.isBlank() || (it.name + " " + it.category).contains(routeQuery.trim(), ignoreCase = true)
+    } }
     LazyColumn(
-        modifier = modifier,
+        modifier = modifier.testTag("opening-detail"),
         contentPadding = androidx.compose.foundation.layout.PaddingValues(bottom = 32.dp),
         verticalArrangement = Arrangement.spacedBy(0.dp),
     ) {
@@ -91,11 +106,16 @@ fun OpeningDetailScreen(
                 Spacer(Modifier.height(18.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Box(Modifier.background(Ink.copy(alpha = .1f), CircleShape).padding(horizontal = 12.dp, vertical = 7.dp)) {
-                        Text("Starter coverage", color = Ink, style = MaterialTheme.typography.labelLarge)
+                        Text(if (teaching != null) "Opening course" else if (source == null) "Starter coverage" else "Sourced · ${source.license}", color = Ink, style = MaterialTheme.typography.labelLarge)
                     }
                     Spacer(Modifier.width(8.dp))
                     Box(Modifier.background(Ink.copy(alpha = .1f), CircleShape).padding(horizontal = 12.dp, vertical = 7.dp)) {
-                        Text("${opening.variations.size} short lines", color = Ink, style = MaterialTheme.typography.labelLarge)
+                        Text("${opening.variations.size} ${if (source == null) "short lines" else "routes"}", color = Ink, style = MaterialTheme.typography.labelLarge)
+                    }
+                }
+                if ((source == null || teaching != null) && onExploreSources != null) {
+                    TextButton(onExploreSources, Modifier.testTag("explore-source-variations")) {
+                        Text("Explore sourced variations →", color = Ink)
                     }
                 }
             }
@@ -103,7 +123,7 @@ fun OpeningDetailScreen(
 
         item {
             Column(Modifier.padding(horizontal = 20.dp, vertical = 26.dp)) {
-                Eyebrow("Choose your repertoire")
+                Eyebrow(if (source == null) "Choose your repertoire" else "Choose a study perspective")
                 Spacer(Modifier.height(6.dp))
                 Text("Which side are you building?", color = Cream, style = MaterialTheme.typography.headlineMedium)
                 Spacer(Modifier.height(14.dp))
@@ -111,7 +131,7 @@ fun OpeningDetailScreen(
                     SideCard(
                         side = PieceColor.WHITE,
                         label = "Play White",
-                        sublabel = if (opening.side == OpeningSide.WHITE || opening.side == OpeningSide.BOTH) "Recommended" else "Learn the opponent",
+                        sublabel = if (source != null) "Practice source route" else if (opening.side == OpeningSide.WHITE || opening.side == OpeningSide.BOTH) "Recommended" else "Learn the opponent",
                         accent = accent,
                         onClick = { onStart(PieceColor.WHITE, null) },
                         modifier = Modifier.weight(1f),
@@ -119,7 +139,7 @@ fun OpeningDetailScreen(
                     SideCard(
                         side = PieceColor.BLACK,
                         label = "Play Black",
-                        sublabel = if (opening.side == OpeningSide.BLACK || opening.side == OpeningSide.BOTH) "Recommended" else "Learn the defence",
+                        sublabel = if (source != null) "Practice source route" else if (opening.side == OpeningSide.BLACK || opening.side == OpeningSide.BOTH) "Recommended" else "Learn the defence",
                         accent = accent,
                         onClick = { onStart(PieceColor.BLACK, null) },
                         modifier = Modifier.weight(1f),
@@ -134,7 +154,7 @@ fun OpeningDetailScreen(
                 Spacer(Modifier.height(13.dp))
                 PositionPreview(opening)
                 Spacer(Modifier.height(28.dp))
-                Text("Core ideas", color = Cream, style = MaterialTheme.typography.headlineMedium)
+                Text(if (teaching != null || source == null) "Core ideas for both sides" else "Coverage & provenance", color = Cream, style = MaterialTheme.typography.headlineMedium)
                 Spacer(Modifier.height(12.dp))
                 opening.keyIdeas.forEachIndexed { index, idea ->
                     Row(Modifier.padding(vertical = 7.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -144,16 +164,36 @@ fun OpeningDetailScreen(
                         Text(idea, color = Cream, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.padding(start = 12.dp))
                     }
                 }
+                if (source != null) {
+                    Text("${source.title}\nRevision: ${source.revision}\n${source.attribution}\n${source.url}",
+                        color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                }
+                if (teaching != null) {
+                    Text("${teaching.sourceRoutes} named source routes · ${teaching.authoredRoutes} authored study continuations · ${teaching.minPlies}–${teaching.maxPlies} half-moves",
+                        color = Leaf, modifier = Modifier.testTag("teaching-coverage"))
+                    Text("Ashva-authored ${if (teaching.familySpecificGuide) "family" else "general positional"} plans and rules-derived move observations. Not independently expert-reviewed theory, a historical annotation or a guarantee of winning. Source endpoints remain explicit; authored routes are labeled separately.",
+                        color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                }
                 Spacer(Modifier.height(28.dp))
-                Text("Lines in this repertoire", color = Cream, style = MaterialTheme.typography.headlineMedium)
+                Text(if (teaching != null) "Study lines & named variations" else if (source == null) "Lines in this repertoire" else "Source routes", color = Cream, style = MaterialTheme.typography.headlineMedium)
                 Spacer(Modifier.height(6.dp))
-                Text("Authored starter lines, not the full repertoire or engine-verified winning theory.",
+                Text(if (teaching != null) "Choose a study continuation or any named source route. Every route can be replayed, practiced and explored from either perspective." else if (source == null) "Authored starter lines, not the full repertoire or engine-verified winning theory." else
+                    "${source.minPlies}–${source.maxPlies} half-moves. All ${opening.variations.size} routes are available; source names are not reviewed strategy or engine recommendations.",
                     color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                if (source != null) {
+                    OutlinedTextField(routeQuery, { routeQuery = it }, label = { Text("Find a variation or ECO") },
+                        modifier = Modifier.fillMaxWidth().padding(top = 12.dp).testTag("route-search"), singleLine = true)
+                    Row {
+                        TextButton({ routeSide = "WHITE" }, Modifier.testTag("route-white")) { Text(if (routeSide == "WHITE") "✓ White POV" else "White POV") }
+                        TextButton({ routeSide = "BLACK" }, Modifier.testTag("route-black")) { Text(if (routeSide == "BLACK") "✓ Black POV" else "Black POV") }
+                    }
+                    Text("${routes.size} of ${opening.variations.size} routes", color = MutedCream, modifier = Modifier.testTag("route-count"))
+                }
                 Spacer(Modifier.height(12.dp))
             }
         }
 
-        itemsIndexed(opening.variations, key = { _, variation -> variation.id }) { index, variation ->
+        itemsIndexed(routes, key = { _, variation -> variation.id }) { index, variation ->
             VariationCard(
                 number = index + 1,
                 title = variation.name,
@@ -161,23 +201,25 @@ fun OpeningDetailScreen(
                 description = variation.description,
                 accent = accent,
                 onClick = {
-                    val defaultSide = if (opening.side == OpeningSide.BLACK) PieceColor.BLACK else PieceColor.WHITE
+                    val defaultSide = PieceColor.valueOf(routeSide)
                     onStart(defaultSide, variation.id)
                 },
-                modifier = Modifier.padding(horizontal = 20.dp, vertical = 5.dp),
+                modifier = Modifier.padding(horizontal = 20.dp, vertical = 5.dp).testTag("route-${variation.id}"),
             )
         }
 
         item {
             Column(Modifier.padding(horizontal = 20.dp, vertical = 26.dp)) {
-                Eyebrow("Historical preview · unverified metadata", color = Gold)
-                Spacer(Modifier.height(8.dp))
-                HistoricalGameCard(opening)
-                Text("Example card only: no source-verified score or game replay is available here yet.",
-                    color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                if (opening.historicalGame != null) {
+                    Eyebrow("Historical preview · unverified metadata", color = Gold)
+                    Spacer(Modifier.height(8.dp))
+                    HistoricalGameCard(opening)
+                    Text("Example card only: no source-verified score or game replay is available here yet.",
+                        color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                }
                 Spacer(Modifier.height(24.dp))
                 PrimaryAction(
-                    text = if (opening.progress > 0) "Continue repertoire" else "Start this repertoire",
+                    text = if (teaching != null) "Start opening course" else if (source != null) "Practice source route" else "Start this repertoire",
                     onClick = {
                         val side = if (opening.side == OpeningSide.BLACK) PieceColor.BLACK else PieceColor.WHITE
                         onStart(side, null)
@@ -252,7 +294,7 @@ private fun VariationCard(number: Int, title: String, category: String, descript
 
 @Composable
 private fun HistoricalGameCard(opening: Opening) {
-    val game = opening.historicalGame
+    val game = opening.historicalGame ?: return
     Surface(color = Moss, shape = RoundedCornerShape(22.dp), modifier = Modifier.fillMaxWidth()) {
         Column(Modifier.padding(19.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {

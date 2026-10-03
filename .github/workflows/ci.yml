@@ -16,6 +16,17 @@ jobs:
   android-and-content:
     runs-on: ubuntu-24.04
     timeout-minutes: 40
+    services:
+      postgres:
+        image: postgres:18.6-alpine@sha256:77f585114c32fbca283dc835b0596f4e52b51b4c6662d7810b2f4084f60a1873
+        env:
+          POSTGRES_HOST_AUTH_METHOD: trust # Disposable hosted test DB only, never production.
+          POSTGRES_DB: ashva_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d ashva_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -39,18 +50,33 @@ jobs:
         run: node scripts/run-secret-scan.mjs
       - name: Public files, downloader and scanner regression tests
         run: node --test scripts/*.test.mjs
-      - name: Public surface and Relay checks
+      - name: Public surface and portable Relay context checks
         run: |
           node scripts/public-audit.mjs
-          node .agents/skills/relay/bin/relay.mjs doctor --strict
+          node scripts/check-relay-context.mjs
       - name: Install pinned Android platform and build tools
-        run: sdkmanager 'platforms;android-37' 'build-tools;37.0.0'
+        run: sdkmanager 'platforms;android-37' 'build-tools;37.0.0' 'ndk;30.0.16248370'
+      - name: Build and verify the separate GPL engine from pinned source
+        run: ASHVA_NDK_DIR="$ANDROID_HOME/ndk/30.0.16248370" node scripts/prepare-stockfish.mjs
       - name: Domain, importer, data integrity, app and lint
         run: >-
           ./gradlew --no-daemon --max-workers=2
           :shared:jvmTest :shared:testAndroidHostTest :contentTools:test
           :contentTools:run --args=verify
           :androidApp:assembleDebug :androidApp:assembleRelease :androidApp:lintDebug
+      - name: Verify packaged engine, source and license assets
+        run: |
+          node scripts/verify-engine-apk.mjs androidApp/build/outputs/apk/debug/androidApp-debug.apk
+          node scripts/verify-engine-apk.mjs androidApp/build/outputs/apk/release/androidApp-release-unsigned.apk
+      - name: Build the separate local host engine and verify HTTP/PostgreSQL contracts
+        env:
+          ASHVA_SERVICE_TEST_JDBC: jdbc:postgresql://127.0.0.1:5432/ashva_test
+          ASHVA_SERVICE_TEST_ENGINE_DIR: ${{ github.workspace }}/.engine-cache/service
+        run: |
+          node scripts/prepare-service-engine.mjs
+          ./gradlew --no-daemon --max-workers=2 :contentService:test :contentService:integrationTest :contentService:installDist
+      - name: Reproduce the separately pinned whole January broadcast snapshot
+        run: ./gradlew --no-daemon --max-workers=2 :contentTools:run --args='verify broadcast-2020-01'
       - name: Enable KVM on the disposable hosted runner
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules

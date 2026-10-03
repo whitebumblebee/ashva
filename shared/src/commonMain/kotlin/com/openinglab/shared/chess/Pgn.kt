@@ -25,11 +25,13 @@ data class PgnGame(
     val result: String,
     val trailingComments: List<String> = emptyList(),
 ) {
-    fun positions(): List<BoardPosition> {
+    private val replayedPositions: List<BoardPosition> by lazy {
         val positions = mutableListOf(initialPosition)
         for (ply in line.plies) positions += positions.last().apply(ply.move)
-        return positions.toList()
+        positions.toList()
     }
+    /** Immutable game values share one checked replay, not repeated full-board reconstruction. */
+    fun positions(): List<BoardPosition> = replayedPositions
 }
 
 /** Bounded, legal-move-validated standard PGN import. Archives are parsed as separate games. */
@@ -50,18 +52,24 @@ object Pgn {
         return games.toList()
     }
 
-    fun export(game: PgnGame): String {
-        require(game.result in results) { "Invalid result" }
-        val tags = game.tags.toMutableMap()
-        if (game.initialPosition.toFen() != BoardPosition.START_FEN) {
+    /** Canonical PGN supplies unknown roster placeholders; source metadata itself remains unchanged. */
+    fun canonicalTags(sourceTags: Map<String, String>, initialPosition: BoardPosition, result: String): Map<String, String> {
+        require(result in results) { "Invalid result" }
+        val tags = sourceTags.toMutableMap()
+        if (initialPosition.toFen() != BoardPosition.START_FEN) {
             tags["SetUp"] = "1"
-            tags["FEN"] = game.initialPosition.toFen()
+            tags["FEN"] = initialPosition.toFen()
         } else {
             tags.remove("SetUp")
             tags.remove("FEN")
         }
         roster.forEach { if (it !in tags) tags[it] = if (it == "Date") "????.??.??" else "?" }
-        tags["Result"] = game.result
+        tags["Result"] = result
+        return tags.toMap()
+    }
+
+    fun export(game: PgnGame): String {
+        val tags = canonicalTags(game.tags, game.initialPosition, game.result)
         return buildString {
             for (key in roster + tags.keys.filterNot { it in roster }.sorted()) {
                 require(key.matches(Regex("[A-Za-z0-9_]+"))) { "Invalid tag name" }
@@ -90,15 +98,16 @@ object Pgn {
         var board = initial
         for (ply in line.plies) {
             val before = board
+            val transition = board.sanAndPlay(ply.move)
             output += if (board.sideToMove == PieceColor.WHITE) "${board.fullmoveNumber}." else "${board.fullmoveNumber}..."
-            output += board.san(ply.move)
+            output += transition.san
             ply.nags.forEach { require(it in 0..255); output += "$$it" }
             output += ply.comments.map(::comment)
             for (variation in ply.variations) {
                 output += "(" + exportLine(variation, before, depth + 1) +
                     (variation.result?.let { " $it" } ?: "") + ")"
             }
-            board = board.apply(ply.move)
+            board = transition.position
         }
         return output.joinToString(" ")
     }
@@ -253,13 +262,13 @@ object Pgn {
                             continue
                         }
                         require(++plyCount <= 100_000) { "Too many PGN moves" }
-                        val move = try { board.parseSan(symbol) } catch (error: IllegalArgumentException) {
+                        val transition = try { board.parseSanAndPlay(symbol) } catch (error: IllegalArgumentException) {
                             throw IllegalArgumentException("PGN move '$symbol' at offset ${token.offset}: ${error.message}")
                         }
                         beforeLast = board
                         val glyph = Regex("[!?]+$").find(symbol)?.value?.let(glyphs::get)
-                        moves += PgnPly(move, board.san(move), nags = listOfNotNull(glyph))
-                        board = board.apply(move)
+                        moves += PgnPly(transition.move, transition.san, nags = listOfNotNull(glyph))
+                        board = transition.position
                     }
                 }
             }
