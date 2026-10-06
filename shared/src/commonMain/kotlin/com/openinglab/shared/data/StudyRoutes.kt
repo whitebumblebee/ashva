@@ -2,8 +2,7 @@
 package com.openinglab.shared.data
 
 import com.openinglab.shared.chess.BoardPosition
-import com.openinglab.shared.chess.parseSan
-import com.openinglab.shared.chess.san
+import com.openinglab.shared.chess.parseSanAndPlay
 import com.openinglab.shared.lesson.PositionCoach
 import com.openinglab.shared.model.Variation
 
@@ -97,8 +96,8 @@ object StudyRoutes {
     fun variation(route: StudyRoute): Variation {
         var board = BoardPosition.starting()
         val steps = route.moves.split(' ').map { token ->
-            val move = board.parseSan(token)
-            val (step, after) = PositionCoach.explainAndPlay(board, move, board.san(move))
+            val transition = board.parseSanAndPlay(token)
+            val (step, after) = PositionCoach.explainAndPlay(board, transition.move, transition.san)
             board = after
             step
         }

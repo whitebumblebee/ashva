@@ -4,9 +4,11 @@ import android.content.pm.ApplicationInfo
 import android.graphics.Bitmap
 import android.os.SystemClock
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performScrollToNode
@@ -30,11 +32,10 @@ class PublicAlphaTest {
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
 
     @Test fun brandingAndRealStatisticsAreExplicit() {
-        rule.onNodeWithText("ASHVA · ALPHA").assertIsDisplayed()
+        rule.onNodeWithText("ASHVA").assertIsDisplayed()
         rule.onNodeWithText("Profile").performClick()
-        rule.onNodeWithText("Local learner · no signed-in account", ignoreCase = true).assertIsDisplayed()
-        rule.onNodeWithText("Your learning history").assertIsDisplayed()
-        rule.onNodeWithText("Real stored events, not a sample rating, estimated recall percentage or invented streak.").assertIsDisplayed()
+        rule.onNodeWithTag("profile-display-name").assertIsDisplayed()
+        rule.onNodeWithTag("profile-week-days").assertIsDisplayed()
         rule.onNodeWithText("Review").performClick()
         rule.onNodeWithText("Your local recall", ignoreCase = true).assertIsDisplayed()
     }
@@ -45,7 +46,7 @@ class PublicAlphaTest {
         assertFalse(context.applicationInfo.flags and ApplicationInfo.FLAG_ALLOW_BACKUP != 0)
         rule.onNodeWithText("Profile").performClick()
         rule.onNodeWithTag("learner-profile-screen").performScrollToKey("app-version")
-        rule.onNodeWithText("Ashva ${BuildConfig.VERSION_NAME} · Android alpha").performScrollTo().assertIsDisplayed()
+        rule.onNodeWithText("Ashva ${BuildConfig.VERSION_NAME}").performScrollTo().assertIsDisplayed()
     }
 
     @Test fun publicScreensCanBeCapturedFromSyntheticLessonState() {
@@ -57,6 +58,9 @@ class PublicAlphaTest {
         rule.waitForIdle()
         rule.onNodeWithTag("opening-list").performScrollToNode(androidx.compose.ui.test.hasTestTag("opening-${vm.primaryOpeningId("ruy-lopez")}"))
         rule.onNodeWithTag("opening-${vm.primaryOpeningId("ruy-lopez")}").performScrollTo().performClick()
+        rule.waitUntil(60_000) { rule.onAllNodesWithTag("opening-detail").fetchSemanticsNodes().isNotEmpty() || vm.uiState.value.catalogError != null }
+        org.junit.Assert.assertNull(vm.uiState.value.catalogError)
+        rule.onNodeWithTag("opening-detail").performScrollToNode(hasText("Play White"))
         rule.onNodeWithText("Play White").performScrollTo().performClick()
         rule.waitUntil(60_000) { vm.uiState.value.trainer != null && !vm.uiState.value.lessonLoading }
         rule.onNodeWithTag("study-mode").performClick()
@@ -65,11 +69,13 @@ class PublicAlphaTest {
         shot("trainer")
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
+        rule.onNodeWithTag("opening-list").performScrollToNode(hasText("Don't know the name?"))
         rule.onNodeWithText("Don't know the name?").performScrollTo().performClick()
         rule.runOnIdle { vm.loadIdentifierExample("ruy-lopez") }
         shot("identifier")
         rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         rule.onNodeWithText("Learn").performClick()
+        rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
         rule.onNodeWithTag("offline-library").performScrollTo().performClick()
         shot("library")
     }

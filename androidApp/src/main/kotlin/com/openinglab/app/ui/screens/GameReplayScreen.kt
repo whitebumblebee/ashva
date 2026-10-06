@@ -15,6 +15,8 @@ import com.openinglab.app.ui.GameStudyUiState
 import com.openinglab.app.ui.OriginalMoveTeachingUiState
 import com.openinglab.app.ui.EngineAnalysisUiState
 import com.openinglab.app.ui.components.ChessBoard
+import com.openinglab.app.ui.components.InfoNote
+import com.openinglab.app.ui.components.ExpandableText
 import com.openinglab.app.ui.theme.*
 import com.openinglab.shared.games.LibraryScore
 import com.openinglab.shared.model.PieceColor
@@ -25,7 +27,7 @@ fun GameReplayScreen(study: GameStudyUiState, onBack: () -> Unit, onJump: (Int) 
     moveTeaching: OriginalMoveTeachingUiState = OriginalMoveTeachingUiState.Idle,
     analysis: EngineAnalysisUiState = EngineAnalysisUiState.Idle,
     onAnalyze: () -> Unit = {}, onStopAnalysis: () -> Unit = {}, onExplore: (Int) -> Unit = {},
-    onJumpAnalysis: (Int) -> Unit = {}, onReturnAnalysis: () -> Unit = {}, onRequestTeaching: () -> Unit = {}) {
+    onJumpAnalysis: (Int) -> Unit = {}, onReturnAnalysis: () -> Unit = {}, onRequestTeaching: () -> Unit = {}, developerMode: Boolean = false) {
     LifecycleEventEffect(Lifecycle.Event.ON_STOP, onEvent = onPause)
     LifecycleEventEffect(Lifecycle.Event.ON_START, onEvent = onRequestTeaching)
     DisposableEffect(Unit) { onDispose(onPause) }
@@ -50,38 +52,38 @@ fun GameReplayScreen(study: GameStudyUiState, onBack: () -> Unit, onJump: (Int) 
             }
             Text(replay.lastMove?.let { "Original move: ${it.san}" } ?: "Original starting position", color = Leaf,
                 modifier = Modifier.testTag("game-last-move"))
-            if (previewing) Text("Original playback is paused here. Return from the hypothetical line to continue this unchanged score.", color = Gold)
+            if (previewing) InfoNote("Return from the preview to continue the game.", "Original playback is paused here. Return from the hypothetical line to continue this unchanged score.", color = Gold)
             when (moveTeaching) {
                 OriginalMoveTeachingUiState.Loading -> Text("Checking this original move’s board changes…", color = MutedCream, modifier = Modifier.testTag("game-coach-loading"))
                 OriginalMoveTeachingUiState.Failed -> {
                     Text("Move explanation unavailable; no historical intention was invented.", color = Gold)
                     TextButton(onRequestTeaching, Modifier.testTag("game-coach-retry")) { Text("Retry explanation") }
                 }
-                OriginalMoveTeachingUiState.Idle -> if (replay.atStart) Text("Step forward for an explanation of each recorded move. Choose Analyze to compare the next original move with engine candidates.", color = MutedCream)
+                OriginalMoveTeachingUiState.Idle -> if (replay.atStart) InfoNote("Step forward to study; Analyze compares continuations.", "Step forward for an explanation of each recorded move. Choose Analyze to compare the next original move with engine candidates.", color = MutedCream)
                 is OriginalMoveTeachingUiState.Ready -> {
                     val facts = moveTeaching.facts
-                    Text("ASHVA BOARD FACT · ${facts.movingSide.name} played ${facts.idea.san} · ${facts.idea.title}", color = Leaf, modifier = Modifier.testTag("game-coach-move"))
-                    Text(facts.idea.explanation, color = Cream, modifier = Modifier.testTag("game-coach-explanation"))
-                    Text("CONDITIONAL PLAN · ${facts.idea.principle}", color = MutedCream, modifier = Modifier.testTag("game-coach-plan"))
-                    Text("${facts.version} · ${if (moveTeaching.cached) "reused checked local explanation" else "checked offline explanation"}. Not a sourced annotation or the player’s verified intention.", color = MutedCream,
+                    Text("${if (developerMode) "ASHVA BOARD FACT · " else ""}${facts.movingSide.name} played ${facts.idea.san} · ${facts.idea.title}", color = Leaf, modifier = Modifier.testTag("game-coach-move"))
+                    ExpandableText(facts.idea.explanation, color = Cream, modifier = Modifier.testTag("game-coach-explanation"))
+                    ExpandableText("${if (developerMode) "CONDITIONAL PLAN · " else ""}${facts.idea.principle}", color = MutedCream, modifier = Modifier.testTag("game-coach-plan"))
+                    if (developerMode) Text("${facts.version} · ${if (moveTeaching.cached) "reused checked local explanation" else "checked offline explanation"}. Not a sourced annotation or the player’s verified intention.", color = MutedCream,
                         style = MaterialTheme.typography.bodySmall, modifier = Modifier.testTag("game-coach-provenance"))
                 }
             }
             if (study.score is LibraryScore.Private) {
-                Text("PRIVATE USER PGN · supplied annotations are unverified; this game is not in public source statistics.", color = MutedCream)
+                InfoNote("Private PGN · commentary supplied by the user.", "PRIVATE USER PGN · supplied annotations are unverified; this game is not in public source statistics.", color = MutedCream)
                 replay.lastMove?.annotation?.comments?.takeIf { it.isNotEmpty() }?.let {
                     Text("USER-SUPPLIED COMMENTARY (not Ashva/GM-verified): ${it.joinToString("\n")}", color = MutedCream)
                 }
-            } else Text("Source mainline, not expert commentary or inferred GM intention. A reported result can reflect resignation/agreement before a board-terminal position.", color = MutedCream)
-            PositionTeachingPanel(replay.position, replay.playerSide, "game-position-teaching")
-            Text(replay.nextMove?.let { "Analysis root: this original position, before recorded ${it.san}. To compare the last played move, use Previous first." }
+            } else InfoNote("Original score · result as recorded.", "Source mainline, not expert commentary or inferred GM intention. A reported result can reflect resignation/agreement before a board-terminal position.", color = MutedCream)
+            PositionTeachingPanel(replay.position, replay.playerSide, "game-position-teaching", developerMode)
+            InfoNote("Analyze from this position", replay.nextMove?.let { "Analysis root: this original position, before recorded ${it.san}. To compare the last played move, use Previous first." }
                 ?: "End of recorded score. Analysis explores this board, not a replacement game result.", color = MutedCream, modifier = Modifier.testTag("game-analysis-root"))
             EngineAnalysisPanel(analysis, replay.playerSide, onAnalyze, onStopAnalysis, onExplore, onJumpAnalysis, onReturnAnalysis,
-                contextLabel = "Your original score, result and saved game cursor stay unchanged during a preview.",
-                returnLabel = "Return to unchanged original game", comparedLabel = "Next recorded original move")
-            Text("Exact retained source: ${study.reference.packId ?: "private local import"}\n${study.reference.manifestSha256.orEmpty()}\nRecord ${study.reference.recordId}",
+                contextLabel = "Preview keeps your original game saved.",
+                returnLabel = "Return to unchanged original game", comparedLabel = "Next recorded original move", developerMode = developerMode)
+            if (developerMode) Text("Exact retained source: ${study.reference.packId ?: "private local import"}\n${study.reference.manifestSha256.orEmpty()}\nRecord ${study.reference.recordId}",
                 color = MutedCream, style = MaterialTheme.typography.bodySmall, modifier = Modifier.testTag("game-exact-source"))
-            Text("Full original move list · tap to replay. Studying is not a mastery score.", color = Gold)
+            InfoNote("Move list · tap to replay.", "Full original move list · tap to replay. Studying is not a mastery score.", color = Gold)
         }
         itemsIndexed(replay.moves, key = { index, _ -> index }) { index, move ->
             val before = replay.graph.paths.getValue(replay.graph.originalPathId).positions[index]

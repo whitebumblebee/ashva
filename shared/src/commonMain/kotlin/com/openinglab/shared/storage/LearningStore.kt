@@ -26,6 +26,8 @@ import kotlinx.serialization.Serializable
     val recallHelp: Set<RecallHelp> = emptySet(), val studyExposedAt: Long? = null,
     val reviewScopeId: String? = null, val reviewTargetId: String? = null, val reviewAnswered: Boolean = false,
     val reviewAttemptId: String? = null,
+    val activitySessionId: String? = null,
+    val practiceStartPly: Int = 0,
 )
 @Serializable data class LearningAttempt(
     val id: String, val lessonId: String, val pathId: String, val ply: Int,
@@ -42,6 +44,9 @@ data class InstalledPack(val manifest: ContentManifest, val manifestSha256: Stri
 data class PackBundle(val manifest: ByteArray, val files: Map<String, ByteArray>, val expectedManifestSha256: String)
 
 interface LearningStore {
+    fun learnerActivity(at: Long): Flow<com.openinglab.shared.practice.LearnerActivity> = flowOf(com.openinglab.shared.practice.LearnerActivity())
+    suspend fun recordStudyActivity(activity: com.openinglab.shared.practice.StudyActivity) {}
+    val tactics: com.openinglab.shared.tactics.TacticsStore? get() = null
     val availability: Flow<List<PackAvailability>>
     suspend fun recoverInterruptedInstalls()
     suspend fun install(bundle: PackBundle)

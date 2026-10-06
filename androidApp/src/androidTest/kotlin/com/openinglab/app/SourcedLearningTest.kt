@@ -24,6 +24,7 @@ import java.util.UUID
 @RunWith(AndroidJUnit4::class)
 class SourcedLearningTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
+    @org.junit.After fun resetDeveloperMode() { rule.runOnIdle { ViewModelProvider(rule.activity)[AppViewModel::class.java].setDeveloperMode(false) } }
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
     private fun installed() {
         rule.waitUntil(60_000) { vm.uiState.value.persistenceStatus != "Loading saved lesson…" }
@@ -32,7 +33,13 @@ class SourcedLearningTest {
         assertNull(vm.uiState.value.packError); assertNull(vm.uiState.value.catalogError)
         assertEquals(3815, vm.uiState.value.sourcedOpenings.sumOf { it.variations.size })
     }
-    private fun click(tag: String) = rule.onNodeWithTag(tag).performScrollTo().performClick()
+    private fun click(tag: String) {
+        if (tag in setOf("my-repertoires", "gm-game-library", "offline-library"))
+            rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
+        if (tag == "explore-source-variations")
+            rule.onNodeWithTag("opening-detail").performScrollToNode(hasTestTag(tag))
+        rule.onNodeWithTag(tag).performScrollTo().performClick()
+    }
 
     @Test fun installedCatalogSearchRouteSelectionBothColorReplayAndBranchReturn() {
         installed()
@@ -43,10 +50,13 @@ class SourcedLearningTest {
         rule.runOnIdle { vm.updateSearch("Ruy"); vm.selectDifficulty("All") }
         rule.onNodeWithTag("opening-list").performScrollToNode(hasTestTag("opening-${vm.primaryOpeningId("ruy-lopez")}"))
         rule.onNodeWithTag("opening-${vm.primaryOpeningId("ruy-lopez")}").performScrollTo().performClick()
+        rule.waitUntil(60_000) { rule.onAllNodesWithTag("opening-detail").fetchSemanticsNodes().isNotEmpty() || vm.uiState.value.catalogError != null }
+        assertNull(vm.uiState.value.catalogError)
         click("explore-source-variations")
         rule.onNodeWithTag("opening-list").performScrollToIndex(0)
         assertEquals("Sourced", vm.uiState.value.selectedDifficulty)
-        rule.onNodeWithTag("source-catalog-status").assertTextContains("149 source families · 3815 routes", substring = true)
+        rule.onNodeWithTag("source-catalog-status").assertTextContains("149 opening families · 3815 routes", substring = true)
+        rule.onNodeWithTag("opening-list").performScrollToNode(hasTestTag("opening-${ruy.id}"))
         click("opening-${ruy.id}")
         rule.onNodeWithTag("opening-detail").performScrollToNode(hasTestTag("route-search"))
         rule.onNodeWithTag("route-search").performTextInput(route.name)
@@ -58,13 +68,17 @@ class SourcedLearningTest {
         val trainer = requireNotNull(vm.uiState.value.trainer)
         assertEquals(PieceColor.BLACK, trainer.playerSide); assertEquals(route.id, trainer.replay.pathId)
         assertTrue(trainer.replay.moves.size > 16)
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("source-coverage").assertTextContains("SOURCED · CC0-1.0", substring = true)
         rule.runOnIdle { vm.jumpTrainer(5) }
         val before = requireNotNull(vm.uiState.value.trainer)
         if (before.branchOffers.size > 12) {
             rule.onNodeWithTag("branch-count").performScrollTo().assertTextContains("Showing 12 of", substring = true)
             click("more-branches")
-            rule.onNodeWithTag("branch-count").performScrollTo().assertTextContains("Showing 24 of", substring = true)
+            // One offer per distinct next move: the second page shows up to 24 of them.
+            val shown = minOf(24, before.branchOffers.size)
+            rule.onNodeWithTag("branch-count").performScrollTo().assertTextContains("Showing $shown of ${before.branchOffers.size}", substring = true)
+            assertEquals(before.branchOffers.size, before.branchOffers.map { it.nextMove.move }.distinct().size)
         }
         val branch = before.branchOffers.first()
         click("branch-${branch.pathId}")
@@ -74,7 +88,9 @@ class SourcedLearningTest {
         assertEquals(before.position, vm.uiState.value.trainer?.position)
         assertEquals(route.id, vm.uiState.value.trainer?.replay?.pathId)
         click("flip-side"); assertEquals(PieceColor.WHITE, vm.uiState.value.trainer?.playerSide)
+        click("full-idea")
         rule.onNodeWithTag("chosen-plan").performScrollTo().assertTextContains("not available", substring = true)
+        rule.runOnIdle { vm.setDeveloperMode(false) }
     }
 
     @Test fun sourcePracticeKeepsWrongMoveAndSourceIdentifierHandlesTransposition() {

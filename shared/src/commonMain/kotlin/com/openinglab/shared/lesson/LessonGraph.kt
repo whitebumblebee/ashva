@@ -70,6 +70,27 @@ class LessonGraph private constructor(
         const val MAX_TOTAL_PLIES = 50_000
         const val MAX_PATHS = 1000
 
+        /** Only the course validator may supply these exact-history, legally checked node boards. */
+        internal fun fromCheckedOpening(opening: Opening, positions: Map<String, List<BoardPosition>>): LessonGraph {
+            val initial = BoardPosition.starting()
+            val paths = opening.variations.map { variation ->
+                val boards = positions.getValue(variation.id)
+                require(boards.size == variation.steps.size + 1)
+                val moves = variation.steps.map { step -> LessonMove(ChessMove.fromUci(step.uci), step.san,
+                    LessonAnnotation(step.title, step.explanation, step.principle, label = step.label, players = step.players)) }
+                LessonPath(variation.id, variation.name, pathKind(opening, variation.origin, variation.authoredContinuation),
+                    variation.description, moves, boards, whiteIdea = variation.whiteIdea, blackIdea = variation.blackIdea)
+            }
+            return build(opening.id, opening.name, initial, paths, opening.mainLine.id)
+        }
+
+        private fun pathKind(opening: Opening, origin: VariationOrigin?, authored: Boolean) = when (origin) {
+            VariationOrigin.COURSE_LINE -> LessonPathKind.COURSE_LINE
+            VariationOrigin.ORIGINAL_GAME -> LessonPathKind.ORIGINAL_GAME
+            VariationOrigin.ENGINE_LINE -> LessonPathKind.ANALYZED_VARIATION
+            null -> if (opening.provenance == null || authored) LessonPathKind.AUTHORED else LessonPathKind.SOURCED_OPENING
+        }
+
         fun fromOpening(opening: Opening): LessonGraph {
             val initial = BoardPosition.starting()
             val paths = opening.variations.map { variation ->
@@ -188,7 +209,11 @@ class LessonReplay private constructor(
     fun last() = jump(moves.size)
     fun withSide(side: PieceColor) = LessonReplay(graph, rootPathId, pathId, moves, positions, ply, side, returns)
 
-    fun branches(): List<LessonBranch> {
+    /** One offer per different next move: the first path in lesson order (main line, then most-reached) represents it. */
+    fun branches(): List<LessonBranch> = allBranches().distinctBy { it.nextMove.move }
+
+    /** Every path that continues differently from here; saved routes and explicit diverges resolve against these. */
+    fun allBranches(): List<LessonBranch> {
         if (returns.size >= MAX_BRANCH_DEPTH) return emptyList()
         val key = position.positionKey
         return graph.paths.values.asSequence().filter { it.id != pathId }.flatMap { path ->
@@ -200,7 +225,7 @@ class LessonReplay private constructor(
     }
 
     fun diverge(branch: LessonBranch): LessonReplay {
-        require(branch in branches()) { "Branch is not available at this position" }
+        require(branch in allBranches()) { "Branch is not available at this position" }
         val target = graph.paths.getValue(branch.pathId)
         val route = moves.take(ply) + target.moves.drop(branch.targetPly)
         require(route.size <= LessonGraph.MAX_PATH_PLIES) { "Branched route exceeds move limit" }
@@ -229,7 +254,7 @@ class LessonReplay private constructor(
             var replay = graph.start(snapshot.playerSide, snapshot.rootPathId)
             for (visit in snapshot.branches) {
                 replay = replay.jump(visit.fromPly)
-                val branch = replay.branches().singleOrNull { it.pathId == visit.targetPathId && it.targetPly == visit.targetPly }
+                val branch = replay.allBranches().singleOrNull { it.pathId == visit.targetPathId && it.targetPly == visit.targetPly }
                     ?: throw IllegalArgumentException("Saved branch no longer exists in this lesson")
                 replay = replay.diverge(branch)
             }

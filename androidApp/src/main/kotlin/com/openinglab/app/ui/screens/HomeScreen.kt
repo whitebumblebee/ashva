@@ -1,261 +1,163 @@
 package com.openinglab.app.ui.screens
 
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.*
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Bolt
-import androidx.compose.material.icons.rounded.Schedule
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
+import androidx.compose.material.icons.rounded.CheckCircle
+import androidx.compose.material.icons.rounded.RadioButtonUnchecked
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
-import com.openinglab.app.ui.components.ChessBoard
-import com.openinglab.app.ui.components.Eyebrow
-import com.openinglab.app.ui.components.OpeningCard
-import com.openinglab.app.ui.components.OpeningLabMark
-import com.openinglab.app.ui.components.PrimaryAction
-import com.openinglab.app.ui.components.SectionHeader
-import com.openinglab.app.ui.theme.Cream
-import com.openinglab.app.ui.theme.DeepMoss
-import com.openinglab.app.ui.theme.Divider
-import com.openinglab.app.ui.theme.Gold
-import com.openinglab.app.ui.theme.Ink
-import com.openinglab.app.ui.theme.Leaf
-import com.openinglab.app.ui.theme.Moss
-import com.openinglab.app.ui.theme.MutedCream
-import com.openinglab.app.ui.TrainerUiState
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.unit.dp
+import com.openinglab.app.ui.LearnerUiState
+import com.openinglab.app.ui.TrainerUiState
+import com.openinglab.app.ui.components.*
+import com.openinglab.app.ui.theme.*
 import com.openinglab.shared.chess.BoardPosition
-import com.openinglab.shared.data.OpeningCatalog
-import com.openinglab.shared.model.ChessMove
+import com.openinglab.shared.course.DeepCourseChapterSummary
 import com.openinglab.shared.model.Opening
-import com.openinglab.shared.course.DeepCourseChapterView
 
 @Composable
 fun HomeScreen(
-    openings: List<Opening>,
-    onOpeningClick: (String) -> Unit,
-    onExploreAll: () -> Unit,
-    onContinue: () -> Unit,
-    onOfflineLibrary: () -> Unit,
-    onRepertoires: () -> Unit,
-    resume: TrainerUiState?,
-    persistenceStatus: String,
-    modifier: Modifier = Modifier,
-    catalogLoading: Boolean = false,
-    catalogError: String? = null,
-    onGames: () -> Unit = {},
+    openings: List<Opening>, onOpeningClick: (String) -> Unit, onExploreAll: () -> Unit,
+    onContinue: () -> Unit, onOfflineLibrary: () -> Unit, onRepertoires: () -> Unit,
+    resume: TrainerUiState?, persistenceStatus: String, modifier: Modifier = Modifier,
+    catalogLoading: Boolean = false, catalogError: String? = null, onGames: () -> Unit = {},
     gameResume: com.openinglab.app.ui.GameStudyUiState? = null,
     recall: com.openinglab.app.ui.RecallUiState = com.openinglab.app.ui.RecallUiState(), onReview: () -> Unit = {},
-    deepCourses: List<DeepCourseChapterView> = emptyList(),
-    deepCourseLoading: Boolean = false,
-    deepCourseError: String? = null,
-    onDeepCourse: (String) -> Unit = {},
+    deepCourses: List<DeepCourseChapterSummary> = emptyList(), deepCourseLoading: Boolean = false,
+    deepCourseError: String? = null, onDeepCourse: (String) -> Unit = {}, developerMode: Boolean = false,
+    learner: LearnerUiState = LearnerUiState(), onTactics: () -> Unit = {}, onOpeningPractice: () -> Unit = {},
+    tacticsSummary: com.openinglab.app.tactics.TacticsTodaySummary? = null,
 ) {
-    val ruy = openings.firstOrNull { it.name.replace('ó', 'o') == "Ruy Lopez" } ?: openings.first()
-    val ordered = openings.sortedBy { opening ->
-        listOf("Ruy Lopez", "London System", "Sicilian Defense", "French Defense", "Caro-Kann Defense", "Italian Game", "Queen's Gambit Declined").indexOf(opening.name.replace('ó', 'o')).let { if (it < 0) 100 else it }
-    }
-    LazyColumn(
-        modifier = modifier.testTag("home-list"),
-        contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 20.dp, vertical = 22.dp),
-        verticalArrangement = Arrangement.spacedBy(24.dp),
-    ) {
-        item { TextButton(onRepertoires, modifier = Modifier.testTag("my-repertoires")) { Text("My repertoires →", color = Leaf) } }
-        item { TextButton(onGames, modifier = Modifier.testTag("gm-game-library")) { Text("Players & GM games →", color = Leaf) } }
+    val ruy = openings.firstOrNull { it.name.replace('ó', 'o') == "Ruy Lopez" } ?: openings.firstOrNull()
+    val order = listOf("Ruy Lopez", "London System", "Sicilian Defense", "French Defense", "Caro-Kann Defense", "Italian Game", "Queen's Gambit Declined")
+    val ordered = openings.sortedBy { order.indexOf(it.name.replace('ó', 'o')).let { index -> if (index < 0) 100 else index } }
+    val routine = learner.routine
+    LazyColumn(modifier.testTag("home-list"), contentPadding = PaddingValues(horizontal = 20.dp, vertical = 22.dp),
+        verticalArrangement = Arrangement.spacedBy(18.dp)) {
         item {
-            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                OpeningLabMark(Modifier.weight(1f))
-                Row(
-                    Modifier
-                        .clip(CircleShape)
-                        .background(Gold.copy(alpha = .12f))
-                        .border(1.dp, Gold.copy(alpha = .36f), CircleShape)
-                        .padding(horizontal = 11.dp, vertical = 7.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Icon(Icons.Rounded.Bolt, null, tint = Gold, modifier = Modifier.size(17.dp))
-                    Text("LEARN", color = Gold, style = MaterialTheme.typography.labelLarge)
+            OpeningLabMark()
+            Spacer(Modifier.height(12.dp))
+            val greeting = when (learner.hour) { in 5..11 -> "Good morning"; in 12..16 -> "Good afternoon"; else -> "Good evening" }
+            Text("$greeting, ${learner.preferences.displayName.ifBlank { "there" }}", color = Cream, style = MaterialTheme.typography.headlineMedium,
+                modifier = Modifier.testTag("home-greeting"))
+        }
+        item {
+            HomeCard(Modifier.testTag("home-today")) {
+                Text("Today", color = Cream, style = MaterialTheme.typography.titleLarge)
+                if (learner.loading) LinearProgressIndicator(Modifier.fillMaxWidth())
+                learner.error?.let { Text(it, color = Gold, style = MaterialTheme.typography.bodySmall) }
+                RoutineRow("Tactics · ${routine.settings.dailyPuzzles} puzzles", routine.puzzles, routine.settings.dailyPuzzles,
+                    routine.tacticsDone, "routine-tactics", onTactics,
+                    tacticsSummary?.activeSet?.let { "$it · Cycle ${tacticsSummary.cycle} · ${tacticsSummary.progress}/${tacticsSummary.puzzleCount}" })
+                RoutineRow("Openings · practise ${routine.settings.dailyLines} lines", routine.lines, routine.settings.dailyLines,
+                    routine.openingsDone, "routine-openings", onOpeningPractice)
+                if (routine.showReview) Row(Modifier.fillMaxWidth().clickable(onClick = onReview).padding(vertical = 10.dp)
+                    .testTag("home-open-review"), verticalAlignment = Alignment.CenterVertically) {
+                    Text("○", color = Leaf, modifier = Modifier.padding(end = 12.dp))
+                    Text("Review · ${routine.due} due", color = Cream, modifier = Modifier.weight(1f))
+                    Text("→", color = Leaf)
                 }
-                Spacer(Modifier.width(10.dp))
-                Box(Modifier.size(36.dp).clip(CircleShape).background(Leaf), contentAlignment = Alignment.Center) {
-                    Text("♞", color = Ink, style = MaterialTheme.typography.labelLarge)
-                }
+                if (routine.done && !learner.loading) Text("Routine done for today", color = Leaf, modifier = Modifier.testTag("routine-done"))
+                HorizontalDivider(color = Divider)
+                Text("${learner.week.studyDays} of ${routine.settings.weeklyGoal} study days this week", color = MutedCream,
+                    style = MaterialTheme.typography.bodySmall, modifier = Modifier.testTag("home-study-week"))
+                // Review remains available even before the first chosen scope exists.
+                if (!routine.showReview) TextButton(onReview, Modifier.testTag("home-open-review")) { Text("Review", color = Leaf) }
             }
         }
-
         item {
-            Column {
-                Eyebrow("Your repertoire, move by move")
-                Spacer(Modifier.height(7.dp))
-                Text("Build positions\nyou can trust.", color = Cream, style = MaterialTheme.typography.displayMedium)
-                Spacer(Modifier.height(12.dp))
-                Text(
-                    if (openings.any { it.teaching != null }) "${openings.size} opening families. Study both sides, understand the moves and explore named variations." else
-                        "Preparing opening courses. Starter lessons remain available while the local catalog loads.",
-                    color = MutedCream,
-                    style = MaterialTheme.typography.bodyLarge,
-                )
-            }
-        }
-
-        item {
-            if (catalogLoading) Text("Preparing the offline opening courses…", color = Leaf, modifier = Modifier.testTag("home-catalog-loading"))
+            if (catalogLoading) LinearProgressIndicator(Modifier.fillMaxWidth().testTag("home-catalog-loading"))
             catalogError?.let { Text(it, color = Gold, modifier = Modifier.testTag("home-catalog-error")) }
-            if (gameResume == null) ContinueCard(resume?.opening ?: ruy, resume, onContinue)
-            else Column {
-                Text("Continue original game", color = Leaf)
-                Text("${gameResume.score.white.name} – ${gameResume.score.black.name}", color = Cream)
-                Text("${gameResume.replay.playerSide.name} POV · ${gameResume.replay.ply}/${gameResume.replay.moves.size} half-moves · exact retained score", color = MutedCream)
-                TextButton(onContinue, modifier = Modifier.testTag("continue-lesson")) { Text("Continue game") }
-            }
+            if (gameResume != null) HomeCard(Modifier.clickable(onClick = onContinue).testTag("continue-lesson")) {
+                Eyebrow("Continue")
+                Text("${gameResume.score.white.name} – ${gameResume.score.black.name}", color = Cream, style = MaterialTheme.typography.titleMedium)
+                Text("Move ${gameResume.replay.ply}/${gameResume.replay.moves.size} · ${gameResume.replay.playerSide.name.lowercase()} POV", color = MutedCream)
+            } else if (ruy != null) ContinueCard(resume?.opening ?: ruy, resume, onContinue)
             Text(persistenceStatus, color = MutedCream, style = MaterialTheme.typography.bodySmall,
-                modifier = Modifier.padding(top = 8.dp).testTag("persistence-status"))
-            TextButton(onClick = onOfflineLibrary, modifier = Modifier.testTag("offline-library")) { Text("Offline library & sources", color = Leaf) }
+                    modifier = Modifier.padding(top = 6.dp).testTag("persistence-status"))
         }
-
         if (deepCourses.isNotEmpty() || deepCourseLoading || deepCourseError != null) item {
-            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Eyebrow("Deep courses · generated, engine-checked", color = Gold)
-                if (deepCourseLoading) Text("Checking the bundled deep course…", color = Leaf, modifier = Modifier.testTag("deep-course-loading"))
-                deepCourseError?.let { Text(it, color = Gold, modifier = Modifier.testTag("deep-course-error")) }
-                deepCourses.forEach { chapter -> DeepCourseCard(chapter) { onDeepCourse(chapter.opening.id) } }
+            if (deepCourseLoading) LinearProgressIndicator(Modifier.fillMaxWidth().testTag("deep-course-loading"))
+            deepCourseError?.let { Text(it, color = Gold, modifier = Modifier.testTag("deep-course-error")) }
+            deepCourses.distinctBy { it.course.id }.forEach { chapter ->
+                val chapters = deepCourses.filter { it.course.id == chapter.course.id }
+                val studied = learner.studiedIn(chapters.map { it.openingId }.toSet())
+                HomeCard(Modifier.clickable { onDeepCourse(chapter.course.id) }.testTag("deep-pack-${chapter.course.id}")) {
+                    Text(if (chapter.course.id == "ruy-lopez") "The Ruy Lopez · Complete course" else chapter.course.title,
+                        color = Cream, style = MaterialTheme.typography.titleLarge)
+                    val lines = chapters.sumOf { it.lineCount }
+                    Text("$studied / $lines lines studied", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                    RoundedProgressBar(if (lines == 0) 0f else studied.toFloat() / lines, Modifier.fillMaxWidth())
+                    if (developerMode) Text(courseSubtitle(chapter.course), color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                }
             }
         }
-
-        item {
-            Text("Local recall uses your chosen route, family or named-set revision. Completing a line once is not long-term mastery.",
-                color = MutedCream, style = MaterialTheme.typography.bodySmall)
-            Spacer(Modifier.height(10.dp))
-            DailyDrillCard(onClick = onReview, recall = recall)
+        // Active tactics are already the routine's first row, including the real cycle progress.
+        item { SectionHeader("Your opening courses", "Explore all", onExploreAll) }
+        items(ordered.take(7), key = { it.id }) { opening ->
+            HomeCard(Modifier.clickable { onOpeningClick(opening.id) }.testTag("opening-${opening.id}")) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Column(Modifier.weight(1f)) {
+                        Text(opening.name, color = Cream, style = MaterialTheme.typography.titleMedium)
+                        Text("${opening.eco} · ${opening.teaching?.sourceRoutes ?: opening.variations.size} routes", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                        if (developerMode) Text(opening.identity, color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                    }
+                    Text("→", color = Leaf)
+                }
+            }
         }
-
-        item { SectionHeader("Your repertoire", "Explore all", onExploreAll) }
-
-        items(ordered, key = { it.id }) { opening ->
-            OpeningCard(opening = opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth().testTag("opening-${opening.id}"))
-        }
-
-        item {
-            QuoteCard()
-            Spacer(Modifier.height(4.dp))
+        item(key = "home-secondary-links") {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                TextButton(onRepertoires, Modifier.testTag("my-repertoires")) { Text("My repertoires", color = Leaf) }
+                TextButton(onGames, Modifier.testTag("gm-game-library")) { Text("Players & GM games", color = Leaf) }
+                TextButton(onOfflineLibrary, Modifier.testTag("offline-library")) { Text("Offline library", color = Leaf) }
+            }
         }
     }
 }
 
 @Composable
-private fun DeepCourseCard(chapter: DeepCourseChapterView, onClick: () -> Unit) {
-    Surface(
-        modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(22.dp)).clickable(onClick = onClick).testTag("deep-course-${chapter.chapter.id}"),
-        color = DeepMoss, shape = RoundedCornerShape(22.dp), border = androidx.compose.foundation.BorderStroke(1.dp, Gold.copy(alpha = .4f)),
-    ) {
-        Column(Modifier.padding(18.dp)) {
-            Eyebrow(if (chapter.chapter.kind == "GAME") "GM game · both points of view" else "${chapter.course.title} · chapter", color = Gold)
-            Spacer(Modifier.height(6.dp))
-            Text(chapter.chapter.title, color = Cream, style = MaterialTheme.typography.titleLarge)
-            Text(chapter.chapter.coverage?.let { "${it.lines} lines · ${chapter.chapter.variations.size.takeIf { n -> n > 0 }?.let { n -> "$n variations · " } ?: ""}${it.minPlies}–${it.maxPlies} half-moves" }
-                ?: chapter.chapter.game?.let { "${it.white} – ${it.black} · ${it.event} · ${it.result}" } ?: "${chapter.opening.variations.size} lines",
-                color = MutedCream, style = MaterialTheme.typography.bodySmall)
+private fun HomeCard(modifier: Modifier = Modifier, content: @Composable ColumnScope.() -> Unit) {
+    Surface(modifier.fillMaxWidth(), color = DeepMoss, shape = RoundedCornerShape(20.dp), border = BorderStroke(1.dp, Divider)) {
+        Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(8.dp), content = content)
+    }
+}
+
+@Composable
+private fun RoutineRow(label: String, count: Int, target: Int, done: Boolean, tag: String, onClick: () -> Unit, subtitle: String? = null) {
+    Row(Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 10.dp).testTag(tag), verticalAlignment = Alignment.CenterVertically) {
+        Icon(if (done) Icons.Rounded.CheckCircle else Icons.Rounded.RadioButtonUnchecked,
+            if (done) "Complete" else "In progress", tint = if (done) Leaf else MutedCream, modifier = Modifier.padding(end = 12.dp))
+        Column(Modifier.weight(1f)) {
+            Text(label, color = Cream, style = MaterialTheme.typography.titleSmall)
+            subtitle?.let { Text(it, color = MutedCream, style = MaterialTheme.typography.bodySmall) }
+            RoundedProgressBar(if (target <= 0) 0f else count.toFloat() / target, Modifier.fillMaxWidth().padding(top = 8.dp))
         }
+        Text("$count/$target", color = if (done) Leaf else MutedCream, modifier = Modifier.padding(start = 12.dp))
     }
 }
 
 @Composable
 private fun ContinueCard(opening: Opening, resume: TrainerUiState?, onClick: () -> Unit) {
-    val position = resume?.position ?: BoardPosition.starting()
-    Surface(
-        modifier = Modifier.fillMaxWidth().testTag("continue-lesson").clip(RoundedCornerShape(26.dp)).clickable(onClick = onClick),
-        shape = RoundedCornerShape(26.dp),
-        color = Leaf,
-    ) {
-        Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
+    HomeCard(Modifier.clickable(onClick = onClick).testTag("continue-lesson")) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
-                Eyebrow(if (resume == null) "Start learning" else "Continue learning", color = Ink.copy(alpha = .64f))
-                Spacer(Modifier.height(8.dp))
-                Text(opening.name, color = Ink, style = MaterialTheme.typography.headlineMedium)
-                Text(resume?.variation?.name ?: opening.mainLine.name, color = Ink.copy(alpha = .68f), style = MaterialTheme.typography.bodyMedium)
-                Spacer(Modifier.height(19.dp))
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Rounded.Schedule, null, tint = Ink.copy(alpha = .64f), modifier = Modifier.size(16.dp))
-                    Spacer(Modifier.width(6.dp))
-                    Text(if (resume == null) if (opening.teaching != null) "Opening course · both colors" else "Authored starter lesson" else
-                        "${resume.playerSide.name.lowercase()} · ${resume.mode.name.lowercase()} · Move ${resume.ply}/${resume.replay.moves.size}",
-                        color = Ink.copy(alpha = .74f), style = MaterialTheme.typography.bodySmall)
-                }
+                Eyebrow(if (resume == null) "Start learning" else "Continue")
+                Text(opening.name, color = Cream, style = MaterialTheme.typography.titleMedium)
+                Text(resume?.variation?.name ?: opening.mainLine.name, color = MutedCream, style = MaterialTheme.typography.bodySmall, maxLines = 2)
+                if (resume != null) Text("${resume.playerSide.name.lowercase()} · ${resume.mode.name.lowercase()} · ${resume.ply}/${resume.replay.moves.size}", color = Leaf, style = MaterialTheme.typography.bodySmall)
             }
-            Spacer(Modifier.width(14.dp))
-            ChessBoard(position, modifier = Modifier.size(126.dp), showCoordinates = false,
+            Spacer(Modifier.width(12.dp))
+            ChessBoard(resume?.position ?: BoardPosition.starting(), Modifier.size(74.dp), showCoordinates = false,
                 perspective = resume?.playerSide ?: com.openinglab.shared.model.PieceColor.WHITE)
         }
-    }
-}
-
-@Composable
-private fun DailyDrillCard(onClick: () -> Unit, recall: com.openinglab.app.ui.RecallUiState) {
-    Surface(
-        modifier = Modifier.fillMaxWidth(),
-        color = DeepMoss,
-        shape = RoundedCornerShape(22.dp),
-        border = androidx.compose.foundation.BorderStroke(1.dp, Divider),
-    ) {
-        Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
-            Box(Modifier.size(48.dp).clip(RoundedCornerShape(15.dp)).background(Gold.copy(alpha = .16f)), contentAlignment = Alignment.Center) {
-                Text("♟", color = Gold, style = MaterialTheme.typography.headlineLarge)
-            }
-            Spacer(Modifier.width(14.dp))
-            Column(Modifier.weight(1f)) {
-                Eyebrow("Daily recall", color = Gold)
-                Text(if (recall.loading) "Loading your schedules…" else if (recall.scopes.isEmpty()) "Choose a line to practice" else "${recall.scopes.size} chosen review scopes", color = Cream, style = MaterialTheme.typography.titleMedium)
-                Text("Select a scope to see real due decisions", color = MutedCream, style = MaterialTheme.typography.bodySmall)
-            }
-            PrimaryAction("Open review", onClick, modifier = Modifier.width(102.dp).testTag("home-open-review"), icon = null, color = Gold)
-        }
-    }
-}
-
-@Composable
-private fun QuoteCard() {
-    Column(
-        Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(22.dp))
-            .background(Moss)
-            .padding(22.dp)
-    ) {
-        Text("“", color = Leaf, style = MaterialTheme.typography.displayLarge)
-        Text(
-            "The good player is always lucky — because they have built positions where luck can find them.",
-            color = Cream,
-            style = MaterialTheme.typography.bodyLarge,
-            fontStyle = FontStyle.Italic,
-        )
-        Spacer(Modifier.height(8.dp))
-        Eyebrow("Ashva study note · not a historical quote", color = MutedCream)
     }
 }

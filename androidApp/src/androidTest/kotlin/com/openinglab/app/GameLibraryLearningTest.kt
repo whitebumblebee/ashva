@@ -30,7 +30,11 @@ import java.util.UUID
 class GameLibraryLearningTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
-    private fun click(tag: String) = rule.onNodeWithTag(tag).performScrollTo().performClick()
+    private fun click(tag: String) {
+        if (tag in setOf("my-repertoires", "gm-game-library", "offline-library"))
+            rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
+        rule.onNodeWithTag(tag).performScrollTo().performClick()
+    }
     private fun ready(model: AppViewModel = vm): GameLibraryUiState.Ready {
         rule.waitUntil(60_000) { (model.gameLibrary.state.value.library as? GameLibraryUiState.Ready)?.searching == false }
         return model.gameLibrary.state.value.library as GameLibraryUiState.Ready
@@ -73,6 +77,7 @@ class GameLibraryLearningTest {
         val deadline = SystemClock.elapsedRealtime() + 1300
         rule.waitUntil(4000) { SystemClock.elapsedRealtime() >= deadline }
         assertEquals(pausedPly, vm.gameLibrary.state.value.study?.replay?.ply)
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("game-exact-source").performScrollTo().assertTextContains(original.reference.manifestSha256!!, substring = true)
         click("game-back")
         rule.activityRule.scenario.recreate()

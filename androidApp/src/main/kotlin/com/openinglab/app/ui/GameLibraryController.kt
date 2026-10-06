@@ -20,6 +20,8 @@ class GameLibraryController(
     private val onStart: () -> Unit,
     private val onBookmark: (LessonBookmark) -> Unit,
     private val engine: ChessAnalysisEngine? = null,
+    private val defaultSpeed: () -> Long = { 1200 },
+    private val onSpeedChanged: (Long) -> Unit = {},
 ) {
     private val _state = MutableStateFlow(GameLearningUiState())
     val state: StateFlow<GameLearningUiState> = _state.asStateFlow()
@@ -172,7 +174,7 @@ class GameLibraryController(
             is LibraryScore.Private -> LessonGraph.fromPgn(score.game.checkedGame(), ref.lessonId)
         }
         require(graph.paths.getValue(graph.originalPathId).kind == LessonPathKind.ORIGINAL_GAME)
-        return GameStudyUiState(ref, score, graph.start(side))
+        return GameStudyUiState(ref, score, graph.start(side), playbackDelayMillis = defaultSpeed())
     }
 
     suspend fun restore(bookmark: LessonBookmark) {
@@ -216,7 +218,13 @@ class GameLibraryController(
         pause(); updateStudy(study.copy(replay = study.replay.jump(ply), isPlaying = false))
     }
     fun flip() { _state.value.study?.let { pausePlayback(); updateStudy(it.copy(replay = it.replay.withSide(it.replay.playerSide.opposite), isPlaying = false)) } }
-    fun speed() { _state.value.study?.let { updateStudy(it.copy(playbackDelayMillis = when (it.playbackDelayMillis) { 1200L -> 600; 600L -> 2400; else -> 1200 })) } }
+    fun setSpeed(millis: Long) {
+        val study = _state.value.study ?: return
+        if (study.playbackDelayMillis == millis) return
+        val updated = study.copy(playbackDelayMillis = millis)
+        if (_state.value.active) updateStudy(updated) else _state.update { it.copy(study = updated) }
+    }
+    fun speed() { _state.value.study?.let { val next: Long = when (it.playbackDelayMillis) { 1200L -> 700; 700L -> 2000; else -> 1200 }; onSpeedChanged(next); setSpeed(next) } }
     fun togglePlayback() {
         val initial = _state.value.study ?: return
         if ((_state.value.engineAnalysis as? EngineAnalysisUiState.Ready)?.previewIndex != null) return

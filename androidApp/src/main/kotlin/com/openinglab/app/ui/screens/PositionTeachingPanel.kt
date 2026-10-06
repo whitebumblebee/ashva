@@ -8,6 +8,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
+import com.openinglab.app.ui.components.ExpandableText
 import com.openinglab.app.ui.theme.*
 import com.openinglab.shared.chess.BoardPosition
 import com.openinglab.shared.lesson.*
@@ -21,7 +22,7 @@ private sealed interface TeachingLoad {
 }
 
 @Composable
-fun PositionTeachingPanel(board: BoardPosition, side: PieceColor, tag: String = "position-teaching") {
+fun PositionTeachingPanel(board: BoardPosition, side: PieceColor, tag: String = "position-teaching", developerMode: Boolean = false) {
     var expanded by rememberSaveable(tag) { mutableStateOf(false) }
     Column(Modifier.fillMaxWidth().padding(vertical = 8.dp).testTag(tag), verticalArrangement = Arrangement.spacedBy(7.dp)) {
         OutlinedButton({ expanded = !expanded }, Modifier.testTag("$tag-toggle")) {
@@ -46,20 +47,20 @@ fun PositionTeachingPanel(board: BoardPosition, side: PieceColor, tag: String = 
             } else {
                 Text("Position ideas · ${side.name} POV", color = Leaf, style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.testTag("$tag-ready"))
-                Text(current.focus, color = Cream, modifier = Modifier.testTag("$tag-focus"))
-                TeachingSide(current.own, "$tag-own", "Your position")
-                TeachingSide(current.opponent, "$tag-opponent", "Opponent's counterplay")
+                ExpandableText(current.focus, color = Cream, modifier = Modifier.testTag("$tag-focus"))
+                TeachingSide(current.own, "$tag-own", "Your position", developerMode)
+                TeachingSide(current.opponent, "$tag-opponent", "Opponent's counterplay", developerMode)
                 Text("Legal pawn-contact candidates · ${board.sideToMove.name} to move", color = Gold,
                     modifier = Modifier.testTag("$tag-breaks"))
-                Text(if (current.pawnBreaks.isEmpty()) "No current legal central pawn-contact move fits this specific lens. This does not mean there is no useful plan or pawn break to prepare." else
+                ExpandableText(if (current.pawnBreaks.isEmpty()) "No current legal central pawn-contact move fits this specific lens. This does not mean there is no useful plan or pawn break to prepare." else
                     current.pawnBreaks.joinToString("\n") { "${it.san} (${it.uci}) · pawn contact: ${it.contactSquares.joinToString()}." }, color = Cream)
-                Text("These are legal one-move contacts with enemy pawns on c–f files, not recommendations or verified continuations. Compare the lesson branch or analyze alternatives before choosing. No turn is invented for the other color.", color = MutedCream,
+                ExpandableText("These are legal one-move contacts with enemy pawns on c–f files, not recommendations or verified continuations. Compare the lesson branch or analyze alternatives before choosing. No turn is invented for the other color.", color = MutedCream,
                     style = MaterialTheme.typography.bodySmall)
                 if (current.geometricMotifs.isNotEmpty()) {
                     Text("Tactical geometry", color = Gold, modifier = Modifier.testTag("$tag-motifs"))
-                    current.geometricMotifs.forEach { Text("${it.topic}: ${it.text}", color = Cream) }
+                    current.geometricMotifs.forEach { ExpandableText("${it.topic}: ${it.text}", color = Cream) }
                 }
-                Text("${PositionTeaching.VERSION} · Ashva's rules-derived facts and original conditional plans. Not engine evaluation, historical annotation, GM intention, independent expert review or a promise of winning. Expand engine analysis separately to calculate legal continuations.",
+                if (developerMode) Text("${PositionTeaching.VERSION} · Ashva's rules-derived facts and original conditional plans. Not engine evaluation, historical annotation, GM intention, independent expert review or a promise of winning. Expand engine analysis separately to calculate legal continuations.",
                     color = MutedCream, style = MaterialTheme.typography.bodySmall, modifier = Modifier.testTag("$tag-provenance"))
             }
         }
@@ -67,13 +68,13 @@ fun PositionTeachingPanel(board: BoardPosition, side: PieceColor, tag: String = 
 }
 
 @Composable
-private fun TeachingSide(report: SideTeaching, tag: String, title: String) {
+private fun TeachingSide(report: SideTeaching, tag: String, title: String, developerMode: Boolean) {
     Column(Modifier.testTag(tag), verticalArrangement = Arrangement.spacedBy(5.dp)) {
         Text("$title · ${report.side.name}", color = Leaf, style = MaterialTheme.typography.titleSmall)
         report.points.forEach { point ->
-            Text("${if (point.evidence == TeachingEvidence.BOARD_FACT) "BOARD FACT" else "CONDITIONAL PLAN"} · ${point.topic}", color = Gold,
+            Text(if (developerMode) "${if (point.evidence == TeachingEvidence.BOARD_FACT) "BOARD FACT" else "CONDITIONAL PLAN"} · ${point.topic}" else point.topic, color = Gold,
                 style = MaterialTheme.typography.labelMedium)
-            Text(point.text, color = Cream, style = MaterialTheme.typography.bodyMedium)
+            ExpandableText(point.text, color = Cream, style = MaterialTheme.typography.bodyMedium)
         }
     }
 }

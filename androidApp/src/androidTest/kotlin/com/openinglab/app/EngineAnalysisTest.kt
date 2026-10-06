@@ -22,6 +22,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class EngineAnalysisTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
+    @org.junit.After fun resetDeveloperMode() { rule.runOnIdle { ViewModelProvider(rule.activity)[AppViewModel::class.java].setDeveloperMode(false) } }
 
     @Test fun actualOfflineEngineShowsCandidatesAndSeparatePreviewWithoutChangingLesson() {
         val vm = ViewModelProvider(rule.activity)[AppViewModel::class.java]
@@ -40,6 +41,7 @@ class EngineAnalysisTest {
         assertNotNull(ready.result.original); assertTrue(ready.result.alternatives!!.lines.isNotEmpty())
         assertEquals(ready.lines.size, ready.previewExplanations.size)
         ready.lines.forEachIndexed { index, line -> assertEquals(line.san, ready.previewExplanations[index].map { it.san }) }
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("engine-idea-0").performScrollTo().assertTextContains("BOARD FACT", substring = true)
         rule.onNodeWithTag("engine-budget").performScrollTo().assertTextContains("WHITE score perspective", substring = true)
         rule.onNodeWithTag("engine-provenance").performScrollTo().assertTextContains(ready.result.engine.binarySha256, substring = true)

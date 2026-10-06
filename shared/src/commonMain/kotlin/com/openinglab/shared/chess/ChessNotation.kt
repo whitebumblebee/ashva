@@ -18,10 +18,14 @@ fun BoardPosition.san(move: ChessMove): String = sanAndPlay(move).san
 fun BoardPosition.parseSan(text: String): ChessMove = parseSanAndPlay(text).move
 
 fun BoardPosition.parseSanAndPlay(text: String): SanTransition {
-    val token = text.trim().replace('0', 'O').replace(Regex("[!?]+$"), "")
+    val token = text.trim().replace('0', 'O').trimEnd('!', '?')
     val base = token.trimEnd('+', '#')
     val legal = legalMoves()
-    val target = Regex("[a-h][1-8]").findAll(base).lastOrNull()?.value
+    // SAN's destination is its final square, before the optional promotion.
+    var target: String? = null
+    for (i in 0 until base.length - 1) {
+        if (base[i] in 'a'..'h' && base[i + 1] in '1'..'8') target = base.substring(i, i + 2)
+    }
     val candidates = legal.filter { move ->
         // Match canonical base notation without replaying every unrelated candidate.
         (base.startsWith("O-O") || target == move.to) && formatSanBase(move, legal) == base

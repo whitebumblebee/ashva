@@ -21,8 +21,13 @@ import java.util.UUID
 @RunWith(AndroidJUnit4::class)
 class HistoricalGameCoachTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
+    @org.junit.After fun resetDeveloperMode() { rule.runOnIdle { ViewModelProvider(rule.activity)[AppViewModel::class.java].setDeveloperMode(false) } }
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
-    private fun click(tag: String) = rule.onNodeWithTag(tag).performScrollTo().performClick()
+    private fun click(tag: String) {
+        if (tag in setOf("my-repertoires", "gm-game-library", "offline-library"))
+            rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
+        rule.onNodeWithTag(tag).performScrollTo().performClick()
+    }
     private fun study(model: AppViewModel = vm) = requireNotNull(model.gameLibrary.state.value.study)
     private fun teaching(model: AppViewModel = vm): OriginalMoveTeachingUiState.Ready {
         rule.waitUntil(10_000) { model.gameLibrary.state.value.moveTeaching is OriginalMoveTeachingUiState.Ready }
@@ -51,6 +56,7 @@ class HistoricalGameCoachTest {
         assertFalse(teaching().facts.idea.explanation.contains("Unverified intent"))
         click("game-next"); teaching(); click("game-previous")
         assertTrue(teaching().cached)
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("game-coach-provenance").performScrollTo().assertTextContains("reused checked local explanation", substring = true)
         click("engine-analyze")
         assertFalse(study().isPlaying)
@@ -72,6 +78,7 @@ class HistoricalGameCoachTest {
         assertEquals("Stockfish", ready.result.engine.name)
         assertEquals(study().replay.nextMove!!.move.uci, ready.result.original!!.lines.single().uci.first())
         assertEquals(ready.lines.map { it.san }, ready.previewExplanations.map { ideas -> ideas.map { it.san } })
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("engine-budget").performScrollTo().assertTextContains("BLACK score perspective", substring = true)
         rule.onNodeWithTag("engine-provenance").performScrollTo().assertTextContains(ready.result.engine.binarySha256, substring = true)
         click("engine-explore-0"); click("engine-last")

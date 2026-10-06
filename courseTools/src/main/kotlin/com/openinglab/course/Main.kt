@@ -25,12 +25,17 @@ private fun usage(): Nothing {
           evals <course>                   Run gold-set/puzzle evaluations (Phase 4)
           game <course> <chapter>          Analyse the pilot GM game (Phase 11)
           toc <course>                     Data-only variation map and table of contents (owner checkpoint)
+          tactics [--output <directory>]  Build the offline CC0 Woodpecker puzzle pack
     """.trimIndent())
     kotlin.system.exitProcess(2)
 }
 
 fun main(args: Array<String>) {
     when (args.firstOrNull()) {
+        "tactics" -> {
+            require(args.size == 1 || (args.size == 3 && args[1] == "--output")) { "Usage: tactics [--output <directory>]" }
+            TacticsGenerator.run(output = args.getOrNull(2)?.let(::File) ?: File("content/tactics/v1"))
+        }
         "filter-club" -> filterClub()
         "filter-master" -> filterMaster()
         "stats" -> stats(args.getOrNull(1) ?: usage(), args.getOrNull(2) ?: usage())

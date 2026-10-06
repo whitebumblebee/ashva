@@ -1,0 +1,31 @@
+{
+    "schema": 1,
+    "sha256": "4cf96253712fbd04e551df12a127d854efccde9e5a0edc9695e10e109ed0e613",
+    "bytes": 1315189,
+    "puzzles": 6117,
+    "customPool": 4000,
+    "sets": {
+        "woodpecker-easy": 222,
+        "woodpecker-intermediate": 762,
+        "woodpecker-advanced": 144,
+        "forks": 100,
+        "pins-skewers": 100,
+        "discovered-attacks": 100,
+        "mate-in-2": 100,
+        "mate-in-3": 100,
+        "back-rank-exposed-king": 100,
+        "sacrifices": 100,
+        "endgame-tactics": 100,
+        "defensive-moves": 100,
+        "ruy-lopez": 150
+    },
+    "source": "https://database.lichess.org/lichess_db_puzzle.csv.zst",
+    "license": "CC0-1.0",
+    "inputSha256": "f48faeb62b18cb11f151523090a1a9df55e0ed46442b3a524abee3acc0784884",
+    "seed": 20261006,
+    "rows": 335543,
+    "qualityRejected": 262811,
+    "illegalRejected": 0,
+    "partialLastRowIgnored": true,
+    "note": "16 MiB compressed prefix; complete rows only. Quality-filtered and legally replayed; fixed offline training sets."
+}

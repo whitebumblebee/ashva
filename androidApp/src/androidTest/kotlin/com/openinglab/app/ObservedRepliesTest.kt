@@ -30,6 +30,7 @@ import java.util.concurrent.atomic.AtomicReference
 @RunWith(AndroidJUnit4::class)
 class ObservedRepliesTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
+    @org.junit.After fun resetDeveloperMode() { rule.runOnIdle { ViewModelProvider(rule.activity)[AppViewModel::class.java].setDeveloperMode(false) } }
     private fun sample(): ObservedGameSample {
         val bundle = BundledContent.read(rule.activity.assets, BundledContent.choices.single { it.sourceId == "lichess-broadcast-2020-04" })
         val manifest = Json.decodeFromString<ContentManifest>(bundle.manifest.decodeToString())
@@ -42,6 +43,7 @@ class ObservedRepliesTest {
     @Test fun realSampleShowsCountsOutsideMovesAndSourceDetailsWithoutChangingChoices() {
         val vm = ViewModelProvider(rule.activity)[AppViewModel::class.java]
         rule.waitUntil(20_000) { vm.uiState.value.persistenceStatus != "Loading saved lesson…" }
+        rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
         rule.onNodeWithTag("offline-library").performScrollTo().performClick()
         for (choice in BundledContent.choices.filter { it.sourceId in setOf("lichess-openings", "lichess-broadcast-2020-04") }) {
             rule.onNodeWithTag("offline-library-list").performScrollToKey(choice.sourceId)
@@ -49,7 +51,6 @@ class ObservedRepliesTest {
                 rule.onNodeWithTag("install-${choice.sourceId}").performScrollTo().performClick()
             rule.waitUntil(120_000) { vm.uiState.value.packs.any { it.sourceId == choice.sourceId && it.state == "DOWNLOADED" } }
         }
-        rule.waitUntil(60_000) { vm.uiState.value.observedReplies is ObservedRepliesUiState.Ready }
         rule.onNodeWithTag("offline-library-list").performScrollToIndex(0)
         rule.onNodeWithText("Back").performClick()
         rule.onNodeWithText("Explore").performClick()
@@ -59,10 +60,13 @@ class ObservedRepliesTest {
         rule.runOnIdle { vm.studyTrainer(); vm.jumpTrainer(0) }
         rule.onNodeWithTag("build-repertoire").performScrollTo().performClick()
         rule.waitUntil(20_000) { vm.uiState.value.repertoireEditor != null }
+        // MainActivity intentionally defers the index until an editor actually needs it.
+        rule.waitUntil(60_000) { vm.uiState.value.observedReplies is ObservedRepliesUiState.Ready || vm.uiState.value.observedReplies is ObservedRepliesUiState.Error }
+        assertTrue(vm.uiState.value.observedReplies.toString(), vm.uiState.value.observedReplies is ObservedRepliesUiState.Ready)
         val before = vm.uiState.value.repertoireEditor!!.policy
         rule.onNodeWithTag("repertoire-scroll").performScrollToKey("observed-replies")
         rule.onNodeWithTag("observed-denominator").performScrollTo().assertTextContains("79 / 79 distinct score records", substring = true)
-        rule.onNodeWithTag("observed-choice-counts").performScrollTo().assertTextContains("26 replies match your choices", substring = true)
+        rule.onNodeWithTag("observed-choice-counts").performScrollTo().assertTextContains("26 selected", substring = true)
         rule.onNodeWithTag("repertoire-scroll").performScrollToKey("option:e2e4")
         rule.onNodeWithTag("observed-option-e2e4", useUnmergedTree = true).assertTextContains("26 / 79", substring = true)
         rule.onNodeWithTag("repertoire-scroll").performScrollToKey("observed-outside:d2d4")
@@ -70,6 +74,7 @@ class ObservedRepliesTest {
         rule.onNodeWithTag("observed-outside-d2d4").assert(hasClickAction().not())
         assertEquals(before, vm.uiState.value.repertoireEditor!!.policy)
         rule.onNodeWithTag("repertoire-scroll").performScrollToKey("observed-replies")
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("observed-source-details").performScrollTo().performClick()
         val source = (vm.uiState.value.observedReplies as ObservedRepliesUiState.Ready).index.sources.single()
         rule.onNodeWithTag("observed-provenance-${source.manifest.packId}").performScrollTo().assertTextContains(source.manifestSha256, substring = true)

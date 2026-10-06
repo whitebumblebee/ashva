@@ -11,7 +11,7 @@ import java.io.ByteArrayOutputStream
  */
 object BundledCourses {
     const val PATH = "content/courses/ruy-lopez/v1/course.json"
-    const val TRUSTED_SHA256 = "cc7b70ce7845f312d4f921c36a2862484a4911956593b175e2d85ba303064844"
+    const val TRUSTED_SHA256 = "7437b57ef044c4d3a42cbad45044095db291cf72b65cf803175b6c8b2243fa58"
     private const val LIMIT = 16 * 1024 * 1024
 
     fun read(assets: AssetManager): String {

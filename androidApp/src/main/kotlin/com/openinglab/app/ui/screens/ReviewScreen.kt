@@ -12,6 +12,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.openinglab.app.ui.RecallUiState
 import com.openinglab.app.ui.components.Eyebrow
+import com.openinglab.app.ui.components.InfoNote
 import com.openinglab.app.ui.theme.*
 import java.time.Instant
 import java.time.ZoneId
@@ -25,14 +26,14 @@ fun ReviewScreen(state: RecallUiState, onStartReview: (String) -> Unit, modifier
         item {
             Eyebrow("Your local recall")
             Text("Make your moves stick.", color = Cream, style = MaterialTheme.typography.displayMedium)
-            Text("Practice a line or a saved repertoire to add its learner decisions. Review asks one exact-history position at a time. Studying is separate from demonstrating recall.", color = MutedCream)
+            InfoNote("Practise an opening to add review positions.", "Practice a line or a saved repertoire to add its learner decisions. Review asks one exact-history position at a time. Studying is separate from demonstrating recall.", color = MutedCream)
         }
         if (state.loading) item { CircularProgressIndicator(Modifier.testTag("recall-loading")) }
         state.error?.let { error -> item { Text(error, color = Gold, modifier = Modifier.testTag("recall-error")) } }
         if (state.retryableWrites > 0) item { Button(onRetryRecall, enabled = state.pendingWrites == 0,
             modifier = Modifier.testTag("retry-recall-saves")) { Text("Retry pending saves (${state.retryableWrites})") } }
         if (!state.loading && state.scopes.isEmpty()) item {
-            Text("No chosen review scope yet. Open an opening, choose White or Black, and practice; or practice your saved repertoire. Old attempts are retained as ungraded history.", color = Cream, modifier = Modifier.testTag("recall-empty"))
+            InfoNote("Choose a side and practise a line to begin.", "No chosen review scope yet. Open an opening, choose White or Black, and practice; or practice your saved repertoire. Old attempts are retained as ungraded history.", color = Cream, modifier = Modifier.testTag("recall-empty"))
         }
         selected?.let { summary -> item {
             Surface(color = DeepMoss, shape = MaterialTheme.shapes.large, modifier = Modifier.fillMaxWidth()) {
@@ -40,7 +41,7 @@ fun ReviewScreen(state: RecallUiState, onStartReview: (String) -> Unit, modifier
                     Text(summary.scope.title, color = Leaf, style = MaterialTheme.typography.titleMedium, modifier = Modifier.testTag("recall-selected-scope"))
                     Text("${summary.due} due or new · ${summary.total} chosen decisions", color = Cream, modifier = Modifier.testTag("recall-due-count"))
                     Text("${summary.introduced}/${summary.total} attempted · ${summary.established}/${summary.total} established", color = Cream, modifier = Modifier.testTag("recall-progress"))
-                    Text("Established means three due, unaided answers with separated intervals, and not currently overdue. It is not a chess rating, win probability or full-theory mastery. Shared exact prefixes count once within a course; transposed histories stay distinct.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                    InfoNote("Established = three spaced, unaided answers.", "Established means three due, unaided answers with separated intervals, and not currently overdue. It is not a chess rating, win probability or full-theory mastery. Shared exact prefixes count once within a course; transposed histories stay distinct.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
                     summary.nextDueAt?.let {
                         Text("Next scheduled: ${DateTimeFormatter.ofPattern("d MMM, HH:mm").format(Instant.ofEpochMilli(it).atZone(ZoneId.systemDefault()))}", color = MutedCream, modifier = Modifier.testTag("recall-next-date"))
                     }
@@ -60,7 +61,7 @@ fun ReviewScreen(state: RecallUiState, onStartReview: (String) -> Unit, modifier
             }
         }
         item {
-            Text("Hints, automatic hints, successful exposed engine analysis and Study exposure within ten minutes count as assistance. Assisted answers and unsuccessful recall retry after ten minutes; early drills cannot extend intervals. No notifications or network uploads.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+            InfoNote("Assisted or missed answers return in ten minutes.", "Hints, automatic hints, successful exposed engine analysis and Study exposure within ten minutes count as assistance. Assisted answers and unsuccessful recall retry after ten minutes; early drills cannot extend intervals. No notifications or network uploads.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
         }
     }
 }

@@ -35,6 +35,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
+import com.openinglab.app.ui.components.InfoNote
 import com.openinglab.app.ui.components.Eyebrow
 import com.openinglab.app.ui.components.OpeningCard
 import com.openinglab.app.ui.theme.Cream
@@ -60,6 +61,7 @@ fun ExploreScreen(
     catalogLoading: Boolean = false,
     catalogError: String? = null,
     onOfflineLibrary: () -> Unit = {},
+    developerMode: Boolean = false,
 ) {
     LazyColumn(
         modifier = modifier.testTag("opening-list"),
@@ -98,9 +100,9 @@ fun ExploreScreen(
                     catalogLoading -> "Loading installed opening catalog…"
                     catalogError != null -> catalogError
                     sourcedOpenings.isEmpty() -> "More openings available offline"
-                    else -> "${sourcedOpenings.size} source families · ${sourcedOpenings.sumOf { it.variations.size }} routes"
+                    else -> "${sourcedOpenings.size} opening families · ${sourcedOpenings.sumOf { it.variations.size }} routes"
                 }, color = Cream, style = MaterialTheme.typography.titleSmall, modifier = Modifier.testTag("source-catalog-status"))
-                Text(if (selectedDifficulty == "Sourced") "Raw name-derived taxonomy. Choose All for Ashva-guided courses; raw source routes remain unchanged." else
+                if (developerMode) InfoNote("About opening coverage", if (selectedDifficulty == "Sourced") "Raw name-derived taxonomy. Choose All for Ashva-guided courses; raw source routes remain unchanged." else
                     "Opening courses add Ashva plans and board-derived explanations. Named source routes and authored study continuations are labeled separately; coverage is finite.",
                     color = MutedCream, style = MaterialTheme.typography.bodySmall)
                 TextButton(onOfflineLibrary) { Text("Offline library & sources", color = Leaf) }
@@ -129,7 +131,7 @@ fun ExploreScreen(
             }
         }
         items(openings, key = { it.id }) { opening ->
-            OpeningCard(opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth().testTag("opening-${opening.id}"), compact = true)
+            OpeningCard(opening, onClick = { onOpeningClick(opening.id) }, modifier = Modifier.fillMaxWidth().testTag("opening-${opening.id}"), compact = true, developerMode = developerMode)
         }
         if (openings.isEmpty()) {
             item {
@@ -156,7 +158,7 @@ private fun IdentifyBanner(onClick: () -> Unit) {
             Spacer(Modifier.width(14.dp))
             Column(Modifier.weight(1f)) {
                 Text("Don't know the name?", color = Ink, style = MaterialTheme.typography.titleMedium)
-                Text("Enter moves or import PGN/FEN. Match positions against available offline catalogs.", color = Ink.copy(alpha = .7f), style = MaterialTheme.typography.bodySmall)
+                Text("Match moves or a PGN/FEN against offline openings.", color = Ink.copy(alpha = .7f), style = MaterialTheme.typography.bodySmall)
             }
             Icon(Icons.Rounded.Add, null, tint = Ink)
         }

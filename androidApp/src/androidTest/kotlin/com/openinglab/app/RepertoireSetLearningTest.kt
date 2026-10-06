@@ -27,7 +27,11 @@ class RepertoireSetLearningTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
     private fun book(id: String) = RepertoireBook(LessonGraph.fromOpening(OpeningCatalog.byId(id)))
     private fun policy(id: String, side: PieceColor = PieceColor.WHITE) = book(id).let { it.seed(side, it.graph.originalPathId) }
-    private fun click(tag: String) = rule.onNodeWithTag(tag).performScrollTo().performClick()
+    private fun click(tag: String) {
+        if (tag in setOf("my-repertoires", "gm-game-library", "offline-library"))
+            rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
+        rule.onNodeWithTag(tag).performScrollTo().performClick()
+    }
 
     @Test fun composeMembershipCreatesPinnedSetAndPracticesAcrossFamilies() {
         val context = rule.activity.applicationContext

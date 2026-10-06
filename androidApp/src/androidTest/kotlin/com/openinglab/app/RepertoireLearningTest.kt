@@ -118,6 +118,8 @@ class RepertoireLearningTest {
         rule.onNodeWithTag("repertoire-scroll").performScrollToIndex(1)
         click("practice-repertoire")
         rule.waitUntil(20_000) { vm.uiState.value.trainer?.repertoirePolicy != null && !vm.uiState.value.lessonLoading }
+        assertEquals(3, vm.uiState.value.trainer!!.repertoirePolicy!!.revision)
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("policy-practice-scope").assertTextContains("revision 3", substring = true)
         rule.onNodeWithTag("flip-side").assertIsNotEnabled()
         rule.runOnIdle { vm.studyTrainer(); vm.jumpTrainer(5) }

@@ -4,7 +4,7 @@
   "title": "The Ruy Lopez",
   "side": "BOTH",
   "level": "Club players about 1600 → 2200, both colours",
-  "summary": "The whole Ruy Lopez (Spanish) for both colours: every variation strong players use, with its name where one exists, followed as deep as master games go and then to an engine verdict, with how each side wins.",
+  "summary": "Every Ruy Lopez variation strong players use, for both colours: the named lines and important unnamed ones, how each side wins them, model games to replay, and the common mistakes to punish.",
   "chapters": [
     {
       "id": "berlin",

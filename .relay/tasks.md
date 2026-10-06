@@ -46,6 +46,16 @@ Latest owner scope update2026-10-03 supersedes that automatic next-task order: f
   - Owner 2026-10-06: cover the full Ruy Lopez — all variations with proper names where they exist (important unnamed GM lines labelled by moves), every move masters play for both sides so either POV works, followed as deep as master games go then engine to a verdict; per variation how players at different levels choose moves and how each side wins (from decisive master games, engine-checked, with example games); common mistakes with punishment. Owner approved downloading all Lichess broadcast months.
   - Checkpoint before full generation: show the owner the Ruy Lopez table of contents (variation names, game counts by level, depth) and one fully finished variation for approval. Build chapter by chapter, most important first. Supersedes the 4.d3-only Berlin pilot structure (lessons in log 0041).
 
+- [x] `ux-polish-tactics` — DONE — 0043
+  - Owner 2026-10-06 after testing 0.17. Make the app intuitive with less text at once, without removing content: progressive disclosure, a variation tree and detail screens, compact trainer cards. Remove all provenance from the end-user UI ("generated", "engine-checked", "how this text was made", coverage) and keep it for developers (docs plus an off-by-default developer mode). Content flags stay but are quiet and developer-facing.
+  - Further owner requests:
+    - Fix white-piece contrast on light squares and keep the board look.
+    - Polish Home and Profile: a real local profile, weekly goal and a practice routine.
+    - Add a full Woodpecker-method tactics module like Disco Chess: fixed sets solved in timed cycles, history, mistakes, custom sets.
+    - Gitignore large build caches.
+    - Install on the emulator, plus a new markdown guide to navigating the version, exploring the variations and the tactics module.
+  - Implementation goes to Codex (gpt-6.1-sol xhigh) per owner instruction; Claude Code orchestrates, verifies and runs device tests.
+
 - [ ] `deep-course-bakeoff` — TODO
   - Phase 9 and the AI-judge metric of `docs/DEEP_COURSE_PLAN.md`: compare a GPT model and a Claude model (writer and critic) on the gold set and the Berlin chapter. Blocked on the owner's provider/API-key/budget decision (D1); do not create accounts or spend without it.
 

@@ -31,7 +31,11 @@ class RepertoireOverviewTest {
         val book = RepertoireBook(LessonGraph.fromOpening(OpeningCatalog.byId(id)))
         return book.seed(side, book.graph.originalPathId)
     }
-    private fun click(tag: String) = rule.onNodeWithTag(tag).performScrollTo().performClick()
+    private fun click(tag: String) {
+        if (tag in setOf("my-repertoires", "gm-game-library", "offline-library"))
+            rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
+        rule.onNodeWithTag(tag).performScrollTo().performClick()
+    }
 
     @Test fun combinedColorsConflictsAndExactEditorLinkDoNotRewriteSavedChoices() {
         val context = rule.activity.applicationContext
@@ -102,7 +106,10 @@ class RepertoireOverviewTest {
         rule.runOnIdle { rule.activity.setContent { OpeningLabTheme {
             MyRepertoiresScreen(emptyList(), null, {}, {}, {}, overview = RepertoireOverviewUiState.Error, onRetry = { retries++ })
         } } }
-        rule.onNodeWithTag("overview-error").performScrollTo().assertTextContains("no families were silently omitted", substring = true)
+        rule.onNodeWithTag("overview-error").performScrollTo().assertTextEquals("Overview unavailable; your choices are saved.")
+        rule.onNodeWithContentDescription("More information: Overview unavailable; your choices are saved.").performScrollTo().performClick()
+        rule.onNodeWithText("no families were silently omitted", substring = true).assertIsDisplayed()
+        rule.onNodeWithText("Done").performClick()
         click("overview-retry"); assertEquals(1, retries)
         rule.runOnIdle { rule.activity.setContent { OpeningLabTheme {
             MyRepertoiresScreen(emptyList(), null, {}, {}, {}, overview = RepertoireOverviewUiState.Loading)

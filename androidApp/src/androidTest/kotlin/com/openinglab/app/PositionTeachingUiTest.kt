@@ -20,6 +20,7 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class PositionTeachingUiTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
+    @org.junit.After fun resetDeveloperMode() { rule.runOnIdle { ViewModelProvider(rule.activity)[AppViewModel::class.java].setDeveloperMode(false) } }
     private fun click(tag: String) = rule.onNodeWithTag(tag).performScrollTo().performClick()
     private fun waitReady() = rule.waitUntil(10_000) { rule.onAllNodesWithTag("position-teaching-ready").fetchSemanticsNodes().isNotEmpty() }
 
@@ -36,6 +37,7 @@ class PositionTeachingUiTest {
         rule.onNodeWithTag("position-teaching-ready").performScrollTo().assertTextContains("WHITE POV", substring = true)
         rule.onNodeWithTag("position-teaching-own").assertExists()
         rule.onNodeWithTag("position-teaching-opponent").assertExists()
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("position-teaching-provenance").performScrollTo().assertTextContains("Not engine evaluation", substring = true)
         assertEquals(snapshot, vm.uiState.value.trainer!!.replay.snapshot())
         click("flip-side"); waitReady()

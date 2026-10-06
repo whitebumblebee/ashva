@@ -59,4 +59,15 @@ class CoursePackerTest {
         assertEquals("In 10 master games White won from here, the winners most distinctively played Bxc6 (80% of wins vs 20% of other games); Qxd8 (50% of wins vs 0% of other games); Nbd2 (60% of wins vs 0% of other games); h4 (50% of wins vs 0% of other games); a4 (50% of wins vs 0% of other games).",
             CoursePacker.sideIdeas(SideWins(10, patterns, emptyList()), true, emptyList()).text)
     }
+    @Test fun structuredPlansContainOnlyPassedWinPlansAndPatternsUseDisplaySan() {
+        val ideas = CoursePacker.sideIdeas(SideWins(10, listOf(WinPattern("Bc6", 8, 10, 2, 10, "Bxc6"),
+            WinPattern("h4", 5, 10, 0, 10)), emptyList()), true,
+            listOf(claim("Play Bxc6.", "game statistics", type = "WINPLAN"), claim("Rejected.", "game statistics", false, type = "WINPLAN"),
+                claim("An introduction.", "generated explanation"), claim("Then play h4.", "game statistics", type = "WINPLAN")))
+        assertEquals("Play Bxc6. Then play h4.", ideas.plan)
+        assertEquals(listOf(com.openinglab.shared.course.CoursePattern("Bxc6", .8, .2),
+            com.openinglab.shared.course.CoursePattern("h4", .5, .0)), ideas.patterns)
+        kotlin.test.assertTrue(ideas.text.contains("An introduction."))
+    }
+
 }

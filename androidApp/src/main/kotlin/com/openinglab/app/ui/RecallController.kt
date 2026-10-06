@@ -106,6 +106,12 @@ class RecallController(private val store: LearningStore?, private val scope: Cor
             enqueue { val e = enrollment(t, activate = true); if (studying) store.recordStudyView(id, e.scope.id, at) }
         }
     }
+    fun recordStudyActivity(event: com.openinglab.shared.practice.StudyActivity) {
+        if (store == null) return
+        if (store.supportsRecall) enqueue { store.recordStudyActivity(event) }
+        else scope.launch { try { store.recordStudyActivity(event) }
+            catch (e: Exception) { if (e is CancellationException) throw e; loadError() } }
+    }
     fun record(t: TrainerUiState, move: ChessMove, kind: AttemptKind, onSaved: (String) -> Unit = {}): String {
         val help = t.recallHelp + (if (t.currentAssisted && t.recallHelp.isEmpty()) setOf(RecallHelp.HINT) else emptySet()) +
             (if (t.studyExposedAt?.let { clock() - it < RecallScheduler.RETRY } == true) setOf(RecallHelp.STUDY) else emptySet())

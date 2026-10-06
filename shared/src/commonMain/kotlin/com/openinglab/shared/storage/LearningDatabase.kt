@@ -6,6 +6,10 @@ import androidx.sqlite.SQLiteConnection
 import androidx.sqlite.execSQL
 import kotlinx.coroutines.flow.Flow
 
+@Entity(tableName = "daily_activity")
+data class StudyActivityEntity(@PrimaryKey val id: String, val lessonId: String, val pathId: String,
+    val kind: String, val recordedAt: Long)
+
 @Entity(tableName = "packs", indices = [Index("sourceId")])
 data class PackEntity(@PrimaryKey val packId: String, val sourceId: String, val manifest: String, val manifestHash: String,
     @ColumnInfo(defaultValue = "''") val notices: String = "")
@@ -56,11 +60,23 @@ data class StudyViewEntity(@PrimaryKey val id: String, val scopeId: String, val 
 data class RecallSummaryRow(val payload: String, val total: Int, val introduced: Int, val established: Int, val due: Int, val nextDueAt: Long?)
 data class RecallCardRow(val target: String, val state: String, val context: String)
 data class TotalsRow(val attempts: Int, val unaided: Int, val assisted: Int, val notRecalled: Int, val legacyUngraded: Int, val studyViews: Int)
+data class StudyRouteRow(val id: String, val recordedAt: Long, val scopePayload: String, val target: String, val context: String)
 
 data class AvailabilityRow(val sourceId: String, val requestedPackId: String, val state: String, val error: String?, val activePackId: String?)
 
 @Dao
 interface LearningDao {
+    @Query("SELECT recordedAt FROM attempts UNION ALL SELECT recordedAt FROM recall_events UNION ALL SELECT recordedAt FROM study_views UNION ALL SELECT recordedAt FROM daily_activity UNION ALL SELECT at AS recordedAt FROM tactics_attempts")
+    fun activityTimes(): Flow<List<Long>>
+    @Query("SELECT * FROM daily_activity ORDER BY recordedAt, id")
+    fun openingActivity(): Flow<List<StudyActivityEntity>>
+    @Query("SELECT v.id, v.recordedAt, s.payload AS scopePayload, c.target, m.context FROM study_views v JOIN recall_scopes s ON s.id = v.scopeId JOIN recall_scope_cards m ON m.scopeId = v.scopeId AND m.cardId = (SELECT MIN(cardId) FROM recall_scope_cards WHERE scopeId = v.scopeId) JOIN recall_cards c ON c.id = m.cardId ORDER BY v.recordedAt, v.id")
+    fun studyRoutes(): Flow<List<StudyRouteRow>>
+    @Query("SELECT COUNT(DISTINCT c.id) FROM recall_cards c JOIN recall_scope_cards m ON m.cardId = c.id JOIN active_recall_scopes a ON a.scopeId = m.scopeId WHERE c.dueAt <= :at")
+    fun dueCount(at: Long): Flow<Int>
+    @Query("SELECT * FROM daily_activity WHERE id = :id")
+    suspend fun openingActivityById(id: String): StudyActivityEntity?
+    @Insert suspend fun openingActivity(value: StudyActivityEntity)
     @Query("SELECT j.*, a.packId AS activePackId FROM install_jobs j LEFT JOIN active_packs a ON j.sourceId = a.sourceId ORDER BY j.sourceId")
     fun availability(): Flow<List<AvailabilityRow>>
     @Query("UPDATE install_jobs SET state = 'ERROR', error = 'Installation interrupted; previous content remains available. Retry installation.' WHERE state = 'LOADING'")
@@ -140,11 +156,26 @@ interface LearningDao {
     RepertoireEntity::class, AnnotationEntity::class, RepertoirePolicyEntity::class,
     ActiveRepertoirePolicyEntity::class, RepertoireSetEntity::class, ActiveRepertoireSetEntity::class,
     FollowedPlayerEntity::class, PrivateGameEntity::class, RecallCardEntity::class, RecallScopeEntity::class,
-    ActiveRecallScopeEntity::class, RecallScopeCardEntity::class, RecallEventEntity::class, StudyViewEntity::class], version = 6, exportSchema = true)
+    ActiveRecallScopeEntity::class, RecallScopeCardEntity::class, RecallEventEntity::class, StudyViewEntity::class,
+    TacticsCustomSetEntity::class, TacticsCycleEntity::class, TacticsAttemptEntity::class,
+    StudyActivityEntity::class], version = 8, exportSchema = true)
 @ConstructedBy(LearningDatabaseConstructor::class)
 abstract class LearningDatabase : RoomDatabase() {
     abstract fun learningDao(): LearningDao
+    abstract fun tacticsDao(): TacticsDao
     companion object {
+        val MIGRATION_7_8 = object : Migration(7, 8) {
+            override fun migrate(connection: SQLiteConnection) {
+                connection.execSQL("CREATE TABLE IF NOT EXISTS daily_activity (id TEXT NOT NULL, lessonId TEXT NOT NULL, pathId TEXT NOT NULL, kind TEXT NOT NULL, recordedAt INTEGER NOT NULL, PRIMARY KEY(id))")
+            }
+        }
+        val MIGRATION_6_7 = object : Migration(6, 7) {
+            override fun migrate(connection: SQLiteConnection) {
+                connection.execSQL("CREATE TABLE IF NOT EXISTS tactics_custom_sets (id TEXT NOT NULL, name TEXT NOT NULL, specJson TEXT NOT NULL, puzzleIdsJson TEXT NOT NULL, createdAt INTEGER NOT NULL, PRIMARY KEY(id))")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS tactics_cycles (setId TEXT NOT NULL, cycle INTEGER NOT NULL, startedAt INTEGER NOT NULL, completedAt INTEGER, activeMs INTEGER NOT NULL, PRIMARY KEY(setId, cycle))")
+                connection.execSQL("CREATE TABLE IF NOT EXISTS tactics_attempts (setId TEXT NOT NULL, cycle INTEGER NOT NULL, puzzleId TEXT NOT NULL, ordinal INTEGER NOT NULL, correct INTEGER NOT NULL, activeMs INTEGER NOT NULL, at INTEGER NOT NULL, PRIMARY KEY(setId, cycle, puzzleId))")
+            }
+        }
         // v1 is a pre-release schema fixture, not a previously shipped production database.
         val MIGRATION_1_2 = object : Migration(1, 2) {
             override fun migrate(connection: SQLiteConnection) {

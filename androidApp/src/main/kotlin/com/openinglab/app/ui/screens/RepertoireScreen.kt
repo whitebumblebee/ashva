@@ -18,6 +18,8 @@ import com.openinglab.app.ui.RepertoireEditorUiState
 import com.openinglab.app.ui.ObservedRepliesUiState
 import com.openinglab.app.ui.RepertoireOverviewUiState
 import com.openinglab.app.ui.components.ChessBoard
+import com.openinglab.app.ui.components.InfoNote
+import com.openinglab.app.ui.components.ExpandableText
 import com.openinglab.app.ui.theme.*
 import com.openinglab.shared.repertoire.*
 import com.openinglab.shared.model.PieceColor
@@ -35,6 +37,7 @@ fun RepertoireScreen(
     onSources: () -> Unit,
     onRetryObservations: () -> Unit,
     modifier: Modifier = Modifier,
+    developerMode: Boolean = false,
 ) {
     var showRoutes by rememberSaveable { mutableStateOf(false) }
     var confirmAdopt by rememberSaveable { mutableStateOf(false) }
@@ -52,12 +55,12 @@ fun RepertoireScreen(
             Text("Revision ${state.policy.revision} · ${if (state.saving) "Saving…" else "Choices saved"}", color = MutedCream,
                 modifier = Modifier.testTag("repertoire-revision"))
             state.error?.let { Text(it, color = Gold, modifier = Modifier.testTag("repertoire-save-error")) }
-            Text("One opening family, one color. Seeded from the selected route. Choose your moves and the opponent replies you want to prepare for. Other legal moves are not bad moves.", color = MutedCream)
+            InfoNote("Choose your moves and the replies to prepare.", "One opening family, one color. Seeded from the selected route. Choose your moves and the opponent replies you want to prepare for. Other legal moves are not bad moves.", color = MutedCream)
         }
         item {
             Text("${state.coverage.eligiblePathIds.size} recorded routes fit your choices · ${state.coverage.gaps.size} unanswered branches", color = Cream,
                 modifier = Modifier.testTag("repertoire-coverage"))
-            Text("${state.coverage.excludedOpponentReplies} known opponent replies excluded · ${state.coverage.sourceBoundaries} source endpoints reached. This is snapshot coverage, not all possible theory or mastery.", color = MutedCream)
+            InfoNote("${state.coverage.excludedOpponentReplies} excluded replies · ${state.coverage.sourceBoundaries} route endpoints", "${state.coverage.excludedOpponentReplies} known opponent replies excluded · ${state.coverage.sourceBoundaries} source endpoints reached. This is snapshot coverage, not all possible theory or mastery.", color = MutedCream)
             Button({ onPractice(null) }, enabled = !state.saving && state.error == null && state.coverage.eligiblePathIds.isNotEmpty(), modifier = Modifier.testTag("practice-repertoire")) {
                 Text("Practice my repertoire")
             }
@@ -78,12 +81,12 @@ fun RepertoireScreen(
             Text(if (ownTurn) "Your move: choose one preferred continuation" else "Opponent replies: include the ones you want to cover", color = Cream, style = MaterialTheme.typography.titleMedium)
             if (!ownTurn && state.options.isNotEmpty()) TextButton(onIncludeAll, enabled = !state.saving && state.error == null,
                 modifier = Modifier.testTag("repertoire-include-all")) { Text("Include all recorded replies here") }
-            Text("${state.unrecordedLegalMoves} legal moves at this position are absent from this family snapshot. They are not recorded teaching routes. Open a lesson to explore separate offline engine alternatives; analysis does not add them to this repertoire.", color = MutedCream,
+            InfoNote("${state.unrecordedLegalMoves} legal moves outside these routes", "${state.unrecordedLegalMoves} legal moves at this position are absent from this family snapshot. They are not recorded teaching routes. Open a lesson to explore separate offline engine alternatives; analysis does not add them to this repertoire.", color = MutedCream,
                 modifier = Modifier.testTag("repertoire-off-book"))
-            if (state.options.isEmpty()) Text("Source ends here. No continuation is recorded; this is not the end of the game or opening theory.", color = Gold)
+            if (state.options.isEmpty()) InfoNote("No further moves recorded in this route.", "Source ends here. No continuation is recorded; this is not the end of the game or opening theory.", color = Gold)
         }
         item(key = "observed-replies") {
-            ObservedRepliesCard(state, observations, onSources, onRetryObservations)
+            ObservedRepliesCard(state, observations, onSources, onRetryObservations, developerMode)
         }
         items(state.options, key = { "option:${it.uci}" }) { option ->
             val selected = if (ownTurn) state.policy.preferredMoves[key] == option.uci else option.uci in state.policy.opponentReplies[key].orEmpty()
@@ -109,11 +112,11 @@ fun RepertoireScreen(
         if (observed != null) items(observed.replies.filter { it.uci !in recorded }, key = { "observed-outside:${it.uci}" }) { reply ->
             Column(Modifier.testTag("observed-outside-${reply.uci}").padding(vertical = 8.dp)) {
                 Text("${reply.san} · Observed: ${reply.scores} / ${observed.scoresWithReply} scores with a reply", color = Gold)
-                Text("Outside this family snapshot. Recorded in the game sample, but no selectable teaching route here yet.", color = MutedCream)
+                InfoNote("Observed reply outside this opening’s routes.", "Outside this family snapshot. Recorded in the game sample, but no selectable teaching route here yet.", color = MutedCream)
             }
         }
         item { Text("Unanswered branches", color = Cream, style = MaterialTheme.typography.titleMedium) }
-        if (state.coverage.gaps.isEmpty()) item { Text("No choice gaps along the admitted recorded prefixes. Source endpoints and excluded replies still limit this repertoire.", color = MutedCream) }
+        if (state.coverage.gaps.isEmpty()) item { InfoNote("All included branches have choices.", "No choice gaps along the admitted recorded prefixes. Source endpoints and excluded replies still limit this repertoire.", color = MutedCream) }
         items(state.coverage.gaps.take(visibleGaps), key = { "gap:${it.pathId}:${it.ply}:${it.kind}:${it.moveUci}" }) { gap ->
             val path = state.book.graph.paths.getValue(gap.pathId)
             OutlinedButton({ onCursor(gap.pathId, gap.ply) }, enabled = !state.saving,
@@ -143,19 +146,19 @@ fun RepertoireScreen(
 
 @Composable
 private fun ObservedRepliesCard(state: RepertoireEditorUiState, observations: ObservedRepliesUiState,
-    onSources: () -> Unit, onRetry: () -> Unit) {
+    onSources: () -> Unit, onRetry: () -> Unit, developerMode: Boolean) {
     var details by rememberSaveable { mutableStateOf(false) }
     Column(Modifier.testTag("observed-replies-card"), verticalArrangement = Arrangement.spacedBy(6.dp)) {
         Text("Moves observed in the game sample", color = Cream, style = MaterialTheme.typography.titleMedium)
         when (observations) {
-            ObservedRepliesUiState.Missing -> Text("No installed game sample. Install April 2020 broadcast scores in Offline library & sources. Missing data is not zero observations.", color = MutedCream,
+            ObservedRepliesUiState.Missing -> InfoNote("Install a game pack to see observed replies.", "No installed game sample. Install April 2020 broadcast scores in Offline library & sources. Missing data is not zero observations.", color = MutedCream,
                 modifier = Modifier.testTag("observed-missing"))
             ObservedRepliesUiState.Loading -> {
                 Text("Loading and legally checking the installed score sample…", color = MutedCream, modifier = Modifier.testTag("observed-loading"))
                 LinearProgressIndicator(Modifier.fillMaxWidth())
             }
             ObservedRepliesUiState.Error -> {
-                Text("Game observations could not be loaded. No counts are shown; source packs and choices are retained.", color = Gold, modifier = Modifier.testTag("observed-error"))
+                InfoNote("Observations unavailable; your choices are saved.", "Game observations could not be loaded. No counts are shown; source packs and choices are retained.", color = Gold, modifier = Modifier.testTag("observed-error"))
                 TextButton(onRetry, modifier = Modifier.testTag("observed-retry")) { Text("Retry observations") }
             }
             is ObservedRepliesUiState.Ready -> {
@@ -163,18 +166,18 @@ private fun ObservedRepliesCard(state: RepertoireEditorUiState, observations: Ob
                 val key = state.position.positionKey
                 val observed = index.at(key)
                 val choices = index.choices(state.policy, key, state.options.map { it.uci }.toSet())
-                Text("${observed.scoresSeen} / ${index.totalScores} distinct score records reach this position · ${observed.scoresWithReply} have a recorded reply · ${observed.scoresWithoutReply} end here on first visit", color = Cream,
+                ExpandableText("${observed.scoresSeen} / ${index.totalScores} distinct score records reach this position · ${observed.scoresWithReply} have a recorded reply · ${observed.scoresWithoutReply} end here on first visit", color = Cream,
                     modifier = Modifier.testTag("observed-denominator"))
-                if (observed.scoresSeen == 0) Text("No score in this sample reaches the position. This says nothing about whether a move is playable.", color = Gold, modifier = Modifier.testTag("observed-zero"))
-                Text("${choices.selected} replies match your choices · ${choices.notSelected} use unselected snapshot moves · ${choices.outsideSnapshot} are outside this family snapshot. Counts apply only here, not to the whole repertoire.", color = MutedCream,
+                if (observed.scoresSeen == 0) InfoNote("No installed game reaches this position.", "No score in this sample reaches the position. This says nothing about whether a move is playable.", color = Gold, modifier = Modifier.testTag("observed-zero"))
+                InfoNote("${choices.selected} selected · ${choices.notSelected} unselected · ${choices.outsideSnapshot} outside this opening", "${choices.selected} replies match your choices · ${choices.notSelected} use unselected snapshot moves · ${choices.outsideSnapshot} are outside this family snapshot. Counts apply only here, not to the whole repertoire.", color = MutedCream,
                     modifier = Modifier.testTag("observed-choice-counts"))
-                Text("One score ID counts once per normalized position, using its first visit. Transpositions combine; later repeated visits do not add votes. Shares use only scores with a reply. Different IDs are not assumed to be different real games.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
-                Text("A small archived sample, not popular-master coverage, move quality, win odds or verified GM identities. No new route or engine alternative is generated.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
-                index.sources.forEach { source ->
+                InfoNote("Reply shares count each score’s first visit.", "One score ID counts once per normalized position, using its first visit. Transpositions combine; later repeated visits do not add votes. Shares use only scores with a reply. Different IDs are not assumed to be different real games.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                InfoNote("Observed replies reflect this installed sample.", "A small archived sample, not popular-master coverage, move quality, win odds or verified GM identities. No new route or engine alternative is generated.", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                if (developerMode) index.sources.forEach { source ->
                     Text("${source.manifest.source.title} · ${source.manifest.coverage.acceptedRecords} scores · ${source.manifest.source.revision} · ${source.manifest.source.license}", color = Gold)
                 }
-                TextButton({ details = !details }, modifier = Modifier.testTag("observed-source-details")) { Text(if (details) "Hide source details" else "Source details & attribution") }
-                if (details) index.sources.forEach { source ->
+                if (developerMode) TextButton({ details = !details }, modifier = Modifier.testTag("observed-source-details")) { Text(if (details) "Hide source details" else "Source details & attribution") }
+                if (developerMode && details) index.sources.forEach { source ->
                     val manifest = source.manifest
                     Text("${manifest.source.attribution}\n${manifest.source.url}\nLicense: ${manifest.source.licenseUrl}\n${manifest.source.modifications}\nPack: ${manifest.packId}\nManifest SHA-256: ${source.manifestSha256}\nRetrieved: ${manifest.retrievedAt}", color = MutedCream, style = MaterialTheme.typography.bodySmall,
                         modifier = Modifier.testTag("observed-provenance-${manifest.packId}"))
@@ -214,6 +217,7 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
     setLoading: Boolean = false, setError: String? = null,
     onSaveSet: (String, PieceColor, List<String>, RepertoireSet?) -> Unit = { _, _, _, _ -> },
     onCheckSet: (RepertoireSet) -> Unit = {}, onPracticeSet: (RepertoireSetPlan) -> Unit = {},
+    developerMode: Boolean = false,
 ) {
     var side by rememberSaveable { mutableStateOf(PieceColor.WHITE) }
     var showSetEditor by remember { mutableStateOf(false) }
@@ -225,13 +229,13 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
         item {
             TextButton(onBack) { Text("← Back") }
             Text("My repertoires", color = Cream, style = MaterialTheme.typography.headlineSmall)
-            Text("White and Black choices are separate. Open any lesson and tap Build / edit my repertoire to begin. Old saved revisions and bookmarks are retained.", color = MutedCream)
+            InfoNote("Build a repertoire from any opening lesson.", "White and Black choices are separate. Open any lesson and tap Build / edit my repertoire to begin. Old saved revisions and bookmarks are retained.", color = MutedCream)
             error?.let { Text(it, color = Gold) }
             if (policies.isEmpty()) Text("No repertoire choices saved yet.", color = Cream)
         }
         item(key = "sets-heading") {
             Text("Named multi-opening repertoires", color = Gold, style = MaterialTheme.typography.titleLarge)
-            Text("Group compatible family choices for one color into a practice queue. Every member pins its exact saved revision. A family edit does not change a set until you explicitly save its membership again.", color = MutedCream)
+            InfoNote("Group compatible openings into one practice queue.", "Group compatible family choices for one color into a practice queue. Every member pins its exact saved revision. A family edit does not change a set until you explicitly save its membership again.", color = MutedCream)
             TextButton({ editingSet = null; showSetEditor = true }, enabled = !setLoading && policies.any { it.side == side },
                 modifier = Modifier.testTag("create-repertoire-set")) { Text("New ${side.name.lowercase()} repertoire") }
             if (setLoading) Text("Saving or checking exact set members…", color = MutedCream, modifier = Modifier.testTag("set-loading"))
@@ -253,10 +257,10 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
                     TextButton({ onCheckSet(set) }, enabled = !setLoading, modifier = Modifier.testTag("check-set-${set.id}")) { Text("Check set") }
                 }
                 if (plan != null) {
-                    Text("${plan.items.size} admitted route entries · ${plan.overview.conflicts.size} preferred-move conflicts · ${plan.overview.unavailableMembers} unavailable/changed members",
+                    ExpandableText("${plan.items.size} admitted route entries · ${plan.overview.conflicts.size} preferred-move conflicts · ${plan.overview.unavailableMembers} unavailable/changed members",
                         color = Gold, modifier = Modifier.testTag("set-check-${set.id}"))
-                    Text("Only routes fitting the pinned choices enter the queue. Named routes may overlap; endpoints are not complete theory and queue navigation is not a mastery score.", color = MutedCream)
-                    if (!plan.ready) Text("Unified practice is unavailable: resolve incompatible preferences, unavailable content or a member with no fitting route. Keep intentionally different choices in separate named sets; nothing is overwritten.", color = Gold)
+                    InfoNote("Practice follows the choices saved in this set.", "Only routes fitting the pinned choices enter the queue. Named routes may overlap; endpoints are not complete theory and queue navigation is not a mastery score.", color = MutedCream)
+                    if (!plan.ready) InfoNote("Resolve conflicts or unavailable members to practise.", "Unified practice is unavailable: resolve incompatible preferences, unavailable content or a member with no fitting route. Keep intentionally different choices in separate named sets; nothing is overwritten.", color = Gold)
                     plan.overview.conflicts.take(12).forEach { conflict ->
                         Text("Conflicting preferred moves: ${conflict.choices.joinToString { it.san }}", color = Cream)
                         conflict.choices.flatMap { it.origins }.distinctBy { it.policyId }.forEach { origin ->
@@ -271,7 +275,7 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
         }
         item {
             Text("Combined repertoire overview", color = Gold, style = MaterialTheme.typography.titleLarge)
-            Text("Live view of saved family choices, separately for each color. Shared positions combine; conflicts stay visible. This does not stitch new teaching routes or automatically change choices.", color = MutedCream)
+            InfoNote("Shared positions and conflicts across your openings.", "Live view of saved family choices, separately for each color. Shared positions combine; conflicts stay visible. This does not stitch new teaching routes or automatically change choices.", color = MutedCream)
             Row {
                 PieceColor.entries.forEach { color ->
                     TextButton({ side = color }, Modifier.testTag("overview-side-$color")) {
@@ -282,17 +286,17 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
             when (overview) {
                 RepertoireOverviewUiState.Loading -> Text("Checking saved families and shared positions…", color = MutedCream, modifier = Modifier.testTag("overview-loading"))
                 RepertoireOverviewUiState.Error -> {
-                    Text("Combined view could not be checked. Saved choices have not changed; no families were silently omitted.", color = Gold, modifier = Modifier.testTag("overview-error"))
+                    InfoNote("Overview unavailable; your choices are saved.", "Combined view could not be checked. Saved choices have not changed; no families were silently omitted.", color = Gold, modifier = Modifier.testTag("overview-error"))
                     TextButton(onRetry, Modifier.testTag("overview-retry")) { Text("Retry combined view") }
                 }
                 is RepertoireOverviewUiState.Ready -> group?.let {
-                    Text("${it.side.name} · ${it.members.size} saved family policies · ${it.preferredPositions} preferred positions · ${it.includedReplies} distinct included replies", color = Cream,
+                    ExpandableText("${it.side.name} · ${it.members.size} saved family policies · ${it.preferredPositions} preferred positions · ${it.includedReplies} distinct included replies", color = Cream,
                         modifier = Modifier.testTag("overview-summary"))
-                    Text("${it.reachedPositions} reached source positions · ${it.conflicts.size} preferred-move conflicts · ${it.unavailableMembers} unavailable/changed families", color = Gold,
+                    ExpandableText("${it.reachedPositions} reached source positions · ${it.conflicts.size} preferred-move conflicts · ${it.unavailableMembers} unavailable/changed families", color = Gold,
                         modifier = Modifier.testTag("overview-conflicts"))
-                    Text("Counts cover validated reachable source prefixes only, not all theory or mastery. Missing versions remain listed and are excluded from checked counts. Practice is still per family, not a unified cross-family lesson.", color = MutedCream)
+                    InfoNote("Coverage counts reachable, available routes.", "Counts cover validated reachable source prefixes only, not all theory or mastery. Missing versions remain listed and are excluded from checked counts. Practice is still per family, not a unified cross-family lesson.", color = MutedCream)
                     if (it.members.isNotEmpty() && it.conflicts.isEmpty() && it.unavailableMembers == 0)
-                        Text("No preferred-move conflict in the checked scope. Source endpoints, excluded replies and unanswered branches still limit coverage.", color = MutedCream)
+                        InfoNote("No preferred-move conflicts found.", "No preferred-move conflict in the checked scope. Source endpoints, excluded replies and unanswered branches still limit coverage.", color = MutedCream)
                 }
             }
         }
@@ -310,7 +314,7 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
                         }
                     }
                 }
-                Text("Keep these as separate family repertoires, or edit compatible choices deliberately. Some families cannot share one preferred move (for example e4 versus d4). Nothing is overwritten; old revisions/bookmarks are retained.", color = MutedCream)
+                InfoNote("Keep separate repertoires or edit compatible choices.", "Keep these as separate family repertoires, or edit compatible choices deliberately. Some families cannot share one preferred move (for example e4 versus d4). Nothing is overwritten; old revisions/bookmarks are retained.", color = MutedCream)
             }
         }
         item { Text("Saved family policies", color = Cream, style = MaterialTheme.typography.titleLarge) }
@@ -319,8 +323,8 @@ fun MyRepertoiresScreen(policies: List<RepertoirePolicy>, error: String?, onBack
             Column {
                 Text(policy.name, color = Cream, style = MaterialTheme.typography.titleMedium)
                 Text("Revision ${policy.revision} · ${policy.preferredMoves.size} preferred positions · ${policy.opponentReplies.values.sumOf { it.size }} included replies", color = MutedCream)
-                TextButton({ showIdentity = !showIdentity }) { Text(if (showIdentity) "Hide exact saved identity" else "Show exact saved identity") }
-                if (showIdentity) Text("Lesson: ${policy.lessonId}\nMove snapshot SHA-256: ${policy.contentVersion}\nPolicy: ${policy.id} · revision ${policy.revision}", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                if (developerMode) TextButton({ showIdentity = !showIdentity }) { Text(if (showIdentity) "Hide exact saved identity" else "Show exact saved identity") }
+                if (developerMode && showIdentity) Text("Lesson: ${policy.lessonId}\nMove snapshot SHA-256: ${policy.contentVersion}\nPolicy: ${policy.id} · revision ${policy.revision}", color = MutedCream, style = MaterialTheme.typography.bodySmall)
                 summaries[policy.id]?.let { member ->
                     Text(when (member.status) {
                         RepertoireMemberStatus.AVAILABLE -> "${member.fittingRoutes} member routes fit · ${member.unansweredBranches} unanswered branches · ${member.sourceEndpoints} source endpoints · ${member.excludedReplies} excluded replies. Member routes may overlap across families."
@@ -354,8 +358,8 @@ private fun RepertoireSetEditorDialog(existing: RepertoireSet?, side: PieceColor
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutlinedTextField(name, { name = it.take(120) }, label = { Text("Repertoire name") }, modifier = Modifier.testTag("set-name"))
-                Text("Saving pins the latest displayed revision of every checked family. Prior set revisions and bookmarks remain saved. Conflicts are checked before practice.")
-                if (missing.isNotEmpty()) Text("${missing.size} members are unavailable in the current family list. Their old set is retained; cancel or remove them deliberately before saving.")
+                ExpandableText("Saving pins the latest displayed revision of every checked family. Prior set revisions and bookmarks remain saved. Conflicts are checked before practice.")
+                if (missing.isNotEmpty()) ExpandableText("${missing.size} members are unavailable in the current family list. Their old set is retained; cancel or remove them deliberately before saving.")
                 LazyColumn(Modifier.heightIn(max = 320.dp)) {
                     items(available, key = { it.id }) { policy ->
                         Row(Modifier.fillMaxWidth().testTag("set-member-${policy.id}").toggleable(policy.id in chosen, role = Role.Checkbox) {

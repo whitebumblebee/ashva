@@ -14,8 +14,8 @@ data class ChessMove(
     val promotion: PieceType? = null,
 ) {
     init {
-        require(from.matches(Regex("[a-h][1-8]")) && to.matches(Regex("[a-h][1-8]")) && from != to) { "Invalid move squares: $from$to" }
-        require(promotion == null || promotion in listOf(PieceType.QUEEN, PieceType.ROOK, PieceType.BISHOP, PieceType.KNIGHT)) { "Invalid promotion piece" }
+        require(validSquare(from) && validSquare(to) && from != to) { "Invalid move squares: $from$to" }
+        require(promotion == null || promotion == PieceType.QUEEN || promotion == PieceType.ROOK || promotion == PieceType.BISHOP || promotion == PieceType.KNIGHT) { "Invalid promotion piece" }
     }
 
     val uci: String = from + to + when (promotion) {
@@ -27,8 +27,12 @@ data class ChessMove(
     }
 
     companion object {
+        private fun validSquare(value: String): Boolean =
+            value.length == 2 && value[0] in 'a'..'h' && value[1] in '1'..'8'
+
         fun fromUci(value: String): ChessMove {
-            require(value.matches(Regex("[a-h][1-8][a-h][1-8][qrbn]?"))) { "Invalid UCI move: $value" }
+            require(value.length in 4..5 && value[0] in 'a'..'h' && value[1] in '1'..'8' &&
+                value[2] in 'a'..'h' && value[3] in '1'..'8' && (value.length == 4 || value[4] in "qrbn")) { "Invalid UCI move: $value" }
             val promotion = when (value.getOrNull(4)) {
                 'q' -> PieceType.QUEEN
                 'r' -> PieceType.ROOK

@@ -15,6 +15,8 @@ import com.openinglab.shared.repertoire.RepertoireSetPlanner
 import com.openinglab.shared.review.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.combine
+import com.openinglab.shared.practice.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.serialization.encodeToString
@@ -27,7 +29,36 @@ class RoomLearningStore(
     private val now: () -> Long = { Clock.System.now().toEpochMilliseconds() },
     private val installCheckpoint: suspend (String) -> Unit = {},
 ) : LearningStore {
+    override val tactics = RoomTacticsStore(database)
     private val dao = database.learningDao()
+    override fun learnerActivity(at: Long) = combine(dao.activityTimes(), dao.openingActivity(), dao.dueCount(at), dao.studyRoutes()) { times, sessions, due, views ->
+        val events = sessions.map { StudyActivity(it.id, it.lessonId, it.pathId, it.kind, it.recordedAt) }
+        // A route view identifies one line. Policy/set views do not identify the line actually viewed.
+        val routeViews = views.mapNotNull { view ->
+            val scope = json.decodeFromString<RecallScope>(view.scopePayload)
+            if (!scope.groupId.startsWith("route:")) null else {
+                val target = json.decodeFromString<RecallTarget>(view.target)
+                val context = json.decodeFromString<RecallContext>(view.context)
+                context.pathId?.let { path -> StudyActivity("view:${view.id}", target.lessonId, path, StudyActivity.STUDY, view.recordedAt) }
+            }
+        }
+        LearnerActivity(times, events.filter { it.kind != StudyActivity.PUZZLE } + routeViews, due, events.filter { it.kind == StudyActivity.PUZZLE })
+    }
+    override suspend fun recordStudyActivity(activity: StudyActivity) {
+        require(activity.id.isNotBlank() && activity.lessonId.isNotBlank() && activity.pathId.isNotBlank())
+        require(activity.kind in listOf(StudyActivity.STUDY, StudyActivity.PRACTICE, StudyActivity.PUZZLE) && activity.recordedAt >= 0)
+        val row = StudyActivityEntity(activity.id, activity.lessonId, activity.pathId, activity.kind, activity.recordedAt)
+        database.useWriterConnection { it.immediateTransaction {
+            val old = dao.openingActivityById(row.id)
+            // A puzzle may be resumed on the same local day: retain its first timestamp.
+            if (row.kind == StudyActivity.PUZZLE && old != null) {
+                require(old.lessonId == row.lessonId && old.pathId == row.pathId && old.kind == row.kind)
+                return@immediateTransaction
+            }
+            require(old == null || old == row) { "An opening session event is immutable" }
+            if (old == null) dao.openingActivity(row)
+        } }
+    }
     private val installs = Mutex()
     override val availability = dao.availability().map { rows -> rows.map {
         PackAvailability(it.sourceId, it.requestedPackId, it.state, it.error, it.activePackId)

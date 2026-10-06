@@ -9,6 +9,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.LaunchedEffect
@@ -37,11 +38,18 @@ import com.openinglab.app.ui.screens.MyRepertoiresScreen
 import com.openinglab.app.ui.screens.GameLibraryScreen
 import com.openinglab.app.ui.screens.GameReplayScreen
 import com.openinglab.app.ui.screens.DeepCourseScreen
+import com.openinglab.app.ui.screens.CourseUnavailable
+import com.openinglab.app.ui.screens.CourseOverviewScreen
+import com.openinglab.app.ui.screens.CourseVariationScreen
+import com.openinglab.app.ui.screens.CourseAllLinesScreen
+import com.openinglab.app.ui.screens.SourcesLicencesScreen
+import com.openinglab.app.ui.screens.ContentFeedbackScreen
 import android.content.Intent
 import androidx.compose.ui.platform.LocalContext
 import com.openinglab.app.ui.theme.Ink
 import com.openinglab.app.ui.theme.Cream
 import com.openinglab.shared.model.PieceColor
+import com.openinglab.shared.course.displayTitle
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -55,6 +63,16 @@ private data object TrainerRoute : NavKey
 
 @Serializable
 private data class DeepCourseRoute(val openingId: String) : NavKey
+@Serializable
+private data class CourseOverviewRoute(val courseId: String) : NavKey
+@Serializable
+private data class CourseVariationRoute(val openingId: String, val index: Int, val side: PieceColor) : NavKey
+@Serializable
+private data class CourseAllLinesRoute(val openingId: String, val side: PieceColor) : NavKey
+@Serializable
+private data object SourcesLicencesRoute : NavKey
+@Serializable
+private data object ContentFeedbackRoute : NavKey
 
 @Serializable
 private data object IdentifierRoute : NavKey
@@ -76,12 +94,22 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val games by viewModel.gameLibrary.state.collectAsStateWithLifecycle()
     val recall by viewModel.recall.state.collectAsStateWithLifecycle()
+    val learner by viewModel.learner.state.collectAsStateWithLifecycle()
+    val tactics by viewModel.tactics.state.collectAsStateWithLifecycle()
+    val tacticsToday by viewModel.tactics.today.collectAsStateWithLifecycle()
+    val context = LocalContext.current
+    val shareFeedback: () -> Unit = {
+        context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
+            type = "application/json"; putExtra(Intent.EXTRA_TEXT, viewModel.exportCourseFeedback())
+        }, "Share content feedback"))
+    }
     val backStack = rememberNavBackStack(MainRoute)
     val popBack: () -> Unit = {
         if (games.active) viewModel.gameLibrary.leaveReplay() else viewModel.pauseTrainer()
         if (backStack.size > 1) backStack.removeLastOrNull()
     }
 
+    CompositionLocalProvider(com.openinglab.app.ui.components.LocalBoardCoordinates provides learner.preferences.boardCoordinates) {
     NavDisplay(
         backStack = backStack,
         modifier = Modifier.fillMaxSize().background(Ink),
@@ -112,8 +140,12 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                             catalogLoading = state.catalogLoading,
                             catalogError = state.catalogError ?: state.packError,
                             modifier = Modifier.fillMaxSize().padding(innerPadding),
-                            deepCourses = state.deepCourses, deepCourseLoading = state.deepCourseLoading,
-                            deepCourseError = state.deepCourseError, onDeepCourse = { backStack.add(DeepCourseRoute(it)) },
+                            deepCourses = state.deepCourseSummaries, deepCourseLoading = state.deepCourseLoading,
+                            deepCourseError = state.deepCourseError, onDeepCourse = { backStack.add(CourseOverviewRoute(it)) },
+                            developerMode = state.developerMode, learner = learner,
+                            tacticsSummary = tacticsToday,
+                            onTactics = { viewModel.tactics.continueRecent(); viewModel.selectTab(MainTab.TACTICS) },
+                            onOpeningPractice = { if (viewModel.practiceDailyOpening()) backStack.add(TrainerRoute) },
                         )
                         MainTab.EXPLORE -> {
                             val filtered = viewModel.filteredOpenings()
@@ -126,12 +158,14 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                                 onOpeningClick = { backStack.add(OpeningRoute(it)) },
                                 onIdentify = { backStack.add(IdentifierRoute) },
                                 sourcedOpenings = state.sourcedOpenings,
+                                developerMode = state.developerMode,
                                 catalogLoading = state.catalogLoading,
                                 catalogError = state.catalogError,
                                 onOfflineLibrary = { backStack.add(OfflineLibraryRoute) },
                                 modifier = Modifier.fillMaxSize().padding(innerPadding),
                             )
                         }
+                        MainTab.TACTICS -> com.openinglab.app.tactics.TacticsTab(viewModel.tactics, Modifier.fillMaxSize().padding(innerPadding), developerMode = state.developerMode)
                         MainTab.REVIEW -> ReviewScreen(
                             state = recall,
                             onRetryRecall = viewModel.recall::retryFailedWrites,
@@ -141,7 +175,15 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                             },
                             modifier = Modifier.fillMaxSize().padding(innerPadding),
                         )
-                        MainTab.PROFILE -> ProfileScreen(recall, Modifier.fillMaxSize().padding(innerPadding))
+                        MainTab.PROFILE -> ProfileScreen(recall, Modifier.fillMaxSize().padding(innerPadding),
+                            developerMode = state.developerMode, onDeveloperMode = viewModel::setDeveloperMode,
+                            onSources = { backStack.add(SourcesLicencesRoute) }, feedbackCount = state.courseFeedback.size,
+                            onFeedback = { backStack.add(ContentFeedbackRoute) }, learner = learner,
+                            onPreferences = viewModel::updateLearnerPreferences, onShare = shareFeedback,
+                            setNames = tactics.sets.associate { it.id to it.name },
+                            provenance = state.deepCourseSummaries.firstOrNull()?.course?.provenance?.let { p ->
+                                "${p.labelPolicy}\n\nEngine: ${p.engine} · ${p.engineBudget}\nWriter: ${p.writer} · ${p.generatedOn}\n\n${p.limitations}\n\nDetails: docs/COURSE_PROVENANCE.md"
+                            } ?: "Course text combines checked source moves, statistics and engine analysis with generated explanations. See docs/COURSE_PROVENANCE.md.")
                     }
                 }
             }
@@ -161,6 +203,7 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                         backStack.add(TrainerRoute)
                     },
                     modifier = Modifier.fillMaxSize().statusBarsPadding(),
+                    developerMode = state.developerMode,
                     onExploreSources = {
                         viewModel.pauseTrainer()
                         viewModel.updateSearch(opening.name)
@@ -171,29 +214,66 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                 )
             }
             entry<DeepCourseRoute> { route ->
-                val chapter = viewModel.deepChapter(route.openingId)
-                val context = LocalContext.current
+                LaunchedEffect(route.openingId) { viewModel.loadDeepChapter(route.openingId) }
+                val chapter = state.deepCourses.firstOrNull { it.opening.id == route.openingId }
                 if (chapter == null) Column(Modifier.fillMaxSize().statusBarsPadding().padding(24.dp)) {
-                    Text(state.deepCourseError ?: "Checking the bundled deep course…", color = Cream)
-                    if (state.deepCourseLoading) CircularProgressIndicator()
+                    Text(state.deepChapterErrors[route.openingId] ?: state.deepCourseError ?: "Checking the bundled deep course…", color = Cream)
+                    if (state.deepCourseLoading || route.openingId in state.deepChapterLoading) CircularProgressIndicator()
                     TextButton(popBack) { Text("Back") }
                 } else DeepCourseScreen(
                     chapter = chapter,
-                    feedbackCount = state.courseFeedback.count { it.courseLessonId == route.openingId },
                     onBack = popBack,
                     onStudy = { side, line -> viewModel.startTrainer(route.openingId, side, line, study = true); backStack.add(TrainerRoute) },
-                    onPractice = { side, line -> viewModel.startTrainer(route.openingId, side, line); backStack.add(TrainerRoute) },
                     onPracticeRandom = { side -> viewModel.practiceWeightedDeepLine(route.openingId, side); backStack.add(TrainerRoute) },
-                    onShareFeedback = {
-                        // Only the learner chooses where flags go; the app itself uploads nothing.
-                        val send = Intent(Intent.ACTION_SEND).setType("text/plain")
-                            .putExtra(Intent.EXTRA_SUBJECT, "Ashva course feedback")
-                            .putExtra(Intent.EXTRA_TEXT, viewModel.exportCourseFeedback())
-                        context.startActivity(Intent.createChooser(send, "Share course feedback"))
-                    },
+                    onVariation = { index, side -> backStack.add(CourseVariationRoute(route.openingId, index, side)) },
+                    onAllLines = { side -> backStack.add(CourseAllLinesRoute(route.openingId, side)) },
+                    developerMode = state.developerMode,
                     modifier = Modifier.fillMaxSize().statusBarsPadding(),
-                    onExample = { id, side -> viewModel.startTrainer(id, side, study = true); backStack.add(TrainerRoute) },
                 )
+            }
+            entry<CourseOverviewRoute> { route ->
+                val chapters = state.deepCourseSummaries.filter { it.course.id == route.courseId }
+                if (chapters.isEmpty()) CourseUnavailable(popBack, state.deepCourseLoading, state.deepCourseError)
+                else CourseOverviewScreen(chapters, popBack, { backStack.add(DeepCourseRoute(it)) }, Modifier.fillMaxSize().statusBarsPadding())
+            }
+            entry<CourseVariationRoute> { route ->
+                LaunchedEffect(route.openingId) { viewModel.loadDeepChapter(route.openingId) }
+                val chapter = state.deepCourses.firstOrNull { it.opening.id == route.openingId }
+                if (chapter == null) CourseUnavailable(popBack, state.deepCourseLoading || route.openingId in state.deepChapterLoading,
+                    state.deepChapterErrors[route.openingId] ?: state.deepCourseError)
+                else chapter.let { chapter ->
+                    val variation = chapter.chapter.variations.getOrNull(route.index)
+                    if (variation != null) CourseVariationScreen(chapter, route.index, route.side, popBack,
+                        onVariation = { backStack.add(CourseVariationRoute(route.openingId, it, route.side)) },
+                        onStudy = { chapter.lineThrough(variation.nodeId)?.let { line ->
+                            chapter.anchorPly(line, variation.nodeId)?.let { anchor ->
+                                viewModel.startTrainer(route.openingId, route.side, line, study = true, startPly = anchor)
+                                backStack.add(TrainerRoute)
+                            }
+                        } },
+                        onPractice = { viewModel.practiceDeepVariation(route.openingId, route.side, variation.nodeId)?.let { backStack.add(TrainerRoute) } },
+                        onExample = { id, side -> viewModel.startTrainer(id, side, study = true); backStack.add(TrainerRoute) },
+                        modifier = Modifier.fillMaxSize().statusBarsPadding(), developerMode = state.developerMode)
+                }
+            }
+            entry<CourseAllLinesRoute> { route ->
+                LaunchedEffect(route.openingId) { viewModel.loadDeepChapter(route.openingId) }
+                val chapter = state.deepCourses.firstOrNull { it.opening.id == route.openingId }
+                if (chapter == null) CourseUnavailable(popBack, state.deepCourseLoading || route.openingId in state.deepChapterLoading,
+                    state.deepChapterErrors[route.openingId] ?: state.deepCourseError)
+                else chapter.let { chapter ->
+                    CourseAllLinesScreen(chapter, route.side, popBack,
+                        onStudy = { viewModel.startTrainer(route.openingId, route.side, it, study = true); backStack.add(TrainerRoute) },
+                        onPractice = { viewModel.startTrainer(route.openingId, route.side, it); backStack.add(TrainerRoute) },
+                        modifier = Modifier.fillMaxSize().statusBarsPadding(), developerMode = state.developerMode)
+                }
+            }
+            entry<SourcesLicencesRoute> {
+                SourcesLicencesScreen(state, popBack, Modifier.fillMaxSize().statusBarsPadding())
+            }
+            entry<ContentFeedbackRoute> {
+                ContentFeedbackScreen(state, popBack, onShare = shareFeedback,
+                    modifier = Modifier.fillMaxSize().statusBarsPadding())
             }
             entry<TrainerRoute> {
                 if (state.trainer == null) Column(Modifier.fillMaxSize().statusBarsPadding().padding(24.dp)) {
@@ -203,6 +283,7 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                     TextButton(popBack) { Text("Back to openings") }
                 }
                 state.trainer?.let { trainer ->
+                    val deepChapter = state.deepCourses.firstOrNull { it.opening.id == trainer.opening.id }
                     TrainerScreen(
                         state = trainer,
                         onBack = popBack,
@@ -236,7 +317,16 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                         recallError = recall.error, onNextReview = viewModel::nextRecallReview,
                         recallRetryAvailable = recall.retryableWrites > 0 && recall.pendingWrites == 0,
                         onRetryRecall = viewModel.recall::retryFailedWrites,
-                        onFlag = if (viewModel.deepChapter(trainer.opening.id) != null) viewModel::flagExplanation else null,
+                        onFlag = viewModel::flagExplanation,
+                        developerMode = state.developerMode,
+                        deepNode = deepChapter?.nodeOnLine(trainer.replay.pathId, trainer.ply),
+                        deepTitle = deepChapter?.chapter?.displayTitle(deepChapter.course),
+                        deepEndingSummary = deepChapter?.lineEndingSummary(trainer.replay.pathId),
+                        deepMovePopularity = deepChapter?.nodeOnLine(trainer.replay.pathId, trainer.ply)?.let { deepChapter.movePopularity(it.id) },
+                        deepBranchSummaries = trainer.branchOffers.associate { it.pathId to (deepChapter?.branchFacts(it.pathId, it.targetPly) ?: "") },
+                        deepBranchTitles = trainer.branchOffers.mapNotNull { b -> deepChapter?.branchTitle(b.pathId, b.targetPly)?.let { b.pathId to it } }.toMap(),
+                        deepBranchGames = trainer.branchOffers.associate { it.pathId to (deepChapter?.branchGames(it.pathId, it.targetPly) ?: 0) },
+                        onFlagMessageShown = viewModel::clearFeedbackMessage,
                         flagMessage = state.feedbackMessage,
                     )
                 }
@@ -246,7 +336,7 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                 GameLibraryScreen(games, popBack, { backStack.add(OfflineLibraryRoute) }, viewModel.gameLibrary::search,
                     viewModel.gameLibrary::follow, viewModel.gameLibrary::importPgn,
                     { id, side -> viewModel.gameLibrary.start(id, side); backStack.add(GameReplayRoute) }, viewModel.gameLibrary::retry,
-                    Modifier.fillMaxSize().statusBarsPadding())
+                    Modifier.fillMaxSize().statusBarsPadding(), developerMode = state.developerMode)
             }
             entry<GameReplayRoute> {
                 DisposableEffect(Unit) { onDispose(viewModel.gameLibrary::leaveReplay) }
@@ -263,7 +353,7 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                     moveTeaching = games.moveTeaching, analysis = games.engineAnalysis,
                     onAnalyze = viewModel.gameLibrary::analyze, onStopAnalysis = viewModel.gameLibrary::stopAnalysis,
                     onExplore = viewModel.gameLibrary::exploreAnalysis, onJumpAnalysis = viewModel.gameLibrary::jumpAnalysis,
-                    onReturnAnalysis = viewModel.gameLibrary::returnAnalysis, onRequestTeaching = viewModel.gameLibrary::requestTeaching)
+                    onReturnAnalysis = viewModel.gameLibrary::returnAnalysis, onRequestTeaching = viewModel.gameLibrary::requestTeaching, developerMode = state.developerMode)
             }
             entry<IdentifierRoute> {
                 IdentifierScreen(
@@ -274,6 +364,7 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                     onUndo = viewModel::undoIdentifier,
                     onReset = viewModel::resetIdentifier,
                     onExample = viewModel::loadIdentifierExample,
+                    developerMode = state.developerMode,
                     onOpenMatch = { backStack.add(OpeningRoute(viewModel.primaryOpeningId(it))) },
                     onPromotion = viewModel::chooseIdentifierPromotion,
                     onCancelPromotion = viewModel::cancelIdentifierPromotion,
@@ -296,7 +387,7 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                     onRetry = viewModel::loadRepertoireOverview,
                     sets = state.repertoireSets, checkedSet = state.checkedSet, setLoading = state.setLoading, setError = state.setError,
                     onSaveSet = viewModel::saveRepertoireSet, onCheckSet = viewModel::checkRepertoireSet,
-                    onPracticeSet = { viewModel.practiceRepertoireSet(it); backStack.add(TrainerRoute) })
+                    onPracticeSet = { viewModel.practiceRepertoireSet(it); backStack.add(TrainerRoute) }, developerMode = state.developerMode)
             }
             entry<RepertoireRoute> { route ->
                 LaunchedEffect(route) { viewModel.openRepertoire(route.openingId, route.side, route.pathId, route.ply, route.forceCursor) }
@@ -311,8 +402,10 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                     observations = state.observedReplies,
                     onSources = { backStack.add(OfflineLibraryRoute) },
                     onRetryObservations = viewModel::retryObservedReplies,
+                    developerMode = state.developerMode,
                     modifier = Modifier.fillMaxSize().statusBarsPadding())
             }
         },
     )
+    }
 }

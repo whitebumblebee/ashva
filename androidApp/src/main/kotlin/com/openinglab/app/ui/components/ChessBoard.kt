@@ -9,6 +9,10 @@ import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
+import com.openinglab.app.R
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -19,6 +23,7 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,7 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.platform.testTag
@@ -34,11 +39,9 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.material3.Text
 import com.openinglab.app.ui.theme.BoardDark
 import com.openinglab.app.ui.theme.BoardLastMove
@@ -49,6 +52,8 @@ import com.openinglab.shared.chess.BoardPosition
 import com.openinglab.shared.model.Piece
 import com.openinglab.shared.model.PieceColor
 import com.openinglab.shared.model.PieceType
+
+val LocalBoardCoordinates = androidx.compose.runtime.staticCompositionLocalOf { true }
 
 @Composable
 fun ChessBoard(
@@ -62,6 +67,7 @@ fun ChessBoard(
     showCoordinates: Boolean = true,
     inputEnabled: Boolean = true,
 ) {
+    val coordinates = showCoordinates && LocalBoardCoordinates.current
     val haptics = LocalHapticFeedback.current
     val files = if (perspective == PieceColor.WHITE) ('a'..'h').toList() else ('a'..'h').reversed()
     val ranks = if (perspective == PieceColor.WHITE) (8 downTo 1).toList() else (1..8).toList()
@@ -75,7 +81,7 @@ fun ChessBoard(
             .clip(RoundedCornerShape(6.dp))
             .border(1.dp, Color.White.copy(alpha = .08f), RoundedCornerShape(6.dp)),
     ) {
-        val pieceSize = (maxWidth.value / 8f * .82f).sp
+        val pieceSize = maxWidth / 8 * .92f
         Column(Modifier.fillMaxSize()) {
             ranks.forEach { rank ->
                 Row(Modifier.weight(1f)) {
@@ -141,7 +147,7 @@ fun ChessBoard(
                                 )
                             }
 
-                            if (showCoordinates && file == files.first()) {
+                            if (coordinates && file == files.first()) {
                                 Text(
                                     text = rank.toString(),
                                     color = labelColor,
@@ -149,7 +155,7 @@ fun ChessBoard(
                                     modifier = Modifier.align(Alignment.TopStart).padding(start = 3.dp, top = 1.dp),
                                 )
                             }
-                            if (showCoordinates && rank == ranks.last()) {
+                            if (coordinates && rank == ranks.last()) {
                                 Text(
                                     text = file.toString(),
                                     color = labelColor,
@@ -166,33 +172,40 @@ fun ChessBoard(
 }
 
 @Composable
-private fun ChessPiece(piece: Piece, size: TextUnit) {
-    val glyph = when (piece.color to piece.type) {
-        PieceColor.WHITE to PieceType.KING -> "♔"
-        PieceColor.WHITE to PieceType.QUEEN -> "♕"
-        PieceColor.WHITE to PieceType.ROOK -> "♖"
-        PieceColor.WHITE to PieceType.BISHOP -> "♗"
-        PieceColor.WHITE to PieceType.KNIGHT -> "♘"
-        PieceColor.WHITE to PieceType.PAWN -> "♙"
-        PieceColor.BLACK to PieceType.KING -> "♚"
-        PieceColor.BLACK to PieceType.QUEEN -> "♛"
-        PieceColor.BLACK to PieceType.ROOK -> "♜"
-        PieceColor.BLACK to PieceType.BISHOP -> "♝"
-        PieceColor.BLACK to PieceType.KNIGHT -> "♞"
-        PieceColor.BLACK to PieceType.PAWN -> "♟"
-        else -> ""
+private fun ChessPiece(piece: Piece, size: Dp) {
+    // Celtic piece set by Maurizio Monge (MIT), rasterised from the Lichess SVGs; see THIRD_PARTY_NOTICES.md.
+    val image = when (piece.color to piece.type) {
+        PieceColor.WHITE to PieceType.KING -> R.drawable.piece_wk
+        PieceColor.WHITE to PieceType.QUEEN -> R.drawable.piece_wq
+        PieceColor.WHITE to PieceType.ROOK -> R.drawable.piece_wr
+        PieceColor.WHITE to PieceType.BISHOP -> R.drawable.piece_wb
+        PieceColor.WHITE to PieceType.KNIGHT -> R.drawable.piece_wn
+        PieceColor.WHITE to PieceType.PAWN -> R.drawable.piece_wp
+        PieceColor.BLACK to PieceType.KING -> R.drawable.piece_bk
+        PieceColor.BLACK to PieceType.QUEEN -> R.drawable.piece_bq
+        PieceColor.BLACK to PieceType.ROOK -> R.drawable.piece_br
+        PieceColor.BLACK to PieceType.BISHOP -> R.drawable.piece_bb
+        PieceColor.BLACK to PieceType.KNIGHT -> R.drawable.piece_bn
+        else -> R.drawable.piece_bp
     }
-    Text(
-        text = glyph,
-        color = if (piece.color == PieceColor.WHITE) Color(0xFFFFFDF5) else Color(0xFF172019),
-        style = TextStyle(
-            fontFamily = FontFamily.Serif,
-            fontSize = size,
-            lineHeight = size,
-            shadow = Shadow(
-                color = if (piece.color == PieceColor.WHITE) Color.Black.copy(alpha = .52f) else Color.White.copy(alpha = .24f),
-                blurRadius = 2.5f,
-            ),
-        ),
-    )
+    Image(painterResource(image), contentDescription = null, modifier = Modifier.size(size).clearAndSetSemantics {})
+}
+
+/** Every piece on light and dark squares; preview uses the same composable as the board. */
+@androidx.compose.ui.tooling.preview.Preview(name = "Piece contrast · both colours and squares", widthDp = 240, heightDp = 360)
+@Composable
+private fun PieceContrastPreview() {
+    com.openinglab.app.ui.theme.OpeningLabTheme {
+        Column {
+            PieceType.entries.forEach { type -> Row {
+                PieceColor.entries.forEach { color ->
+                    listOf(BoardLight, BoardDark).forEach { square ->
+                        Box(Modifier.size(60.dp).background(square), contentAlignment = Alignment.Center) {
+                            ChessPiece(Piece(color, type), 56.dp)
+                        }
+                    }
+                }
+            } }
+        }
+    }
 }

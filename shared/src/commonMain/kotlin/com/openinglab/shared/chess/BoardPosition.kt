@@ -28,17 +28,55 @@ data class BoardPosition(
 ) {
     fun pieceAt(square: String): Piece? = pieces[square]
 
-    fun legalMoves(from: String? = null): List<ChessMove> = pieces.entries.asSequence()
-        .filter { (square, piece) -> piece.color == sideToMove && (from == null || square == from) }
-        .flatMap { (square, piece) ->
-            pseudoTargets(square, piece).asSequence().flatMap { target ->
+    // The public map and data-class API stay unchanged. Only a real played move copies it.
+    // Each legal-move scan owns one scratch array, so concurrent readers never share mutations.
+    private val cells: Array<Piece?> by lazy {
+        arrayOfNulls<Piece>(64).also { board -> pieces.forEach { (square, piece) -> board[index(square)] = piece } }
+    }
+
+    fun legalMoves(from: String? = null): List<ChessMove> {
+        val board = cells.copyOf()
+        val king = kingIndex(board, sideToMove)
+        if (king < 0) return emptyList()
+        val moves = ArrayList<ChessMove>(32)
+        for ((source, piece) in pieces) {
+            if (piece.color != sideToMove || (from != null && source != from)) continue
+            for (target in pseudoTargets(source, piece)) {
+                // Promotion type cannot change whether our own king is attacked.
+                val move = ChessMove(source, target)
+                if (!kingSafeAfter(move, board, king)) continue
                 if (piece.type == PieceType.PAWN && target[1] in "18") {
-                    PROMOTIONS.asSequence().map { ChessMove(square, target, it) }
-                } else sequenceOf(ChessMove(square, target))
+                    for (promotion in PROMOTIONS) moves.add(ChessMove(source, target, promotion))
+                } else moves.add(move)
             }
         }
-        .filter { !applyUnchecked(it, recordHistory = false).isInCheck(sideToMove) }
-        .toList()
+        return moves
+    }
+
+    private fun kingSafeAfter(move: ChessMove, board: Array<Piece?>, king: Int): Boolean {
+        val from = index(move.from)
+        val to = index(move.to)
+        val moving = requireNotNull(board[from])
+        val captured = board[to]
+        val ep = moving.type == PieceType.PAWN && move.to == enPassantTarget && captured == null && move.from[0] != move.to[0]
+        val epSquare = if (ep) (from / 8) * 8 + to % 8 else -1
+        val epPiece = if (ep) board[epSquare] else null
+        val castle = moving.type == PieceType.KING && abs(from % 8 - to % 8) == 2
+        val rookFrom = if (castle) (from / 8) * 8 + if (to % 8 == 6) 7 else 0 else -1
+        val rookTo = if (castle) (from / 8) * 8 + if (to % 8 == 6) 5 else 3 else -1
+        val rook = if (castle) board[rookFrom] else null
+        val rookDestination = if (castle) board[rookTo] else null
+        board[from] = null
+        board[to] = moving
+        if (ep) board[epSquare] = null
+        if (castle) { board[rookFrom] = null; board[rookTo] = rook }
+        val safe = !attacked(board, if (moving.type == PieceType.KING) to else king, moving.color.opposite)
+        board[from] = moving
+        board[to] = captured
+        if (ep) board[epSquare] = epPiece
+        if (castle) { board[rookFrom] = rook; board[rookTo] = rookDestination }
+        return safe
+    }
 
     fun legalTargets(from: String): Set<String> = legalMoves(from).map { it.to }.toSet()
     fun isLegal(move: ChessMove): Boolean = move in legalMoves(move.from)
@@ -49,19 +87,16 @@ data class BoardPosition(
         return applyUnchecked(move, recordHistory = true)
     }
 
-    /** Not a public move API: notation calls this only after membership in THIS board's legal list. */
+    /** Internal only: legal-list membership or identical checksum-verified, previously validated pack bytes. */
     internal fun advanceKnownLegal(move: ChessMove): BoardPosition = applyUnchecked(move, recordHistory = true)
 
     fun isInCheck(color: PieceColor = sideToMove): Boolean {
-        val king = pieces.entries.singleOrNull { it.value == Piece(color, PieceType.KING) }?.key
-            ?: return true
-        return isSquareAttacked(king, color.opposite)
+        val king = kingIndex(cells, color)
+        return king < 0 || attacked(cells, king, color.opposite)
     }
 
     /** Attacks, unlike legal moves, include pinned pieces and pawn diagonals on empty squares. */
-    fun isSquareAttacked(target: String, by: PieceColor): Boolean = pieces.any { (from, piece) ->
-        piece.color == by && attacksSquare(from, piece, target)
-    }
+    fun isSquareAttacked(target: String, by: PieceColor): Boolean = attacked(cells, index(target), by)
 
     /** Geometric attackers include pinned pieces, exactly like isSquareAttacked; not legal captures. */
     fun attackersOf(target: String, by: PieceColor): List<String> = pieces.entries
@@ -136,7 +171,8 @@ data class BoardPosition(
         }.toSet()
         val irreversible = piece.type == PieceType.PAWN || captured != null || remainingRights != castlingRights
         return BoardPosition(
-            pieces = updated.toMap(), sideToMove = sideToMove.opposite, lastMove = move,
+            // `updated` has no remaining mutable owner; avoid copying the played board twice.
+            pieces = updated, sideToMove = sideToMove.opposite, lastMove = move,
             castlingRights = remainingRights,
             enPassantTarget = if (piece.type == PieceType.PAWN && abs(rank(move.from) - rank(move.to)) == 2)
                 square(file(move.from), (rank(move.from) + rank(move.to)) / 2) else null,
@@ -184,8 +220,7 @@ data class BoardPosition(
             if (emptyFiles.any { pieces["$it$home"] != null }) continue
             val transit = "${if (kingSide) 'f' else 'd'}$home"
             val destination = "${if (kingSide) 'g' else 'c'}$home"
-            val transitBoard = copy(pieces = (pieces - from) + (transit to Piece(color, PieceType.KING)))
-            if (!transitBoard.isSquareAttacked(transit, color.opposite)) add(destination)
+            if (kingSafeAfter(ChessMove(from, transit), cells.copyOf(), index(from))) add(destination)
         }
     }
 
@@ -236,6 +271,7 @@ data class BoardPosition(
     companion object {
         const val START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
         val PROMOTIONS = listOf(PieceType.QUEEN, PieceType.ROOK, PieceType.BISHOP, PieceType.KNIGHT)
+        private val whitespace = Regex("\\s+")
         private val DIAGONALS = listOf(1 to 1, 1 to -1, -1 to 1, -1 to -1)
         private val STRAIGHTS = listOf(1 to 0, -1 to 0, 0 to 1, 0 to -1)
         private val KNIGHT_OFFSETS = listOf(1 to 2, 2 to 1, 2 to -1, 1 to -2, -1 to -2, -2 to -1, -2 to 1, -1 to 2)
@@ -243,7 +279,7 @@ data class BoardPosition(
         fun starting(): BoardPosition = fromFen(START_FEN)
 
         fun fromFen(fen: String): BoardPosition {
-            val fields = fen.trim().split(Regex("\\s+"))
+            val fields = fen.trim().split(whitespace)
             require(fields.size == 6) { "FEN requires six fields" }
             val rows = fields[0].split('/')
             require(rows.size == 8) { "FEN requires eight ranks" }
@@ -275,7 +311,7 @@ data class BoardPosition(
             }
             val ep = fields[3].takeUnless { it == "-" }
             if (ep != null) {
-                require(ep.matches(Regex("[a-h][36]")) && ep[1] == if (side == PieceColor.WHITE) '6' else '3') { "Invalid en-passant target" }
+                require(ep.length == 2 && ep[0] in 'a'..'h' && ep[1] in "36" && ep[1] == if (side == PieceColor.WHITE) '6' else '3') { "Invalid en-passant target" }
                 val pawnRank = if (side == PieceColor.WHITE) '5' else '4'
                 val originRank = if (side == PieceColor.WHITE) '7' else '2'
                 require(pieces[ep] == null && pieces["${ep[0]}$pawnRank"] == Piece(side.opposite, PieceType.PAWN) && pieces["${ep[0]}$originRank"] == null) { "Inconsistent en-passant state" }
@@ -288,10 +324,59 @@ data class BoardPosition(
             return board
         }
 
+        private val SQUARES = Array(64) { i -> "${('a'.code + i % 8).toChar()}${i / 8 + 1}" }
+        private val PAWN_FILES = intArrayOf(-1, 1)
+        private val RAYS = DIAGONALS + STRAIGHTS
+        private fun index(square: String): Int = (square[1] - '1') * 8 + (square[0] - 'a')
+        private fun kingIndex(board: Array<Piece?>, color: PieceColor): Int {
+            var king = -1
+            for (i in board.indices) {
+                val piece = board[i] ?: continue
+                if (piece.color == color && piece.type == PieceType.KING) {
+                    if (king >= 0) return -1
+                    king = i
+                }
+            }
+            return king
+        }
+        private fun attacked(board: Array<Piece?>, target: Int, by: PieceColor): Boolean {
+            val f = target % 8
+            val r = target / 8
+            val pawnRank = r - if (by == PieceColor.WHITE) 1 else -1
+            if (pawnRank in 0..7) for (df in PAWN_FILES) {
+                val pf = f + df
+                if (pf in 0..7) {
+                    val piece = board[pawnRank * 8 + pf]
+                    if (piece?.color == by && piece.type == PieceType.PAWN) return true
+                }
+            }
+            for ((df, dr) in KNIGHT_OFFSETS) {
+                val nf = f + df; val nr = r + dr
+                if (nf in 0..7 && nr in 0..7) {
+                    val piece = board[nr * 8 + nf]
+                    if (piece?.color == by && piece.type == PieceType.KNIGHT) return true
+                }
+            }
+            for ((df, dr) in RAYS) {
+                var nf = f + df; var nr = r + dr; var distance = 1
+                while (nf in 0..7 && nr in 0..7) {
+                    val piece = board[nr * 8 + nf]
+                    if (piece != null) {
+                        if (piece.color == by && (piece.type == PieceType.QUEEN ||
+                            piece.type == (if (df == 0 || dr == 0) PieceType.ROOK else PieceType.BISHOP) ||
+                            (distance == 1 && piece.type == PieceType.KING))) return true
+                        break
+                    }
+                    nf += df; nr += dr; distance++
+                }
+            }
+            return false
+        }
+
         private fun file(square: String): Int = square[0] - 'a' + 1
         private fun rank(square: String): Int = square[1].digitToInt()
         private fun square(file: Int, rank: Int): String? =
-            if (file in 1..8 && rank in 1..8) "${('a'.code + file - 1).toChar()}$rank" else null
+            if (file in 1..8 && rank in 1..8) SQUARES[(rank - 1) * 8 + file - 1] else null
     }
 }
 

@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.openinglab.app.content.StartupDispatchers
+import com.openinglab.shared.data.PackValidationCache
 import com.openinglab.app.content.BundledContent
 import com.openinglab.app.content.ContentPackChoice
 import com.openinglab.app.content.OpeningPresentation
@@ -59,8 +61,13 @@ import com.openinglab.app.content.CourseFeedback
 import com.openinglab.app.content.CourseFeedbackStore
 import com.openinglab.shared.course.DeepCourseCatalog
 import com.openinglab.shared.course.DeepCourseChapterView
+import com.openinglab.shared.course.DeepCourseChapterSummary
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
+import com.openinglab.shared.course.weightedLineThrough
+import com.openinglab.app.content.AppPreferences
 
-enum class MainTab { LEARN, EXPLORE, REVIEW, PROFILE }
+enum class MainTab { LEARN, EXPLORE, TACTICS, REVIEW, PROFILE }
 enum class FeedbackKind { NONE, SUCCESS, ERROR, COMPLETE }
 enum class LessonMode { STUDY, PRACTICE }
 
@@ -92,6 +99,8 @@ data class TrainerUiState(
     val reviewAttemptId: String? = null,
     /** Deep-course practice follows the chosen line without pausing at every opponent branch. */
     val courseAutoplay: Boolean = false,
+    val practiceStartPly: Int = 0,
+    val activitySessionId: String = java.util.UUID.randomUUID().toString(),
 ) {
     val variation: Variation get() = opening.variations.first { it.id == replay.pathId }
     val playerSide: PieceColor get() = replay.playerSide
@@ -172,10 +181,14 @@ data class AppUiState(
     val observedReplies: ObservedRepliesUiState = ObservedRepliesUiState.Missing,
     val engineAnalysis: EngineAnalysisUiState = EngineAnalysisUiState.Idle,
     val deepCourses: List<DeepCourseChapterView> = emptyList(),
+    val deepCourseSummaries: List<DeepCourseChapterSummary> = emptyList(),
+    val deepChapterLoading: Set<String> = emptySet(),
+    val deepChapterErrors: Map<String, String> = emptyMap(),
     val deepCourseLoading: Boolean = false,
     val deepCourseError: String? = null,
     val courseFeedback: List<CourseFeedback> = emptyList(),
     val feedbackMessage: String? = null,
+    val developerMode: Boolean = false,
 )
 
 class AppViewModel @JvmOverloads constructor(
@@ -188,18 +201,85 @@ class AppViewModel @JvmOverloads constructor(
     private val presentationCache: OpeningPresentationCache? = null,
     private val deepCourseSource: (() -> String)? = null,
     private val courseFeedbackStore: CourseFeedbackStore? = null,
+    private val appPreferences: AppPreferences? = null,
+    private val tacticsSource: (() -> String)? = null,
+    private val deepCourseValidation: PackValidationCache? = null,
+    private val tacticsValidation: PackValidationCache? = null,
+    private val deferObservedReplies: Boolean = false,
 ) : ViewModel() {
-    // Parsed and validated once, off Main in init; a restore that needs it earlier waits for the same lazy value.
-    private val deepCourseResult: Result<DeepCourseCatalog?> by lazy {
-        runCatching { deepCourseSource?.let { DeepCourseCatalog(listOf(DeepCourseCatalog.parse(it()))) } }
-    }
+    // Main-thread lookups only read prepared objects; requests and restores await this worker's result.
+    private var deepCourseResult: Result<DeepCourseCatalog?> = Result.success(null)
+    private val deepCourseReady = CompletableDeferred<Result<DeepCourseCatalog?>>()
+    private val deepPrepare = Mutex()
+    private val teachingPrepare = Mutex()
+    private val teachingRequests = mutableSetOf<String>()
+    private val teachingFailures = mutableSetOf<String>()
+    private val firstFrameReady = CompletableDeferred<Unit>()
+    fun onFirstFrame() { firstFrameReady.complete(Unit) }
     private fun isDeepCourse(id: String) = id.startsWith(DeepCourseCatalog.ID_PREFIX)
+    /**
+     * Deep-course chapters gain moves when the course is regenerated (lines only grow; line IDs stay), so their saved
+     * bookmarks and review cards stay usable across content versions. The path, prefix and expected-move checks that
+     * follow every restore still reject anything that no longer exists. Other lessons require the exact version.
+     */
+    private fun sameLessonContent(lessonId: String, saved: String, current: String) = saved == current || isDeepCourse(lessonId)
     /** Suspend lookup used by restores: a deep-course ID is parsed off Main if it is not loaded yet. */
     private suspend fun openingFor(id: String): Opening {
-        if (isDeepCourse(id)) withContext(Dispatchers.Default) { deepCourseResult }
+        if (isDeepCourse(id)) {
+            val catalog = requireNotNull(deepCourseReady.await().getOrThrow())
+            val opening = deepPrepare.withLock {
+                withContext(StartupDispatchers.worker) {
+                    val context = currentCoroutineContext()
+                    requireNotNull(catalog.getOpening(id) { context.ensureActive() })
+                }
+            }
+            val chapterId = id.substringBefore(":ex:")
+            catalog.preparedChapter(chapterId)?.let { chapter ->
+                _uiState.update { state -> if (state.deepCourses.any { it.opening.id == chapterId }) state else
+                    state.copy(deepCourses = state.deepCourses + chapter) }
+            }
+            return opening
+        }
+        teachingCatalog?.takeIf { it.contains(id) }?.let { catalog ->
+            return teachingPrepare.withLock {
+                withContext(StartupDispatchers.worker) {
+                    val context = currentCoroutineContext()
+                    requireNotNull(catalog.getOpening(id) { context.ensureActive() })
+                }
+            }
+        }
         return getOpening(id)
     }
-    fun deepChapter(openingId: String): DeepCourseChapterView? = if (isDeepCourse(openingId)) deepCourseResult.getOrNull()?.chapter(openingId) else null
+    private fun requestTeachingOpening(id: String) {
+        if (id in teachingFailures || !teachingRequests.add(id)) return
+        _uiState.update { it.copy(catalogLoading = true, catalogError = null) }
+        viewModelScope.launch {
+            try { openingFor(id) }
+            catch (e: Exception) {
+                if (e is CancellationException) throw e
+                teachingFailures.add(id)
+                _uiState.update { it.copy(catalogError = "This course could not be prepared; saved data is retained.") }
+            } finally {
+                teachingRequests.remove(id)
+                _uiState.update { it.copy(catalogLoading = teachingRequests.isNotEmpty()) }
+            }
+        }
+    }
+    fun deepChapter(openingId: String): DeepCourseChapterView? = deepCourseResult.getOrNull()?.preparedChapter(openingId)
+
+    fun loadDeepChapter(openingId: String) {
+        if (deepChapter(openingId) != null || openingId in _uiState.value.deepChapterLoading) return
+        _uiState.update { it.copy(deepChapterLoading = it.deepChapterLoading + openingId,
+            deepChapterErrors = it.deepChapterErrors - openingId) }
+        viewModelScope.launch {
+            try { openingFor(openingId) }
+            catch (e: Exception) {
+                if (e is CancellationException) throw e
+                _uiState.update { it.copy(deepChapterErrors = it.deepChapterErrors +
+                    (openingId to "This chapter failed its checks. Saved learning data is retained.")) }
+            } finally { _uiState.update { it.copy(deepChapterLoading = it.deepChapterLoading - openingId) } }
+        }
+    }
 
     val openings: List<Opening> = openingRepository.getOpenings()
     private val openingIdentifier = OpeningIdentifier(openings)
@@ -218,7 +298,7 @@ class AppViewModel @JvmOverloads constructor(
     private var playbackJob: Job? = null
     private var trainerRevision = 0
     private val _uiState = MutableStateFlow(
-        AppUiState(trainer = if (savedStateHandle.get<Boolean>("active_game") == true) null else restoreTrainer(),
+        AppUiState(developerMode = appPreferences?.developerMode ?: false, trainer = if (savedStateHandle.get<Boolean>("active_game") == true) null else restoreTrainer(),
             identifier = IdentifierUiState(match = openingIdentifier.identify(emptyList())))
     )
     val uiState: StateFlow<AppUiState> = _uiState.asStateFlow()
@@ -233,9 +313,13 @@ class AppViewModel @JvmOverloads constructor(
     private var setJob: Job? = null
     private var observedRepliesJob: Job? = null
     private var observedRepliesKey: List<Pair<String, String>>? = null
+    private var observedRepliesPacks: List<InstalledPack> = emptyList()
+    private var observedRepliesRequested = !deferObservedReplies
     private var observedRepliesGeneration = 0
     private var engineJob: Job? = null
     private var engineGeneration = 0
+
+    val learner = LearnerController(learningStore, viewModelScope, appPreferences)
 
     val gameLibrary = GameLibraryController(learningStore, viewModelScope, savedStateHandle,
         onStart = { cancelTrainerJobs(); bookmarkRevision++; savedStateHandle["active_game"] = true },
@@ -245,9 +329,59 @@ class AppViewModel @JvmOverloads constructor(
                 _uiState.update { it.copy(persistenceStatus = "Saving lesson…") }
                 bookmarkWrites.trySend(bookmarkRevision to bookmark)
             }
-        }, engine = analysisEngine)
+        }, engine = analysisEngine, defaultSpeed = { learner.state.value.preferences.playbackMillis },
+        onSpeedChanged = { millis -> learner.update(learner.state.value.preferences.copy(playbackMillis = millis)) })
 
     val recall = RecallController(learningStore, viewModelScope, ::prepareRecallEnrollment)
+    val tactics = com.openinglab.app.tactics.TacticsController(learningStore?.tactics, viewModelScope, tacticsSource,
+        backgroundReady = { firstFrameReady.await(); catalogReady.await(); deepCourseReady.await() },
+        validationCache = tacticsValidation,
+        initialAutoNext = appPreferences?.learner()?.puzzlesAutoNext ?: true,
+        onAutoNext = { enabled -> learner.update(learner.state.value.preferences.copy(puzzlesAutoNext = enabled)) },
+        onPuzzleAttempt = { id, setId, puzzlePath, at -> recall.recordStudyActivity(
+            com.openinglab.shared.practice.StudyActivity(id, setId, puzzlePath, com.openinglab.shared.practice.StudyActivity.PUZZLE, at)) })
+
+    fun updateLearnerPreferences(value: com.openinglab.app.content.LearnerPreferences) {
+        val previous = learner.state.value.preferences
+        learner.update(value)
+        if (tactics.state.value.autoNext != value.puzzlesAutoNext) tactics.setAutoNext(value.puzzlesAutoNext)
+        if (previous.playbackMillis != value.playbackMillis) {
+            if (!gameLibrary.state.value.active) _uiState.value.trainer?.let { setTrainer(it.copy(playbackDelayMillis = value.playbackMillis)) }
+            gameLibrary.setSpeed(value.playbackMillis)
+        }
+    }
+
+    fun practiceDailyOpening(): Boolean {
+        if (gameLibrary.state.value.active) gameLibrary.leaveForOpening()
+        val current = _uiState.value.trainer
+        if (current != null && current.mode == LessonMode.PRACTICE && !current.isComplete && current.reviewTargetId == null) {
+            resumeTrainer(); return true
+        }
+        val recent = learner.state.value.activity.openings.maxByOrNull { it.recordedAt }
+        val openingId = current?.opening?.id ?: recent?.lessonId ?: _uiState.value.deepCourseSummaries.firstOrNull()?.openingId
+            ?: learningOpenings().firstOrNull()?.id ?: return false
+        val side = current?.playerSide ?: PieceColor.WHITE
+        if (isDeepCourse(openingId) || teachingCatalog?.contains(openingId) == true) {
+            cancelTrainerJobs(); bookmarkRevision++
+            val revision = trainerRevision
+            _uiState.update { it.copy(trainer = null, lessonLoading = true, lessonError = null) }
+            lessonJob = viewModelScope.launch {
+                try {
+                    val opening = openingFor(openingId)
+                    val line = deepChapter(openingId)?.weightedLineThrough() ?: opening.variations.random().id
+                    if (revision == trainerRevision) startTrainer(openingId, side, line)
+                } catch (e: Exception) {
+                    if (e is CancellationException) throw e
+                    if (revision == trainerRevision) _uiState.update { it.copy(lessonLoading = false,
+                        lessonError = "This saved lesson could not be prepared. Your learning data is retained.") }
+                }
+            }
+        } else {
+            val opening = runCatching { getOpening(openingId) }.getOrNull() ?: return false
+            startTrainer(openingId, side, opening.variations.random().id)
+        }
+        return true
+    }
 
     private suspend fun prepareRecallEnrollment(trainer: TrainerUiState): RecallEnrollment {
         val set = trainer.repertoireSetSession?.plan?.set
@@ -256,8 +390,8 @@ class AppViewModel @JvmOverloads constructor(
             val entries = mutableListOf<RecallEntry>()
             for (ref in set.members) {
                 val policy = requireNotNull(learningStore?.repertoirePolicy(ref.id, ref.revision))
-                val graph = prepareGraph(getOpening(policy.lessonId))
-                entries += withContext(Dispatchers.Default) {
+                val graph = prepareGraph(openingFor(policy.lessonId))
+                entries += withContext(StartupDispatchers.worker) {
                     val context = currentCoroutineContext()
                     val book = RepertoireBook(graph)
                     RecallPlanner.policy(book, policy) { context.ensureActive() }.entries
@@ -269,7 +403,7 @@ class AppViewModel @JvmOverloads constructor(
                 "${set.name} · ${set.side.name.lowercase()} · set revision ${set.revision}", set.id, set.revision), entries)
         }
         val graph = prepareGraph(trainer.opening)
-        return withContext(Dispatchers.Default) {
+        return withContext(StartupDispatchers.worker) {
             val context = currentCoroutineContext()
             val book = RepertoireBook(graph)
             trainer.repertoirePolicy?.let { RecallPlanner.policy(book, it) { context.ensureActive() } }
@@ -290,8 +424,8 @@ class AppViewModel @JvmOverloads constructor(
                         val target = card.target
                         val opening = openingFor(target.lessonId)
                         val base = prepareGraph(opening)
-                        val book = withContext(Dispatchers.Default) { RepertoireBook(base) }
-                        require(book.contentVersion == target.contentVersion)
+                        val book = withContext(StartupDispatchers.worker) { RepertoireBook(base) }
+                        require(sameLessonContent(target.lessonId, target.contentVersion, book.contentVersion))
                         val policy = card.context.policy?.let { requireNotNull(learningStore?.repertoirePolicy(it.id, it.revision)) }
                         val graph = if (policy == null) base else preparePolicyGraph(base, policy)
                         val path = card.context.pathId ?: target.pathId
@@ -320,15 +454,31 @@ class AppViewModel @JvmOverloads constructor(
         if (deepCourseSource != null) {
             _uiState.update { it.copy(deepCourseLoading = true) }
             viewModelScope.launch {
-                // After the opening catalog, so the bundled course never delays startup lessons.
-                catalogReady.await()
-                val result = withContext(Dispatchers.Default) { deepCourseResult }
-                val feedback = withContext(Dispatchers.IO) { runCatching { courseFeedbackStore?.all().orEmpty() }.getOrDefault(emptyList()) }
-                _uiState.update { state -> state.copy(deepCourseLoading = false, courseFeedback = feedback,
-                    deepCourses = result.getOrNull()?.chapters.orEmpty(),
+                val result = runCatching { withContext(StartupDispatchers.worker) {
+                    val context = currentCoroutineContext()
+                    DeepCourseCatalog(listOf(DeepCourseCatalog.parse(deepCourseSource.invoke())),
+                        checkpoint = { context.ensureActive() }, validateOnDemand = true, validationCache = deepCourseValidation)
+                } }
+                result.exceptionOrNull()?.let { if (it is CancellationException) throw it }
+                deepCourseResult = result
+                _uiState.update { state -> state.copy(deepCourseLoading = false,
+                    deepCourseSummaries = result.getOrNull()?.summaries.orEmpty(),
                     deepCourseError = result.exceptionOrNull()?.let { "The bundled deep course failed its checks and is not shown. Other lessons are unaffected." }) }
+                deepCourseReady.complete(result)
+                result.getOrNull()?.let { catalog -> viewModelScope.launch {
+                    firstFrameReady.await(); catalogReady.await()
+                    try { withContext(StartupDispatchers.background) {
+                        val context = currentCoroutineContext()
+                        catalog.validateRemaining { context.ensureActive() }
+                    } } catch (e: Exception) {
+                        if (e is CancellationException) throw e
+                        _uiState.update { it.copy(deepCourseError = "A bundled chapter failed its checks. Saved learning data is retained.") }
+                    }
+                } }
+                val feedback = withContext(Dispatchers.IO) { runCatching { courseFeedbackStore?.all().orEmpty() }.getOrDefault(emptyList()) }
+                _uiState.update { it.copy(courseFeedback = feedback) }
             }
-        }
+        } else deepCourseReady.complete(Result.success(null))
         val store = learningStore
         if (store == null) {
             catalogReady.complete(Unit)
@@ -415,10 +565,10 @@ class AppViewModel @JvmOverloads constructor(
                     val saved = savedStateHandle.get<Bundle>("trainer_session")
                     val restoreId = saved?.getString("opening") ?: bookmark?.lessonId
                     // Seed/no-bookmark restoration must not wait for thousands of coached routes.
-                    if (restoreId?.let { it.startsWith("source:") || it.startsWith("course:") } == true)
+                    if (restoreId?.let { !isDeepCourse(it) && (it.startsWith("source:") || it.startsWith("course:")) } == true)
                         catalogReady.await()
                     if (revision == bookmarkRevision && _uiState.value.trainer == null) {
-                        val savedOpening = saved?.getString("opening")?.let { runCatching { getOpening(it) }.getOrNull() }
+                        val savedOpening = saved?.getString("opening")?.let { runCatching { openingFor(it) }.getOrNull() }
                         if (savedOpening != null) prepareGraph(savedOpening)
                         val policy = saved?.getString("repertoire")?.let { store.repertoirePolicy(it, saved.getInt("repertoireRevision")) }
                         val policyGraph = if (policy != null && savedOpening != null) preparePolicyGraph(prepareGraph(savedOpening), policy) else null
@@ -457,12 +607,12 @@ class AppViewModel @JvmOverloads constructor(
         }
         _uiState.update { it.copy(catalogLoading = true, catalogError = null) }
         try {
-            val presentation = withContext(Dispatchers.Default) {
+            val presentation = withContext(StartupDispatchers.worker) {
                 val context = currentCoroutineContext()
                 if (pack == null) null else {
                     val load: suspend () -> OpeningPresentation = {
                         val sourced = SourcedOpeningCatalog(pack.manifest, store.openings(pack.manifest.packId))
-                        OpeningPresentation(sourced, TeachingCatalog(sourced) { context.ensureActive() })
+                        OpeningPresentation(sourced, TeachingCatalog(sourced, onDemand = true) { context.ensureActive() })
                     }
                     presentationCache?.get("ashva-teaching/1:${pack.manifestSha256}", load) ?: load()
                 }
@@ -473,7 +623,7 @@ class AppViewModel @JvmOverloads constructor(
             teachingCatalog = teaching
             sourceCatalogKey = pack?.manifestSha256
             catalogLoaded = true
-            _uiState.update { it.copy(sourcedOpenings = catalog?.openings.orEmpty(), teachingOpenings = teaching?.openings.orEmpty(),
+            _uiState.update { it.copy(sourcedOpenings = catalog?.openings.orEmpty(), teachingOpenings = teaching?.summaries.orEmpty(),
                 catalogLoading = pack == null && it.packs.any { job -> job.state == "LOADING" }) }
             refreshIdentifierMatch()
         } catch (error: Exception) {
@@ -485,15 +635,16 @@ class AppViewModel @JvmOverloads constructor(
     private fun refreshObservedReplies(store: LearningStore, installed: List<InstalledPack>, force: Boolean = false) {
         val packs = installed.filter { it.manifest.source.kind == SourceKind.BROADCAST_GAMES }.sortedBy { it.manifest.packId }
         val key = packs.map { it.manifest.packId to it.manifestSha256 }
+        observedRepliesPacks = packs
         if (!force && key == observedRepliesKey && _uiState.value.observedReplies != ObservedRepliesUiState.Error) return
         observedRepliesGeneration++
         observedRepliesKey = key
         observedRepliesJob?.cancel()
         _uiState.update { it.copy(observedReplies = if (packs.isEmpty()) ObservedRepliesUiState.Missing else ObservedRepliesUiState.Loading) }
-        if (packs.isEmpty()) return
+        if (packs.isEmpty() || !observedRepliesRequested) return
         observedRepliesJob = viewModelScope.launch {
             try {
-                val index = withContext(Dispatchers.Default) {
+                val index = withContext(StartupDispatchers.worker) {
                     val context = currentCoroutineContext()
                     val samples = packs.map { ObservedGameSample(it, store.games(it.manifest.packId)) }
                     ObservedReplyIndex.build(samples) { context.ensureActive() }
@@ -507,6 +658,7 @@ class AppViewModel @JvmOverloads constructor(
     }
 
     fun retryObservedReplies() {
+        observedRepliesRequested = true
         val store = learningStore ?: return
         val generation = observedRepliesGeneration
         viewModelScope.launch {
@@ -528,8 +680,8 @@ class AppViewModel @JvmOverloads constructor(
 
     private suspend fun prepareGraph(opening: Opening): LessonGraph {
         lessonGraphs[opening.id]?.let { return it }
-        val prepared = withContext(Dispatchers.Default) {
-            val graph = LessonGraph.fromOpening(opening)
+        val prepared = withContext(StartupDispatchers.worker) {
+            val graph = deepChapter(opening.id)?.lessonGraph() ?: LessonGraph.fromOpening(opening)
             val description = contentDescription(graph)
             Triple(graph, description.hashCode(), contentSha256(description.encodeToByteArray()))
         }
@@ -563,33 +715,54 @@ class AppViewModel @JvmOverloads constructor(
     fun updateSearch(query: String) = _uiState.update { it.copy(searchQuery = query) }
     fun selectDifficulty(filter: String) = _uiState.update { it.copy(selectedDifficulty = filter) }
 
-    fun getOpening(id: String): Opening = (if (isDeepCourse(id)) deepCourseResult.getOrNull()?.getOpening(id) else null) ?: teachingCatalog?.getOpening(id) ?: sourceCatalog?.getOpening(id) ?: openingRepository.getOpening(id)
+    fun getOpening(id: String): Opening {
+        if (isDeepCourse(id)) return requireNotNull(deepCourseResult.getOrNull()?.preparedOpening(id))
+        teachingCatalog?.takeIf { it.contains(id) }?.let { catalog ->
+            catalog.preparedOpening(id)?.let { return it }
+            requestTeachingOpening(id)
+            error("Course is preparing on a worker")
+        }
+        return sourceCatalog?.getOpening(id) ?: openingRepository.getOpening(id)
+    }
 
     fun learningOpenings(): List<Opening> = _uiState.value.teachingOpenings.ifEmpty { openings }
 
     /** Picks a course line with probability equal to how often club games reach it (its measured weight). */
     fun practiceWeightedDeepLine(openingId: String, side: PieceColor, random: kotlin.random.Random = kotlin.random.Random.Default): String? {
         val chapter = deepChapter(openingId) ?: return null
-        val weighted = chapter.lineWeights.filterValues { it > 0 }
-        val choice = if (weighted.isEmpty()) chapter.opening.variations.random(random).id else {
-            var roll = random.nextDouble() * weighted.values.sum()
-            weighted.entries.firstOrNull { (_, w) -> roll -= w; roll <= 0 }?.key ?: weighted.keys.last()
-        }
+        val choice = chapter.weightedLineThrough(random = random) ?: return null
         startTrainer(openingId, side, choice)
         return choice
     }
 
-    fun flagExplanation(kind: String) {
+    fun setDeveloperMode(enabled: Boolean) {
+        appPreferences?.developerMode = enabled
+        _uiState.update { it.copy(developerMode = enabled) }
+    }
+
+    fun practiceDeepVariation(openingId: String, side: PieceColor, nodeId: String,
+                              random: kotlin.random.Random = kotlin.random.Random.Default): String? {
+        val chapter = deepChapter(openingId) ?: return null
+        val choice = chapter.weightedLineThrough(nodeId, random) ?: return null
+        val anchor = chapter.anchorPly(choice, nodeId) ?: return null
+        startTrainer(openingId, side, choice, startPly = anchor)
+        return choice
+    }
+
+    fun clearFeedbackMessage() = _uiState.update { it.copy(feedbackMessage = null) }
+
+    fun flagExplanation(kind: String, note: String = "") {
+        if (kind !in setOf("wrong", "unclear", "other")) return
+        clearFeedbackMessage()
         val store = courseFeedbackStore ?: return
         val trainer = _uiState.value.trainer ?: return
-        if (!isDeepCourse(trainer.opening.id)) return
         val move = trainer.replay.lastMove ?: return
         val feedback = CourseFeedback(trainer.opening.id, trainer.replay.pathId, trainer.ply, move.san, kind,
-            move.annotation.explanation, move.annotation.label, System.currentTimeMillis())
+            move.annotation.explanation, move.annotation.label, System.currentTimeMillis(), note.trim().take(240))
         viewModelScope.launch {
             try {
                 val all = withContext(Dispatchers.IO) { store.add(feedback) }
-                _uiState.update { it.copy(courseFeedback = all, feedbackMessage = "Flag saved on this device: ${move.san} · $kind") }
+                _uiState.update { it.copy(courseFeedback = all, feedbackMessage = "Thanks — saved on this device") }
             } catch (error: Exception) {
                 if (error is CancellationException) throw error
                 _uiState.update { it.copy(feedbackMessage = "The flag could not be saved.") }
@@ -626,13 +799,13 @@ class AppViewModel @JvmOverloads constructor(
                     for (policy in policies.filter { it.side == side }.sortedBy { it.id }) {
                         currentCoroutineContext().ensureActive()
                         val opening = if (policy.lessonId.startsWith("source:") && (snapshot.catalogLoading || snapshot.catalogError != null)) null
-                            else runCatching { getOpening(policy.lessonId) }.getOrNull()
+                            else runCatching { openingFor(policy.lessonId) }.getOrNull()
                         if (opening == null) {
                             builder.unavailable(policy, RepertoireMemberStatus.UNAVAILABLE)
                             continue
                         }
                         val graph = prepareGraph(opening)
-                        withContext(Dispatchers.Default) {
+                        withContext(StartupDispatchers.worker) {
                             val context = currentCoroutineContext()
                             val book = RepertoireBook(graph)
                             try { book.validate(policy) }
@@ -643,7 +816,7 @@ class AppViewModel @JvmOverloads constructor(
                             builder.add(book, policy) { context.ensureActive() }
                         }
                     }
-                    groups += withContext(Dispatchers.Default) {
+                    groups += withContext(StartupDispatchers.worker) {
                         val context = currentCoroutineContext()
                         builder.build { context.ensureActive() }
                     }
@@ -693,10 +866,10 @@ class AppViewModel @JvmOverloads constructor(
         if (policies.any { it.lessonId.startsWith("source:") || it.lessonId.startsWith("course:") }) catalogReady.await()
         for (policy in policies) {
             currentCoroutineContext().ensureActive()
-            val opening = runCatching { getOpening(policy.lessonId) }.getOrNull()
+            val opening = runCatching { openingFor(policy.lessonId) }.getOrNull()
             if (opening == null) { planner.unavailable(policy, RepertoireMemberStatus.UNAVAILABLE); continue }
             val graph = prepareGraph(opening)
-            withContext(Dispatchers.Default) {
+            withContext(StartupDispatchers.worker) {
                 val context = currentCoroutineContext()
                 val book = RepertoireBook(graph)
                 try { book.validate(policy) }
@@ -707,7 +880,7 @@ class AppViewModel @JvmOverloads constructor(
                 planner.add(book, policy) { context.ensureActive() }
             }
         }
-        return withContext(Dispatchers.Default) {
+        return withContext(StartupDispatchers.worker) {
             val context = currentCoroutineContext(); planner.build { context.ensureActive() }
         }
     }
@@ -744,6 +917,10 @@ class AppViewModel @JvmOverloads constructor(
     }
 
     fun openRepertoire(openingId: String, side: PieceColor, pathId: String?, ply: Int = 0, forceCursor: Boolean = false) {
+        if (!observedRepliesRequested) {
+            observedRepliesRequested = true
+            learningStore?.let { refreshObservedReplies(it, observedRepliesPacks, force = true) }
+        }
         pauseTrainer()
         val pending = repertoireJob
         val request = ++repertoireRequest
@@ -753,12 +930,12 @@ class AppViewModel @JvmOverloads constructor(
                 pending?.join() // Never cancel an in-flight save when navigating to another policy.
                 if (request != repertoireRequest) return@launch
                 catalogReady.await()
-                val graph = prepareGraph(getOpening(openingId))
-                val book = withContext(Dispatchers.Default) { RepertoireBook(graph) }
+                val graph = prepareGraph(openingFor(openingId))
+                val book = withContext(StartupDispatchers.worker) { RepertoireBook(graph) }
                 if (request != repertoireRequest) return@launch
                 val stored = learningStore?.repertoirePolicy(book.policyId(side)) ?: _uiState.value.repertoirePolicies.firstOrNull { it.id == book.policyId(side) }
-                val policy = stored ?: withContext(Dispatchers.Default) { book.seed(side, pathId?.takeIf { it in graph.paths } ?: graph.originalPathId) }
-                withContext(Dispatchers.Default) { book.validate(policy) }
+                val policy = stored ?: withContext(StartupDispatchers.worker) { book.seed(side, pathId?.takeIf { it in graph.paths } ?: graph.originalPathId) }
+                withContext(StartupDispatchers.worker) { book.validate(policy) }
                 if (stored == null) {
                     learningStore?.saveRepertoirePolicy(policy)
                     if (learningStore == null) _uiState.update { it.copy(repertoirePolicies = it.repertoirePolicies + policy) }
@@ -766,7 +943,7 @@ class AppViewModel @JvmOverloads constructor(
                 val saved = savedStateHandle.get<Bundle>("repertoire_cursor")?.takeIf { !forceCursor && it.getString("id") == policy.id }
                 val cursorPath = saved?.getString("path")?.takeIf { it in graph.paths } ?: pathId?.takeIf { it in graph.paths } ?: graph.originalPathId
                 val cursor = (saved?.getInt("ply") ?: ply).coerceIn(0, graph.paths.getValue(cursorPath).moves.size)
-                val editor = withContext(Dispatchers.Default) { editorState(book, policy, cursorPath, cursor) }
+                val editor = withContext(StartupDispatchers.worker) { editorState(book, policy, cursorPath, cursor) }
                 if (request != repertoireRequest) return@launch
                 _uiState.update { it.copy(repertoireEditor = editor, repertoireLoading = false) }
             } catch (error: Exception) {
@@ -786,7 +963,7 @@ class AppViewModel @JvmOverloads constructor(
         val editor = _uiState.value.repertoireEditor ?: return
         if (repertoireJob?.isActive == true || editor.saving || pathId !in editor.book.graph.paths) return
         repertoireJob = viewModelScope.launch {
-            val next = withContext(Dispatchers.Default) { editorState(editor.book, editor.policy, pathId,
+            val next = withContext(StartupDispatchers.worker) { editorState(editor.book, editor.policy, pathId,
                 ply.coerceIn(0, editor.book.graph.paths.getValue(pathId).moves.size)) }
             savedStateHandle["repertoire_cursor"] = Bundle().apply { putString("id", editor.policy.id); putString("path", next.pathId); putInt("ply", next.ply) }
             _uiState.update { it.copy(repertoireEditor = next) }
@@ -808,9 +985,9 @@ class AppViewModel @JvmOverloads constructor(
         _uiState.update { it.copy(repertoireEditor = editor.copy(saving = true, error = null)) }
         repertoireJob = viewModelScope.launch {
             try {
-                val policy = withContext(Dispatchers.Default) { change(editor) }
+                val policy = withContext(StartupDispatchers.worker) { change(editor) }
                 learningStore?.saveRepertoirePolicy(policy)
-                val next = withContext(Dispatchers.Default) { editorState(editor.book, policy, editor.pathId, editor.ply) }
+                val next = withContext(StartupDispatchers.worker) { editorState(editor.book, policy, editor.pathId, editor.ply) }
                 if (learningStore == null) _uiState.update { it.copy(repertoirePolicies = it.repertoirePolicies.filterNot { p -> p.id == policy.id } + policy) }
                 _uiState.update { it.copy(repertoireEditor = next) }
             } catch (error: Exception) {
@@ -821,7 +998,7 @@ class AppViewModel @JvmOverloads constructor(
     }
 
     private suspend fun preparePolicyGraph(graph: LessonGraph, policy: RepertoirePolicy): LessonGraph {
-        val prepared = withContext(Dispatchers.Default) {
+        val prepared = withContext(StartupDispatchers.worker) {
             val practice = RepertoireBook(graph).practiceGraph(policy)
             val description = contentDescription(practice)
             Triple(practice, description.hashCode(), contentSha256(description.encodeToByteArray()))
@@ -847,7 +1024,7 @@ class AppViewModel @JvmOverloads constructor(
         lessonJob = viewModelScope.launch {
             try {
                 catalogReady.await()
-                val opening = getOpening(policy.lessonId)
+                val opening = openingFor(policy.lessonId)
                 val graph = preparePolicyGraph(prepareGraph(opening), policy)
                 if (revision != trainerRevision) return@launch
                 val selected = pathId?.takeIf { it in graph.paths } ?: graph.paths.values.maxBy { it.moves.size }.id
@@ -866,7 +1043,7 @@ class AppViewModel @JvmOverloads constructor(
         val state = _uiState.value
         val results = if (state.selectedDifficulty == "Starter") openingRepository.searchOpenings(state.searchQuery)
             else if (state.selectedDifficulty == "Sourced") sourceCatalog?.search(state.searchQuery).orEmpty()
-            else teachingCatalog?.search(state.searchQuery) ?: openingRepository.searchOpenings(state.searchQuery)
+            else teachingCatalog?.searchSummaries(state.searchQuery) ?: openingRepository.searchOpenings(state.searchQuery)
         return results.filter {
             state.selectedDifficulty == "All" ||
                 state.selectedDifficulty == "Starter" ||
@@ -875,15 +1052,16 @@ class AppViewModel @JvmOverloads constructor(
         }
     }
 
-    fun startTrainer(openingId: String, side: PieceColor, variationId: String? = null, study: Boolean = false) {
+    fun startTrainer(openingId: String, side: PieceColor, variationId: String? = null, study: Boolean = false, startPly: Int = 0) {
+        require(startPly >= 0)
         cancelTrainerJobs()
-        val opening = getOpening(openingId)
-        if (gameLibrary.state.value.active) gameLibrary.leaveForOpening()
-        val variation = opening.variations.firstOrNull { it.id == variationId } ?: opening.mainLine
         val deep = isDeepCourse(openingId)
-        if (opening.provenance == null && !deep) {
-            setTrainer(TrainerUiState(opening = opening, replay = lessonGraphs.getValue(openingId).start(side, variation.id),
-                feedback = "Your move · ${side.name.lowercase()}"))
+        val opening = if (deep || teachingCatalog?.contains(openingId) == true) null else getOpening(openingId)
+        if (gameLibrary.state.value.active) gameLibrary.leaveForOpening()
+        if (opening != null && opening.provenance == null) {
+            val variation = opening.variations.firstOrNull { it.id == variationId } ?: opening.mainLine
+            val replay = lessonGraphs.getValue(openingId).start(side, variation.id).jump(startPly)
+            setTrainer(atCursor(TrainerUiState(opening = opening, replay = replay, practiceStartPly = startPly), replay))
             if (study) studyTrainer() else advanceOpponentIfNeeded()
         } else {
             bookmarkRevision++ // A pending cold restore must not replace the newly requested lesson.
@@ -891,12 +1069,15 @@ class AppViewModel @JvmOverloads constructor(
             _uiState.update { it.copy(trainer = null, lessonLoading = true, lessonError = null) }
             lessonJob = viewModelScope.launch {
                 try {
-                    val graph = prepareGraph(opening)
+                    val readyOpening = opening ?: openingFor(openingId)
+                    val variation = readyOpening.variations.firstOrNull { it.id == variationId } ?: readyOpening.mainLine
+                    val graph = prepareGraph(readyOpening)
                     if (revision != trainerRevision) return@launch
                     _uiState.update { it.copy(lessonLoading = false) }
-                    setTrainer(TrainerUiState(opening, graph.start(side, variation.id),
-                        feedback = "Practice the ${if (deep) "deep course line" else if (opening.teaching != null) "opening course" else "source route"} · ${side.name.lowercase()}",
-                        explanation = variation.description, courseAutoplay = deep))
+                    val replay = graph.start(side, variation.id).jump(startPly)
+                    setTrainer(atCursor(TrainerUiState(readyOpening, replay,
+                        feedback = "Practice the ${if (deep) "deep course line" else if (readyOpening.teaching != null) "opening course" else "source route"} · ${side.name.lowercase()}",
+                        explanation = variation.description, courseAutoplay = deep, practiceStartPly = startPly), replay))
                     if (study) studyTrainer() else advanceOpponentIfNeeded()
                 } catch (error: Exception) {
                     if (error is CancellationException) throw error
@@ -1028,7 +1209,8 @@ class AppViewModel @JvmOverloads constructor(
         }
         cancelTrainerJobs()
         setTrainer(atCursor(trainer.copy(mode = LessonMode.PRACTICE, mistakes = 0, assistedMoves = 0,
-            currentAssisted = false, recallHelp = emptySet()), trainer.replay.first()))
+            currentAssisted = false, recallHelp = emptySet(), activitySessionId = java.util.UUID.randomUUID().toString()),
+            trainer.replay.jump(trainer.practiceStartPly.coerceAtMost(trainer.replay.moves.size))))
         advanceOpponentIfNeeded()
     }
 
@@ -1081,7 +1263,7 @@ class AppViewModel @JvmOverloads constructor(
 
     fun changeTrainerSpeed() {
         _uiState.value.trainer?.let {
-            setTrainer(it.copy(playbackDelayMillis = when (it.playbackDelayMillis) { 700L -> 1200; 1200L -> 2000; else -> 700 }))
+            updateLearnerPreferences(learner.state.value.preferences.copy(playbackMillis = when (it.playbackDelayMillis) { 700L -> 1200; 1200L -> 2000; else -> 700 }))
         }
     }
 
@@ -1127,9 +1309,9 @@ class AppViewModel @JvmOverloads constructor(
         _uiState.update { it.copy(engineAnalysis = EngineAnalysisUiState.Loading) }
         engineJob = viewModelScope.launch {
             try {
-                val result = withContext(Dispatchers.Default) { engine.analyze(position, original) }
+                val result = withContext(StartupDispatchers.worker) { engine.analyze(position, original) }
                 require(result.position == position) { "Analysis root mismatch" }
-                val continuations = withContext(Dispatchers.Default) {
+                val continuations = withContext(StartupDispatchers.worker) {
                     (result.alternatives?.lines.orEmpty() + result.original?.lines.orEmpty()).map { line ->
                         val context = currentCoroutineContext()
                         GroundedContinuation.build(position.board(), line.uci, line.san) { context.ensureActive() }
@@ -1218,16 +1400,32 @@ class AppViewModel @JvmOverloads constructor(
         }
     }
 
-    private fun setTrainer(trainer: TrainerUiState) {
+    private fun setTrainer(incoming: TrainerUiState) {
         if (gameLibrary.state.value.active) gameLibrary.leaveForOpening()
         val previous = _uiState.value.trainer
+        val trainer = if (previous?.activitySessionId != incoming.activitySessionId)
+            incoming.copy(playbackDelayMillis = learner.state.value.preferences.playbackMillis) else incoming
         if (previous == null || previous.opening.id != trainer.opening.id || previous.replay.pathId != trainer.replay.pathId ||
             previous.ply != trainer.ply || previous.attemptedMove != trainer.attemptedMove) stopEngineAnalysis()
         _uiState.update { it.copy(trainer = trainer) }
         recall.trainerChanged(trainer, previous)
+        if (trainer.reviewTargetId == null) {
+            val studying = trainer.mode == LessonMode.STUDY && (previous?.mode != LessonMode.STUDY ||
+                previous.opening.id != trainer.opening.id || previous.replay.pathId != trainer.replay.pathId)
+            val completed = trainer.mode == LessonMode.PRACTICE && trainer.replay.atEnd && previous != null &&
+                previous.activitySessionId == trainer.activitySessionId && !previous.replay.atEnd
+            if (studying || completed) {
+                val kind = if (studying) com.openinglab.shared.practice.StudyActivity.STUDY else com.openinglab.shared.practice.StudyActivity.PRACTICE
+                val id = if (studying) java.util.UUID.randomUUID().toString() else "practice:${trainer.activitySessionId}:${trainer.replay.pathId}"
+                recall.recordStudyActivity(com.openinglab.shared.practice.StudyActivity(id, trainer.opening.id,
+                    trainer.replay.pathId, kind, System.currentTimeMillis()))
+            }
+        }
         val snapshot = trainer.replay.snapshot()
         savedStateHandle["trainer_session"] = Bundle().apply {
             putInt("version", 1)
+            putString("activitySessionId", trainer.activitySessionId)
+            putInt("practiceStartPly", trainer.practiceStartPly)
             putString("opening", trainer.opening.id)
             putInt("content", contentFingerprint(trainer.replay.graph))
             putString("root", snapshot.rootPathId)
@@ -1266,7 +1464,8 @@ class AppViewModel @JvmOverloads constructor(
                 trainer.pendingPromotion?.uci, trainer.playbackDelayMillis, trainer.repertoirePolicy?.id, trainer.repertoirePolicy?.revision,
                 trainer.repertoireSetSession?.plan?.set?.id, trainer.repertoireSetSession?.plan?.set?.revision, trainer.repertoireSetSession?.index,
                 recallHelp = trainer.recallHelp, studyExposedAt = trainer.studyExposedAt, reviewScopeId = trainer.reviewScopeId,
-                reviewTargetId = trainer.reviewTargetId, reviewAnswered = trainer.reviewAnswered, reviewAttemptId = trainer.reviewAttemptId))
+                reviewTargetId = trainer.reviewTargetId, reviewAnswered = trainer.reviewAnswered, reviewAttemptId = trainer.reviewAttemptId,
+                activitySessionId = trainer.activitySessionId, practiceStartPly = trainer.practiceStartPly))
         }
     }
 
@@ -1311,6 +1510,9 @@ class AppViewModel @JvmOverloads constructor(
             reviewScopeId = saved.getString("reviewScopeId"), reviewTargetId = saved.getString("reviewTargetId"),
             reviewAnswered = saved.getBoolean("reviewAnswered"), reviewSaved = saved.getBoolean("reviewSaved"),
             reviewAttemptId = saved.getString("reviewAttemptId"),
+            activitySessionId = saved.getString("activitySessionId") ?: java.util.UUID.randomUUID().toString(),
+            courseAutoplay = isDeepCourse(opening.id),
+            practiceStartPly = saved.getInt("practiceStartPly").coerceIn(0, replay.moves.size),
             playbackDelayMillis = saved.getLong("speed").takeIf { it in listOf(700L, 1200L, 2000L) } ?: 1200), replay)
         val next = replay.nextMove
         restored.copy(
@@ -1331,7 +1533,7 @@ class AppViewModel @JvmOverloads constructor(
             val set = requireNotNull(learningStore?.repertoireSet(id, bookmark.repertoireSetRevision))
             RepertoireSetSession(buildSetPlan(set), requireNotNull(bookmark.repertoireSetIndex))
         }
-        require(bookmark.contentVersion == durableContentVersion(graph))
+        require(sameLessonContent(bookmark.lessonId, bookmark.contentVersion, durableContentVersion(graph)))
         bookmark.reviewTargetId?.let { requireNotNull(learningStore?.recallCard(requireNotNull(bookmark.reviewScopeId), it)) }
         val snapshot = bookmark.replay
         restoreTrainer(Bundle().apply {
@@ -1347,6 +1549,8 @@ class AppViewModel @JvmOverloads constructor(
             putString("reviewScopeId", bookmark.reviewScopeId); putString("reviewTargetId", bookmark.reviewTargetId)
             putBoolean("reviewAnswered", bookmark.reviewAnswered)
             putString("reviewAttemptId", bookmark.reviewAttemptId)
+            putString("activitySessionId", bookmark.activitySessionId)
+            putInt("practiceStartPly", bookmark.practiceStartPly)
             // Actual persisted card state, not a previously displayed Saved label.
             putBoolean("reviewSaved", bookmark.reviewAnswered && bookmark.reviewAttemptId?.let {
                 learningStore?.hasRecallEvent(it, requireNotNull(bookmark.reviewTargetId))
@@ -1366,8 +1570,8 @@ class AppViewModel @JvmOverloads constructor(
         return try {
             val card = requireNotNull(learningStore?.recallCard(requireNotNull(trainer.reviewScopeId), trainer.reviewTargetId))
             val base = prepareGraph(trainer.opening)
-            val book = withContext(Dispatchers.Default) { RepertoireBook(base) }
-            require(card.target.contentVersion == book.contentVersion && trainer.playerSide == card.target.side)
+            val book = withContext(StartupDispatchers.worker) { RepertoireBook(base) }
+            require(sameLessonContent(trainer.opening.id, card.target.contentVersion, book.contentVersion) && trainer.playerSide == card.target.side)
             require(trainer.replay.moves.take(card.target.ply).map { it.move.uci } == card.target.prefix && trainer.replay.moves.getOrNull(card.target.ply)?.move?.uci == card.target.expectedUci)
             require(card.context.policy == trainer.repertoirePolicy?.let { RepertoirePolicyRef(it.id, it.revision) })
             val saved = trainer.reviewAnswered && trainer.reviewAttemptId?.let { learningStore.hasRecallEvent(it, card.target.id) } == true
@@ -1457,11 +1661,13 @@ class AppViewModel @JvmOverloads constructor(
 
     fun loadIdentifierExample(openingId: String) {
         cancelIdentifierWork()
-        val opening = getOpening(openingId)
-        val moves = opening.mainLine.steps.take(6).map { it.uci }
-        val state = identifierState(BoardPosition.starting(), moves)
-        _uiState.update {
-            it.copy(identifier = state)
+        val revision = identifierRevision
+        identifierJob = viewModelScope.launch {
+            val opening = openingFor(openingId)
+            val state = withContext(StartupDispatchers.worker) {
+                identifierState(BoardPosition.starting(), opening.mainLine.steps.take(6).map { it.uci })
+            }
+            if (revision == identifierRevision) _uiState.update { it.copy(identifier = state) }
         }
     }
 
@@ -1471,7 +1677,7 @@ class AppViewModel @JvmOverloads constructor(
         val revision = identifierRevision
         _uiState.update { it.copy(identifier = it.identifier.copy(isLoading = true, error = null, pendingPromotion = null)) }
         identifierJob = viewModelScope.launch {
-            val result = withContext(Dispatchers.Default) {
+            val result = withContext(StartupDispatchers.worker) {
                 runCatching {
                     require(text.length <= 64 * 1024) { "Use at most 65,536 characters for this single-game explorer." }
                     if (isFen) identifierState(BoardPosition.fromFen(text), emptyList()) else {
@@ -1517,7 +1723,7 @@ class AppViewModel @JvmOverloads constructor(
         val state = _uiState.value.identifier
         val catalog = sourceCatalog
         identifierJob = viewModelScope.launch {
-            val match = withContext(Dispatchers.Default) { identifyWithSource(state.initialPosition, state.moves, catalog) }
+            val match = withContext(StartupDispatchers.worker) { identifyWithSource(state.initialPosition, state.moves, catalog) }
             if (revision == identifierRevision) _uiState.update { it.copy(identifier = it.identifier.copy(match = match)) }
         }
     }

@@ -11,6 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.openinglab.app.ui.*
+import com.openinglab.app.ui.components.InfoNote
+import com.openinglab.app.ui.components.ExpandableText
 import com.openinglab.app.ui.theme.*
 import com.openinglab.shared.games.*
 import com.openinglab.shared.model.PieceColor
@@ -19,7 +21,7 @@ import com.openinglab.shared.model.PieceColor
 fun GameLibraryScreen(state: GameLearningUiState, onBack: () -> Unit, onSources: () -> Unit,
     onFilter: (GameLibraryFilter) -> Unit, onFollow: (String, Boolean) -> Unit,
     onImport: (String) -> Unit, onOpen: (String, PieceColor) -> Unit, onRetry: () -> Unit,
-    modifier: Modifier = Modifier) {
+    modifier: Modifier = Modifier, developerMode: Boolean = false) {
     var importDialog by rememberSaveable { mutableStateOf(false) }
     var draft by remember { mutableStateOf("") } // Never put a potentially large private PGN in a saved-state Bundle.
     var draftError by remember { mutableStateOf(false) }
@@ -31,7 +33,7 @@ fun GameLibraryScreen(state: GameLearningUiState, onBack: () -> Unit, onSources:
         item("header") {
             TextButton(onBack) { Text("Back", color = Leaf) }
             Text("Players & GM games", color = Cream, style = MaterialTheme.typography.headlineMedium)
-            Text("Full original scores from installed sources and your private PGNs. Names, titles and FIDE IDs are reported, not independently authenticated; this is not a complete career archive.", color = MutedCream)
+            InfoNote("Replay installed games or import your own PGN.", "Full original scores from installed sources and your private PGNs. Names, titles and FIDE IDs are reported, not independently authenticated; this is not a complete career archive.", color = MutedCream)
             Row {
                 TextButton(onSources, Modifier.testTag("game-library-sources")) { Text("Offline sources") }
                 TextButton({ importDialog = true }, Modifier.testTag("game-import")) { Text("Import private PGN") }
@@ -69,19 +71,19 @@ fun GameLibraryScreen(state: GameLearningUiState, onBack: () -> Unit, onSources:
                         { onFilter(state.filter.copy(playerColor = side)) }, { Text("Selected player as ${side.name.lowercase()}") }, enabled = selected != null) }
                 }
                 FilterChip(state.filter.reportedGmOnly, { onFilter(state.filter.copy(reportedGmOnly = !state.filter.reportedGmOnly)) }, { Text("Source reports a GM title") })
-                Text("Color filters require selecting a player below. Missing years/titles are unknown, not inferred from event or name.", color = MutedCream)
+                InfoNote("Select a player to filter by colour.", "Color filters require selecting a player below. Missing years/titles are unknown, not inferred from event or name.", color = MutedCream)
                 TextButton({ onFilter(GameLibraryFilter()); yearText = "" }, Modifier.testTag("game-clear-filters")) { Text("Clear filters") }
             }
         }
         item("followers-header") {
             Text("Your followed players · ${state.followers.size}", color = Leaf, style = MaterialTheme.typography.titleMedium)
-            if (state.followers.isEmpty()) Text("No players added yet. Search and follow the players you choose; Ashva does not preselect favorites.", color = MutedCream,
+            if (state.followers.isEmpty()) InfoNote("Search for a player to follow.", "No players added yet. Search and follow the players you choose; Ashva does not preselect favorites.", color = MutedCream,
                 modifier = Modifier.testTag("game-empty-following"))
         }
         items(state.followers, key = { "followed-${it.id}" }) { player ->
             Text(player.names.joinToString(" / "), color = Cream)
-            Text(player.identityStatus, color = MutedCream, style = MaterialTheme.typography.bodySmall)
-            if (ready != null && ready.library.players.none { it.reference.id == player.id }) Text("No score for this retained identity is currently installed. Following has not been removed.", color = Gold)
+            if (developerMode) Text(player.identityStatus, color = MutedCream, style = MaterialTheme.typography.bodySmall)
+            if (ready != null && ready.library.players.none { it.reference.id == player.id }) InfoNote("No installed games for this followed player.", "No score for this retained identity is currently installed. Following has not been removed.", color = Gold)
             Row {
                 TextButton({ onFilter(state.filter.copy(playerId = player.id, playerColor = null)) }, Modifier.testTag("game-select-followed-${player.id}")) { Text("Show games") }
                 TextButton({ onFollow(player.id, false) }, Modifier.testTag("game-unfollow-${player.id}")) { Text("Unfollow (keep games)") }
@@ -89,15 +91,17 @@ fun GameLibraryScreen(state: GameLearningUiState, onBack: () -> Unit, onSources:
         }
         when (val library = state.library) {
             GameLibraryUiState.Loading -> item("loading") { LinearProgressIndicator(Modifier.fillMaxWidth()); Text("Checking exact source versions…", color = Cream, modifier = Modifier.testTag("game-library-loading")) }
-            GameLibraryUiState.Missing -> item("missing") { Text("No full scores installed. Use Offline sources for reviewed January/April packs, or import one private PGN. Unknown history is not an empty career.", color = Gold, modifier = Modifier.testTag("game-library-missing")) }
+            GameLibraryUiState.Missing -> item("missing") { InfoNote("Install a game pack or import a private PGN.", "No full scores installed. Use Offline sources for reviewed January/April packs, or import one private PGN. Unknown history is not an empty career.", color = Gold, modifier = Modifier.testTag("game-library-missing")) }
             is GameLibraryUiState.Error -> item("error") { Text(library.message, color = Gold, modifier = Modifier.testTag("game-library-error")); TextButton(onRetry) { Text("Retry library") } }
             is GameLibraryUiState.Ready -> {
                 item("players-header") { Text("Matching players · ${library.players.size}", color = Leaf, style = MaterialTheme.typography.titleMedium)
-                    Text("Showing ${minOf(shownPlayers, library.players.size)}. Exact source/FIDE identities stay separate from similar names and private PGNs.", color = MutedCream) }
+                    InfoNote("Showing ${minOf(shownPlayers, library.players.size)} players", "Showing ${minOf(shownPlayers, library.players.size)}. Exact source/FIDE identities stay separate from similar names and private PGNs.", color = MutedCream) }
                 items(library.players.take(shownPlayers), key = { "player-${it.reference.id}" }) { player ->
                     val ref = player.reference
                     Text(ref.names.joinToString(" / "), color = Cream)
-                    Text("${player.scoreIds.size} score records · ${ref.identityStatus}${ref.fideId?.let { " · source FIDE ID $it" }.orEmpty()} · reported titles: ${player.reportedTitles.joinToString().ifEmpty { "unknown" }}", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                    if (developerMode) Text("${player.scoreIds.size} score records · ${ref.identityStatus}${ref.fideId?.let { " · source FIDE ID $it" }.orEmpty()} · reported titles: ${player.reportedTitles.joinToString().ifEmpty { "unknown" }}", color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                    else InfoNote("${player.scoreIds.size} games · ${player.reportedTitles.joinToString().ifEmpty { "title unknown" }}",
+                        "${ref.identityStatus}${ref.fideId?.let { " · reported FIDE ID $it" }.orEmpty()} · titles as reported by the source", color = MutedCream)
                     Row {
                         TextButton({ onFilter(state.filter.copy(playerId = ref.id, playerColor = null)) }, Modifier.testTag("game-select-player-${ref.id}")) { Text("Show games") }
                         val followed = state.followers.any { it.id == ref.id }
@@ -108,15 +112,15 @@ fun GameLibraryScreen(state: GameLearningUiState, onBack: () -> Unit, onSources:
                 item("scores-header") {
                     Text("${library.scores.size} matching / ${library.library.scores.size} score records", color = Leaf, modifier = Modifier.testTag("game-library-count"))
                     if (library.searching) LinearProgressIndicator(Modifier.fillMaxWidth())
-                    selected?.let { Text("Selected identity: $it", color = Gold); TextButton({ onFilter(state.filter.copy(playerId = null, playerColor = null)) }) { Text("All players") } }
-                    if (library.scores.isEmpty()) Text("No score matches these filters in the installed sample. This is not proof that those games were never played.", color = MutedCream)
+                    selected?.let { if (developerMode) Text("Selected identity: $it", color = Gold); TextButton({ onFilter(state.filter.copy(playerId = null, playerColor = null)) }) { Text("All players") } }
+                    if (library.scores.isEmpty()) InfoNote("No installed games match these filters.", "No score matches these filters in the installed sample. This is not proof that those games were never played.", color = MutedCream)
                 }
                 items(library.scores, key = { "score-${it.id}" }) { score ->
                     Column(Modifier.fillMaxWidth().testTag("game-card-${score.id}"), verticalArrangement = Arrangement.spacedBy(5.dp)) {
                         Text("${score.white.name} – ${score.black.name}", color = Cream, style = MaterialTheme.typography.titleMedium)
                         Text("${score.event} · ${score.tags["Date"] ?: score.tags["UTCDate"] ?: "date unknown"} · ${score.result} · ${score.san.size} half-moves", color = MutedCream)
                         Text(score.openingNames.joinToString(" / ").ifEmpty { "Opening not identified in this source" }, color = MutedCream)
-                        Text(when (score) {
+                        if (developerMode) Text(when (score) {
                             is LibraryScore.Private -> "PRIVATE USER PGN · unverified annotations/identities · not redistributed or included in public observed counts. ${score.game.id}"
                             is LibraryScore.Broadcast -> score.origins.joinToString("\n") { "${it.manifest.source.title} · ${it.manifest.source.license}\n${it.manifest.packId} · manifest ${it.manifestSha256}" } + "\nRecord ${score.game.id}"
                         }, color = MutedCream, style = MaterialTheme.typography.bodySmall)
@@ -131,7 +135,7 @@ fun GameLibraryScreen(state: GameLearningUiState, onBack: () -> Unit, onSources:
     }
     if (importDialog) AlertDialog(onDismissRequest = { importDialog = false }, title = { Text("Import one private PGN") }, text = {
         Column {
-            Text("Local only. Keep permissions for any supplied commentary; Ashva does not redistribute it. Standard chess, ≤256 KiB, ≤4096 mainline half-moves; archives are rejected explicitly.")
+            ExpandableText("Local only. Keep permissions for any supplied commentary; Ashva does not redistribute it. Standard chess, ≤256 KiB, ≤4096 mainline half-moves; archives are rejected explicitly.")
             OutlinedTextField(draft, { if (it.length <= PrivateGameRecord.MAX_BYTES) { draft = it; draftError = false } else draftError = true },
                 label = { Text("Paste full PGN") }, modifier = Modifier.heightIn(max = 240.dp).testTag("game-pgn-input"))
             if (draftError) Text("Paste is too large; the replacement was rejected, not truncated.")

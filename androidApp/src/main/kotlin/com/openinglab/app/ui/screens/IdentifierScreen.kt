@@ -49,6 +49,8 @@ import com.openinglab.app.ui.IdentifierUiState
 import com.openinglab.app.ui.components.ChessBoard
 import com.openinglab.app.ui.components.Eyebrow
 import com.openinglab.app.ui.components.PrimaryAction
+import com.openinglab.app.ui.components.InfoNote
+import com.openinglab.app.ui.components.ExpandableText
 import com.openinglab.app.ui.theme.Cream
 import com.openinglab.app.ui.theme.DeepMoss
 import com.openinglab.app.ui.theme.Divider
@@ -77,6 +79,7 @@ fun IdentifierScreen(
     onCancelPromotion: () -> Unit,
     onImport: (String, Boolean) -> Unit,
     modifier: Modifier = Modifier,
+    developerMode: Boolean = false,
 ) {
     var showImport by rememberSaveable { mutableStateOf(false) }
     var importText by rememberSaveable { mutableStateOf("") }
@@ -100,7 +103,7 @@ fun IdentifierScreen(
                 Spacer(Modifier.height(5.dp))
                 Text("What did your\nopponent play?", color = Cream, style = MaterialTheme.typography.displayMedium)
                 Spacer(Modifier.height(9.dp))
-                Text("Play the moves from memory. The opening and its branch update as the position takes shape.", color = MutedCream, style = MaterialTheme.typography.bodyMedium)
+                InfoNote("Enter moves to identify the opening.", "Play the moves from memory. The opening and its branch update as the position takes shape.", color = MutedCream, style = MaterialTheme.typography.bodyMedium)
                 Spacer(Modifier.height(18.dp))
                 ChessBoard(
                     position = state.position,
@@ -120,7 +123,7 @@ fun IdentifierScreen(
                     label = "opening-result",
                 ) { match ->
                     if (match != null) {
-                        MatchCard(match, state) { onOpenMatch(match.id) }
+                        MatchCard(match, state, developerMode) { onOpenMatch(match.id) }
                     } else {
                         WaitingCard(state, onOpenMatch)
                     }
@@ -175,7 +178,7 @@ fun IdentifierScreen(
                         label = { Text(if (importFen) "Six-field FEN" else "One complete PGN game") },
                         minLines = 3, maxLines = 7,
                     )
-                    Text("Standard chess only. PGN loads its final position; replay and game lessons are coming next.", style = MaterialTheme.typography.bodySmall)
+                    InfoNote("Standard chess · PGN loads the final position.", "Standard chess only. This tool loads a PGN’s final position. Use Players & GM games to replay a full score.", style = MaterialTheme.typography.bodySmall)
                 }
             },
             confirmButton = { TextButton({ onImport(importText, importFen); showImport = false }, enabled = importText.isNotBlank()) { Text("Load") } },
@@ -222,7 +225,8 @@ private fun WaitingCard(state: IdentifierUiState, onOpenMatch: (String) -> Unit)
             style = MaterialTheme.typography.titleMedium,
         )
         Spacer(Modifier.height(4.dp))
-        Text(
+        if (state.match.kind == OpeningMatchKind.AMBIGUOUS) Text(state.match.candidates.joinToString { it.name }, color = MutedCream)
+        else InfoNote("Position matching includes transpositions",
             if (state.match.kind == OpeningMatchKind.AMBIGUOUS) state.match.candidates.joinToString { it.name }
                 else "Position-based matching handles transpositions. Installed taxonomy names cover their recorded endpoint positions, not every intermediate or possible continuation.",
             color = MutedCream,
@@ -235,7 +239,7 @@ private fun WaitingCard(state: IdentifierUiState, onOpenMatch: (String) -> Unit)
 }
 
 @Composable
-private fun MatchCard(opening: Opening, state: IdentifierUiState, onOpen: () -> Unit) {
+private fun MatchCard(opening: Opening, state: IdentifierUiState, developerMode: Boolean, onOpen: () -> Unit) {
     val accent = Color(opening.accentHex)
     Column(Modifier.fillMaxWidth().background(accent, RoundedCornerShape(22.dp)).padding(20.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -252,12 +256,13 @@ private fun MatchCard(opening: Opening, state: IdentifierUiState, onOpen: () -> 
             Text("Recognized at half-move ${state.match.matchedPly ?: 0}; the current continuation is not a named position in the available catalog.", color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodySmall)
         }
         if (state.match.variationNames.size > 1) {
-            Text("Possible labels: ${state.match.variationNames.joinToString()}", color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodySmall)
+            ExpandableText("Possible labels: ${state.match.variationNames.joinToString()}", color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodySmall)
         }
         Spacer(Modifier.height(8.dp))
-        Text(opening.description, color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodyMedium)
+        ExpandableText(if (!developerMode && opening.provenance != null) "Study this opening from either side and explore its variations."
+            else opening.description, color = Ink.copy(alpha = .72f), style = MaterialTheme.typography.bodyMedium)
         Spacer(Modifier.height(16.dp))
-        PrimaryAction(if (opening.provenance == null) "Learn this repertoire" else "Explore source routes", onOpen, modifier = Modifier.fillMaxWidth(), icon = Icons.AutoMirrored.Rounded.ArrowForward, color = Ink)
+        PrimaryAction(if (opening.provenance == null) "Learn this repertoire" else if (developerMode) "Explore source routes" else "Explore variations", onOpen, modifier = Modifier.fillMaxWidth(), icon = Icons.AutoMirrored.Rounded.ArrowForward, color = Ink)
     }
 }
 

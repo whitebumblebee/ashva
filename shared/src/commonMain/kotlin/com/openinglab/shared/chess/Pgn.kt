@@ -36,6 +36,9 @@ data class PgnGame(
 
 /** Bounded, legal-move-validated standard PGN import. Archives are parsed as separate games. */
 object Pgn {
+    private val tagNamePattern = Regex("[A-Za-z0-9_]+")
+    private val moveNumberPattern = Regex("^\\d+\\.{1,3}")
+    private val glyphPattern = Regex("[!?]+$")
     private val results = setOf("1-0", "0-1", "1/2-1/2", "*")
     private val glyphs = mapOf("!" to 1, "?" to 2, "!!" to 3, "??" to 4, "!?" to 5, "?!" to 6)
     private val roster = listOf("Event", "Site", "Date", "Round", "White", "Black", "Result")
@@ -72,7 +75,7 @@ object Pgn {
         val tags = canonicalTags(game.tags, game.initialPosition, game.result)
         return buildString {
             for (key in roster + tags.keys.filterNot { it in roster }.sorted()) {
-                require(key.matches(Regex("[A-Za-z0-9_]+"))) { "Invalid tag name" }
+                require(tagNamePattern.matches(key)) { "Invalid tag name" }
                 val value = tags.getValue(key).replace("\\", "\\\\").replace("\"", "\\\"")
                 append("[$key \"$value\"]\n")
             }
@@ -248,7 +251,7 @@ object Pgn {
                     }
                     Kind.CLOSE -> error("Handled before dispatch")
                     Kind.SYMBOL -> {
-                        val symbol = token.value.replace(Regex("^\\d+\\.{1,3}"), "")
+                        val symbol = token.value.replace(moveNumberPattern, "")
                         if (symbol.isEmpty() || symbol == "...") continue
                         if (symbol in results) {
                             result = symbol
@@ -266,7 +269,7 @@ object Pgn {
                             throw IllegalArgumentException("PGN move '$symbol' at offset ${token.offset}: ${error.message}")
                         }
                         beforeLast = board
-                        val glyph = Regex("[!?]+$").find(symbol)?.value?.let(glyphs::get)
+                        val glyph = glyphPattern.find(symbol)?.value?.let(glyphs::get)
                         moves += PgnPly(transition.move, transition.san, nags = listOfNotNull(glyph))
                         board = transition.position
                     }

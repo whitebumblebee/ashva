@@ -19,6 +19,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
 import androidx.compose.material.icons.rounded.AutoStories
+import androidx.compose.material.icons.rounded.Bolt
 import androidx.compose.material.icons.rounded.Explore
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.Quiz
@@ -67,7 +68,7 @@ fun OpeningLabMark(modifier: Modifier = Modifier) {
             Text("♞", color = Ink, style = MaterialTheme.typography.titleLarge)
         }
         Spacer(Modifier.width(10.dp))
-        Text("ASHVA · ALPHA", color = Cream, style = MaterialTheme.typography.labelMedium)
+        Text("ASHVA", color = Cream, style = MaterialTheme.typography.labelMedium)
     }
 }
 
@@ -118,6 +119,7 @@ fun OpeningCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     compact: Boolean = false,
+    developerMode: Boolean = false,
 ) {
     val accent = Color(opening.accentHex)
     Surface(
@@ -152,7 +154,7 @@ fun OpeningCard(
                 }
                 Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = MutedCream, modifier = Modifier.size(18.dp))
             }
-            opening.provenance?.let { source ->
+            if (developerMode) opening.provenance?.let { source ->
                 val course = opening.teaching
                 Text(if (course != null) "${course.sourceRoutes} named routes + ${course.authoredRoutes} study lines · ${course.minPlies}–${course.maxPlies} half-moves" else
                     "${opening.variations.size} source routes · ${source.minPlies}–${source.maxPlies} half-moves · ${source.license}",
@@ -160,10 +162,10 @@ fun OpeningCard(
             }
             if (!compact) {
                 Spacer(Modifier.height(18.dp))
-                Text(opening.identity, color = MutedCream, style = MaterialTheme.typography.bodySmall)
+                if (developerMode || (opening.teaching == null && opening.provenance == null)) Text(opening.identity, color = MutedCream, style = MaterialTheme.typography.bodySmall)
                 Spacer(Modifier.height(12.dp))
-                if (opening.teaching != null) Text("White & Black · study, practice and branch replay", color = accent, style = MaterialTheme.typography.labelMedium)
-                else Text("Finite routes · choose a scope in Review for actual recall progress", color = accent, style = MaterialTheme.typography.labelMedium)
+                if (developerMode && opening.teaching != null) Text("White & Black · study, practice and branch replay", color = accent, style = MaterialTheme.typography.labelMedium)
+                else if (developerMode) Text("Finite routes · choose a scope in Review for actual recall progress", color = accent, style = MaterialTheme.typography.labelMedium)
             }
         }
     }
@@ -188,6 +190,7 @@ fun AppBottomBar(selected: MainTab, onSelect: (MainTab) -> Unit) {
     val items = listOf(
         Triple(MainTab.LEARN, "Learn", Icons.Rounded.AutoStories),
         Triple(MainTab.EXPLORE, "Explore", Icons.Rounded.Explore),
+        Triple(MainTab.TACTICS, "Tactics", Icons.Rounded.Bolt),
         Triple(MainTab.REVIEW, "Review", Icons.Rounded.Quiz),
         Triple(MainTab.PROFILE, "Profile", Icons.Rounded.Person),
     )

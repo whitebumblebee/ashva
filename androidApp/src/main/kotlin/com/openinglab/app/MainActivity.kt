@@ -4,6 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.withFrameNanos
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.initializer
@@ -26,14 +29,23 @@ class MainActivity : ComponentActivity() {
                     autoInstallBundledOpenings = true,
                     presentationCache = (application as OpeningLabApplication).openingPresentationCache,
                     deepCourseSource = { BundledCourses.read(application.assets) },
-                    courseFeedbackStore = (application as OpeningLabApplication).courseFeedbackStore)
+                    courseFeedbackStore = (application as OpeningLabApplication).courseFeedbackStore,
+                    appPreferences = com.openinglab.app.content.AppPreferences(application.getSharedPreferences("app-settings", android.content.Context.MODE_PRIVATE)),
+                    tacticsSource = { com.openinglab.app.tactics.BundledTactics.read(application.assets) },
+                    deepCourseValidation = (application as OpeningLabApplication).courseValidation,
+                    tacticsValidation = (application as OpeningLabApplication).tacticsValidation,
+                    deferObservedReplies = true)
             }
         }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            OpeningLabTheme { OpeningLabApp() }
+            OpeningLabTheme {
+                val startup: AppViewModel = viewModel()
+                LaunchedEffect(startup) { withFrameNanos { }; withFrameNanos { }; startup.onFirstFrame() }
+                OpeningLabApp()
+            }
         }
     }
 }

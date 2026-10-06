@@ -2,8 +2,8 @@
 package com.openinglab.shared.course
 
 import com.openinglab.shared.chess.BoardPosition
-import com.openinglab.shared.chess.parseSanAndPlay
 import com.openinglab.shared.chess.sanAndPlay
+import com.openinglab.shared.lesson.LessonGraph
 import com.openinglab.shared.model.ChessMove
 import com.openinglab.shared.model.Difficulty
 import com.openinglab.shared.model.MoveStep
@@ -89,7 +89,14 @@ data class CourseVariation(
 )
 
 @Serializable
-data class CourseSideIdeas(val wins: Int, val text: String, val label: String, val examples: List<CourseExample>)
+data class CourseSideIdeas(
+    val wins: Int, val text: String, val label: String, val examples: List<CourseExample>,
+    val plan: String = "",
+    val patterns: List<CoursePattern> = emptyList(),
+)
+
+@Serializable
+data class CoursePattern(val san: String, val winShare: Double, val otherShare: Double)
 
 @Serializable
 data class CourseExample(
@@ -170,53 +177,83 @@ object CourseRoles {
 
 /** Fail-closed structural and legal validation; returns the checked boards for each node. */
 object DeepCourseValidator {
+    const val VERSION = 1
     const val MAX_CHAPTERS = 64
     const val MAX_NODES = 20_000
     const val MAX_TEXT = 4_000
+    private val idPattern = Regex("[a-z0-9][a-z0-9-]{0,63}")
+    private val uciPattern = Regex("[a-h][1-8][a-h][1-8][qrbn]?")
 
     fun validate(pack: DeepCoursePack, checkpoint: () -> Unit = {}): Map<String, Map<String, BoardPosition>> {
+        validateStructure(pack, checkpoint)
+        return pack.chapters.associate { it.id to replayChapter(it, checkpoint = checkpoint) }
+    }
+
+    /** Cheap checks for summaries. Legal replay is still required before a chapter can be opened. */
+    fun validateStructure(pack: DeepCoursePack, checkpoint: () -> Unit = {}) {
         require(pack.schema == 1) { "Unsupported course schema ${pack.schema}" }
-        require(pack.id.matches(Regex("[a-z0-9][a-z0-9-]{0,63}")) && pack.version > 0)
+        require(idPattern.matches(pack.id) && pack.version > 0)
         require(pack.side in setOf("WHITE", "BLACK", "BOTH"))
         require(pack.chapters.size in 1..MAX_CHAPTERS && pack.chapters.map { it.id }.distinct().size == pack.chapters.size)
         require(pack.provenance.sources.isNotEmpty() && pack.provenance.labelPolicy.isNotBlank())
         require(pack.glossary.map { it.id }.distinct().size == pack.glossary.size)
         val glossaryIds = pack.glossary.map { it.id }.toSet()
         require(pack.chapters.sumOf { it.nodes.size } <= MAX_NODES) { "Course exceeds node bound" }
-        return pack.chapters.associate { chapter ->
-            require(chapter.id.matches(Regex("[a-z0-9][a-z0-9-]{0,63}")))
+        for (chapter in pack.chapters) {
+            require(idPattern.matches(chapter.id))
             require(chapter.kind in setOf("REPERTOIRE", "GAME"))
             val roles = if (chapter.kind == "GAME") CourseRoles.game + "MAIN" else CourseRoles.repertoire
             require(chapter.nodes.isNotEmpty() && chapter.nodes.map { it.id }.distinct().size == chapter.nodes.size)
-            val boards = mutableMapOf<String, BoardPosition>()
             val plies = mutableMapOf<String, Int>()
             val children = chapter.nodes.groupBy { it.parent }
             for (node in chapter.nodes) {
                 checkpoint()
                 // Parents precede children, so the tree is acyclic and replayable in file order.
-                val before = node.parent?.let { requireNotNull(boards[it]) { "Node ${node.id} precedes its parent" } } ?: BoardPosition.starting()
-                val transition = before.parseSanAndPlay(node.san)
-                require(transition.san == node.san && transition.move == ChessMove.fromUci(node.uci)) { "Node ${node.id} notation mismatch" }
+                val parentPly = node.parent?.let { requireNotNull(plies[it]) { "Node ${node.id} precedes its parent" } } ?: 0
+                require(uciPattern.matches(node.uci)) { "Node ${node.id} has invalid UCI" }
                 require(node.role in roles) { "Unknown role ${node.role}" }
                 require(node.label.isNotBlank() && node.title.isNotBlank() && node.text.isNotBlank()) { "Node ${node.id} lacks text or label" }
                 require(node.text.length <= MAX_TEXT && node.principle.length <= MAX_TEXT)
                 require(node.weight in 0.0..1.0 && node.glossary.all { it in glossaryIds })
-                boards[node.id] = transition.position
-                plies[node.id] = (node.parent?.let { plies.getValue(it) } ?: 0) + 1
+                plies[node.id] = parentPly + 1
                 node.verdict?.let { require(it.result in CourseRoles.verdicts && it.label.isNotBlank()) }
             }
             val leaves = chapter.nodes.filter { children[it.id].isNullOrEmpty() }
             if (chapter.kind == "REPERTOIRE") require(leaves.all { it.verdict != null }) { "Every repertoire line must end in a verdict" }
             else require(chapter.game != null && chapter.nodes.count { it.role == "ORIGINAL" } > 0)
             for (v in chapter.variations) {
-                require(v.nodeId in boards && v.name.isNotBlank() && v.introLabel.isNotBlank()) { "Variation ${v.name} has no node" }
-                for (ex in v.white.examples + v.black.examples) require(ex.uci.size in 1..400 && ex.uci.all { it.matches(Regex("[a-h][1-8][a-h][1-8][qrbn]?")) })
+                require(v.nodeId in plies && v.name.isNotBlank() && v.introLabel.isNotBlank()) { "Variation ${v.name} has no node" }
+                for (ideas in listOf(v.white, v.black)) {
+                    require(ideas.plan.length <= MAX_TEXT && ideas.patterns.size <= 12)
+                    require(ideas.patterns.all { it.san.isNotBlank() && it.san.length <= 16 && it.winShare in 0.0..1.0 && it.otherShare in 0.0..1.0 })
+                }
+                for (ex in v.white.examples + v.black.examples) require(ex.uci.size in 1..400 && ex.uci.all(uciPattern::matches))
             }
             require(leaves.all { plies.getValue(it.id) > chapter.rootPly }) { "A line ends before the chapter root" }
-            chapter.id to boards.toMap()
         }
     }
+
+    /** File-order parents retain exact clocks and repetition history; each node is replayed once. */
+    internal fun replayChapter(chapter: CourseChapter, previouslyValidated: Boolean = false, checkpoint: () -> Unit = {}): Map<String, BoardPosition> {
+        val initial = BoardPosition.starting()
+        val boards = HashMap<String, BoardPosition>(chapter.nodes.size)
+        for (node in chapter.nodes) {
+            checkpoint()
+            val before = node.parent?.let(boards::getValue) ?: initial
+            // UCI is supplied in the pack. Canonical SAN equality still checks disambiguation/check/mate.
+            val move = ChessMove.fromUci(node.uci)
+            boards[node.id] = if (previouslyValidated) before.advanceKnownLegal(move) else {
+                val transition = before.sanAndPlay(move)
+                require(transition.san == node.san) { "Node ${node.id} notation mismatch" }
+                transition.position
+            }
+        }
+        return boards
+    }
 }
+
+/** Home/overview need metadata and counts, never an Opening or a LessonGraph. */
+data class DeepCourseChapterSummary(val course: DeepCoursePack, val chapter: CourseChapter, val openingId: String, val lineCount: Int)
 
 /** A chapter presented through the existing Study/Practice/branch player, plus course-only metadata. */
 data class DeepCourseChapterView(
@@ -228,25 +265,110 @@ data class DeepCourseChapterView(
     val roles: Map<String, String>,
     /** Line ID → node IDs on that line, to open the most-reached line through a variation. */
     val lineNodes: Map<String, Set<String>> = emptyMap(),
+    val nodePositions: Map<String, BoardPosition> = emptyMap(),
 ) {
-    fun lineThrough(nodeId: String): String? = lineNodes.filterValues { nodeId in it }.keys.maxByOrNull { lineWeights[it] ?: 0.0 }
+    val linesByNode: Map<String, List<String>> = buildMap {
+        val index = mutableMapOf<String, MutableList<String>>()
+        lineNodes.forEach { (line, nodes) -> nodes.forEach { index.getOrPut(it) { mutableListOf() }.add(line) } }
+        index.forEach { (node, lines) -> put(node, lines.toList()) }
+    }
+    val variationTree = CourseVariationTree(chapter.variations)
+    private val nodesByLine = chapter.nodes.associateBy { it.id }.let { byId ->
+        lineNodes.mapValues { (_, nodes) -> nodes.map(byId::getValue) }
+    }
+    private val mostReachedByNode = linesByNode.mapValues { (_, lines) ->
+        lines.maxWithOrNull(compareBy<String> { nodesByLine[it]?.lastOrNull()?.verdict?.result != "TRANSPOSES" }
+            .thenBy { lineWeights[it] ?: 0.0 }.thenBy { nodesByLine[it]?.size ?: 0 })
+    }
+    private val popularityByNode = chapter.nodes.groupBy { it.parent }.values.flatMap { siblings ->
+        val masterTotal = siblings.sumOf { it.evidence?.masterGames ?: 0 }.toDouble()
+        val clubTotal = siblings.sumOf { it.evidence?.clubGames ?: 0 }.toDouble()
+        siblings.map { node ->
+            val share = when {
+                masterTotal > 0 -> (node.evidence?.masterGames ?: 0) / masterTotal
+                clubTotal > 0 -> (node.evidence?.clubGames ?: 0) / clubTotal
+                else -> 0.0
+            }
+            node.id to when { share >= .5 -> "Main move"; share >= .15 -> "Popular"; else -> null }
+        }
+    }.toMap()
+    fun lineThrough(nodeId: String): String? = mostReachedByNode[nodeId]
+    fun nodeOnLine(lineId: String, ply: Int): CourseNode? = nodesByLine[lineId]?.getOrNull(ply - 1)
+    fun anchorPly(lineId: String, nodeId: String): Int? = nodesByLine[lineId]?.indexOfFirst { it.id == nodeId }
+        ?.takeIf { it >= 0 }?.plus(1)
+    /** Share of replies at this exact position, never cumulative reach from the chapter start. */
+    fun movePopularity(nodeId: String): String? = popularityByNode[nodeId]
+    fun lineEndingSummary(lineId: String): String = friendlyLineEnding(nodesByLine[lineId]?.lastOrNull()?.verdict)
+    /** Branch offer label: the move with its number and the variation that move enters, e.g. "4.d3 · Anti-Berlin Variation". */
+    fun branchTitle(lineId: String, targetPly: Int): String? = nodeOnLine(lineId, targetPly + 1)?.let { node ->
+        DeepCourseCatalog.moveLabel(targetPly + 1, node.san) + (node.opening?.let { " · " + DeepCourseCatalog.shortName(it).substringAfter(", ").ifBlank { DeepCourseCatalog.shortName(it) } } ?: "")
+    }
+    /** Master games for the move a branch offer starts with (for ordering offers by how often strong players choose it). */
+    fun branchGames(lineId: String, targetPly: Int): Int = nodeOnLine(lineId, targetPly + 1)?.evidence?.masterGames ?: 0
+    /** Short facts for a branch offer: master games for that move and the line's ending. */
+    fun branchFacts(lineId: String, targetPly: Int): String = listOfNotNull(
+        nodeOnLine(lineId, targetPly + 1)?.evidence?.masterGames?.takeIf { it > 0 }?.let { "$it master games" },
+        lineEndingSummary(lineId)).joinToString(" · ")
+    fun lessonGraph(): LessonGraph = if (nodePositions.isEmpty()) LessonGraph.fromOpening(opening) else {
+        val initial = BoardPosition.starting()
+        LessonGraph.fromCheckedOpening(opening, lineNodes.mapValues { (_, nodes) -> listOf(initial) + nodes.map(nodePositions::getValue) })
+    }
 }
 
-class DeepCourseCatalog(val packs: List<DeepCoursePack>, checkpoint: () -> Unit = {}) {
-    val chapters: List<DeepCourseChapterView> = packs.flatMap { pack ->
-        DeepCourseValidator.validate(pack, checkpoint)
-        pack.chapters.map { present(pack, it) }
+class DeepCourseCatalog(val packs: List<DeepCoursePack>, checkpoint: () -> Unit = {}, validateOnDemand: Boolean = false,
+    private val validationCache: com.openinglab.shared.data.PackValidationCache? = null) {
+    private val checked = buildMap<String, Map<String, BoardPosition>> {
+        packs.forEach { pack ->
+            if (validateOnDemand) DeepCourseValidator.validateStructure(pack, checkpoint)
+            else {
+                val positions = DeepCourseValidator.validate(pack, checkpoint)
+                pack.chapters.forEach { put(openingId(pack, it), positions.getValue(it.id)) }
+            }
+        }
     }
-    private val byOpening = chapters.associateBy { it.opening.id }
+    val summaries = packs.flatMap { pack -> pack.chapters.map { chapter ->
+        val parents = chapter.nodes.mapNotNull { it.parent }.toSet()
+        DeepCourseChapterSummary(pack, chapter, openingId(pack, chapter), chapter.nodes.count { it.id !in parents })
+    } }
+    private val byOpening = summaries.associate { summary -> summary.openingId to summary }
+    private val prepared = MutableStateFlow<Map<String, DeepCourseChapterView>>(emptyMap())
+    /** Compatibility for callers explicitly requesting every chapter; startup uses summaries. */
+    val chapters: List<DeepCourseChapterView> get() = summaries.map { requireNotNull(chapter(it.openingId)) }
     private val examples = MutableStateFlow<Map<String, Opening>>(emptyMap())
-    fun chapter(openingId: String): DeepCourseChapterView? = byOpening[openingId]
-    fun getOpening(id: String): Opening? = byOpening[id]?.opening ?: exampleOpening(id)
+    fun preparedChapter(id: String): DeepCourseChapterView? = prepared.value[id]
+    fun preparedOpening(id: String): Opening? = prepared.value[id]?.opening ?: examples.value[id]
+    fun chapter(openingId: String, checkpoint: () -> Unit = {}): DeepCourseChapterView? {
+        prepared.value[openingId]?.let { return it }
+        val summary = byOpening[openingId] ?: return null
+        val boards = checked[openingId] ?: DeepCourseValidator.replayChapter(summary.chapter, checkpoint = checkpoint,
+            previouslyValidated = validationCache?.let { it.isValidated("pack") || it.isValidated(openingId) } == true)
+        checkpoint()
+        validationCache?.takeIf { !it.isValidated("pack") && !it.isValidated(openingId) }?.markValidated(openingId)
+        val view = present(summary.course, summary.chapter, boards, checkpoint)
+        return prepared.updateAndGet { it + (openingId to (it[openingId] ?: view)) }.getValue(openingId)
+    }
+    /** After Home is ready, finish validation without eagerly constructing lesson presentations. */
+    fun validateRemaining(checkpoint: () -> Unit = {}) {
+        if (validationCache?.isValidated("pack") == true) return
+        for (summary in summaries) {
+            checkpoint()
+            if (validationCache?.isValidated(summary.openingId) != true) {
+                DeepCourseValidator.replayChapter(summary.chapter, checkpoint = checkpoint)
+                checkpoint()
+                validationCache?.markValidated(summary.openingId)
+            }
+        }
+        checkpoint()
+        validationCache?.markValidated("pack")
+    }
+
+    fun getOpening(id: String, checkpoint: () -> Unit = {}): Opening? = chapter(id, checkpoint)?.opening ?: exampleOpening(id, checkpoint)
 
     /** "<chapter opening id>:ex:<variation index>:<w|b>:<n>" → that example game, created once on demand. */
     fun exampleId(view: DeepCourseChapterView, variation: Int, white: Boolean, n: Int) = exampleId(view.opening.id, variation, white, n)
-    fun exampleOpening(id: String): Opening? {
+    fun exampleOpening(id: String, checkpoint: () -> Unit = {}): Opening? {
         val marker = id.lastIndexOf(":ex:").takeIf { it > 0 } ?: return null
-        val view = byOpening[id.substring(0, marker)] ?: return null
+        val view = chapter(id.substring(0, marker), checkpoint) ?: return null
         val parts = id.substring(marker + 4).split(':')
         if (parts.size != 3) return null
         val v = view.chapter.variations.getOrNull(parts[0].toIntOrNull() ?: return null) ?: return null
@@ -259,37 +381,71 @@ class DeepCourseCatalog(val packs: List<DeepCoursePack>, checkpoint: () -> Unit 
 
     companion object {
         const val ID_PREFIX = "course:deep-v1:"
+        /** Bound on following transposed positions into other lines when presenting one line. */
+        const val MAX_TRANSPOSITION_HOPS = 8
         private val codec = Json { ignoreUnknownKeys = false }
         fun parse(json: String): DeepCoursePack = codec.decodeFromString(DeepCoursePack.serializer(), json)
         fun openingId(pack: DeepCoursePack, chapter: CourseChapter) = "$ID_PREFIX${pack.id}:v${pack.version}:${chapter.id}"
 
-        private fun present(pack: DeepCoursePack, chapter: CourseChapter): DeepCourseChapterView {
+        internal fun present(pack: DeepCoursePack, chapter: CourseChapter, boards: Map<String, BoardPosition> = emptyMap(), checkpoint: () -> Unit = {}): DeepCourseChapterView {
             val byId = chapter.nodes.associateBy { it.id }
             val children = chapter.nodes.groupBy { it.parent }
             val leaves = chapter.nodes.filter { children[it.id].isNullOrEmpty() }
-            fun lineOf(leaf: CourseNode): List<CourseNode> = generateSequence(leaf) { it.parent?.let(byId::getValue) }.toList().reversed()
             val game = chapter.kind == "GAME"
-            val ordered = leaves.map(::lineOf).sortedWith(compareBy<List<CourseNode>>(
-                // Main line first (all MAIN/ORIGINAL), then most-reached lines.
-                { line -> if (line.all { it.role == "MAIN" || it.role == "ORIGINAL" }) 0 else 1 },
-                { line -> -line.last().weight }, { line -> line.size }))
+            // Preferred continuation: what masters play most (MAIN), then the most-reached move.
+            fun bestChild(node: CourseNode): CourseNode? = children[node.id].orEmpty()
+                .maxWithOrNull(compareBy<CourseNode>({ it.role == "MAIN" || it.role == "ORIGINAL" }, { it.weight }))
+            // A line that ends because its position transposes continues along the line that owns that position.
+            val continuers = chapter.nodes.filter { !children[it.id].isNullOrEmpty() }
+                .mapNotNull { node -> boards[node.id]?.positionKey?.let { it to node } }.groupBy({ it.first }, { it.second })
+            fun spliced(line: List<CourseNode>): List<CourseNode> {
+                if (game || continuers.isEmpty()) return line
+                var result = line
+                val seen = line.mapTo(HashSet()) { it.id }
+                repeat(MAX_TRANSPOSITION_HOPS) {
+                    val last = result.last()
+                    if (last.verdict?.result != "TRANSPOSES") return result
+                    val target = boards[last.id]?.positionKey?.let { continuers[it] }?.firstOrNull { it.id !in seen } ?: return result
+                    val tail = generateSequence(bestChild(target)) { bestChild(it) }.takeWhile { seen.add(it.id) }.toList()
+                    if (tail.isEmpty() || result.size + tail.size > LessonGraph.MAX_PATH_PLIES) return result
+                    result = result + tail
+                }
+                return result
+            }
+            fun lineOf(leaf: CourseNode): List<CourseNode> = spliced(generateSequence(leaf) { it.parent?.let(byId::getValue) }.toList().reversed())
+            // Up to the chapter's own first move follow where most of the chapter's lines go (e.g. 3...Nf6 in the Berlin
+            // chapter even though 3...a6 is more popular overall); from there follow the most-played moves.
+            val lineCount = HashMap<String, Int>()
+            fun linesBelow(node: CourseNode): Int = lineCount.getOrPut(node.id) { children[node.id]?.sumOf(::linesBelow) ?: 1 }
+            val depth = HashMap<String, Int>()
+            fun plyOf(node: CourseNode): Int = depth.getOrPut(node.id) { 1 + (node.parent?.let { plyOf(byId.getValue(it)) } ?: 0) }
+            fun mainChild(node: CourseNode): CourseNode? = if (plyOf(node) <= chapter.rootPly)
+                children[node.id].orEmpty().maxWithOrNull(compareBy(::linesBelow)) else bestChild(node)
+            val mainLeaf = chapter.nodes.firstOrNull { it.parent == null }?.let { root -> generateSequence(root) { mainChild(it) }.last() }
+            val ordered = leaves.map { it to lineOf(it) }.sortedWith(compareBy<Pair<CourseNode, List<CourseNode>>>(
+                // The main line follows the most-played moves to the end; then most-reached lines.
+                { (leaf, _) -> if (leaf == mainLeaf) 0 else 1 },
+                { (leaf, _) -> -leaf.weight }, { (_, line) -> line.size }))
             val openingId = openingId(pack, chapter)
             val roles = mutableMapOf<String, String>()
             val weights = mutableMapOf<String, Double>()
             val usedNames = HashMap<String, Int>()
-            val variations = ordered.mapIndexed { index, line ->
+            val steps = byId.mapValues { (_, n) -> MoveStep(n.uci, n.san, n.title, n.text, n.principle, n.label, players(n)) }
+            val variations = ordered.mapIndexed { index, (leaf, line) ->
+                checkpoint()
                 val defining = line.firstOrNull { it.role != "MAIN" && it.role != "ORIGINAL" && it.role != "ENGINE" && it.role != "PUNISH" }
-                val id = "deep:${pack.id}:v${pack.version}:${chapter.id}:${line.last().id}"
+                val id = "deep:${pack.id}:v${pack.version}:${chapter.id}:${leaf.id}"
                 val role = defining?.role ?: if (game) "ORIGINAL" else "MAIN"
                 roles[id] = role
-                weights[id] = line.last().weight
-                val label = { node: CourseNode -> moveLabel(line.indexOf(node) + 1, node.san) }
+                weights[id] = leaf.weight
+                val indices = line.withIndex().associate { it.value.id to it.index }
+                val label = { node: CourseNode -> moveLabel(indices.getValue(node.id) + 1, node.san) }
                 val named = line.lastOrNull { it.opening != null }?.opening
                 val name = when {
                     named != null && !game -> {
                         // Variation name, plus the last branching move when the line leaves the named position.
                         val firstNamed = line.indexOfFirst { it.opening == named }
-                        val branch = line.lastOrNull { it.role in setOf("SIDE", "DEVIATION", "TRAP") && line.indexOf(it) > firstNamed }
+                        val branch = line.lastOrNull { it.role in setOf("SIDE", "DEVIATION", "TRAP") && indices.getValue(it.id) > firstNamed }
                         val base = shortName(named) + (branch?.let { " · ${label(it)}" } ?: "")
                         val n = (usedNames[base] ?: 0) + 1; usedNames[base] = n
                         if (n == 1) base else "$base · ${label(line.last { it.role != "ENGINE" && it.role != "PUNISH" })}" + if (n > 2) " ($n)" else ""
@@ -300,11 +456,11 @@ class DeepCourseCatalog(val packs: List<DeepCoursePack>, checkpoint: () -> Unit 
                 val verdict = line.last().verdict
                 val description = buildString {
                     if (verdict != null) append("${CourseRoles.verdict(verdict.result)}${verdict.evalCp?.let { " (${formatEval(it)})" } ?: ""} at the end of this line. ")
-                    if (!game && line.last().weight > 0) append("Reached in about ${percent(line.last().weight)} of games from the chapter start. ")
+                    if (!game && leaf.weight > 0) append("Reached in about ${percent(leaf.weight)} of games from the chapter start. ")
                     append(verdict?.label ?: line.last().label)
                 }
                 Variation(id, name, CourseRoles.display(role).uppercase(), description,
-                    line.map { MoveStep(it.uci, it.san, it.title, it.text, it.principle, it.label, players(it)) },
+                    line.map { steps.getValue(it.id) },
                     identifiesOpening = false,
                     whiteIdea = verdict?.whitePlan ?: chapter.intro, blackIdea = verdict?.blackPlan ?: chapter.intro,
                     authoredContinuation = true,
@@ -321,8 +477,8 @@ class DeepCourseCatalog(val packs: List<DeepCoursePack>, checkpoint: () -> Unit 
                 keyIdeas = listOfNotNull(pack.summary, chapter.coverage?.note, pack.provenance.labelPolicy),
                 variations = variations, recognitionPly = chapter.rootPly,
                 teaching = TeachingCoverage("ashva-deep-course/1", 0, variations.size, true, plies.min(), plies.max()))
-            val lineNodes = ordered.associate { line -> "deep:${pack.id}:v${pack.version}:${chapter.id}:${line.last().id}" to line.map { it.id }.toSet() }
-            return DeepCourseChapterView(pack, chapter, opening, weights, roles, lineNodes)
+            val lineNodes = ordered.associate { (leaf, line) -> "deep:${pack.id}:v${pack.version}:${chapter.id}:${leaf.id}" to line.map { it.id }.toSet() }
+            return DeepCourseChapterView(pack, chapter, opening, weights, roles, lineNodes, boards)
         }
 
         fun shortName(name: String) = name.substringAfter(": ", name)

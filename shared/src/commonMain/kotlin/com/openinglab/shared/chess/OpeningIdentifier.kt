@@ -21,7 +21,7 @@ data class OpeningMatch(
 /** A position index, not a move-order heuristic. Coverage is limited to the provided catalog. */
 class OpeningIdentifier(private val openings: List<Opening> = OpeningCatalog.openings) {
     private data class Entry(val opening: Opening, val variationName: String?, val definitionPly: Int, val named: Boolean)
-    private val index: Map<String, List<Entry>> = buildMap {
+    private val index: Map<String, List<Entry>> by lazy { buildMap {
         for (opening in openings) for (variation in opening.variations) {
             var board = BoardPosition.starting()
             for ((i, step) in variation.steps.withIndex()) {
@@ -33,7 +33,7 @@ class OpeningIdentifier(private val openings: List<Opening> = OpeningCatalog.ope
                 put(board.positionKey, get(board.positionKey).orEmpty() + entry)
             }
         }
-    }
+    } }
 
     fun identify(position: BoardPosition): OpeningMatch = match(position, null)
     fun identifyFen(fen: String): OpeningMatch = try { identify(BoardPosition.fromFen(fen)) }

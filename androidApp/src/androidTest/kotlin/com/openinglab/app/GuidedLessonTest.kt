@@ -74,7 +74,8 @@ class GuidedLessonTest {
     @Test fun fullIdeaHasCompleteNotationPlansAndDeterministicControls() {
         open()
         click("study-mode")
-        rule.onNodeWithTag("full-idea").performScrollTo().assertTextContains("white POV", substring = true)
+        click("full-idea")
+        rule.onNodeWithTag("full-idea").assertTextContains("Plans for both sides", substring = true)
         rule.onNodeWithTag("chosen-plan").assertTextContains("c3–d4", substring = true)
         rule.onNodeWithTag("move-16").performScrollTo().assertTextContains("8... O-O")
         click("move-16")

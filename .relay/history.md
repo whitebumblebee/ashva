@@ -4,7 +4,7 @@
      Every row is derived from the front-matter of a file in .relay/history/.
      To change a row, edit that file and re-run `relay index`. -->
 
-Entries: **42**. Newest last. Read the newest relevant entries before claiming work.
+Entries: **44**. Newest last. Read the newest relevant entries before claiming work.
 
 | Seq | Date | Agent | Task | Status | Summary | Log |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -50,6 +50,8 @@ Entries: **42**. Newest last. Read the newest relevant entries before claiming w
 | 0040 | 2026-10-05 | claude-code | `deep-course-pilot` | done | Completed the deep course pilot in Android 0.16.0/code17. The Ruy Lopez for White Berlin chapter and the Firouzja–Carlsen 2020 game come from Lichess club/master data plus Stockfish, with machine-checked generated text. All 66 native tests pass on a 4-core isolated AVD, plus unit, iOS, release, engine-asset and public gates. Installed and opened in place on the owner's emulator. | [log](history/0040_claude-code_deep-course-pilot.md) |
 | 0041 | 2026-10-06 | claude-code | `ruy-lopez-full-course` | partial | Owner feedback reset the course structure. The pilot let a statistic pick 4.d3 and labelled lines by role, which hid the Berlin's named theory. Started the full Ruy Lopez course: named variations as the backbone, every master move for both sides, plus level stats, winning ideas from decisive games and example games. Owner approved downloading all broadcasts. | [log](history/0041_claude-code_ruy-lopez-full-course.md) |
 | 0042 | 2026-10-06 | claude-code | `ruy-lopez-full-course` | done | Full Ruy Lopez deep course for both colours shipped as Android 0.17.0/code18: 10 named-variation chapters plus the GM game, 898 lines and 11,190 positions. Each variation has an intro, how White/Black win (master statistics, checked written plans) and replayable example games. All gates green; connected 70/70 on the isolated AVD; installed in place on the owner emulator. | [log](history/0042_claude-code_ruy-lopez-full-course.md) |
+| 0043 | 2026-10-06 | claude-code | `ux-polish-tactics` | done | Android 0.18.0/code19: calmer course UI (course > chapter > variation tree > variation page, 3-line explanations), provenance only in off-by-default developer mode, outlined pieces, real Profile/Today routine, Woodpecker Tactics tab (13 sets, 6,117 CC0 puzzles), chess-core/startup speed-up (~2 CPU-min to ~10 s). Gates green, connected 87/87, installed in place on the owner emulator. | [log](history/0043_claude-code_ux-polish-tactics.md) |
+| 0044 | 2026-10-06 | claude-code | `ux-polish-tactics` | done | 0.18.1 follow-up done by Claude Code directly. Study branching restored: main lines follow the most-played moves to the end (Closed 51 moves, Berlin 63) and one compact choice per alternative move at every branch point. Transposed lines continue. Celtic SVG piece set (MIT). Gates green, connected 87/87, installed in place on the owner emulator with data intact. | [log](history/0044_claude-code_ux-polish-tactics.md) |
 
 ## Superseded
 

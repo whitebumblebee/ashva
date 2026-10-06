@@ -9,6 +9,7 @@ import com.openinglab.shared.course.CourseNode
 import com.openinglab.shared.course.CourseProvenance
 import com.openinglab.shared.course.CourseSource
 import com.openinglab.shared.course.CourseSideIdeas
+import com.openinglab.shared.course.CoursePattern
 import com.openinglab.shared.course.CourseExample
 import com.openinglab.shared.course.CourseVariation
 import com.openinglab.shared.course.DeepCourseCatalog
@@ -69,7 +70,9 @@ class CoursePacker(private val p: CoursePipeline) {
             }
             val text = (written.joinToString(" ") { it.claim.text } + " " + stats).trim()
             return CourseSideIdeas(s.wins, text, label(written.map { it.evidence } + "game statistics"),
-                s.examples.map { e -> CourseExample(e.white, e.black, e.whiteElo, e.blackElo, e.event, e.date, e.result, e.site, e.uci, e.anchorPly) })
+                s.examples.map { e -> CourseExample(e.white, e.black, e.whiteElo, e.blackElo, e.event, e.date, e.result, e.site, e.uci, e.anchorPly) },
+                plan = written.filter { it.claim.type == "WINPLAN" }.joinToString(" ") { it.claim.text },
+                patterns = s.patterns.map { CoursePattern(it.san.ifBlank { it.move }, it.winShare, it.otherShare) })
         }
     }
 

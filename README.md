@@ -2,7 +2,7 @@
 
 An Android-first chess repertoire teacher built with native Jetpack Compose and Kotlin Multiplatform. Ashva (अश्व, “horse”) takes its name from the chess knight.
 
-**Early alpha · Android 0.17.0.** An offline opening-course and original-game teacher, not an exhaustive opening book or independently expert-reviewed curriculum. No Play Store release or playable iOS client exists. Game browsing, per-move coaching and separate analyzed branches are verified; the broader roadmap remains unfinished.
+**Early alpha · Android 0.18.0.** An offline opening-course and original-game teacher, not an exhaustive opening book or independently expert-reviewed curriculum. No Play Store release or playable iOS client exists. Game browsing, per-move coaching and separate analyzed branches are verified; the broader roadmap remains unfinished.
 
 | Learn                                             | Study a line                                                | Identify                                                                  |
 | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -12,6 +12,15 @@ Screenshots are from the Android 0.3.1 alpha on an isolated API 33 emulator, usi
 
 ## What you can try
 
+- **New in 0.18 — calmer app and Woodpecker tactics:**
+  - Course screens are reorganised as course → chapter → variation tree → variation page, with a board preview, results, rating bands, the idea, how each side wins (written plan plus key-move chips) and model games.
+  - Explanations open three lines at a time.
+  - Provenance labels are hidden behind an off-by-default *Developer mode*; see [course provenance](docs/COURSE_PROVENANCE.md).
+  - White pieces are now outlined, so they stay readable on light squares.
+  - A real Profile: weekly goal, streak, stats and routine settings. A daily **Today** routine.
+  - A **Tactics** tab with Woodpecker-method training: 13 sets from 6,117 CC0 Lichess puzzles, including Ruy Lopez tactics; timed cycles with targets, history, mistakes retry and custom sets.
+  - Faster start-up from a quicker chess core and one-time validation of the bundled packs.
+  - How to use it: [docs/GUIDE_0.18.md](docs/GUIDE_0.18.md).
 - **New in 0.17 — full Ruy Lopez deep course:** both colours, 10 chapters (Berlin, Exchange, Open, Closed main systems, Marshall/Anti-Marshall, other Morphy systems, Schliemann, Classical, old Steinitz, other third moves) plus an annotated GM game (*Firouzja–Carlsen, Tata Steel 2020*). 898 lines and 11,190 positions from master (2200+) and club games, every line played to an engine verdict or a transposition. Variations carry their real names, important unnamed GM lines are included, and each variation shows how White and Black win it: rating-band statistics, written plans checked against the winners' moves, and replayable example games. Course text is generated and shown only when its claims pass automatic engine/statistics/board checks. See [the deep course plan](docs/DEEP_COURSE_PLAN.md) and [testing steps](docs/USER_TESTING.md#test-the-full-ruy-lopez-course-017).
 - Study and practice all 149 catalog families as White or Black, with rules-derived move explanations and original Ashva plans. The main Learn/Explore flow opens courses, not just starter demos.
 - See the Full idea, plans and complete move list; replay, jump, pause and change speed.

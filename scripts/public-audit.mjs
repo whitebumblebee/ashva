@@ -58,7 +58,7 @@ export function privacyFindings(text) {
 const mandatory = ['README.md', 'LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'SECURITY.md', 'THIRD_PARTY_NOTICES.md',
   'docs/PRIVACY.md', 'docs/PUBLIC_READINESS.md', '.github/workflows/ci.yml', '.gitleaks.toml'];
 const wrapperSha = '497c8c2a7e5031f6aa847f88104aa80a93532ec32ee17bdb8d1d2f67a194a9c7';
-const textExtensions = new Set(['.kt', '.kts', '.md', '.mjs', '.json', '.jsonl', '.toml', '.xml', '.properties', '.txt', '.tsv', '.pgn', '.yml', '.yaml', '.mdc', '.svg', '.bat', '.patch']);
+const textExtensions = new Set(['.kt', '.kts', '.md', '.mjs', '.json', '.jsonl', '.toml', '.xml', '.properties', '.txt', '.tsv', '.pgn', '.yml', '.yaml', '.mdc', '.svg', '.bat', '.patch', '.py']);
 
 export async function audit(root) {
   const rules = ignoreRules(await readFile(path.join(root, '.gitignore'), 'utf8'));

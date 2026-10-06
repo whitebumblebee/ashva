@@ -29,6 +29,7 @@ class OfflineLearningTest {
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
 
     @Test fun bundledPacksInstallWithLicensesAndRestoreAfterRecreation() {
+        rule.onNodeWithTag("home-list").performScrollToKey("home-secondary-links")
         rule.onNodeWithTag("offline-library").performScrollTo().performClick()
         for (source in listOf("lichess-openings", "lichess-broadcast-2020-04")) {
             rule.onNodeWithTag("offline-library-list").performScrollToKey(source)

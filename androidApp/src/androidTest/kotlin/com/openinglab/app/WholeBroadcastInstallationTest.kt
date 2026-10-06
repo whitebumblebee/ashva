@@ -58,6 +58,8 @@ class WholeBroadcastInstallationTest {
             assertNull(vm.uiState.value.packError)
             phase("January installed")
             rule.onNodeWithTag("pack-status-lichess-broadcast-2020-01").performScrollTo().assertTextContains("Installed for offline use")
+            rule.runOnIdle { vm.setDeveloperMode(true) }
+            rule.onNodeWithTag("offline-library-list").performScrollToNode(hasTestTag("pack-dispositions-lichess-broadcast-2020-01"))
             rule.onNodeWithTag("pack-dispositions-lichess-broadcast-2020-01").performScrollTo().assertTextEquals(
                 "952 inputs attempted · 0 duplicates · 95 quarantined. Rejected scores are excluded from observations and teaching; their disposition remains in the source pack.")
             rule.waitUntil(180_000) { vm.uiState.value.observedReplies is ObservedRepliesUiState.Ready }

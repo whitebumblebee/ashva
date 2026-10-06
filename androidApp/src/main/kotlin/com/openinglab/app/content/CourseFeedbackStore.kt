@@ -17,6 +17,7 @@ data class CourseFeedback(
     val text: String,
     val label: String,
     val createdAtMillis: Long,
+    val note: String = "",
 )
 
 /**

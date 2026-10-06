@@ -14,8 +14,8 @@ android {
         applicationId = "com.openinglab.app"
         minSdk = 26
         targetSdk = 37
-        versionCode = 18
-        versionName = "0.17.0"
+        versionCode = 20
+        versionName = "0.18.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // Process isolation prevents one long test JVM retaining every synthetic course/engine.
@@ -67,7 +67,15 @@ val packagedContent = tasks.register<ReviewedContentAssets>("packageReviewedCont
         include("ruy-lopez/v1/course.json")
         into("courses")
     }
+    from(rootProject.layout.projectDirectory) {
+        include("THIRD_PARTY_NOTICES.md", "NOTICE")
+        into("legal")
+    }
     outputDirectory.set(layout.buildDirectory.dir("generated/reviewedAssets"))
+    from(rootProject.layout.projectDirectory.dir("content/tactics")) {
+        include("v1/tactics.json")
+        into("tactics")
+    }
     into(outputDirectory.dir("content"))
 }
 androidComponents.onVariants { variant ->

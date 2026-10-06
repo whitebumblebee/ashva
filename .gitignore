@@ -51,3 +51,11 @@ audit-reports/
 .cursor/skills/relay/
 .kiro/steering/relay.md
 skills-lock.json
+# Deep-course build intermediates: large and reproducible from .course-cache/ with courseTools
+# (toc/build/ideas/facts/check). The published pack (v*/), config, writer sources, claims and TOC stay tracked.
+content/courses/*/map/
+content/courses/*/tree/
+content/courses/*/extra/
+content/courses/*/facts/
+content/courses/*/checked/
+content/courses/*/ideas/

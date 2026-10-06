@@ -21,6 +21,7 @@ import java.util.UUID
 @RunWith(AndroidJUnit4::class)
 class TeachingLearningTest {
     @get:Rule val rule = createAndroidComposeRule<MainActivity>()
+    @org.junit.After fun resetDeveloperMode() { rule.runOnIdle { ViewModelProvider(rule.activity)[AppViewModel::class.java].setDeveloperMode(false) } }
     private val vm get() = ViewModelProvider(rule.activity)[AppViewModel::class.java]
     private fun ready() {
         rule.waitUntil(120_000) { vm.uiState.value.teachingOpenings.size == 149 || vm.uiState.value.catalogError != null }
@@ -31,11 +32,19 @@ class TeachingLearningTest {
 
     @Test fun mainRuyEntryHasAllNamedRoutesAndDeeperBothColorTeaching() {
         ready()
-        val ruy = vm.learningOpenings().single { it.name == "Ruy Lopez" }
-        assertEquals(235, ruy.teaching!!.sourceRoutes)
+        val summary = vm.learningOpenings().single { it.name == "Ruy Lopez" }
+        assertEquals(235, summary.teaching!!.sourceRoutes)
+        assertTrue(summary.teaching!!.authoredRoutes > 0)
+        rule.onNodeWithTag("home-list").performScrollToNode(hasTestTag("opening-${summary.id}"))
+        click("opening-${summary.id}")
+        rule.waitUntil(60_000) { rule.onAllNodesWithTag("opening-detail").fetchSemanticsNodes().isNotEmpty() || vm.uiState.value.catalogError != null }
+        assertNull(vm.uiState.value.catalogError)
+        // Home carries lightweight summaries; opening the detail prepares the full course.
+        val ruy = vm.getOpening(summary.id)
         assertTrue(ruy.variations.size > 235)
-        rule.onNodeWithTag("home-list").performScrollToNode(hasTestTag("opening-${ruy.id}"))
-        click("opening-${ruy.id}")
+        assertEquals(235, ruy.variations.count { !it.authoredContinuation })
+        assertEquals(summary.teaching!!.authoredRoutes, ruy.variations.count { it.authoredContinuation })
+        rule.runOnIdle { vm.setDeveloperMode(true) }
         rule.onNodeWithTag("opening-detail").performScrollToNode(hasTestTag("teaching-coverage"))
         rule.onNodeWithTag("teaching-coverage").assertTextContains("235 named source routes", substring = true)
         val route = ruy.variations.first { it.id.endsWith(":berlin-ending") }
@@ -44,12 +53,14 @@ class TeachingLearningTest {
         rule.waitUntil(60_000) { vm.uiState.value.trainer?.opening?.id == ruy.id }
         click("study-mode")
         rule.runOnIdle { vm.jumpTrainer(16) }
+        click("full-idea")
         assertEquals("Kxd8", vm.uiState.value.trainer!!.replay.lastMove!!.san)
         rule.onNodeWithTag("chosen-plan").performScrollTo().assertTextContains("bishop pair", substring = true)
         click("flip-side")
         assertEquals(PieceColor.BLACK, vm.uiState.value.trainer!!.playerSide)
         rule.onNodeWithTag("chosen-plan").performScrollTo().assertTextContains("king", substring = true)
         assertFalse(vm.uiState.value.trainer!!.variation.blackIdea.contains("not available"))
+        rule.runOnIdle { vm.setDeveloperMode(false) }
     }
 
     @Test fun otherOpeningsHaveLongerLessonsHintsAndDeliberateBranches() {
