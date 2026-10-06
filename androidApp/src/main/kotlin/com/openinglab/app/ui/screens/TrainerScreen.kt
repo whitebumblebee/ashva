@@ -91,6 +91,7 @@ fun TrainerScreen(
     onSetPrevious: () -> Unit = {}, onSetNext: () -> Unit = {},
     preparing: Boolean = false, loadError: String? = null,
     recallError: String? = null, onNextReview: () -> Unit = {}, recallRetryAvailable: Boolean = false, onRetryRecall: () -> Unit = {},
+    onFlag: ((String) -> Unit)? = null, flagMessage: String? = null,
 ) {
     LifecycleEventEffect(Lifecycle.Event.ON_STOP, onEvent = onPause)
     LifecycleEventEffect(Lifecycle.Event.ON_START, onEvent = onResume)
@@ -98,6 +99,7 @@ fun TrainerScreen(
     val study = state.mode == LessonMode.STUDY
     val source = state.opening.provenance
     val teaching = state.opening.teaching
+    val deep = state.opening.family == "Deep course"
     var visibleBranches by rememberSaveable(state.replay.pathId, state.ply) { mutableIntStateOf(12) }
     Column(modifier.testTag("lesson-scroll").verticalScroll(rememberScrollState()).padding(bottom = 32.dp)) {
         Row(Modifier.fillMaxWidth().padding(end = 12.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -142,7 +144,9 @@ fun TrainerScreen(
                 LessonButton(if (study) "Practice from start" else "Practicing", "practice-mode", onPractice,
                     Modifier.weight(1f), selected = !study)
             }
-            Text("${if (teaching != null) if (state.variation.authoredContinuation) "AUTHORED STUDY CONTINUATION" else "NAMED SOURCE ROUTE · ASHVA GUIDE" else if (source == null) "AUTHORED SEED" else "SOURCED · ${source.license}"} · ${state.replay.moves.size} half-moves · finite course coverage", color = MutedCream,
+            if (deep) Text("DEEP COURSE · ${state.variation.category} · generated text from checked claims · ${state.replay.moves.size} half-moves",
+                color = Gold, style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(top = 10.dp).testTag("deep-course-coverage"))
+            else Text("${if (teaching != null) if (state.variation.authoredContinuation) "AUTHORED STUDY CONTINUATION" else "NAMED SOURCE ROUTE · ASHVA GUIDE" else if (source == null) "AUTHORED SEED" else "SOURCED · ${source.license}"} · ${state.replay.moves.size} half-moves · finite course coverage", color = MutedCream,
                 style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(vertical = 10.dp).testTag(if (source == null) "seed-coverage" else "source-coverage"))
             Text(if (study) "Study · ${state.ply}/${state.replay.moves.size} · ${state.position.sideToMove.name.lowercase()} to move"
                 else if (state.isOpponentThinking) "Playing the lesson reply…" else "Practice · ${state.playerSide.name.lowercase()} POV",
@@ -153,7 +157,7 @@ fun TrainerScreen(
             Spacer(Modifier.height(8.dp))
             if (study) {
                 ReplayControls(state, onJump, onPlayPause, onSpeed)
-                MoveIdea(state)
+                MoveIdea(state, onFlag, flagMessage)
                 PositionTeachingPanel(state.position, state.playerSide)
             } else {
                 TeachingCard {
@@ -196,7 +200,9 @@ fun TrainerScreen(
                     Text("Opponent's plan", color = Gold, style = MaterialTheme.typography.labelLarge)
                     Text(if (state.playerSide == PieceColor.WHITE) state.replay.path.blackIdea else state.replay.path.whiteIdea,
                         color = MutedCream, style = MaterialTheme.typography.bodySmall)
-                    Text(if (teaching != null) "Ashva-authored guidance plus rules-derived board observations. Plans are conditional, not engine evaluations or verified historical intention. Named source routes end at their recorded endpoint; authored continuations are separate." else if (source == null) "Authored introductory plans, not engine analysis or a promise of a win." else
+                    if (deep) Text("Generated course text: each sentence passed an automatic engine, game-statistics or board check before it was shown. Not reviewed by a human coach; engine verdicts are at a stated depth, not proof.",
+                        color = MutedCream, style = MaterialTheme.typography.labelSmall, modifier = Modifier.testTag("deep-full-idea-note"))
+                    else Text(if (teaching != null) "Ashva-authored guidance plus rules-derived board observations. Plans are conditional, not engine evaluations or verified historical intention. Named source routes end at their recorded endpoint; authored continuations are separate." else if (source == null) "Authored introductory plans, not engine analysis or a promise of a win." else
                         "Source move sequence only. Reviewed strategic plans are unavailable; optional offline analysis below is separate from the source lesson.", color = MutedCream,
                         style = MaterialTheme.typography.labelSmall)
                 }
@@ -239,7 +245,7 @@ fun TrainerScreen(
 }
 
 @Composable
-private fun MoveIdea(state: TrainerUiState) {
+private fun MoveIdea(state: TrainerUiState, onFlag: ((String) -> Unit)? = null, flagMessage: String? = null) {
     TeachingCard {
         val last = state.replay.lastMove
         Text(last?.let { "${it.san} · ${it.annotation.title}" } ?: "Starting position", color = Leaf,
@@ -252,6 +258,18 @@ private fun MoveIdea(state: TrainerUiState) {
         last?.annotation?.principle?.takeIf { it.isNotBlank() }?.let {
             Text(it, color = MutedCream, style = MaterialTheme.typography.bodySmall)
         }
+        last?.annotation?.players?.takeIf { it.isNotBlank() }?.let {
+            Text(it, color = Leaf, style = MaterialTheme.typography.labelSmall, modifier = Modifier.testTag("explanation-players"))
+        }
+        last?.annotation?.label?.takeIf { it.isNotBlank() }?.let {
+            Text(it, color = Gold, style = MaterialTheme.typography.labelSmall, modifier = Modifier.testTag("explanation-label"))
+        }
+        if (onFlag != null && last != null) Row(verticalAlignment = Alignment.CenterVertically) {
+            Text("Explanation wrong or unclear?", color = MutedCream, style = MaterialTheme.typography.labelSmall, modifier = Modifier.weight(1f))
+            TextButton({ onFlag("wrong") }, Modifier.testTag("flag-wrong")) { Text("Wrong", color = Gold) }
+            TextButton({ onFlag("unclear") }, Modifier.testTag("flag-unclear")) { Text("Unclear", color = Gold) }
+        }
+        flagMessage?.takeIf { onFlag != null }?.let { Text(it, color = Leaf, style = MaterialTheme.typography.labelSmall, modifier = Modifier.testTag("flag-message")) }
     }
 }
 

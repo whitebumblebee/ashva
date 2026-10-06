@@ -1,0 +1,272 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: claims written from the original score and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "A modern classical game in the Anti-Berlin: White plays the same calm protection of the centre pawn that this course teaches, and Black chooses a solid closed setup."
+  },
+  {
+   "type": "IDEA",
+   "text": "Study it from both sides. The original moves are the main line; at four critical moments engine branches show what was better, played until the engine's verdict."
+  }
+ ],
+ "nodes": {
+  "e4 e5 Nf3 Nc6 Bb5 Nf6": {
+   "title": "The Berlin Defence",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's view: develop and counterattack White's centre pawn at once. White's view: decide how to protect it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3": {
+   "title": "4.d3: the calm protection",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's view: protect the centre pawn with a pawn and keep a slow manoeuvring game. Black's view: there is no immediate target, so develop calmly."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6": {
+   "title": "4...d6: Black stays solid",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's view: support the centre pawn with a pawn as well. The game becomes a closed Spanish where both sides improve their pieces first."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3": {
+   "title": "5.c3: a home for the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's view: the c-pawn gives the bishop a retreat square and prepares a central advance with the d-pawn."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Ba4",
+      "d4"
+     ],
+     "text": "Later White retreats the bishop with Ba4 and finally strikes with d4."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4": {
+   "title": "6.Ba4: keep the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's view: keeping the light-squared bishop matters more than doubling Black's pawns here; it will later aim at Black's king from the other diagonal."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2": {
+   "title": "9.Nbd2: the Spanish knight",
+   "claims": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Nf1",
+      "Ne3"
+     ],
+     "text": "White's queen's knight will travel Nf1 and Ne3, the classic Spanish route."
+    },
+    {
+     "type": "IDEA",
+     "text": "Black's view: with White developing slowly, Black regroups too and keeps the centre closed."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3": {
+   "title": "10.h3: a useful waiting move",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's view: a small but useful move that keeps Black's pieces away from a kingside square before the centre opens."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4": {
+   "title": "12.d4: the central strike",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's view: after full preparation White finally occupies the centre with two pawns. Black's view: keep the tension and wait for White to commit."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8": {
+   "title": "13...Nb8: the Breyer regrouping",
+   "claims": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Nbd7"
+     ],
+     "text": "Black's knight goes back only to come to Nbd7, where it supports the centre and frees the bishop's path."
+    },
+    {
+     "type": "IDEA",
+     "text": "White's view: such a quiet retreat means White can choose the moment to change the centre."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5": {
+   "title": "14.d5: close the centre",
+   "claims": [
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "pawn:white:d5",
+      "pawn:white:e4"
+     ],
+     "text": "White's pawns on d5 and e4 now lock the centre."
+    },
+    {
+     "type": "IDEA",
+     "text": "Both sides' view: with the centre closed, the play moves to the wings. White gains queenside space; Black looks for counterplay and a better post for the bishops."
+    }
+   ],
+   "principle": {
+    "type": "IDEA",
+    "text": "When the centre is locked, attack where your pawns point and where you have more space."
+   }
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4": {
+   "title": "15.c4: space on the queenside",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's view: more queenside space and support for the advanced pawn. Black's view: these pawns can also become targets once lines open."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4": {
+   "title": "19.bxc4: an open b-file",
+   "claims": [
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "open:b"
+     ],
+     "text": "The exchange has opened the b-file for the rooks."
+    },
+    {
+     "type": "IDEA",
+     "text": "Both sides' view: whoever controls the open file first gets the more active rooks."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5": {
+   "title": "19...a5: fix the queenside",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's view: fixing White's queenside pawns gives Black's knight and bishop secure squares in front of them."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1": {
+   "title": "20.Nf1: the knight reroutes",
+   "claims": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Ne3"
+     ],
+     "text": "The knight continues to Ne3, eyeing the outposts on the kingside and in the centre."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5": {
+   "title": "23.cxd5: an open c-file",
+   "claims": [
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "open:c"
+     ],
+     "text": "Now the c-file is open as well."
+    },
+    {
+     "type": "IDEA",
+     "text": "White's view: the pawn on d5 is protected and cramps Black. Black's view: the squares around it are excellent posts for Black's pieces."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6": {
+   "title": "26...Bh6: the bishop leaves the chain",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's view: the dark-squared bishop had no scope behind its own pawns, so it moves outside the pawn chain to pressure White's pieces."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1": {
+   "title": "29.Nef1?!: too passive",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Engine check: the engine prefers a different move here (see the Better was branch), though the difference is smaller than a clear mistake."
+    },
+    {
+     "type": "IDEA",
+     "text": "White's view: the knight wanted to regroup, but it gave Black time to advance on the kingside."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3": {
+   "title": "32.g3?: a serious weakening",
+   "claims": [
+    {
+     "type": "MISTAKE",
+     "moves": [
+      "g3"
+     ],
+     "alternative": "Ne3",
+     "from": "before",
+     "text": "Engine check: 32.g3 weakens White's king position badly; 32.Ne3 was much better."
+    },
+    {
+     "type": "IDEA",
+     "text": "Black's view: once pawns are exchanged in front of White's king, Black's pieces can use the new open lines."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+": {
+   "title": "38...Qxf2+: simplifying",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Engine check: keeping the queens was a little stronger (see the Better was branch); Black stays clearly better either way."
+    },
+    {
+     "type": "IDEA",
+     "text": "Practical view: trading queens when ahead reduces risk, even if the engine finds a stronger continuation."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Bxf1": {
+   "title": "39...Bxf1",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Engine check: the engine finds an even stronger continuation (see the Better was branch), but Black is winning either way."
+    },
+    {
+     "type": "IDEA",
+     "text": "The broadcast score ends here and records a win for Black. The source does not say why White stopped, so the course does not guess."
+    }
+   ]
+  }
+ }
+}

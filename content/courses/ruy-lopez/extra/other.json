@@ -1,0 +1,4710 @@
+[
+    {
+        "id": "n3e8db43daed3",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n79b1cff4a7ce",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n780cc290e026",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n02f62561f7bf",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n09cd8a667eb7",
+        "opening": "Ruy Lopez",
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n046f643c4c92",
+        "opening": "Ruy Lopez: Vinogradov Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 25
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n0dd11d7fda9a",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 13,
+            "2400–2599": 65,
+            "2200–2399": 174,
+            "Lichess 1600–2200": 20
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n23a7e66d8e4f",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 30,
+            "2400–2599": 131,
+            "2200–2399": 220,
+            "Lichess 1600–2200": 525
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n26191a3499a1",
+        "opening": "Ruy Lopez: Pollock Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n412596d126b0",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n48b79c711e2d",
+        "opening": "Ruy Lopez: Spanish Countergambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 15
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n6ad164d54645",
+        "opening": "Ruy Lopez: Retreat Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nababe375b8ef",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nc8e2c3abb060",
+        "opening": "Ruy Lopez: Brentano Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ndaa9c4ffd306",
+        "opening": "Ruy Lopez: Lucena Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 17
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ne1c07020e50d",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nf2c86b472e11",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 73
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nfae8ea28a99b",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 4,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 446
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n00c00c8d9088",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n30a4c88b85ee",
+        "opening": "Ruy Lopez: Brentano Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4dfb231c1e2d",
+        "opening": "Ruy Lopez: Lucena Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4ea89e2a1483",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 37,
+            "2200–2399": 86,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n59090f5a8b60",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 37,
+            "2200–2399": 66,
+            "Lichess 1600–2200": 221
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7c357def9834",
+        "opening": "Ruy Lopez: Vinogradov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8208a345b5be",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 47
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n87c9b9859f09",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 17,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 104
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n918ffc3b1dfb",
+        "opening": "Ruy Lopez: Spanish Countergambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nad363fb9a9b1",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc38c2f277e7a",
+        "opening": "Ruy Lopez: Pollock Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc94032d3b196",
+        "opening": "Ruy Lopez: Retreat Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nceabeee2296d",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 14,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1b090ccab85",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne34be6b2620c",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 4,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 367
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nec2f867aa491",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 42,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf849c8f033d0",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfa501bf86ae0",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 19,
+            "2400–2599": 64,
+            "2200–2399": 93,
+            "Lichess 1600–2200": 63
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0115616d7272",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 4,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 367
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n054fbffb31ca",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0c87fd60aca0",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 41
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1dfec2da39cc",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 14,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2a8a45316ec3",
+        "opening": "Ruy Lopez: Lucena Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n30dc51153317",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 24,
+            "2200–2399": 60,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4a1803112e61",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n5271b37bd20b",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 37
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n63ef58cb7f39",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 42
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7763a9bd6104",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 42,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94addead1196",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 92
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "na5f43bf920ab",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nba16bc6094e1",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc67caa62c9a1",
+        "opening": "Ruy Lopez: Spanish Countergambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nd01fcbf01a52",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd52ebd640bc1",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne7855727ca00",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 61,
+            "2200–2399": 73,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nee54756eabd1",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nf6b68d6df282",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 29,
+            "2200–2399": 43,
+            "Lichess 1600–2200": 36
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfd9fa26fd12d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 16,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0a89edd1ce12",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n121f998ab4b0",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2116d71a927d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 8,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 18
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n35f6e9c0b843",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n3a13c326dc03",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 13,
+            "2200–2399": 35,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3f70492226ad",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 100
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n422debf3baf8",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n494a33ee5593",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 17,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n61b9e3481b2f",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n64ebf7684954",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6d73d4faea57",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7329ebd880ca",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n771e562daa7f",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n80705857277c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 40,
+            "2200–2399": 45,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n840e7d8144aa",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n998e3c40a08d",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n9ee4ec4cd85c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 21
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na54db4bfc9a0",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "na9fd92d5ae1a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb0846f667b87",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 16,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": "nd1a385b3bf2d",
+        "source": "master"
+    },
+    {
+        "id": "nb20102cdb02e",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 82
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "nb4185ca9d077",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbfc714b8839e",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc90536414099",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 18,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd3afade80e5c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 39
+        },
+        "transposesTo": "n6469456d869b",
+        "source": "master"
+    },
+    {
+        "id": "ndd5a137b1ae4",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 129
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne48d0d3dd8fa",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 32
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf0b410c09d8e",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n02f474bad955",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1246f288e00c",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1db3cb745777",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e03eba6bc0b",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 15,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n20c9c48e6c2a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n22c5635e6365",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2551c93a2d1d",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n26bacb4d1e7e",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2cd6ffe16bc1",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n34be0f12a418",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 17,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n42a391fbbc1a",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n470f7fa57a3c",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n483957084a18",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4cfb2576f069",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4d58e18cf482",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4eb02f2054bb",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6343bef6acb4",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 12,
+            "2200–2399": 32,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n69643cff0818",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 26
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6a060fdafda4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 25,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6b9b6a0eebdf",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f6c6fd07bd8",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n902b7410e643",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbc436089513e",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 12,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd0f98269d767",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd45111e407c7",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nda175cc8ed11",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndab524c4b74f",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne0226a9b51c7",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 23
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1282094ac167",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1e2fc5fe7553",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n276ebf6edb4e",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2e66734357ec",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n370084d561c5",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n38a3365a5b5f",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "nffb404be442a",
+        "source": "master"
+    },
+    {
+        "id": "n4427ba234bb2",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n51f011bccddb",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 10,
+            "2200–2399": 31,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": "n8616178ac7a1",
+        "source": "master"
+    },
+    {
+        "id": "n58a0cc15258e",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": "nd8eb20cba60b",
+        "source": "master"
+    },
+    {
+        "id": "n5f320431fd77",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6b43217026f1",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 25,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n70ee1950f765",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n7319712f4377",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7d9245e658dc",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7ea65d9f3635",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f211a40aef8",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9183971d5f77",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 12
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naf23157070b6",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb3f1b03df83f",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb5e1b7682fdb",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc8f20d5e5778",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncdc39ad65ea4",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd8c32b3ccfe1",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd8eb2914fc95",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne16bddd71f07",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 23
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nea290bde8a78",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 15,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf253b62c7bea",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf9e888b408f9",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfb8d7057b894",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n08e964e78175",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n179cf79ffd6d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 18,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n26746d13a359",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n268d3a6c4d56",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n30000c65802a",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n47907797f560",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4a660a8dc716",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n76747ed53931",
+        "source": "master"
+    },
+    {
+        "id": "n5c53b9a7d6cb",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n6ff77f15ce9c",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n76747ed53931",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7743d02566d7",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7a515e586d09",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7cb6ce8c8324",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n833baf9d1216",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 15,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n91a00bdb9b1f",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na2dcce001571",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na4b494c555eb",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb2cdc79e86c1",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1c3605b0cfa",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd9e1f9ebe6ea",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nde635f48ae2a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 23,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndf6e4ced6ed4",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne9d9a799d300",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ned6670031ebf",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf167ff8c8ac3",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfc75a80063ef",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n059dad471ffc",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 15,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n075b57385b16",
+        "source": "master"
+    },
+    {
+        "id": "n075b57385b16",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 23,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0be67fd2b883",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1fd6c1e0dee5",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n274b71b11fa2",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n36584199fbc7",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3e018c471f04",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n45cae24d06a3",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4b9a1f5e174c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5532f5ecc364",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5a5d63c0768a",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n773efa17b21f",
+        "source": "master"
+    },
+    {
+        "id": "n5aa2403f39f6",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6729eb74e0b0",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7f128f8ac731",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7fa0e62abd11",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n866b18a1eb81",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9f27f0b88dde",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na0d45e9d0251",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na669ac17eed9",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb51d0554259b",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbad6f3d7f37f",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc8432d49b5ec",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nef0a3b30d238",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf4cd6119c521",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf955c21746ee",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf9ca71d0aa1b",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfe35e954f8b2",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0cbe8e0d3cce",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0f8a86d3f982",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1ead6140ca6d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 38,
+            "2200–2399": 43,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n29466ef11c52",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3e8abb02cc33",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n49553cbed28d",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n59c60121d0b7",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n65c45841de3e",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n679df2317953",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n717118e35c96",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7c1fe81cd110",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7f11ac74113f",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9805bf3bffd4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n99cadf108ca9",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na0f8a8ccb3cb",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na79e35f21e48",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nac97b887fe85",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc5f2e6a40391",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc76cff3db9e6",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1d162bcb0b1",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd2de800ad2a8",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd4cb728573da",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nead366502d32",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "neb466d67b59c",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf36ba42ae546",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n02983436c6e9",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1a1d64518fbb",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1fe403198de2",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n233b2b895bc5",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2672cfc5bbe2",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n33dda5a1926a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4704c477491c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 36,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n478c4fea08c6",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n48d867b99066",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4fa96e999e89",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5712f2e350b7",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n60d531a184a5",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6be880b2a411",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7abe2e7de210",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "na4ffc3256dcb",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na515544aa22e",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na59ed6a4cf66",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na5e99f73a1b9",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb548b2c62b17",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbb268c666b1b",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne57ef046f541",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nec856c30d421",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf60a434bd950",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfa51567b10dc",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfeb6b1ba4725",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n00087f5550c4",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0063ceaf7c33",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n04610d07f8cd",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n050e205a691a",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0ace2ba7dc08",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0af5e8b210d2",
+        "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n2a1ade28cf05",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n37206bd504dd",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3fc2e1f65e50",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n526918d57b85",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5ef80d52de3a",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n775677364335",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7959f491157f",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n81729c6555f2",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n83dbd6351463",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n88dca9c47388",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n91309b329402",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 36,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n934e7f86c771",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na027750990fc",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb2d8ab61caa2",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc8cf0042c772",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne1007019a281",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf55df3cabd75",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfb1195e5c62f",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n056b375d284e",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n15a27dc4e046",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1e8bd06218d5",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1f5181e6e5d0",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n241adeda7f02",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n43939e56123f",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4877c9b2c955",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n48b601d4832b",
+        "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5dc0352a80d9",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n620b675c27f4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n67dd74b5f7b1",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6d7b7940cbd0",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n79c8d21f97f3",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n822dccbcecd9",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb13189bac8f0",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb7d274243219",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb860a9d86f4e",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbc969397434c",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc26b94ae2928",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc4a93fa4e74c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 30,
+            "2200–2399": 30,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncfdc41a581ee",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd3422d70519c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf92048ec4621",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfea837166117",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n071353c383bd",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n119f066e6f40",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1234ae4a4c1b",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n330cb8d85063",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n390587d6c96d",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3905e76057cf",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n405ac6894764",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n48cbf6d85d6c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n581075fb8c17",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5858acd6922d",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n658277db816f",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6bdc210e689a",
+        "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8d1ae1b1946f",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na23173de92be",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na73a0c095cbe",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na7b10de37716",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc163cfaa4724",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc850d70fdd86",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd0404c7f125e",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne2c798e98fe3",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf52dab3e88ad",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 30,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf8d5394dd99d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe136c4a4b1b",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfe5ac76b4d76",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n004d88392491",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n01f78b2cbe0a",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0c57540ca284",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1619f91586a8",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1d1bb1c70314",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n214cf38da0d0",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2417018a6698",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n340586c39fa2",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n444bcb6017ff",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n47c4ece6ac1a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5812094fa666",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6063529aeaf9",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n68c405c5a16a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 23,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7ea1321f3034",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9d5e53b13c6e",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na4c9ba40d843",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nabd2ab89e9d7",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naebeec1532ae",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb8c0f6fa4fa3",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc2339987ec69",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nca447385007e",
+        "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd9748f3aa6bc",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf14673a01d1c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n038c56efb0af",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n05d297ac8b20",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n258b36d7a0e1",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n28bc0f59d083",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2a3979901f47",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n369e1d9bc5b4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3e2210c94c72",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4055e244e94a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 23,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n43499f2d041b",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n50b524481728",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n570b06e3712c",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n687769fd4e2a",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6d409e9c11fd",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7ae0ecf6c42a",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n89d642f92e41",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n969b624a30a7",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb209fe5a6865",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc505a25ebe44",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd8170affb239",
+        "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne37ba33035c4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf142a9ea8c9e",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf54499104e7f",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf57ecd44b1d6",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n01505401e702",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n031e1b05d223",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0736d731aebc",
+        "opening": "Ruy Lopez: Cozio Defense, Tartakower Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n07fd8b2f4339",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n15568c43d63d",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n208edacb11d9",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3fb893d3ef72",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4dbadfe990fa",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n66f5f17ef16c",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6c5aec3988e7",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7293740265ce",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7e68452e1a2c",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n84b15ed5defb",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb1aef8c558ef",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb1e29d14a8ed",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc801354ec4a7",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncec3a1146a3b",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd31672aa1c9c",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndf0bea77ce93",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne08ab9a31e67",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nefe13f12a371",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfd7070665731",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 19,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nff763050d5f6",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n252c5025598e",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n311a4e2fcad0",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3bf17623a801",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n482eba2ebac9",
+        "opening": "Ruy Lopez: Rotary-Albany Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n51e61d506a73",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5249e51bf9f4",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5da3448380fd",
+        "opening": "Ruy Lopez: Bulgarian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6a5eae515f82",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6d8176de325c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n742706d50671",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n76cf21648110",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n88d3dcfbfcfc",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n994c7ae72e4a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 16,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na56d48ebd6ff",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb134286d05bc",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbe90f8a7b175",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbf01580d2caf",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc58267fe4b62",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncfcffec12d9a",
+        "opening": "Ruy Lopez: Nürnberg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nda814cb03377",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf06b598418b0",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1072bf0f5cd3",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n278e02351cf0",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n33c117f68fe8",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n38a0e81fa943",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3cebbc6be514",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3d33237794b6",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4d56cf6fc0cc",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n666fa26dc234",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6b73c30e356d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7967f9ed7346",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n932dc8f550b7",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na01d71970d4a",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc408dcf247b7",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncaae6d4a71b8",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncc8392c2fdc8",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nef13211691fb",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf02278c62488",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0e828eb93d68",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1c752b210932",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n25582b245e96",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3c08771be225",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3c8e90893c6a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n424bececd14a",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n55fa5e385e03",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7b4d41381969",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n95140988c6b2",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na738475e94dc",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc3e78d821603",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncdd2ec315709",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nea5ab05d2d5f",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neb715c7c16f6",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nef9b24a7ab51",
+        "opening": "Ruy Lopez: Fianchetto Defense, Kevitz Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n17d35ecc0401",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1a2d02a6c713",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n20573965e0e8",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n21775aa45954",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n30e7aef96479",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3eafe28f40fe",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4378d1f6668f",
+        "opening": "Ruy Lopez: Alapin Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n559cf3da5e30",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56fb6be8df54",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n86212f1c7a69",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9da95f614040",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb5335e6029cb",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne9f48d8a1a83",
+        "opening": "Ruy Lopez: Spanish Countergambit, Harding Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2d64d7c5cb3e",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n33d12ffe98ef",
+        "opening": "Ruy Lopez: Alapin Defense, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n40ce1fb0f750",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n62ca6131a652",
+        "opening": "Ruy Lopez: Bird Variation, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n98855dbb89e4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbaef764a9de7",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd415991e8be3",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne123d11707d4",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne2f17d7edb6f",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n04e02edc1c0a",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n10cf0bea8862",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n182547af4ce9",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd69b6bb4f145",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne1583f3a1e13",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf71435fa0bd3",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3f5d2fcbaf96",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n42d873469f2b",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n89a5af00db56",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na0b554954295",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbfeb3414976b",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n164451c30ae5",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n729627fc789d",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n837ccfaf3fa1",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd2a02e47201b",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf6961ef7a2f6",
+        "opening": "Ruy Lopez: Bird Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5cd745fa37db",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n605f9777a2b4",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb5f6c0a029a1",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbbaf91ed520b",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n27ee2b9c760e",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n35c8cbf0bd02",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n685b850f7f06",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n754e6bd97923",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0add8f4d6900",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1a6af875fa7f",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9c644ead5649",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf83c740e34bb",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n62a38970e754",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7c59663ef771",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8a09bd34c2f9",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb8750ea495d5",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1305a47d23b5",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n524e21a4abf7",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6625b8abfc24",
+        "opening": "Ruy Lopez: Cozio Defense, Paulsen Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n849c85e129ba",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n446beaec94a2",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb20becb287ca",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndc6ecd4a19cb",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3ebe888b2137",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n95baf8a08e62",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbab4a59c2050",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncc4190914379",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncc768694268e",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n893b1c41af30",
+        "opening": "Ruy Lopez: Fianchetto Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na48f8f13371b",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n76a3fc52034c",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4425523216b5",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb35ba42a14ab",
+        "opening": "Ruy Lopez: Cozio Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    }
+]

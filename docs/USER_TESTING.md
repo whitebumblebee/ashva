@@ -1,6 +1,6 @@
 # Try Ashva as a user
 
-Latest built emulator test version is **Android0.15.0/code16**, opened in place for manual testing. Development is owner-paused for credits; recall's final full regression run was interrupted, so0.15 is not fully accepted (Relay0035). Fully verified baseline0.14 includes the original-game library/coach and separate engine branches. The app works offline without an account on Android8.0+. No playable iPhone client exists. Learn/Explore opens149 courses with3815 named routes and78 longer study continuations across47 families; My repertoires adds named multi-opening practice queues. Never uninstall or clear learner data to test/update.
+Latest built emulator test version is **Android0.17.0/code18** (full Ruy Lopez deep course, see below), opened in place for manual testing. Earlier note: Development is owner-paused for credits; recall's final full regression run was interrupted, so0.15 is not fully accepted (Relay0035). Fully verified baseline0.14 includes the original-game library/coach and separate engine branches. The app works offline without an account on Android8.0+. No playable iPhone client exists. Learn/Explore opens149 courses with3815 named routes and78 longer study continuations across47 families; My repertoires adds named multi-opening practice queues. Never uninstall or clear learner data to test/update.
 
 The opening pack installs automatically from reviewed APK assets; no network/account is needed. Courses have both-color conditional plans, branch focuses and board-derived explanations, not independently expert-reviewed theory. January's857 accepted scores and April's79 are manually installable. The new Players & GM games shelf exposes these source-reported identities/scores, not verified complete careers. See [coverage](OPENING_COVERAGE.md), [game library](GM_LIBRARY.md), [Content pipeline](CONTENT_PIPELINE.md) and [Offline storage](OFFLINE_STORAGE.md).
 
@@ -18,6 +18,37 @@ The owner has deferred board-quality and iOS implementation and paused developme
 8. **Cold resume:** wait for Saved, force-stop/reopen and Continue a branched course, a pinned set, a hinted review card and an original game separately. Check exact route/revision/cursor/POV/hint context. Missing old content is reported, not substituted.
 
 Keep larger source installs open while validation finishes. Record failed analysis as a timeout/error and try the explicit Retry; an incomplete search must not appear as a recommendation. See [recall's shorter walkthrough](RECALL_REVIEW.md#user-check).
+
+## Test the full Ruy Lopez course (0.17)
+
+New in **0.17.0/code18**: the deep course now covers the **whole Ruy Lopez for both colours**, replacing the 0.16 Berlin-only pilot. It has 10 chapters and one annotated GM game: Berlin, Exchange, Open, Closed main systems, Marshall/Anti-Marshall, other Morphy systems, Schliemann, Classical, old Steinitz and other third moves. Together they hold **898 lines and 11,190 positions**. The data comes from about 18,000 master games (both players 2200+, Lichess broadcasts) and club games (Lichess 1600–2200, 5+0 or slower). Lines follow master practice as deep as the games go, then engine play (Stockfish 19, depth 18) until a verdict, or they end where they transpose into another line. How it was built: [deep course plan](DEEP_COURSE_PLAN.md).
+
+All text is generated, and no human coach reviewed it. Each sentence passed an automatic engine, game-statistics or board check before it is shown. Please flag anything that reads wrong or unclear.
+
+1. **Find it.** Open **Learn**. Under **Deep courses · generated, engine-checked** you should see one card per chapter plus *Firouzja–Carlsen, Tata Steel 2020*. The first open may briefly show *Checking the bundled deep course…*. If the section says the course failed its checks, report that; other lessons must still work.
+2. **Choose your side.** Open *Closed Ruy Lopez: main systems* (or any chapter). Under **Your side** tap **White**, then **Black**. Every study and practice button, and the order of the win ideas, follow this choice.
+3. **Variations by name.** Scroll to **Variations · how games are won**. Each card shows a variation name and its moves. Most cards carry a real name (for example *Closed, Breyer Defense*, *Closed, Chigorin Defense*, *Marshall Attack, Modern Variation*, *Berlin Defense, l'Hermet Variation, Berlin Wall Defense*). Important GM lines without a name read as *Name · move*, for example *Berlin Defense, Anti-Berlin Variation · 4...Bc5*. Each card also shows master games by rating band (2600+, 2400–2599, 2200–2399, plus Lichess 1600–2200 club games) and the White/draw/Black percentages.
+4. **How games are won.** Tap **How games are won →** on a variation. Expected:
+   - An introduction to the variation.
+   - **How White wins** and **How Black wins** (your side first), each built from the decisive master games. Where the data shows a clear pattern there is a written plan, for example the Marshall's queen and light-squared bishop attack. Then comes the statistic ("In N master games … the winners most distinctively played …"). Where no single move stands out, the card says so.
+   - Up to a few **Replay:** buttons with real games (players, ratings, event, year, result).
+5. **Replay an example game.** Tap a **Replay:** button. The original game opens in Study from that side, with the players' names. Step through it and go back.
+6. **Study a variation.** On an open variation card tap **Study this variation**. The trainer opens at the most-played line through that position. The move cards show the move's role (*Most played*, *Alternative*, *Club move*, *Common mistake*, *Punish it*, *Engine line*). The anchor move shows the variation's introduction, and master moves show who played them. At branch points **Choose a continuation** offers the other lines; explore one, then use **Return to branch point**.
+7. **Find any line.** Tap **Show all N lines**, type a name or move in **Find a line or variation** (for example *Breyer*, *Zaitsev*, *Marshall*, *Berlin Wall*) and use the *All / Main / Alternatives / Mistakes* filters. Each line card shows its role, verdict and how often players reach it. A line that ends with **Transposes** says which variation it joins.
+8. **Practise both sides.** Set **Your side** to Black, tap **Practice a random line** and play several games. The app plays White's moves as often as players choose them and does not stop at every branch. Then repeat as White. A wrong move keeps the board and shows the expected move.
+9. **Mistakes and punishment.** Filter **Mistakes**, open a line and step to its end. The mistake is explained and followed by the punishing moves and a verdict; a line never stops right after the mistake.
+10. **Flag and share.** In Study tap **Wrong** or **Unclear** on any move card ("Flag saved on this device"). The chapter's flag count increases, and **Share flags** opens the share sheet. Nothing is uploaded.
+11. **GM game and resume.** Open *Firouzja–Carlsen, Tata Steel 2020* and study it as Black and as White; the original score never changes. Practise a course line, wait for *Saved for offline resume*, force-stop and reopen, then **Continue**: the same line, side and move return.
+
+What to report: the chapter, variation or line name, your side, the move, and what the text said and why it is wrong or unclear (the in-app flag captures the move and text).
+
+Known limits:
+- Club data is one partial month.
+- Master data is broadcast games, including rapid and blitz events.
+- "How games are won" is statistics plus short written plans, only where the data shows a clear pattern; about 60% of variations have one for at least one side.
+- Move-by-move notes away from variation starts are often plain board descriptions.
+- Lines past the available games continue with engine play.
+- 0.16 pilot course progress stays saved but is no longer shown.
 
 ## Test actual recall (0.15)
 

@@ -1,0 +1,1038 @@
+[
+    {
+        "id": "n3e8db43daed3",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n79b1cff4a7ce",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n780cc290e026",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n02f62561f7bf",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n09cd8a667eb7",
+        "opening": "Ruy Lopez",
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "nc550b59ba067",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 2251
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n01e51906d8ca",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 626
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n20f5ed8ef2df",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 416
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n75911e28ff54",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 307
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "nc3999080d998",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 246
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "nd2659a38a7bf",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 495
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n13da7cf8edf3",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7777b67d4903",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f9c2f720e96",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n908bfb89e2bd",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 150
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nc651cecdbf8c",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 368
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nf073debc705c",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 63
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "nf778a3b29456",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1e0b446477d3",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n425790c28e58",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n7def091f540c",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n85fec7620fde",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 10
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nb4ff283b8e48",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 317
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "ncbd2c8516fa8",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndada3cd19926",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 22
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "neebf39034126",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf90c071f540a",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0530436126eb",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n18fc80e95519",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n20079f77a3c3",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n548d58fefd60",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc88feee83218",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncf48fd6d4296",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ne0d202ad31ac",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne53edbe63405",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1512d114768e",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n68b2bacb4265",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6b6d02ed09f3",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n708a8aaab600",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9498551b421e",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na213b52c517e",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": "n15cd6075cff5",
+        "source": "named"
+    },
+    {
+        "id": "ne9d2ae7066c4",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "neb17677d1ec7",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nefe7911c7321",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n06711e5c3d98",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n463274751e4a",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n49469ed33c56",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8084a718b771",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbd3ab4703444",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc21bd2202a03",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne1c7417b58e3",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf171d592be3f",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2031d031262b",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n267284df6e0b",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n27258a27e71f",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n94cade7b3921",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9c1668c3e1dc",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb47d42f3bcec",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc356aec65d50",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfe258e2d2d74",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3a3ddeeb328d",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6d427ac74347",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6d9e5753755a",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7cf4dbb00446",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n96b010143a79",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na6c47954c734",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nab859e8ad8c3",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neb9ed6d1a21f",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1fe738e13eb1",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3736433d5104",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3ce28a03df70",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc6daff1220da",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nda247bf24046",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndd415e71f1b8",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne9ab9c7eb848",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n11575ad74da1",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1f2d5ff823cb",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3ec621ecbf57",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n45553ab17a56",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc0897325dfa8",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd41a5f07ee86",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nff928e08aded",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n04682981a124",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0896ca2a3c55",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4f0246b31b2a",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5a505b8f6a61",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5e6617f2b0c8",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb7e4ff1aff90",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd50c5db25153",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0ef505bbe9d4",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n238016c6d908",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4889c4ec028e",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n980f77e48255",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9a18d61993f3",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9a845b66e529",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfc8730be5ef4",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1ac78badaa90",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3c21f0a98cc9",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n46164305a6d7",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9c848b27cee9",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc4c645151b98",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ned28e23a2467",
+        "opening": "Ruy Lopez: Steinitz Defense, Semi-Duras Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf1e30e7b66dd",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0572a51ab65c",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0c9515b9df63",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n100bd8dfb53e",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n249272324060",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6c2fc11e9190",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc9f929625326",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3fac71b7f960",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4aa4389b71d2",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8ebe23e2d665",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9b45e589c24e",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na703527016a0",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc0841f8989c5",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2403e5c3f046",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n63eb871d8a8b",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7ff349adb3e5",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nab03f717b85a",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf3dc31002070",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n28a301984680",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4c2f2caed597",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n69f50685d36e",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8eae001d7819",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd8e35505fbae",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne92e38be4d35",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf50cfc0f4c9c",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nff2ee09fea2b",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nce99d6181397",
+        "opening": "Ruy Lopez: Steinitz Defense, Center Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne0bacb565546",
+        "opening": "Ruy Lopez: Steinitz Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neb89eab1b243",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7482a1c19889",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "need1f7c1f930",
+        "opening": "Ruy Lopez: Steinitz Defense, Nimzowitsch Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    }
+]

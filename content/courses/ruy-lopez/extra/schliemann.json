@@ -1,0 +1,3268 @@
+[
+    {
+        "id": "n3e8db43daed3",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n79b1cff4a7ce",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n780cc290e026",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n02f62561f7bf",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n09cd8a667eb7",
+        "opening": "Ruy Lopez",
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n90f01f268c4b",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 63,
+            "2200–2399": 139,
+            "Lichess 1600–2200": 280
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nb25c8eec9490",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1577,
+            "2400–2599": 4439,
+            "2200–2399": 6748,
+            "Lichess 1600–2200": 2427
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n222cb91e50ec",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 62
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "na4409f418b9e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 45,
+            "2200–2399": 106,
+            "Lichess 1600–2200": 91
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb47340334e70",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 14
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ncaca7ea7c18a",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 15,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 24
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncd7aca31ac91",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1528,
+            "2400–2599": 4310,
+            "2200–2399": 6460,
+            "Lichess 1600–2200": 1708
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1cbce9a38c02",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 14
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2da4e076c3fb",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n53185e5ca89c",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 33,
+            "2200–2399": 128,
+            "Lichess 1600–2200": 17
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n5a66a01eb34b",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 14,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 11
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9bcbc1f7bd9e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 42,
+            "2200–2399": 99,
+            "Lichess 1600–2200": 45
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n294b281338d6",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 22,
+            "2200–2399": 83,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2ac42038be56",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 42,
+            "2200–2399": 99,
+            "Lichess 1600–2200": 45
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n70566b43270d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nb3c9a312d3cb",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 14,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb523c8e14212",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 10
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb6444cf9c9f2",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nda7b4a8d860a",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n056abbd4f7a6",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n11a9db78d30c",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 9,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n123b74c0d643",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 5,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n308e58f2dc24",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 42,
+            "2200–2399": 96,
+            "Lichess 1600–2200": 40
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n55a51a62644b",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 8
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n76cdb7b7406b",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n93586379b05a",
+        "opening": "Ruy Lopez: Schliemann Defense, Kostić Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nb41ad9da7c1b",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 22,
+            "2200–2399": 80,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nec1ab828a8ba",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n16c7864814d5",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 33,
+            "2200–2399": 73,
+            "Lichess 1600–2200": 15
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n170f4b926748",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n41438c30f0c4",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 20,
+            "2200–2399": 77,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7333cfc0c45f",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n85be810361fb",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 13
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8fdc87a3e140",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb3e508aa3e96",
+        "opening": "Ruy Lopez: Schliemann Defense, Kostić Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd4c75da3c248",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 8
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndebfff939d86",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neba2b5af4f38",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0d5c635b44f8",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 20,
+            "2200–2399": 48,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n241c36130b19",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2564d465cbf1",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 14,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 10
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n25f6fdc48a5a",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 20,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n37374984eab9",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 10,
+            "2200–2399": 36,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n868cba1bb155",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n86a04469d244",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na6f8437f1053",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 8
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf190f7046fdc",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf7ace15b23f9",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1c915c02bf77",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n214acde756bb",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 7,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n495b3deb2652",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5dabffe23c5e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 11,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n74a0bf8504be",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9c91bb476a28",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb345f1607544",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb65c91f959ff",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 20,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nca6ce225e4f2",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncdabcb3ef444",
+        "opening": "Ruy Lopez: Schliemann Defense, Dyckhoff Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne3fa6c818e70",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n14017a25fd97",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n68d9d6c6fc9a",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n71eda694aac9",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n77320b74abb3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 7,
+            "2200–2399": 33,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n80564ba37326",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n81e0ff8c5bc3",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n84efcb13f313",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n93bb6b4fbed5",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naf229266db08",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 13,
+            "2200–2399": 43,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbdffe363710e",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbf3aa68abdb5",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 11,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc9e19e16256e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nefb315301816",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2cf429461102",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3db111e0a3ea",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n41fbda4212a3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n52968a1b3337",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 11,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n55707e49c887",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56f8e422121d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n764ad758c098",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n776e9e726c30",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc8a52cf1bc4d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncc718597a530",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nec1b97ffd4e6",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf24443ba1811",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf6076cba8b06",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf709b005a3c9",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf72fc959dde5",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n043701ce795d",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2288ea3c1459",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2809393beaa7",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n37ac6d85d1ea",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5e800086c979",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n776619d73c08",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7879caff2a9d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7b32995f7074",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7b72ff6d001f",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8227ce068728",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 11,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8880625e70c9",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbedf6c7256bc",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc8f84ddc6877",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne0bc2d477fd8",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne5a7157c3d9f",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne9766a1a0410",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n015aa9092093",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0e4bea4ce4a8",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1334d9bd073f",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2ea1bbc01f2c",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3b229fa4b412",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n52b32e0ae17f",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n57ac75e54a7e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n58bd31630a07",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n724a99b3348f",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n86ddb5eb1a53",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n95e7e90235b2",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n97a3758b77b1",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na2b885d5b9a3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb8ca58eacd3d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nde5d4e28fc7c",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nee846160e366",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0c8490ad3354",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 7,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1423796ef8d6",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1fe6180f5bf4",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n267594c93638",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n28ba72887b66",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2db39e905692",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4881a6fad46c",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n781975d8b8e6",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naca7f6d97b7d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb181d2d1f4a6",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncbeb1b9d4bbb",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd5d213f134be",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nece4591b3c66",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf32060ad0e1c",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfacbc2e394a1",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n01665230fa29",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0ec861e78d1f",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3d8b8796eb8b",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n56d5e9ffefe5",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5d49e5184c77",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8d40e9b7f24b",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f869495100d",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n96278c4ae405",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb2a00b3968a3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb673d28590fc",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbd2424ecb8f7",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc157c22729ed",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd20f177d9e78",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nea7f46338d76",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf284520eba01",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf8833c7ad7df",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2137c72c4da6",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2273545389f9",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n28ba42561c07",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n334257e43a5e",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5ca44d0b7aca",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5d94fdb0cd78",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5f59917eb5aa",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n64ce2b0d2b76",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6da94ecf8c76",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7272b1918367",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9d47c198d742",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na6bb3e1e7897",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nae10daaa705e",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndd46bee538af",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfd199a927adf",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e17010027c9",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n21ec3f19d9ba",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n37c25dd48664",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n760d03781207",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n83e24524ec56",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n84d92564dcfc",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94351c2ac665",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na5848d7bfa5f",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nac37f16e0f90",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nac66ca4e729e",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc26b476f1f93",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc892a2475a4d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd18028b217aa",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd575dd13d472",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf28927a485e2",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n032c8e116784",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0436a7e55bc1",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n092feb7246fe",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0d8c1d6c1f90",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n14c5d30689f0",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n172c29347b51",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n528e6f0c7a01",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5ac8df5c2834",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n60d3be416f67",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6e700d9e8ced",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n74ac1a8a46ad",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n75844f41b007",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7d32ac9c121d",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na0489b282242",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf199bb03b4d7",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0683be7f0135",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n39c59fd96896",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5100b9bb2ada",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n611dda4fa21c",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n711fe48d753a",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7c1ac6534028",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n818669b7fbb6",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8ababa9c2afa",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n95bb18aa47b4",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9cefc1724e2b",
+        "opening": "Ruy Lopez: Schliemann Defense, Jaenisch Gambit Accepted",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nba70150f9cf1",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbf9fc1eaa264",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc456a2cd2026",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd31567483eb2",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf2481f614cb7",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0a3085debc9d",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0f617f0a4f2b",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2d44ae377684",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n42c15fbca06f",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4d3960ed5615",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6003caa7983e",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n70f98f64ac57",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8302199c65c3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8a77271fe1b5",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb434b2ff8fb5",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbbc316fced21",
+        "opening": "Ruy Lopez: Schliemann Defense, Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc97bac17c2f7",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne3185cce50fa",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ned7d0f99e147",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n01c72506cec7",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n152711f74c78",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1673c39fc78e",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n29477eeb9475",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4db4b8079105",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5e661f56fec3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n82268af639b0",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9b9920bcbf6b",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na1ecb83d7209",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb1ba787fb796",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd3c1b60ed5e4",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ned01f8dfd01f",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n034b7c8b2dcb",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n402478e6e57b",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n494a5457a39a",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n548e5e6d6ca5",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n76de1f9b0993",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8ea8cc170a22",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb910d9ec1087",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbbc66445003b",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbecb086c8498",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd430d7b78f77",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd65492beb462",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf5120da4bfde",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n162ae2284439",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n30eae5b0a082",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4564e337ee16",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n705040768611",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n72199624171c",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7da35fded3df",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n80209f9c302c",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n92e3b1aa9dd7",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndc5c2853e363",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne12d19cd931a",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf4d3061e2839",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1b839cfc9330",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1cce2788c27a",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n43149eabd35f",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n599d605c2d56",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n62dfb9e5f69c",
+        "opening": "Ruy Lopez: Schliemann Defense, Schönemann Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n805486f1d736",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na5fa431f5411",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd106a277c403",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne16577c68227",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nffceabf3c761",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3c887fdbc517",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6578de907d5c",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6a010047cb64",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6cf1cb61a437",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n75b4372149e3",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na06bc4f02f97",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na9da26d0972e",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nabc551967692",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfd1a97141a1a",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n368ce8ec7bab",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n40a85a88b890",
+        "opening": "Ruy Lopez: Schliemann Defense, Tartakower Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n65bc862f6319",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7d0275fd09e3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n810fd45f1189",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9964594d5190",
+        "opening": "Ruy Lopez: Schliemann Defense, Möhring Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na99bdb52a8e0",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb22f36d1da20",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne987790c01a4",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n16e97828503d",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2c32344f7daa",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4f6681bc6135",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n60df2e19d80e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb98ec2312423",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndc970d776f79",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne63bd0403e1b",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5fe0a48816b0",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n645f0ec8dba5",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc927689eb582",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nca0b718ce14e",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd676711bc033",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndcf506011aee",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfd90c6156702",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n17a5b20b66f9",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1f296442d0b4",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n82d0d73c9fad",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb0ce8f4f7c2b",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb9466574d99a",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbda02b91d065",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc31edb757624",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n10ea167deae7",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5fcacda1aba2",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n679d71385c1c",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9c6b52239c35",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc079c37868ec",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc888dab15846",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf947618b2ef5",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n19ce42e16685",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1c3b48162237",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n94c1dd11b65d",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na8503969ecc9",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd3b2f45b3ee5",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd6d0ada84686",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6817d7219de7",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9dcf7cbdebe3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc0f6d7d3c827",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nefcd498f1ebc",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nff6e5e59e91c",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1e465a54baf3",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4065432a4092",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n854a3c46b67c",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd8bba7c3c6f7",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0f1bb050fffe",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n29e857911595",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8e59272da715",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3ede5f55195a",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4e64a03cff3f",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc80b2255c9dd",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbbdf1a198ec6",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc5e5f25517d9",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n46d90dc812a9",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7d04dc9986d1",
+        "opening": "Ruy Lopez: Morphy Defense, Schliemann Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1e9a346c8f13",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4c488dcf8304",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc1c7de95aee2",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc9c9f2bded97",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8da771a19120",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3b56bafec89a",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nacbe26e44736",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n49934dc1f40d",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    }
+]

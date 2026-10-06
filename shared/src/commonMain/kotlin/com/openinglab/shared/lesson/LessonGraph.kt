@@ -9,8 +9,9 @@ import com.openinglab.shared.chess.san
 import com.openinglab.shared.model.ChessMove
 import com.openinglab.shared.model.Opening
 import com.openinglab.shared.model.PieceColor
+import com.openinglab.shared.model.VariationOrigin
 
-enum class LessonPathKind { AUTHORED, SOURCED_OPENING, ORIGINAL_GAME, ANNOTATED_VARIATION, ANALYZED_VARIATION }
+enum class LessonPathKind { AUTHORED, SOURCED_OPENING, ORIGINAL_GAME, ANNOTATED_VARIATION, ANALYZED_VARIATION, COURSE_LINE }
 
 /** Teaching belongs to a path, not to a transposed board node. */
 data class LessonAnnotation(
@@ -19,7 +20,14 @@ data class LessonAnnotation(
     val principle: String = "",
     val comments: List<String> = emptyList(),
     val nags: List<Int> = emptyList(),
-)
+    /** Provenance label for generated course text; empty for authored/sourced/original content. */
+    val label: String = "",
+    val players: String = "",
+) {
+    // Saved-lesson fingerprints hash this text: unlabelled annotations keep their exact pre-label form.
+    override fun toString(): String = "LessonAnnotation(title=$title, explanation=$explanation, principle=$principle, comments=$comments, nags=$nags" +
+        (if (label.isEmpty()) "" else ", label=$label") + (if (players.isEmpty()) "" else ", players=$players") + ")"
+}
 
 data class LessonMove(val move: ChessMove, val san: String, val annotation: LessonAnnotation)
 data class LessonEdge(val move: ChessMove, val targetKey: String)
@@ -71,10 +79,15 @@ class LessonGraph private constructor(
                     val before = positions.last()
                     val san = before.san(move)
                     positions += before.apply(move)
-                    LessonMove(move, san, LessonAnnotation(step.title, step.explanation, step.principle))
+                    LessonMove(move, san, LessonAnnotation(step.title, step.explanation, step.principle, label = step.label, players = step.players))
                 }
-                LessonPath(variation.id, variation.name,
-                    if (opening.provenance == null || variation.authoredContinuation) LessonPathKind.AUTHORED else LessonPathKind.SOURCED_OPENING,
+                val kind = when (variation.origin) {
+                    VariationOrigin.COURSE_LINE -> LessonPathKind.COURSE_LINE
+                    VariationOrigin.ORIGINAL_GAME -> LessonPathKind.ORIGINAL_GAME
+                    VariationOrigin.ENGINE_LINE -> LessonPathKind.ANALYZED_VARIATION
+                    null -> if (opening.provenance == null || variation.authoredContinuation) LessonPathKind.AUTHORED else LessonPathKind.SOURCED_OPENING
+                }
+                LessonPath(variation.id, variation.name, kind,
                     variation.description, moves, positions.toList(),
                     whiteIdea = variation.whiteIdea, blackIdea = variation.blackIdea)
             }

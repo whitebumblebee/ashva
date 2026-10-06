@@ -1,0 +1,12 @@
+{
+    "rule": "master-2400-broadcast",
+    "inputs": 14,
+    "bytes": 14,
+    "games": 389344,
+    "kept": 2001,
+    "rejectedSpeed": 0,
+    "rejectedRating": 338927,
+    "rejectedPrefix": 23309,
+    "rejectedOther": 25107,
+    "truncatedTail": true
+}

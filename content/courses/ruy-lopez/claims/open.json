@@ -1,0 +1,257 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "In the Open Ruy Lopez Black takes White's centre pawn and keeps it, accepting an open, dynamic position with free piece play in return for a slightly loose centre."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Open": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black takes White's centre pawn and keeps it for the moment, accepting an open, dynamic position. Black gets free piece play; White targets the slightly loose black centre and the uncastled king."
+    }
+   ]
+  },
+  "Open · 6...b5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black drives the bishop away first so that the centre knight can be supported. This is the main road of the Open Ruy Lopez, leading to the classical position where Black keeps the extra centre pawn for a while."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners rerouted the queen's knight via Nf1 towards the kingside, the classic manoeuvre against Black's centre pieces.",
+     "moves": [
+      "Nf1"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Open · 6...Be7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the bishop and prepares to castle before dealing with White's centre, a quieter alternative to the main expansion."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners developed the dark-squared bishop to Be3 and used a rook lift Re3 to bring more pieces to the kingside.",
+     "moves": [
+      "Be3",
+      "Re3"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners activated the queen with Qh4 and used the h-pawn advance h5 for kingside play.",
+     "moves": [
+      "Qh4",
+      "h5"
+     ]
+    }
+   ]
+  },
+  "Open · 7.Re1": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White attacks Black's centre knight along the file at once. Black must decide how to protect it or exchange, and White hopes to exploit the slightly delayed queenside development."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners opened the centre with dxe5, developed with Be3 and lifted the rook with Re3.",
+     "moves": [
+      "dxe5",
+      "Be3",
+      "Re3"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners placed the bishop on Bd6 or Bf6, activated the queen with Qh4 and supported the centre with c6.",
+     "moves": [
+      "Bd6",
+      "Bf6",
+      "Qh4",
+      "c6"
+     ]
+    }
+   ]
+  },
+  "Open, Main Line": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Both sides follow the classical setup: Black supports the knight in the centre and develops the light-squared bishop, White gains space with a central pawn and prepares to undermine Black's pieces."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners rerouted the queen's knight via Nf1 towards the kingside, attacking Black's centre pieces.",
+     "moves": [
+      "Nf1"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners kept the bishop active on Bf5, controlling the light squares in front of White's centre.",
+     "moves": [
+      "Bf5"
+     ]
+    }
+   ]
+  },
+  "Open, Bernstein Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White challenges Black's centre knight with the queen's knight at once, aiming to exchange Black's most active piece."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners developed the bishop actively with Bg5, pressing against Black's centre and kingside.",
+     "moves": [
+      "Bg5"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners kept the bishop active on Bf5, won the bishop pair by taking on Nxb3, gained space with a5 and sometimes castled long with O-O-O.",
+     "moves": [
+      "Bf5",
+      "Nxb3",
+      "a5",
+      "O-O-O"
+     ]
+    }
+   ]
+  },
+  "Open, Howell Attack": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White develops the queen to pressure Black's queenside pawns and prepare a rook on the d-file."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners prepared with c3 and centralised the knight on Nd4.",
+     "moves": [
+      "c3",
+      "Nd4"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Open, Classical Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the dark-squared bishop to a modest square, choosing safety and a solid structure over maximum activity."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners played for the kingside: Qd3 and Bf4, with the bold pawn advance g4 in some games.",
+     "moves": [
+      "Qd3",
+      "Bf4",
+      "g4"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners gained queenside space with a5 and pushed the d-pawn as far as d3, cramping White's development.",
+     "moves": [
+      "a5",
+      "d3"
+     ]
+    }
+   ]
+  },
+  "Open, Italian Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black puts the dark-squared bishop on its most active diagonal, aimed at White's kingside, accepting sharper play."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners rerouted the knight via Nf1 to Ne3 and kept the bishop on Bb3 to press on Black's centre.",
+     "moves": [
+      "Nf1",
+      "Ne3",
+      "Bb3"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners activated the queen with Qd6, struck with c5 and put a knight on Ne5.",
+     "moves": [
+      "Qd6",
+      "c5",
+      "Ne5"
+     ]
+    }
+   ]
+  },
+  "Open, St. Petersburg Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White challenges Black's centre knight while Black's bishop is active, leading to sharp tactical play around White's kingside."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners kept the bishop on Bb3 and used the rook on Re1 against Black's centre.",
+     "moves": [
+      "Bb3",
+      "Re1"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Open, Dilworth Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black sacrifices a knight for two pawns and a powerful attack along the open file towards White's king. It is double-edged and very concrete."
+    }
+   ]
+  }
+ }
+}

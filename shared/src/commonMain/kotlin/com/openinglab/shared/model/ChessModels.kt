@@ -47,6 +47,10 @@ data class MoveStep(
     val title: String,
     val explanation: String,
     val principle: String,
+    /** Provenance label shown with generated course text, e.g. "Generated · engine-checked". */
+    val label: String = "",
+    /** Who chose this move, e.g. "Chosen in: 2600+ 711 · Lichess 1600–2200 185 games". */
+    val players: String = "",
 )
 
 data class Variation(
@@ -60,7 +64,12 @@ data class Variation(
     val whiteIdea: String = "",
     val blackIdea: String = "",
     val authoredContinuation: Boolean = false,
+    /** Set only for deep-course content; null keeps the historical authored/sourced mapping. */
+    val origin: VariationOrigin? = null,
 )
+
+/** Distinguishes generated course lines from an immutable original game and its engine branches. */
+enum class VariationOrigin { COURSE_LINE, ORIGINAL_GAME, ENGINE_LINE }
 
 data class TeachingCoverage(
     val version: String,

@@ -1,0 +1,10 @@
+[
+    {
+        "chapter": "berlin",
+        "nodeId": "n868d5e2dac4a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4",
+        "type": "PREVENTS",
+        "san": "Bxc6",
+        "strengthCp": 926
+    }
+]

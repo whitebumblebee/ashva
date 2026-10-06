@@ -1,0 +1,11 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "The old Steinitz Defence protects the centre pawn at once with a pawn, solid but passive, giving White a comfortable space advantage."
+  }
+ ],
+ "nodes": {},
+ "variations": {}
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ruy-lopez-white",
+  "version": 1,
+  "title": "Ruy Lopez for White",
+  "side": "WHITE",
+  "level": "Club players about 1600 → 2100",
+  "summary": "A White repertoire with the Ruy Lopez (Spanish). This pilot covers the Berlin Defence chapter and one annotated GM game. Lines include every reply that is common in 1600–2200 rapid/classical games, played by masters or strong for the engine, plus common mistakes and how to punish them, each played until an engine-checked verdict.",
+  "chapters": [
+    {
+      "id": "berlin",
+      "title": "Berlin Defence",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "Nf6"
+      ],
+      "kind": "REPERTOIRE"
+    },
+    {
+      "id": "firouzja-carlsen-2020",
+      "title": "Firouzja–Carlsen, Tata Steel 2020",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "Nf6"
+      ],
+      "kind": "GAME",
+      "gameId": "https://lichess.org/broadcast/tata-steel-masters-2020-round-9/-/jfYhSqg2/8ySH56P4"
+    }
+  ],
+  "thresholds": {},
+  "overrides": {}
+}

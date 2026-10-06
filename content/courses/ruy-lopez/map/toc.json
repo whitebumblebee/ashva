@@ -1,0 +1,4641 @@
+[
+    {
+        "id": "berlin",
+        "title": "Berlin Defence",
+        "positions": 1282,
+        "masterGamesAtRoot": 4148,
+        "clubGamesAtRoot": 1272,
+        "deepestMasterPly": 80,
+        "variations": [
+            {
+                "name": "Berlin Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6",
+                "ply": 6,
+                "masterGames": 4150,
+                "clubGames": 1272,
+                "bandGames": {
+                    "2600+": 1203,
+                    "2400–2599": 1723,
+                    "2200–2399": 1224,
+                    "Lichess 1600–2200": 1272
+                },
+                "deepestMasterPly": 80,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3",
+                "ply": 7,
+                "masterGames": 1804,
+                "clubGames": 315,
+                "bandGames": {
+                    "2600+": 558,
+                    "2400–2599": 746,
+                    "2200–2399": 500,
+                    "Lichess 1600–2200": 315
+                },
+                "deepestMasterPly": 31,
+                "named": true
+            },
+            {
+                "name": "Halloween Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 Nxe5",
+                "ply": 7,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4",
+                "ply": 8,
+                "masterGames": 2200,
+                "clubGames": 168,
+                "bandGames": {
+                    "2600+": 625,
+                    "2400–2599": 931,
+                    "2200–2399": 644,
+                    "Lichess 1600–2200": 168
+                },
+                "deepestMasterPly": 80,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 4...Bc5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5",
+                "ply": 8,
+                "masterGames": 1427,
+                "clubGames": 138,
+                "bandGames": {
+                    "2600+": 485,
+                    "2400–2599": 568,
+                    "2200–2399": 374,
+                    "Lichess 1600–2200": 138
+                },
+                "deepestMasterPly": 31,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 4...d6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6",
+                "ply": 8,
+                "masterGames": 308,
+                "clubGames": 88,
+                "bandGames": {
+                    "2600+": 63,
+                    "2400–2599": 149,
+                    "2200–2399": 96,
+                    "Lichess 1600–2200": 88
+                },
+                "deepestMasterPly": 19,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation, Mortimer Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7",
+                "ply": 8,
+                "masterGames": 58,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 9,
+                    "2400–2599": 22,
+                    "2200–2399": 27,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Beverwijk Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Bc5",
+                "ply": 8,
+                "masterGames": 24,
+                "clubGames": 175,
+                "bandGames": {
+                    "2600+": 5,
+                    "2400–2599": 2,
+                    "2200–2399": 17,
+                    "Lichess 1600–2200": 175
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Improved Steinitz Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6",
+                "ply": 8,
+                "masterGames": 11,
+                "clubGames": 161,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 2,
+                    "2200–2399": 9,
+                    "Lichess 1600–2200": 161
+                },
+                "deepestMasterPly": 15,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Fishing Pole Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Ng4",
+                "ply": 8,
+                "masterGames": 0,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 5.Re1",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1",
+                "ply": 9,
+                "masterGames": 1160,
+                "clubGames": 103,
+                "bandGames": {
+                    "2600+": 333,
+                    "2400–2599": 506,
+                    "2200–2399": 321,
+                    "Lichess 1600–2200": 103
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 5.d4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4",
+                "ply": 9,
+                "masterGames": 1035,
+                "clubGames": 57,
+                "bandGames": {
+                    "2600+": 292,
+                    "2400–2599": 421,
+                    "2200–2399": 322,
+                    "Lichess 1600–2200": 57
+                },
+                "deepestMasterPly": 80,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 5.Bxc6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6",
+                "ply": 9,
+                "masterGames": 596,
+                "clubGames": 23,
+                "bandGames": {
+                    "2600+": 233,
+                    "2400–2599": 230,
+                    "2200–2399": 133,
+                    "Lichess 1600–2200": 23
+                },
+                "deepestMasterPly": 27,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 5.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 c3",
+                "ply": 9,
+                "masterGames": 458,
+                "clubGames": 31,
+                "bandGames": {
+                    "2600+": 133,
+                    "2400–2599": 191,
+                    "2200–2399": 134,
+                    "Lichess 1600–2200": 31
+                },
+                "deepestMasterPly": 31,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 5.O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O",
+                "ply": 9,
+                "masterGames": 201,
+                "clubGames": 20,
+                "bandGames": {
+                    "2600+": 45,
+                    "2400–2599": 98,
+                    "2200–2399": 58,
+                    "Lichess 1600–2200": 20
+                },
+                "deepestMasterPly": 19,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation, Duras Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c4",
+                "ply": 9,
+                "masterGames": 13,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 4,
+                    "2200–2399": 7,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 15,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Nyholm Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d4 exd4 O-O",
+                "ply": 9,
+                "masterGames": 12,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 5,
+                    "2200–2399": 5,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 11,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation, Kaufmann Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Be3",
+                "ply": 9,
+                "masterGames": 10,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 5,
+                    "2400–2599": 4,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 15,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation, Anderssen Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 Bxc6+",
+                "ply": 9,
+                "masterGames": 1,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 9,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, l'Hermet Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6",
+                "ply": 10,
+                "masterGames": 1031,
+                "clubGames": 43,
+                "bandGames": {
+                    "2600+": 290,
+                    "2400–2599": 421,
+                    "2200–2399": 320,
+                    "Lichess 1600–2200": 43
+                },
+                "deepestMasterPly": 80,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 5...O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 c3 O-O",
+                "ply": 10,
+                "masterGames": 369,
+                "clubGames": 16,
+                "bandGames": {
+                    "2600+": 110,
+                    "2400–2599": 160,
+                    "2200–2399": 99,
+                    "Lichess 1600–2200": 16
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Rio de Janeiro Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7",
+                "ply": 10,
+                "masterGames": 2,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 17,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rosenthal Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 a6",
+                "ply": 10,
+                "masterGames": 1,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 10,
+                "named": true
+            },
+            {
+                "name": "Closed Berlin Defense, Chigorin Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6 d4 Nd7",
+                "ply": 10,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation, Mortimer Trap",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 Nxe5 c6",
+                "ply": 10,
+                "masterGames": 0,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 6.Nxe5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5",
+                "ply": 11,
+                "masterGames": 961,
+                "clubGames": 35,
+                "bandGames": {
+                    "2600+": 295,
+                    "2400–2599": 418,
+                    "2200–2399": 248,
+                    "Lichess 1600–2200": 35
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Open Berlin Defense, l'Hermet Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 dxe5",
+                "ply": 11,
+                "masterGames": 603,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 120,
+                    "2400–2599": 253,
+                    "2200–2399": 230,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 29,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, l'Hermet Variation · 6.Bxc6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6",
+                "ply": 11,
+                "masterGames": 376,
+                "clubGames": 35,
+                "bandGames": {
+                    "2600+": 153,
+                    "2400–2599": 144,
+                    "2200–2399": 79,
+                    "Lichess 1600–2200": 35
+                },
+                "deepestMasterPly": 80,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 5...O-O 6.O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 c3 O-O O-O",
+                "ply": 11,
+                "masterGames": 315,
+                "clubGames": 8,
+                "bandGames": {
+                    "2600+": 96,
+                    "2400–2599": 135,
+                    "2200–2399": 84,
+                    "Lichess 1600–2200": 8
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 6.Nbd2",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2",
+                "ply": 11,
+                "masterGames": 274,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 102,
+                    "2400–2599": 108,
+                    "2200–2399": 64,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 23,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 5...dxc6 6.O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 O-O",
+                "ply": 11,
+                "masterGames": 209,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 91,
+                    "2400–2599": 79,
+                    "2200–2399": 39,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 27,
+                "named": false
+            },
+            {
+                "name": "Open Berlin Defense, Showalter Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Ba4",
+                "ply": 11,
+                "masterGames": 44,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 15,
+                    "2400–2599": 21,
+                    "2200–2399": 8,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 17,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Minckwitz Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7 dxe5",
+                "ply": 11,
+                "masterGames": 1,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 11,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 6...Be7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7",
+                "ply": 12,
+                "masterGames": 873,
+                "clubGames": 25,
+                "bandGames": {
+                    "2600+": 289,
+                    "2400–2599": 385,
+                    "2200–2399": 199,
+                    "Lichess 1600–2200": 25
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Anti-Berlin Variation · 6...d6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 c3 O-O O-O d6",
+                "ply": 12,
+                "masterGames": 150,
+                "clubGames": 10,
+                "bandGames": {
+                    "2600+": 39,
+                    "2400–2599": 67,
+                    "2200–2399": 44,
+                    "Lichess 1600–2200": 10
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Hedgehog Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6 d4 Bd7 Nc3 Be7",
+                "ply": 12,
+                "masterGames": 3,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 1,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 14,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Closed Wolf Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6 d4 Bd7 Nc3 exd4",
+                "ply": 12,
+                "masterGames": 3,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 15,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Trifunovic Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7 Qe2 d5",
+                "ply": 12,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Closed Showalter Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6 d4 Bd7 Nc3 Be7 Bxc6",
+                "ply": 13,
+                "masterGames": 3,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 1,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 14,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Closed Bernstein Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6 d4 Bd7 Nc3 Be7 Bg5",
+                "ply": 13,
+                "masterGames": 0,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 7...Nxe5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5",
+                "ply": 14,
+                "masterGames": 721,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 255,
+                    "2400–2599": 313,
+                    "2200–2399": 153,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Open Berlin Defense, l'Hermet Variation · 7...Nbd4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 dxe5 Nxb5 a4 Nbd4",
+                "ply": 14,
+                "masterGames": 562,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 112,
+                    "2400–2599": 236,
+                    "2200–2399": 214,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 24,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, l'Hermet Variation · 7...Nf5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Nf5",
+                "ply": 14,
+                "masterGames": 375,
+                "clubGames": 23,
+                "bandGames": {
+                    "2600+": 153,
+                    "2400–2599": 143,
+                    "2200–2399": 79,
+                    "Lichess 1600–2200": 23
+                },
+                "deepestMasterPly": 80,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, l'Hermet Variation, Westerinen Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Ne4",
+                "ply": 14,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 14,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Tarrasch Trap",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O d6 d4 Bd7 Nc3 Be7 Re1 O-O",
+                "ply": 14,
+                "masterGames": 0,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, l'Hermet Variation, Berlin Wall Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Nf5 Qxd8+ Kxd8",
+                "ply": 16,
+                "masterGames": 364,
+                "clubGames": 22,
+                "bandGames": {
+                    "2600+": 149,
+                    "2400–2599": 138,
+                    "2200–2399": 77,
+                    "Lichess 1600–2200": 22
+                },
+                "deepestMasterPly": 80,
+                "named": true
+            },
+            {
+                "name": "Open Berlin Defense, l'Hermet Variation · 8...d5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 dxe5 Nxb5 a4 Nbd4 Nxd4 d5",
+                "ply": 16,
+                "masterGames": 291,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 82,
+                    "2400–2599": 132,
+                    "2200–2399": 77,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 24,
+                "named": false
+            },
+            {
+                "name": "Open Berlin Defense, l'Hermet Variation · 8...Nxd4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 dxe5 Nxb5 a4 Nbd4 Nxd4 Nxd4",
+                "ply": 16,
+                "masterGames": 266,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 28,
+                    "2400–2599": 102,
+                    "2200–2399": 136,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 19,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Cordel Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7 Qe2 Nd6 Bxc6 bxc6 dxe5 Nf5",
+                "ply": 16,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 9.d4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O d4",
+                "ply": 17,
+                "masterGames": 594,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 185,
+                    "2400–2599": 248,
+                    "2200–2399": 161,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 9.Nc3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O Nc3",
+                "ply": 17,
+                "masterGames": 206,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 76,
+                    "2400–2599": 92,
+                    "2200–2399": 38,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 46,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, l'Hermet Variation, Berlin Wall Defense · 9.h3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Nf5 Qxd8+ Kxd8 h3",
+                "ply": 17,
+                "masterGames": 160,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 72,
+                    "2400–2599": 63,
+                    "2200–2399": 25,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 80,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Winawer Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7 Qe2 Nd6 Bxc6 bxc6 dxe5 Nb7 Nd4",
+                "ply": 17,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 17,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Pillsbury Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7 Qe2 Nd6 Bxc6 bxc6 dxe5 Nb7 b3",
+                "ply": 17,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Zukertort Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Be7 Qe2 Nd6 Bxc6 bxc6 dxe5 Nb7 c4",
+                "ply": 17,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 9...Bf6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O d4 Bf6",
+                "ply": 18,
+                "masterGames": 513,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 160,
+                    "2400–2599": 216,
+                    "2200–2399": 137,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Berlin Wall",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 d4 Nd6 Bxc6 dxc6 dxe5 Nf5 Qxd8+ Kxd8 Nc3 Bd7",
+                "ply": 18,
+                "masterGames": 31,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 11,
+                    "2200–2399": 8,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 20,
+                "named": true
+            },
+            {
+                "name": "Open, Berlin Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Nc5",
+                "ply": 18,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 10.Re1",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O d4 Bf6 Re1",
+                "ply": 19,
+                "masterGames": 436,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 136,
+                    "2400–2599": 187,
+                    "2200–2399": 113,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            },
+            {
+                "name": "Berlin Defense, Rio Gambit Accepted · 10...Re8",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Nxe4 Re1 Nd6 Nxe5 Be7 Bf1 Nxe5 Rxe5 O-O d4 Bf6 Re1 Re8",
+                "ply": 20,
+                "masterGames": 324,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 123,
+                    "2400–2599": 135,
+                    "2200–2399": 66,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 61,
+                "named": false
+            }
+        ]
+    },
+    {
+        "id": "exchange",
+        "title": "Exchange Variation",
+        "positions": 206,
+        "masterGamesAtRoot": 459,
+        "clubGamesAtRoot": 688,
+        "deepestMasterPly": 32,
+        "variations": [
+            {
+                "name": "Exchange Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6",
+                "ply": 7,
+                "masterGames": 459,
+                "clubGames": 688,
+                "bandGames": {
+                    "2600+": 46,
+                    "2400–2599": 128,
+                    "2200–2399": 285,
+                    "Lichess 1600–2200": 688
+                },
+                "deepestMasterPly": 32,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Exchange Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6",
+                "ply": 7,
+                "masterGames": 4,
+                "clubGames": 74,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 4,
+                    "Lichess 1600–2200": 74
+                },
+                "deepestMasterPly": 7,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation · 4...dxc6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6",
+                "ply": 8,
+                "masterGames": 457,
+                "clubGames": 645,
+                "bandGames": {
+                    "2600+": 46,
+                    "2400–2599": 128,
+                    "2200–2399": 283,
+                    "Lichess 1600–2200": 645
+                },
+                "deepestMasterPly": 32,
+                "named": false
+            },
+            {
+                "name": "Exchange Variation, Lutikov Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6",
+                "ply": 8,
+                "masterGames": 2,
+                "clubGames": 43,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 43
+                },
+                "deepestMasterPly": 8,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Normal Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O",
+                "ply": 9,
+                "masterGames": 357,
+                "clubGames": 251,
+                "bandGames": {
+                    "2600+": 45,
+                    "2400–2599": 110,
+                    "2200–2399": 202,
+                    "Lichess 1600–2200": 251
+                },
+                "deepestMasterPly": 32,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Keres Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3",
+                "ply": 9,
+                "masterGames": 68,
+                "clubGames": 47,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 17,
+                    "2200–2399": 50,
+                    "Lichess 1600–2200": 47
+                },
+                "deepestMasterPly": 25,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Gligoric Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6",
+                "ply": 10,
+                "masterGames": 57,
+                "clubGames": 35,
+                "bandGames": {
+                    "2600+": 4,
+                    "2400–2599": 18,
+                    "2200–2399": 35,
+                    "Lichess 1600–2200": 35
+                },
+                "deepestMasterPly": 32,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, King's Bishop Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6",
+                "ply": 10,
+                "masterGames": 38,
+                "clubGames": 110,
+                "bandGames": {
+                    "2600+": 5,
+                    "2400–2599": 9,
+                    "2200–2399": 24,
+                    "Lichess 1600–2200": 110
+                },
+                "deepestMasterPly": 24,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Bronstein Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6",
+                "ply": 10,
+                "masterGames": 22,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 6,
+                    "2400–2599": 3,
+                    "2200–2399": 13,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 13,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Romanovsky Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3",
+                "ply": 11,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 11,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Alapin Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5",
+                "ply": 12,
+                "masterGames": 85,
+                "clubGames": 19,
+                "bandGames": {
+                    "2600+": 8,
+                    "2400–2599": 32,
+                    "2200–2399": 45,
+                    "Lichess 1600–2200": 19
+                },
+                "deepestMasterPly": 25,
+                "named": true
+            },
+            {
+                "name": "Exchange, Alekhine Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7",
+                "ply": 14,
+                "masterGames": 12,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 12,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            },
+            {
+                "name": "Exchange Variation, Alekhine Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6",
+                "ply": 14,
+                "masterGames": 1,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 14,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "open",
+        "title": "Open Ruy Lopez",
+        "positions": 503,
+        "masterGamesAtRoot": 893,
+        "clubGamesAtRoot": 50,
+        "deepestMasterPly": 49,
+        "variations": [
+            {
+                "name": "Open",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4",
+                "ply": 10,
+                "masterGames": 893,
+                "clubGames": 50,
+                "bandGames": {
+                    "2600+": 179,
+                    "2400–2599": 306,
+                    "2200–2399": 408,
+                    "Lichess 1600–2200": 50
+                },
+                "deepestMasterPly": 49,
+                "named": true
+            },
+            {
+                "name": "Open, Knorre Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 Nc3",
+                "ply": 11,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open · 6...b5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5",
+                "ply": 12,
+                "masterGames": 660,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 152,
+                    "2400–2599": 231,
+                    "2200–2399": 277,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 49,
+                "named": false
+            },
+            {
+                "name": "Open · 6...Be7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 Be7",
+                "ply": 12,
+                "masterGames": 193,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 65,
+                    "2200–2399": 106,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Open, Riga Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 exd4",
+                "ply": 12,
+                "masterGames": 0,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Skipworth Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 Re1 d5",
+                "ply": 12,
+                "masterGames": 0,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open · 7.Re1",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 Be7 Re1",
+                "ply": 13,
+                "masterGames": 171,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 60,
+                    "2200–2399": 89,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Open, Friess Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Nxe5",
+                "ply": 13,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Richter Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 d5",
+                "ply": 13,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Harksen Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 c4",
+                "ply": 15,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Main Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6",
+                "ply": 16,
+                "masterGames": 645,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 151,
+                    "2400–2599": 224,
+                    "2200–2399": 270,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 49,
+                "named": true
+            },
+            {
+                "name": "Open, Schlechter Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 a4 Nxd4",
+                "ply": 16,
+                "masterGames": 2,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 2,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Open, Zukertort Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Ne7",
+                "ply": 16,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Bernstein Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 Nbd2",
+                "ply": 17,
+                "masterGames": 179,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 43,
+                    "2400–2599": 63,
+                    "2200–2399": 73,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 34,
+                "named": true
+            },
+            {
+                "name": "Open, Howell Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 Qe2",
+                "ply": 17,
+                "masterGames": 101,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 17,
+                    "2400–2599": 34,
+                    "2200–2399": 50,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 43,
+                "named": true
+            },
+            {
+                "name": "Open, Classical Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Be7",
+                "ply": 18,
+                "masterGames": 169,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 54,
+                    "2400–2599": 53,
+                    "2200–2399": 62,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 49,
+                "named": true
+            },
+            {
+                "name": "Open, Italian Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5",
+                "ply": 18,
+                "masterGames": 102,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 19,
+                    "2400–2599": 43,
+                    "2200–2399": 40,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Open, St. Petersburg Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2",
+                "ply": 19,
+                "masterGames": 76,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 15,
+                    "2400–2599": 30,
+                    "2200–2399": 31,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Open, Motzko Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Qd3",
+                "ply": 19,
+                "masterGames": 10,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 5,
+                    "2200–2399": 3,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 22,
+                "named": true
+            },
+            {
+                "name": "Open, Classical Defense, Main Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Re1",
+                "ply": 19,
+                "masterGames": 6,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 2,
+                    "2200–2399": 3,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Open, Bernstein Variation, Luther Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 Nbd2 Bc5 Qe1",
+                "ply": 19,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Berger Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 a4 Nxd4 Nxd4 exd4 Nc3",
+                "ply": 19,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Motzko Attack, Nenarokov Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Qd3 Ne7",
+                "ply": 20,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Open, Karpov Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 Nbd2 Nc5 c3 d4 Ng5",
+                "ply": 21,
+                "masterGames": 3,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 23,
+                "named": true
+            },
+            {
+                "name": "Open, Malkin Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Nbd2 O-O Qe2",
+                "ply": 21,
+                "masterGames": 2,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 21,
+                "named": true
+            },
+            {
+                "name": "Open, Dilworth Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Bc5 Nbd2 O-O Bc2 Nxf2",
+                "ply": 22,
+                "masterGames": 63,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 25,
+                    "2200–2399": 26,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Open, Breslau Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Re1 O-O Nd4 Nxe5",
+                "ply": 22,
+                "masterGames": 2,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 22,
+                "named": true
+            },
+            {
+                "name": "Open, Howell Attack, Ekstrom Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 Qe2 Be7 Rd1 O-O c4 bxc4 Bxc4 Qd7",
+                "ply": 24,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 24,
+                "named": true
+            },
+            {
+                "name": "Open, Tarrasch Trap",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 d4 b5 Bb3 d5 dxe5 Be6 c3 Be7 Re1 O-O Nd4 Qd7 Nxe6 fxe6 Rxe4",
+                "ply": 25,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "closed",
+        "title": "Closed Ruy Lopez: main systems",
+        "positions": 1562,
+        "masterGamesAtRoot": 1474,
+        "clubGamesAtRoot": 90,
+        "deepestMasterPly": 56,
+        "variations": [
+            {
+                "name": "Closed",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7",
+                "ply": 10,
+                "masterGames": 4831,
+                "clubGames": 185,
+                "bandGames": {
+                    "2600+": 711,
+                    "2400–2599": 1782,
+                    "2200–2399": 2338,
+                    "Lichess 1600–2200": 185
+                },
+                "deepestMasterPly": 56,
+                "named": true
+            },
+            {
+                "name": "Closed · 6.Re1",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1",
+                "ply": 11,
+                "masterGames": 3081,
+                "clubGames": 139,
+                "bandGames": {
+                    "2600+": 387,
+                    "2400–2599": 1106,
+                    "2200–2399": 1588,
+                    "Lichess 1600–2200": 139
+                },
+                "deepestMasterPly": 56,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3",
+                "ply": 11,
+                "masterGames": 1370,
+                "clubGames": 8,
+                "bandGames": {
+                    "2600+": 261,
+                    "2400–2599": 521,
+                    "2200–2399": 588,
+                    "Lichess 1600–2200": 8
+                },
+                "deepestMasterPly": 38,
+                "named": true
+            },
+            {
+                "name": "Closed, Delayed Exchange",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Bxc6",
+                "ply": 11,
+                "masterGames": 341,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 56,
+                    "2400–2599": 145,
+                    "2200–2399": 140,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 28,
+                "named": true
+            },
+            {
+                "name": "Closed, Worrall Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Qe2",
+                "ply": 11,
+                "masterGames": 22,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 5,
+                    "2200–2399": 14,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 23,
+                "named": true
+            },
+            {
+                "name": "Closed, Morphy Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Nc3",
+                "ply": 11,
+                "masterGames": 17,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 4,
+                    "2400–2599": 7,
+                    "2200–2399": 6,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 28,
+                "named": true
+            },
+            {
+                "name": "Closed, Center Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d4",
+                "ply": 11,
+                "masterGames": 13,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 4,
+                    "2200–2399": 7,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 34,
+                "named": true
+            },
+            {
+                "name": "Closed · 6...b5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5",
+                "ply": 12,
+                "masterGames": 3053,
+                "clubGames": 128,
+                "bandGames": {
+                    "2600+": 386,
+                    "2400–2599": 1099,
+                    "2200–2399": 1568,
+                    "Lichess 1600–2200": 128
+                },
+                "deepestMasterPly": 56,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 6...b5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5",
+                "ply": 12,
+                "masterGames": 1168,
+                "clubGames": 12,
+                "bandGames": {
+                    "2600+": 236,
+                    "2400–2599": 434,
+                    "2200–2399": 498,
+                    "Lichess 1600–2200": 12
+                },
+                "deepestMasterPly": 38,
+                "named": false
+            },
+            {
+                "name": "Closed, Averbakh Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 d6",
+                "ply": 12,
+                "masterGames": 27,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 7,
+                    "2200–2399": 19,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Closed, Delayed Exchange · 7.d3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Bxc6 dxc6 d3",
+                "ply": 13,
+                "masterGames": 215,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 34,
+                    "2400–2599": 90,
+                    "2200–2399": 91,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 7.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 d6 c3",
+                "ply": 13,
+                "masterGames": 153,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 64,
+                    "2200–2399": 67,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 27,
+                "named": false
+            },
+            {
+                "name": "Closed · 7...d6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6",
+                "ply": 14,
+                "masterGames": 1463,
+                "clubGames": 83,
+                "bandGames": {
+                    "2600+": 99,
+                    "2400–2599": 523,
+                    "2200–2399": 841,
+                    "Lichess 1600–2200": 83
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 7...d6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6",
+                "ply": 14,
+                "masterGames": 1023,
+                "clubGames": 18,
+                "bandGames": {
+                    "2600+": 203,
+                    "2400–2599": 386,
+                    "2200–2399": 434,
+                    "Lichess 1600–2200": 18
+                },
+                "deepestMasterPly": 38,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 7...O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 O-O",
+                "ply": 14,
+                "masterGames": 233,
+                "clubGames": 26,
+                "bandGames": {
+                    "2600+": 37,
+                    "2400–2599": 62,
+                    "2200–2399": 134,
+                    "Lichess 1600–2200": 26
+                },
+                "deepestMasterPly": 25,
+                "named": false
+            },
+            {
+                "name": "Closed, Trajkovic Counterattack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 Bb7",
+                "ply": 14,
+                "masterGames": 26,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 6,
+                    "2400–2599": 11,
+                    "2200–2399": 9,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 28,
+                "named": true
+            },
+            {
+                "name": "Closed, Worrall Attack, Castling Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Qe2 b5 Bb3 O-O",
+                "ply": 14,
+                "masterGames": 21,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 6,
+                    "2200–2399": 15,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 19,
+                "named": true
+            },
+            {
+                "name": "Closed, Worrall Attack, Delayed Castling Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Qe2 b5 Bb3 d6",
+                "ply": 14,
+                "masterGames": 7,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 0,
+                    "2200–2399": 4,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 23,
+                "named": true
+            },
+            {
+                "name": "Closed · 7...d6 8.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3",
+                "ply": 15,
+                "masterGames": 1366,
+                "clubGames": 67,
+                "bandGames": {
+                    "2600+": 95,
+                    "2400–2599": 496,
+                    "2200–2399": 775,
+                    "Lichess 1600–2200": 67
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Closed · 8.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3",
+                "ply": 15,
+                "masterGames": 364,
+                "clubGames": 82,
+                "bandGames": {
+                    "2600+": 69,
+                    "2400–2599": 123,
+                    "2200–2399": 172,
+                    "Lichess 1600–2200": 82
+                },
+                "deepestMasterPly": 51,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 8.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6 c3",
+                "ply": 15,
+                "masterGames": 349,
+                "clubGames": 12,
+                "bandGames": {
+                    "2600+": 72,
+                    "2400–2599": 127,
+                    "2200–2399": 150,
+                    "Lichess 1600–2200": 12
+                },
+                "deepestMasterPly": 37,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 8.a3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6 a3",
+                "ply": 15,
+                "masterGames": 338,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 66,
+                    "2400–2599": 134,
+                    "2200–2399": 138,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 38,
+                "named": false
+            },
+            {
+                "name": "Closed · 8.h3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O h3",
+                "ply": 15,
+                "masterGames": 281,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 47,
+                    "2400–2599": 96,
+                    "2200–2399": 138,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 39,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 8.a4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6 a4",
+                "ply": 15,
+                "masterGames": 226,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 45,
+                    "2400–2599": 93,
+                    "2200–2399": 88,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 30,
+                "named": false
+            },
+            {
+                "name": "Closed, Basque Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d4 exd4 e5 Ne4 c3",
+                "ply": 15,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            },
+            {
+                "name": "Closed, Rosen Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 d4",
+                "ply": 15,
+                "masterGames": 0,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Closed, Martinez Variation · 8...O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6 a3 O-O",
+                "ply": 16,
+                "masterGames": 226,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 40,
+                    "2400–2599": 96,
+                    "2200–2399": 90,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 38,
+                "named": false
+            },
+            {
+                "name": "Closed · 8...Bb7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O h3 Bb7",
+                "ply": 16,
+                "masterGames": 206,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 38,
+                    "2400–2599": 80,
+                    "2200–2399": 88,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 39,
+                "named": false
+            },
+            {
+                "name": "Closed, Martinez Variation · 8...Bd7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6 a4 Bd7",
+                "ply": 16,
+                "masterGames": 176,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 38,
+                    "2400–2599": 73,
+                    "2200–2399": 65,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 30,
+                "named": false
+            },
+            {
+                "name": "Closed, Center Attack, Basque Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d4 exd4 e5 Ne4 c3 dxc3",
+                "ply": 16,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            },
+            {
+                "name": "Closed, Martinez Variation · 9.h3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 d3 b5 Bb3 d6 c3 O-O h3",
+                "ply": 17,
+                "masterGames": 171,
+                "clubGames": 12,
+                "bandGames": {
+                    "2600+": 48,
+                    "2400–2599": 64,
+                    "2200–2399": 59,
+                    "Lichess 1600–2200": 12
+                },
+                "deepestMasterPly": 30,
+                "named": false
+            },
+            {
+                "name": "Closed, Yates Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 d4",
+                "ply": 17,
+                "masterGames": 77,
+                "clubGames": 27,
+                "bandGames": {
+                    "2600+": 8,
+                    "2400–2599": 26,
+                    "2200–2399": 43,
+                    "Lichess 1600–2200": 27
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Closed, Pilnik Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O d3 d6 c3",
+                "ply": 17,
+                "masterGames": 59,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 15,
+                    "2400–2599": 13,
+                    "2200–2399": 31,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 36,
+                "named": true
+            },
+            {
+                "name": "Closed, Lutikov Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 Bc2",
+                "ply": 17,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 17,
+                "named": true
+            },
+            {
+                "name": "Closed, Suetin Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 a3",
+                "ply": 17,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8",
+                "ply": 18,
+                "masterGames": 476,
+                "clubGames": 8,
+                "bandGames": {
+                    "2600+": 18,
+                    "2400–2599": 161,
+                    "2200–2399": 297,
+                    "Lichess 1600–2200": 8
+                },
+                "deepestMasterPly": 45,
+                "named": true
+            },
+            {
+                "name": "Closed, Flohr System",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Bb7",
+                "ply": 18,
+                "masterGames": 401,
+                "clubGames": 14,
+                "bandGames": {
+                    "2600+": 39,
+                    "2400–2599": 152,
+                    "2200–2399": 210,
+                    "Lichess 1600–2200": 14
+                },
+                "deepestMasterPly": 43,
+                "named": true
+            },
+            {
+                "name": "Closed, Chigorin Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5",
+                "ply": 18,
+                "masterGames": 231,
+                "clubGames": 19,
+                "bandGames": {
+                    "2600+": 18,
+                    "2400–2599": 63,
+                    "2200–2399": 150,
+                    "Lichess 1600–2200": 19
+                },
+                "deepestMasterPly": 38,
+                "named": true
+            },
+            {
+                "name": "Closed, Zaitsev System",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Re8",
+                "ply": 18,
+                "masterGames": 174,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 25,
+                    "2400–2599": 54,
+                    "2200–2399": 95,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 22,
+                "named": true
+            },
+            {
+                "name": "Closed, Bogoljubow Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 d4 Bg4",
+                "ply": 18,
+                "masterGames": 93,
+                "clubGames": 12,
+                "bandGames": {
+                    "2600+": 8,
+                    "2400–2599": 36,
+                    "2200–2399": 49,
+                    "Lichess 1600–2200": 12
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Closed, Smyslov Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 h6",
+                "ply": 18,
+                "masterGames": 87,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 39,
+                    "2200–2399": 45,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Closed, Kholmov Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Be6",
+                "ply": 18,
+                "masterGames": 32,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 13,
+                    "2200–2399": 16,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 25,
+                "named": true
+            },
+            {
+                "name": "Closed, Karpov Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nd7",
+                "ply": 18,
+                "masterGames": 23,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 7,
+                    "2200–2399": 15,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 24,
+                "named": true
+            },
+            {
+                "name": "Closed, Kecskemet Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 c3 Bd7 d4 Be7 Nbd2 O-O Re1 Be8",
+                "ply": 18,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d4",
+                "ply": 19,
+                "masterGames": 469,
+                "clubGames": 8,
+                "bandGames": {
+                    "2600+": 18,
+                    "2400–2599": 158,
+                    "2200–2399": 293,
+                    "Lichess 1600–2200": 8
+                },
+                "deepestMasterPly": 45,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer Defense, Quiet Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d3",
+                "ply": 19,
+                "masterGames": 6,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 3,
+                    "2200–2399": 3,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 26,
+                "named": true
+            },
+            {
+                "name": "Closed, Yates Variation, Short Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 d4 Bg4 a4",
+                "ply": 19,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 19,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer Defense, Zaitsev Hybrid",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d4 Nbd7",
+                "ply": 20,
+                "masterGames": 470,
+                "clubGames": 8,
+                "bandGames": {
+                    "2600+": 18,
+                    "2400–2599": 159,
+                    "2200–2399": 293,
+                    "Lichess 1600–2200": 8
+                },
+                "deepestMasterPly": 45,
+                "named": true
+            },
+            {
+                "name": "Closed, Chigorin Defense, Gajewski Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5 Bc2 d5",
+                "ply": 20,
+                "masterGames": 2,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 20,
+                "named": true
+            },
+            {
+                "name": "Noah's Ark Trap",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 d4 Nxd4 Nxd4 exd4 Qxd4 c5",
+                "ply": 20,
+                "masterGames": 0,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Closed, Flohr System · 11.Ng5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Bb7 d4 Re8 Ng5",
+                "ply": 21,
+                "masterGames": 364,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 24,
+                    "2400–2599": 167,
+                    "2200–2399": 173,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 23,
+                "named": false
+            },
+            {
+                "name": "Closed, Breyer Defense, Zaitsev Hybrid · 11.Nbd2",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d4 Nbd7 Nbd2",
+                "ply": 21,
+                "masterGames": 347,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 114,
+                    "2200–2399": 221,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Closed, Flohr System · 11.Nbd2",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Bb7 d4 Re8 Nbd2",
+                "ply": 21,
+                "masterGames": 205,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 30,
+                    "2400–2599": 67,
+                    "2200–2399": 108,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 43,
+                "named": false
+            },
+            {
+                "name": "Closed, Balla Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 Na5 Bc2 c5 d4 Qc7 a4",
+                "ply": 21,
+                "masterGames": 3,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 3,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 21,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer Defense, Zaitsev Hybrid · 11...Bb7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d4 Nbd7 Nbd2 Bb7",
+                "ply": 22,
+                "masterGames": 312,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 102,
+                    "2200–2399": 198,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Closed, Keres Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5 Bc2 c5 d4 Nd7",
+                "ply": 22,
+                "masterGames": 46,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 17,
+                    "2200–2399": 29,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 38,
+                "named": true
+            },
+            {
+                "name": "Closed, Borisenko Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5 Bc2 c5 d4 Nc6",
+                "ply": 22,
+                "masterGames": 8,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 8,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 26,
+                "named": true
+            },
+            {
+                "name": "Closed, Rossolimo Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5 Bc2 c6 d4 Qc7",
+                "ply": 22,
+                "masterGames": 6,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 6,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 23,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer Defense, Zaitsev Hybrid · 12...Re8",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d4 Nbd7 Nbd2 Bb7 Bc2 Re8",
+                "ply": 24,
+                "masterGames": 285,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 97,
+                    "2200–2399": 176,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Closed, Smyslov-Breyer-Zaitsev Hybrid",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Bb7 d4 Re8 Nbd2 Bf8 a3 h6",
+                "ply": 24,
+                "masterGames": 77,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 13,
+                    "2400–2599": 25,
+                    "2200–2399": 39,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Closed, Chigorin Defense, Panov System",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5 Bc2 c5 d4 Qc7 Nbd2 cxd4 cxd4",
+                "ply": 25,
+                "masterGames": 31,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 8,
+                    "2200–2399": 22,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 37,
+                "named": true
+            },
+            {
+                "name": "Closed, Leonhardt Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 Na5 Bc2 c5 d4 Qc7 h3 Nc6 d5 Nb8 Nbd2 g5",
+                "ply": 26,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Closed, Alekhine Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 Na5 Bc2 c5 d4 Qc7 Nbd2 O-O Nf1 Bg4 Ne3 Bxf3 Qxf3",
+                "ply": 27,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Closed, Breyer Defense, Zaitsev Hybrid · 14...g6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Nb8 d4 Nbd7 Nbd2 Bb7 Bc2 Re8 Nf1 Bf8 Ng3 g6",
+                "ply": 28,
+                "masterGames": 194,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 5,
+                    "2400–2599": 63,
+                    "2200–2399": 126,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Closed, Chigorin, Yugoslav System",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d6 h3 Na5 Bc2 c5 d4 Qc7 Nbd2 Bd7 Nf1 Rfe8 Ne3 g6",
+                "ply": 28,
+                "masterGames": 2,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 28,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "marshall",
+        "title": "Marshall Attack and Anti-Marshall",
+        "positions": 520,
+        "masterGamesAtRoot": 1617,
+        "clubGamesAtRoot": 123,
+        "deepestMasterPly": 56,
+        "variations": [
+            {
+                "name": "Closed, Anti-Marshall",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O a4",
+                "ply": 15,
+                "masterGames": 823,
+                "clubGames": 16,
+                "bandGames": {
+                    "2600+": 140,
+                    "2400–2599": 304,
+                    "2200–2399": 379,
+                    "Lichess 1600–2200": 16
+                },
+                "deepestMasterPly": 56,
+                "named": true
+            },
+            {
+                "name": "Closed, Anti-Marshall · 8...Bb7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O a4 Bb7",
+                "ply": 16,
+                "masterGames": 355,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 42,
+                    "2400–2599": 131,
+                    "2200–2399": 182,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 37,
+                "named": false
+            },
+            {
+                "name": "Closed, Anti-Marshall · 8...b4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O a4 b4",
+                "ply": 16,
+                "masterGames": 322,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 68,
+                    "2400–2599": 116,
+                    "2200–2399": 138,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 56,
+                "named": false
+            },
+            {
+                "name": "Marshall Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5",
+                "ply": 16,
+                "masterGames": 223,
+                "clubGames": 66,
+                "bandGames": {
+                    "2600+": 49,
+                    "2400–2599": 82,
+                    "2200–2399": 92,
+                    "Lichess 1600–2200": 66
+                },
+                "deepestMasterPly": 51,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack · 9.exd5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5",
+                "ply": 17,
+                "masterGames": 197,
+                "clubGames": 55,
+                "bandGames": {
+                    "2600+": 46,
+                    "2400–2599": 76,
+                    "2200–2399": 75,
+                    "Lichess 1600–2200": 55
+                },
+                "deepestMasterPly": 51,
+                "named": false
+            },
+            {
+                "name": "Closed, Anti-Marshall · 9.d4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O a4 b4 d4",
+                "ply": 17,
+                "masterGames": 156,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 65,
+                    "2200–2399": 69,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 46,
+                "named": false
+            },
+            {
+                "name": "Closed, Anti-Marshall · 9...d6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O a4 Bb7 d3 d6",
+                "ply": 18,
+                "masterGames": 312,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 39,
+                    "2400–2599": 127,
+                    "2200–2399": 146,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 37,
+                "named": false
+            },
+            {
+                "name": "Marshall Attack · 9...Nxd5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5",
+                "ply": 18,
+                "masterGames": 195,
+                "clubGames": 51,
+                "bandGames": {
+                    "2600+": 46,
+                    "2400–2599": 76,
+                    "2200–2399": 73,
+                    "Lichess 1600–2200": 51
+                },
+                "deepestMasterPly": 51,
+                "named": false
+            },
+            {
+                "name": "Marshall Attack, Steiner Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 e4",
+                "ply": 18,
+                "masterGames": 2,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack · 10.Nxe5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5",
+                "ply": 19,
+                "masterGames": 184,
+                "clubGames": 40,
+                "bandGames": {
+                    "2600+": 43,
+                    "2400–2599": 70,
+                    "2200–2399": 71,
+                    "Lichess 1600–2200": 40
+                },
+                "deepestMasterPly": 51,
+                "named": false
+            },
+            {
+                "name": "Marshall Attack, Modern Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 c6",
+                "ply": 22,
+                "masterGames": 147,
+                "clubGames": 31,
+                "bandGames": {
+                    "2600+": 36,
+                    "2400–2599": 51,
+                    "2200–2399": 60,
+                    "Lichess 1600–2200": 31
+                },
+                "deepestMasterPly": 51,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack, Original Marshall Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 Nf6",
+                "ply": 22,
+                "masterGames": 1,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 22,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack, Main Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 c6 d4",
+                "ply": 23,
+                "masterGames": 40,
+                "clubGames": 19,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 11,
+                    "2200–2399": 28,
+                    "Lichess 1600–2200": 19
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack, Re3 Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 c6 Bxd5 cxd5 d4 Bd6 Re3",
+                "ply": 27,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 27,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack, Modern Main Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 c6 d4 Bd6 Re1 Qh4 g3 Qh3",
+                "ply": 28,
+                "masterGames": 42,
+                "clubGames": 14,
+                "bandGames": {
+                    "2600+": 4,
+                    "2400–2599": 11,
+                    "2200–2399": 27,
+                    "Lichess 1600–2200": 14
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Marshall Attack, Main Line, Spassky Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 O-O c3 d5 exd5 Nxd5 Nxe5 Nxe5 Rxe5 c6 d4 Bd6 Re1 Qh4 g3 Qh3 Be3 Bg4 Qd3 Rae8 Nd2 Re6 a4 Qh5",
+                "ply": 36,
+                "masterGames": 1,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 36,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "morphy-other",
+        "title": "Morphy Defence: other systems",
+        "positions": 2239,
+        "masterGamesAtRoot": 12759,
+        "clubGamesAtRoot": 2425,
+        "deepestMasterPly": 57,
+        "variations": [
+            {
+                "name": "Morphy Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6",
+                "ply": 6,
+                "masterGames": 12764,
+                "clubGames": 2427,
+                "bandGames": {
+                    "2600+": 1577,
+                    "2400–2599": 4439,
+                    "2200–2399": 6748,
+                    "Lichess 1600–2200": 2427
+                },
+                "deepestMasterPly": 57,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense · 4.Ba4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4",
+                "ply": 7,
+                "masterGames": 12298,
+                "clubGames": 1708,
+                "bandGames": {
+                    "2600+": 1528,
+                    "2400–2599": 4310,
+                    "2200–2399": 6460,
+                    "Lichess 1600–2200": 1708
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense · 4...Nf6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6",
+                "ply": 8,
+                "masterGames": 9826,
+                "clubGames": 960,
+                "bandGames": {
+                    "2600+": 1341,
+                    "2400–2599": 3551,
+                    "2200–2399": 4934,
+                    "Lichess 1600–2200": 960
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Modern Steinitz Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6",
+                "ply": 8,
+                "masterGames": 938,
+                "clubGames": 162,
+                "bandGames": {
+                    "2600+": 78,
+                    "2400–2599": 273,
+                    "2200–2399": 587,
+                    "Lichess 1600–2200": 162
+                },
+                "deepestMasterPly": 32,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Cozio Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nge7",
+                "ply": 8,
+                "masterGames": 513,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 31,
+                    "2400–2599": 177,
+                    "2200–2399": 305,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 31,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Caro Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 b5",
+                "ply": 8,
+                "masterGames": 189,
+                "clubGames": 378,
+                "bandGames": {
+                    "2600+": 6,
+                    "2400–2599": 58,
+                    "2200–2399": 125,
+                    "Lichess 1600–2200": 378
+                },
+                "deepestMasterPly": 37,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Fianchetto Defense Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 g6",
+                "ply": 8,
+                "masterGames": 108,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 31,
+                    "2200–2399": 65,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 20,
+                "named": true
+            },
+            {
+                "name": "Bird's Defense Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nd4",
+                "ply": 8,
+                "masterGames": 2,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 8,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Alapin's Defense Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Bb4",
+                "ply": 8,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3",
+                "ply": 9,
+                "masterGames": 1116,
+                "clubGames": 238,
+                "bandGames": {
+                    "2600+": 137,
+                    "2400–2599": 424,
+                    "2200–2399": 555,
+                    "Lichess 1600–2200": 238
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Tarrasch Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 Nc3",
+                "ply": 9,
+                "masterGames": 521,
+                "clubGames": 41,
+                "bandGames": {
+                    "2600+": 62,
+                    "2400–2599": 189,
+                    "2200–2399": 270,
+                    "Lichess 1600–2200": 41
+                },
+                "deepestMasterPly": 34,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Cozio Defense · 5.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nge7 c3",
+                "ply": 9,
+                "masterGames": 211,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 10,
+                    "2400–2599": 85,
+                    "2200–2399": 116,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 31,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Cozio Defense · 5.O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nge7 O-O",
+                "ply": 9,
+                "masterGames": 162,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 13,
+                    "2400–2599": 47,
+                    "2200–2399": 102,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 30,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Mackenzie Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d4",
+                "ply": 9,
+                "masterGames": 88,
+                "clubGames": 21,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 25,
+                    "2200–2399": 60,
+                    "Lichess 1600–2200": 21
+                },
+                "deepestMasterPly": 12,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Wormald Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 Qe2",
+                "ply": 9,
+                "masterGames": 65,
+                "clubGames": 18,
+                "bandGames": {
+                    "2600+": 4,
+                    "2400–2599": 15,
+                    "2200–2399": 46,
+                    "Lichess 1600–2200": 18
+                },
+                "deepestMasterPly": 19,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Bayreuth Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 Bxc6",
+                "ply": 9,
+                "masterGames": 47,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 15,
+                    "2200–2399": 31,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Jaffe Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 c3",
+                "ply": 9,
+                "masterGames": 0,
+                "clubGames": 16,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 16
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Steinitz Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6",
+                "ply": 10,
+                "masterGames": 641,
+                "clubGames": 64,
+                "bandGames": {
+                    "2600+": 35,
+                    "2400–2599": 197,
+                    "2200–2399": 409,
+                    "Lichess 1600–2200": 64
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 5...b5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 b5",
+                "ply": 10,
+                "masterGames": 508,
+                "clubGames": 140,
+                "bandGames": {
+                    "2600+": 61,
+                    "2400–2599": 179,
+                    "2200–2399": 268,
+                    "Lichess 1600–2200": 140
+                },
+                "deepestMasterPly": 33,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Møller Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Bc5",
+                "ply": 10,
+                "masterGames": 493,
+                "clubGames": 78,
+                "bandGames": {
+                    "2600+": 93,
+                    "2400–2599": 218,
+                    "2200–2399": 182,
+                    "Lichess 1600–2200": 78
+                },
+                "deepestMasterPly": 40,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Modern Steinitz Defense · 5...Bd7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6 O-O Bd7",
+                "ply": 10,
+                "masterGames": 451,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 43,
+                    "2400–2599": 140,
+                    "2200–2399": 268,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 30,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 5...d6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 d6",
+                "ply": 10,
+                "masterGames": 398,
+                "clubGames": 40,
+                "bandGames": {
+                    "2600+": 34,
+                    "2400–2599": 169,
+                    "2200–2399": 195,
+                    "Lichess 1600–2200": 40
+                },
+                "deepestMasterPly": 24,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 5...Bc5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 Bc5",
+                "ply": 10,
+                "masterGames": 208,
+                "clubGames": 43,
+                "bandGames": {
+                    "2600+": 42,
+                    "2400–2599": 75,
+                    "2200–2399": 91,
+                    "Lichess 1600–2200": 43
+                },
+                "deepestMasterPly": 22,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Tarrasch Variation · 5...b5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 Nc3 b5",
+                "ply": 10,
+                "masterGames": 206,
+                "clubGames": 23,
+                "bandGames": {
+                    "2600+": 13,
+                    "2400–2599": 60,
+                    "2200–2399": 133,
+                    "Lichess 1600–2200": 23
+                },
+                "deepestMasterPly": 34,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Norwegian Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 b5 Bb3 Na5",
+                "ply": 10,
+                "masterGames": 173,
+                "clubGames": 19,
+                "bandGames": {
+                    "2600+": 6,
+                    "2400–2599": 55,
+                    "2200–2399": 112,
+                    "Lichess 1600–2200": 19
+                },
+                "deepestMasterPly": 37,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Modern Steinitz Defense, Siesta Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6 c3 f5",
+                "ply": 10,
+                "masterGames": 49,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 4,
+                    "2400–2599": 14,
+                    "2200–2399": 31,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 32,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Graz Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 b5 Bb3 Bc5",
+                "ply": 10,
+                "masterGames": 1,
+                "clubGames": 85,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 85
+                },
+                "deepestMasterPly": 10,
+                "named": true
+            },
+            {
+                "name": "Central Countergambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d5",
+                "ply": 10,
+                "masterGames": 0,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Brix Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O g6",
+                "ply": 10,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Møller Variation · 6.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Bc5 c3",
+                "ply": 11,
+                "masterGames": 410,
+                "clubGames": 48,
+                "bandGames": {
+                    "2600+": 79,
+                    "2400–2599": 174,
+                    "2200–2399": 157,
+                    "Lichess 1600–2200": 48
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Steinitz Deferred · 6.Re1",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Re1",
+                "ply": 11,
+                "masterGames": 369,
+                "clubGames": 34,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 110,
+                    "2200–2399": 237,
+                    "Lichess 1600–2200": 34
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 6.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 d6 c3",
+                "ply": 11,
+                "masterGames": 270,
+                "clubGames": 16,
+                "bandGames": {
+                    "2600+": 23,
+                    "2400–2599": 121,
+                    "2200–2399": 126,
+                    "Lichess 1600–2200": 16
+                },
+                "deepestMasterPly": 24,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Modern Steinitz Defense · 6.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6 O-O Bd7 c3",
+                "ply": 11,
+                "masterGames": 260,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 32,
+                    "2400–2599": 76,
+                    "2200–2399": 152,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Duras Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 d6 c4",
+                "ply": 11,
+                "masterGames": 91,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 10,
+                    "2400–2599": 35,
+                    "2200–2399": 46,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 21,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Norwegian Variation, Nightingale Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 b5 Bb3 Na5 Bxf7+",
+                "ply": 11,
+                "masterGames": 1,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 11,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Tartakower Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Nxe4 Qe2",
+                "ply": 11,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5",
+                "ply": 12,
+                "masterGames": 793,
+                "clubGames": 127,
+                "bandGames": {
+                    "2600+": 90,
+                    "2400–2599": 288,
+                    "2200–2399": 415,
+                    "Lichess 1600–2200": 127
+                },
+                "deepestMasterPly": 57,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 6...Bc5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 b5 Bb3 Bc5",
+                "ply": 12,
+                "masterGames": 310,
+                "clubGames": 67,
+                "bandGames": {
+                    "2600+": 39,
+                    "2400–2599": 125,
+                    "2200–2399": 146,
+                    "Lichess 1600–2200": 67
+                },
+                "deepestMasterPly": 33,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Møller Variation · 6...b5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Bc5 c3 b5",
+                "ply": 12,
+                "masterGames": 279,
+                "clubGames": 21,
+                "bandGames": {
+                    "2600+": 55,
+                    "2400–2599": 111,
+                    "2200–2399": 113,
+                    "Lichess 1600–2200": 21
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Arkhangelsk Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bb7",
+                "ply": 12,
+                "masterGames": 237,
+                "clubGames": 16,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 77,
+                    "2200–2399": 138,
+                    "Lichess 1600–2200": 16
+                },
+                "deepestMasterPly": 27,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 6...g6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 d6 c3 g6",
+                "ply": 12,
+                "masterGames": 224,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 21,
+                    "2400–2599": 104,
+                    "2200–2399": 99,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 24,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Modern Steinitz Defense · 6...g6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6 O-O Bd7 c3 g6",
+                "ply": 12,
+                "masterGames": 209,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 23,
+                    "2400–2599": 52,
+                    "2200–2399": 134,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 6...Be7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 b5 Bb3 Be7",
+                "ply": 12,
+                "masterGames": 193,
+                "clubGames": 66,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 52,
+                    "2200–2399": 119,
+                    "Lichess 1600–2200": 66
+                },
+                "deepestMasterPly": 25,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Modern Steinitz Defense, Fianchetto Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 d6 c3 Bd7 d4 g6",
+                "ply": 12,
+                "masterGames": 26,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 8,
+                    "2200–2399": 16,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 17,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 7.a4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 a4",
+                "ply": 13,
+                "masterGames": 391,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 52,
+                    "2400–2599": 158,
+                    "2200–2399": 181,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 7.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 c3",
+                "ply": 13,
+                "masterGames": 341,
+                "clubGames": 65,
+                "bandGames": {
+                    "2600+": 36,
+                    "2400–2599": 111,
+                    "2200–2399": 194,
+                    "Lichess 1600–2200": 65
+                },
+                "deepestMasterPly": 35,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Steinitz Deferred · 7.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Re1 Bd7 c3",
+                "ply": 13,
+                "masterGames": 239,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 18,
+                    "2400–2599": 56,
+                    "2200–2399": 165,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Møller Variation · 7.Bb3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Bc5 c3 b5 Bb3",
+                "ply": 13,
+                "masterGames": 200,
+                "clubGames": 11,
+                "bandGames": {
+                    "2600+": 35,
+                    "2400–2599": 79,
+                    "2200–2399": 86,
+                    "Lichess 1600–2200": 11
+                },
+                "deepestMasterPly": 13,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Anderssen Variation · 7.O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 d6 c3 g6 O-O",
+                "ply": 13,
+                "masterGames": 189,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 19,
+                    "2400–2599": 83,
+                    "2200–2399": 87,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 24,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Wing Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Be7 a4",
+                "ply": 13,
+                "masterGames": 4,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 4,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 13,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 7...Rb8",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 a4 Rb8",
+                "ply": 14,
+                "masterGames": 330,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 46,
+                    "2400–2599": 132,
+                    "2200–2399": 152,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            },
+            {
+                "name": "Steinitz Defense Deferred, Lipnitsky Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Bxc6+ bxc6 d4 Bg4",
+                "ply": 14,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 8.d4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 c3 d6 d4",
+                "ply": 15,
+                "masterGames": 356,
+                "clubGames": 38,
+                "bandGames": {
+                    "2600+": 45,
+                    "2400–2599": 128,
+                    "2200–2399": 183,
+                    "Lichess 1600–2200": 38
+                },
+                "deepestMasterPly": 35,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Steinitz Deferred · 8.d4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Re1 Bd7 c3 g6 d4",
+                "ply": 15,
+                "masterGames": 307,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 27,
+                    "2400–2599": 75,
+                    "2200–2399": 205,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 8.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 a4 Rb8 c3",
+                "ply": 15,
+                "masterGames": 219,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 27,
+                    "2400–2599": 99,
+                    "2200–2399": 93,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 8.a4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 c3 d6 a4",
+                "ply": 15,
+                "masterGames": 162,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 23,
+                    "2400–2599": 53,
+                    "2200–2399": 86,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 26,
+                "named": false
+            },
+            {
+                "name": "Wormald Attack, Grünfeld Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 Qe2 b5 Bb3 Be7 d4 d6 c3 Bg4",
+                "ply": 16,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Noah's Ark Trap (2)",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 b5 Bb3 d6 d4 Nxd4 Nxd4 exd4 Qxd4 c5",
+                "ply": 16,
+                "masterGames": 0,
+                "clubGames": 15,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 15
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Steinitz Deferred · 9.h3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Re1 Bd7 c3 g6 d4 Bg7 h3",
+                "ply": 17,
+                "masterGames": 223,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 23,
+                    "2400–2599": 68,
+                    "2200–2399": 132,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 40,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 9.Be3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 c3 d6 d4 Bb6 Be3",
+                "ply": 17,
+                "masterGames": 164,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 28,
+                    "2400–2599": 61,
+                    "2200–2399": 75,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 34,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 10.a5",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 a4 Rb8 c3 d6 d4 Bb6 a5",
+                "ply": 19,
+                "masterGames": 264,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 28,
+                    "2400–2599": 91,
+                    "2200–2399": 145,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Steinitz Deferred · 10.Bc2",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Re1 Bd7 c3 g6 d4 Bg7 h3 O-O Bc2",
+                "ply": 19,
+                "masterGames": 218,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 22,
+                    "2400–2599": 64,
+                    "2200–2399": 132,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 34,
+                "named": false
+            },
+            {
+                "name": "Steinitz Defense Deferred, Boleslavsky Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O d6 Bxc6+ bxc6 d4 Nxe4 Re1 f5 dxe5 d5 Nc3",
+                "ply": 19,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Rabinovich Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 d6 Ng5 d5 exd5 Nd4 Re1 Bc5 Rxe5+ Kf8",
+                "ply": 20,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Neo-Arkhangelsk Variation · 11.h3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O b5 Bb3 Bc5 a4 Rb8 c3 d6 d4 Bb6 a5 Ba7 h3",
+                "ply": 21,
+                "masterGames": 211,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 20,
+                    "2400–2599": 78,
+                    "2200–2399": 113,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 57,
+                "named": false
+            }
+        ]
+    },
+    {
+        "id": "schliemann",
+        "title": "Schliemann (Jaenisch) Gambit",
+        "positions": 152,
+        "masterGamesAtRoot": 219,
+        "clubGamesAtRoot": 280,
+        "deepestMasterPly": 33,
+        "variations": [
+            {
+                "name": "Schliemann Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5",
+                "ply": 6,
+                "masterGames": 219,
+                "clubGames": 280,
+                "bandGames": {
+                    "2600+": 17,
+                    "2400–2599": 63,
+                    "2200–2399": 139,
+                    "Lichess 1600–2200": 280
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense · 4.d3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 d3",
+                "ply": 7,
+                "masterGames": 163,
+                "clubGames": 91,
+                "bandGames": {
+                    "2600+": 12,
+                    "2400–2599": 45,
+                    "2200–2399": 106,
+                    "Lichess 1600–2200": 91
+                },
+                "deepestMasterPly": 33,
+                "named": false
+            },
+            {
+                "name": "Schliemann Defense, Dyckhoff Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3",
+                "ply": 7,
+                "masterGames": 43,
+                "clubGames": 24,
+                "bandGames": {
+                    "2600+": 5,
+                    "2400–2599": 15,
+                    "2200–2399": 23,
+                    "Lichess 1600–2200": 24
+                },
+                "deepestMasterPly": 23,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Schönemann Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 d4",
+                "ply": 7,
+                "masterGames": 7,
+                "clubGames": 14,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 3,
+                    "2200–2399": 4,
+                    "Lichess 1600–2200": 14
+                },
+                "deepestMasterPly": 12,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Jaenisch Gambit Accepted",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 exf5",
+                "ply": 7,
+                "masterGames": 1,
+                "clubGames": 62,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 62
+                },
+                "deepestMasterPly": 7,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Schliemann Defense Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5",
+                "ply": 8,
+                "masterGames": 164,
+                "clubGames": 17,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 33,
+                    "2200–2399": 128,
+                    "Lichess 1600–2200": 17
+                },
+                "deepestMasterPly": 33,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Schliemann Defense Deferred, Jaenisch Gambit Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5",
+                "ply": 9,
+                "masterGames": 5,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 4,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 13,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Tartakower Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6",
+                "ply": 10,
+                "masterGames": 34,
+                "clubGames": 4,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 9,
+                    "2200–2399": 22,
+                    "Lichess 1600–2200": 4
+                },
+                "deepestMasterPly": 23,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Kostić Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Be7",
+                "ply": 10,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Classical Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5",
+                "ply": 14,
+                "masterGames": 2,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 14,
+                "named": true
+            },
+            {
+                "name": "Schliemann Defense, Möhring Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5",
+                "ply": 14,
+                "masterGames": 2,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 2,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 14,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "classical",
+        "title": "Classical Defence",
+        "positions": 282,
+        "masterGamesAtRoot": 142,
+        "clubGamesAtRoot": 1153,
+        "deepestMasterPly": 37,
+        "variations": [
+            {
+                "name": "Classical Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5",
+                "ply": 6,
+                "masterGames": 142,
+                "clubGames": 1153,
+                "bandGames": {
+                    "2600+": 27,
+                    "2400–2599": 61,
+                    "2200–2399": 54,
+                    "Lichess 1600–2200": 1153
+                },
+                "deepestMasterPly": 21,
+                "named": true
+            },
+            {
+                "name": "Classical Variation, Central Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 c3",
+                "ply": 7,
+                "masterGames": 87,
+                "clubGames": 335,
+                "bandGames": {
+                    "2600+": 19,
+                    "2400–2599": 40,
+                    "2200–2399": 28,
+                    "Lichess 1600–2200": 335
+                },
+                "deepestMasterPly": 21,
+                "named": true
+            },
+            {
+                "name": "Classical Variation, Spanish Wing Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 b4",
+                "ply": 7,
+                "masterGames": 0,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Classical Defense Deferred",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Bc5",
+                "ply": 8,
+                "masterGames": 530,
+                "clubGames": 138,
+                "bandGames": {
+                    "2600+": 50,
+                    "2400–2599": 178,
+                    "2200–2399": 302,
+                    "Lichess 1600–2200": 138
+                },
+                "deepestMasterPly": 37,
+                "named": true
+            },
+            {
+                "name": "Classical Variation, Cordel Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 c3 f5",
+                "ply": 8,
+                "masterGames": 4,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 4,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 10,
+                "named": true
+            },
+            {
+                "name": "Classical Defense, Boden Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 c3 Qe7",
+                "ply": 8,
+                "masterGames": 1,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 8,
+                "named": true
+            },
+            {
+                "name": "Classical Variation, Charousek Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 c3 Bb6",
+                "ply": 8,
+                "masterGames": 1,
+                "clubGames": 6,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 6
+                },
+                "deepestMasterPly": 8,
+                "named": true
+            },
+            {
+                "name": "Classical Variation, Konikowski Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 c3 d5",
+                "ply": 8,
+                "masterGames": 0,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Classical Defense Deferred · 5.c3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Bc5 c3",
+                "ply": 9,
+                "masterGames": 304,
+                "clubGames": 52,
+                "bandGames": {
+                    "2600+": 36,
+                    "2400–2599": 114,
+                    "2200–2399": 154,
+                    "Lichess 1600–2200": 52
+                },
+                "deepestMasterPly": 37,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Classical Defense Deferred · 5.O-O",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Bc5 O-O",
+                "ply": 9,
+                "masterGames": 191,
+                "clubGames": 60,
+                "bandGames": {
+                    "2600+": 11,
+                    "2400–2599": 55,
+                    "2200–2399": 125,
+                    "Lichess 1600–2200": 60
+                },
+                "deepestMasterPly": 31,
+                "named": false
+            },
+            {
+                "name": "Classical Variation, Zukertort Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Bc5 c3",
+                "ply": 9,
+                "masterGames": 11,
+                "clubGames": 104,
+                "bandGames": {
+                    "2600+": 3,
+                    "2400–2599": 1,
+                    "2200–2399": 7,
+                    "Lichess 1600–2200": 104
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            },
+            {
+                "name": "Classical Defense, Zaitsev Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bc5 O-O Nd4 b4",
+                "ply": 9,
+                "masterGames": 1,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 9,
+                "named": true
+            },
+            {
+                "name": "Morphy Defense, Classical Defense Deferred · 5...Nge7",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Bc5 O-O Nge7",
+                "ply": 10,
+                "masterGames": 170,
+                "clubGames": 8,
+                "bandGames": {
+                    "2600+": 10,
+                    "2400–2599": 44,
+                    "2200–2399": 116,
+                    "Lichess 1600–2200": 8
+                },
+                "deepestMasterPly": 31,
+                "named": false
+            },
+            {
+                "name": "Morphy Defense, Classical Defense Deferred · 6.d4",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Bc5 c3 Nge7 d4",
+                "ply": 11,
+                "masterGames": 156,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 16,
+                    "2400–2599": 64,
+                    "2200–2399": 76,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 32,
+                "named": false
+            },
+            {
+                "name": "Classical Defense, Benelux Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Bc5 c3 O-O d4 Bb6",
+                "ply": 12,
+                "masterGames": 18,
+                "clubGames": 7,
+                "bandGames": {
+                    "2600+": 4,
+                    "2400–2599": 6,
+                    "2200–2399": 8,
+                    "Lichess 1600–2200": 7
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            },
+            {
+                "name": "Classical Variation, Modern Main Line",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nf6 O-O Bc5 c3 O-O d4 Bb6 Bg5",
+                "ply": 13,
+                "masterGames": 6,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 5,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 16,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "steinitz",
+        "title": "Old Steinitz Defence",
+        "positions": 16,
+        "masterGamesAtRoot": 10,
+        "clubGamesAtRoot": 2251,
+        "deepestMasterPly": 11,
+        "variations": [
+            {
+                "name": "Steinitz Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d6",
+                "ply": 6,
+                "masterGames": 10,
+                "clubGames": 2251,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 2,
+                    "2200–2399": 7,
+                    "Lichess 1600–2200": 2251
+                },
+                "deepestMasterPly": 11,
+                "named": true
+            },
+            {
+                "name": "Steinitz Defense, Semi-Duras Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d6 d4 Bd7 c4",
+                "ply": 9,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Steinitz Defense, Center Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d6 d4 exd4 O-O",
+                "ply": 9,
+                "masterGames": 0,
+                "clubGames": 10,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 10
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Steinitz Defense, Nimzowitsch Attack",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d6 d4 Bd7 Nc3 Nf6 Bxc6",
+                "ply": 11,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "other",
+        "title": "Other third moves for Black",
+        "positions": 225,
+        "masterGamesAtRoot": 17955,
+        "clubGamesAtRoot": 8899,
+        "deepestMasterPly": 80,
+        "variations": [
+            {
+                "name": "Ruy Lopez",
+                "path": "e4 e5 Nf3 Nc6 Bb5",
+                "ply": 5,
+                "masterGames": 17958,
+                "clubGames": 8905,
+                "bandGames": {
+                    "2600+": 2880,
+                    "2400–2599": 6493,
+                    "2200–2399": 8585,
+                    "Lichess 1600–2200": 8905
+                },
+                "deepestMasterPly": 80,
+                "named": true
+            },
+            {
+                "name": "Cozio Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nge7",
+                "ply": 6,
+                "masterGames": 381,
+                "clubGames": 525,
+                "bandGames": {
+                    "2600+": 30,
+                    "2400–2599": 131,
+                    "2200–2399": 220,
+                    "Lichess 1600–2200": 525
+                },
+                "deepestMasterPly": 28,
+                "named": true
+            },
+            {
+                "name": "Fianchetto Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 g6",
+                "ply": 6,
+                "masterGames": 252,
+                "clubGames": 20,
+                "bandGames": {
+                    "2600+": 13,
+                    "2400–2599": 65,
+                    "2200–2399": 174,
+                    "Lichess 1600–2200": 20
+                },
+                "deepestMasterPly": 24,
+                "named": true
+            },
+            {
+                "name": "Bird Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nd4",
+                "ply": 6,
+                "masterGames": 24,
+                "clubGames": 446,
+                "bandGames": {
+                    "2600+": 5,
+                    "2400–2599": 4,
+                    "2200–2399": 15,
+                    "Lichess 1600–2200": 446
+                },
+                "deepestMasterPly": 13,
+                "named": true
+            },
+            {
+                "name": "Alapin Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bb4",
+                "ply": 6,
+                "masterGames": 6,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 2,
+                    "2400–2599": 2,
+                    "2200–2399": 2,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 9,
+                "named": true
+            },
+            {
+                "name": "Bulgarian Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 a5",
+                "ply": 6,
+                "masterGames": 1,
+                "clubGames": 3,
+                "bandGames": {
+                    "2600+": 1,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 3
+                },
+                "deepestMasterPly": 6,
+                "named": true
+            },
+            {
+                "name": "Vinogradov Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Qe7",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 25,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 25
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Lucena Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Be7",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 17,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 17
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Rotary-Albany Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 b6",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 2,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 2
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Spanish Countergambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d5",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 15,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 15
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Nürnberg Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 f6",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 73,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 73
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Brentano Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 g5",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Pollock Defense",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Na5",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Retreat Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nb8",
+                "ply": 6,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Cozio Defense · 4.Nc3",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nge7 Nc3",
+                "ply": 7,
+                "masterGames": 176,
+                "clubGames": 63,
+                "bandGames": {
+                    "2600+": 19,
+                    "2400–2599": 64,
+                    "2200–2399": 93,
+                    "Lichess 1600–2200": 63
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Cozio Defense · 4...Ng6",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nge7 Nc3 Ng6",
+                "ply": 8,
+                "masterGames": 152,
+                "clubGames": 5,
+                "bandGames": {
+                    "2600+": 18,
+                    "2400–2599": 61,
+                    "2200–2399": 73,
+                    "Lichess 1600–2200": 5
+                },
+                "deepestMasterPly": 28,
+                "named": false
+            },
+            {
+                "name": "Cozio Defense, Paulsen Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nge7 Nc3 g6",
+                "ply": 8,
+                "masterGames": 9,
+                "clubGames": 9,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 1,
+                    "2200–2399": 8,
+                    "Lichess 1600–2200": 9
+                },
+                "deepestMasterPly": 18,
+                "named": true
+            },
+            {
+                "name": "Fianchetto Defense, Kevitz Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 g6 c3 f5",
+                "ply": 8,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Spanish Countergambit, Harding Countergambit, Fricke Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d5 Nxe5 Qg5 O-O",
+                "ply": 9,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Spanish Countergambit, Harding Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 d5 Nxe5 Qg5 Nxc6",
+                "ply": 9,
+                "masterGames": 0,
+                "clubGames": 1,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 1
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Bird Variation, Paulsen Variation",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Nd4 Nxd4 exd4 O-O Ne7",
+                "ply": 10,
+                "masterGames": 3,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 2,
+                    "2200–2399": 1,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 10,
+                "named": true
+            },
+            {
+                "name": "Alapin Defense, Alapin Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 Bb4 c3 Ba5 Bxc6 dxc6",
+                "ply": 10,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            },
+            {
+                "name": "Cozio Defense, Tartakower Gambit",
+                "path": "e4 e5 Nf3 Nc6 Bb5 g6 d4 exd4 Nxd4 Bg7 Be3 Nge7 Nc3 O-O Qd2 d5",
+                "ply": 16,
+                "masterGames": 0,
+                "clubGames": 0,
+                "bandGames": {
+                    "2600+": 0,
+                    "2400–2599": 0,
+                    "2200–2399": 0,
+                    "Lichess 1600–2200": 0
+                },
+                "deepestMasterPly": 0,
+                "named": true
+            }
+        ]
+    },
+    {
+        "id": "firouzja-carlsen-2020",
+        "title": "Firouzja–Carlsen, Tata Steel 2020",
+        "positions": 0,
+        "masterGamesAtRoot": 4148,
+        "clubGamesAtRoot": 1272,
+        "deepestMasterPly": 0,
+        "variations": []
+    }
+]

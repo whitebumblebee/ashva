@@ -1,0 +1,585 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "Other main systems after Black asks the bishop: modern active bishop lines, the solid Steinitz setups, early protecting moves for White and less common knight moves."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Morphy Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black asks the bishop to decide at once. Most strong players retreat it to keep the Spanish pressure; the exchange gives the Exchange Variation."
+    }
+   ]
+  },
+  "Morphy Defense · 4.Ba4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White keeps the pin by retreating the bishop rather than exchanging. This is the main move of the Ruy Lopez and leads to most of the famous systems."
+    }
+   ]
+  },
+  "Morphy Defense · 4...Nf6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the knight and attacks the centre pawn, the main position of the Ruy Lopez. White most often castles, letting Black choose between the open and closed systems."
+    }
+   ]
+  },
+  "Morphy Defense, Modern Steinitz Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with a pawn before developing the king's knight, a solid setup where Black can choose between holding and releasing the centre."
+    }
+   ]
+  },
+  "Morphy Defense, Cozio Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the king's knight to a modest square to keep the f-pawn free and avoid pins. Unusual but playable."
+    }
+   ]
+  },
+  "Morphy Defense, Caro Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black gains queenside space early and drives the bishop back, at the cost of slightly loosening the queenside."
+    }
+   ]
+  },
+  "Morphy Defense, Fianchetto Defense Deferred": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black fianchettoes the dark-squared bishop after questioning the white bishop, aiming for a solid setup that eyes the centre from a distance."
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with a pawn before castling, a calm modern setup that keeps many options and avoids early forcing play."
+    }
+   ]
+  },
+  "Morphy Defense, Tarrasch Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White develops the queen's knight early to protect the centre pawn, keeping the position simple and flexible."
+    }
+   ]
+  },
+  "Morphy Defense, Cozio Defense · 5.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Against the Cozio setup White prepares a big centre with pawns. Black usually fianchettoes and tries to hold the centre with pieces."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners pinned the knight with Bg4 and castled long with O-O-O.",
+     "moves": [
+      "Bg4",
+      "O-O-O"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Cozio Defense · 5.O-O": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White castles first and keeps central options. Black continues with a kingside fianchetto or a knight reroute to the kingside."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners closed the centre with d5 to cramp Black's pieces.",
+     "moves": [
+      "d5"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Morphy Defense, Mackenzie Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strikes in the centre at once, offering open lines before castling. Black can take the pawn and must be careful about the e-file."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners struck back in the centre with d5.",
+     "moves": [
+      "d5"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Wormald Attack": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with the queen and keeps flexible options for the rook."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners chased the bishop with b5, traded it with Na5 and put the bishop on Bb7.",
+     "moves": [
+      "b5",
+      "Na5",
+      "Bb7"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Bayreuth Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White exchanges the bishop one move later than in the Exchange Variation, after Black has developed the knight. Black recaptures and has easy development."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners castled long with O-O-O, pinned with Bg4 and stormed with h5 and g5 against White's king.",
+     "moves": [
+      "O-O-O",
+      "Bg4",
+      "h5",
+      "g5"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Steinitz Deferred": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with a pawn after the knight is out, a solid but slightly passive system that often leads to a kingside fianchetto."
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 5...b5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Against the quiet protecting move Black drives the bishop to the long diagonal first, keeping options for the dark-squared bishop."
+    }
+   ]
+  },
+  "Morphy Defense, Møller Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the dark-squared bishop to its most active diagonal before castling, inviting White to build a big centre with gain of time."
+    }
+   ]
+  },
+  "Morphy Defense, Modern Steinitz Defense · 5...Bd7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the knight with the bishop, breaking the pin and preparing a solid kingside development. White gets a free hand in the centre."
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 5...d6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the centre with a pawn and keeps the bishop flexible, aiming for a compact kingside development."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners struck at White's centre with the f-pawn advance f5.",
+     "moves": [
+      "f5"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 5...Bc5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the bishop actively against the quiet setup, aiming at White's kingside. Play is slow and positional."
+    }
+   ]
+  },
+  "Morphy Defense, Tarrasch Variation · 5...b5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Against the knight development Black drives the bishop away first, gaining queenside space before deciding on the centre."
+    }
+   ]
+  },
+  "Morphy Defense, Norwegian Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black chases the bishop and offers to trade knight for bishop at once. It is a concrete line where White can try to trap or exploit Black's loose queenside."
+    }
+   ]
+  },
+  "Morphy Defense, Modern Steinitz Defense, Siesta Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black counter-attacks in the centre with the f-pawn, a sharp idea that opens lines towards White's king at the cost of loosening Black's own."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners exploited the light squares weakened by Black's f-pawn: the bishop returned to Bb3 and the queen came to Qb3 or Qd5.",
+     "moves": [
+      "Bb3",
+      "Qb3",
+      "Qd5"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Morphy Defense, Møller Variation · 6.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares a central pawn advance that will hit Black's bishop. Black usually expands on the queenside first to keep the bishop active."
+    }
+   ]
+  },
+  "Morphy Defense, Steinitz Deferred · 6.Re1": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with the rook against the solid deferred Steinitz setup, preparing a central advance with the pawns."
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 6.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White builds a solid central pawn structure and keeps a retreat for the bishop. Black often fianchettoes."
+    }
+   ]
+  },
+  "Morphy Defense, Modern Steinitz Defense · 6.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares a central advance against the solid modern Steinitz setup, with a comfortable space advantage."
+    }
+   ]
+  },
+  "Morphy Defense, Duras Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White grips the centre with pawns, preventing Black's central break. A slow, space-gaining plan."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners exchanged with Bxc6 and prepared d4 with b3 to open the centre.",
+     "moves": [
+      "Bxc6",
+      "b3",
+      "d4"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners occupied the hole in White's camp with Nd4, which White's pawns can no longer drive away.",
+     "moves": [
+      "Nd4"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the dark-squared bishop actively after gaining queenside space, aiming at White's kingside and the centre. Sharp, modern and very popular among strong players."
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 6...Bc5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the bishop to its most active diagonal after gaining queenside space, a lively modern setup."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners pinned the knight with Bg5 and kept the pin with Bh4, retreating to Bg3 when needed.",
+     "moves": [
+      "Bg5",
+      "Bh4",
+      "Bg3"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Morphy Defense, Møller Variation · 6...b5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black gains queenside space before White's central advance can hit the bishop, keeping the bishop on its active diagonal."
+    }
+   ]
+  },
+  "Morphy Defense, Arkhangelsk Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black puts the light-squared bishop on the long diagonal to pressure White's centre pawn, often sacrificing a pawn for activity."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners blunted Black's long-diagonal bishop by closing the centre with d5, keeping the bishop on Bc2.",
+     "moves": [
+      "d5",
+      "Bc2"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Morphy Defense, Anderssen Variation · 6...g6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black fianchettoes the dark-squared bishop to protect the king and pressure the centre from a distance."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners played c5 and the f-pawn advance f5.",
+     "moves": [
+      "c5",
+      "f5"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Modern Steinitz Defense · 6...g6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black fianchettoes in the modern Steinitz, a solid setup that holds the centre and waits for White to commit."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners prepared the f-pawn advance f5 with the queen on Qe8.",
+     "moves": [
+      "f5",
+      "Qe8"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 6...Be7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the bishop modestly and prepares to castle, choosing a solid closed-style setup against the quiet move."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners regrouped with Nd7 and Bf8, a Breyer-style setup.",
+     "moves": [
+      "Nd7",
+      "Bf8"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Modern Steinitz Defense, Fianchetto Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black fianchettoes after White has built the full pawn centre, aiming to pressure it from the long diagonal."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 7.a4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strikes at Black's queenside pawn chain at once, the main test of the active bishop setup. Black usually protects the pawn with the rook."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 7.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares a central pawn advance that will drive back Black's active bishop. Black supports the bishop with a pawn first."
+    }
+   ]
+  },
+  "Morphy Defense, Steinitz Deferred · 7.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares a full pawn centre against Black's solid setup. Black often fianchettoes next."
+    }
+   ]
+  },
+  "Morphy Defense, Møller Variation · 7.Bb3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "The bishop retreats to its best diagonal. Black now chooses between supporting the bishop with a pawn and a sharper central strike."
+    }
+   ]
+  },
+  "Morphy Defense, Anderssen Variation · 7.O-O": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White castles in the quiet structure; both sides prepare slow manoeuvres before any central break."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners played c5 and the f-pawn advance f5.",
+     "moves": [
+      "c5",
+      "f5"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 7...Rb8": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the queenside pawn with the rook, keeping the active bishop. White continues with central or queenside pressure."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 8.d4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White advances in the centre, hitting the bishop. Black retreats it to a protected square on the diagonal and keeps pressure on the centre."
+    }
+   ]
+  },
+  "Morphy Defense, Steinitz Deferred · 8.d4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White builds the full pawn centre. Black's fianchetto bishop will pressure it while Black keeps the solid centre pawn."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 8.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares a central advance while the queenside tension remains. Black supports the bishop with a pawn next."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 8.a4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White combines the queenside strike with the central preparation, asking Black's queenside pawns to commit."
+    }
+   ]
+  },
+  "Morphy Defense, Steinitz Deferred · 9.h3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prevents any pin and keeps the full centre. A slow maneuvering battle follows, very similar to the classical closed structures."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 9.Be3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White develops the bishop to oppose Black's active bishop, aiming to exchange it and reduce Black's pressure on the centre."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 10.a5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White pushes the a-pawn to drive Black's bishop off its diagonal and gain queenside space."
+    }
+   ]
+  },
+  "Morphy Defense, Steinitz Deferred · 10.Bc2": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White retreats the bishop to support the centre and protect the king's diagonal. A typical slow closed-style position."
+    }
+   ]
+  },
+  "Morphy Defense, Neo-Arkhangelsk Variation · 11.h3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prevents the bishop pin and keeps all options. Black's bishop is awkwardly placed but still eyes White's kingside."
+    }
+   ]
+  }
+ }
+}

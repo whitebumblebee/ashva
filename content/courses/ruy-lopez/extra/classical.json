@@ -1,0 +1,4794 @@
+[
+    {
+        "id": "n3e8db43daed3",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n79b1cff4a7ce",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n780cc290e026",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n02f62561f7bf",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n09cd8a667eb7",
+        "opening": "Ruy Lopez",
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n3e55c5d572e4",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 27,
+            "2400–2599": 61,
+            "2200–2399": 54,
+            "Lichess 1600–2200": 1153
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nb25c8eec9490",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1577,
+            "2400–2599": 4439,
+            "2200–2399": 6748,
+            "Lichess 1600–2200": 2427
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb412f5989686",
+        "opening": "Ruy Lopez: Berlin Defense",
+        "bands": {
+            "2600+": 1203,
+            "2400–2599": 1723,
+            "2200–2399": 1224,
+            "Lichess 1600–2200": 1272
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e2f9f532f1e",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 205
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n61ed8cb3d921",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n775801fc129e",
+        "opening": "Ruy Lopez: Berlin Defense",
+        "bands": {
+            "2600+": 630,
+            "2400–2599": 937,
+            "2200–2399": 679,
+            "Lichess 1600–2200": 612
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n82a6bb9be5ba",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 18,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 468
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc7be480e2b35",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 19,
+            "2400–2599": 40,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 335
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncd7aca31ac91",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1528,
+            "2400–2599": 4310,
+            "2200–2399": 6460,
+            "Lichess 1600–2200": 1708
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n03114e24a773",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 100
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n057b0ba1b042",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 219
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n135efaf467a1",
+        "opening": "Ruy Lopez: Classical Variation, Konikowski Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n60aeccaf6b1c",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n648eeef27c04",
+        "opening": "Ruy Lopez: Classical Defense, Boden Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n676eb3678ea7",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 107
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n85dfd4abe257",
+        "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "na74f4d94d38f",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nba939c4fceef",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 38,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 76
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbd900180fe89",
+        "opening": "Ruy Lopez: Berlin Defense, Beverwijk Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 2,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 175
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nc13b5a4c8802",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 54
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "nca573765cde2",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 11,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nedcd742f2396",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 55
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "nf6e5aab66a76",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 50,
+            "2400–2599": 178,
+            "2200–2399": 302,
+            "Lichess 1600–2200": 138
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nf8141ab04d9c",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n27a315ff8484",
+        "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 21
+        },
+        "transposesTo": "nd294973009eb",
+        "source": "master"
+    },
+    {
+        "id": "n2a2f0f450910",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 11,
+            "2400–2599": 22,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 27
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n300b131c83c9",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n372b1ec20a5e",
+        "opening": "Ruy Lopez: Classical Defense, Boden Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4ca7f9ca52c3",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n504c9ae48db2",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5463942c508a",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 116
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7be4620a72dd",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 36,
+            "2400–2599": 114,
+            "2200–2399": 154,
+            "Lichess 1600–2200": 52
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n889fe158bdf7",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f28202be5c1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 11,
+            "2400–2599": 55,
+            "2200–2399": 125,
+            "Lichess 1600–2200": 60
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naba1d282a9a8",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb9b0dfcb5428",
+        "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nba7f36297a07",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 21
+        },
+        "transposesTo": "n65437c653445",
+        "source": "master"
+    },
+    {
+        "id": "nc56cebd523bf",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nca363a3d496c",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 9,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nca5dc3a33fc2",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd294973009eb",
+        "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 104
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne94c298816a3",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf593e8c7613e",
+        "opening": "Ruy Lopez: Classical Variation, Konikowski Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0df061661084",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n200a1c76b64e",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 44
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n298b583e691d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 33,
+            "2400–2599": 108,
+            "2200–2399": 146,
+            "Lichess 1600–2200": 8
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n32fa099dc718",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n41fb3c42bab0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 44,
+            "2200–2399": 116,
+            "Lichess 1600–2200": 8
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n50230e6ce274",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n655b7e994454",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n75c0a0c945e5",
+        "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 6,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 45
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n77c432b7e3d1",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 21,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 23
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8cba4ad2d637",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9238cc2d3649",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9317900a07aa",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb4d65075290a",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 9,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb5ce17dd7420",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 25
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndd94fcaadce2",
+        "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndf523d8e6997",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n027e955c2f9d",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 30
+        },
+        "transposesTo": "n040b1ff8ddf1",
+        "source": "master"
+    },
+    {
+        "id": "n040b1ff8ddf1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 11
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n06e5e1f5e181",
+        "opening": "Ruy Lopez: Classical Variation, Zukertort Gambit",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 21
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1082b8de501d",
+        "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n37bc85f206fc",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n401e7b997c2b",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n485ce5010b1d",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n60a91078a09c",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7f9b2ecbf423",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 32,
+            "2200–2399": 85,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": "n9b755471ace4",
+        "source": "master"
+    },
+    {
+        "id": "n9334dd898ebe",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 64,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n973b13fca4f2",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 9,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9b755471ace4",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 44,
+            "2200–2399": 66,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9f096bf5e0fc",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nad9ff64eab38",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc3722dc24724",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 19,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd56dff07697c",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne53813161837",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf9351ac05360",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n03789ece4969",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 17,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n11bb867daffa",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n16ab998e6e70",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n19b8e9b1c609",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 37,
+            "2200–2399": 77,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1b91968b8e40",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n37fde65cca0b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 20,
+            "2400–2599": 37,
+            "2200–2399": 74,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3965109afa98",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n449f20ade99e",
+        "opening": "Ruy Lopez: Classical Defense, Benelux Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7f6b56f47c7c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 64,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n90e53a179939",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n95478a109754",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 9,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n99970aa7eef9",
+        "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na2754fb14355",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb9e7fe31b153",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd67caed2952d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndbc042ca0785",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n07fa3915ed5d",
+        "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n17271a42ed09",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 63,
+            "2200–2399": 73,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2ed8984b2071",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 12,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n33f2eb111446",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 20,
+            "2400–2599": 37,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n519d6954cf87",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n546e673309e6",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5a724bbde6b3",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n944a04692b44",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na42a338c2abc",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na985a2b3818b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb6b8c91063f3",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc14944b5dea5",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc2317a4e42cc",
+        "opening": "Ruy Lopez: Classical Variation, Charousek Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne809af55ff28",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf8465c2965e7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 39,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n10f8480d37d1",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n164c16acf226",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 39,
+            "2200–2399": 75,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n55795d29cc3b",
+        "source": "master"
+    },
+    {
+        "id": "n55795d29cc3b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 20,
+            "2400–2599": 37,
+            "2200–2399": 76,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n70d1e556eec8",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7fb3d8a7341f",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n961aa0c4ec47",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n99f6054d0e38",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9d3a41761273",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 62,
+            "2200–2399": 73,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nadf2c85347bc",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 12,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb34cb59dad4c",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne0b2ef0589f2",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nea2b01ae8d25",
+        "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf4282fbd12cf",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfeb3242f9a35",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n00e3a1d95ea2",
+        "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n073258ee6b77",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 14,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n12c2509aa2be",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1922734098a1",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e455409f854",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3bc4fd2b5e66",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 5,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6dade4863384",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7625e8c45d73",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n79075d1ce6f5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7bf05a65e732",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 44,
+            "2200–2399": 90,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8ac44b3a805b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 21,
+            "2200–2399": 37,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9276ecb02edb",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc4a387ab2a4e",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nccd1017b7aba",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 41,
+            "2200–2399": 35,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd73838428871",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "necba3ff2a313",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n04c5c193a745",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 44,
+            "2200–2399": 90,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n09641cf84541",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n245cea11add0",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n27548d6d0d6a",
+        "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n602ffc177dd9",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 21,
+            "2200–2399": 37,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n90ce0477bb70",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 14,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n997377c760b8",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 9,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9c8050ab0b4c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc271c3154631",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 5,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc79e919b7140",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 41,
+            "2200–2399": 35,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc88be3e56651",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncee80264a0dc",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nead8a4e5dcbb",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neb0501ae3721",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neb5885634718",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf9bfa89cf734",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0058c1f2ad93",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n140684b90a2c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 30,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3a2f7e5e054d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 14,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3ec540e45410",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n479ee75538a7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 44,
+            "2200–2399": 90,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5f6d0921ba09",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6802befe9498",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n70fbed50cd8d",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n86104d43d545",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8b5dd24e47a5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8e129b224e7b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 4,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naf83207ed220",
+        "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb2081dc167a1",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncaf1e348d097",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 11,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncd48460a60ff",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd7157265552e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 11,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne754b299514f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n5f6d0921ba09",
+        "source": "master"
+    },
+    {
+        "id": "nfa69b7bfa1f8",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe7b90848e12",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0c99593d58e6",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 30,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1127dbe36c0d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 11,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n320e7c20c5e9",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 43,
+            "2200–2399": 90,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3477b18a96ee",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n43cfea2ae1e8",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5452ac0575e4",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 8,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n786b775d4852",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n79791c70fdd9",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7a4fda19d76a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 14,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n840768a6680b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 3,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n87cc2662ad60",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na9acbd219e4c",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nae555e12f3ce",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc221e6df17d9",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc8f4113989fd",
+        "opening": "Ruy Lopez: Classical Variation, Modern Main Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncbad7be79f54",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nccc98401b7d1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncf55e41aadbc",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfd2f2d83212e",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0a8e39b132d0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n16192c093ba4",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1f53ee1af9c4",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 30,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2575651e9e8e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 9,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n303c5b3ffeec",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4ac35577411f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n560dc09709a7",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n56a17930fe11",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n595dcc3f76d7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n60ba9cc22e44",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n75a96cb80ea3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 8,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n85a3ec5889fa",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n91ae4d588dcc",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 11,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na3a7b199b237",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 8,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naba90ce597d7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nabd64378c61d",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "naddd7c48d1b5",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndc41f5b8d7a0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nef7a49e6fe98",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 26,
+            "2200–2399": 49,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf6d99d321b70",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 14,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfc3096f15a22",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n00d9ebb7607f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 23,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n082259349b14",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n37c0f596c110",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n40e453f03f1e",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4b5554bfcc8d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 5,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4c2fc23eab87",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56632c476cbb",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 7,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5eaee919ab25",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5fc4bb824d51",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n60a989727d93",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n76ae9560911f",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n82e992e53005",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 10,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8a6c2d75a684",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 8,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8c21def52e0b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94595be98420",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9da5b598f58e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na01348469864",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbf24e15aa11c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 14,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc41fe70826e0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc6b8ee06ee05",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndb2d78594249",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 7,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndea8ba5edfab",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nec8ff492c190",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nffa1695f4d13",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n049a90495b33",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 12,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0c8686e2a422",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 10,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n33b73dc1a1a5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n40315e54a5f1",
+        "source": "master"
+    },
+    {
+        "id": "n355aa3804570",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 7,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3c065ed5eef3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n40315e54a5f1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n43504bb2a838",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4869ec73e518",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56f6081de5b6",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5947b9b65c5c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9e8431e8dfd0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9fbdd93412d6",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 5,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n049a90495b33",
+        "source": "master"
+    },
+    {
+        "id": "na1480245e4c8",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naea5cc3be900",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc5d5a7666f27",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncf83d873ffe7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd33a1fd52c26",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd4c89578d88e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd62f635e79b7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne58590c87959",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne87d3148e250",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne983905574cf",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neb0a38610b23",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nedd5099363cb",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nffd11f7b29fc",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n01a44bc563d9",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n11ebe638f2dc",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1f5c184de361",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n25912f6e2c95",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2a75d869d46b",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3078fc59cb79",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3ff1fbe8bbd6",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4bf7e7e30f7b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n59f7a3ad93c5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 7,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n60cc3e0ad228",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6c7289732a3f",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6ff28f6e507a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 16,
+            "2200–2399": 31,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n753bbdf66f11",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n76f6c9606eb5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8696df046f06",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n86a0693f9a94",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n92c450e0cb1a",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9cb422c68cca",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb507e191d31c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd552f7462556",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd8fa99c106f4",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd924d8c2a250",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n6ff28f6e507a",
+        "source": "master"
+    },
+    {
+        "id": "ne381fd5d73aa",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfdb010b5089d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n059825a4f5bd",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0dcd2fe66648",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n11f55f1b4527",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n180036a369e3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e831e3946e8",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n22e3e9ae6dbd",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 15,
+            "2200–2399": 30,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2851943cac56",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3a8434512c33",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 16,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n606f5a1e800a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n63918eae99cc",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n77eb803328bd",
+        "opening": "Ruy Lopez: Classical Variation, Spanish Wing Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n794181f5e129",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8276835893c5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n85cfe969b90a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8ae507e96746",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n90296b4a62bb",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na2302f902ed2",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naa1ad9e10b00",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc45a1311246f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne995aefb2979",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ned1fc842e4a4",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf9a3da1d0fdf",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf9e13b880e7f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n02fa33f99af2",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0a06bd8658a3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0e730f95e77b",
+        "opening": "Ruy Lopez: Classical Variation, Central Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n106c03a5144a",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3f6034b86e43",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4e3bc9003b06",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n52027b07f49b",
+        "opening": "Ruy Lopez: Classical Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n535849c65d96",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n702e464aea4f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 7,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7b4d8a693f96",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "nf8066cb22132",
+        "source": "master"
+    },
+    {
+        "id": "n846221988bce",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n88912af48e5b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9614ed1512d1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na89fadd55fed",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbe67dc3f505d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 15,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc0bdd83af411",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc755731f6bde",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 7,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd0dfef997a9e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd774929e3e0a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndb3cf60b4558",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf1a2db6eddb5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf8066cb22132",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n04920b9b7d5a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n080a8b67a532",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1b2af056f8a2",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1da6dea846dc",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n29412d71af66",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2ddf1158cd1b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3a538e4b6b6c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4e4abcc4c53b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8140bd5cec9c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8c5e41796065",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 14,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9de3a76be263",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na6a81d65d436",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na9cfcfd7c96f",
+        "opening": "Ruy Lopez: Classical Defense, Zaitsev Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncaefa8b20a5b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 5,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd2ab54bfa718",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne7117532eaaa",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf1603a876f82",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf84dd56f3451",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfd256bb7d109",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n11759267fe2d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1482080d5423",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1de6724bda91",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2618f768eb61",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n27d5ebf8a622",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n29ebd046fdd5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n408cc289b242",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n74833ae89a6b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7a95d908baef",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7fdcf18d4932",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8e08bd2f7b98",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n97fb646e317b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naa03505c4b19",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb261d637e537",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 12,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb5774856d516",
+        "opening": "Ruy Lopez: Classical Variation, Cordel Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb8ebe17c8ff1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc70cd56c0c7e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0486a2a8b3c7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0a01de432ff7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0d2b7bf0baa3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n34440fbe072a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3d7b344aa5c9",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n50432e91a938",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n52413f8c9013",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n769cf1f391c3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n88cb57065f16",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9525b0061a0f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na0070d86f93d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nabb3aa3f0009",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb06ad42322b5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb6003fbfb5ae",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 8,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne135c5859fd2",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0deec0424ef6",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2626cdedeb52",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n27e56c41f441",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3230bca5b878",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3917e7e2afcb",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3cc035e29917",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n486f6bea1bb7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n60cbca43bc88",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7eb4f8b77942",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n906fd2487e32",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd779793f9416",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nde6c0f61aa9d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nec17986e82db",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfdc66d7592b6",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2360eebdc9f2",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4af2c4de70e5",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n52267fca946e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5bfd15643cfb",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6f8e36a80c60",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7142ed0199a4",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n83ea5cf7fe55",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n959e79ab0c17",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "naed4f02152c4",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "naf9c06f35078",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb2534b1195b8",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nda1df5736572",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne3d0abae70a1",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfebb5ce786e3",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n431ec0be1634",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n56dfdb4a94ec",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n83d1a47b9f3d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n90106f7e6363",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naabbd28a238e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "naad8160db358",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbc23e5009cfe",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc6f1bb25a906",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nca9dd20da681",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd7e0412b54b0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne84bb3354c32",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf433ba085015",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1789d3edc6ad",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n347b47387e93",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n48e91ee82cd7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n63ba2b29f820",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb4cdaf0cd399",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbeb6a4498aa7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nde3dcfdbbc93",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf728d8eece7d",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf85530cc039a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n42dbf9b9c28b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n43d78e46800a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n68cad2a116db",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n88f1a273a170",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na58659dfb68f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na6a07f0d17a0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne10c49e6e97a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2da0feac9032",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n69beff6e441a",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7cd8be03ab4f",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8270482e0859",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9ca8b2a74439",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbef6d914333b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne3516ecb3480",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n46c1e3b95688",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7aa31a968711",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8a79f9680581",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne51a5475508b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n57dc9dd31293",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5c478400a334",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7e571bddc838",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2396e3ace689",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nffcd1f3146b7",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4c0cfb8740ac",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndc8e7477e5dd",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n609707230701",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n62eb2dc66b73",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd064596db494",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4c3259db4b22",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nacc5e7fd98b0",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n00c1afc7c28e",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5c22c4887f88",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ned2ad56c989c",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6a1e1cb65bd9",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb5c9d0aaa567",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1b37945311bc",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n62c6b19ffa73",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n535ade01858b",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf5e64b261b50",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncc2d858a2311",
+        "opening": "Ruy Lopez: Morphy Defense, Classical Defense Deferred",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "id": "ruy-lopez-white",
+    "version": 1,
+    "sha256": "a70418a72fe3004953a0d9479824b87c19739709dc08aa885ab12d7a7ca9dd18",
+    "bytes": 190867,
+    "chapters": 2,
+    "nodes": 379,
+    "lines": 32,
+    "generatedOn": "2026-10-05",
+    "writerClaimsPassed": 239,
+    "writerClaims": 239,
+    "autoClaimsPassed": 232,
+    "autoClaims": 233
+}

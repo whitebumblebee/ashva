@@ -1,0 +1,1202 @@
+[
+    {
+        "chapter": "berlin",
+        "nodeId": "n89237894f4fe",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3 Ba6 Nxc5 Nxc5 Nxe5 Qxd1",
+        "type": "THREAT",
+        "san": "Qxe1#",
+        "strengthCp": 99922
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n02f01c027e45",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3",
+        "type": "PREVENTS",
+        "san": "Qxd4",
+        "strengthCp": 2674
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "ne1ed8bb30b12",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4",
+        "type": "PREVENTS",
+        "san": "Bxe5",
+        "strengthCp": 1779
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n6854574406f7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3 Ba6",
+        "type": "PREVENTS",
+        "san": "Qxd3",
+        "strengthCp": 1625
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n1f1e5f5829a7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6 Nxh6 Qd2 Ng8",
+        "type": "PREVENTS",
+        "san": "Qxh6",
+        "strengthCp": 1604
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n135ae663f8b3",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4",
+        "type": "THREAT",
+        "san": "Bxd7",
+        "strengthCp": 1534
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n7dda9f47b6e7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+ Ke1 Bd3 Rd1",
+        "type": "PREVENTS",
+        "san": "Bxb1",
+        "strengthCp": 1472
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n8629c79f2c90",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6",
+        "type": "THREAT",
+        "san": "Bxe5",
+        "strengthCp": 1467
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nd7eafa99e3ec",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5 Bxf3 Nxf3 axb4 axb4 Rxb4 Ba3",
+        "type": "PREVENTS",
+        "san": "Rxb2",
+        "strengthCp": 1360
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n1fb771621ac2",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5 Bxf3 Nxf3 axb4 axb4 Rxb4 Ba3 Rb6",
+        "type": "PREVENTS",
+        "san": "Bxb4",
+        "strengthCp": 1331
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n5e62ed32c2b4",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1",
+        "type": "THREAT",
+        "san": "Rxe1+",
+        "strengthCp": 1218
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n8be46c6f1f3c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2",
+        "type": "THREAT",
+        "san": "Bxe5",
+        "strengthCp": 1176
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n880146316435",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2",
+        "type": "THREAT",
+        "san": "Qxd4",
+        "strengthCp": 1142
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n9fa2a3a5f36a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3 Kh3 Re8 Rb6",
+        "type": "THREAT",
+        "san": "Qxf6+",
+        "strengthCp": 1140
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n76c9f0dcf20e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3",
+        "type": "THREAT",
+        "san": "gxf4",
+        "strengthCp": 1086
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n8756ed3c8846",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3",
+        "type": "THREAT",
+        "san": "gxf4",
+        "strengthCp": 1060
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n392a87e04242",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 Nd7 d4 f6 Na3 c5 c3 Nb6",
+        "type": "PREVENTS",
+        "san": "Qa4",
+        "strengthCp": 1059
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n76c9f0dcf20e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3",
+        "type": "PREVENTS",
+        "san": "Qa7",
+        "strengthCp": 1022
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8a5e48ca2787",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7 Nb3 Be7",
+        "type": "PREVENTS",
+        "san": "Nxc5",
+        "strengthCp": 1012
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n3ca5aeae7be4",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3 Ba6 Nxc5",
+        "type": "THREAT",
+        "san": "Nxa6",
+        "strengthCp": 952
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n77e334e513e8",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7 O-O Re8 a4 b6 Be3 Bb4",
+        "type": "PREVENTS",
+        "san": "Bxc5",
+        "strengthCp": 937
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8697c7450665",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7",
+        "type": "PREVENTS",
+        "san": "Bxc6",
+        "strengthCp": 927
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n868d5e2dac4a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4",
+        "type": "PREVENTS",
+        "san": "Bxc6",
+        "strengthCp": 926
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n880146316435",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2",
+        "type": "PREVENTS",
+        "san": "Bxd2",
+        "strengthCp": 912
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8ef577aa9146",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 910
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n82608463914b",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3",
+        "type": "PREVENTS",
+        "san": "Bxb4",
+        "strengthCp": 846
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n514ccf52ad4d",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6 Bg5",
+        "type": "PREVENTS",
+        "san": "Nd7",
+        "strengthCp": 827
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ndef478a1a457",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6",
+        "type": "PREVENTS",
+        "san": "Nbd2",
+        "strengthCp": 817
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n3d7a44bc21af",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4 Nbd2 d6 c3 Ba5 Nf1 b5 Bc2 b4 Bd2 bxc3",
+        "type": "THREAT",
+        "san": "cxd2",
+        "strengthCp": 810
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n92b75cf32fac",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6",
+        "type": "PREVENTS",
+        "san": "Be3",
+        "strengthCp": 807
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n45d021e4a7bb",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3",
+        "type": "PREVENTS",
+        "san": "Bf4",
+        "strengthCp": 807
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n0b1ee91403f6",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3",
+        "type": "PREVENTS",
+        "san": "Bxc4",
+        "strengthCp": 806
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8b40de0dd00d",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 a6",
+        "type": "PREVENTS",
+        "san": "d4",
+        "strengthCp": 802
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n85181af2ef30",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6",
+        "type": "PREVENTS",
+        "san": "Nbd2",
+        "strengthCp": 801
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n9a4f7bbec5a7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6 Nbd2 a6",
+        "type": "PREVENTS",
+        "san": "c3",
+        "strengthCp": 800
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n9a4f7bbec5a7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6 Nbd2 a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 795
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb83f104bf76a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Re8 Nbd2 Bf8 Nf1 h6 Ng3 b5 Bb3 Na5 Bc2",
+        "type": "PREVENTS",
+        "san": "Nxb3",
+        "strengthCp": 795
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n85181af2ef30",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 791
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8b40de0dd00d",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 789
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb234da31a0b0",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 786
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb234da31a0b0",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6",
+        "type": "PREVENTS",
+        "san": "Nbd2",
+        "strengthCp": 782
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n5f302b23a79e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3 Kh3",
+        "type": "PREVENTS",
+        "san": "Ng4",
+        "strengthCp": 773
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n3f1fb9fe9cbc",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5 Bc2 d5 Nbd2 Re8 h3 h6 d4 exd4 cxd4 Nxe4 Nxe4 dxe4 Bxe4",
+        "type": "THREAT",
+        "san": "Bxc6",
+        "strengthCp": 772
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ndef478a1a457",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 769
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne483440ca1ff",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 c5 c3 Be7 d4 exd4 cxd4 cxd4 Nxd4 Bd7",
+        "type": "PREVENTS",
+        "san": "Nc6",
+        "strengthCp": 753
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n10da6dd97093",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1",
+        "type": "PREVENTS",
+        "san": "Bh6",
+        "strengthCp": 746
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n72529d89774b",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6",
+        "type": "PREVENTS",
+        "san": "Ncxe5",
+        "strengthCp": 737
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "nb07b13469688",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+ Ke1 Bd3",
+        "type": "PREVENTS",
+        "san": "Be7",
+        "strengthCp": 737
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n349ccd0902d8",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2",
+        "type": "PREVENTS",
+        "san": "Ncxe4",
+        "strengthCp": 736
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n868d5e2dac4a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4",
+        "type": "THREAT",
+        "san": "Nxb5",
+        "strengthCp": 735
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n17fc76aa1068",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3",
+        "type": "PREVENTS",
+        "san": "Qf6",
+        "strengthCp": 735
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n6255b3808bc9",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 732
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n0e5c41103665",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5",
+        "type": "PREVENTS",
+        "san": "a3",
+        "strengthCp": 732
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nd7eafa99e3ec",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5 Bxf3 Nxf3 axb4 axb4 Rxb4 Ba3",
+        "type": "THREAT",
+        "san": "Bxb4",
+        "strengthCp": 732
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n92b75cf32fac",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6",
+        "type": "THREAT",
+        "san": "axb5",
+        "strengthCp": 731
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n0d4477b61b0e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6 Nbd2 a6 Bxc6 dxc6 Nc4 Qe7 h3 b5",
+        "type": "PREVENTS",
+        "san": "a4",
+        "strengthCp": 731
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n6f5b0187f392",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7 Nb3 Be7 d4 Bf6 Re1 a5 dxe5",
+        "type": "THREAT",
+        "san": "exf6",
+        "strengthCp": 728
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n818684c1c5dc",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5 Bc2 d5 Nbd2 Re8 h3 h6 d4 exd4 cxd4 Nxe4 Nxe4 dxe4",
+        "type": "THREAT",
+        "san": "exf3",
+        "strengthCp": 722
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n115b44b806a4",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 717
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nc1291628ea2c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5 Bb2 Nd7",
+        "type": "PREVENTS",
+        "san": "d4",
+        "strengthCp": 715
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n0e5c41103665",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5",
+        "type": "THREAT",
+        "san": "bxa4",
+        "strengthCp": 713
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n0d4477b61b0e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6 Nbd2 a6 Bxc6 dxc6 Nc4 Qe7 h3 b5",
+        "type": "THREAT",
+        "san": "bxc4",
+        "strengthCp": 712
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nf3c19a9f6e48",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 c5 c3 Bg4 h3",
+        "type": "PREVENTS",
+        "san": "Nd7",
+        "strengthCp": 705
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n01a6efbc87d9",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4 Nbd2 d6 c3",
+        "type": "PREVENTS",
+        "san": "h6",
+        "strengthCp": 702
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n1725c1970305",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7",
+        "type": "THREAT",
+        "san": "Bxb5",
+        "strengthCp": 700
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n4d82453d2279",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7 O-O Re8",
+        "type": "PREVENTS",
+        "san": "Ncxe5",
+        "strengthCp": 698
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne500b2e0a41e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4 Nbd2 d6 c3 Ba5 Nf1 b5",
+        "type": "THREAT",
+        "san": "bxa4",
+        "strengthCp": 692
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n2c21c1ecab57",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Re8 Nbd2 Bf8 Nf1 h6 Ng3 b5",
+        "type": "THREAT",
+        "san": "bxa4",
+        "strengthCp": 691
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n2c21c1ecab57",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Re8 Nbd2 Bf8 Nf1 h6 Ng3 b5",
+        "type": "PREVENTS",
+        "san": "d4",
+        "strengthCp": 689
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne81045ccf047",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 688
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n3d405ba4e96f",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3",
+        "type": "PREVENTS",
+        "san": "Nxe4",
+        "strengthCp": 684
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n2da375ab2329",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5",
+        "type": "PREVENTS",
+        "san": "Qc2",
+        "strengthCp": 684
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n7a3a67158d1c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 Nd7 d4 f6 Na3 c5 c3 Nb6 b4 cxb4",
+        "type": "THREAT",
+        "san": "bxa3",
+        "strengthCp": 684
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n3d405ba4e96f",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3",
+        "type": "PREVENTS",
+        "san": "Nxe4",
+        "strengthCp": 684
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n486bcb5f770c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5",
+        "type": "PREVENTS",
+        "san": "Nf1",
+        "strengthCp": 683
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n486bcb5f770c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5",
+        "type": "THREAT",
+        "san": "bxa4",
+        "strengthCp": 681
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n017482ac8c52",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6",
+        "type": "PREVENTS",
+        "san": "Na5",
+        "strengthCp": 680
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n6b6a77ab7bd1",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6 Nbd2 a6 Bxc6 dxc6 Nc4 Qe7",
+        "type": "PREVENTS",
+        "san": "Nfxe5",
+        "strengthCp": 679
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ndb143defa353",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6 Nxh6 Qd2",
+        "type": "PREVENTS",
+        "san": "a5",
+        "strengthCp": 676
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n5202748304b4",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6",
+        "type": "THREAT",
+        "san": "dxe7",
+        "strengthCp": 675
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n01a6efbc87d9",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4 Nbd2 d6 c3",
+        "type": "THREAT",
+        "san": "cxb4",
+        "strengthCp": 668
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nadb334708603",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3",
+        "type": "PREVENTS",
+        "san": "Nd7",
+        "strengthCp": 666
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n955172236f5a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4 Nxd4 exd4 e5",
+        "type": "PREVENTS",
+        "san": "Bd6",
+        "strengthCp": 662
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n621512251ddb",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 658
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne500b2e0a41e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4 Nbd2 d6 c3 Ba5 Nf1 b5",
+        "type": "PREVENTS",
+        "san": "Bd2",
+        "strengthCp": 651
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8df7b9d6212b",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7 Nb3 Be7 d4 Bf6 Re1 a5",
+        "type": "PREVENTS",
+        "san": "Na5",
+        "strengthCp": 650
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n3d4f8609208e",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5",
+        "type": "THREAT",
+        "san": "Qxh5",
+        "strengthCp": 648
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ncb9b43b18ad7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6 Bg5 Qc8 d4",
+        "type": "THREAT",
+        "san": "dxe5",
+        "strengthCp": 645
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n2da375ab2329",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5",
+        "type": "THREAT",
+        "san": "bxc4",
+        "strengthCp": 642
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n702dab94687d",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4",
+        "type": "PREVENTS",
+        "san": "Nf8",
+        "strengthCp": 642
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n17fc76aa1068",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3",
+        "type": "THREAT",
+        "san": "Qxd3",
+        "strengthCp": 641
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n046bcd6f24a1",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4",
+        "type": "PREVENTS",
+        "san": "Nc5",
+        "strengthCp": 639
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n54101d90d258",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Be6 d4",
+        "type": "PREVENTS",
+        "san": "Nd7",
+        "strengthCp": 635
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n7bf16c483ca8",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7 Bb3",
+        "type": "PREVENTS",
+        "san": "Bxe3",
+        "strengthCp": 626
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ndb143defa353",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6 Nxh6 Qd2",
+        "type": "THREAT",
+        "san": "Qxh6",
+        "strengthCp": 623
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ncb9b43b18ad7",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6 Bg5 Qc8 d4",
+        "type": "PREVENTS",
+        "san": "a5",
+        "strengthCp": 615
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nf3c19a9f6e48",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 c5 c3 Bg4 h3",
+        "type": "THREAT",
+        "san": "hxg4",
+        "strengthCp": 611
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nadb334708603",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3",
+        "type": "THREAT",
+        "san": "hxg4",
+        "strengthCp": 610
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne2be21e0b848",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5 Ne3 O-O d4",
+        "type": "PREVENTS",
+        "san": "Nb6",
+        "strengthCp": 610
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n38f28cc14e50",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5 Bxf3 Nxf3 axb4 axb4 Rxb4",
+        "type": "THREAT",
+        "san": "Rxb2",
+        "strengthCp": 610
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n8709e1c88ed2",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Re8 Nbd2 Bf8 Nf1 h6",
+        "type": "PREVENTS",
+        "san": "Bg5",
+        "strengthCp": 599
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n02f62561f7bf",
+        "sanPath": "e4 e5 Nf3 Nc6",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 598
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n02f62561f7bf",
+        "sanPath": "e4 e5 Nf3 Nc6",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 598
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n327c6d7dc936",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5 Bb2",
+        "type": "PREVENTS",
+        "san": "g6",
+        "strengthCp": 597
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n702dab94687d",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4",
+        "type": "THREAT",
+        "san": "bxc5",
+        "strengthCp": 575
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "na920c6247a00",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5",
+        "type": "THREAT",
+        "san": "dxc6",
+        "strengthCp": 570
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n4cd05f547e98",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5",
+        "type": "PREVENTS",
+        "san": "Ng4",
+        "strengthCp": 564
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne81045ccf047",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6",
+        "type": "THREAT",
+        "san": "cxb5",
+        "strengthCp": 560
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n3a22f64a30ad",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1",
+        "type": "PREVENTS",
+        "san": "Nxe4",
+        "strengthCp": 557
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n153ce0f310c6",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6",
+        "type": "PREVENTS",
+        "san": "Ncxe5",
+        "strengthCp": 512
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne2be21e0b848",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5 Ne3 O-O d4",
+        "type": "THREAT",
+        "san": "Qb3+",
+        "strengthCp": 510
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n6f7d7e91e112",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4",
+        "type": "PREVENTS",
+        "san": "a5",
+        "strengthCp": 505
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n351eff6419d8",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7",
+        "type": "PREVENTS",
+        "san": "Nfxe5",
+        "strengthCp": 498
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n6613a690b2c1",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6",
+        "type": "PREVENTS",
+        "san": "Nxe5",
+        "strengthCp": 477
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "ncd00802df36c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7",
+        "type": "PREVENTS",
+        "san": "Ndc4",
+        "strengthCp": 474
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nf36995adfcfd",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 h6 d4",
+        "type": "PREVENTS",
+        "san": "a5",
+        "strengthCp": 473
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n98570f3898c9",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4",
+        "type": "THREAT",
+        "san": "Rxc2",
+        "strengthCp": 467
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nebcc7048eb6c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3 Ba6 Nxc5 Nxc5",
+        "type": "THREAT",
+        "san": "Qxd1",
+        "strengthCp": 462
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n955172236f5a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4 Nxd4 exd4 e5",
+        "type": "THREAT",
+        "san": "exf6",
+        "strengthCp": 453
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n57bfd2fc6060",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3 h4",
+        "type": "PREVENTS",
+        "san": "Rb2",
+        "strengthCp": 450
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n023c7a717522",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6",
+        "type": "PREVENTS",
+        "san": "Be3",
+        "strengthCp": 444
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb870a632157c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4",
+        "type": "THREAT",
+        "san": "Bxe1",
+        "strengthCp": 421
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb870a632157c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4",
+        "type": "PREVENTS",
+        "san": "h3",
+        "strengthCp": 392
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n023c7a717522",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6",
+        "type": "THREAT",
+        "san": "Bxc4",
+        "strengthCp": 372
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n82608463914b",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3",
+        "type": "THREAT",
+        "san": "exd5",
+        "strengthCp": 371
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "nc6fed98000ea",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8",
+        "type": "PREVENTS",
+        "san": "Nb1",
+        "strengthCp": 371
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "neb656c4838b5",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7",
+        "type": "PREVENTS",
+        "san": "Rb1",
+        "strengthCp": 356
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "ne853b2082f81",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Re8 Nbd2 Bf8 Nf1 h6 Ng3 b5 Bb3 Na5 Bc2 c5 d4 cxd4",
+        "type": "THREAT",
+        "san": "dxc3",
+        "strengthCp": 345
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n57bfd2fc6060",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3 h4",
+        "type": "THREAT",
+        "san": "hxg3",
+        "strengthCp": 337
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n166417c9ff09",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5 Bc2 d5 Nbd2 Re8 h3 h6 d4 exd4",
+        "type": "THREAT",
+        "san": "dxc3",
+        "strengthCp": 332
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n9fa2a3a5f36a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3 Kh3 Re8 Rb6",
+        "type": "PREVENTS",
+        "san": "Qc8+",
+        "strengthCp": 330
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "ncd00802df36c",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7",
+        "type": "THREAT",
+        "san": "Bxe3",
+        "strengthCp": 325
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n4181e4807e9a",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7 Bb3 Bd3",
+        "type": "THREAT",
+        "san": "Bxb1",
+        "strengthCp": 313
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n027d40afb2a8",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6",
+        "type": "PREVENTS",
+        "san": "Nc4",
+        "strengthCp": 309
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n119c2880e2a5",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7 Nb3",
+        "type": "THREAT",
+        "san": "Nxc5",
+        "strengthCp": 298
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n119c2880e2a5",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7 Nb3",
+        "type": "PREVENTS",
+        "san": "h5",
+        "strengthCp": 297
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "n90baed1a50a3",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4",
+        "type": "PREVENTS",
+        "san": "cxd5",
+        "strengthCp": 295
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "neb656c4838b5",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7",
+        "type": "THREAT",
+        "san": "bxc4",
+        "strengthCp": 294
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n0519e5762b60",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2",
+        "type": "PREVENTS",
+        "san": "Bf6",
+        "strengthCp": 285
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "nc6fed98000ea",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8",
+        "type": "THREAT",
+        "san": "cxd5",
+        "strengthCp": 281
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nadc0e64d9387",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5 Bc2 d5 Nbd2 Re8 h3 h6 d4",
+        "type": "THREAT",
+        "san": "Nxe5",
+        "strengthCp": 278
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n2e2d00986ac3",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O",
+        "type": "PREVENTS",
+        "san": "b6",
+        "strengthCp": 274
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb207f9a323fd",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 a5 d4",
+        "type": "PREVENTS",
+        "san": "g6",
+        "strengthCp": 269
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nadc0e64d9387",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5 Bc2 d5 Nbd2 Re8 h3 h6 d4",
+        "type": "PREVENTS",
+        "san": "Be6",
+        "strengthCp": 266
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "nb07b13469688",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+ Ke1 Bd3",
+        "type": "THREAT",
+        "san": "Bxb1",
+        "strengthCp": 265
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n0519e5762b60",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2",
+        "type": "THREAT",
+        "san": "exd5",
+        "strengthCp": 261
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nfd519e723344",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 Nd7 d4 f6 Na3 c5",
+        "type": "PREVENTS",
+        "san": "Be3",
+        "strengthCp": 258
+    },
+    {
+        "chapter": "firouzja-carlsen-2020",
+        "nodeId": "ne1ed8bb30b12",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4",
+        "type": "THREAT",
+        "san": "Bxd2",
+        "strengthCp": 256
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "n63979f70ed2f",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O",
+        "type": "PREVENTS",
+        "san": "h6",
+        "strengthCp": 239
+    },
+    {
+        "chapter": "berlin",
+        "nodeId": "nb207f9a323fd",
+        "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 a5 d4",
+        "type": "THREAT",
+        "san": "dxe5",
+        "strengthCp": 237
+    }
+]

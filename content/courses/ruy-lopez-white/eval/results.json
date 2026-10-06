@@ -1,0 +1,19 @@
+{
+    "ranOn": "2026-10-05",
+    "puzzleSample": 300,
+    "engineSolvesFirstMove": 1.0,
+    "threatFindsNextSolverMove": 0.14583333333333334,
+    "checkerRejectsFalseThreats": 1.0,
+    "checkerAcceptsTrueMistakes": 0.9831649831649831,
+    "goldIdeas": 150,
+    "goldIdeaRecall": 0.9933333333333333,
+    "writerClaimPassRate": 1.0,
+    "autoClaimPassRate": 0.9957081545064378,
+    "writerClaims": 239,
+    "aiJudge": "not run: needs a second model through an owner-approved API (Phase 0 decision D1)",
+    "notes": [
+        "Puzzle metrics use depth 16; course facts use depth 22.",
+        "Gold ideas are engine-confirmed forcing threats, prevented moves (not counted after captures) and common mistakes with strength ≥ 200 cp (mistakes ≥ 150 cp); recall checks the shown node text mentions the move.",
+        "threatFindsNextSolverMove counts puzzles where a null move is legal after the first solution move and the solution continues: does the probe pick the next solution move?"
+    ]
+}

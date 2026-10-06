@@ -1,0 +1,207 @@
+{
+  "target": "club",
+  "fetchedAt": "2026-10-04T19:35:37.811Z",
+  "entries": [
+    {
+      "url": "https://database.lichess.org/standard/lichess_db_standard_rated_2026-09.pgn.zst",
+      "license": "CC0-1.0",
+      "remoteBytes": 29224520887,
+      "prefixBytes": 1073741824,
+      "complete": false,
+      "chunks": [
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00000",
+          "start": 0,
+          "end": 33554431,
+          "sha256": "d629023c6ceb487afcd676cc840e744a1f97b8f8782e9f0af3f846998fa205f6"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00001",
+          "start": 33554432,
+          "end": 67108863,
+          "sha256": "e838ad534e1ef346f5d139c3fac661b102643eef9e60fe2aa451d8e329c395f8"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00002",
+          "start": 67108864,
+          "end": 100663295,
+          "sha256": "2565c0ccc4feaf4cd3979344657d4759d3e4aedbeabab0eeedfbfa55a41caca4"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00003",
+          "start": 100663296,
+          "end": 134217727,
+          "sha256": "678d1af87b4d9b56140c8ac394771bb5a4ae8770d730ed09035c40c38a477578"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00004",
+          "start": 134217728,
+          "end": 167772159,
+          "sha256": "c5082dba860712ca9ca8ebd9fb1c923932d8e125f077959665648d934a360492"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00005",
+          "start": 167772160,
+          "end": 201326591,
+          "sha256": "c39cd0b02a15f5a5e1152cffa403c1c09610d402666a9871643a96680afddf43"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00006",
+          "start": 201326592,
+          "end": 234881023,
+          "sha256": "53e013adaa7c1f0d9a033ba766afc2bcc629f6728bb74f5b8c00e34a95cfb7d7"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00007",
+          "start": 234881024,
+          "end": 268435455,
+          "sha256": "5b03dc1bfd0f6a821a3400480f101700194ca794da856b8ba66edb756351c182"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00008",
+          "start": 268435456,
+          "end": 301989887,
+          "sha256": "1d20f11ddfec11da1b3c5dc58b0addcc35e73bfcb5ac09f48afa6d71e7671268"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00009",
+          "start": 301989888,
+          "end": 335544319,
+          "sha256": "2c1d53bf2e32ec09472f5d39d4e539245817aab8a586da1a235c182d75947cc4"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00010",
+          "start": 335544320,
+          "end": 369098751,
+          "sha256": "50575295c0a0f178f386528a2cdbf7c75a5502494dfe8a6c6cc7752f0f5304cc"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00011",
+          "start": 369098752,
+          "end": 402653183,
+          "sha256": "ee6916bea5730d5133f37f17a88ab921b76df4d734954b29d0cd95d4b75f6976"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00012",
+          "start": 402653184,
+          "end": 436207615,
+          "sha256": "25e1c02f9a4765a8522be86e61747c0205218ccde3e667ad8118f2f0a2e58997"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00013",
+          "start": 436207616,
+          "end": 469762047,
+          "sha256": "3b12b7f74cab562e18feaf23ae84b06c0db789197c08e19054a76c5c5c07741e"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00014",
+          "start": 469762048,
+          "end": 503316479,
+          "sha256": "0ce06529a5d35b4b651fbc278c1147fd8f33ed270f21db8ac0460a55e05a0738"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00015",
+          "start": 503316480,
+          "end": 536870911,
+          "sha256": "ed5f38cfb77fc75f8463a468dcbb9a19e08c08b7048172d2c2b6fad83b55d5ea"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00016",
+          "start": 536870912,
+          "end": 570425343,
+          "sha256": "652ab5f6c107f958563f192b46bcb7ef67518a83576a73a50821c6ddef4b89c4"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00017",
+          "start": 570425344,
+          "end": 603979775,
+          "sha256": "b7119e6ff2cf1816f34f6fb61acf659cec37689c7e403465ef8c3f2978a65bdb"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00018",
+          "start": 603979776,
+          "end": 637534207,
+          "sha256": "9b6e7800fe766bc4c5806338e27620164b2128e9bd3810dbd63297abc4c6748f"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00019",
+          "start": 637534208,
+          "end": 671088639,
+          "sha256": "b5d5660e09b2320c2ec2a98c6dc65328fa88ba53ed130a5e80566cccba617bc1"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00020",
+          "start": 671088640,
+          "end": 704643071,
+          "sha256": "1123218541884f1fa2546f7f5498253a82934366edbffeea1334dafd4c8d1a09"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00021",
+          "start": 704643072,
+          "end": 738197503,
+          "sha256": "c000c91ad1dc359c44c346c9335861b382985cf3e7e1c764b42b3197ad66803e"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00022",
+          "start": 738197504,
+          "end": 771751935,
+          "sha256": "926f0e4cec78eba64e454e3c08c411ad63eef0805959626e211a4d0d84579898"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00023",
+          "start": 771751936,
+          "end": 805306367,
+          "sha256": "c879cffa4a6cc2cf8f1fdf36b33373fe91394b366a9bd7c92adb82d99a6b063c"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00024",
+          "start": 805306368,
+          "end": 838860799,
+          "sha256": "04991b6cc49eac9469187b727f62048a1abf8f26cdc97de500aa15a75e0496bf"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00025",
+          "start": 838860800,
+          "end": 872415231,
+          "sha256": "9d859b7398196d46758bdc1a3deaa2dc9a70db14254b5fae882836f418bf1657"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00026",
+          "start": 872415232,
+          "end": 905969663,
+          "sha256": "34410a23c92d9fba246ed43ef8b5caa19c16b929602a1ad443165a801e456fe7"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00027",
+          "start": 905969664,
+          "end": 939524095,
+          "sha256": "030b10f6160bf933b2c83902774c217253b5a9fdfa3d151ac796bb4577f560c2"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00028",
+          "start": 939524096,
+          "end": 973078527,
+          "sha256": "a5f2b1ef0b3fb5d95021b5d54799be95739b1ae461ed65f9b94358ff38a661cf"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00029",
+          "start": 973078528,
+          "end": 1006632959,
+          "sha256": "5d60e70fca75ff2adadaa15fa991809811efea380e2b53bb6c8c23c5a1a5b420"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00030",
+          "start": 1006632960,
+          "end": 1040187391,
+          "sha256": "c2d4cb7ba3653786af3d74001f1a5f42918864525edf7bd5043501a21de47501"
+        },
+        {
+          "file": ".course-cache/raw/club-2026-09/chunk-00031",
+          "start": 1040187392,
+          "end": 1073741823,
+          "sha256": "9a32b113cb39e640b68a344d083814edd2e923fd3479f77edcc3b5527b629f9d"
+        }
+      ]
+    }
+  ]
+}

@@ -36,6 +36,9 @@ import com.openinglab.app.ui.screens.RepertoireScreen
 import com.openinglab.app.ui.screens.MyRepertoiresScreen
 import com.openinglab.app.ui.screens.GameLibraryScreen
 import com.openinglab.app.ui.screens.GameReplayScreen
+import com.openinglab.app.ui.screens.DeepCourseScreen
+import android.content.Intent
+import androidx.compose.ui.platform.LocalContext
 import com.openinglab.app.ui.theme.Ink
 import com.openinglab.app.ui.theme.Cream
 import com.openinglab.shared.model.PieceColor
@@ -49,6 +52,9 @@ private data class OpeningRoute(val openingId: String) : NavKey
 
 @Serializable
 private data object TrainerRoute : NavKey
+
+@Serializable
+private data class DeepCourseRoute(val openingId: String) : NavKey
 
 @Serializable
 private data object IdentifierRoute : NavKey
@@ -106,6 +112,8 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                             catalogLoading = state.catalogLoading,
                             catalogError = state.catalogError ?: state.packError,
                             modifier = Modifier.fillMaxSize().padding(innerPadding),
+                            deepCourses = state.deepCourses, deepCourseLoading = state.deepCourseLoading,
+                            deepCourseError = state.deepCourseError, onDeepCourse = { backStack.add(DeepCourseRoute(it)) },
                         )
                         MainTab.EXPLORE -> {
                             val filtered = viewModel.filteredOpenings()
@@ -162,6 +170,31 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                     },
                 )
             }
+            entry<DeepCourseRoute> { route ->
+                val chapter = viewModel.deepChapter(route.openingId)
+                val context = LocalContext.current
+                if (chapter == null) Column(Modifier.fillMaxSize().statusBarsPadding().padding(24.dp)) {
+                    Text(state.deepCourseError ?: "Checking the bundled deep course…", color = Cream)
+                    if (state.deepCourseLoading) CircularProgressIndicator()
+                    TextButton(popBack) { Text("Back") }
+                } else DeepCourseScreen(
+                    chapter = chapter,
+                    feedbackCount = state.courseFeedback.count { it.courseLessonId == route.openingId },
+                    onBack = popBack,
+                    onStudy = { side, line -> viewModel.startTrainer(route.openingId, side, line, study = true); backStack.add(TrainerRoute) },
+                    onPractice = { side, line -> viewModel.startTrainer(route.openingId, side, line); backStack.add(TrainerRoute) },
+                    onPracticeRandom = { side -> viewModel.practiceWeightedDeepLine(route.openingId, side); backStack.add(TrainerRoute) },
+                    onShareFeedback = {
+                        // Only the learner chooses where flags go; the app itself uploads nothing.
+                        val send = Intent(Intent.ACTION_SEND).setType("text/plain")
+                            .putExtra(Intent.EXTRA_SUBJECT, "Ashva course feedback")
+                            .putExtra(Intent.EXTRA_TEXT, viewModel.exportCourseFeedback())
+                        context.startActivity(Intent.createChooser(send, "Share course feedback"))
+                    },
+                    modifier = Modifier.fillMaxSize().statusBarsPadding(),
+                    onExample = { id, side -> viewModel.startTrainer(id, side, study = true); backStack.add(TrainerRoute) },
+                )
+            }
             entry<TrainerRoute> {
                 if (state.trainer == null) Column(Modifier.fillMaxSize().statusBarsPadding().padding(24.dp)) {
                     Text(if (state.lessonLoading) "Preparing the sourced lesson…" else state.lessonError ?:
@@ -203,6 +236,8 @@ fun OpeningLabApp(viewModel: AppViewModel = viewModel()) {
                         recallError = recall.error, onNextReview = viewModel::nextRecallReview,
                         recallRetryAvailable = recall.retryableWrites > 0 && recall.pendingWrites == 0,
                         onRetryRecall = viewModel.recall::retryFailedWrites,
+                        onFlag = if (viewModel.deepChapter(trainer.opening.id) != null) viewModel::flagExplanation else null,
+                        flagMessage = state.feedbackMessage,
                     )
                 }
             }

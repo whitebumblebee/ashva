@@ -1,0 +1,3405 @@
+[
+    {
+        "id": "n3e8db43daed3",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n79b1cff4a7ce",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n780cc290e026",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n02f62561f7bf",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n09cd8a667eb7",
+        "opening": "Ruy Lopez",
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n90f01f268c4b",
+        "opening": "Ruy Lopez: Schliemann Defense",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 63,
+            "2200–2399": 139,
+            "Lichess 1600–2200": 280
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nb25c8eec9490",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1577,
+            "2400–2599": 4439,
+            "2200–2399": 6748,
+            "Lichess 1600–2200": 2427
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2fadaebc54f3",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 46,
+            "2400–2599": 128,
+            "2200–2399": 285,
+            "Lichess 1600–2200": 688
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n4ef48b90ddc6",
+        "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 74
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n4a99bd44b6d9",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 46,
+            "2400–2599": 128,
+            "2200–2399": 283,
+            "Lichess 1600–2200": 645
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56ff3e33c435",
+        "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncd3be67c47c6",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 43
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n449e6b60cb98",
+        "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5003ab21a21b",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 112
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n7738a20d6210",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 17,
+            "2200–2399": 50,
+            "Lichess 1600–2200": 47
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n837373368794",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n971fe1c8a4d6",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 94
+        },
+        "transposesTo": null,
+        "source": "club"
+    },
+    {
+        "id": "n9d3e88f49091",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 45,
+            "2400–2599": 110,
+            "2200–2399": 202,
+            "Lichess 1600–2200": 251
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf3e6e625fbee",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 69
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n19ce160b69b4",
+        "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1d4dcc4845d1",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 18,
+            "2200–2399": 35,
+            "Lichess 1600–2200": 35
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n22354345d0e3",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 59
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n29539c4c41ca",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 35,
+            "2200–2399": 64,
+            "Lichess 1600–2200": 79
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2ebb43852942",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 30,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4733674625c5",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 19,
+            "2400–2599": 43,
+            "2200–2399": 61,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4be7a4f4573f",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n63f93efffe46",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n79fddff916ef",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9386afd62f21",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 3,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb6310ba31b97",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 110
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0017eab142eb",
+        "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n146699a241ee",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1e2e0fd3c32f",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 35,
+            "2200–2399": 64,
+            "Lichess 1600–2200": 48
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n387840aa4892",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 45
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3ded2f264ad7",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 53
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n605efd36e147",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n61f37f6f5dbc",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 40,
+            "2200–2399": 58,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc95a69a89708",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd8e53fdc28db",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ne61e0b9e6c1b",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nec6a7e00fb6f",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 17,
+            "2200–2399": 33,
+            "Lichess 1600–2200": 24
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfa624837c18c",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0b4ec7287494",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 38
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1f1738ef0df8",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2e1a06834695",
+        "opening": "Ruy Lopez: Schliemann Defense, Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4c3dba7f4499",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6d0384ca0f27",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 14
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7056306422f5",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 13,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 18
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n84303e0bd85f",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 40,
+            "2200–2399": 58,
+            "Lichess 1600–2200": 4
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nacd0052dba93",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 32,
+            "2200–2399": 45,
+            "Lichess 1600–2200": 19
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb0818e363ec6",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncbe4183d31e7",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 20
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndf1ae528e644",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne560eaee870e",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nea06dc29aa4a",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf244b6a35e79",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0436c0d2ed51",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n058da7744e6c",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 14
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0733117c4002",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0e04bb15eed0",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n11dce2837c96",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3eb28fe9a7dd",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n55bcdf466e69",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 38
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5c3692e02302",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n758170c29fa7",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n938bee357113",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 11,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 14
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na0e048dc3410",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na3e3fe4b3e33",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nac42bcb58353",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 39,
+            "2200–2399": 51,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb8bddf26db3d",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 17
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne80d0d8eaa09",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0893919386e0",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0cb3b1db5440",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 8
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n15c2265063ed",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1c89b06db0ed",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n28291183bb4a",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n292474e3a16e",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2fe1f13918a1",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 11,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4ced3828e6c0",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n54eb226d9925",
+        "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n5b25b63e04e1",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6857ada91274",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6bc1c7514632",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n725680ced7c5",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7ffeaa1cb78a",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 39,
+            "2200–2399": 49,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naf6156a7fbf6",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb8879bf9cd8c",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 7,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n026e93d217ee",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n06746e1f0832",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 34,
+            "2200–2399": 44,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n09d94c31b512",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 8,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2548bb353929",
+        "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n276eaf2b1476",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3232867a2cf3",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n41eb3c0a27f7",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n63173ea37526",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 7,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n75de0ba3e3be",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na18f7dab632b",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na7a89ddf061b",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naf2ad990220c",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbf84750aac17",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc22ad5823844",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncc6c626fee62",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndc15510d164a",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne5288108eb97",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf4013b5e5385",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf79f178ea0ed",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n02bd29e67712",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0f0391e79631",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n19f6ae90e058",
+        "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n208314ef50b3",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n246ca21427f1",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2f7791a6387c",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3bb9705886ed",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n425546c229f9",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n464b0fc08731",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n513eccbedbbc",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n569bbc9234a5",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n63afc608e6ee",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6e451c507a42",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n72252babff8c",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n77269233f85c",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n79455c738ca6",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n79d247f48cee",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8ccff964b5de",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 30,
+            "2200–2399": 36,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc768acf2987b",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd559997f584f",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf4963ad0d1a6",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n09740ea5b7fa",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0f4aacc06eb4",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 11,
+            "2400–2599": 16,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n16d4bdf0cde3",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1b692df8ecce",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2b26dee462d2",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2f10202281bf",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3b854821ff30",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3d9e9c9944d2",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n451fb2d55476",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n467d70cffa33",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n480328ce9225",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4fce6382cf2a",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n54f4da8aac7a",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9b93ea3bae6b",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na63db7e8dc32",
+        "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbb78cb5a251a",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc120b8c376d2",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 14,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc23b815eb6fe",
+        "opening": "Ruy Lopez: Exchange Variation, Bronstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndf8a285bf23b",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nedcd7f665cfc",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf1aa272015f4",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n05b3b769eac3",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0b5a6967e5c5",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1c46141a1c52",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1c9eb0941275",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3534c5fe124e",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3c1fe1f69868",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3dbaed34c06e",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n50d38c92c702",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n52676a5beee3",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 21,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n661bbcfa5392",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n67cfde3ac2c3",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n88e8e5841f0b",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb91793bfcb54",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 14,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbc3d69006c7a",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 7,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbd85ad067bbf",
+        "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc2d2929a868e",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc86ada72bc55",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd8e8bfd7ae84",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndccbc8984732",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndfb4ad593707",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne8c2e279ad92",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n013bd3ca57a4",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n01e24ea3a7ff",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n076d93f15f49",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0f9db510b6f2",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3b66ee7b03dc",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4843fbfb6bf4",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 14,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n590616c5e442",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5b8b51524eab",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 20,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5ba21371f3e8",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n634ea11ee634",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7d6441213d99",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7fc4173a46e0",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 7,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7fce5f131dbe",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8410b25ac51e",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n92ea7d925db9",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na5cb73e937b3",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nacdb244c57d4",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc73615110361",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd436428ff4a6",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd8302d92b01f",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfb9a12669a15",
+        "opening": "Ruy Lopez: Exchange Variation, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0caecceb4cd8",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 14,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0ea361a5eb5f",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n20dfe134eb0f",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n23769177e572",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n24b52861200f",
+        "opening": "Ruy Lopez: Exchange, Alekhine Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n38c4896cdc7c",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n48a41992cded",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5cf7cceee6f1",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n642be25d1dc5",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n70591dbf3819",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n74d84c47e843",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 29,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7763ea52c52e",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7edef7dd8697",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na1d3a116998a",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nacbf0c857824",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb432bf58b06b",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 6,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbb8304fb3a41",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndae0fab0c2fc",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf0232c29e783",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfd4a8c7d6337",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n113dfc782864",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n18320865e5e1",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n23547e930c6d",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n32586a693caf",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4140c52a93a1",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 11,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4fe103364f32",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n630b77507eba",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 41,
+            "2200–2399": 48,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6f0152eb25a0",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n70e314381bd5",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 4,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n825dc81cef77",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8bdc912be818",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n948290f20004",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9e8255712a5b",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na37a987346c8",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na64b1760956e",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbd19b17b5321",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc2a877b74750",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc33063127e25",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndd2dfbc0b30d",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n04d13bebf4b5",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1346a5c2f94f",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1fa8203d9da9",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3369f6086ca7",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 8,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n492dc23efff3",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4ca97176947a",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5143b2108f8d",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5b4f86d539c6",
+        "opening": "Ruy Lopez: Exchange Variation, Romanovsky Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6ed594917498",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6ffc3885db76",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n812325e6766b",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n881453a4d172",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 29,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9d6390c0e2e2",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na13a199b034f",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nadb047c5b48e",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb16438d2db3b",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb3307943cc13",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc478d66f6e5e",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndebb5b71e9b7",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0048dc97c57a",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n15068610555e",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 10,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n5b8b51524eab",
+        "source": "master"
+    },
+    {
+        "id": "n314970df1432",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n440ea81e68eb",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n475c11a6ed81",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 27,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6ec9eaf5f611",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7dd4b3e682b6",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8205dc62a55c",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9f569b39971b",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc79d2eb62f17",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nce25a206cfe6",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1fb0c29d9b8",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf42069d002fa",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfb3e3a98147f",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe54c864bc59",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1d2989371e62",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n334d5cfdd631",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3493dfded1df",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n37b20bc9174a",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3b868f7e5f34",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n95b9eb318ed2",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9c6bf19e36ac",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na6b87e58c891",
+        "opening": "Ruy Lopez: Exchange Variation, Lutikov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc2f16c0950df",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neaa3ca8f2d99",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nef18c74479ea",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf24888ecd2a7",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe310942dac9",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 25,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n74d84c47e843",
+        "source": "master"
+    },
+    {
+        "id": "n3a5f811455c8",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3cc0831237b8",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4b338bb24137",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n58facd4c1716",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n608a5dc88564",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n863a5c1081c9",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9df31efa3a6f",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb5fcd6390cfb",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd5ece098333d",
+        "opening": "Ruy Lopez: Exchange Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nddcdc4077d7b",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne208d2a80bd2",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n30300bb72684",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n35907f41397f",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9582bd884074",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n96e9353cc2c1",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne3946fca0223",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neabaf533bde6",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf84fba245e49",
+        "opening": "Ruy Lopez: Exchange Variation, King's Bishop Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n18319c6b2cc7",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4f2688cbd74c",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n84c84bb9c17b",
+        "opening": "Ruy Lopez: Exchange Variation, Keres Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n92110e09d23d",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc7730c153f08",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf14282606c36",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na44e2dae4477",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc3483e4c2fc8",
+        "opening": "Ruy Lopez: Exchange Variation, Alapin Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd47007c08ece",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf5657a308cde",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe8f3ce41703",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3746d9e980d2",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4915e6bc03b6",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5602ebafdd9a",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n920975be90bb",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n35af84651598",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naac33a71a739",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc7abd53d25fc",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne9dfa550504b",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n380f0433ea8f",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5408cb80593e",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6a5544bf9678",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8eee6732ab86",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n23d6a8b1de9d",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n60fc105d3783",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne6016c460073",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n477d769a675d",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n78790dfbd672",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n852a6ae36ff8",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n396aeea1811d",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb00874f1b688",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne9aef8ecefd3",
+        "opening": "Ruy Lopez: Exchange Variation, Normal Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n388ea7f5a7e7",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n75a9d9357419",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n759e32e05568",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na2769b7bed70",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n55b6212c3f6f",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n48b483d577bf",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5b12c115b585",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n39c685565224",
+        "opening": "Ruy Lopez: Exchange Variation, Gligoric Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    }
+]

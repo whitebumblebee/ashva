@@ -9,6 +9,7 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.openinglab.app.content.BundledContent
+import com.openinglab.app.content.BundledCourses
 import com.openinglab.app.analysis.AndroidStockfish
 import com.openinglab.app.ui.AppViewModel
 import com.openinglab.app.ui.OpeningLabApp
@@ -23,7 +24,9 @@ class MainActivity : ComponentActivity() {
                     analysisEngine = AndroidStockfish.engine(application),
                     packReader = { BundledContent.read(application.assets, it) },
                     autoInstallBundledOpenings = true,
-                    presentationCache = (application as OpeningLabApplication).openingPresentationCache)
+                    presentationCache = (application as OpeningLabApplication).openingPresentationCache,
+                    deepCourseSource = { BundledCourses.read(application.assets) },
+                    courseFeedbackStore = (application as OpeningLabApplication).courseFeedbackStore)
             }
         }
     override fun onCreate(savedInstanceState: Bundle?) {

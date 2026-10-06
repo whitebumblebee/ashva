@@ -2,7 +2,7 @@
 
 An Android-first chess repertoire teacher built with native Jetpack Compose and Kotlin Multiplatform. Ashva (अश्व, “horse”) takes its name from the chess knight.
 
-**Early alpha · Android 0.14.0.** An offline opening-course and original-game teacher, not an exhaustive opening book or independently expert-reviewed curriculum. No Play Store release or playable iOS client exists. Game browsing, per-move coaching and separate analyzed branches are verified; the broader roadmap remains unfinished.
+**Early alpha · Android 0.17.0.** An offline opening-course and original-game teacher, not an exhaustive opening book or independently expert-reviewed curriculum. No Play Store release or playable iOS client exists. Game browsing, per-move coaching and separate analyzed branches are verified; the broader roadmap remains unfinished.
 
 | Learn                                             | Study a line                                                | Identify                                                                  |
 | ------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -12,6 +12,7 @@ Screenshots are from the Android 0.3.1 alpha on an isolated API 33 emulator, usi
 
 ## What you can try
 
+- **New in 0.17 — full Ruy Lopez deep course:** both colours, 10 chapters (Berlin, Exchange, Open, Closed main systems, Marshall/Anti-Marshall, other Morphy systems, Schliemann, Classical, old Steinitz, other third moves) plus an annotated GM game (*Firouzja–Carlsen, Tata Steel 2020*). 898 lines and 11,190 positions from master (2200+) and club games, every line played to an engine verdict or a transposition. Variations carry their real names, important unnamed GM lines are included, and each variation shows how White and Black win it: rating-band statistics, written plans checked against the winners' moves, and replayable example games. Course text is generated and shown only when its claims pass automatic engine/statistics/board checks. See [the deep course plan](docs/DEEP_COURSE_PLAN.md) and [testing steps](docs/USER_TESTING.md#test-the-full-ruy-lopez-course-017).
 - Study and practice all 149 catalog families as White or Black, with rules-derived move explanations and original Ashva plans. The main Learn/Explore flow opens courses, not just starter demos.
 - See the Full idea, plans and complete move list; replay, jump, pause and change speed.
 - Expand **Understand this position** during study for both-color pawn structures/break candidates, threats, tactical geometry and conditional middlegame/endgame plans. Board facts, original plans and engine output stay distinct.

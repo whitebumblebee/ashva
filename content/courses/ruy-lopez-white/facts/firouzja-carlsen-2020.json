@@ -1,0 +1,3281 @@
+[
+    {
+        "nodeId": "n3e8db43daed3",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "e5",
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "Nf6",
+            "O-O",
+            "Nxe4",
+            "Re1",
+            "Nd6",
+            "Nxe5",
+            "Be7",
+            "Bf1"
+        ],
+        "evalAfter": 22
+    },
+    {
+        "nodeId": "n79b1cff4a7ce",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nf3",
+            "Nc6",
+            "Bb5",
+            "Nf6",
+            "O-O",
+            "Nxe4",
+            "Re1",
+            "Nd6",
+            "Nxe5",
+            "Be7",
+            "Bf1",
+            "Nxe5"
+        ],
+        "evalAfter": 24
+    },
+    {
+        "nodeId": "n780cc290e026",
+        "threat": "Nxe5",
+        "threatGainCp": 170,
+        "threatLine": [
+            "Nxe5",
+            "Qe7",
+            "d4",
+            "d6"
+        ],
+        "prevents": [
+            {
+                "san": "Bc5",
+                "dropCp": 220,
+                "illegalNow": false,
+                "refutation": [
+                    "Bc5",
+                    "Nxe5",
+                    "Nc6",
+                    "Nf3",
+                    "Qe7"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nc6",
+            "Bb5",
+            "Nf6",
+            "O-O",
+            "Nxe4",
+            "Re1",
+            "Nd6",
+            "Nxe5",
+            "Be7",
+            "Bf1",
+            "Nxe5",
+            "Rxe5"
+        ],
+        "evalAfter": 22
+    },
+    {
+        "nodeId": "n02f62561f7bf",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Nxe5",
+                "dropCp": 598,
+                "illegalNow": false,
+                "refutation": [
+                    "Nxe5",
+                    "Nxe5",
+                    "d4",
+                    "Ng6",
+                    "c4"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bc4",
+            "Bc5",
+            "O-O",
+            "Nf6",
+            "d3",
+            "d6",
+            "c3",
+            "a5",
+            "h3",
+            "O-O",
+            "Re1",
+            "h6"
+        ],
+        "evalAfter": 22
+    },
+    {
+        "nodeId": "n09cd8a667eb7",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 2,
+        "bestSan": "Bc4",
+        "pvAfter": [
+            "Nf6",
+            "O-O",
+            "Nxe4",
+            "Re1",
+            "Nd6",
+            "Nxe5",
+            "Be7",
+            "Bf1",
+            "Nxe5",
+            "Rxe5",
+            "O-O",
+            "d4"
+        ],
+        "evalAfter": 20
+    },
+    {
+        "nodeId": "nb412f5989686",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "O-O",
+            "Nxe4",
+            "Re1",
+            "Nd6",
+            "Nxe5",
+            "Be7",
+            "Bf1",
+            "Nxe5",
+            "Rxe5",
+            "O-O",
+            "d4",
+            "Ne8"
+        ],
+        "evalAfter": 18
+    },
+    {
+        "nodeId": "n3d405ba4e96f",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Nxe4",
+                "dropCp": 684,
+                "illegalNow": false,
+                "refutation": [
+                    "Nxe4",
+                    "dxe4",
+                    "Bb4+",
+                    "Nc3",
+                    "O-O"
+                ]
+            },
+            {
+                "san": "a6",
+                "dropCp": 171,
+                "illegalNow": false,
+                "refutation": [
+                    "a6",
+                    "Bxc6",
+                    "bxc6",
+                    "Nxe5",
+                    "Be7"
+                ]
+            }
+        ],
+        "lossCp": 19,
+        "bestSan": "O-O",
+        "pvAfter": [
+            "Bc5",
+            "Ba4",
+            "d6",
+            "c3",
+            "Bb6",
+            "Nbd2",
+            "O-O",
+            "O-O",
+            "Ne7",
+            "Bc2",
+            "Ng6",
+            "Nc4"
+        ],
+        "evalAfter": 14
+    },
+    {
+        "nodeId": "n9effc344af3f",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 11,
+        "bestSan": "Bc5",
+        "pvAfter": [
+            "O-O",
+            "Be7",
+            "Re1",
+            "O-O",
+            "Ba4",
+            "a6",
+            "c3",
+            "Re8",
+            "h3",
+            "h6",
+            "d4",
+            "b5"
+        ],
+        "evalAfter": 30
+    },
+    {
+        "nodeId": "n7157f0fcb720",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 47,
+        "bestSan": "O-O",
+        "pvAfter": [
+            "g6",
+            "O-O",
+            "Bg7",
+            "Re1",
+            "O-O",
+            "h3",
+            "a6",
+            "Ba4",
+            "Nd7",
+            "b4",
+            "b5",
+            "Bb3"
+        ],
+        "evalAfter": 28
+    },
+    {
+        "nodeId": "n85181af2ef30",
+        "threat": "axb5",
+        "threatGainCp": 791,
+        "threatLine": [
+            "axb5",
+            "O-O",
+            "Be7",
+            "b4"
+        ],
+        "prevents": [
+            {
+                "san": "Nbd2",
+                "dropCp": 801,
+                "illegalNow": false,
+                "refutation": [
+                    "Nbd2",
+                    "axb5",
+                    "O-O",
+                    "b4",
+                    "d4"
+                ]
+            },
+            {
+                "san": "O-O",
+                "dropCp": 796,
+                "illegalNow": false,
+                "refutation": [
+                    "O-O",
+                    "axb5",
+                    "Na3",
+                    "b4",
+                    "cxb4"
+                ]
+            },
+            {
+                "san": "d4",
+                "dropCp": 792,
+                "illegalNow": false,
+                "refutation": [
+                    "d4",
+                    "axb5",
+                    "O-O",
+                    "Nxe4",
+                    "Na3"
+                ]
+            }
+        ],
+        "lossCp": -11,
+        "bestSan": "g6",
+        "pvAfter": [
+            "Ba4",
+            "g6",
+            "Nbd2",
+            "Bg7",
+            "O-O",
+            "O-O",
+            "h3",
+            "h6",
+            "Re1",
+            "Re8",
+            "Nf1",
+            "d5"
+        ],
+        "evalAfter": 30
+    },
+    {
+        "nodeId": "n2bff89c6b861",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "axb5",
+                "dropCp": 751,
+                "illegalNow": true,
+                "refutation": []
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "g6",
+            "O-O",
+            "Bg7",
+            "Re1",
+            "O-O",
+            "h3",
+            "h6",
+            "a3",
+            "Nh7",
+            "d4",
+            "g5",
+            "Bxc6"
+        ],
+        "evalAfter": 16
+    },
+    {
+        "nodeId": "n784e1876725d",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 2,
+        "bestSan": "g6",
+        "pvAfter": [
+            "O-O",
+            "O-O",
+            "Re1",
+            "Re8",
+            "h3",
+            "b5",
+            "Bc2",
+            "Bb7",
+            "Nbd2",
+            "Bf8",
+            "Nf1",
+            "h6"
+        ],
+        "evalAfter": 32
+    },
+    {
+        "nodeId": "ndb0fb1def534",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "O-O",
+            "Re1",
+            "Re8",
+            "h3",
+            "b5",
+            "Bc2",
+            "Nb8",
+            "d4",
+            "Bb7",
+            "Nbd2",
+            "Bf8",
+            "b3"
+        ],
+        "evalAfter": 35
+    },
+    {
+        "nodeId": "ned00679264ec",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Re1",
+            "b5",
+            "Bc2",
+            "d5",
+            "Nbd2",
+            "dxe4",
+            "dxe4",
+            "Rb8",
+            "Qe2",
+            "Bd6",
+            "Nf1",
+            "Ne7"
+        ],
+        "evalAfter": 39
+    },
+    {
+        "nodeId": "n9acf350fc039",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Re8",
+            "Nbd2",
+            "Bf8",
+            "d4",
+            "b5",
+            "Bb3",
+            "Bb7",
+            "h3",
+            "h6",
+            "Bc2",
+            "Nb8",
+            "b3"
+        ],
+        "evalAfter": 32
+    },
+    {
+        "nodeId": "n2ef8a724742d",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "h3",
+            "b5",
+            "Bc2",
+            "Bb7",
+            "a4",
+            "Nb8",
+            "Nbd2",
+            "Nbd7",
+            "d4",
+            "Bf8",
+            "Bd3",
+            "d5"
+        ],
+        "evalAfter": 34
+    },
+    {
+        "nodeId": "nb27ccbd65549",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": -3,
+        "bestSan": "h3",
+        "pvAfter": [
+            "Bf8",
+            "d4",
+            "b5",
+            "Bc2",
+            "Bb7",
+            "h3",
+            "g6",
+            "a3",
+            "Nb8",
+            "b4",
+            "Nbd7",
+            "Bb2"
+        ],
+        "evalAfter": 34
+    },
+    {
+        "nodeId": "n6450214eee31",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "d4",
+            "b5",
+            "Bb3",
+            "Bb7",
+            "h3",
+            "h6",
+            "Bc2",
+            "Nb8",
+            "b3",
+            "Nbd7",
+            "Bb2",
+            "Rb8"
+        ],
+        "evalAfter": 37
+    },
+    {
+        "nodeId": "n8f5d18f72caf",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 4,
+        "bestSan": "d4",
+        "pvAfter": [
+            "d5",
+            "exd5",
+            "Qxd5",
+            "Nf1",
+            "h6",
+            "d4",
+            "exd4",
+            "Rxe8",
+            "Nxe8",
+            "cxd4",
+            "b5",
+            "Bb3"
+        ],
+        "evalAfter": 15
+    },
+    {
+        "nodeId": "n486bcb5f770c",
+        "threat": "bxa4",
+        "threatGainCp": 681,
+        "threatLine": [
+            "bxa4",
+            "Qxa4",
+            "Ne7",
+            "d4"
+        ],
+        "prevents": [
+            {
+                "san": "Nf1",
+                "dropCp": 683,
+                "illegalNow": false,
+                "refutation": [
+                    "Nf1",
+                    "bxa4",
+                    "Qxa4",
+                    "Ne7",
+                    "b4"
+                ]
+            },
+            {
+                "san": "a3",
+                "dropCp": 680,
+                "illegalNow": false,
+                "refutation": [
+                    "a3",
+                    "bxa4",
+                    "Qxa4",
+                    "Ne7",
+                    "b4"
+                ]
+            },
+            {
+                "san": "d4",
+                "dropCp": 664,
+                "illegalNow": false,
+                "refutation": [
+                    "d4",
+                    "bxa4",
+                    "d5",
+                    "Ne7",
+                    "Qxa4"
+                ]
+            }
+        ],
+        "lossCp": 14,
+        "bestSan": "d5",
+        "pvAfter": [
+            "Bc2",
+            "Bb7",
+            "d4",
+            "Nb8",
+            "b3",
+            "Nbd7",
+            "Bb2",
+            "g6",
+            "a4",
+            "Nh5",
+            "axb5",
+            "axb5"
+        ],
+        "evalAfter": 42
+    },
+    {
+        "nodeId": "n9735546b6ab2",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "bxa4",
+                "dropCp": 693,
+                "illegalNow": true,
+                "refutation": []
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bb7",
+            "d4",
+            "Nb8",
+            "b3",
+            "Nbd7",
+            "Bb2",
+            "g6",
+            "a4",
+            "c6",
+            "b4",
+            "Qc7",
+            "Bb3"
+        ],
+        "evalAfter": 31
+    },
+    {
+        "nodeId": "n602579621582",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "d4",
+            "h6",
+            "a4",
+            "exd4",
+            "cxd4",
+            "Nb4",
+            "Bb1",
+            "c5",
+            "d5",
+            "Nd7",
+            "Ra3",
+            "c4"
+        ],
+        "evalAfter": 34
+    },
+    {
+        "nodeId": "n8a7d1834eedf",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Ne7",
+                "dropCp": 120,
+                "illegalNow": false,
+                "refutation": [
+                    "Ne7",
+                    "dxe5",
+                    "dxe5",
+                    "Nxe5",
+                    "c5"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nb8",
+            "b3",
+            "Nbd7",
+            "Bb2",
+            "Rb8",
+            "a4",
+            "Ba8",
+            "Qb1",
+            "h6",
+            "Qd1",
+            "g6",
+            "axb5"
+        ],
+        "evalAfter": 32
+    },
+    {
+        "nodeId": "n1665f43a6f3e",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": -1,
+        "bestSan": "Nb8",
+        "pvAfter": [
+            "a3",
+            "Nb8",
+            "b4",
+            "Nbd7",
+            "Bb2",
+            "Bg7",
+            "dxe5",
+            "dxe5",
+            "a4",
+            "c5",
+            "axb5",
+            "axb5"
+        ],
+        "evalAfter": 29
+    },
+    {
+        "nodeId": "n8b0e2bf3e1c8",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nb8",
+            "b4",
+            "Nbd7",
+            "Bb2",
+            "c6",
+            "a4",
+            "Qc7",
+            "Bb3",
+            "d5",
+            "dxe5",
+            "Nxe5",
+            "exd5"
+        ],
+        "evalAfter": 31
+    },
+    {
+        "nodeId": "n47962be4b052",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "b4",
+            "Nbd7",
+            "a4",
+            "Bg7",
+            "d5",
+            "c6",
+            "c4",
+            "Nb6",
+            "cxb5",
+            "axb5",
+            "dxc6",
+            "Bxc6"
+        ],
+        "evalAfter": 29
+    },
+    {
+        "nodeId": "ndb141555fbb6",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "exd4",
+                "dropCp": -49,
+                "illegalNow": true,
+                "refutation": []
+            }
+        ],
+        "lossCp": 43,
+        "bestSan": "b4",
+        "pvAfter": [
+            "c6",
+            "dxc6",
+            "Bxc6",
+            "Nh2",
+            "Qc7",
+            "Ng4",
+            "Nbd7",
+            "a4",
+            "Nxg4",
+            "hxg4",
+            "Nc5",
+            "axb5"
+        ],
+        "evalAfter": -14
+    },
+    {
+        "nodeId": "n244a120bb095",
+        "threat": "cxd5",
+        "threatGainCp": 173,
+        "threatLine": [
+            "cxd5",
+            "exd5",
+            "Bxd5",
+            "Ne4"
+        ],
+        "prevents": [
+            {
+                "san": "b4",
+                "dropCp": 225,
+                "illegalNow": false,
+                "refutation": [
+                    "b4",
+                    "cxd5",
+                    "exd5",
+                    "Bxd5",
+                    "Ne4"
+                ]
+            },
+            {
+                "san": "b3",
+                "dropCp": 203,
+                "illegalNow": false,
+                "refutation": [
+                    "b3",
+                    "cxd5",
+                    "exd5",
+                    "Bxd5",
+                    "c4"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "c4",
+            "Nbd7",
+            "b3",
+            "Qc7",
+            "Nf1",
+            "Rec8",
+            "Ne3",
+            "bxc4",
+            "bxc4",
+            "a5",
+            "Nd2",
+            "cxd5"
+        ],
+        "evalAfter": -10
+    },
+    {
+        "nodeId": "n90baed1a50a3",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "cxd5",
+                "dropCp": 295,
+                "illegalNow": false,
+                "refutation": [
+                    "cxd5",
+                    "cxd5",
+                    "Qc7",
+                    "Nb3",
+                    "a5"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nbd7",
+            "Nh2",
+            "Rc8",
+            "dxc6",
+            "Bxc6",
+            "Ng4",
+            "Nxg4",
+            "hxg4",
+            "Qh4",
+            "cxb5",
+            "axb5",
+            "g3"
+        ],
+        "evalAfter": -6
+    },
+    {
+        "nodeId": "n254bab049abb",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nh2",
+            "Rc8",
+            "b3",
+            "Qc7",
+            "Ra2",
+            "Bh6",
+            "Ng4",
+            "Nxg4",
+            "Qxg4",
+            "bxc4",
+            "Nxc4",
+            "Bxc1"
+        ],
+        "evalAfter": -1
+    },
+    {
+        "nodeId": "n776404a587bc",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 16,
+        "bestSan": "Nh2",
+        "pvAfter": [
+            "bxc4",
+            "dxc6",
+            "Bxc6",
+            "Nxc4",
+            "Qc7",
+            "Bg5",
+            "h6",
+            "Bxf6",
+            "Nxf6",
+            "Rc1",
+            "a5",
+            "Bb3"
+        ],
+        "evalAfter": -25
+    },
+    {
+        "nodeId": "neb656c4838b5",
+        "threat": "bxc4",
+        "threatGainCp": 294,
+        "threatLine": [
+            "bxc4",
+            "dxc6",
+            "Qxc6",
+            "a5"
+        ],
+        "prevents": [
+            {
+                "san": "Rb1",
+                "dropCp": 356,
+                "illegalNow": false,
+                "refutation": [
+                    "Rb1",
+                    "bxc4",
+                    "dxc6",
+                    "Qxc6",
+                    "a5"
+                ]
+            },
+            {
+                "san": "b4",
+                "dropCp": 309,
+                "illegalNow": false,
+                "refutation": [
+                    "b4",
+                    "bxc4",
+                    "dxc6",
+                    "Qxc6",
+                    "Ba3"
+                ]
+            },
+            {
+                "san": "a5",
+                "dropCp": 178,
+                "illegalNow": false,
+                "refutation": [
+                    "a5",
+                    "bxc4",
+                    "dxc6",
+                    "Qxc6",
+                    "Ra4"
+                ]
+            }
+        ],
+        "lossCp": 9,
+        "bestSan": "bxc4",
+        "pvAfter": [
+            "b3",
+            "Rec8",
+            "Bb1",
+            "bxc4",
+            "bxc4",
+            "a5",
+            "Bd3",
+            "Ba6",
+            "Bf1",
+            "Nc5",
+            "Ba3",
+            "Rab8"
+        ],
+        "evalAfter": -21
+    },
+    {
+        "nodeId": "n1bad0d962aae",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rec8",
+            "Bb1",
+            "bxc4",
+            "bxc4",
+            "a5",
+            "Bd3",
+            "Nc5",
+            "Bf1",
+            "Ba6",
+            "Ba3",
+            "Rab8",
+            "Rc1"
+        ],
+        "evalAfter": -21
+    },
+    {
+        "nodeId": "nc6fed98000ea",
+        "threat": "cxd5",
+        "threatGainCp": 281,
+        "threatLine": [
+            "cxd5",
+            "exd5",
+            "Nxd5",
+            "Ng5"
+        ],
+        "prevents": [
+            {
+                "san": "Nb1",
+                "dropCp": 371,
+                "illegalNow": false,
+                "refutation": [
+                    "Nb1",
+                    "cxd5",
+                    "exd5",
+                    "bxc4",
+                    "bxc4"
+                ]
+            },
+            {
+                "san": "a5",
+                "dropCp": 302,
+                "illegalNow": false,
+                "refutation": [
+                    "a5",
+                    "cxd5",
+                    "exd5",
+                    "Nxd5",
+                    "Ng5"
+                ]
+            },
+            {
+                "san": "Nf1",
+                "dropCp": 285,
+                "illegalNow": false,
+                "refutation": [
+                    "Nf1",
+                    "cxd5",
+                    "exd5",
+                    "bxc4",
+                    "bxc4"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bb1",
+            "bxc4",
+            "bxc4",
+            "a5",
+            "Bd3",
+            "Ba6",
+            "Bf1",
+            "Nc5",
+            "Ba3",
+            "Rab8",
+            "Qc2",
+            "cxd5"
+        ],
+        "evalAfter": -22
+    },
+    {
+        "nodeId": "n13ab5c3b48ed",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 13,
+        "bestSan": "Bb1",
+        "pvAfter": [
+            "bxa4",
+            "bxa4",
+            "a5",
+            "Nb1",
+            "cxd5",
+            "cxd5",
+            "Ba6",
+            "Na3",
+            "Rab8",
+            "Be3",
+            "Nc5",
+            "Nd2"
+        ],
+        "evalAfter": -44
+    },
+    {
+        "nodeId": "n6eb6c5b57e5a",
+        "threat": "c3",
+        "threatGainCp": 626,
+        "threatLine": [
+            "c3",
+            "Nc4",
+            "cxd5",
+            "exd5"
+        ],
+        "prevents": [
+            {
+                "san": "Ba3",
+                "dropCp": 630,
+                "illegalNow": false,
+                "refutation": [
+                    "Ba3",
+                    "c3",
+                    "Nc4",
+                    "cxd5",
+                    "exd5"
+                ]
+            },
+            {
+                "san": "a5",
+                "dropCp": 622,
+                "illegalNow": false,
+                "refutation": [
+                    "a5",
+                    "c3",
+                    "Nc4",
+                    "cxd5",
+                    "exd5"
+                ]
+            },
+            {
+                "san": "Nh2",
+                "dropCp": 617,
+                "illegalNow": false,
+                "refutation": [
+                    "Nh2",
+                    "c3",
+                    "Nc4",
+                    "cxd5",
+                    "exd5"
+                ]
+            }
+        ],
+        "lossCp": -24,
+        "bestSan": "bxa4",
+        "pvAfter": [
+            "bxc4",
+            "a5",
+            "Nb1",
+            "cxd5",
+            "cxd5",
+            "Ba6",
+            "Na3",
+            "Rab8",
+            "Be3",
+            "Nc5",
+            "Nd2",
+            "Rb4"
+        ],
+        "evalAfter": -64
+    },
+    {
+        "nodeId": "ne12b23beb02d",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "a5",
+            "Nb1",
+            "cxd5",
+            "cxd5",
+            "Ba6",
+            "Na3",
+            "Rab8",
+            "Be3",
+            "Nc5",
+            "Nd2",
+            "Rb4",
+            "Qf3"
+        ],
+        "evalAfter": -23
+    },
+    {
+        "nodeId": "n07ca15ef0877",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "a5",
+                "dropCp": 135,
+                "illegalNow": true,
+                "refutation": []
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nb1",
+            "cxd5",
+            "cxd5",
+            "Ba6",
+            "Na3",
+            "Rab8",
+            "Be3",
+            "Nc5",
+            "Nd2",
+            "h5",
+            "Qf3",
+            "Be7"
+        ],
+        "evalAfter": -33
+    },
+    {
+        "nodeId": "n10da6dd97093",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Bh6",
+                "dropCp": 746,
+                "illegalNow": false,
+                "refutation": [
+                    "Bh6",
+                    "Bxh6",
+                    "cxd5",
+                    "cxd5",
+                    "Ba6"
+                ]
+            }
+        ],
+        "lossCp": 62,
+        "bestSan": "Nb1",
+        "pvAfter": [
+            "cxd5",
+            "cxd5",
+            "Ba6",
+            "N3d2",
+            "Bh6",
+            "Ne3",
+            "Nc5",
+            "Ba3",
+            "Rab8",
+            "Ra1",
+            "Kg7",
+            "Rc1"
+        ],
+        "evalAfter": -74
+    },
+    {
+        "nodeId": "n023c7a717522",
+        "threat": "Bxc4",
+        "threatGainCp": 372,
+        "threatLine": [
+            "Bxc4",
+            "Rb2",
+            "cxd5",
+            "exd5"
+        ],
+        "prevents": [
+            {
+                "san": "Be3",
+                "dropCp": 444,
+                "illegalNow": false,
+                "refutation": [
+                    "Be3",
+                    "Bxc4",
+                    "Rb2",
+                    "cxd5",
+                    "N1d2"
+                ]
+            },
+            {
+                "san": "Ba3",
+                "dropCp": 426,
+                "illegalNow": false,
+                "refutation": [
+                    "Ba3",
+                    "Bxc4",
+                    "Rb2",
+                    "cxd5",
+                    "N1d2"
+                ]
+            },
+            {
+                "san": "Bd2",
+                "dropCp": 422,
+                "illegalNow": false,
+                "refutation": [
+                    "Bd2",
+                    "Bxc4",
+                    "Rb2",
+                    "cxd5",
+                    "exd5"
+                ]
+            }
+        ],
+        "lossCp": 35,
+        "bestSan": "cxd5",
+        "pvAfter": [
+            "dxc6",
+            "Qxc6",
+            "Ne3",
+            "Nxe4",
+            "Bxe4",
+            "Qxe4",
+            "Rd2",
+            "Qc6",
+            "Ba3",
+            "Nc5",
+            "Ng5",
+            "Qxa4"
+        ],
+        "evalAfter": -84
+    },
+    {
+        "nodeId": "n0b1ee91403f6",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Bxc4",
+                "dropCp": 806,
+                "illegalNow": false,
+                "refutation": [
+                    "Bxc4",
+                    "Nxc4",
+                    "cxd5",
+                    "Ne3",
+                    "d4"
+                ]
+            }
+        ],
+        "lossCp": 16,
+        "bestSan": "dxc6",
+        "pvAfter": [
+            "cxd5",
+            "Nxd5",
+            "Qd8",
+            "Nxf6+",
+            "Qxf6",
+            "Bg5",
+            "Qe6",
+            "Nd2",
+            "Rab8",
+            "Be3",
+            "Nc5",
+            "Ra1"
+        ],
+        "evalAfter": -76
+    },
+    {
+        "nodeId": "nda8ca1e12dd0",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 53,
+        "bestSan": "cxd5",
+        "pvAfter": [
+            "dxc6",
+            "Qxc6",
+            "Nd2",
+            "Rab8",
+            "Qf3",
+            "Bg7",
+            "Bb2",
+            "Qc7",
+            "Nb1",
+            "Rb4",
+            "Nd2",
+            "Ne6"
+        ],
+        "evalAfter": -49
+    },
+    {
+        "nodeId": "n349ccd0902d8",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Ncxe4",
+                "dropCp": 736,
+                "illegalNow": false,
+                "refutation": [
+                    "Ncxe4",
+                    "Bxe4",
+                    "Nxe4",
+                    "Nxe4",
+                    "f5"
+                ]
+            },
+            {
+                "san": "Nfxe4",
+                "dropCp": 733,
+                "illegalNow": false,
+                "refutation": [
+                    "Nfxe4",
+                    "Bxe4",
+                    "Nxe4",
+                    "Nxe4",
+                    "f5"
+                ]
+            }
+        ],
+        "lossCp": 25,
+        "bestSan": "dxc6",
+        "pvAfter": [
+            "cxd5",
+            "exd5",
+            "Bg7",
+            "Ba3",
+            "Re8",
+            "Nb1",
+            "Nfd7",
+            "Nc3",
+            "e4",
+            "Nb5",
+            "Bxb5",
+            "cxb5"
+        ],
+        "evalAfter": -53
+    },
+    {
+        "nodeId": "n695376768d8c",
+        "threat": "d4",
+        "threatGainCp": 410,
+        "threatLine": [
+            "d4",
+            "Nd5",
+            "Nxd5",
+            "exd5"
+        ],
+        "prevents": [
+            {
+                "san": "h4",
+                "dropCp": 529,
+                "illegalNow": false,
+                "refutation": [
+                    "h4",
+                    "d4",
+                    "Nd5",
+                    "Nxd5",
+                    "cxd5"
+                ]
+            },
+            {
+                "san": "Ng4",
+                "dropCp": 484,
+                "illegalNow": false,
+                "refutation": [
+                    "Ng4",
+                    "Nxg4",
+                    "hxg4",
+                    "d4",
+                    "Ra3"
+                ]
+            },
+            {
+                "san": "Ba3",
+                "dropCp": 462,
+                "illegalNow": false,
+                "refutation": [
+                    "Ba3",
+                    "d4",
+                    "Nd5",
+                    "Nxd5",
+                    "exd5"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "exd5",
+            "Bg7",
+            "Ba3",
+            "Rab8",
+            "Rb2",
+            "Rxb2",
+            "Bxb2",
+            "Re8",
+            "Ba1",
+            "Nfd7",
+            "Bc3",
+            "Qd8"
+        ],
+        "evalAfter": -76
+    },
+    {
+        "nodeId": "n05f379cb6c5f",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 56,
+        "bestSan": "exd5",
+        "pvAfter": [
+            "Rab8",
+            "Ba3",
+            "Qd8",
+            "Ng4",
+            "Nfd7",
+            "Ne3",
+            "h5",
+            "Bb1",
+            "Bh6",
+            "Rc2",
+            "Bf4",
+            "Rc3"
+        ],
+        "evalAfter": -131
+    },
+    {
+        "nodeId": "nf40fafa75e7d",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Ba3",
+            "h5",
+            "Qf3",
+            "Qd8",
+            "Rb1",
+            "Rxb1+",
+            "Nxb1",
+            "Bh6",
+            "Nc3",
+            "Nb3",
+            "Nf5",
+            "Bd2"
+        ],
+        "evalAfter": -113
+    },
+    {
+        "nodeId": "nc890f623b3e4",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Rb4",
+                "dropCp": 231,
+                "illegalNow": false,
+                "refutation": [
+                    "Rb4",
+                    "Bxb4",
+                    "axb4",
+                    "Qf3",
+                    "Nfd7"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "h5",
+            "Qf3",
+            "Qd8",
+            "Rb1",
+            "Rxb1+",
+            "Nxb1",
+            "Bh6",
+            "Nc3",
+            "Nb3",
+            "Nf5",
+            "Bd2",
+            "Nb5"
+        ],
+        "evalAfter": -131
+    },
+    {
+        "nodeId": "n075c1791da2a",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 31,
+        "bestSan": "h5",
+        "pvAfter": [
+            "Ng4",
+            "Nfd7",
+            "Re3",
+            "h5",
+            "Nh2",
+            "Bh6",
+            "Rc3",
+            "Rc7",
+            "Nhf1",
+            "Bxf1",
+            "Nxf1",
+            "Na6"
+        ],
+        "evalAfter": -120
+    },
+    {
+        "nodeId": "nb34f675066e4",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 10,
+        "bestSan": "Ng4",
+        "pvAfter": [
+            "h5",
+            "Rb1",
+            "Rxb1+",
+            "Nxb1",
+            "Bh6",
+            "Nc3",
+            "Nb3",
+            "Nf5",
+            "Bd2",
+            "Nb5",
+            "Bxb5",
+            "Bxb3"
+        ],
+        "evalAfter": -152
+    },
+    {
+        "nodeId": "n4cd05f547e98",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Ng4",
+                "dropCp": 564,
+                "illegalNow": false,
+                "refutation": [
+                    "Ng4",
+                    "hxg4",
+                    "hxg4",
+                    "Bh6",
+                    "Nf1"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Qd1",
+            "Bh6",
+            "Ra1",
+            "Bf4",
+            "Rc1",
+            "Rb7",
+            "Rb1",
+            "Rxb1",
+            "Qxb1",
+            "h4",
+            "Qb2",
+            "Kg7"
+        ],
+        "evalAfter": -165
+    },
+    {
+        "nodeId": "naa392c8fe640",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 3,
+        "bestSan": "Qd1",
+        "pvAfter": [
+            "Bh6",
+            "Rec1",
+            "Bf4",
+            "Qd1",
+            "Kg7",
+            "Rab1",
+            "Rb6",
+            "Rxb6",
+            "Qxb6",
+            "Qe1",
+            "h4",
+            "Kh1"
+        ],
+        "evalAfter": -182
+    },
+    {
+        "nodeId": "nc0dd09e8af80",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Reb1",
+            "Rxb1+",
+            "Rxb1",
+            "h4",
+            "Rc1",
+            "Bf4",
+            "Qd1",
+            "Bxe3",
+            "fxe3",
+            "Nh5",
+            "Kh2",
+            "Ng3"
+        ],
+        "evalAfter": -192
+    },
+    {
+        "nodeId": "n23e82ef3912c",
+        "threat": "Rxb8",
+        "threatGainCp": 175,
+        "threatLine": [
+            "Rxb8",
+            "Rxb8",
+            "Bxc5",
+            "dxc5"
+        ],
+        "prevents": [
+            {
+                "san": "Bg5",
+                "dropCp": 183,
+                "illegalNow": false,
+                "refutation": [
+                    "Bg5",
+                    "Rxb8",
+                    "Rxb8",
+                    "Bxc5",
+                    "dxc5"
+                ]
+            },
+            {
+                "san": "Bf4",
+                "dropCp": 181,
+                "illegalNow": false,
+                "refutation": [
+                    "Bf4",
+                    "Rxb8",
+                    "Rxb8",
+                    "Bxc5",
+                    "dxc5"
+                ]
+            },
+            {
+                "san": "h4",
+                "dropCp": 177,
+                "illegalNow": false,
+                "refutation": [
+                    "h4",
+                    "Rxb8",
+                    "Rxb8",
+                    "Bxc5",
+                    "dxc5"
+                ]
+            }
+        ],
+        "lossCp": 48,
+        "bestSan": "Reb1",
+        "pvAfter": [
+            "Rxb1",
+            "Rxb1",
+            "h4",
+            "Re1",
+            "Bf4",
+            "Ndc4",
+            "Qc7",
+            "g3",
+            "hxg3",
+            "fxg3",
+            "Bg5",
+            "Kg2"
+        ],
+        "evalAfter": -216
+    },
+    {
+        "nodeId": "n5e62ed32c2b4",
+        "threat": "Rxe1+",
+        "threatGainCp": 1218,
+        "threatLine": [
+            "Rxe1+",
+            "Kh2",
+            "Be2",
+            "Bd1"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rxb1",
+            "h4",
+            "Re1",
+            "Bf4",
+            "Rc1",
+            "Kg7",
+            "Rb1",
+            "Qc7",
+            "Ndc4",
+            "Bxc4",
+            "Nxc4",
+            "Ncxe4"
+        ],
+        "evalAfter": -200
+    },
+    {
+        "nodeId": "n9e03c9ba2ee1",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "h4",
+            "Re1",
+            "Bf4",
+            "Ndc4",
+            "Kg7",
+            "Nd2",
+            "Qc7",
+            "Rd1",
+            "Nd3",
+            "Bxd3",
+            "Bxd3",
+            "Nef1"
+        ],
+        "evalAfter": -209
+    },
+    {
+        "nodeId": "n4c7e17dd3c9b",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 49,
+        "bestSan": "h4",
+        "pvAfter": [
+            "g3",
+            "Bg5",
+            "Kh2",
+            "Qc7",
+            "Rc1",
+            "h4",
+            "gxh4",
+            "Bf4+",
+            "Kg1",
+            "Rh8",
+            "Nb3",
+            "Nxb3"
+        ],
+        "evalAfter": -189
+    },
+    {
+        "nodeId": "na319217543fe",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 86,
+        "bestSan": "g3",
+        "pvAfter": [
+            "h4",
+            "Ne3",
+            "Bf4",
+            "Rc1",
+            "Qb6",
+            "Rb1",
+            "Qc7",
+            "Ndc4",
+            "Bxc4",
+            "Nxc4",
+            "Ncxe4",
+            "Bd3"
+        ],
+        "evalAfter": -255
+    },
+    {
+        "nodeId": "n7a20f993b467",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Ne3",
+            "Bf4",
+            "Rc1",
+            "Qd7",
+            "Rb1",
+            "Nd3",
+            "Bxd3",
+            "Bxd3",
+            "Re1",
+            "Qc7",
+            "Nef1",
+            "Bxf1"
+        ],
+        "evalAfter": -305
+    },
+    {
+        "nodeId": "n1f31967bd3c8",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Nh5",
+                "dropCp": 213,
+                "illegalNow": false,
+                "refutation": [
+                    "Nh5",
+                    "Ndc4",
+                    "Bxe3",
+                    "Nxe3",
+                    "Nf4"
+                ]
+            },
+            {
+                "san": "Nh7",
+                "dropCp": 165,
+                "illegalNow": false,
+                "refutation": [
+                    "Nh7",
+                    "Ndc4",
+                    "Ng5",
+                    "Qg4",
+                    "Bxc4"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bf4",
+            "Rc1",
+            "Qb6",
+            "Rb1",
+            "Qa7",
+            "Rd1",
+            "Nd3",
+            "Bxd3",
+            "Bxd3",
+            "Nf5+",
+            "gxf5",
+            "Qxd3"
+        ],
+        "evalAfter": -286
+    },
+    {
+        "nodeId": "n9dccfad629bd",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rc1",
+            "Qd7",
+            "Re1",
+            "Qc7",
+            "Rb1",
+            "Ncd7",
+            "Bb3",
+            "Bd3",
+            "Rd1",
+            "Nc5",
+            "Rc1",
+            "Bxe4"
+        ],
+        "evalAfter": -312
+    },
+    {
+        "nodeId": "nf826fcf44cf6",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 67,
+        "bestSan": "Rc1",
+        "pvAfter": [
+            "Qc7",
+            "Ne3",
+            "Ncd7",
+            "Bb3",
+            "Bd3",
+            "Rd1",
+            "Qc3",
+            "Bxd6",
+            "Nxe4",
+            "Nxe4",
+            "Qxb3",
+            "Nd2"
+        ],
+        "evalAfter": -355
+    },
+    {
+        "nodeId": "n357ad9309bad",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Re1",
+            "Bxf1",
+            "Nxf1",
+            "Nb7",
+            "Re2",
+            "Qc3",
+            "Qxc3",
+            "Rxc3",
+            "Bb2",
+            "Rc4",
+            "Ba3",
+            "Nc5"
+        ],
+        "evalAfter": -392
+    },
+    {
+        "nodeId": "n76c9f0dcf20e",
+        "threat": "gxf4",
+        "threatGainCp": 1086,
+        "threatLine": [
+            "gxf4",
+            "Nh5",
+            "fxe5",
+            "dxe5"
+        ],
+        "prevents": [
+            {
+                "san": "Qa7",
+                "dropCp": 1022,
+                "illegalNow": false,
+                "refutation": [
+                    "Qa7",
+                    "gxf4",
+                    "Nh5",
+                    "fxe5",
+                    "dxe5"
+                ]
+            }
+        ],
+        "lossCp": 247,
+        "bestSan": "Re1",
+        "pvAfter": [
+            "hxg3",
+            "fxg3",
+            "Bh6",
+            "Re1",
+            "Qa7",
+            "Kh1",
+            "Nb7",
+            "Bd1",
+            "Qd4",
+            "Nb3",
+            "Qc3",
+            "Qxc3"
+        ],
+        "evalAfter": -559
+    },
+    {
+        "nodeId": "nc48a045ca6f1",
+        "threat": "gxf2+",
+        "threatGainCp": 191,
+        "threatLine": [
+            "gxf2+",
+            "Kg2",
+            "Qd8",
+            "Kxf2"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "fxg3",
+            "Bh6",
+            "Kg2",
+            "Qa7",
+            "Rb2",
+            "Bxf1+",
+            "Nxf1",
+            "Bc1",
+            "Ra2",
+            "Bxa3",
+            "Rxa3",
+            "Ne6"
+        ],
+        "evalAfter": -599
+    },
+    {
+        "nodeId": "n8756ed3c8846",
+        "threat": "gxf4",
+        "threatGainCp": 1060,
+        "threatLine": [
+            "gxf4",
+            "Nh5",
+            "fxe5",
+            "dxe5"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bh6",
+            "Kh2",
+            "Qa7",
+            "Rb2",
+            "Bxf1",
+            "Nxf1",
+            "Bc1",
+            "Ra2",
+            "Bxa3",
+            "Qxa3",
+            "Ncxe4",
+            "Bxe4"
+        ],
+        "evalAfter": -565
+    },
+    {
+        "nodeId": "n3f09e4437d73",
+        "threat": "Ncd7",
+        "threatGainCp": 152,
+        "threatLine": [
+            "Ncd7",
+            "Bd1",
+            "Bxf1",
+            "Nxf1"
+        ],
+        "prevents": [
+            {
+                "san": "gxf4",
+                "dropCp": 855,
+                "illegalNow": true,
+                "refutation": []
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Re1",
+            "Qd7",
+            "Kg2",
+            "Nxa4",
+            "Bxa4",
+            "Qxa4",
+            "Bxd6",
+            "Nd7",
+            "Qb3",
+            "Qxb3",
+            "Nxb3",
+            "a4"
+        ],
+        "evalAfter": -539
+    },
+    {
+        "nodeId": "nceedcc05d943",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 156,
+        "bestSan": "Re1",
+        "pvAfter": [
+            "Qa7",
+            "Kg2",
+            "Ncd7",
+            "Bd1",
+            "Qd4",
+            "Bb2",
+            "Qd3",
+            "Ra1",
+            "Nc5",
+            "Qxd3",
+            "Bxd3",
+            "Ra3"
+        ],
+        "evalAfter": -623
+    },
+    {
+        "nodeId": "nf9d30444be2b",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Rb2",
+                "dropCp": 157,
+                "illegalNow": false,
+                "refutation": [
+                    "Rb2",
+                    "Nxa4",
+                    "Bxa4",
+                    "Qxa4",
+                    "Ra2"
+                ]
+            },
+            {
+                "san": "Re1",
+                "dropCp": 155,
+                "illegalNow": false,
+                "refutation": [
+                    "Re1",
+                    "Nxa4",
+                    "Bxa4",
+                    "Qxa4",
+                    "Bxd6"
+                ]
+            },
+            {
+                "san": "Kh1",
+                "dropCp": 136,
+                "illegalNow": false,
+                "refutation": [
+                    "Kh1",
+                    "Bxd2",
+                    "Nxd2",
+                    "Qh3+",
+                    "Kg1"
+                ]
+            }
+        ],
+        "lossCp": 116,
+        "bestSan": "Qa7",
+        "pvAfter": [
+            "Kg2",
+            "Qa7",
+            "Rb2",
+            "Bxf1+",
+            "Nxf1",
+            "Bc1",
+            "Ra2",
+            "Bxa3",
+            "Rxa3",
+            "Ne6",
+            "Bd3",
+            "Nd4"
+        ],
+        "evalAfter": -577
+    },
+    {
+        "nodeId": "n82919ce9571c",
+        "threat": "Rb6",
+        "threatGainCp": 176,
+        "threatLine": [
+            "Rb6",
+            "Qd8",
+            "Rb2",
+            "Qc7"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Nxa4",
+            "Bxa4",
+            "Qxa4",
+            "Bxd6",
+            "Qd4",
+            "Qf2",
+            "Qc3",
+            "Kh3",
+            "Re8",
+            "Qe1",
+            "Bd3",
+            "Ra1"
+        ],
+        "evalAfter": -640
+    },
+    {
+        "nodeId": "n98570f3898c9",
+        "threat": "Rxc2",
+        "threatGainCp": 467,
+        "threatLine": [
+            "Rxc2",
+            "Rc1",
+            "Bxf1+",
+            "Rxf1"
+        ],
+        "prevents": [
+            {
+                "san": "Rb6",
+                "dropCp": 554,
+                "illegalNow": false,
+                "refutation": [
+                    "Rb6",
+                    "Bxf1+",
+                    "Qxf1",
+                    "Nxb6",
+                    "Bd3"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bxa4",
+            "Qxa4",
+            "Bxd6",
+            "Qd4",
+            "Qf2",
+            "Qc3",
+            "Kh3",
+            "Re8",
+            "Rb6",
+            "Bxf1+",
+            "Qxf1",
+            "Bf4"
+        ],
+        "evalAfter": -608
+    },
+    {
+        "nodeId": "n135ae663f8b3",
+        "threat": "Bxd7",
+        "threatGainCp": 1534,
+        "threatLine": [
+            "Bxd7",
+            "Nxd7",
+            "Kg1",
+            "Kg8"
+        ],
+        "prevents": [
+            {
+                "san": "Rxc2",
+                "dropCp": 1890,
+                "illegalNow": false,
+                "refutation": [
+                    "Rc2",
+                    "Bxd7",
+                    "Nxd7",
+                    "Rd1",
+                    "Nc5"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Qxa4",
+            "Bxd6",
+            "Qd4",
+            "Qf2",
+            "Qc3",
+            "Qe1",
+            "Bd3",
+            "Rd1",
+            "Ng4",
+            "Kh3",
+            "Bxf1+",
+            "Nxf1"
+        ],
+        "evalAfter": -578
+    },
+    {
+        "nodeId": "na0550b14a093",
+        "threat": "Rc2",
+        "threatGainCp": 251,
+        "threatLine": [
+            "Rc2",
+            "Bxd6",
+            "Bxd2",
+            "Kh1"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bxd6",
+            "Qd4",
+            "Qf2",
+            "Qc3",
+            "Kh3",
+            "Re8",
+            "Rb6",
+            "Bxf1+",
+            "Qxf1",
+            "Bf4",
+            "Nf3",
+            "Qc8+"
+        ],
+        "evalAfter": -601
+    },
+    {
+        "nodeId": "n8629c79f2c90",
+        "threat": "Bxe5",
+        "threatGainCp": 1467,
+        "threatLine": [
+            "Bxe5",
+            "Qe8",
+            "Qxf6+",
+            "Kh7"
+        ],
+        "prevents": [
+            {
+                "san": "Rc2",
+                "dropCp": 1726,
+                "illegalNow": false,
+                "refutation": [
+                    "Rc2",
+                    "Bxe5",
+                    "Kf8",
+                    "Qxf6",
+                    "Qxe4+"
+                ]
+            },
+            {
+                "san": "Bxd2",
+                "dropCp": 1187,
+                "illegalNow": false,
+                "refutation": [
+                    "Bxd2",
+                    "Bxe5",
+                    "Kf8",
+                    "Nxd2",
+                    "Nd7"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Qd4",
+            "Qf2",
+            "Qc3",
+            "Kh3",
+            "Re8",
+            "Rb6",
+            "Ng4",
+            "Qg2",
+            "Ne3",
+            "Nxe3",
+            "Bxe3",
+            "Rc6"
+        ],
+        "evalAfter": -571
+    },
+    {
+        "nodeId": "ne1ed8bb30b12",
+        "threat": "Bxd2",
+        "threatGainCp": 256,
+        "threatLine": [
+            "Bxd2",
+            "Rb8",
+            "Nxe4",
+            "Rxc8"
+        ],
+        "prevents": [
+            {
+                "san": "Bxe5",
+                "dropCp": 1779,
+                "illegalNow": false,
+                "refutation": [
+                    "Bxe5",
+                    "Qxe5",
+                    "Rb6",
+                    "Bxf1+",
+                    "Kxf1"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Qf2",
+            "Qc3",
+            "Kh3",
+            "Re8",
+            "Rb6",
+            "Ng4",
+            "Qg2",
+            "Ne3",
+            "Nxe3",
+            "Bxe3",
+            "Rc6",
+            "Bc8+"
+        ],
+        "evalAfter": -563
+    },
+    {
+        "nodeId": "n880146316435",
+        "threat": "Qxd4",
+        "threatGainCp": 1142,
+        "threatLine": [
+            "Qxd4",
+            "exd4",
+            "Be5",
+            "Bxf1+"
+        ],
+        "prevents": [
+            {
+                "san": "Bxd2",
+                "dropCp": 912,
+                "illegalNow": false,
+                "refutation": [
+                    "Bxd2",
+                    "Qxd4",
+                    "exd4",
+                    "Nxd2",
+                    "Bd3"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Qc3",
+            "Kh3",
+            "Re8",
+            "Rb6",
+            "Bxf1+",
+            "Nxf1",
+            "Nxe4",
+            "Qe2",
+            "Qd4",
+            "Bc7",
+            "Nc3",
+            "Qg2"
+        ],
+        "evalAfter": -627
+    },
+    {
+        "nodeId": "n5411d336bcff",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 84,
+        "bestSan": "Qc3",
+        "pvAfter": [
+            "Kxf2",
+            "Ng4+",
+            "Ke1",
+            "Bd3",
+            "Rd1",
+            "Be3",
+            "Nxe3",
+            "Nxe3",
+            "Bxe5+",
+            "f6",
+            "Ba1",
+            "Nxd1"
+        ],
+        "evalAfter": -574
+    },
+    {
+        "nodeId": "n8be46c6f1f3c",
+        "threat": "Bxe5",
+        "threatGainCp": 1176,
+        "threatLine": [
+            "Bxe5",
+            "Bxf1",
+            "Nxf1",
+            "Rc2+"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Ng4+",
+            "Ke1",
+            "Bd3",
+            "Ra1",
+            "Kf6",
+            "Ba3",
+            "Rc3",
+            "Bd6",
+            "Rc2",
+            "Rd1",
+            "a4",
+            "Ba3"
+        ],
+        "evalAfter": -556
+    },
+    {
+        "nodeId": "nc80b603210b4",
+        "threat": "Bh3",
+        "threatGainCp": 412,
+        "threatLine": [
+            "Bh3",
+            "Bxe5",
+            "Bxd2",
+            "Rb3"
+        ],
+        "prevents": [],
+        "lossCp": 52,
+        "bestSan": "Ng4+",
+        "pvAfter": [
+            "Bxe5",
+            "Bxd2",
+            "Kxf1",
+            "Bc3",
+            "Rc1",
+            "Bxe5",
+            "Rxc8",
+            "Bxg3",
+            "Rc4",
+            "Nd7",
+            "Ra4",
+            "Bxh4"
+        ],
+        "evalAfter": -541
+    },
+    {
+        "nodeId": "n45d021e4a7bb",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Bf4",
+                "dropCp": 807,
+                "illegalNow": false,
+                "refutation": [
+                    "Bf4",
+                    "gxf4",
+                    "Qc7",
+                    "fxe5",
+                    "dxe5"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "h4",
+            "gxh4",
+            "Bf4",
+            "Ra1",
+            "Qd7",
+            "Ndf1",
+            "Nxa4",
+            "Bxa4",
+            "Qxa4",
+            "Ng3",
+            "Bd3",
+            "Ngf5+"
+        ],
+        "evalAfter": -204
+    },
+    {
+        "nodeId": "n57bfd2fc6060",
+        "threat": "hxg3",
+        "threatGainCp": 337,
+        "threatLine": [
+            "hxg3",
+            "fxg3",
+            "Nd3",
+            "Bxd3"
+        ],
+        "prevents": [
+            {
+                "san": "Rb2",
+                "dropCp": 450,
+                "illegalNow": false,
+                "refutation": [
+                    "Rb2",
+                    "hxg3",
+                    "Qxg3",
+                    "Nh5",
+                    "Qg4"
+                ]
+            },
+            {
+                "san": "Kh1",
+                "dropCp": 401,
+                "illegalNow": false,
+                "refutation": [
+                    "Kh1",
+                    "hxg3",
+                    "Qxg3",
+                    "Bf4",
+                    "Qf3"
+                ]
+            },
+            {
+                "san": "Rc1",
+                "dropCp": 372,
+                "illegalNow": false,
+                "refutation": [
+                    "Rc1",
+                    "hxg3",
+                    "Qxg3",
+                    "Nh5",
+                    "Qf3"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "gxh4",
+            "Bf4",
+            "Kh1",
+            "Nh5",
+            "Ndc4",
+            "Bxc4",
+            "Nxc4",
+            "Nxa4",
+            "Bb3",
+            "Nc5",
+            "Bc2",
+            "Nf6"
+        ],
+        "evalAfter": -249
+    },
+    {
+        "nodeId": "n61407e434dac",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bf4",
+            "Kh1",
+            "Qd7",
+            "Kg2",
+            "Qa7",
+            "Rb2",
+            "Nd3",
+            "Bxd3",
+            "Bxd3",
+            "h5",
+            "Qa6",
+            "Rb5"
+        ],
+        "evalAfter": -211
+    },
+    {
+        "nodeId": "n5a93a5a45bb2",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rc1",
+            "Qd7",
+            "h5",
+            "Nxh5",
+            "Bd1",
+            "Nf6",
+            "Bxc5",
+            "dxc5",
+            "Rc3",
+            "c4",
+            "Nexc4",
+            "Qe7"
+        ],
+        "evalAfter": -213
+    },
+    {
+        "nodeId": "n6be0b2cb4c3d",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 63,
+        "bestSan": "Re1",
+        "pvAfter": [
+            "Ncd7",
+            "Bb3",
+            "Bd3",
+            "Nf5+",
+            "gxf5",
+            "Qxd3",
+            "Bxd2",
+            "Qxd2",
+            "Nxe4",
+            "Qe3",
+            "Qc3",
+            "Rc1"
+        ],
+        "evalAfter": -339
+    },
+    {
+        "nodeId": "ncd00802df36c",
+        "threat": "Bxe3",
+        "threatGainCp": 325,
+        "threatLine": [
+            "Bxe3",
+            "Qxe3",
+            "Qxc2",
+            "Rc1"
+        ],
+        "prevents": [
+            {
+                "san": "Ndc4",
+                "dropCp": 474,
+                "illegalNow": false,
+                "refutation": [
+                    "Ndc4",
+                    "Bxc4",
+                    "Qd1",
+                    "Ba6",
+                    "Bd3"
+                ]
+            },
+            {
+                "san": "Rb2",
+                "dropCp": 371,
+                "illegalNow": false,
+                "refutation": [
+                    "Rb2",
+                    "Qc3",
+                    "Bb3",
+                    "Bd3",
+                    "Nd1"
+                ]
+            },
+            {
+                "san": "Rc1",
+                "dropCp": 269,
+                "illegalNow": false,
+                "refutation": [
+                    "Rc1",
+                    "Qc3",
+                    "Nb1",
+                    "Qd4",
+                    "Bxd6"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bb3",
+            "Bd3",
+            "Rd1",
+            "Qc3",
+            "Bxd6",
+            "Nxe4",
+            "Nxe4",
+            "Qxb3",
+            "Nd2",
+            "Qxa4",
+            "Ndf1",
+            "Qb5"
+        ],
+        "evalAfter": -385
+    },
+    {
+        "nodeId": "n7bf16c483ca8",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Bxe3",
+                "dropCp": 626,
+                "illegalNow": false,
+                "refutation": [
+                    "Bxe3",
+                    "Qxe3",
+                    "Qc3",
+                    "Re1",
+                    "Qxe3"
+                ]
+            },
+            {
+                "san": "Qc3",
+                "dropCp": 496,
+                "illegalNow": false,
+                "refutation": [
+                    "Qc3",
+                    "Ndc4",
+                    "Kg8",
+                    "Nxd6",
+                    "Rb8"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bd3",
+            "Rd1",
+            "Nc5",
+            "Bc4",
+            "Bxe4",
+            "Nxe4",
+            "Nfxe4",
+            "Bb5",
+            "Nc3",
+            "Nf5+",
+            "gxf5",
+            "Qxc3"
+        ],
+        "evalAfter": -349
+    },
+    {
+        "nodeId": "n4181e4807e9a",
+        "threat": "Bxb1",
+        "threatGainCp": 313,
+        "threatLine": [
+            "Bxb1",
+            "Nxb1",
+            "Qb6",
+            "Nd2"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rd1",
+            "Qc3",
+            "Bxd6",
+            "Nxe4",
+            "Nxe4",
+            "Qxb3",
+            "Nd2",
+            "Qxa4",
+            "Re1",
+            "Qd4",
+            "Qd1",
+            "Bb5"
+        ],
+        "evalAfter": -433
+    },
+    {
+        "nodeId": "n02f01c027e45",
+        "threat": "Ng4",
+        "threatGainCp": 152,
+        "threatLine": [
+            "Ng4",
+            "Rb3",
+            "Qc2",
+            "Qe1"
+        ],
+        "prevents": [
+            {
+                "san": "Qxd4",
+                "dropCp": 2674,
+                "illegalNow": false,
+                "refutation": [
+                    "Qd4",
+                    "Qxd4",
+                    "g4",
+                    "Bxf1+",
+                    "Rxf1"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Kh3",
+            "Re8",
+            "Qg2",
+            "Bd3",
+            "Rd1",
+            "a4",
+            "Qf3",
+            "Qc8+",
+            "g4",
+            "Nxg4",
+            "Kg2",
+            "Nf6"
+        ],
+        "evalAfter": -601
+    },
+    {
+        "nodeId": "n5f302b23a79e",
+        "threat": "Rb3",
+        "threatGainCp": 509,
+        "threatLine": [
+            "Rb3",
+            "Nxe4",
+            "Nxe4",
+            "Qxb3"
+        ],
+        "prevents": [
+            {
+                "san": "Ng4",
+                "dropCp": 773,
+                "illegalNow": false,
+                "refutation": [
+                    "Ng4",
+                    "Qa7",
+                    "Bxd2",
+                    "Qxa6",
+                    "Nf2+"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Re8",
+            "Rb6",
+            "Bxf1+",
+            "Nxf1",
+            "Nxe4",
+            "Qe2",
+            "Qd4",
+            "Bc7",
+            "Nc3",
+            "Qg2",
+            "Qxd5",
+            "Rb8"
+        ],
+        "evalAfter": -588
+    },
+    {
+        "nodeId": "n2f2c422702fe",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rb6",
+            "Bxf1+",
+            "Qxf1",
+            "Bf4",
+            "Rb3",
+            "Qc8+",
+            "Kg2",
+            "Bxd2",
+            "Rf3",
+            "Nxe4",
+            "Rxf7+",
+            "Kg8"
+        ],
+        "evalAfter": -661
+    },
+    {
+        "nodeId": "n9fa2a3a5f36a",
+        "threat": "Qxf6+",
+        "threatGainCp": 1140,
+        "threatLine": [
+            "Qxf6+",
+            "Kxf6",
+            "Bb4+",
+            "Re6"
+        ],
+        "prevents": [
+            {
+                "san": "Qc8+",
+                "dropCp": 330,
+                "illegalNow": false,
+                "refutation": [
+                    "Qc8+",
+                    "Kg2",
+                    "Bxf1+",
+                    "Nxf1",
+                    "Nxe4"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Ng4",
+            "Qe1",
+            "Bc8",
+            "Kg2",
+            "Ne3+",
+            "Nxe3",
+            "Bxe3",
+            "Rb2",
+            "Qxb2",
+            "Qxe3",
+            "Bg4",
+            "Qg5"
+        ],
+        "evalAfter": -646
+    },
+    {
+        "nodeId": "n8b8c19012312",
+        "threat": null,
+        "threatGainCp": null,
+        "threatLine": [],
+        "prevents": [
+            {
+                "san": "Bxe5",
+                "dropCp": 1171,
+                "illegalNow": true,
+                "refutation": []
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Ke1",
+            "Bd3",
+            "Rd1",
+            "Be3",
+            "Nxe3",
+            "Nxe3",
+            "Ra1",
+            "Nc2+",
+            "Kf2",
+            "Nxa1",
+            "Bxe5+",
+            "Kg8"
+        ],
+        "evalAfter": -547
+    },
+    {
+        "nodeId": "n2641570c8f54",
+        "threat": "Be7",
+        "threatGainCp": 437,
+        "threatLine": [
+            "Be7",
+            "Bd3",
+            "Ra1",
+            "a4"
+        ],
+        "prevents": [],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Bd3",
+            "Rd1",
+            "Be3",
+            "Nxe3",
+            "Nxe3",
+            "Bxe5+",
+            "f6",
+            "Ba1",
+            "Nxd1",
+            "Kxd1",
+            "a4",
+            "g4"
+        ],
+        "evalAfter": -489
+    },
+    {
+        "nodeId": "nb07b13469688",
+        "threat": "Bxb1",
+        "threatGainCp": 265,
+        "threatLine": [
+            "Bxb1",
+            "Ke2",
+            "Bxd2",
+            "Nxd2"
+        ],
+        "prevents": [
+            {
+                "san": "Be7",
+                "dropCp": 737,
+                "illegalNow": false,
+                "refutation": [
+                    "Be7",
+                    "Bxb1",
+                    "Ke2",
+                    "Bc2",
+                    "Kf3"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Rd1",
+            "f6",
+            "Ba3",
+            "a4",
+            "d6",
+            "Kf7",
+            "d7",
+            "Rd8",
+            "Bc5",
+            "Rxd7",
+            "Nb1",
+            "Bf8"
+        ],
+        "evalAfter": -564
+    },
+    {
+        "nodeId": "n7dda9f47b6e7",
+        "threat": "Be7",
+        "threatGainCp": 435,
+        "threatLine": [
+            "Be7",
+            "Rc2",
+            "d6",
+            "Bb5"
+        ],
+        "prevents": [
+            {
+                "san": "Bxb1",
+                "dropCp": 1472,
+                "illegalNow": false,
+                "refutation": [
+                    "Bb1",
+                    "Rxb1",
+                    "Rc3",
+                    "Ra1",
+                    "Be3"
+                ]
+            },
+            {
+                "san": "Bxd2+",
+                "dropCp": 790,
+                "illegalNow": false,
+                "refutation": [
+                    "Bxd2+",
+                    "Kxd2",
+                    "Nf2",
+                    "Re1",
+                    "Nxe4+"
+                ]
+            }
+        ],
+        "lossCp": 0,
+        "bestSan": null,
+        "pvAfter": [
+            "Be3",
+            "Nxe3",
+            "Nxe3",
+            "Bxe5+",
+            "f6",
+            "Bb2",
+            "Nxd1",
+            "Kxd1",
+            "Kf7",
+            "g4",
+            "a4",
+            "d6"
+        ],
+        "evalAfter": -536
+    }
+]

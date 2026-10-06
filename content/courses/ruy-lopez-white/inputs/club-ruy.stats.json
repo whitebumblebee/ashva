@@ -1,0 +1,12 @@
+{
+    "rule": "club-1600-2200-5min-plus",
+    "inputs": 32,
+    "bytes": 1073741824,
+    "games": 3284678,
+    "kept": 8905,
+    "rejectedSpeed": 2130386,
+    "rejectedRating": 740991,
+    "rejectedPrefix": 396032,
+    "rejectedOther": 8364,
+    "truncatedTail": true
+}

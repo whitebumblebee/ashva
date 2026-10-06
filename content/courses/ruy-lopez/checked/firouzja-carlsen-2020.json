@@ -1,0 +1,2891 @@
+{
+    "chapter": "firouzja-carlsen-2020",
+    "writer": "Claude Code (claude-opus-5-5), agent mode: claims written from the original score and engine facts, then machine-checked",
+    "intro": [
+        {
+            "claim": {
+                "type": "IDEA",
+                "text": "A modern classical game in the Anti-Berlin: White plays the same calm protection of the centre pawn that this course teaches, and Black chooses a solid closed setup.",
+                "side": null,
+                "moves": [],
+                "target": null,
+                "alternative": null,
+                "from": "after",
+                "result": null,
+                "facts": [],
+                "stat": null,
+                "population": "club"
+            },
+            "passed": true,
+            "evidence": "generated explanation",
+            "reason": "",
+            "auto": false
+        },
+        {
+            "claim": {
+                "type": "IDEA",
+                "text": "Study it from both sides. The original moves are the main line; at four critical moments engine branches show what was better, played until the engine's verdict.",
+                "side": null,
+                "moves": [],
+                "target": null,
+                "alternative": null,
+                "from": "after",
+                "result": null,
+                "facts": [],
+                "stat": null,
+                "population": "club"
+            },
+            "passed": true,
+            "evidence": "generated explanation",
+            "reason": "",
+            "auto": false
+        }
+    ],
+    "nodes": [
+        {
+            "nodeId": "n3e8db43daed3",
+            "sanPath": "e4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n79b1cff4a7ce",
+            "sanPath": "e4 e5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n780cc290e026",
+            "sanPath": "e4 e5 Nf3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bc5: that move would now be answered by Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": "Bc5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n02f62561f7bf",
+            "sanPath": "e4 e5 Nf3 Nc6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nxe5: that move would now be answered by ...Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": "Nxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n09cd8a667eb7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...d5: that move would now be answered by Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": "d5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb412f5989686",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6",
+            "title": "The Berlin Defence",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black's view: develop and counterattack White's centre pawn at once. White's view: decide how to protect it.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3d405ba4e96f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3",
+            "title": "4.d3: the calm protection",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: protect the centre pawn with a pawn and keep a slow manoeuvring game. Black's view: there is no immediate target, so develop calmly.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Nxe4: that move would now be answered by dxe4.",
+                        "side": null,
+                        "moves": [
+                            "dxe4"
+                        ],
+                        "target": "Nxe4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9effc344af3f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6",
+            "title": "4...d6: Black stays solid",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black's view: support the centre pawn with a pawn as well. The game becomes a closed Spanish where both sides improve their pieces first.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7157f0fcb720",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3",
+            "title": "5.c3: a home for the bishop",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: the c-pawn gives the bishop a retreat square and prepares a central advance with the d-pawn.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "PLAN",
+                        "text": "Later White retreats the bishop with Ba4 and finally strikes with d4.",
+                        "side": "WHITE",
+                        "moves": [
+                            "Ba4",
+                            "d4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n85181af2ef30",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...axb5.",
+                        "side": null,
+                        "moves": [
+                            "axb5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away d4: that move would now be answered by ...axb5.",
+                        "side": null,
+                        "moves": [
+                            "axb5"
+                        ],
+                        "target": "d4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2bff89c6b861",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4",
+            "title": "6.Ba4: keep the bishop",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: keeping the light-squared bishop matters more than doubling Black's pawns here; it will later aim at Black's king from the other diagonal.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n784e1876725d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndb0fb1def534",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ned00679264ec",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9acf350fc039",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2ef8a724742d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb27ccbd65549",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2",
+            "title": "9.Nbd2: the Spanish knight",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PLAN",
+                        "text": "White's queen's knight will travel Nf1 and Ne3, the classic Spanish route.",
+                        "side": "WHITE",
+                        "moves": [
+                            "Nf1",
+                            "Ne3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "course line",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black's view: with White developing slowly, Black regroups too and keeps the centre closed.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6450214eee31",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8f5d18f72caf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3",
+            "title": "10.h3: a useful waiting move",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: a small but useful move that keeps Black's pieces away from a kingside square before the centre opens.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n486bcb5f770c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...bxa4.",
+                        "side": null,
+                        "moves": [
+                            "bxa4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nf1: that move would now be answered by ...bxa4.",
+                        "side": null,
+                        "moves": [
+                            "bxa4"
+                        ],
+                        "target": "Nf1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9735546b6ab2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n602579621582",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8a7d1834eedf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4",
+            "title": "12.d4: the central strike",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: after full preparation White finally occupies the centre with two pawns. Black's view: keep the tension and wait for White to commit.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1665f43a6f3e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8b0e2bf3e1c8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n47962be4b052",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8",
+            "title": "13...Nb8: the Breyer regrouping",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PLAN",
+                        "text": "Black's knight goes back only to come to Nbd7, where it supports the centre and frees the bishop's path.",
+                        "side": "BLACK",
+                        "moves": [
+                            "Nbd7"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: such a quiet retreat means White can choose the moment to change the centre.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndb141555fbb6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5",
+            "title": "14.d5: close the centre",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "STRUCTURE",
+                        "text": "White's pawns on d5 and e4 now lock the centre.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [
+                            "pawn:white:d5",
+                            "pawn:white:e4"
+                        ],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "board fact",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Both sides' view: with the centre closed, the play moves to the wings. White gains queenside space; Black looks for counterplay and a better post for the bishops.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": {
+                "claim": {
+                    "type": "IDEA",
+                    "text": "When the centre is locked, attack where your pawns point and where you have more space.",
+                    "side": null,
+                    "moves": [],
+                    "target": null,
+                    "alternative": null,
+                    "from": "after",
+                    "result": null,
+                    "facts": [],
+                    "stat": null,
+                    "population": "club"
+                },
+                "passed": true,
+                "evidence": "generated explanation",
+                "reason": "",
+                "auto": false
+            },
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n244a120bb095",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...cxd5.",
+                        "side": null,
+                        "moves": [
+                            "cxd5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away b3: that move would now be answered by ...cxd5.",
+                        "side": null,
+                        "moves": [
+                            "cxd5"
+                        ],
+                        "target": "b3",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n90baed1a50a3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4",
+            "title": "15.c4: space on the queenside",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: more queenside space and support for the advanced pawn. Black's view: these pawns can also become targets once lines open.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...cxd5: that move would now be answered by cxd5.",
+                        "side": null,
+                        "moves": [
+                            "cxd5"
+                        ],
+                        "target": "cxd5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n254bab049abb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n776404a587bc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "neb656c4838b5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...bxc4.",
+                        "side": null,
+                        "moves": [
+                            "bxc4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Rb1: that move would now be answered by ...bxc4.",
+                        "side": null,
+                        "moves": [
+                            "bxc4"
+                        ],
+                        "target": "Rb1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1bad0d962aae",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc6fed98000ea",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...cxd5.",
+                        "side": null,
+                        "moves": [
+                            "cxd5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nb1: that move would now be answered by ...cxd5.",
+                        "side": null,
+                        "moves": [
+                            "cxd5"
+                        ],
+                        "target": "Nb1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n13ab5c3b48ed",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6eb6c5b57e5a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne12b23beb02d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4",
+            "title": "19.bxc4: an open b-file",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "STRUCTURE",
+                        "text": "The exchange has opened the b-file for the rooks.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [
+                            "open:b"
+                        ],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "board fact",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Both sides' view: whoever controls the open file first gets the more active rooks.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n07ca15ef0877",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5",
+            "title": "19...a5: fix the queenside",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black's view: fixing White's queenside pawns gives Black's knight and bishop secure squares in front of them.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n10da6dd97093",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1",
+            "title": "20.Nf1: the knight reroutes",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PLAN",
+                        "text": "The knight continues to Ne3, eyeing the outposts on the kingside and in the centre.",
+                        "side": "WHITE",
+                        "moves": [
+                            "Ne3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bh6: that move would now be answered by Bxh6.",
+                        "side": null,
+                        "moves": [
+                            "Bxh6"
+                        ],
+                        "target": "Bh6",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n023c7a717522",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxc4.",
+                        "side": null,
+                        "moves": [
+                            "Bxc4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Be3: that move would now be answered by ...Bxc4.",
+                        "side": null,
+                        "moves": [
+                            "Bxc4"
+                        ],
+                        "target": "Be3",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0b1ee91403f6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bxc4: that move would now be answered by Nxc4.",
+                        "side": null,
+                        "moves": [
+                            "Nxc4"
+                        ],
+                        "target": "Bxc4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nda8ca1e12dd0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n349ccd0902d8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Nfxe4: that move would now be answered by Bxe4.",
+                        "side": null,
+                        "moves": [
+                            "Bxe4"
+                        ],
+                        "target": "Nfxe4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n695376768d8c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n05f379cb6c5f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5",
+            "title": "23.cxd5: an open c-file",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "STRUCTURE",
+                        "text": "Now the c-file is open as well.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [
+                            "open:c"
+                        ],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "board fact",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: the pawn on d5 is protected and cramps Black. Black's view: the squares around it are excellent posts for Black's pieces.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf40fafa75e7d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc890f623b3e4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Rb4: that move would now be answered by Bxb4.",
+                        "side": null,
+                        "moves": [
+                            "Bxb4"
+                        ],
+                        "target": "Rb4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n075c1791da2a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away g4: that move would now be answered by ...h5.",
+                        "side": null,
+                        "moves": [
+                            "h5"
+                        ],
+                        "target": "g4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb34f675066e4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4cd05f547e98",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "naa392c8fe640",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc0dd09e8af80",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6",
+            "title": "26...Bh6: the bishop leaves the chain",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black's view: the dark-squared bishop had no scope behind its own pawns, so it moves outside the pawn chain to pressure White's pieces.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n23e82ef3912c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bg5: that move would now be answered by Rxb8.",
+                        "side": null,
+                        "moves": [
+                            "Rxb8"
+                        ],
+                        "target": "Bg5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5e62ed32c2b4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Rxe1+.",
+                        "side": null,
+                        "moves": [
+                            "Rxe1+"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9e03c9ba2ee1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4c7e17dd3c9b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na319217543fe",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1",
+            "title": "29.Nef1?!: too passive",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Engine check: the engine prefers a different move here (see the Better was branch), though the difference is smaller than a clear mistake.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White's view: the knight wanted to regroup, but it gave Black time to advance on the kingside.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7a20f993b467",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1f31967bd3c8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Nfd7: that move would now be answered by Ndc4.",
+                        "side": null,
+                        "moves": [
+                            "Ndc4"
+                        ],
+                        "target": "Nfd7",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9dccfad629bd",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf826fcf44cf6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n357ad9309bad",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Bb2: that move would now be answered by ...Ne6.",
+                        "side": null,
+                        "moves": [
+                            "Ne6"
+                        ],
+                        "target": "Bb2",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n76c9f0dcf20e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3",
+            "title": "32.g3?: a serious weakening",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "MISTAKE",
+                        "text": "Engine check: 32.g3 weakens White's king position badly; 32.Ne3 was much better.",
+                        "side": null,
+                        "moves": [
+                            "g3"
+                        ],
+                        "target": null,
+                        "alternative": "Ne3",
+                        "from": "before",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black's view: once pawns are exchanged in front of White's king, Black's pieces can use the new open lines.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens gxf4.",
+                        "side": null,
+                        "moves": [
+                            "gxf4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Qa7: that move would now be answered by gxf4.",
+                        "side": null,
+                        "moves": [
+                            "gxf4"
+                        ],
+                        "target": "Qa7",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc48a045ca6f1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...gxf2+.",
+                        "side": null,
+                        "moves": [
+                            "gxf2+"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8756ed3c8846",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens gxf4.",
+                        "side": null,
+                        "moves": [
+                            "gxf4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3f09e4437d73",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nceedcc05d943",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf9d30444be2b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Kh1: that move would now be answered by ...Bxd2.",
+                        "side": null,
+                        "moves": [
+                            "Bxd2"
+                        ],
+                        "target": "Kh1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n82919ce9571c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n98570f3898c9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Rxc2.",
+                        "side": null,
+                        "moves": [
+                            "Rxc2"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n135ae663f8b3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Bxd7.",
+                        "side": null,
+                        "moves": [
+                            "Bxd7"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na0550b14a093",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxd2.",
+                        "side": null,
+                        "moves": [
+                            "Bxd2"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8629c79f2c90",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Bxe5.",
+                        "side": null,
+                        "moves": [
+                            "Bxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne1ed8bb30b12",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxd2.",
+                        "side": null,
+                        "moves": [
+                            "Bxd2"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Bxe5: that move would now be answered by ...Qxe5.",
+                        "side": null,
+                        "moves": [
+                            "Qxe5"
+                        ],
+                        "target": "Bxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n880146316435",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Qxd4.",
+                        "side": null,
+                        "moves": [
+                            "Qxd4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bxd2: that move would now be answered by Qxd4.",
+                        "side": null,
+                        "moves": [
+                            "Qxd4"
+                        ],
+                        "target": "Bxd2",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5411d336bcff",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+",
+            "title": "38...Qxf2+: simplifying",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Engine check: keeping the queens was a little stronger (see the Better was branch); Black stays clearly better either way.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Practical view: trading queens when ahead reduces risk, even if the engine finds a stronger continuation.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8be46c6f1f3c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Bxe5.",
+                        "side": null,
+                        "moves": [
+                            "Bxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc80b603210b4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Bxf1",
+            "title": "39...Bxf1",
+            "claims": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Engine check: the engine finds an even stronger continuation (see the Better was branch), but Black is winning either way.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                },
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "The broadcast score ends here and records a win for Black. The source does not say why White stopped, so the course does not guess.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n45d021e4a7bb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bf4: that move would now be answered by gxf4.",
+                        "side": null,
+                        "moves": [
+                            "gxf4"
+                        ],
+                        "target": "Bf4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n57bfd2fc6060",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3 h4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...hxg3.",
+                        "side": null,
+                        "moves": [
+                            "hxg3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Kh1: that move would now be answered by ...hxg3.",
+                        "side": null,
+                        "moves": [
+                            "hxg3"
+                        ],
+                        "target": "Kh1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n61407e434dac",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3 h4 gxh4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5a93a5a45bb2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 g3 h4 gxh4 Bf4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as clearly better for Black (−2.13).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "BLACK_BETTER",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6be0b2cb4c3d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncd00802df36c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nef1: that move would now be answered by ...Qxc2.",
+                        "side": null,
+                        "moves": [
+                            "Qxc2"
+                        ],
+                        "target": "Nef1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7bf16c483ca8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7 Bb3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bxe3: that move would now be answered by Qxe3.",
+                        "side": null,
+                        "moves": [
+                            "Qxe3"
+                        ],
+                        "target": "Bxe3",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4181e4807e9a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 Ne3 Ncd7 Bb3 Bd3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxb1.",
+                        "side": null,
+                        "moves": [
+                            "Bxb1"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Ndc4: that move would now be answered by ...Bxb1.",
+                        "side": null,
+                        "moves": [
+                            "Bxb1"
+                        ],
+                        "target": "Ndc4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as clearly better for Black (−4.33).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "BLACK_BETTER",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n02f01c027e45",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Qxd4: that move would now be answered by ...Qxd4.",
+                        "side": null,
+                        "moves": [
+                            "Qxd4"
+                        ],
+                        "target": "Qxd4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5f302b23a79e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3 Kh3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Ng4: that move would now be answered by Qa7.",
+                        "side": null,
+                        "moves": [
+                            "Qa7"
+                        ],
+                        "target": "Ng4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2f2c422702fe",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3 Kh3 Re8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9fa2a3a5f36a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qc3 Kh3 Re8 Rb6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Qxf6+.",
+                        "side": null,
+                        "moves": [
+                            "Qxf6+"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Qc8+: that move would now be answered by Kg2.",
+                        "side": null,
+                        "moves": [
+                            "Kg2"
+                        ],
+                        "target": "Qc8+",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as clearly better for Black (−6.46).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "BLACK_BETTER",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8b8c19012312",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2641570c8f54",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+ Ke1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb07b13469688",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+ Ke1 Bd3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxd2+.",
+                        "side": null,
+                        "moves": [
+                            "Bxd2+"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Be7: that move would now be answered by ...Bxb1.",
+                        "side": null,
+                        "moves": [
+                            "Bxb1"
+                        ],
+                        "target": "Be7",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7dda9f47b6e7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 c3 a6 Ba4 Be7 O-O O-O Re1 Re8 Nbd2 Bf8 h3 b5 Bc2 Bb7 d4 g6 a3 Nb8 d5 c6 c4 Nbd7 a4 Qc7 b3 Rec8 Ra2 bxc4 bxc4 a5 Nf1 Ba6 Ne3 Nc5 Nd2 cxd5 cxd5 Rab8 Ba3 Qd8 Qf3 h5 Raa1 Bh6 Rab1 Rxb1 Rxb1 Kg7 Nef1 h4 Ne3 Bf4 Nef1 Qc7 g3 hxg3 fxg3 Bh6 h4 Qd7 Kg2 Nxa4 Bxa4 Qxa4 Bxd6 Qd4 Qf2 Qxf2+ Kxf2 Ng4+ Ke1 Bd3 Rd1",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bxb1: that move would now be answered by Rxb1.",
+                        "side": null,
+                        "moves": [
+                            "Rxb1"
+                        ],
+                        "target": "Bxb1",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as clearly better for Black (−5.36).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "BLACK_BETTER",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        }
+    ],
+    "glossary": [],
+    "summary": {
+        "writerClaims": 33,
+        "writerPassed": 33,
+        "autoClaims": 59,
+        "autoPassed": 59,
+        "failures": []
+    },
+    "variations": {}
+}

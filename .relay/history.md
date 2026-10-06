@@ -4,7 +4,7 @@
      Every row is derived from the front-matter of a file in .relay/history/.
      To change a row, edit that file and re-run `relay index`. -->
 
-Entries: **35**. Newest last. Read the newest relevant entries before claiming work.
+Entries: **42**. Newest last. Read the newest relevant entries before claiming work.
 
 | Seq | Date | Agent | Task | Status | Summary | Log |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -43,6 +43,13 @@ Entries: **35**. Newest last. Read the newest relevant entries before claiming w
 | 0033 | 2026-10-02 | codex | `persistent-recall-review` | partial | Implemented in-progress Android0.15 chosen-scope recall, additive schema6 and real Home/Review/Profile;176JVM/136host and four focused native cases pass. Full60-case regression is running, not complete. | [log](history/0033_codex_persistent-recall-review.md) |
 | 0034 | 2026-10-02 | codex | `persistent-recall-review` | partial | Completed schema-six service/build/public regressions and added idempotent failed-save retry; orchestrated native run proves60/61, aggregate-flow timing assertion fixed and full rerun underway. Owner now defers board quality as well as iOS. | [log](history/0034_codex_persistent-recall-review.md) |
 | 0035 | 2026-10-03 | codex | `persistent-recall-review` | partial | Owner paused development for credits and manual emulator testing; native fixture close/write race corrected and focused tests pass, full61 interrupted by request; recall remains unfinished. | [log](history/0035_codex_persistent-recall-review.md) |
+| 0036 | 2026-10-03 | codex | `android-end-to-end-user-test` | partial | Started the retained Android13 learning emulator and reopened installed Ashva0.15/code16 for owner-led full-flow testing; no app changes or regression rerun. | [log](history/0036_codex_android-end-to-end-user-test.md) |
+| 0037 | 2026-10-03 | codex | `android-end-to-end-user-test` | partial | Measured existing 0.15 APK size and public content depth during owner testing: 102.2 MiB debug/93.7 MiB unsigned release; NNUE dominates, named-route coverage remains shallow and finite. | [log](history/0037_codex_android-end-to-end-user-test.md) |
+| 0038 | 2026-10-04 | claude-code | `deep-course-plan` | done | Wrote docs/DEEP_COURSE_PLAN.md: 13 ordered, agent-implementable phases for deep generated repertoire courses and GM-game teaching with engine-checked claims, evals and app integration; documentation only. | [log](history/0038_claude-code_deep-course-plan.md) |
+| 0039 | 2026-10-04 | claude-code | `deep-course-pilot` | partial | Built the deep course pilot (Android 0.16.0/code17): Ruy Lopez for White Berlin chapter (27 lines, 285 positions) and Firouzja–Carlsen 2020 game chapter from Lichess club/master data plus Stockfish; 239 writer and 232 auto claims machine-checked; app UI, evals and docs done. Full native suite is 63/66: 3 older tests time out in full runs only. | [log](history/0039_claude-code_deep-course-pilot.md) |
+| 0040 | 2026-10-05 | claude-code | `deep-course-pilot` | done | Completed the deep course pilot in Android 0.16.0/code17. The Ruy Lopez for White Berlin chapter and the Firouzja–Carlsen 2020 game come from Lichess club/master data plus Stockfish, with machine-checked generated text. All 66 native tests pass on a 4-core isolated AVD, plus unit, iOS, release, engine-asset and public gates. Installed and opened in place on the owner's emulator. | [log](history/0040_claude-code_deep-course-pilot.md) |
+| 0041 | 2026-10-06 | claude-code | `ruy-lopez-full-course` | partial | Owner feedback reset the course structure. The pilot let a statistic pick 4.d3 and labelled lines by role, which hid the Berlin's named theory. Started the full Ruy Lopez course: named variations as the backbone, every master move for both sides, plus level stats, winning ideas from decisive games and example games. Owner approved downloading all broadcasts. | [log](history/0041_claude-code_ruy-lopez-full-course.md) |
+| 0042 | 2026-10-06 | claude-code | `ruy-lopez-full-course` | done | Full Ruy Lopez deep course for both colours shipped as Android 0.17.0/code18: 10 named-variation chapters plus the GM game, 898 lines and 11,190 positions. Each variation has an intro, how White/Black win (master statistics, checked written plans) and replayable example games. All gates green; connected 70/70 on the isolated AVD; installed in place on the owner emulator. | [log](history/0042_claude-code_ruy-lopez-full-course.md) |
 
 ## Superseded
 

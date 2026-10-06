@@ -1,0 +1,103 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "In the Classical lines Black develops the dark-squared bishop actively at once; White usually gains time by building a big pawn centre."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Classical Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the dark-squared bishop to its most active diagonal at once. White usually builds a big centre with gain of time against the bishop."
+    }
+   ]
+  },
+  "Classical Variation, Central Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares to build the classical pawn centre, gaining time against Black's active bishop."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners kept the bishop safe with Ba7, developed with Bd7, rerouted the knight to Ng6 and used the rook on Re8.",
+     "moves": [
+      "Ba7",
+      "Bd7",
+      "Ng6",
+      "Re8"
+     ]
+    }
+   ]
+  },
+  "Morphy Defense, Classical Defense Deferred": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the dark-squared bishop actively before the king's knight, aiming at White's kingside and keeping the centre flexible."
+    }
+   ]
+  },
+  "Morphy Defense, Classical Defense Deferred · 5.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prepares a central pawn advance that will hit Black's active bishop. Black usually develops the knight to its alternative square to keep the centre supported."
+    }
+   ]
+  },
+  "Morphy Defense, Classical Defense Deferred · 5.O-O": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White castles first and keeps the central advance in reserve. Black develops the king's knight towards the kingside."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners rerouted the queen's knight via Nf1 to Ng3 for kingside play.",
+     "moves": [
+      "Nf1",
+      "Ng3"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Morphy Defense, Classical Defense Deferred · 5...Nge7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the knight to a square from which it supports the centre and avoids pins, a flexible idea against the castled king."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners rerouted the queen's knight via Nf1 to Ng3 for kingside play.",
+     "moves": [
+      "Nf1",
+      "Ng3"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Morphy Defense, Classical Defense Deferred · 6.d4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White builds the full centre with tempo on the bishop. Black must decide whether to take or keep the tension."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "The Schliemann is Black's sharpest reply: an immediate strike with the f-pawn that leads to open, tactical positions where both sides must know the critical ideas."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Schliemann Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black strikes at White's centre pawn with the f-pawn at once, a sharp gambit-style defence. White can keep it calm or enter forcing lines where accurate play is essential."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners used the knight on Nd5, a central outpost that Black's f-pawn advance no longer controls.",
+     "moves": [
+      "Nd5"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Schliemann Defense · 4.d3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White meets the Schliemann calmly, protecting the centre pawn and keeping a solid position. Black's f-pawn break has less punch, and White aims to exploit the loosened black kingside."
+    }
+   ]
+  },
+  "Schliemann Defense, Dyckhoff Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White develops the queen's knight and invites the sharpest lines, where the centre opens quickly."
+    }
+   ]
+  },
+  "Morphy Defense, Schliemann Defense Deferred": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black strikes with the f-pawn after first asking the bishop, a sharp gambit-style approach."
+    }
+   ]
+  },
+  "Schliemann Defense, Tartakower Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the king's knight to contest the centre after the exchange, aiming for quick development."
+    }
+   ]
+  }
+ }
+}

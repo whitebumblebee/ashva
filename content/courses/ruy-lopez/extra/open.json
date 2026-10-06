@@ -1,0 +1,7406 @@
+[
+    {
+        "id": "n3e8db43daed3",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n79b1cff4a7ce",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n780cc290e026",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n02f62561f7bf",
+        "opening": null,
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "n09cd8a667eb7",
+        "opening": "Ruy Lopez",
+        "bands": {
+            "2600+": 2880,
+            "2400–2599": 6493,
+            "2200–2399": 8585,
+            "Lichess 1600–2200": 8905
+        },
+        "transposesTo": null,
+        "source": "approach"
+    },
+    {
+        "id": "nb25c8eec9490",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1577,
+            "2400–2599": 4439,
+            "2200–2399": 6748,
+            "Lichess 1600–2200": 2427
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncd7aca31ac91",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1528,
+            "2400–2599": 4310,
+            "2200–2399": 6460,
+            "Lichess 1600–2200": 1708
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n40e62f5acad2",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1341,
+            "2400–2599": 3551,
+            "2200–2399": 4934,
+            "Lichess 1600–2200": 960
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf330bc2a8bfd",
+        "opening": "Ruy Lopez: Morphy Defense",
+        "bands": {
+            "2600+": 1134,
+            "2400–2599": 2881,
+            "2200–2399": 3970,
+            "Lichess 1600–2200": 618
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na031e90dffcc",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 179,
+            "2400–2599": 306,
+            "2200–2399": 408,
+            "Lichess 1600–2200": 50
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3da0537fe155",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 10,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 29
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n664726112c8c",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n695486bf8459",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 174,
+            "2400–2599": 296,
+            "2200–2399": 381,
+            "Lichess 1600–2200": 18
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n116d1d637b3c",
+        "opening": "Ruy Lopez: Open, Skipworth Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n2fa91b9970e0",
+        "opening": "Ruy Lopez: Open, Riga Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n6f24f48004d7",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 152,
+            "2400–2599": 231,
+            "2200–2399": 277,
+            "Lichess 1600–2200": 11
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na2ad2a8eb5a9",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 22
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb8976e4c9e0c",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 22,
+            "2400–2599": 65,
+            "2200–2399": 106,
+            "Lichess 1600–2200": 3
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncf954e8cdeca",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0d6b9513b051",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n106962186ef2",
+        "opening": "Ruy Lopez: Open, Skipworth Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1a6774d63d75",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 10
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7a53715a8981",
+        "opening": "Ruy Lopez: Open, Richter Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n81135740a0b2",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 152,
+            "2400–2599": 231,
+            "2200–2399": 276,
+            "Lichess 1600–2200": 11
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n875402281f8f",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb5085941167e",
+        "opening": "Ruy Lopez: Open, Riga Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd0ff22616dd5",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 22,
+            "2400–2599": 60,
+            "2200–2399": 89,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne197c7177e76",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n01a8d5dfb9dc",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 152,
+            "2400–2599": 231,
+            "2200–2399": 277,
+            "Lichess 1600–2200": 10
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0b5e8aad0f4c",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9e4844ced0af",
+        "opening": "Ruy Lopez: Open, Richter Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na57d721d4873",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd18b38074d2c",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 9
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndeab0d9419f7",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 22,
+            "2400–2599": 60,
+            "2200–2399": 89,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne9872bdbafa9",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n02d779b1b88b",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 52,
+            "2200–2399": 66,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2fc6943b5302",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n68641dee9821",
+        "opening": "Ruy Lopez: Open, Harksen Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n737375d5213c",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n831560e9ac4d",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nafa91713c7c2",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd405303316a1",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 151,
+            "2400–2599": 224,
+            "2200–2399": 270,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nee32224e9bd4",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf98f84239f25",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 23,
+            "Lichess 1600–2200": 7
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n426af9e78a1f",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n59a10bfaf6df",
+        "opening": "Ruy Lopez: Open, Schlechter Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n759450ec6b09",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nafd2d7bc0871",
+        "opening": "Ruy Lopez: Open, Main Line",
+        "bands": {
+            "2600+": 151,
+            "2400–2599": 224,
+            "2200–2399": 270,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb9ea02388178",
+        "opening": "Ruy Lopez: Open, Harksen Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc2ef35451e43",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 52,
+            "2200–2399": 66,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndc9299233a74",
+        "opening": "Ruy Lopez: Open, Zukertort Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ndf32078517f0",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf1892a7b63eb",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf5c24222eef4",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n055a0d197573",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 34,
+            "2200–2399": 50,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n144c5a83e560",
+        "opening": "Ruy Lopez: Open, Main Line",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 27,
+            "2200–2399": 39,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1d31746803fa",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 43,
+            "2400–2599": 63,
+            "2200–2399": 73,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3a6e5a92d6de",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n556f4d85bdf1",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56fc7c7181af",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 52,
+            "2200–2399": 64,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n84833987b409",
+        "opening": "Ruy Lopez: Open, Schlechter Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n9e4fbabde553",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 73,
+            "2400–2599": 97,
+            "2200–2399": 103,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb4b450695e13",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 6
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc88356ba3c7e",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nda7f3b9408f9",
+        "opening": "Ruy Lopez: Open, Zukertort Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nde3da89696e3",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n133ebb7fd8f5",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 32,
+            "2400–2599": 45,
+            "2200–2399": 62,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1b076bf4beb3",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 5
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n31893b252c53",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n37d80aab65e5",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3f796698f636",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 52,
+            "2200–2399": 64,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8726ebe0c09f",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 23,
+            "2200–2399": 30,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n885612383a1a",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8d7e3db95896",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9ec929f9de17",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 11,
+            "2400–2599": 17,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na0fb187ce13c",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na6d715316aa2",
+        "opening": "Ruy Lopez: Open, Main Line",
+        "bands": {
+            "2600+": 17,
+            "2400–2599": 24,
+            "2200–2399": 30,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncea679f88ac2",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 8,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndcd8cb0ab062",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 19,
+            "2400–2599": 43,
+            "2200–2399": 40,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne2814cdf2ad2",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 54,
+            "2400–2599": 53,
+            "2200–2399": 62,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf473f1e85b96",
+        "opening": "Ruy Lopez: Open, Schlechter Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n0214534cb15a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 5,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0e04778e6c23",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n179d9dc7830a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 13,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1a1838903c46",
+        "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n2692b17909ca",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 21,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3268ba38d3b6",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3caad50bb953",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n448c93d1fe8a",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 32,
+            "2400–2599": 42,
+            "2200–2399": 61,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4a857824005e",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5503e682a4ea",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n76f236ac9d1e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 24,
+            "2400–2599": 28,
+            "2200–2399": 35,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n894acc870eaf",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 11,
+            "2400–2599": 15,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n76f236ac9d1e",
+        "source": "master"
+    },
+    {
+        "id": "n8f88f9460cd3",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 8,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n3caad50bb953",
+        "source": "master"
+    },
+    {
+        "id": "n939d6dea34ff",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 49,
+            "2200–2399": 60,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94b3bf63d56d",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 30,
+            "2200–2399": 31,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9d3a02002397",
+        "opening": "Ruy Lopez: Open, Main Line",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 21,
+            "2200–2399": 22,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "nbcd8fc9daa44",
+        "source": "master"
+    },
+    {
+        "id": "na79928fd063e",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb789b49c14f9",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 6,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb914b73885e3",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nbcd8fc9daa44",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 3,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc0a26ccd1549",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfd14f8602457",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n00df3a7e012e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 22,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n3ddc3e5f4195",
+        "source": "master"
+    },
+    {
+        "id": "n058b15c41f56",
+        "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n0f50fc926324",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0f8fe73d1dbb",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n16bbf01cfcd1",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 30,
+            "2200–2399": 30,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e3518eb49f4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 10,
+            "2400–2599": 9,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n38c2b677f704",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 18,
+            "2400–2599": 49,
+            "2200–2399": 60,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3ddc3e5f4195",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 20,
+            "2400–2599": 25,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4cdb04768596",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 18,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n582319a4957f",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 2
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n628779bfe767",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 21,
+            "2200–2399": 25,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94af3e98d2b5",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 6,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n96947bdd1386",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 16,
+            "2400–2599": 19,
+            "2200–2399": 29,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n97a5261a9995",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 9,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9e258f1f8b56",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na16085b44864",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na5f3a5534a39",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na63140af62d8",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "naaef361e535f",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb94ad1b0a4c8",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 13,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd4fef8ef0365",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf84814349590",
+        "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfe7e09c25f19",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 5,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0125ff478cce",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 14,
+            "2400–2599": 17,
+            "2200–2399": 21,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n183dd748cac5",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 14,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n21b60516caa3",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2d263dd1dc28",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n30b1b4aabe6a",
+        "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n440b46225516",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n48f7d804bf15",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6ee86c3f4c87",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n722ff8d0c725",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n852eb448cb6a",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 9,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n89ec90a87028",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 13,
+            "2400–2599": 17,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8d4f666dbf49",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n938e601a2358",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n978c3d22a4cb",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n99bc716ef506",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 4,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9b78bc98e3a6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9fb9c7d393e9",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nac209f816e56",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 13,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb14ee7c26fe6",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb9b5ae0c7f59",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 18,
+            "2200–2399": 31,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbe4ddd929355",
+        "opening": "Ruy Lopez: Open, Malkin Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nbf51ee174db0",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 17,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc674d571d561",
+        "opening": "Ruy Lopez: Open, Bernstein Variation, Luther Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc8e26ab5a7bb",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "ncca55c0c9d78",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 35,
+            "2400–2599": 44,
+            "2200–2399": 52,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd0625269155a",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 14,
+            "2400–2599": 30,
+            "2200–2399": 27,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne2e2a703bded",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 4,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf1b86d115dd3",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf74bc3fc25a6",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n01daff4950c6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0379686d5352",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n219272952096",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n268d60fea002",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n38ceb369c6e9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n45f931d44eea",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 13,
+            "2400–2599": 16,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4757a51c3a59",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 14,
+            "2400–2599": 12,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n48ef4af31849",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n580172778784",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 11,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n69feb1d69d6c",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6cda1c94ffa4",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n702b520464a7",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n78ee61ead440",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 25,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n79ede828e83b",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n79eec90311f1",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 16,
+            "2200–2399": 20,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7f4c0b5abf0a",
+        "opening": "Ruy Lopez: Open, Motzko Attack, Nenarokov Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n862b31563146",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8f3979bb7861",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 14,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9078377946ee",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n939658296922",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 4,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb560b66d0b26",
+        "opening": "Ruy Lopez: Open, Malkin Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbaeb08572b3c",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbd77cf8e20e0",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc40d15fc15a0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 13,
+            "2200–2399": 15,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd547cca56b0d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndc817826bd4d",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 17,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndcb1c2dd191e",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne1373b62efe5",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf1d7000201f6",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf227a7979915",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 35,
+            "2400–2599": 44,
+            "2200–2399": 45,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0ebe90406775",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 7,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n10dc8e80ec25",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1a058ecf7c88",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2702e1e17dba",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2f07ef64288a",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n320f067bb179",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n352033226634",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3a3c9742d3c7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3ac5595150c2",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4190e8f9d312",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n41fd73bddfb3",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n42a0032082a5",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4fbc027d7f0f",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6370da281ecb",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n66f8a60d1403",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6d32e1eb3bb6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n74e15d5b5b74",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7bd626029a81",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7d25b22e66a4",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n84658ea9818d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 35,
+            "2400–2599": 38,
+            "2200–2399": 38,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n84e80f66fca7",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f9affad6c1e",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 13,
+            "2400–2599": 15,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9858eb838559",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 17,
+            "2200–2399": 19,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na9dd67293db8",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb233e4e5d549",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb2a2e5d6b95e",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 25,
+            "2200–2399": 26,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd39ca85ffda4",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 6,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd48599120408",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd646aaaff8bf",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndbe845c2bcc7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nefe344c67f98",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "nfac393bda6d9",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nff6b1b5bd4ac",
+        "opening": "Ruy Lopez: Open, Malkin Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n04d6d6ff06d0",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1081fab545cb",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n108b5c0fdab3",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1bc3c99658ba",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1c71ae7a8903",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n22658f336671",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3746e23188f9",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 14,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3af89f005fc6",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4590a3714336",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n46b125582161",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 7,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n496e4195b1dd",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4ddfe94837da",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 5,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5809f600ca2c",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n65f68be40b0b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n73849ec51c79",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n75a9f5375cec",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7662ded12e6c",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n86e491de68ae",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n900c06b9a00e",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94baaa139b2c",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9784cca26129",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n99ba917ee08d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nae75fbbad03b",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb3d6302a1d9f",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 16,
+            "2200–2399": 17,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb44b6e044a20",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 23,
+            "2400–2599": 33,
+            "2200–2399": 32,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb6720535e08e",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbc19fa23e655",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbe8da8f2d786",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbf3916d7a7bd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nca416955d3b8",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 1
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd0e28cb3acbe",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1be75d8614a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd5fad9c99625",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne4b5c3325eed",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 13,
+            "2400–2599": 15,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf6ecced9c149",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n026c53ae712f",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1265c71e3070",
+        "opening": "Ruy Lopez: Open, Tarrasch Trap",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "named"
+    },
+    {
+        "id": "n199c1234b385",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1bccb6ed0dba",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 8,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1de961cb9750",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n22bdc3c263ac",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2cd7d4be43eb",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 7,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3081379910ff",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n30f581e61988",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 7,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3133f77b356a",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 15,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3fd0d406b679",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n45bb16743ee6",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 11,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n47ada1a9348c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4e0da025b791",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 25,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4f310f1078f3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6a067829a4ea",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n81782645dc9e",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8a07d1e6ad90",
+        "opening": "Ruy Lopez: Open, Friess Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n918d5544a004",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n948f05ef6893",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n968ed305dba6",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na310c7e167c9",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na9e203867282",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb063feae451a",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc7b50da35710",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nccccc8f79075",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1a868843e49",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd1e0c15eff66",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndfd11f134917",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndfd22278ba14",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne2c7721e7efe",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne39178eb2b86",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "necff50198262",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf3ce74f6dd2a",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf576dd2a0822",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf8360a7011cc",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe4d29ced530",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 11,
+            "2400–2599": 13,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n077114e4bf1c",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0a9c1b09e57d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0b93bf47e53a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0c67fdee4b9b",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0eebc4dd176c",
+        "opening": "Ruy Lopez: Open, Motzko Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n13421d436476",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n1af88d9f6ccf",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n24442635eab8",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2545dd9a54d6",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2bfdd3c277a5",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2e8be3cbf9cd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2f82ee202634",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 25,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n414c7ecd6ec5",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 15,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4aaa8fefa612",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 9,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4c6646e0fd74",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4d6c7738b46e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5318d855cc1e",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n553d60de0c6c",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5d311a9d3291",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5fad152ccad0",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n65a57a0c6369",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7d0e786bca15",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n93ff7dcf8b61",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9411346cf1ef",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n979ec152e3fe",
+        "opening": "Ruy Lopez: Open, Tarrasch Trap",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nacf99e264ba4",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb3c37bb6ae80",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc39ab6f674b3",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd3a44db2579f",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd3d8825778f1",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndc2060438270",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne772b99adb5b",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne81be91cef9e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf18ac75332db",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf212117313d7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf9383e73eac4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n124618884aa6",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1e0e6f9d57c8",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n24a5ef87122f",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n25c48b9b4da5",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 25,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2dc8c2e68046",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n30f3ad2db54c",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n31eea96b0fcc",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n38f2798c5d05",
+        "opening": "Ruy Lopez: Open, Knorre Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n42be23dff2c7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n496662a75f43",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5e71622f973d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6501fbdb3a01",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6942e4258384",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6d975eec94da",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 8,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6e9e61502dcb",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7609ecd4077d",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n81300eeb4be1",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8809002106f6",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nab5cd2af9052",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb23ffa73dbec",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc2dfa256febf",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncf8ec83a195b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd133371dc6e7",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd575b72b25ae",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd8064ce04af5",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndc0264af118a",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nddf45966f097",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nde454368572e",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 8,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "neb010461f0f6",
+        "source": "master"
+    },
+    {
+        "id": "ne5b360dac5d4",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neb010461f0f6",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 15,
+            "2200–2399": 16,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf2b21cd96f70",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf676d942f2c4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf8e35adc2fd1",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfafd1aa90551",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 7,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0b26dae9c5c9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n19b8384acd79",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3931e3f72683",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n528edb6db88f",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5ccfef4953c7",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n623f03cbb98a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 15,
+            "2400–2599": 25,
+            "2200–2399": 28,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n629234bf1a9c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n85543768a43b",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n869230bfc01f",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9483a40ac603",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n96d802800b77",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n97d37cee8e68",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9d30ff26706e",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9d6fe701d8e8",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 18,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na4e6772abfa3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na544deb16069",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naa92072b45a7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nae0860327755",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 12,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb2eab92a650f",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc5951e04af8a",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncca602366c8a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncd367fd7ea30",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncdbcdd1cc6a4",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 9,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd234c09d4aa0",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd8a626ed31bb",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndae3d40e8d88",
+        "opening": "Ruy Lopez: Open, Karpov Gambit",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ndb41d921fc32",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne0bd36b5bb2b",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne73f3a2c9930",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf97d10215a47",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfd54d25255ff",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfd9782a0d885",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n04b1a683675f",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0bebbc2bb211",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1c7139b577dd",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n21d4a3cc3bf0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n27253e687d05",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2ac504f25a4e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n47960d0bd606",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5411ced4cdd3",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5f0d450c37bc",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n624ef31bf146",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n703863ebad13",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 16,
+            "2200–2399": 18,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7ce82c30fd84",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8295c9a6cf86",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n82c091495ee0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 10,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8924468759cb",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 9,
+            "2400–2599": 18,
+            "2200–2399": 24,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8d342eb58b0b",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n976f5e8364c0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 2,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na134f8432569",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na65fba2f6830",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 7,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na9d15e2f3046",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 10,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nac45b001bb43",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 6,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb2327a145395",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb28c94e22dd9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb5c3146315d1",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc08f2ff73f09",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd01a9b4c2c97",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd09a8564176b",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd5af75c8e1e4",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne83ae2d7ea3a",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne97394d590e9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ned0e11fb2f52",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf02276a819bb",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf78498724e1a",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n06b532d84f4b",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n07aa06a516a6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 8,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2299b7cabe09",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n24af078f6894",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2561e290569a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 10,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n37a5db549507",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n38e460ea194e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n44172d082bff",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n46322c401c61",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n53a889cfaf32",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5a0ea1158831",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7baedb577701",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n82fe5b243e32",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8743225dbe1e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 2,
+            "2200–2399": 7,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8a35b90f0232",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9f033deaa48e",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na0b3c14ddcc0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na14ca3de83ab",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na2812d5b53db",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nab98c5f95acc",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb31cec77e6d4",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb49fe1c388af",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nba3a2af230e1",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 4,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbfd8edd4b0a5",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 8,
+            "2200–2399": 9,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc3cc069e5117",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc755d00961e9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc7cfe7c9770d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncd6d6786317e",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 14,
+            "2200–2399": 14,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd12ba1e8f1fa",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd2887af4f2f7",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf52654476c3c",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 21,
+            "2200–2399": 13,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfc2f664865fd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nff0e93a012b1",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n02d92c393836",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0478163a8d09",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n10100af5fe27",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n152264d383e1",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2171695ff62f",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n321c4e4cef92",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 11,
+            "2200–2399": 11,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n32f3deb5104b",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n3ea9b5458911",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n46e162120ad7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n48bedd73ccd3",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n516692359416",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n52352dd432a0",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5283599bbf1c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5bd3eaab73e4",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n619467f9af2c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6f1475a8ecc1",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n853745a2d4b2",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8dcdd02c6071",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n909c781ca526",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n939ceceff01d",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9b6247678187",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na27c662aae9c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na675f1fc96d8",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 20,
+            "2200–2399": 12,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naafd227e080d",
+        "opening": "Ruy Lopez: Open, Howell Attack, Ekstrom Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb52872a8d15d",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb5341128d28d",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbd1040eb6e8c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne12764d8e982",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne6306d0c9af7",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "neb5d0e74a5fc",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf2634279d142",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf32c25b2ad3d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n00204dd3da46",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0b9e3cae6f36",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 6,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n156ea2735d36",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n19e4085354a4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 5,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n267bfa35bf42",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3130402c2966",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n33a66b97766b",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4189acfdaa18",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4db9a422ff2e",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5207b4a1ff1c",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5451400b1979",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n55af0bb897cb",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n572372530a49",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n5cd083faabf2",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n70f9f7fcc98e",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n75a22224ee9d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n76f8d3a91a76",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n937554b060fe",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 8,
+            "2200–2399": 6,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n967465c26d27",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n99feba377fbd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9e521349fe54",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na9a27aad121a",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nafb92f16fa9b",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 7,
+            "2400–2599": 20,
+            "2200–2399": 10,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc211e19eac0d",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc28635ad9ce3",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 6,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc538cec53160",
+        "opening": "Ruy Lopez: Open, St. Petersburg Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd0789feb1d4e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd0c4c45c819b",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndc239e4e40f7",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfff84a7e884e",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0f242e1289a2",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": "n8924468759cb",
+        "source": "master"
+    },
+    {
+        "id": "n10685f2800b2",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2d7d2c78c084",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2d9ba5f0eafa",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2f094b7aa804",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n375668973c2f",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n3f902d93adf2",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n50b80e3097bd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 7,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6314ab34b305",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 10,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n84d909fda191",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8ecfc6654932",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94fba8f7d854",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n984c3d467c83",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9b8e38b9d6b3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na5c8e707b8e8",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 7,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nab7420416248",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb6c05470db5d",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nb807c235cd6a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc8a6bc66eebb",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ncc2ed728783b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndb500b8404fe",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne5ba3e181780",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nebd1554d844b",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf17d92e58058",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf24938d3bcc4",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf442739a156f",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nff649b80b070",
+        "opening": "Ruy Lopez: Open, Italian Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0a5581ab00a3",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0ce42fc223f5",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n15e0355c0068",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n221727d96fd0",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n25c7ae675c4c",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n2ecfec443c31",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4d67b1acb360",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n63bc628ba2b3",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6a8a348e0bd4",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n6a8f93d0dd8c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n752cca99db81",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7f5a76f73dc3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n88fda94eca90",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8b4f6eb66a61",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8c64dedcfa27",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nadb1b363c178",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 7,
+            "2200–2399": 5,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb8d9d8d22c9d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc464b4c62b10",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 2,
+            "2200–2399": 4,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd4d4f22cefe7",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neda82d412a75",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf06fd8233d8d",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0bf91772cc32",
+        "opening": "Ruy Lopez: Open, Berger Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0fe0bda82e6b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1586fb8fa0ac",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n21ecb66c599d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n233353d2d624",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2b28a3be92e4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n362df7c45afb",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5554479e4c68",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n57f7e8a87062",
+        "opening": "Ruy Lopez: Open, Classical Defense, Main Line",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8f32851f41ef",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n91dc3e5b3806",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n93e6e3a6f384",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9bf2f74b4922",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd2629efc85b8",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd6487d2de129",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndd8fdd40717a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neb9c82645798",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf7dd099f3ec5",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfb7a16d5cd49",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nff4f4c9bc166",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n2b45b0246f9e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n35b5c5bd51b8",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n556e5e53e619",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 6,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5bc60448c16c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6ebc62117121",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7ad0b7f2400b",
+        "opening": "Ruy Lopez: Open, Bernstein Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n7f1c46c3e251",
+        "opening": "Ruy Lopez: Open, Breslau Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8b02d5b3891e",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9213419215f7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9da0faa68bd9",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nacef342debff",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb436c3521336",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc4193f9a49cd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ne75e5ba29535",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf502a65ac98c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n20e52f25ca36",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5cb3340cd0e9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n8369950f68b6",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb22dfb891dfc",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc7be05c7bb33",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncc702d4f0bc9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd5c5be0bbeb7",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd86a24cba3f7",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndace4d32d53b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndb3f85e02031",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfb58310e93e3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 6,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfc8bec0b9ca6",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe47b265343d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n45617980dcd4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n617ee6e1162d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n62014f899740",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7dcdb6600238",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n804543843b1c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n80fc6cba27ce",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 6,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n875509e47ce6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n8ebe454c7894",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94293e3e6774",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n96f6797dc0da",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9ea65dd9a585",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nd40970614f27",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne13cd693c5c4",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 5,
+            "2400–2599": 3,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n1b7579e201a9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 3,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n4068c05549ea",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n60d01f1b9f94",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n6cbbcaae1d6c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n7a45f0a97d88",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n93efdc29fe7c",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbe8c84b31dac",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc0a5ef99858d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc20610c10b9d",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ndb9a76905f69",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 5,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nf9d0a4d882f3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 0,
+            "2200–2399": 3,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n061c93629e9b",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0fbdd5a759ca",
+        "opening": "Ruy Lopez: Open",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n57c86e22f463",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n76f1fe2be5f6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n94670bac4886",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n9d6f7b5a2521",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "naeb86159dbd4",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 3,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nb1c5f47252e5",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbeedf550490b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "ncd79b1536051",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfe42221e8e6a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0775f8a57ade",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n46d85f6eb5cb",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n56ee26e643b9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 1,
+            "2200–2399": 0,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n971b994de307",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "na45ff439d18a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 4,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nba03051a4b60",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nbadb05ed7a55",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nbe0c1f4a0bf9",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc30c1980f0b9",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nd0829947bb75",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf731e44388d0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n22ba7234fbbe",
+        "opening": "Ruy Lopez: Open",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n4dcb652309ae",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n5b0cf704958b",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n9c6d403b780f",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nae94671ab18d",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nc0de310be40e",
+        "opening": "Ruy Lopez: Open, Dilworth Variation",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nf45595423abd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n98e6907f5e6e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n995e125627c0",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 1,
+            "2200–2399": 2,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "na8099f1161a2",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nef6d53ac95fb",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfcaedab9473b",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 4,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n0a71e899785e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 3,
+            "2400–2599": 1,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n52d54030584a",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n73860eb428b1",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "neb6e5f3780bd",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nfc1861ec922c",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0a47a5e8095a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n0c70ccb94d09",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n77311a177196",
+        "opening": "Ruy Lopez: Open, Howell Attack",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "nc4c47202839a",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n185f963e8bf6",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "nfa8375bcce8e",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 2,
+            "2400–2599": 0,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n225327a95663",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 1,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n85db8b1902d0",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n516b8ec04be9",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "ne0456ab4c838",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n10629ded3919",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {
+            "2600+": 0,
+            "2400–2599": 2,
+            "2200–2399": 1,
+            "Lichess 1600–2200": 0
+        },
+        "transposesTo": null,
+        "source": "master"
+    },
+    {
+        "id": "n301bd48e7ad3",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    },
+    {
+        "id": "n49116be35d8f",
+        "opening": "Ruy Lopez: Open, Classical Defense",
+        "bands": {},
+        "transposesTo": null,
+        "source": "engine"
+    }
+]

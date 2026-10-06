@@ -55,6 +55,7 @@ import com.openinglab.shared.chess.BoardPosition
 import com.openinglab.shared.data.OpeningCatalog
 import com.openinglab.shared.model.ChessMove
 import com.openinglab.shared.model.Opening
+import com.openinglab.shared.course.DeepCourseChapterView
 
 @Composable
 fun HomeScreen(
@@ -72,6 +73,10 @@ fun HomeScreen(
     onGames: () -> Unit = {},
     gameResume: com.openinglab.app.ui.GameStudyUiState? = null,
     recall: com.openinglab.app.ui.RecallUiState = com.openinglab.app.ui.RecallUiState(), onReview: () -> Unit = {},
+    deepCourses: List<DeepCourseChapterView> = emptyList(),
+    deepCourseLoading: Boolean = false,
+    deepCourseError: String? = null,
+    onDeepCourse: (String) -> Unit = {},
 ) {
     val ruy = openings.firstOrNull { it.name.replace('ó', 'o') == "Ruy Lopez" } ?: openings.first()
     val ordered = openings.sortedBy { opening ->
@@ -135,6 +140,15 @@ fun HomeScreen(
             TextButton(onClick = onOfflineLibrary, modifier = Modifier.testTag("offline-library")) { Text("Offline library & sources", color = Leaf) }
         }
 
+        if (deepCourses.isNotEmpty() || deepCourseLoading || deepCourseError != null) item {
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Eyebrow("Deep courses · generated, engine-checked", color = Gold)
+                if (deepCourseLoading) Text("Checking the bundled deep course…", color = Leaf, modifier = Modifier.testTag("deep-course-loading"))
+                deepCourseError?.let { Text(it, color = Gold, modifier = Modifier.testTag("deep-course-error")) }
+                deepCourses.forEach { chapter -> DeepCourseCard(chapter) { onDeepCourse(chapter.opening.id) } }
+            }
+        }
+
         item {
             Text("Local recall uses your chosen route, family or named-set revision. Completing a line once is not long-term mastery.",
                 color = MutedCream, style = MaterialTheme.typography.bodySmall)
@@ -151,6 +165,23 @@ fun HomeScreen(
         item {
             QuoteCard()
             Spacer(Modifier.height(4.dp))
+        }
+    }
+}
+
+@Composable
+private fun DeepCourseCard(chapter: DeepCourseChapterView, onClick: () -> Unit) {
+    Surface(
+        modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(22.dp)).clickable(onClick = onClick).testTag("deep-course-${chapter.chapter.id}"),
+        color = DeepMoss, shape = RoundedCornerShape(22.dp), border = androidx.compose.foundation.BorderStroke(1.dp, Gold.copy(alpha = .4f)),
+    ) {
+        Column(Modifier.padding(18.dp)) {
+            Eyebrow(if (chapter.chapter.kind == "GAME") "GM game · both points of view" else "${chapter.course.title} · chapter", color = Gold)
+            Spacer(Modifier.height(6.dp))
+            Text(chapter.chapter.title, color = Cream, style = MaterialTheme.typography.titleLarge)
+            Text(chapter.chapter.coverage?.let { "${it.lines} lines · ${chapter.chapter.variations.size.takeIf { n -> n > 0 }?.let { n -> "$n variations · " } ?: ""}${it.minPlies}–${it.maxPlies} half-moves" }
+                ?: chapter.chapter.game?.let { "${it.white} – ${it.black} · ${it.event} · ${it.result}" } ?: "${chapter.opening.variations.size} lines",
+                color = MutedCream, style = MaterialTheme.typography.bodySmall)
         }
     }
 }

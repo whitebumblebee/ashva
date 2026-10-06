@@ -1,0 +1,26 @@
+{
+    "chapter": "berlin",
+    "nodes": 285,
+    "lines": 27,
+    "minPlies": 11,
+    "maxPlies": 46,
+    "medianPlies": 22,
+    "verdicts": {
+        "WHITE_BETTER": 4,
+        "EQUAL": 21,
+        "UNCLEAR": 2
+    },
+    "stopReasons": {
+        "verdict": 19,
+        "reach": 7,
+        "cap": 1
+    },
+    "reachCovered": 0.8022383097383098,
+    "reachCut": 2.622354497354497E-4,
+    "capped": 1,
+    "clubGames": 1272,
+    "masterGames": 554,
+    "learnerMoves": 134,
+    "opponentMoves": 145,
+    "traps": 4
+}

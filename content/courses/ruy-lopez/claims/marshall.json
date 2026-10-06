@@ -1,0 +1,244 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "Here Black castles early to prepare a central pawn sacrifice. White either allows the Marshall Attack and defends, or avoids it with an anti-Marshall move that attacks Black's queenside first."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Closed, Anti-Marshall": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White avoids the Marshall gambit by attacking Black's advanced queenside pawn first. Black must decide how to protect the queenside before the centre opens."
+    }
+   ]
+  },
+  "Closed, Anti-Marshall · 8...Bb7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Against the queenside strike Black develops the bishop and invites White to keep the tension. Black gives up the Marshall gambit but gets active pieces in the centre."
+    }
+   ]
+  },
+  "Closed, Anti-Marshall · 8...b4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black advances the attacked pawn instead of defending it, gaining queenside space at the cost of a weakened square behind it."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners took on bxc3 when White challenged the advanced pawn, opening the b-file for the rook, and put the queen on Qd7.",
+     "moves": [
+      "bxc3",
+      "Qd7"
+     ]
+    }
+   ]
+  },
+  "Marshall Attack": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black sacrifices a centre pawn to open lines and attack White's kingside. White wins a pawn but must defend accurately; Black's compensation is long-lasting activity."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners attacked with the classic Marshall pattern: the queen to Qh5 and the bishop to Bh3, aiming at White's castled king on the light squares.",
+     "moves": [
+      "Qh5",
+      "Bh3"
+     ]
+    }
+   ]
+  },
+  "Marshall Attack · 9.exd5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White accepts the Marshall gambit pawn. Black now gets long-term attacking chances against White's king in return."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners completed development with Be3, covering the dark squares, and used the open file with Re8 once the attack was neutralised.",
+     "moves": [
+      "Be3",
+      "Re8"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners attacked with the queen on Qh5 and the bishop on Bh3 against White's king.",
+     "moves": [
+      "Qh5",
+      "Bh3"
+     ]
+    }
+   ]
+  },
+  "Closed, Anti-Marshall · 9.d4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strikes in the centre at once, aiming to open lines while Black's queenside pawns are advanced."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners pinned with Bg5 and placed the bishop on Bd5 in the centre.",
+     "moves": [
+      "Bg5",
+      "Bd5"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners struck back with c5, opened lines with bxc3 and supported the centre with Re8 and h6.",
+     "moves": [
+      "c5",
+      "bxc3",
+      "Re8",
+      "h6"
+     ]
+    }
+   ]
+  },
+  "Closed, Anti-Marshall · 9...d6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the centre with a pawn in the quiet anti-Marshall structure. The play becomes slow, with manoeuvres on both wings."
+    }
+   ]
+  },
+  "Marshall Attack · 9...Nxd5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black recaptures with the knight and gives up the pawn for activity. White takes the second centre pawn, and Black's pieces flood towards White's kingside."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners attacked with the queen on Qh5 and the bishop on Bh3 against White's king.",
+     "moves": [
+      "Qh5",
+      "Bh3"
+     ]
+    }
+   ]
+  },
+  "Marshall Attack · 10.Nxe5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White takes the pawn, the critical test of the Marshall. Black exchanges knights and then brings the pieces towards White's king; theory runs very deep here."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners attacked with Qh5 and Bh3, adding the f-pawn advance f5 to bring the rook into the attack.",
+     "moves": [
+      "Qh5",
+      "Bh3",
+      "f5"
+     ]
+    }
+   ]
+  },
+  "Marshall Attack, Modern Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the knight with a pawn and keeps the pieces aimed at White's king, the most popular way to continue the Marshall."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners completed development with Be3 and later used the open file with Re8 once Black's attack was neutralised.",
+     "moves": [
+      "Be3",
+      "Re8"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners threw the f-pawn forward with f5 and f4, kept Bh3 and Qh5 aimed at White's king, and often played Kh8 first to make the f-pawn advance safe.",
+     "moves": [
+      "f5",
+      "f4",
+      "Bh3",
+      "Qh5",
+      "Kh8"
+     ]
+    }
+   ]
+  },
+  "Marshall Attack, Main Line": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strengthens the centre and prepares to defend the kingside light squares while Black's queen and bishops gather for the attack."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners played Kh8 and pushed the f-pawn with f5 and f4, with the bishop on Bh3 supporting the attack.",
+     "moves": [
+      "Kh8",
+      "f5",
+      "f4",
+      "Bh3"
+     ]
+    }
+   ]
+  },
+  "Marshall Attack, Modern Main Line": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black's queen invades near White's king. White blocks the kingside and tries to complete development before Black's attack breaks through."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners played Kh8 and pushed the f-pawn with f5 and f4, with the bishop on Bh3 supporting the attack.",
+     "moves": [
+      "Kh8",
+      "f5",
+      "f4",
+      "Bh3"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "ply": 56,
+        "kind": "BETTER",
+        "playedSan": "Nef1",
+        "branchSan": "g3",
+        "lossCp": 120,
+        "gapCp": 6
+    },
+    {
+        "ply": 62,
+        "kind": "BETTER",
+        "playedSan": "g3?!",
+        "branchSan": "Ne3",
+        "lossCp": 275,
+        "gapCp": 1
+    },
+    {
+        "ply": 75,
+        "kind": "BETTER",
+        "playedSan": "Qxf2+",
+        "branchSan": "Qc3",
+        "lossCp": 228,
+        "gapCp": 228
+    },
+    {
+        "ply": 77,
+        "kind": "BETTER",
+        "playedSan": "Bxf1?",
+        "branchSan": "Ng4+",
+        "lossCp": 168,
+        "gapCp": 168
+    }
+]

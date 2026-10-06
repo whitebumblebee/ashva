@@ -1,0 +1,21 @@
+{
+  "target": "puzzles",
+  "fetchedAt": "2026-10-04T19:13:37.649Z",
+  "entries": [
+    {
+      "url": "https://database.lichess.org/lichess_db_puzzle.csv.zst",
+      "license": "CC0-1.0",
+      "remoteBytes": 307234795,
+      "prefixBytes": 16777216,
+      "complete": false,
+      "chunks": [
+        {
+          "file": ".course-cache/raw/puzzles/chunk-00000",
+          "start": 0,
+          "end": 16777215,
+          "sha256": "f48faeb62b18cb11f151523090a1a9df55e0ed46442b3a524abee3acc0784884"
+        }
+      ]
+    }
+  ]
+}

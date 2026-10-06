@@ -1,0 +1,110 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "In the Exchange Variation White gives up the Spanish bishop to damage Black's pawn structure. The play revolves around White's healthy kingside majority against Black's bishop pair and quick development."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Exchange Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White gives up the Spanish bishop at once to change the pawn structure. Black gets the bishop pair and fast development; White gets a healthy kingside pawn majority that can become decisive in an endgame."
+    }
+   ]
+  },
+  "Exchange Variation · 4...dxc6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black recaptures towards the centre, opening lines for the queen and light-squared bishop. White now has the healthy kingside majority; Black has the bishop pair and fast development."
+    }
+   ]
+  },
+  "Exchange Variation, Normal Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White castles and keeps the option of opening the centre. Black usually protects the centre pawn and develops quickly to make the bishop pair count before the endgame."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners prepared the central pawn break with c3, aiming to open the position only when the kingside majority is ready.",
+     "moves": [
+      "c3"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Exchange Variation, Keres Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White develops the queen's knight first to keep options open and support the centre before castling."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners rerouted the king's knight via Ne7 and Ng6, sometimes to Ne5, and developed the bishop to Be7 behind it.",
+     "moves": [
+      "Ne7",
+      "Ng6",
+      "Ne5",
+      "Be7"
+     ]
+    }
+   ]
+  },
+  "Exchange Variation, Gligoric Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with the f-pawn, a solid setup that keeps the bishop pair but slightly weakens the light squares near Black's king."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners put the rook on Re1 and regrouped the knight with Nd2, preparing to open lines against Black's slightly loose kingside.",
+     "moves": [
+      "Re1",
+      "Nd2"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Exchange Variation, King's Bishop Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black defends the centre pawn with the dark-squared bishop, developing quickly at the cost of a slightly passive bishop."
+    }
+   ]
+  },
+  "Exchange Variation, Bronstein Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with the queen and prepares to castle queenside, aiming for active piece play."
+    }
+   ]
+  },
+  "Exchange Variation, Alapin Gambit": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black offers material to open lines towards White's king, using the bishop pair and active pieces. White must decide whether taking is worth the open files."
+    }
+   ]
+  }
+ }
+}

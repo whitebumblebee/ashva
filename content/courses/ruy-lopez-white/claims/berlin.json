@@ -1,0 +1,2010 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: claims written from the tree, statistics and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "The Berlin Defence is Black's most solid answer to the Ruy Lopez. In this course White meets it with a calm protecting pawn move instead of the heavily analysed endgame lines."
+  },
+  {
+   "type": "IDEA",
+   "text": "You will learn the main line where White exchanges bishop for knight to give Black doubled pawns, the solid setups Black often chooses instead, and four common club mistakes with the exact way to punish each one."
+  },
+  {
+   "type": "IDEA",
+   "text": "Every line ends when the engine agrees the position is resolved: either one side is clearly better or the position is equal and both plans are clear."
+  }
+ ],
+ "nodes": {
+  "e4": {
+   "title": "Claim the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White occupies the centre with a pawn and opens lines for the queen and the light-squared bishop."
+    }
+   ]
+  },
+  "e4 e5": {
+   "title": "Black answers symmetrically",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black takes an equal share of the centre. Both sides now want to develop quickly and fight for the central squares."
+    }
+   ]
+  },
+  "e4 e5 Nf3": {
+   "title": "Develop with a threat",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight develops towards the centre and attacks Black's centre pawn, so Black must spend the next move defending it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6": {
+   "title": "Defend and develop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The most natural defence: Black protects the pawn with a developing move."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5": {
+   "title": "The Ruy Lopez",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The Spanish bishop attacks the knight that defends Black's centre pawn. It does not win that pawn yet, but it creates long-term pressure on Black's centre that lasts well into the middlegame."
+    }
+   ],
+   "principle": {
+    "type": "IDEA",
+    "text": "Development with pressure: every White move in the Ruy Lopez either develops a piece or adds pressure on Black's centre."
+   }
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6": {
+   "title": "The Berlin Defence",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Instead of first asking the bishop what it wants, Black develops the other knight and counterattacks White's centre pawn at once."
+    },
+    {
+     "type": "STATISTIC",
+     "target": "O-O",
+     "stat": "MOST_COMMON",
+     "population": "club",
+     "text": "Most club players now castle, which allows the sharp lines where Black takes the pawn; this course uses a calmer setup."
+    }
+   ],
+   "glossary": [
+    "anti-berlin"
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3": {
+   "title": "4.d3: the calm Anti-Berlin",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White simply protects the centre pawn with another pawn. There is no need to learn the long forcing lines after castling, and the pieces stay on the board for a manoeuvring game where plans matter more than memory."
+    },
+    {
+     "type": "STATISTIC",
+     "target": "d3",
+     "stat": "SCORES_ABOVE:0.55",
+     "population": "club",
+     "text": "In 1600–2200 club games it scores about 56% for White, as well as castling does."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Nbd2",
+      "O-O"
+     ],
+     "text": "In the main line White develops with Nbd2 and castles before starting any action."
+    }
+   ],
+   "principle": {
+    "type": "IDEA",
+    "text": "Solid centre first, active pieces second: once the centre is safe White can choose between pressure on Black's pawn and a later central break."
+   },
+   "glossary": [
+    "anti-berlin"
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5": {
+   "title": "4...Bc5: the active bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black puts the bishop on its most active diagonal, aimed at White's kingside. This is the most common reply at every level."
+    },
+    {
+     "type": "STATISTIC",
+     "target": "Bc5",
+     "stat": "MOST_COMMON",
+     "population": "club",
+     "text": "It is the most frequent reply in our club sample."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6": {
+   "title": "5.Bxc6: change the structure",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White gives up the bishop for the knight on purpose. The knight was Black's best defender of the centre pawn, and the trade forces Black to accept doubled pawns."
+    }
+   ],
+   "principle": {
+    "type": "IDEA",
+    "text": "Trading a bishop for a knight is fine when it damages the opponent's pawns or removes a key defender; here it does both."
+   }
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6": {
+   "title": "Recapture towards the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black recaptures with the d-pawn. That opens the d-file and frees the light-squared bishop, which is why this is the standard recapture."
+    },
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "doubled:black:c",
+      "bishop-pair:black",
+      "halfopen:black:d"
+     ],
+     "text": "Black now has doubled c-pawns and the bishop pair, and the d-file is half-open for Black."
+    }
+   ],
+   "glossary": [
+    "doubled-c-pawns"
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2": {
+   "title": "6.Nbd2: the knight's long trip",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The queen's knight develops behind the pawns. It does not block the c-pawn's path forever: it is heading for a better square on the queenside or kingside."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "O-O",
+      "Nc4"
+     ],
+     "text": "In the main line White castles and then jumps to Nc4, where the knight eyes Black's centre pawn and the queenside."
+    }
+   ],
+   "glossary": [
+    "knight-reroute"
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7": {
+   "title": "6...Nd7: Black regroups",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black reroutes the knight so that the f-pawn can support the centre and the knight can come to a more useful square later."
+    },
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "O-O",
+      "f6"
+     ],
+     "text": "Black typically castles and then supports the centre with the f-pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O": {
+   "title": "Castle before the middlegame",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White completes development and gets the king safe. The middlegame plans start from here."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Nc4",
+      "c3",
+      "b4"
+     ],
+     "text": "White's queenside plan: knight to c4, then c3 and b4 to gain space and push Black's bishop back."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O": {
+   "title": "Both kings are safe",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Both sides have castled. Black has the two bishops; White has the better pawn structure and will try to gain space before Black's bishops become active."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4": {
+   "title": "8.Nc4: the knight arrives",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "From here the knight pressures Black's centre pawn and supports a queenside advance."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "c3",
+      "b4"
+     ],
+     "text": "The next step is to gain queenside space with the c- and b-pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6": {
+   "title": "8...f6: a solid wall",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the centre pawn with the f-pawn. The structure is now very solid, but the light squares around Black's king are a little weaker."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O": {
+   "title": "6...O-O: castle first",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black delays the knight manoeuvre and castles. White's reply is the same idea: bring the knight to its good square."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Nc4",
+      "O-O"
+     ],
+     "text": "White continues with Nc4 and castles."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6": {
+   "title": "6...Be6: develop the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the light-squared bishop and keeps the option of castling queenside. White calmly castles and keeps the knight flexible."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O": {
+   "title": "Castle and keep the knight flexible",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "With Black's bishop covering the knight's favourite square, White looks for another route for the knight or a queenside expansion with the b-pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5": {
+   "title": "7...a5: stop the b-pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black prevents White's queenside expansion by fixing the a-pawn first. White's knight still goes to its best square."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6": {
+   "title": "7...b6: protect the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black secures the bishop's retreat in advance. White reacts in the centre instead of on the queenside."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6": {
+   "title": "4...d6: the solid setup",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with a pawn and keeps a closed, solid position. This is the second most common reply."
+    },
+    {
+     "type": "STATISTIC",
+     "target": "d6",
+     "stat": "SHARE_ABOVE:0.25",
+     "population": "club",
+     "text": "About a quarter of club players choose it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O": {
+   "title": "5.O-O: castle and wait",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White castles first. In closed positions it pays to finish development before committing the pawns."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Re1"
+     ],
+     "text": "The rook comes to the e-file next to support a later central break."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7": {
+   "title": "5...Bd7: unpin in advance",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black breaks the pin on the knight in advance so that the bishop-for-knight exchange no longer damages the pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4": {
+   "title": "5...Bg4: pin the knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black pins the knight to the queen and adds pressure on White's centre. White answers in the centre rather than chasing the bishop at once."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "c3",
+      "d4"
+     ],
+     "text": "White prepares and then plays d4 to gain the centre."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6": {
+   "title": "5...a6: ask the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black asks the bishop to decide. White exchanges it, giving Black doubled pawns before Black can drive it away."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+": {
+   "title": "6.Bxc6+: double Black's pawns",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White exchanges with check before Black can drive the bishop back, so Black has to accept damaged pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6": {
+   "title": "Doubled pawns for Black",
+   "claims": [
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "doubled:black:c"
+     ],
+     "text": "Black has doubled c-pawns, a lasting target for White's pieces."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7": {
+   "title": "5...Be7: quiet development",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "A modest but sound developing move. White builds the classical Spanish pawn centre."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "c3",
+      "Re1"
+     ],
+     "text": "White prepares the central advance with c3 and the rook on the e-file."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7": {
+   "title": "4...Ne7: a knight manoeuvre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black re-routes the knight towards the kingside so that the c-pawn can support a later central advance. White simply develops."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6": {
+   "title": "4...Bd6: an unusual bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The bishop defends the centre pawn but blocks Black's d-pawn and the queen's line. White develops normally and can later exchange the bishop for the knight to double Black's pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 a6": {
+   "title": "4...a6?: a tempting mistake",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Asking the bishop sounds natural, but here it loses time: White exchanges the bishop for the knight and then takes Black's undefended centre pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 a6 Bxc6": {
+   "title": "Take the defender",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White removes the knight that guards Black's centre pawn. After the recapture that pawn is weak."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 a6 Bxc6 bxc6": {
+   "title": "The pawn is now loose",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black recaptures away from the centre. The centre pawn has lost its defender."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 a6 Bxc6 bxc6 Nxe5": {
+   "title": "Win the pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White wins a clean pawn with a good position: this is why the bishop exchange came first."
+    }
+   ],
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "O-O",
+      "Re1",
+      "d4"
+     ],
+     "text": "White is a clean pawn up. Finish development with O-O and Re1, then open the centre with d4 while Black is still undeveloped."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "IDEA",
+     "text": "Black is a pawn down without real compensation. The practical try is fast development and activity for the two bishops."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 h6": {
+   "title": "4...h6?: too slow",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "A typical club move that keeps White's pieces off a kingside square but ignores the centre. White exchanges the bishop for the knight and wins Black's centre pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 h6 Bxc6 bxc6 Nxe5": {
+   "title": "Collect the pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Same theme as the other quiet mistakes: once the defender is gone, the centre pawn falls."
+    }
+   ],
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "c3",
+      "O-O",
+      "Re1",
+      "d4"
+     ],
+     "text": "Block the check with c3, castle, then Re1 and d4: the extra pawn and the better structure decide."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "IDEA",
+     "text": "Black is a pawn down and should aim for active piece play rather than passive defence."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Be7": {
+   "title": "4...Be7?: passive",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The bishop is passive here and, more importantly, the centre pawn still depends only on the knight. White exchanges the bishop for the knight and takes it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4": {
+   "title": "4...Nd4?: a premature jump",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black moves the same knight twice and offers a trade that helps White. After the exchange White gains time with a central pawn advance."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4 Nxd4 exd4": {
+   "title": "Black's pawn is overextended",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's recapturing pawn now stands far forward, and Black's remaining knight can be chased."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4": {
+   "title": "7.d4: take the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "With the bishop already prepared to retreat, White takes the centre. Black's pin on the knight is annoying but not dangerous."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6": {
+   "title": "7...a6: hit the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black asks the bishop to decide; White prefers the exchange that damages Black's pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+": {
+   "title": "8.Bxc6+: double the pawns",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Exchanging with check gives Black doubled pawns before the bishop can be trapped or forced back."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6": {
+   "title": "8...bxc6: towards the centre",
+   "claims": [
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "doubled:black:c"
+     ],
+     "text": "Black now has doubled c-pawns."
+    },
+    {
+     "type": "IDEA",
+     "text": "Black recaptures towards the centre, keeping more pawns there."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3": {
+   "title": "9.h3: question the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White asks the pinning bishop to decide: take on the knight, or retreat and keep the pin."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5": {
+   "title": "9...Bh5: keep the pin",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black keeps the pin. The bishop is active, but it can later become a target for White's kingside pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1": {
+   "title": "10.Re1: protect the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The rook protects White's centre pawn so that Black's pieces cannot win it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7": {
+   "title": "10...Nd7: prepare to release",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black regroups the knight and prepares to release the central tension."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2": {
+   "title": "11.Nbd2: develop the last knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White develops the last knight and keeps the centre protected."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4": {
+   "title": "11...exd4: release the tension",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black exchanges in the centre so that White's centre pawn becomes a target."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4": {
+   "title": "12.cxd4: a full centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White recaptures towards the centre and now has two central pawns side by side."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4": {
+   "title": "13.Qa4: target the weak pawns",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The queen attacks Black's weakened queenside pawns and stops the black queen from coming out easily."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5": {
+   "title": "13...c5: fix the weakness",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black gets rid of the weak pawn by advancing it and challenging White's centre."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5": {
+   "title": "14.dxc5: open lines",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White opens lines towards Black's uncastled king and the remaining weak pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6": {
+   "title": "15.cxd6: with tempo",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The pawn capture comes with tempo against Black's bishop, so Black must recapture at once."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4": {
+   "title": "16.b4: queenside space",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White gains queenside space and keeps Black's knight out of its best square."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5": {
+   "title": "17...d5: Black breaks free",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black uses the moment to break in the centre and activate the pieces."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5": {
+   "title": "20.Qxd5: collect the centre pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's queen takes the central pawn; the open position now favours White's more active pieces slightly."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6": {
+   "title": "7...Qd6: protect and prepare",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The queen protects Black's centre pawn and prepares to castle queenside or connect the rooks."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3": {
+   "title": "8.b3: a new route",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "With the bishop covering the knight's usual square, White prepares to develop the dark-squared bishop on the long diagonal."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Bb2"
+     ],
+     "text": "The bishop goes to Bb2 next."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5": {
+   "title": "8...a5: queenside space",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black uses the a-pawn to gain space and to annoy White's queenside."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5 Bb2": {
+   "title": "9.Bb2: aim at the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The bishop aims at Black's centre pawn and prepares a central break."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5 Bb2 Nd7": {
+   "title": "9...Nd7: guard the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black adds a defender to the centre pawn and keeps the position compact."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5 Bb2 Nd7 Ng5": {
+   "title": "10.Ng5: hit the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight attacks Black's light-squared bishop to win the bishop pair back or to force a concession."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6": {
+   "title": "7...Bd6: support the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with the bishop, which also prevents White from simply capturing it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3": {
+   "title": "8.Nb3: control the squares",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight eyes the queenside squares and prepares a central break."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6 Bg5": {
+   "title": "9.Bg5: pin the knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White pins the knight to the queen and prepares the central break."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6 Bg5 Qc8 d4": {
+   "title": "10.d4: the central break",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "With pieces in place, White opens the centre to use the better pawn structure."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4": {
+   "title": "7.Nc4: knight to its best square",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight reaches its ideal square at once, where it pressures Black's centre pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7": {
+   "title": "7...Nd7: defend the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn and prepares to support it with the f-pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7 O-O": {
+   "title": "8.O-O: king safety first",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White castles and keeps all options in the centre and on the queenside."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7 O-O Re8 a4": {
+   "title": "9.a4: secure the knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The pawn stops Black from chasing the knight away with the b-pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7 O-O Re8 a4 b6 Be3": {
+   "title": "10.Be3: challenge the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White offers to trade Black's active dark-squared bishop."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4": {
+   "title": "8.Nc4: the usual square",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight goes to its best square anyway; Black's a-pawn did not prevent this."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6": {
+   "title": "8...f6: the solid wall",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the centre pawn with the f-pawn, the standard setup in this structure."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3": {
+   "title": "9.c3: prepare the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White prepares the central break and gives the queen a route to the queenside."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5": {
+   "title": "9...b5: chase the knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black gains space and drives White's knight away from its good square."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5 Ne3": {
+   "title": "10.Ne3: a new post",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight retreats towards the kingside, where it eyes a strong square in front of Black's king."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5 Ne3 O-O d4": {
+   "title": "11.d4: open the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White opens the centre now that Black's queenside pawns have advanced and left weaknesses."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 h6 Bxc6": {
+   "title": "Take the defender",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White removes the knight that guards Black's centre pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 h6 Bxc6 bxc6": {
+   "title": "The pawn is loose",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "After the recapture Black's centre pawn has no defender."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Be7 Bxc6 bxc6": {
+   "title": "The pawn is loose",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The recapture away from the centre leaves Black's centre pawn undefended."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Be7 Bxc6 bxc6 Nxe5": {
+   "title": "Win the pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White collects the pawn. Black's bishops give some activity, but White is simply a pawn up."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3": {
+   "title": "6.c3: the Spanish centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White prepares the central break and gives the bishop a retreat square."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O": {
+   "title": "6...O-O: Black castles",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black finishes development and waits to see White's plan."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1": {
+   "title": "7.Re1: rook behind the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The rook supports White's centre pawn before the central break."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6": {
+   "title": "7...a6: hit the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black asks the bishop to retreat; in this structure White prefers to keep it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4": {
+   "title": "8.Ba4: keep the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White keeps the light-squared bishop, which later returns to the long diagonal aiming at Black's king."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3": {
+   "title": "9.c3: prepare the pawn advance",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Prepares the queenside pawn advance and keeps Black's pieces out of White's half of the board."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "b4"
+     ],
+     "text": "The point is b4 next, gaining space with tempo against the bishop."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8": {
+   "title": "9...Re8: guard the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn once more and makes room for the dark-squared bishop to drop back."
+    },
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Bf8"
+     ],
+     "text": "The bishop will retreat to Bf8 when attacked."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4": {
+   "title": "10.b4: space with tempo",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The pawn advance gains queenside space and forces Black's bishop to give up its active diagonal."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8": {
+   "title": "10...Bf8: the bishop defends",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The bishop retreats to defend the kingside. Black is solid but a little passive."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3": {
+   "title": "11.Be3: finish development",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White develops the last minor piece and contests the dark squares Black's bishop used to control."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "a4"
+     ],
+     "text": "Next comes a4 to add more queenside space."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8": {
+   "title": "11...Nb8: regroup again",
+   "claims": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Be6",
+      "Nd7"
+     ],
+     "text": "Black develops with Be6 first and brings the knight back to Nd7 later with better timing."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8 a4": {
+   "title": "12.a4: more space",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White's queenside pawns now restrict Black's queenside pieces."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Qc2",
+      "Nfd2"
+     ],
+     "text": "White connects the rooks with Qc2 and regroups with Nfd2."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8 a4 Be6": {
+   "title": "12...Be6: challenge the knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black finally develops the light-squared bishop and challenges White's well-placed knight."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8 a4 Be6 Qc2": {
+   "title": "13.Qc2: connect the rooks",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The queen connects the rooks and stays useful on both wings."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8 a4 Be6 Qc2 Qc8": {
+   "title": "13...Qc8: support the bishop",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's queen supports the bishop and prepares a queenside reaction."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8 a4 Be6 Qc2 Qc8 Nfd2": {
+   "title": "14.Nfd2: free the f-pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight steps back so that White's f-pawn can join the fight later."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "f3",
+      "f4"
+     ],
+     "text": "White prepares the f-pawn break with f3 and later f4."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O O-O Nc4 f6 c3 Re8 b4 Bf8 Be3 Nb8 a4 Be6 Qc2 Qc8 Nfd2 Nd7": {
+   "title": "14...Nd7: balanced",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's knight returns to its best regrouping square. Both sides are fully developed and the position is balanced."
+    }
+   ],
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "h3",
+      "b5",
+      "f4"
+     ],
+     "text": "With the queenside fixed after b5, White prepares the f4 break to use the kingside majority."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "c5",
+      "a6",
+      "b6"
+     ],
+     "text": "Black keeps the queenside closed with c5, a6 and b6."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1": {
+   "title": "6.Re1: support the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The rook supports White's centre pawn and prepares a central break."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "d4"
+     ],
+     "text": "White intends d4 as soon as it is safe."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6": {
+   "title": "6...g6: a kingside fianchetto",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black prepares to put the bishop on the long diagonal, aiming at White's centre."
+    },
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Bg7"
+     ],
+     "text": "The bishop goes to Bg7 next."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4": {
+   "title": "7.d4: strike now",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "With the rook already behind the centre, White grabs space before Black's bishop reaches its diagonal."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7": {
+   "title": "7...Bg7: pressure on the centre",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The bishop joins the fight against White's centre and Black's knight now eyes a capture."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5": {
+   "title": "8.d5: close with tempo",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White closes the centre and gains space with tempo against the knight."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7": {
+   "title": "8...Ne7: towards the kingside",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight retreats towards the kingside, where Black will later look for counterplay with the f-pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+": {
+   "title": "9.Bxd7+: trade the light bishops",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Trading the light-squared bishops removes a key defender of the squares in front of Black's pawns."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7": {
+   "title": "9...Nxd7: a flexible knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black recaptures with the knight, which can now support either a queenside or a kingside pawn advance."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3": {
+   "title": "10.Be3: fight for the dark squares",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White develops and challenges the dark squares that Black's fianchettoed bishop controls."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8": {
+   "title": "10...Ng8: free the f-pawn",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black re-routes the knight again so that the f-pawn can advance."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3": {
+   "title": "11.h3: prophylaxis",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "A useful waiting move that keeps Black's pieces out of the squares near White's king."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6": {
+   "title": "11...Bh6: offer the bishop trade",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black offers to trade the dark-squared bishops to reduce White's pressure."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6": {
+   "title": "12.Bxh6: accept",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White accepts. Without the dark-squared bishops, Black's kingside has fewer defenders."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6 Nxh6": {
+   "title": "12...Nxh6: knight on the rim",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black's knight recaptures but is temporarily out of play on the edge."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6 Nxh6 Qd2": {
+   "title": "13.Qd2: hit the loose knight",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The queen attacks the knight on the edge and eyes the weakened dark squares near Black's king."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bd7 Re1 g6 d4 Bg7 d5 Ne7 Bxd7+ Nxd7 Be3 Ng8 h3 Bh6 Bxh6 Nxh6 Qd2 Ng8": {
+   "title": "13...Ng8: back again",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "The knight has to go back. White has gained time and keeps a small, stable edge."
+    }
+   ],
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Na3",
+      "Nb5",
+      "Qc3"
+     ],
+     "text": "The knight goes Na3 and Nb5, and with Qc3 White targets Black's c-pawn."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "a5",
+      "Ngf6",
+      "O-O"
+     ],
+     "text": "Black secures the queenside with a5, develops with Ngf6 and castles."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3": {
+   "title": "6.c3: centre first",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "White builds the centre rather than chasing the bishop at once; the pin can be dealt with later."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "d4"
+     ],
+     "text": "The pawn prepares d4."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6": {
+   "title": "6...h6: keep the retreat",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Black keeps a retreat square for the bishop and stops White's pieces from using the square next to Black's king."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Nd4 Nxd4 exd4 e5": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "O-O",
+      "Re1"
+     ],
+     "text": "The advanced pawn gains space and chases the knight. Castle and bring the rook to Re1 to support it."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "IDEA",
+     "text": "Black's knight is short of squares and Black's advanced pawn is cut off from support; Black must untangle quickly and challenge White's centre with the d-pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 a6 Ba4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Bc2",
+      "Nbd2",
+      "Re1"
+     ],
+     "text": "The classical closed Spanish: keep the bishop with Bc2, develop with Nbd2 and Re1, and prepare the centre."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "b5",
+      "O-O",
+      "d5"
+     ],
+     "text": "Black gains queenside space with b5, castles and prepares the central break d5."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 h6 d4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Re1",
+      "Ba4",
+      "Bc2"
+     ],
+     "text": "With the centre established, White completes development with Re1 and keeps the bishop with Ba4 and Bc2."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "O-O",
+      "Bd7",
+      "Re8"
+     ],
+     "text": "Black keeps the centre solid and completes development behind it."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 a5 d4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Na3",
+      "dxe5",
+      "Nb5"
+     ],
+     "text": "Develop the knight with Na3, open the centre with dxe5 and jump to Nb5 against Black's weakened queenside."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Nd7",
+      "c5"
+     ],
+     "text": "Black regroups with Nd7 and c5 so that the doubled pawns at least control central squares."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 Bd7 Ba4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "d4",
+      "Bc2",
+      "Nbd2"
+     ],
+     "text": "Take the centre with d4, then Bc2 and Nbd2: a comfortable classical setup."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Re8",
+      "h6",
+      "b5"
+     ],
+     "text": "Black stays compact and gains a little queenside space with b5."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 Re8 d4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "cxd4",
+      "Bf1",
+      "e5"
+     ],
+     "text": "After the exchange, recapture to keep a big centre, keep the bishop with Bf1 and gain space with e5."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "exd4",
+      "d5"
+     ],
+     "text": "Black releases the tension with exd4 and strikes back at once with d5."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Be7 Bxc6 bxc6 Nxe5 O-O O-O Re8 Nc3": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Re1",
+      "Bf4",
+      "d4"
+     ],
+     "text": "White is a pawn up with a sound position: Re1, Bf4 and d4 complete the setup."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "IDEA",
+     "text": "Black is a pawn down; the bishops give some activity but not enough compensation."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 c5 c3 Nd7 d4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Be3",
+      "dxc5",
+      "Na3",
+      "Nc4"
+     ],
+     "text": "Develop with Be3, exchange with dxc5 to leave Black's pawns weak, then bring the knight via Na3 to Nc4."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Be7",
+      "O-O",
+      "Rb8"
+     ],
+     "text": "Black develops and uses the half-open b-file with Rb8."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Be6 d4": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "e5",
+      "Nc3",
+      "Bc2"
+     ],
+     "text": "After the exchange in the centre White gains space with e5 and develops with Nc3 and Bc2."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "d5",
+      "Ne4"
+     ],
+     "text": "Black answers with d5 and puts the knight on the strong Ne4 square."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 c5 c3 Bg4 h3 Bh5 Be3 Be7 Nbd2 O-O": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "b4",
+      "Rb1"
+     ],
+     "text": "Open the queenside with b4 and Rb1 to target Black's weakened pawns."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Qd7",
+      "Rfe8"
+     ],
+     "text": "Black keeps the position compact with Qd7 and Rfe8 and waits for White to overextend."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 O-O Nc4 Nd7 O-O Re8 a4 b6 Be3 Bb4 Kh1 a5": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Ne3",
+      "Nh4",
+      "f3"
+     ],
+     "text": "Regroup the knights with Ne3 and Nh4 and support the centre with f3 before any kingside advance."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Nf8",
+      "Ne6",
+      "Nd4"
+     ],
+     "text": "Black's knight travels Nf8, Ne6 and Nd4 to the best central square."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Qd6 b3 a5 Bb2 Nd7 Ng5 a4 Ndf3 O-O": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "d4",
+      "Nxd4"
+     ],
+     "text": "Open the centre with d4. The trades lead to an equal ending where White's healthier pawns remain the long-term plus."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "exd4",
+      "Bxd4"
+     ],
+     "text": "Black accepts the trades with exd4 and Bxd4; the bishop pair compensates for the structure."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Bd6 Nb3 b6 Bg5 Qc8 d4 Nd7 Bh4 f6": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Bg3",
+      "Nbd2",
+      "Re1",
+      "c3"
+     ],
+     "text": "Retreat the bishop to Bg3 and regroup with Nbd2, Re1 and c3, keeping pressure on Black's centre."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Qa6",
+      "O-O",
+      "Rad8"
+     ],
+     "text": "Black activates the queen with Qa6, castles and puts a rook on the d-file."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O a5 Nc4 f6 c3 b5 Ne3 O-O d4 Bd6": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Nf5",
+      "dxe5"
+     ],
+     "text": "Put a knight on the strong Nf5 square and open the centre with dxe5."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Nb6",
+      "fxe5"
+     ],
+     "text": "Black reroutes the knight with Nb6 and recaptures towards the centre with fxe5."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bd6 Nbd2 a6 Bxc6 dxc6 Nc4 Qe7 h3 b5 Ne3 Be6 O-O O-O b3 Rfe8": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Kh2",
+      "g4",
+      "Rg1"
+     ],
+     "text": "A slow kingside expansion: Kh2, g4 and a rook on the g-file."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "g6",
+      "h5"
+     ],
+     "text": "Black meets it with g6 and h5 to open lines first."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 c5 c3 Be7 d4 exd4 cxd4 cxd4 Nxd4 Bd7 Nc3": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Bf4",
+      "b3",
+      "Qd3",
+      "Rad1"
+     ],
+     "text": "A pleasant central position: develop with Bf4, b3 and Qd3, then put a rook on the d-file with Rad1."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "O-O",
+      "Re8"
+     ],
+     "text": "Black castles and contests the centre with Re8."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O a6 Bxc6+ bxc6 Re1 Nd7 d4 f6 Na3 c5 c3 Nb6 b4 cxb4 cxb4 Be7": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Qb3",
+      "Nc4",
+      "Bd2"
+     ],
+     "text": "Put the queen on Qb3, bring the knight to Nc4 and develop with Bd2."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Bd7",
+      "Ba4",
+      "O-O"
+     ],
+     "text": "Black develops with Bd7 and Ba4 and castles."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Nd7 O-O b6 c3 Ba6 Re1 Bxd3 Nb3 Ba6 Nxc5 Nxc5 Nxe5 Qxd1 Rxd1": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "f3",
+      "Ng4",
+      "a4"
+     ],
+     "text": "In the queenless middlegame White improves with f3, Ng4 and a4."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Ne6",
+      "c5",
+      "Rd8"
+     ],
+     "text": "Black centralises with Ne6, gains space with c5 and contests the d-file with Rd8."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Ne7 O-O c6 Ba4 Ng6 Re1 Bb4 Nbd2 d6 c3 Ba5 Nf1 b5 Bc2 b4 Bd2 bxc3 bxc3": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "h3",
+      "Ng3",
+      "d4"
+     ],
+     "text": "The classical Spanish plan: h3, the knight to Ng3, then d4."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "O-O",
+      "Rb8",
+      "Qc7"
+     ],
+     "text": "Black castles and uses the open b-file with Rb8 and Qc7."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 Bc5 Bxc6 dxc6 Nbd2 Be6 O-O Nd7 Nb3 Be7 d4 Bf6 Re1 a5 dxe5 Nxe5 Qxd8+ Kxd8 Nxe5 Bxe5": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Nc5",
+      "c3",
+      "f4"
+     ],
+     "text": "In this queenless position White activates the knight with Nc5 and uses the kingside majority with f4."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Ke7",
+      "Bd6"
+     ],
+     "text": "Black brings the king to the centre with Ke7 and keeps the bishop active with Bd6."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 b5 Bc2 d5 Nbd2 Re8 h3 h6 d4 exd4 cxd4 Nxe4 Nxe4 dxe4 Bxe4": {
+   "whitePlan": [
+    {
+     "type": "STRUCTURE",
+     "facts": [
+      "isolated:white:d4"
+     ],
+     "text": "White has an isolated pawn on d4, so piece activity matters more than structure."
+    },
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Bf4",
+      "Rc1",
+      "Ne5"
+     ],
+     "text": "Activate everything: Bf4, Rc1 and a knight on Ne5."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Bb7",
+      "Nb4",
+      "Bd5"
+     ],
+     "text": "Black blockades and trades: Bb7, Nb4 and Bd5 in front of the isolated pawn."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Be7 c3 O-O Re1 a6 Ba4 Re8 Nbd2 Bf8 Nf1 h6 Ng3 b5 Bb3 Na5 Bc2 c5 d4 cxd4 cxd4 exd4 Nxd4 Bb7": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "b3",
+      "Bb2",
+      "Qd2"
+     ],
+     "text": "Develop the last pieces with b3, Bb2 and Qd2; White keeps a slight central edge."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Rc8",
+      "Nc6",
+      "d5"
+     ],
+     "text": "Black uses the c-file with Rc8, brings the knight to Nc6 and frees the game with d5."
+    }
+   ]
+  },
+  "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6 O-O Bg4 c3 h6 d4 a6 Bxc6+ bxc6 h3 Bh5 Re1 Nd7 Nbd2 exd4 cxd4 Be7 Qa4 c5 dxc5 O-O cxd6 cxd6 b4 Re8 Qb3 d5 Bb2 Rb8 a3 a5 Qxd5 Bxf3 Nxf3 axb4 axb4 Rxb4 Ba3 Rb6": {
+   "whitePlan": [
+    {
+     "type": "PLAN",
+     "side": "WHITE",
+     "moves": [
+      "Red1",
+      "Qc4"
+     ],
+     "text": "White is slightly better in this open position: rook to Red1 and queen to Qc4."
+    }
+   ],
+   "blackPlan": [
+    {
+     "type": "PLAN",
+     "side": "BLACK",
+     "moves": [
+      "Nf6",
+      "Qb8"
+     ],
+     "text": "Black regroups with Nf6 and Qb8 to keep the pieces active."
+    }
+   ]
+  }
+ },
+ "glossary": [
+  {
+   "id": "anti-berlin",
+   "title": "The Anti-Berlin idea",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "Protecting the centre pawn with a pawn avoids the queen trade and long forcing lines of the main Berlin. The game stays rich: White plays slowly, improves the pieces and chooses the moment to strike in the centre or on the queenside."
+    }
+   ]
+  },
+  {
+   "id": "doubled-c-pawns",
+   "title": "Doubled c-pawns for the bishop pair",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "When the bishop takes the knight and Black recaptures towards the centre, Black gets two bishops and an open file but a damaged queenside. White's long-term trump is the healthy kingside pawn majority, which can later create a passed pawn, especially in an endgame."
+    }
+   ]
+  },
+  {
+   "id": "knight-reroute",
+   "title": "The queen's knight's journey",
+   "claims": [
+    {
+     "type": "IDEA",
+     "text": "In these closed Spanish structures the queen's knight rarely stays on its first square. It develops behind the pawns and then goes to the queenside to support an advance, or to the kingside to support an attack."
+    }
+   ]
+  }
+ ]
+}

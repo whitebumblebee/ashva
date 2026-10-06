@@ -1,0 +1,674 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "The Closed Ruy Lopez is the classical heart of the opening: long manoeuvring battles where White builds a strong centre and Black chooses between several famous regrouping systems before the central break."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Closed": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops calmly and prepares to castle, choosing the classical closed Spanish. Both sides manoeuvre for a long time before the central break; plans matter more than early tactics."
+    }
+   ]
+  },
+  "Closed · 6.Re1": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "The main line of the Closed Ruy Lopez: White protects the centre pawn with the rook, freeing the knight from its defence. Black usually expands on the queenside to gain space and question the bishop."
+    }
+   ]
+  },
+  "Closed, Martinez Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with a pawn and delays the classical central setup. It is a modern, flexible system that keeps the game slow and avoids the Marshall gambit."
+    }
+   ]
+  },
+  "Closed, Delayed Exchange": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White exchanges the bishop for the knight one move later than in the Exchange Variation, so Black has already committed the bishop to a modest square."
+    }
+   ]
+  },
+  "Closed, Worrall Attack": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with the queen, keeping the rook free for the d-file. It is an old system with the idea of a quick central advance."
+    }
+   ]
+  },
+  "Closed · 6...b5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black gains queenside space and drives the bishop to its best diagonal, from where it aims at Black's kingside. This is the starting point of most classical closed lines."
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 6...b5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Against the quiet Martinez setup Black still expands on the queenside. White keeps a flexible centre and can choose between slow manoeuvring and an early queenside strike."
+    }
+   ]
+  },
+  "Closed, Averbakh Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with a pawn before expanding on the queenside, keeping a compact structure and avoiding some anti-Marshall ideas."
+    }
+   ]
+  },
+  "Closed, Delayed Exchange · 7.d3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with a pawn after the delayed exchange. Black has the bishop pair; White plans a slow knight manoeuvre and a kingside majority."
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 7.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White builds a solid central structure with pawns and keeps the bishop's retreat. The play resembles a slow Italian game with Spanish ideas."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners pinned the knight with Bg5, increasing pressure on Black's centre.",
+     "moves": [
+      "Bg5"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners regrouped Breyer-style with Nb8, supported the centre with c6, put the bishop on Bb7 and gained queenside space with a5.",
+     "moves": [
+      "Nb8",
+      "c6",
+      "Bb7",
+      "a5"
+     ]
+    }
+   ]
+  },
+  "Closed · 7...d6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black protects the centre pawn with a pawn, the classical way. White now usually prepares a central advance and protects the bishop's retreat with the c-pawn."
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 7...d6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the centre with a pawn in the Martinez structure. Both sides manoeuvre; White can strike on the queenside with the a-pawn to question Black's pawn chain."
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 7...O-O": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black castles first and keeps the option of an early central strike, a flexible move order in the Martinez structure."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners developed the dark-squared bishop to Be3 to challenge Black's active pieces.",
+     "moves": [
+      "Be3"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Closed, Trajkovic Counterattack": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the light-squared bishop to the long diagonal at once, aiming at White's centre and preparing a quick central break."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners met Black's early bishop with Nc3 and the central break d4; after cxd4 White's centre is strong and the knight can jump to Nd5.",
+     "moves": [
+      "Nc3",
+      "d4",
+      "cxd4",
+      "Nd5"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Closed, Worrall Attack, Castling Line": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black castles in the Worrall setup. White plans a quick central advance supported by the queen, and the rook can go to the d-file."
+    }
+   ]
+  },
+  "Closed · 7...d6 8.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White makes room for the bishop and prepares a big pawn centre. Black usually castles next, transposing to the main classical position."
+    }
+   ]
+  },
+  "Closed · 8.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "The main line of the Closed Ruy Lopez: White prepares a central advance and keeps a retreat for the bishop. Black now chooses between the solid classical defence and the Marshall pawn sacrifice."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners often closed the centre with d5 and then played on the kingside, with the bishop on Be3.",
+     "moves": [
+      "d5",
+      "Be3"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners gained queenside space with c5.",
+     "moves": [
+      "c5"
+     ]
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 8.c3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White keeps the solid Martinez centre and prepares a slow kingside build-up with the queen's knight heading for the kingside."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners pinned the knight with Bg5 to increase pressure on Black's centre.",
+     "moves": [
+      "Bg5"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners developed the bishop to Be6 to challenge White's Spanish bishop.",
+     "moves": [
+      "Be6"
+     ]
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 8.a3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White makes a retreat square for the bishop and prevents Black's knight from jumping forward on the queenside. A flexible, slow system popular at the top level."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners played h6 early to keep White's bishop and knight away from the squares in front of Black's king.",
+     "moves": [
+      "h6"
+     ]
+    }
+   ]
+  },
+  "Closed · 8.h3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prevents Black's light-squared bishop from pinning the knight before deciding on the centre. Black often develops the bishop to the long diagonal in reply."
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 8.a4": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strikes at Black's queenside pawn chain at once, trying to open the file for the rook and create weaknesses before Black is fully developed."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners rerouted the knight with Ne7 towards the kingside.",
+     "moves": [
+      "Ne7"
+     ]
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 8...O-O": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black castles and completes kingside development. The game becomes a long manoeuvring battle with typical knight rerouting for both sides."
+    }
+   ]
+  },
+  "Closed · 8...Bb7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the bishop to the long diagonal, aiming at White's centre and preparing a central break. White usually answers with a central pawn move that creates direct tension."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners kept the bishop on Ba2 and brought the knight to Ng3 for a kingside build-up.",
+     "moves": [
+      "Ba2",
+      "Ng3"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Closed, Martinez Variation · 8...Bd7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black supports the queenside pawn chain with the bishop so that White's pressure on the file does not win anything. The structure stays closed and solid."
+    }
+   ]
+  },
+  "Closed, Martinez Variation · 9.h3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White prevents the bishop pin and prepares a slow kingside build-up. Typical plans include rerouting the queen's knight towards the kingside."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners played g6 to prepare a kingside regrouping, developed with Be6 and gained queenside space with a5.",
+     "moves": [
+      "g6",
+      "Be6",
+      "a5"
+     ]
+    }
+   ]
+  },
+  "Closed, Yates Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White breaks in the centre at once without the usual preparatory pawn move on the kingside, allowing Black's pin."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners regrouped with Nd7, opened the c-file with cxd4 and strengthened the kingside with g6.",
+     "moves": [
+      "Nd7",
+      "cxd4",
+      "g6"
+     ]
+    }
+   ]
+  },
+  "Closed, Pilnik Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White protects the centre pawn with a pawn first and sets up the centre slowly, avoiding sharp theory."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners developed with Be3 and then launched the f-pawn with f4 against Black's kingside.",
+     "moves": [
+      "Be3",
+      "f4"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Closed, Breyer Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black's queen's knight retreats to its starting square to reroute and support the centre, freeing the c-pawn and the light-squared bishop. One of the most respected and solid main lines."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners gained queenside space with the pawn advance c4, cramping White's queenside and freeing squares for the knights.",
+     "moves": [
+      "c4"
+     ]
+    }
+   ]
+  },
+  "Closed, Flohr System": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the light-squared bishop to the long diagonal to increase pressure on White's centre pawn, as in the Zaitsev."
+    }
+   ]
+  },
+  "Closed, Chigorin Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black's knight attacks the Spanish bishop and goes to the edge to support queenside expansion. Black gains space on the queenside; White keeps the strong centre."
+    }
+   ]
+  },
+  "Closed, Zaitsev System": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black puts pressure on White's centre pawn with the rook and the long-diagonal bishop. Very rich and theoretical; White must watch for counterplay against the centre."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners kept the bishop on Ba2 and the queen on Qc2, building up slowly before opening the centre.",
+     "moves": [
+      "Ba2",
+      "Qc2"
+     ]
+    }
+   ],
+   "black": []
+  },
+  "Closed, Bogoljubow Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strikes in the centre before preventing Black's pin, and Black uses the pin on the knight to increase pressure on White's centre."
+    }
+   ]
+  },
+  "Closed, Smyslov Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black prevents White's minor pieces from using a kingside square before regrouping, a solid prophylactic system."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners played b3 and c4 to gain queenside space and restrict Black's knights.",
+     "moves": [
+      "b3",
+      "c4"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners rerouted the knights with Nb8 and Ng6, and put the bishop on Bb7.",
+     "moves": [
+      "Nb8",
+      "Ng6",
+      "Bb7"
+     ]
+    }
+   ]
+  },
+  "Closed, Kholmov Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black challenges the Spanish bishop with the light-squared bishop, offering a bishop trade to reduce White's pressure."
+    }
+   ]
+  },
+  "Closed, Karpov Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "The Karpov Variation: Black reroutes the knight to support the centre and free the bishop, preparing a kingside regrouping."
+    }
+   ]
+  },
+  "Closed, Breyer": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White strikes in the centre immediately while Black's knight is regrouping."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners gained queenside space with the pawn advance c4, cramping White's queenside.",
+     "moves": [
+      "c4"
+     ]
+    }
+   ]
+  },
+  "Closed, Breyer Defense, Zaitsev Hybrid": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black completes the Breyer knight regrouping. White's typical plan is to bring the queen's knight to the kingside and later decide when to close or open the centre."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners gained queenside space with the pawn advance c4, cramping White's queenside.",
+     "moves": [
+      "c4"
+     ]
+    }
+   ]
+  },
+  "Closed, Flohr System · 11.Ng5": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White hits the weak square near Black's king at once, forcing Black's rook back and repeating moves if Black allows. Many games end in a repetition; deviating needs care from both sides."
+    }
+   ]
+  },
+  "Closed, Breyer Defense, Zaitsev Hybrid · 11.Nbd2": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White completes development and prepares the classical knight manoeuvre towards the kingside. Black's rerouted knight supports the centre; the game is a long strategic battle."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners struck on the queenside with c4, opening lines where they are stronger.",
+     "moves": [
+      "c4"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners advanced b4 to gain queenside space and fix White's pawns.",
+     "moves": [
+      "b4"
+     ]
+    }
+   ]
+  },
+  "Closed, Flohr System · 11.Nbd2": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "White develops the queen's knight and prepares to reroute it to the kingside. Black keeps pressure on White's centre and prepares a bishop retreat behind the pawns."
+    }
+   ],
+   "white": [],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners put the queen on Qc7 and the rook on Rb8, preparing queenside play.",
+     "moves": [
+      "Qc7",
+      "Rb8"
+     ]
+    }
+   ]
+  },
+  "Closed, Breyer Defense, Zaitsev Hybrid · 11...Bb7": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the bishop to the long diagonal, increasing pressure on White's centre. This is the heart of the modern Breyer structure."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners struck on the queenside with c4.",
+     "moves": [
+      "c4"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners advanced b4 to gain queenside space.",
+     "moves": [
+      "b4"
+     ]
+    }
+   ]
+  },
+  "Closed, Keres Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "In the Chigorin structure Black reroutes the king's knight to support the centre and prepare a kingside pawn advance."
+    }
+   ]
+  },
+  "Closed, Breyer Defense, Zaitsev Hybrid · 12...Re8": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black prepares to retreat the bishop behind the pawns and fianchetto it later. White will reroute the knight to the kingside and choose between a central advance and queenside expansion."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners struck on the queenside with c4, opening lines there.",
+     "moves": [
+      "c4"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners advanced b4 to gain queenside space and fix White's pawns.",
+     "moves": [
+      "b4"
+     ]
+    }
+   ]
+  },
+  "Closed, Smyslov-Breyer-Zaitsev Hybrid": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black combines the Zaitsev bishop setup with a prophylactic pawn move, a modern flexible way to hold the centre."
+    }
+   ]
+  },
+  "Closed, Chigorin Defense, Panov System": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "The Chigorin structure with an open c-file: Black uses the file and the queenside space, while White keeps the strong centre and plans a kingside build-up."
+    }
+   ]
+  },
+  "Closed, Breyer Defense, Zaitsev Hybrid · 14...g6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black fianchettoes the bishop to protect the king and pressure White's centre. White chooses between a queenside strike with the a-pawn and a central advance."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners struck on the queenside with c4 and put a rook on Rd1 to support the centre.",
+     "moves": [
+      "c4",
+      "Rd1"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners gained queenside space with c4 and a5.",
+     "moves": [
+      "c4",
+      "a5"
+     ]
+    }
+   ]
+  }
+ }
+}

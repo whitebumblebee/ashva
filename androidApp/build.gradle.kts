@@ -14,8 +14,8 @@ android {
         applicationId = "com.openinglab.app"
         minSdk = 26
         targetSdk = 37
-        versionCode = 16
-        versionName = "0.15.0"
+        versionCode = 18
+        versionName = "0.17.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // Process isolation prevents one long test JVM retaining every synthetic course/engine.
@@ -61,6 +61,11 @@ val packagedContent = tasks.register<ReviewedContentAssets>("packageReviewedCont
         include("lichess-openings-c67912be581f-import-v1/**")
         include("lichess-broadcast-2020-04-2020-04-snap-import-v1/**")
         include("lichess-broadcast-2020-01-2020-01-snap-import-v1/**")
+    }
+    // Deep course packs: only the published, checksummed course file (docs/DEEP_COURSE_PLAN.md).
+    from(rootProject.layout.projectDirectory.dir("content/courses")) {
+        include("ruy-lopez/v1/course.json")
+        into("courses")
     }
     outputDirectory.set(layout.buildDirectory.dir("generated/reviewedAssets"))
     into(outputDirectory.dir("content"))

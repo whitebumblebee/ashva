@@ -42,6 +42,8 @@ audit-reports/
 .public-audit/
 # Verified upstream engine downloads/generated binaries are reproducible, not repository source.
 .engine-cache/
+# Large course-build inputs (game dumps, engine caches); manifests with hashes live in content/courses/.
+.course-cache/
 # Relay skill install and harness stubs. Project memory in .relay/ stays tracked.
 .agents/skills/relay/
 .claude/skills/relay/

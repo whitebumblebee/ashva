@@ -1,0 +1,185 @@
+{
+  "id": "ruy-lopez",
+  "version": 1,
+  "title": "The Ruy Lopez",
+  "side": "BOTH",
+  "level": "Club players about 1600 → 2200, both colours",
+  "summary": "The whole Ruy Lopez (Spanish) for both colours: every variation strong players use, with its name where one exists, followed as deep as master games go and then to an engine verdict, with how each side wins.",
+  "chapters": [
+    {
+      "id": "berlin",
+      "title": "Berlin Defence",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "Nf6"
+      ]
+    },
+    {
+      "id": "exchange",
+      "title": "Exchange Variation",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "a6",
+        "Bxc6"
+      ]
+    },
+    {
+      "id": "open",
+      "title": "Open Ruy Lopez",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "a6",
+        "Ba4",
+        "Nf6",
+        "O-O",
+        "Nxe4"
+      ]
+    },
+    {
+      "id": "closed",
+      "title": "Closed Ruy Lopez: main systems",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "a6",
+        "Ba4",
+        "Nf6",
+        "O-O",
+        "Be7",
+        "Re1",
+        "b5",
+        "Bb3",
+        "d6"
+      ]
+    },
+    {
+      "id": "marshall",
+      "title": "Marshall Attack and Anti-Marshall",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "a6",
+        "Ba4",
+        "Nf6",
+        "O-O",
+        "Be7",
+        "Re1",
+        "b5",
+        "Bb3",
+        "O-O"
+      ]
+    },
+    {
+      "id": "morphy-other",
+      "title": "Morphy Defence: other systems",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "a6"
+      ]
+    },
+    {
+      "id": "schliemann",
+      "title": "Schliemann (Jaenisch) Gambit",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "f5"
+      ]
+    },
+    {
+      "id": "classical",
+      "title": "Classical Defence",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "Bc5"
+      ]
+    },
+    {
+      "id": "steinitz",
+      "title": "Old Steinitz Defence",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "d6"
+      ]
+    },
+    {
+      "id": "other",
+      "title": "Other third moves for Black",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5"
+      ]
+    },
+    {
+      "id": "firouzja-carlsen-2020",
+      "title": "Firouzja–Carlsen, Tata Steel 2020",
+      "rootSan": [
+        "e4",
+        "e5",
+        "Nf3",
+        "Nc6",
+        "Bb5",
+        "Nf6"
+      ],
+      "kind": "GAME",
+      "gameId": "https://lichess.org/broadcast/tata-steel-masters-2020-round-9/-/jfYhSqg2/8ySH56P4"
+    }
+  ],
+  "thresholds": {
+    "depth": 18
+  },
+  "overrides": {},
+  "chapterNames": {
+    "Marshall Attack": "marshall",
+    "Anti-Marshall": "marshall",
+    "Berlin": "berlin",
+    "Exchange Variation": "exchange",
+    "Exchange,": "exchange",
+    "Open,": "open",
+    "Ruy Lopez: Open": "open",
+    "Closed": "closed",
+    "Schliemann": "schliemann",
+    "Jaenisch": "schliemann",
+    "Classical": "classical",
+    "Steinitz Defense Deferred": "morphy-other",
+    "Modern Steinitz": "morphy-other",
+    "Ruy Lopez: Steinitz Defense": "steinitz",
+    "Morphy Defense": "morphy-other"
+  }
+}

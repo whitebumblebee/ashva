@@ -1,0 +1,4787 @@
+{
+    "chapter": "exchange",
+    "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+    "intro": [
+        {
+            "claim": {
+                "type": "IDEA",
+                "text": "In the Exchange Variation White gives up the Spanish bishop to damage Black's pawn structure. The play revolves around White's healthy kingside majority against Black's bishop pair and quick development.",
+                "side": null,
+                "moves": [],
+                "target": null,
+                "alternative": null,
+                "from": "after",
+                "result": null,
+                "facts": [],
+                "stat": null,
+                "population": "club"
+            },
+            "passed": true,
+            "evidence": "generated explanation",
+            "reason": "",
+            "auto": false
+        }
+    ],
+    "nodes": [
+        {
+            "nodeId": "n3e8db43daed3",
+            "sanPath": "e4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n79b1cff4a7ce",
+            "sanPath": "e4 e5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n780cc290e026",
+            "sanPath": "e4 e5 Nf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n02f62561f7bf",
+            "sanPath": "e4 e5 Nf3 Nc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n09cd8a667eb7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n90f01f268c4b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb25c8eec9490",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2fadaebc54f3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4ef48b90ddc6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4a99bd44b6d9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n56ff3e33c435",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6 dxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncd3be67c47c6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n449e6b60cb98",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6 dxc6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5003ab21a21b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7738a20d6210",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...c5: that move would now be answered by Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": "c5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n837373368794",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n971fe1c8a4d6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9d3e88f49091",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf3e6e625fbee",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n19ce160b69b4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6 dxc6 Nc3 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1d4dcc4845d1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nxe5: that move would now be answered by ...fxe5.",
+                        "side": null,
+                        "moves": [
+                            "fxe5"
+                        ],
+                        "target": "Nxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n22354345d0e3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n29539c4c41ca",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nxe5: that move would now be answered by ...Bxd1.",
+                        "side": null,
+                        "moves": [
+                            "Bxd1"
+                        ],
+                        "target": "Nxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2ebb43852942",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nxe5: that move would now be answered by ...fxe5.",
+                        "side": null,
+                        "moves": [
+                            "fxe5"
+                        ],
+                        "target": "Nxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4733674625c5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nxe5: that move would now be answered by ...Qxe5.",
+                        "side": null,
+                        "moves": [
+                            "Qxe5"
+                        ],
+                        "target": "Nxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4be7a4f4573f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n63f93efffe46",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n79fddff916ef",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9386afd62f21",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb6310ba31b97",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Nxe5: that move would now be answered by ...Bxe5.",
+                        "side": null,
+                        "moves": [
+                            "Bxe5"
+                        ],
+                        "target": "Nxe5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0017eab142eb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6 dxc6 Nc3 Nf6 exf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n146699a241ee",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5 d3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1e2e0fd3c32f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens hxg4.",
+                        "side": null,
+                        "moves": [
+                            "hxg4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Qe7: that move would now be answered by hxg4.",
+                        "side": null,
+                        "moves": [
+                            "hxg4"
+                        ],
+                        "target": "Qe7",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n387840aa4892",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens dxe5.",
+                        "side": null,
+                        "moves": [
+                            "dxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...c5: that move would now be answered by dxe5.",
+                        "side": null,
+                        "moves": [
+                            "dxe5"
+                        ],
+                        "target": "c5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3ded2f264ad7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n605efd36e147",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n61f37f6f5dbc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...h6: that move would now be answered by Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": "h6",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc95a69a89708",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bc5: that move would now be answered by dxc5.",
+                        "side": null,
+                        "moves": [
+                            "dxc5"
+                        ],
+                        "target": "Bc5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd8e53fdc28db",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne61e0b9e6c1b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nec6a7e00fb6f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens dxe5.",
+                        "side": null,
+                        "moves": [
+                            "dxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bc5: that move would now be answered by dxc5.",
+                        "side": null,
+                        "moves": [
+                            "dxc5"
+                        ],
+                        "target": "Bc5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfa624837c18c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0b4ec7287494",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1f1738ef0df8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2e1a06834695",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Bxc6 dxc6 Nc3 Nf6 exf5 Bd6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.00).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4c3dba7f4499",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6d0384ca0f27",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7056306422f5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n84303e0bd85f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nacd0052dba93",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb0818e363ec6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...dxc3.",
+                        "side": null,
+                        "moves": [
+                            "dxc3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncbe4183d31e7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndf1ae528e644",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne560eaee870e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nea06dc29aa4a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf244b6a35e79",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5 d3 Bd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0436c0d2ed51",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n058da7744e6c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Qxg7.",
+                        "side": null,
+                        "moves": [
+                            "Qxg7"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0733117c4002",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0e04bb15eed0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n11dce2837c96",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5 d3 Bd6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3eb28fe9a7dd",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3 Be6 Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n55bcdf466e69",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5c3692e02302",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n758170c29fa7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n938bee357113",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Qd6: that move would now be answered by hxg4.",
+                        "side": null,
+                        "moves": [
+                            "hxg4"
+                        ],
+                        "target": "Qd6",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na0e048dc3410",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na3e3fe4b3e33",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nac42bcb58353",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Bxf6.",
+                        "side": null,
+                        "moves": [
+                            "Bxf6"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...c5: that move would now be answered by Bxf6.",
+                        "side": null,
+                        "moves": [
+                            "Bxf6"
+                        ],
+                        "target": "c5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb8bddf26db3d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne80d0d8eaa09",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0893919386e0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0cb3b1db5440",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n15c2265063ed",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1c89b06db0ed",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n28291183bb4a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n292474e3a16e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2fe1f13918a1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4ced3828e6c0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3 Be6 Qe2 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n54eb226d9925",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5b25b63e04e1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5 d3 Bd6 Nc3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6857ada91274",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6bc1c7514632",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n725680ced7c5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7ffeaa1cb78a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Bxf6: that move would now be answered by ...Qxf6.",
+                        "side": null,
+                        "moves": [
+                            "Qxf6"
+                        ],
+                        "target": "Bxf6",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "naf6156a7fbf6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Qxe4.",
+                        "side": null,
+                        "moves": [
+                            "Qxe4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away a3: that move would now be answered by ...f6.",
+                        "side": null,
+                        "moves": [
+                            "f6"
+                        ],
+                        "target": "a3",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb8879bf9cd8c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...cxd4.",
+                        "side": null,
+                        "moves": [
+                            "cxd4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Be3: that move would now be answered by ...cxd4.",
+                        "side": null,
+                        "moves": [
+                            "cxd4"
+                        ],
+                        "target": "Be3",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n026e93d217ee",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n06746e1f0832",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n09d94c31b512",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2548bb353929",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n276eaf2b1476",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Nxe5.",
+                        "side": null,
+                        "moves": [
+                            "Nxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3232867a2cf3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n41eb3c0a27f7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n63173ea37526",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n75de0ba3e3be",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na18f7dab632b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na7a89ddf061b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "naf2ad990220c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbf84750aac17",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc22ad5823844",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5 d3 Bd6 Nc3 Ne7 Nd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncc6c626fee62",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndc15510d164a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3 Be6 Qe2 Ne7 Nc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne5288108eb97",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf4013b5e5385",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf79f178ea0ed",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n02bd29e67712",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0f0391e79631",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n19f6ae90e058",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6 Be3 f5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n208314ef50b3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n246ca21427f1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2f7791a6387c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3bb9705886ed",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n425546c229f9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n464b0fc08731",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n513eccbedbbc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n569bbc9234a5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 h3 c5 d3 Bd6 Nc3 Ne7 Nd2 Nc6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.29).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n63afc608e6ee",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6e451c507a42",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1 fxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n72252babff8c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n77269233f85c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n79455c738ca6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...gxf3.",
+                        "side": null,
+                        "moves": [
+                            "gxf3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n79d247f48cee",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3 Be6 Qe2 Ne7 Nc4 Bxc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8ccff964b5de",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxg5.",
+                        "side": null,
+                        "moves": [
+                            "Bxg5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Bh4: that move would now be answered by ...Bxh4.",
+                        "side": null,
+                        "moves": [
+                            "Bxh4"
+                        ],
+                        "target": "Bh4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc768acf2987b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd559997f584f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf4963ad0d1a6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n09740ea5b7fa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7 Re1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0f4aacc06eb4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Bxg5: that move would now be answered by Bxg5.",
+                        "side": null,
+                        "moves": [
+                            "Bxg5"
+                        ],
+                        "target": "Bxg5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n16d4bdf0cde3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1b692df8ecce",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2b26dee462d2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2f10202281bf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7 Nbd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3b854821ff30",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3d9e9c9944d2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n451fb2d55476",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6 Nd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n467d70cffa33",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n480328ce9225",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4fce6382cf2a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n54f4da8aac7a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Nxd3.",
+                        "side": null,
+                        "moves": [
+                            "Nxd3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9b93ea3bae6b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na63db7e8dc32",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6 Be3 f5 Nxf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbb78cb5a251a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1 fxe5 Rd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc120b8c376d2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Bxd6.",
+                        "side": null,
+                        "moves": [
+                            "Bxd6"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc23b815eb6fe",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qd6 Na3 Be6 Qe2 Ne7 Nc4 Bxc4 Qxc4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.09).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndf8a285bf23b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nedcd7f665cfc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf1aa272015f4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n05b3b769eac3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0b5a6967e5c5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1c46141a1c52",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1c9eb0941275",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1 fxe5 Rd3 Bd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3534c5fe124e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7 Nbd2 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3c1fe1f69868",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3dbaed34c06e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n50d38c92c702",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nh6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n52676a5beee3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Bxe5.",
+                        "side": null,
+                        "moves": [
+                            "Bxe5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n661bbcfa5392",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n67cfde3ac2c3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n88e8e5841f0b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb91793bfcb54",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbc3d69006c7a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbd85ad067bbf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6 Be3 f5 Nxf5 Bxf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc2d2929a868e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6 Nd2 Qd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc86ada72bc55",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd8e8bfd7ae84",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndccbc8984732",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndfb4ad593707",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O Nc3 Re8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne8c2e279ad92",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7 Re1 Ng6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n013bd3ca57a4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7 Re1 Ng6 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n01e24ea3a7ff",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7 Nbd2 Be6 Qc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n076d93f15f49",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0f9db510b6f2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3b66ee7b03dc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1 fxe5 Rd3 Bd6 Nbd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4843fbfb6bf4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n590616c5e442",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O Nc3 Re8 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5b8b51524eab",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5ba21371f3e8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3 Ne7 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n634ea11ee634",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5 e5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7d6441213d99",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7fc4173a46e0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7fce5f131dbe",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8410b25ac51e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n92ea7d925db9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nh6 h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na5cb73e937b3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nacdb244c57d4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6 Nd2 Qd7 Qh5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc73615110361",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd436428ff4a6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd8302d92b01f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfb9a12669a15",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd6 Be3 f5 Nxf5 Bxf5 exf5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.10).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0caecceb4cd8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0ea361a5eb5f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1 fxe5 Rd3 Bd6 Nbd2 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n20dfe134eb0f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3 Ne7 Be3 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n23769177e572",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n24b52861200f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O Nc3 Re8 O-O-O Ne7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.27).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n38c4896cdc7c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n48a41992cded",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7 Nbd2 Be6 Qc3 Qd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5cf7cceee6f1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nh6 h3 Qg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n642be25d1dc5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3 Bd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n70591dbf3819",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n74d84c47e843",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7763ea52c52e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7edef7dd8697",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3 Qd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na1d3a116998a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7 Re1 Ng6 d4 Nf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nacbf0c857824",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5 e5 Qg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb432bf58b06b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbb8304fb3a41",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3 h4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndae0fab0c2fc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf0232c29e783",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfd4a8c7d6337",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6 Nd2 Qd7 Qh5+ Bf7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n113dfc782864",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nh6 h3 Qg6 Qf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n18320865e5e1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3 Ne7 Kf2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n23547e930c6d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n32586a693caf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7 Nbd2 Be6 Qc3 Qd7 Nd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4140c52a93a1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4fe103364f32",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7 Re1 Ng6 d4 Nf4 dxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n630b77507eba",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+ Kh1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6f0152eb25a0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3 Bd6 Nd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n70e314381bd5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n825dc81cef77",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3 Qd7 d3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8bdc912be818",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 Bg4 dxe5 Qxd1 Rxd1 fxe5 Rd3 Bd6 Nbd2 Nf6 Nc4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.15).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n948290f20004",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9e8255712a5b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na37a987346c8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6 Nd2 Qd7 Qh5+ Bf7 Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na64b1760956e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5 e5 Qg6 Qf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbd19b17b5321",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc2a877b74750",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3 Ne7 Be3 c5 Nde2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc33063127e25",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4 Qxc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndd2dfbc0b30d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3 h4 h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n04d13bebf4b5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Be3 Ne7 Nbd2 Be6 Qc3 Qd7 Nd4 Bf7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.04).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1346a5c2f94f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+ Kh1 Bd6+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1fa8203d9da9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3 Qd7 d3 f5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3369f6086ca7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n492dc23efff3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4 Qxc4 Qd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4ca97176947a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3 Bd6 Nd2 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5143b2108f8d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5b4f86d539c6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d3 c5 Be3 Be6 a4 b6 Nd2 Qd7 Qh5+ Bf7 Qe2 Bd6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.17).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6ed594917498",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3 h4 h3 Ng6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6ffc3885db76",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5 e5 Qg6 Qf3 Rb8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n812325e6766b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n881453a4d172",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+ Kh1 Bg3+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9d6390c0e2e2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nh6 h3 Qg6 Qf3 f5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.07).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na13a199b034f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nadb047c5b48e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb16438d2db3b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3 Ne7 Be3 c5 Nde2 Qxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb3307943cc13",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 Ne7 Re1 Ng6 d4 Nf4 dxe5 Qg6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.07).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc478d66f6e5e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndebb5b71e9b7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3 Ne7 Kf2 Ng6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0048dc97c57a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3 Qd7 d3 f5 e5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n15068610555e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+ Kh1 Bd6+ Kg1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n314970df1432",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4 Qxc4 Qd7 Bb2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n440ea81e68eb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5 e5 Qg6 Qf3 Rb8 Nf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n475c11a6ed81",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+ Kh1 Bg3+ Kg1",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens fxg3.",
+                        "side": null,
+                        "moves": [
+                            "fxg3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6ec9eaf5f611",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7dd4b3e682b6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Bd7 Nc3 Ne7 Be3 c5 Nde2 Qxd1 Rfxd1",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.18).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8205dc62a55c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9f569b39971b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3 Ne7 Rd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc79d2eb62f17",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3 h4 h3 Ng6 Re1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nce25a206cfe6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd1fb0c29d9b8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6 h4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf42069d002fa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfb3e3a98147f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3 Ne7 Kf2 Ng6 Rad1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfe54c864bc59",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3 Bd6 Nd2 Ne7 Rfb1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1d2989371e62",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3 Ne7 Kf2 Ng6 Rad1 Ne5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n334d5cfdd631",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3493dfded1df",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3 Bd6 Nd2 Ne7 Rfb1 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n37b20bc9174a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3 Ne7 Rd1 Rxd1+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3b868f7e5f34",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n95b9eb318ed2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9c6bf19e36ac",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3 h4 h3 Ng6 Re1 f6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na6b87e58c891",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 bxc6 Nc3 Qf6 d4 exd4 Nxd4 Bb4 O-O Bxc3 bxc3 c5 e5 Qg6 Qf3 Rb8 Nf5 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc2f16c0950df",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4 Qxc4 Qd7 Bb2 Ng6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "neaa3ca8f2d99",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nef18c74479ea",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3 Qd7 d3 f5 e5 Bc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf24888ecd2a7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6 h4 gxh4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfe310942dac9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 c3 Qd3 hxg4 hxg4 Nxe5 Bd6 Nxd3 Bh2+ Kh1 Bg3+ Kg1 Bh2+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3a5f811455c8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4 Qxc4 Qd7 Bb2 Ng6 Rad1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3cc0831237b8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4b338bb24137",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3 Ne7 Rd1 Rxd1+ Kxd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n58facd4c1716",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 Bh5 g4 Bg6 Nxe5 Bd6 Nxg6 hxg6 Qf3 Qd7 d3 f5 e5 Bc5 Nd2",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.20).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n608a5dc88564",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Be3 Bxf3 Qxf3 Qxf3 gxf3 Bd6 Nd2 Ne7 Rfb1 c5 Nc4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.14).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n863a5c1081c9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9df31efa3a6f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6 h4 gxh4 Kg2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb5fcd6390cfb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd5ece098333d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nxe5 Qd4 Nf3 Qxe4+ Qe2 Qxe2+ Kxe2 h5 d3 Ne7 Nc3 h4 h3 Ng6 Re1 f6 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nddcdc4077d7b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne208d2a80bd2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7 Be3 O-O-O f3 Ne7 Kf2 Ng6 Rad1 Ne5 h4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.15).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n30300bb72684",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6 h4 gxh4 Kg2 Kd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n35907f41397f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9582bd884074",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6 Bxd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n96e9353cc2c1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne3946fca0223",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3 Ne7 Rd1 Rxd1+ Kxd1 g5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "neabaf533bde6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf84fba245e49",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bd6 d4 exd4 Qxd4 f6 Nbd2 Be6 b3 Ne7 Nc4 Bxc4 Qxc4 Qd7 Bb2 Ng6 Rad1 O-O-O",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.08).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n18319c6b2cc7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4f2688cbd74c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6 Bxd6 Nbc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n84c84bb9c17b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 Nc3 f6 d4 exd4 Nxd4 c5 Nde2 Qxd1+ Nxd1 Be6 Bf4 O-O-O Ne3 Ne7 Rd1 Rxd1+ Kxd1 g5 Bg3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.18).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n92110e09d23d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc7730c153f08",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6 h4 gxh4 Kg2 Kd7 Rh1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf14282606c36",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na44e2dae4477",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6 Bxd6 Nbc3 Nd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc3483e4c2fc8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Bg4 h3 h5 d3 Qf6 Nbd2 g5 Nc4 Bxf3 Qxf3 Qxf3 gxf3 f6 h4 gxh4 Kg2 Kd7 Rh1 Ne7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.06).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd47007c08ece",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf5657a308cde",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfe8f3ce41703",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3746d9e980d2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6 Bxd6 Nbc3 Nd7 Rad1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4915e6bc03b6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5602ebafdd9a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5 Nc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n920975be90bb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5 Rxd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n35af84651598",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5 Rxd5 b6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "naac33a71a739",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5 Nc5 Nc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc7abd53d25fc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne9dfa550504b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6 Bxd6 Nbc3 Nd7 Rad1 f6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n380f0433ea8f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5 Nc5 Nc4 Rd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5408cb80593e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Be3 Nf6 f3 c5 Ne2 Be6 b3 O-O-O Qxd6 Bxd6 Nbc3 Nd7 Rad1 f6 h4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.01).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6a5544bf9678",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5 Rxd5 b6 Rd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8eee6732ab86",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n23d6a8b1de9d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5 Nc5 Nc4 Rd4 Nd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n60fc105d3783",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5 Rxd5 b6 Rd1 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne6016c460073",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n477d769a675d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n78790dfbd672",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5 Nc5 Nc4 Rd4 Nd6 f4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n852a6ae36ff8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5 Rxd5 b6 Rd1 Ne7 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n396aeea1811d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bd7 Bf4 O-O-O Nc3 Be6 Rxd8+ Kxd8 Rd1+ Kc8 Nd5 Bxd5 Rxd5 b6 Rd1 Ne7 Be3 g5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.19).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb00874f1b688",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne9aef8ecefd3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O Qf6 d4 exd4 Bg5 Qd6 Nxd4 Be7 Bxe7 Nxe7 Nc3 Bd7 Nb3 O-O-O Qh5 Ng6 Rad1 Qe5 Qxe5 Nxe5 Nc5 Nc4 Rd4 Nd6 f4 Be6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.31).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n388ea7f5a7e7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n75a9d9357419",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n759e32e05568",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5 Nd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na2769b7bed70",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5 Nd4 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n55b6212c3f6f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5 Nd4 Bd7 Bg5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n48b483d577bf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5 Nd4 Bd7 Bg5 h6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5b12c115b585",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5 Nd4 Bd7 Bg5 h6 Bh4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n39c685565224",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Ne2 Qxd1 Rxd1 Bd7 Nbc3 O-O-O Be3 Re8 Rd2 Bc6 Rad1 b6 a4 Kb7 a5 b5 f3 c4 b3 cxb3 cxb3 f5 Nd4 Bd7 Bg5 h6 Bh4 Bb4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        }
+    ],
+    "glossary": [],
+    "summary": {
+        "writerClaims": 12,
+        "writerPassed": 12,
+        "autoClaims": 54,
+        "autoPassed": 54,
+        "failures": []
+    },
+    "variations": {
+        "Exchange Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White gives up the Spanish bishop at once to change the pawn structure. Black gets the bishop pair and fast development; White gets a healthy kingside pawn majority that can become decisive in an endgame.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Exchange Variation · 4...dxc6": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black recaptures towards the centre, opening lines for the queen and light-squared bishop. White now has the healthy kingside majority; Black has the bishop pair and fast development.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Exchange Variation, Normal Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White castles and keeps the option of opening the centre. Black usually protects the centre pawn and develops quickly to make the bishop pair count before the endgame.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [
+                {
+                    "claim": {
+                        "type": "WINPLAN",
+                        "text": "White's winners prepared the central pawn break with c3, aiming to open the position only when the kingside majority is ready.",
+                        "side": null,
+                        "moves": [
+                            "c3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "game statistics",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "black": []
+        },
+        "Exchange Variation, Keres Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White develops the queen's knight first to keep options open and support the centre before castling.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": [
+                {
+                    "claim": {
+                        "type": "WINPLAN",
+                        "text": "Black's winners rerouted the king's knight via Ne7 and Ng6, sometimes to Ne5, and developed the bishop to Be7 behind it.",
+                        "side": null,
+                        "moves": [
+                            "Ne7",
+                            "Ng6",
+                            "Ne5",
+                            "Be7"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "game statistics",
+                    "reason": "",
+                    "auto": false
+                }
+            ]
+        },
+        "Exchange Variation, Gligoric Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black protects the centre pawn with the f-pawn, a solid setup that keeps the bishop pair but slightly weakens the light squares near Black's king.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [
+                {
+                    "claim": {
+                        "type": "WINPLAN",
+                        "text": "White's winners put the rook on Re1 and regrouped the knight with Nd2, preparing to open lines against Black's slightly loose kingside.",
+                        "side": null,
+                        "moves": [
+                            "Re1",
+                            "Nd2"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "game statistics",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "black": []
+        },
+        "Exchange Variation, King's Bishop Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black defends the centre pawn with the dark-squared bishop, developing quickly at the cost of a slightly passive bishop.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Exchange Variation, Bronstein Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black protects the centre pawn with the queen and prepares to castle queenside, aiming for active piece play.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Exchange Variation, Alapin Gambit": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black offers material to open lines towards White's king, using the bishop pair and active pieces. White must decide whether taking is worth the open files.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        }
+    }
+}

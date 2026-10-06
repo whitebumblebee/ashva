@@ -1,0 +1,4218 @@
+{
+    "chapter": "schliemann",
+    "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+    "intro": [
+        {
+            "claim": {
+                "type": "IDEA",
+                "text": "The Schliemann is Black's sharpest reply: an immediate strike with the f-pawn that leads to open, tactical positions where both sides must know the critical ideas.",
+                "side": null,
+                "moves": [],
+                "target": null,
+                "alternative": null,
+                "from": "after",
+                "result": null,
+                "facts": [],
+                "stat": null,
+                "population": "club"
+            },
+            "passed": true,
+            "evidence": "generated explanation",
+            "reason": "",
+            "auto": false
+        }
+    ],
+    "nodes": [
+        {
+            "nodeId": "n3e8db43daed3",
+            "sanPath": "e4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n79b1cff4a7ce",
+            "sanPath": "e4 e5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n780cc290e026",
+            "sanPath": "e4 e5 Nf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n02f62561f7bf",
+            "sanPath": "e4 e5 Nf3 Nc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n09cd8a667eb7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n90f01f268c4b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb25c8eec9490",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n222cb91e50ec",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na4409f418b9e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb47340334e70",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncaca7ea7c18a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncd7aca31ac91",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1cbce9a38c02",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2da4e076c3fb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n53185e5ca89c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...fxe4.",
+                        "side": null,
+                        "moves": [
+                            "fxe4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away c3: that move would now be answered by ...fxe4.",
+                        "side": null,
+                        "moves": [
+                            "fxe4"
+                        ],
+                        "target": "c3",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5a66a01eb34b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...exf3.",
+                        "side": null,
+                        "moves": [
+                            "exf3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9bcbc1f7bd9e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...exf3.",
+                        "side": null,
+                        "moves": [
+                            "exf3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n294b281338d6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2ac42038be56",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n70566b43270d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb3c9a312d3cb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb523c8e14212",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb6444cf9c9f2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nda7b4a8d860a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n056abbd4f7a6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n11a9db78d30c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...Nxe4.",
+                        "side": null,
+                        "moves": [
+                            "Nxe4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away d4: that move would now be answered by ...Nxe4.",
+                        "side": null,
+                        "moves": [
+                            "Nxe4"
+                        ],
+                        "target": "d4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n123b74c0d643",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n308e58f2dc24",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n55a51a62644b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n76cdb7b7406b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n93586379b05a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Be7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb41ad9da7c1b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...fxe4.",
+                        "side": null,
+                        "moves": [
+                            "fxe4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nec1ab828a8ba",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...exf3.",
+                        "side": null,
+                        "moves": [
+                            "exf3"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n16c7864814d5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "White now threatens Bxc6.",
+                        "side": null,
+                        "moves": [
+                            "Bxc6"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Nxe4: that move would now be answered by Qe2.",
+                        "side": null,
+                        "moves": [
+                            "Qe2"
+                        ],
+                        "target": "Nxe4",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n170f4b926748",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n41438c30f0c4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7333cfc0c45f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n85be810361fb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8fdc87a3e140",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb3e508aa3e96",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Be7 d4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as clearly better for White (+1.40).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "WHITE_BETTER",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd4c75da3c248",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndebfff939d86",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "neba2b5af4f38",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0d5c635b44f8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n241c36130b19",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2564d465cbf1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n25f6fdc48a5a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "THREAT",
+                        "text": "Black now threatens ...bxa4.",
+                        "side": null,
+                        "moves": [
+                            "bxa4"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                },
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away O-O: that move would now be answered by ...bxa4.",
+                        "side": null,
+                        "moves": [
+                            "bxa4"
+                        ],
+                        "target": "O-O",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n37374984eab9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n868cba1bb155",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n86a04469d244",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na6f8437f1053",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3 Bb4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf190f7046fdc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf7ace15b23f9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1c915c02bf77",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n214acde756bb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n495b3deb2652",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5dabffe23c5e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n74a0bf8504be",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away ...Be6: that move would now be answered by Bxe6.",
+                        "side": null,
+                        "moves": [
+                            "Bxe6"
+                        ],
+                        "target": "Be6",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9c91bb476a28",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb345f1607544",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb65c91f959ff",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nca6ce225e4f2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncdabcb3ef444",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne3fa6c818e70",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3 Bb4 Qd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n14017a25fd97",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n68d9d6c6fc9a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n71eda694aac9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n77320b74abb3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n80564ba37326",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n81e0ff8c5bc3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n84efcb13f313",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3 Bb4 Qd3 d6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n93bb6b4fbed5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O d6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "naf229266db08",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbdffe363710e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbf3aa68abdb5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc9e19e16256e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "PREVENTS",
+                        "text": "It also takes away Ng5: that move would now be answered by ...Bxd1.",
+                        "side": null,
+                        "moves": [
+                            "Bxd1"
+                        ],
+                        "target": "Ng5",
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nefb315301816",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2cf429461102",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3db111e0a3ea",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n41fbda4212a3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n52968a1b3337",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n55707e49c887",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n56f8e422121d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n764ad758c098",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n776e9e726c30",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc8a52cf1bc4d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncc718597a530",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nec1b97ffd4e6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf24443ba1811",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf6076cba8b06",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf709b005a3c9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3 Bb4 Qd3 d6 Bg5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf72fc959dde5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n043701ce795d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2288ea3c1459",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3 Bb4 Qd3 d6 Bg5 Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2809393beaa7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n37ac6d85d1ea",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5e800086c979",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n776619d73c08",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7879caff2a9d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7b32995f7074",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7b72ff6d001f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8227ce068728",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8880625e70c9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbedf6c7256bc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc8f84ddc6877",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne0bc2d477fd8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne5a7157c3d9f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne9766a1a0410",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n015aa9092093",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0e4bea4ce4a8",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1334d9bd073f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2ea1bbc01f2c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3b229fa4b412",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 Nc3 Bb4 Qd3 d6 Bg5 Bd7 a4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.07).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n52b32e0ae17f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n57ac75e54a7e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n58bd31630a07",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n724a99b3348f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n86ddb5eb1a53",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n95e7e90235b2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n97a3758b77b1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na2b885d5b9a3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb8ca58eacd3d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nde5d4e28fc7c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nee846160e366",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0c8490ad3354",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1423796ef8d6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1fe6180f5bf4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n267594c93638",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n28ba72887b66",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2db39e905692",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4881a6fad46c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n781975d8b8e6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "naca7f6d97b7d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb181d2d1f4a6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ncbeb1b9d4bbb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd5d213f134be",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 h3 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nece4591b3c66",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf32060ad0e1c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3 Qb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfacbc2e394a1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n01665230fa29",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 h3 O-O Ng5",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.24).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0ec861e78d1f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4 d4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3d8b8796eb8b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n56d5e9ffefe5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O Nd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5d49e5184c77",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8d40e9b7f24b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8f869495100d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n96278c4ae405",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb2a00b3968a3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb673d28590fc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3 Qb6 Nb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbd2424ecb8f7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc157c22729ed",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd20f177d9e78",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nea7f46338d76",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf284520eba01",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf8833c7ad7df",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2137c72c4da6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2273545389f9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n28ba42561c07",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n334257e43a5e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3 Qb6 Nb3 Ba6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5ca44d0b7aca",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5d94fdb0cd78",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5f59917eb5aa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n64ce2b0d2b76",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6da94ecf8c76",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7272b1918367",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9d47c198d742",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na6bb3e1e7897",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4 d4 Qd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nae10daaa705e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndd46bee538af",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O Nd5 Nc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfd199a927adf",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1e17010027c9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n21ec3f19d9ba",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n37c25dd48664",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n760d03781207",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n83e24524ec56",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3 Qb6 Nb3 Ba6 c4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n84d92564dcfc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n94351c2ac665",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O Nd5 Nc6 b4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na5848d7bfa5f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nac37f16e0f90",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nac66ca4e729e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6 e6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc26b476f1f93",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc892a2475a4d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd18028b217aa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd575dd13d472",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4 d4 Qd6 Ne5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf28927a485e2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n032c8e116784",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4 d4 Qd6 Ne5+ c6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0436a7e55bc1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n092feb7246fe",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0d8c1d6c1f90",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n14c5d30689f0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n172c29347b51",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6 e6 Re8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n528e6f0c7a01",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5ac8df5c2834",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n60d3be416f67",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6e700d9e8ced",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n74ac1a8a46ad",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6 Qxe6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n75844f41b007",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7d32ac9c121d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O Nd5 Nc6 b4 Nxd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na0489b282242",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf199bb03b4d7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3 Qb6 Nb3 Ba6 c4 d5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0683be7f0135",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n39c59fd96896",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5100b9bb2ada",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n611dda4fa21c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O Nd5 Nc6 b4 Nxd5 Qxd5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n711fe48d753a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7c1ac6534028",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6 e6 Re8 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n818669b7fbb6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8ababa9c2afa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4 d4 Qd6 Ne5+ c6 Bc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n95bb18aa47b4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6 Qe5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9cefc1724e2b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 exf5 e4 Qe2 Qe7 Bxc6 bxc6 Nd4 Nf6 O-O Qc5 c3 Qb6 Nb3 Ba6 c4 d5 d3",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.16).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nba70150f9cf1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbf9fc1eaa264",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6 Qxe6 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc456a2cd2026",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd31567483eb2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf2481f614cb7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0a3085debc9d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Nc3 Be7 Bc4 Na5 Be2 O-O Nd5 Nc6 b4 Nxd5 Qxd5+ Kh8",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.08).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0f617f0a4f2b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6 e6 Re8 O-O c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2d44ae377684",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n42c15fbca06f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4d3960ed5615",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6003caa7983e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n70f98f64ac57",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6 Qxe6 O-O O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8302199c65c3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8a77271fe1b5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb434b2ff8fb5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbbc316fced21",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qg5 Qe2 Nf6 f4 Qxf4 d4 Qd6 Ne5+ c6 Bc4 Be6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.09).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc97bac17c2f7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne3185cce50fa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6 Qe5+ Kf7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ned7d0f99e147",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n01c72506cec7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n152711f74c78",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6 Qe5+ Kf7 Qxh8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1673c39fc78e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n29477eeb9475",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6 e6 Re8 O-O c5 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4db4b8079105",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5e661f56fec3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n82268af639b0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6 Qxe6 O-O O-O-O Nc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9b9920bcbf6b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6 Ba4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na1ecb83d7209",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7 Nb5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb1ba787fb796",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd3c1b60ed5e4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ned01f8dfd01f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n034b7c8b2dcb",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6 Qe5+ Kf7 Qxh8 Nf6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n402478e6e57b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n494a5457a39a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n548e5e6d6ca5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6 Qxe6 O-O O-O-O Nc3 Nd6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n76de1f9b0993",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8ea8cc170a22",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 Bg7 dxe5 O-O Bxc6 bxc6 e6 Re8 O-O c5 Bf4 Bxe6",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.27).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb910d9ec1087",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbbc66445003b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7 Nb5 c6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbecb086c8498",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd430d7b78f77",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6 Ba4 f5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd65492beb462",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf5120da4bfde",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n162ae2284439",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n30eae5b0a082",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4564e337ee16",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n705040768611",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 exf5 e4 Qe2 Qe7 Bxc6 dxc6 Nd4 Nh6 Qh5+ Nf7 Ne6 Bxe6 fxe6 Qxe6 O-O O-O-O Nc3 Nd6 Re1",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (−0.35).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n72199624171c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7da35fded3df",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6 Qe5+ Kf7 Qxh8 Nf6 Bh6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n80209f9c302c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7 Nb5 c6 Qd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n92e3b1aa9dd7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndc5c2853e363",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne12d19cd931a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf4d3061e2839",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6 Ba4 f5 fxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1b839cfc9330",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1cce2788c27a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7 Nb5 c6 Qd4 Qxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n43149eabd35f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n599d605c2d56",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n62dfb9e5f69c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d4 fxe4 Nxe5 Nxe5 dxe5 c6 Nc3 cxb5 Nxe4 d5 exd6 Nf6 O-O Nxe4 Qh5+ g6 Qe5+ Kf7 Qxh8 Nf6 Bh6 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n805486f1d736",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6 Ba4 f5 fxe4 fxe4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na5fa431f5411",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd106a277c403",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne16577c68227",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nffceabf3c761",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3c887fdbc517",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6578de907d5c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6a010047cb64",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6cf1cb61a437",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n75b4372149e3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na06bc4f02f97",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na9da26d0972e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6 Ba4 f5 fxe4 fxe4 Nf5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nabc551967692",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7 Nb5 c6 Qd4 Qxd4 Nxd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfd1a97141a1a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7 dxc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n368ce8ec7bab",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7 dxc5 Nc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n40a85a88b890",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 Nf6 Qe2 d5 Nxf6+ gxf6 d4 e4 Nh4 Be6 O-O Qd6 f3 O-O-O c3 a6 Ba4 f5 fxe4 fxe4 Nf5 Qd7",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.32).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n65bc862f6319",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7d0275fd09e3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n810fd45f1189",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9964594d5190",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 Nc3 fxe4 Nxe4 d5 Nxe5 dxe4 Nxc6 Qd5 c4 Qd6 Nxa7+ Bd7 Qh5+ g6 Bxd7+ Qxd7 Qe5+ Kf7 Nb5 c6 Qd4 Qxd4 Nxd4 Bg7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na99bdb52a8e0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb22f36d1da20",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne987790c01a4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2 Nc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n16e97828503d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n2c32344f7daa",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4f6681bc6135",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n60df2e19d80e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb98ec2312423",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7 dxc5 Nc4 a4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndc970d776f79",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6 f3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ne63bd0403e1b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2 Nc6 Bxc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5fe0a48816b0",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n645f0ec8dba5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4 Nxe3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc927689eb582",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7 dxc5 Nc4 a4 Bxc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nca0b718ce14e",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd676711bc033",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6 f3 h6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "ndcf506011aee",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nfd90c6156702",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2 Nc6 Bxc4 bxc4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n17a5b20b66f9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1f296442d0b4",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7 dxc5 Nc4 a4 Bxc5 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n82d0d73c9fad",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb0ce8f4f7c2b",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2 Nc6 Bxc4 bxc4 Na3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nb9466574d99a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbda02b91d065",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4 Nxe3 Rxe3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc31edb757624",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6 f3 h6 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n10ea167deae7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4 Nxe3 Rxe3 b4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n5fcacda1aba2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6 f3 h6 Bf4 d5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n679d71385c1c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2 Nc6 Bxc4 bxc4 Na3 Nd4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9c6b52239c35",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc079c37868ec",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc888dab15846",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4 d5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nf947618b2ef5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Bd5 c6 Bxg8 Rxg8 O-O c5 c3 Bb7 cxd4 g5 Nc3 g4 Ne1 Qc7 dxc5 Nc4 a4 Bxc5 Bf4 Qc6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n19ce42e16685",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1c3b48162237",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n94c1dd11b65d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4 d5 Qc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "na8503969ecc9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4 Nxe3 Rxe3 b4 Nd5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd3b2f45b3ee5",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Nxf5 c4 Qg4 Qb6 Nxg7+ Bxg7 Qxg7 Qg6 Qxg6+ hxg6 Bd2 Nc6 Bxc4 bxc4 Na3 Nd4 Nxc4",
+            "title": null,
+            "claims": [
+                {
+                    "claim": {
+                        "type": "EVALUATION",
+                        "text": "The engine rates this position as equal (+0.01).",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": "EQUAL",
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "engine-checked",
+                    "reason": "",
+                    "auto": true
+                }
+            ],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd6d0ada84686",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6 f3 h6 Bf4 d5 Kh1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n6817d7219de7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 a4 Na5 Ba2 c5 O-O Qb6 Re1 Ne7 e6 d6 Ng5 g6 Nf7 Bg7 Bg5 Qc6 f3 h6 Bf4 d5 Kh1 g5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n9dcf7cbdebe3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3 dxc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc0f6d7d3c827",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4 d5 Qc3 Bxa3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nefcd498f1ebc",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nff6e5e59e91c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4 Nxe3 Rxe3 b4 Nd5 g5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1e465a54baf3",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Na5 Qxd4 Bb7 Bd5 c6 Bxg8 Rxg8 Qd3 Qe7 Nc3 Qe6 Be3 Nc4 O-O-O O-O-O Rhe1 c5 a4 Nxe3 Rxe3 b4 Nd5 g5 Kb1",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4065432a4092",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3 dxc3 bxc3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n854a3c46b67c",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4 d5 Qc3 Bxa3 Bb5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nd8bba7c3c6f7",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n0f1bb050fffe",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n29e857911595",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4 d5 Qc3 Bxa3 Bb5 c6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8e59272da715",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3 dxc3 bxc3 a5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3ede5f55195a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O d6 Bc4 Bg4 h3 Bh5 Nc3 Qd7 Nd5 O-O-O Qd3 Kb8 a4 Bg6 Re1 Nxd5 Qxd5 Be7 Ra3 Nb4 Qd2 Rhf8 Qxb4 d5 Qc3 Bxa3 Bb5 c6 Nxe5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4e64a03cff3f",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3 dxc3 bxc3 a5 Be3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc80b2255c9dd",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nbbdf1a198ec6",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3 dxc3 bxc3 a5 Be3 Be7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc5e5f25517d9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n46d90dc812a9",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n7d04dc9986d1",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 f5 d4 exd4 e5 b5 Bb3 Bb7 O-O Na5 Nxd4 c5 Bxg8 cxd4 Bb3 Nxb3 axb3 Qb6 Nd2 Qg6 Nf3 Bc5 Nh4 Qg4 Nf3 O-O h3 Qg6 c3 dxc3 bxc3 a5 Be3 Be7 Kh2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n1e9a346c8f13",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n4c488dcf8304",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc1c7de95aee2",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3 Nc5",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nc9c9f2bded97",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3 Nc5 h3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n8da771a19120",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3 Nc5 h3 h6",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n3b56bafec89a",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3 Nc5 h3 h6 Re3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "nacbe26e44736",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3 Nc5 h3 h6 Re3 Nd3",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        },
+        {
+            "nodeId": "n49934dc1f40d",
+            "sanPath": "e4 e5 Nf3 Nc6 Bb5 f5 d3 fxe4 dxe4 Nf6 O-O Bc5 Bxc6 bxc6 Nxe5 O-O Nc3 d6 Na4 Qe8 Nd3 Bg4 Qe1 Bd4 c3 Bb6 Nxb6 axb6 f3 Be6 a3 Bc4 Qd1 Qf7 Re1 c5 Bf4 Bxd3 Qxd3 c4 Qc2 Nd7 Bg3 Nc5 h3 h6 Re3 Nd3 Kh2",
+            "title": null,
+            "claims": [],
+            "principle": null,
+            "whitePlan": [],
+            "blackPlan": [],
+            "glossary": []
+        }
+    ],
+    "glossary": [],
+    "summary": {
+        "writerClaims": 7,
+        "writerPassed": 7,
+        "autoClaims": 24,
+        "autoPassed": 24,
+        "failures": []
+    },
+    "variations": {
+        "Schliemann Defense": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black strikes at White's centre pawn with the f-pawn at once, a sharp gambit-style defence. White can keep it calm or enter forcing lines where accurate play is essential.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [
+                {
+                    "claim": {
+                        "type": "WINPLAN",
+                        "text": "White's winners used the knight on Nd5, a central outpost that Black's f-pawn advance no longer controls.",
+                        "side": null,
+                        "moves": [
+                            "Nd5"
+                        ],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "game statistics",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "black": []
+        },
+        "Schliemann Defense · 4.d3": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White meets the Schliemann calmly, protecting the centre pawn and keeping a solid position. Black's f-pawn break has less punch, and White aims to exploit the loosened black kingside.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Schliemann Defense, Dyckhoff Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "White develops the queen's knight and invites the sharpest lines, where the centre opens quickly.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Morphy Defense, Schliemann Defense Deferred": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black strikes with the f-pawn after first asking the bishop, a sharp gambit-style approach.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        },
+        "Schliemann Defense, Tartakower Variation": {
+            "intro": [
+                {
+                    "claim": {
+                        "type": "IDEA",
+                        "text": "Black develops the king's knight to contest the centre after the exchange, aiming for quick development.",
+                        "side": null,
+                        "moves": [],
+                        "target": null,
+                        "alternative": null,
+                        "from": "after",
+                        "result": null,
+                        "facts": [],
+                        "stat": null,
+                        "population": "club"
+                    },
+                    "passed": true,
+                    "evidence": "generated explanation",
+                    "reason": "",
+                    "auto": false
+                }
+            ],
+            "white": [],
+            "black": []
+        }
+    }
+}

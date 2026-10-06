@@ -55,6 +55,10 @@ import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.isActive
 import java.util.UUID
+import com.openinglab.app.content.CourseFeedback
+import com.openinglab.app.content.CourseFeedbackStore
+import com.openinglab.shared.course.DeepCourseCatalog
+import com.openinglab.shared.course.DeepCourseChapterView
 
 enum class MainTab { LEARN, EXPLORE, REVIEW, PROFILE }
 enum class FeedbackKind { NONE, SUCCESS, ERROR, COMPLETE }
@@ -86,6 +90,8 @@ data class TrainerUiState(
     val reviewScopeId: String? = null, val reviewTargetId: String? = null,
     val reviewAnswered: Boolean = false, val reviewSaved: Boolean = false,
     val reviewAttemptId: String? = null,
+    /** Deep-course practice follows the chosen line without pausing at every opponent branch. */
+    val courseAutoplay: Boolean = false,
 ) {
     val variation: Variation get() = opening.variations.first { it.id == replay.pathId }
     val playerSide: PieceColor get() = replay.playerSide
@@ -165,6 +171,11 @@ data class AppUiState(
     val setError: String? = null,
     val observedReplies: ObservedRepliesUiState = ObservedRepliesUiState.Missing,
     val engineAnalysis: EngineAnalysisUiState = EngineAnalysisUiState.Idle,
+    val deepCourses: List<DeepCourseChapterView> = emptyList(),
+    val deepCourseLoading: Boolean = false,
+    val deepCourseError: String? = null,
+    val courseFeedback: List<CourseFeedback> = emptyList(),
+    val feedbackMessage: String? = null,
 )
 
 class AppViewModel @JvmOverloads constructor(
@@ -175,7 +186,21 @@ class AppViewModel @JvmOverloads constructor(
     private val analysisEngine: ChessAnalysisEngine? = null,
     private val autoInstallBundledOpenings: Boolean = false,
     private val presentationCache: OpeningPresentationCache? = null,
+    private val deepCourseSource: (() -> String)? = null,
+    private val courseFeedbackStore: CourseFeedbackStore? = null,
 ) : ViewModel() {
+    // Parsed and validated once, off Main in init; a restore that needs it earlier waits for the same lazy value.
+    private val deepCourseResult: Result<DeepCourseCatalog?> by lazy {
+        runCatching { deepCourseSource?.let { DeepCourseCatalog(listOf(DeepCourseCatalog.parse(it()))) } }
+    }
+    private fun isDeepCourse(id: String) = id.startsWith(DeepCourseCatalog.ID_PREFIX)
+    /** Suspend lookup used by restores: a deep-course ID is parsed off Main if it is not loaded yet. */
+    private suspend fun openingFor(id: String): Opening {
+        if (isDeepCourse(id)) withContext(Dispatchers.Default) { deepCourseResult }
+        return getOpening(id)
+    }
+    fun deepChapter(openingId: String): DeepCourseChapterView? = if (isDeepCourse(openingId)) deepCourseResult.getOrNull()?.chapter(openingId) else null
+
     val openings: List<Opening> = openingRepository.getOpenings()
     private val openingIdentifier = OpeningIdentifier(openings)
     private val lessonGraphs by lazy { openings.associate { it.id to LessonGraph.fromOpening(it) }.toMutableMap() }
@@ -263,7 +288,7 @@ class AppViewModel @JvmOverloads constructor(
                         requireNotNull(card) { "No due positions" }
                         catalogReady.await()
                         val target = card.target
-                        val opening = getOpening(target.lessonId)
+                        val opening = openingFor(target.lessonId)
                         val base = prepareGraph(opening)
                         val book = withContext(Dispatchers.Default) { RepertoireBook(base) }
                         require(book.contentVersion == target.contentVersion)
@@ -292,6 +317,18 @@ class AppViewModel @JvmOverloads constructor(
     fun nextRecallReview() { _uiState.value.trainer?.reviewScopeId?.let(::startRecallReview) }
 
     init {
+        if (deepCourseSource != null) {
+            _uiState.update { it.copy(deepCourseLoading = true) }
+            viewModelScope.launch {
+                // After the opening catalog, so the bundled course never delays startup lessons.
+                catalogReady.await()
+                val result = withContext(Dispatchers.Default) { deepCourseResult }
+                val feedback = withContext(Dispatchers.IO) { runCatching { courseFeedbackStore?.all().orEmpty() }.getOrDefault(emptyList()) }
+                _uiState.update { state -> state.copy(deepCourseLoading = false, courseFeedback = feedback,
+                    deepCourses = result.getOrNull()?.chapters.orEmpty(),
+                    deepCourseError = result.exceptionOrNull()?.let { "The bundled deep course failed its checks and is not shown. Other lessons are unaffected." }) }
+            }
+        }
         val store = learningStore
         if (store == null) {
             catalogReady.complete(Unit)
@@ -526,9 +563,42 @@ class AppViewModel @JvmOverloads constructor(
     fun updateSearch(query: String) = _uiState.update { it.copy(searchQuery = query) }
     fun selectDifficulty(filter: String) = _uiState.update { it.copy(selectedDifficulty = filter) }
 
-    fun getOpening(id: String): Opening = teachingCatalog?.getOpening(id) ?: sourceCatalog?.getOpening(id) ?: openingRepository.getOpening(id)
+    fun getOpening(id: String): Opening = (if (isDeepCourse(id)) deepCourseResult.getOrNull()?.getOpening(id) else null) ?: teachingCatalog?.getOpening(id) ?: sourceCatalog?.getOpening(id) ?: openingRepository.getOpening(id)
 
     fun learningOpenings(): List<Opening> = _uiState.value.teachingOpenings.ifEmpty { openings }
+
+    /** Picks a course line with probability equal to how often club games reach it (its measured weight). */
+    fun practiceWeightedDeepLine(openingId: String, side: PieceColor, random: kotlin.random.Random = kotlin.random.Random.Default): String? {
+        val chapter = deepChapter(openingId) ?: return null
+        val weighted = chapter.lineWeights.filterValues { it > 0 }
+        val choice = if (weighted.isEmpty()) chapter.opening.variations.random(random).id else {
+            var roll = random.nextDouble() * weighted.values.sum()
+            weighted.entries.firstOrNull { (_, w) -> roll -= w; roll <= 0 }?.key ?: weighted.keys.last()
+        }
+        startTrainer(openingId, side, choice)
+        return choice
+    }
+
+    fun flagExplanation(kind: String) {
+        val store = courseFeedbackStore ?: return
+        val trainer = _uiState.value.trainer ?: return
+        if (!isDeepCourse(trainer.opening.id)) return
+        val move = trainer.replay.lastMove ?: return
+        val feedback = CourseFeedback(trainer.opening.id, trainer.replay.pathId, trainer.ply, move.san, kind,
+            move.annotation.explanation, move.annotation.label, System.currentTimeMillis())
+        viewModelScope.launch {
+            try {
+                val all = withContext(Dispatchers.IO) { store.add(feedback) }
+                _uiState.update { it.copy(courseFeedback = all, feedbackMessage = "Flag saved on this device: ${move.san} · $kind") }
+            } catch (error: Exception) {
+                if (error is CancellationException) throw error
+                _uiState.update { it.copy(feedbackMessage = "The flag could not be saved.") }
+            }
+        }
+    }
+
+    fun exportCourseFeedback(): String = courseFeedbackStore?.export() ?: "[]"
+
 
     fun primaryOpeningId(id: String): String {
         val old = runCatching { getOpening(id) }.getOrNull() ?: return id
@@ -805,15 +875,16 @@ class AppViewModel @JvmOverloads constructor(
         }
     }
 
-    fun startTrainer(openingId: String, side: PieceColor, variationId: String? = null) {
+    fun startTrainer(openingId: String, side: PieceColor, variationId: String? = null, study: Boolean = false) {
         cancelTrainerJobs()
         val opening = getOpening(openingId)
         if (gameLibrary.state.value.active) gameLibrary.leaveForOpening()
         val variation = opening.variations.firstOrNull { it.id == variationId } ?: opening.mainLine
-        if (opening.provenance == null) {
+        val deep = isDeepCourse(openingId)
+        if (opening.provenance == null && !deep) {
             setTrainer(TrainerUiState(opening = opening, replay = lessonGraphs.getValue(openingId).start(side, variation.id),
                 feedback = "Your move · ${side.name.lowercase()}"))
-            advanceOpponentIfNeeded()
+            if (study) studyTrainer() else advanceOpponentIfNeeded()
         } else {
             bookmarkRevision++ // A pending cold restore must not replace the newly requested lesson.
             val revision = trainerRevision
@@ -824,9 +895,9 @@ class AppViewModel @JvmOverloads constructor(
                     if (revision != trainerRevision) return@launch
                     _uiState.update { it.copy(lessonLoading = false) }
                     setTrainer(TrainerUiState(opening, graph.start(side, variation.id),
-                        feedback = "Practice the ${if (opening.teaching != null) "opening course" else "source route"} · ${side.name.lowercase()}",
-                        explanation = variation.description))
-                    advanceOpponentIfNeeded()
+                        feedback = "Practice the ${if (deep) "deep course line" else if (opening.teaching != null) "opening course" else "source route"} · ${side.name.lowercase()}",
+                        explanation = variation.description, courseAutoplay = deep))
+                    if (study) studyTrainer() else advanceOpponentIfNeeded()
                 } catch (error: Exception) {
                     if (error is CancellationException) throw error
                     _uiState.update { it.copy(lessonLoading = false, lessonError = "This sourced lesson could not be prepared. No progress was deleted.") }
@@ -1119,7 +1190,8 @@ class AppViewModel @JvmOverloads constructor(
     private fun atCursor(trainer: TrainerUiState, replay: LessonReplay): TrainerUiState = trainer.copy(
         replay = replay, selectedSquare = null, legalTargets = emptySet(), hintSquares = emptySet(),
         pendingPromotion = null, attemptedMove = null, isPlaying = false, isOpponentThinking = false,
-        branchOffers = if (trainer.reviewTargetId == null) replay.branches() else emptyList(), feedbackKind = FeedbackKind.NONE,
+        branchOffers = if (trainer.reviewTargetId == null && !(trainer.courseAutoplay && trainer.mode == LessonMode.PRACTICE)) replay.branches() else emptyList(),
+        feedbackKind = FeedbackKind.NONE,
         feedback = if (trainer.mode == LessonMode.STUDY) {
             if (replay.atStart) "Starting position" else "${replay.ply} / ${replay.moves.size} half-moves"
         } else if (replay.atEnd) "Practice complete" else "${replay.position.sideToMove.name.lowercase().replaceFirstChar { it.uppercase() }} to move",
@@ -1252,7 +1324,7 @@ class AppViewModel @JvmOverloads constructor(
     }.getOrNull()
 
     private suspend fun restoreBookmark(bookmark: LessonBookmark): TrainerUiState? = try {
-        val base = prepareGraph(getOpening(bookmark.lessonId))
+        val base = prepareGraph(openingFor(bookmark.lessonId))
         val policy = bookmark.repertoireId?.let { requireNotNull(learningStore?.repertoirePolicy(it, requireNotNull(bookmark.repertoireRevision))) }
         val graph = if (policy == null) base else preparePolicyGraph(base, policy)
         val setSession = bookmark.repertoireSetId?.let { id ->

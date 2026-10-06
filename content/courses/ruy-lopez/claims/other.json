@@ -1,0 +1,79 @@
+{
+ "writer": "Claude Code (claude-opus-5-5), agent mode: written from master/club statistics, winners' move patterns and engine facts, then machine-checked",
+ "intro": [
+  {
+   "type": "IDEA",
+   "text": "Less common third moves for Black. Each has a clear idea, and knowing the best reply gives White an easy, comfortable game."
+  }
+ ],
+ "nodes": {},
+ "variations": {
+  "Ruy Lopez": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "The Ruy Lopez: White develops the bishop to attack the knight that protects Black's centre pawn. Its pressure is slow but lasting, and it has been a main opening at every level for centuries."
+    }
+   ]
+  },
+  "Cozio Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black develops the king's knight to a modest square to avoid pins and keep the f-pawn flexible."
+    }
+   ]
+  },
+  "Fianchetto Defense": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black prepares to develop the dark-squared bishop on the long diagonal, a hypermodern setup that lets White build a big centre."
+    }
+   ]
+  },
+  "Bird Variation": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black offers a knight trade at once. It costs time, and White usually gets a comfortable lead in development."
+    }
+   ]
+  },
+  "Cozio Defense · 4.Nc3": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Against the Cozio setup White develops naturally and keeps central options. Black usually reroutes the knight to the kingside."
+    }
+   ],
+   "white": [
+    {
+     "type": "WINPLAN",
+     "text": "White's winners used the knight jump Nd5 to exploit Black's slow development.",
+     "moves": [
+      "Nd5"
+     ]
+    }
+   ],
+   "black": [
+    {
+     "type": "WINPLAN",
+     "text": "Black's winners pinned with Bg4 and used the rook on Re8.",
+     "moves": [
+      "Bg4",
+      "Re8"
+     ]
+    }
+   ]
+  },
+  "Cozio Defense · 4...Ng6": {
+   "intro": [
+    {
+     "type": "IDEA",
+     "text": "Black's knight goes to the kingside, supporting the centre pawn and freeing the bishop. White aims for a quick central break."
+    }
+   ]
+  }
+ }
+}

@@ -8,8 +8,9 @@ Latest owner scope update2026-10-03 supersedes that automatic next-task order: f
 
 ## Now
 
-- [ ] `android-end-to-end-user-test` — TODO
+- [~] `android-end-to-end-user-test` — IN_PROGRESS — codex — 2026-10-03T19:15:48Z — seen 2026-10-03T19:53:13Z — expires 2026-10-03T20:53:13Z
   - Owner-selected next step2026-10-03, **after persistent-recall-review is fully verified and implementation stops**. Do not automatically resume deferred board/iOS development.
+  - Newer owner priority2026-10-04: open the emulator and explain all built features for owner-led manual testing FIRST, then return to complete regression verification. This supersedes waiting for recall acceptance before manual testing. Log0036 confirms retained Android13 emulator boot and installed0.15.0/code16 launch; user flow outcomes are pending, so this task is not DONE. No regression or implementation resumed; board/iOS remain deferred.
   - Walk through the latest Android build's Learn/Explore, both-color Study/Practice/hints/branches, family policies and named sets/conflicts, position/PGN/FEN identification, source installation/observations, original-game library/private import/follow/coaching/engine preview, actual recall/Profile and cold resume. Preserve the owner's app data; use only isolated devices for instrumentation or synthetic test databases.
   - Acceptance: record the tested version/device, actual flow outcomes and any reproducible failures, distinguishing automated gates from human usability feedback. Start from docs/USER_TESTING.md and docs/RECALL_REVIEW.md. This is the owner's next testing phase, not permission to claim all deferred work complete.
 
@@ -29,6 +30,27 @@ Latest owner scope update2026-10-03 supersedes that automatic next-task order: f
 - [x] `emulator-user-test` — DONE — 0006
   - Explicit user request (2026-10-01): start the configured Android emulator, install/open the current build, and provide step-by-step checks for the new rules/identifier/import changes. This is a local testing handoff, not authorization to implement the next app milestone.
   - Acceptance: current debug assembly succeeds, emulator boot and app launch are verified, and the user receives concrete actions and expected results. Leave the emulator running; do not clear its data.
+
+## Deep courses (owner direction 2026-10-04)
+
+- [x] `deep-course-plan` — DONE — 0038
+  - Owner request 2026-10-04: write step-by-step, agent-implementable directions for deep Hanging-Pawns-style repertoire courses (chapters, all relevant branches for both sides, lines played to an engine-checked verdict, generated grounded explanations) and a GM-game track (actual game as mainline, both-POV teaching, "better was" branches). No human reviewer available; explanations are AI-generated, tool-grounded, claim-checked and evaluated.
+  - Acceptance: `docs/DEEP_COURSE_PLAN.md` with ordered phases, inputs/outputs, acceptance gates and owner decisions. Documentation only; no app/source/data changes.
+
+- [x] `deep-course-pilot` — DONE — 0040
+  - Implement `docs/DEEP_COURSE_PLAN.md` for one pilot chapter plus one famous game (phases 0–8, 10, 11 and the measurable parts of 4/12; the model bake-off and AI judge need an owner API decision).
+  - Owner 2026-10-05: claim it and do not stop until done, then open the app on the emulator and write test steps. Owner approved the Lichess downloads. Phase 0 defaults recorded in `.relay/PROJECT.md`.
+  - Acceptance: course pack built from real club/master/engine data with every shown sentence from a passed claim; app integration with UI tests; evals recorded; all project gates; Android 0.16 installed in place on the owner's emulator; test steps in docs/USER_TESTING.md.
+
+- [x] `ruy-lopez-full-course` — DONE — 0042
+  - Owner 2026-10-06: cover the full Ruy Lopez — all variations with proper names where they exist (important unnamed GM lines labelled by moves), every move masters play for both sides so either POV works, followed as deep as master games go then engine to a verdict; per variation how players at different levels choose moves and how each side wins (from decisive master games, engine-checked, with example games); common mistakes with punishment. Owner approved downloading all Lichess broadcast months.
+  - Checkpoint before full generation: show the owner the Ruy Lopez table of contents (variation names, game counts by level, depth) and one fully finished variation for approval. Build chapter by chapter, most important first. Supersedes the 4.d3-only Berlin pilot structure (lessons in log 0041).
+
+- [ ] `deep-course-bakeoff` — TODO
+  - Phase 9 and the AI-judge metric of `docs/DEEP_COURSE_PLAN.md`: compare a GPT model and a Claude model (writer and critic) on the gold set and the Berlin chapter. Blocked on the owner's provider/API-key/budget decision (D1); do not create accounts or spend without it.
+
+- [ ] `deep-course-scale` — TODO
+  - After the owner reviews the 0.16 pilot (flags exported from the app), regenerate weak explanations, then add the remaining *Ruy Lopez for White* chapters (Morphy/closed lines, Marshall, Open, Schliemann, early deviations) with the same pipeline, followed by other openings in the owner's order. More club data (further export slices) improves branch depth; keep ≤3 connections and the 429 cooldown.
 
 ## Next
 
@@ -107,7 +129,8 @@ Latest owner scope update2026-10-03 supersedes that automatic next-task order: f
 
 ## Product quality and later platform work
 
-- [~] `persistent-recall-review` — IN_PROGRESS — codex — 2026-10-02T22:14:33Z — seen 2026-10-03T00:07:01Z — expires 2026-10-03T01:07:01Z
+- [ ] `persistent-recall-review` — TODO
+  - Administrative release2026-10-04 (log0036): expired codex claim returned to unclaimed TODO because development is owner-paused during manual testing. Delivered partial work/history0033–0035 remains; this is NOT completion, rollback or a fresh implementation claim. Reclaim only when returning to regression after the owner's testing phase.
   - Depends on `offline-content-progress` and `guided-line-learning`. Replace sample progress/review/profile with actual attempts, branch-aware repertoire mastery and spaced recall; distinguish studying a line from demonstrating recall. Define completion from the user's chosen repertoire, not the entire theoretical opening tree.
   - Acceptance: real progress survives relaunch and content version changes, review scheduling is deterministic/tested, automatic hints count as assisted rather than unaided recall.
   - Include engine-assisted recall: v0.7.0/0.8.0 analysis can reveal a compared lesson continuation but does not yet mark that attempt assisted. Account for successful exposed analysis separately from failed/stopped requests; do not infer mastery from those current attempt flags.

@@ -1,0 +1,186 @@
+{
+  "target": "broadcasts",
+  "fetchedAt": "2026-10-04T19:29:19.034Z",
+  "entries": [
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-09.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 18414369,
+      "sha256": "27a39d035767a30901b89602f33f2a7b27d4ab5025842071165fa079f8fff1df",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-09/chunk-00000",
+          "start": 0,
+          "end": 18414368,
+          "sha256": "27a39d035767a30901b89602f33f2a7b27d4ab5025842071165fa079f8fff1df"
+        }
+      ],
+      "publishedSha256": "27a39d035767a30901b89602f33f2a7b27d4ab5025842071165fa079f8fff1df"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-08.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 31010232,
+      "sha256": "e227c35c3207ebade754849c1825982e2717ae82c013013d896778e27be77724",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-08/chunk-00000",
+          "start": 0,
+          "end": 31010231,
+          "sha256": "e227c35c3207ebade754849c1825982e2717ae82c013013d896778e27be77724"
+        }
+      ],
+      "publishedSha256": "e227c35c3207ebade754849c1825982e2717ae82c013013d896778e27be77724"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-07.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 24535400,
+      "sha256": "714d0eb99f99fca8d791142038b6c59b5ca6a51b3339bd3891a92f4bdffcbf0c",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-07/chunk-00000",
+          "start": 0,
+          "end": 24535399,
+          "sha256": "714d0eb99f99fca8d791142038b6c59b5ca6a51b3339bd3891a92f4bdffcbf0c"
+        }
+      ],
+      "publishedSha256": "714d0eb99f99fca8d791142038b6c59b5ca6a51b3339bd3891a92f4bdffcbf0c"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-06.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 22797518,
+      "sha256": "65905d611c0d78d90ab57cd9edd3821f4119b46c22b5489fd7e265a74c6767b3",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-06/chunk-00000",
+          "start": 0,
+          "end": 22797517,
+          "sha256": "65905d611c0d78d90ab57cd9edd3821f4119b46c22b5489fd7e265a74c6767b3"
+        }
+      ],
+      "publishedSha256": "65905d611c0d78d90ab57cd9edd3821f4119b46c22b5489fd7e265a74c6767b3"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-05.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 22912287,
+      "sha256": "d212987f7972a70268809ff6c726acff8bf0987161aacd7647b160f8564f6a53",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-05/chunk-00000",
+          "start": 0,
+          "end": 22912286,
+          "sha256": "d212987f7972a70268809ff6c726acff8bf0987161aacd7647b160f8564f6a53"
+        }
+      ],
+      "publishedSha256": "d212987f7972a70268809ff6c726acff8bf0987161aacd7647b160f8564f6a53"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-04.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 18431347,
+      "sha256": "97b036f3a3639ae3be59c1508b1e18c76ac1b2e8fada4587d1b5c5a93c438d5d",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-04/chunk-00000",
+          "start": 0,
+          "end": 18431346,
+          "sha256": "97b036f3a3639ae3be59c1508b1e18c76ac1b2e8fada4587d1b5c5a93c438d5d"
+        }
+      ],
+      "publishedSha256": "97b036f3a3639ae3be59c1508b1e18c76ac1b2e8fada4587d1b5c5a93c438d5d"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-03.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 16446491,
+      "sha256": "1a5ad83fc9f440dcdadde17b11cc81a953f4895aaf8b8588470b3078209dc7fc",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-03/chunk-00000",
+          "start": 0,
+          "end": 16446490,
+          "sha256": "1a5ad83fc9f440dcdadde17b11cc81a953f4895aaf8b8588470b3078209dc7fc"
+        }
+      ],
+      "publishedSha256": "1a5ad83fc9f440dcdadde17b11cc81a953f4895aaf8b8588470b3078209dc7fc"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-02.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 12215117,
+      "sha256": "ea977569917718b33940ba5379db2adad77d58876c29084294d357f15fe6a31b",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-02/chunk-00000",
+          "start": 0,
+          "end": 12215116,
+          "sha256": "ea977569917718b33940ba5379db2adad77d58876c29084294d357f15fe6a31b"
+        }
+      ],
+      "publishedSha256": "ea977569917718b33940ba5379db2adad77d58876c29084294d357f15fe6a31b"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2026-01.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 15717635,
+      "sha256": "9abf10d106a8bf5ecd41359825b3bf55c2f124c8a790a380cb98844c2cca5dca",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2026-01/chunk-00000",
+          "start": 0,
+          "end": 15717634,
+          "sha256": "9abf10d106a8bf5ecd41359825b3bf55c2f124c8a790a380cb98844c2cca5dca"
+        }
+      ],
+      "publishedSha256": "9abf10d106a8bf5ecd41359825b3bf55c2f124c8a790a380cb98844c2cca5dca"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2025-12.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 22427525,
+      "sha256": "fadbe80ee65e9f8499578e934d7600ece69d09b1cf8abc75fdd3bd840f61e63f",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2025-12/chunk-00000",
+          "start": 0,
+          "end": 22427524,
+          "sha256": "fadbe80ee65e9f8499578e934d7600ece69d09b1cf8abc75fdd3bd840f61e63f"
+        }
+      ],
+      "publishedSha256": "fadbe80ee65e9f8499578e934d7600ece69d09b1cf8abc75fdd3bd840f61e63f"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2025-11.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 15575096,
+      "sha256": "39deb43faf6e2f4569a76f369ca0a3b87aa7787330c9e2ff87705c6f3bf32ff1",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2025-11/chunk-00000",
+          "start": 0,
+          "end": 15575095,
+          "sha256": "39deb43faf6e2f4569a76f369ca0a3b87aa7787330c9e2ff87705c6f3bf32ff1"
+        }
+      ],
+      "publishedSha256": "39deb43faf6e2f4569a76f369ca0a3b87aa7787330c9e2ff87705c6f3bf32ff1"
+    },
+    {
+      "url": "https://database.lichess.org/broadcast/lichess_db_broadcast_2025-10.pgn.zst",
+      "license": "CC-BY-SA-4.0",
+      "remoteBytes": 17369667,
+      "sha256": "77be4c998ca8d3b303928e1619f0f9dc2a03a71d5ab6a59d02d42291ae0524e3",
+      "chunks": [
+        {
+          "file": ".course-cache/raw/broadcasts/lichess_db_broadcast_2025-10/chunk-00000",
+          "start": 0,
+          "end": 17369666,
+          "sha256": "77be4c998ca8d3b303928e1619f0f9dc2a03a71d5ab6a59d02d42291ae0524e3"
+        }
+      ],
+      "publishedSha256": "77be4c998ca8d3b303928e1619f0f9dc2a03a71d5ab6a59d02d42291ae0524e3"
+    }
+  ]
+}
